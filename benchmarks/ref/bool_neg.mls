@@ -1,0 +1,11 @@
+type bool =
+  | False
+  | True
+
+synth bool -> bool satisfying
+
+equiv
+fix (f : bool -> bool) =
+  fun (x:bool) -> match x with
+                    | False -> True
+                    | True -> False
