@@ -1,2 +1,2 @@
-# trio_aritifact_2024
+# trio_artifacts_2024
 termination checker version
