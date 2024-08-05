@@ -67,8 +67,8 @@ def run_solver(timeout=120, benchmark="io", ablation=False):
         with open(path + "ablation_list", "r") as f: 
             lists = f.readlines()
     else:
-        # solvers = ["trio", "burst", "smyth"]
-        solvers = ["trio"]
+        solvers = ["trio", "burst", "smyth"]
+        #solvers = ["trio"]
         prefix = path + "result/"+benchmark+"_result"
         with open(path + "bench_list", "r") as f: 
             lists = f.readlines()
