@@ -1,0 +1,139 @@
+(T (), T ()) -> F ();
+=================================
+fix f0.fun (x0, x1).
+  ( False )
+0.0002 false
+
+(T (), F ()) -> T ();
+=================================
+fix f0.fun (x0, x1). x0
+0.0002 false
+
+(F (), T ()) -> T ();
+=================================
+fix f0.fun (x0, x1). x1
+0.0002 false
+
+(F (), F ()) -> F ();
+=================================
+fix f0.fun (x0, x1). x0
+0.0002 false
+
+(T (), T ()) -> F ();
+(T (), F ()) -> T ();
+=================================
+fix f0.fun (x0, x1).
+  match (x1) with
+  | T -> ( False )
+  | F -> x0
+  
+0.0004 false
+
+(T (), T ()) -> F ();
+(F (), T ()) -> T ();
+=================================
+fix f0.fun (x0, x1).
+  match (x0) with
+  | T -> ( False )
+  | F -> x1
+  
+0.0003 false
+
+(T (), T ()) -> F ();
+(F (), F ()) -> F ();
+=================================
+fix f0.fun (x0, x1).
+  ( False )
+0.0003 false
+
+(T (), F ()) -> T ();
+(F (), T ()) -> T ();
+=================================
+fix f0.fun (x0, x1).
+  ( True )
+0.0003 false
+
+(T (), F ()) -> T ();
+(F (), F ()) -> F ();
+=================================
+fix f0.fun (x0, x1). x0
+0.0003 false
+
+(F (), T ()) -> T ();
+(F (), F ()) -> F ();
+=================================
+fix f0.fun (x0, x1). x1
+0.0003 false
+
+(T (), T ()) -> F ();
+(T (), F ()) -> T ();
+(F (), T ()) -> T ();
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x0) with
+  | T ->
+    match (x1) with
+    | T -> ( False )
+    | F -> x0
+    
+  | F -> x1
+  
+0.0036 true
+
+(T (), T ()) -> F ();
+(T (), F ()) -> T ();
+(F (), F ()) -> F ();
+=================================
+fix f0.fun (x0, x1).
+  match (x1) with
+  | T -> ( False )
+  | F -> x0
+  
+0.0005 false
+
+(T (), T ()) -> F ();
+(F (), T ()) -> T ();
+(F (), F ()) -> F ();
+=================================
+fix f0.fun (x0, x1).
+  match (x0) with
+  | T -> ( False )
+  | F -> x1
+  
+0.0005 false
+
+(T (), F ()) -> T ();
+(F (), T ()) -> T ();
+(F (), F ()) -> F ();
+=================================
+fix f0.fun (x0, x1).
+  match (x0) with
+  | T -> x0
+  | F -> x1
+  
+0.0005 false
+
+(T (), T ()) -> F ();
+(T (), F ()) -> T ();
+(F (), T ()) -> T ();
+(F (), F ()) -> F ();
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x0) with
+  | T ->
+    match (x1) with
+    | T -> ( False )
+    | F -> x0
+    
+  | F -> x1
+  
+0.0046 true
+

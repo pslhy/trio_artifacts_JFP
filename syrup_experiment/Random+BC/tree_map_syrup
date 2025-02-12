@@ -1,0 +1,1533 @@
+(inc,Node (Node (Leaf (),3,Leaf ()),2,Leaf ())) -> Node (Node (Leaf (),4,Leaf ()),3,Leaf ());
+(div2, Leaf ()) -> Leaf ();
+
+=================================
+start synthesis with ((mode SyRup) (atomicSize 3) (matchDepth 1) (ctorDepth 0) (condWidth 1)
+ (totalHeight 0))
+VSA done
+fix f0.fun (x0, x1).
+  match (x1) with
+  | Leaf -> x1
+  | Node(v1,l1,r1) ->
+    ( Node (inc v1)
+      (f0 ( x0, l1 )) r1
+      )
+  
+0.0022 false
+
+(inc,Node (Node (Leaf (),0,Leaf ()),3,Node (Leaf (),0,Leaf ()))) -> Node (Node (Leaf (),1,Leaf ()),4,Node (Leaf (),1,Leaf ()));
+(div2, Leaf ()) -> Leaf ();
+
+=================================
+start synthesis with ((mode SyRup) (atomicSize 3) (matchDepth 1) (ctorDepth 0) (condWidth 1)
+ (totalHeight 0))
+VSA done
+fix f0.fun (x0, x1).
+  match (x1) with
+  | Leaf -> x1
+  | Node(v1,l1,r1) ->
+    ( Node (inc v1)
+      (f0 ( x0, l1 ))
+      (f0 ( x0, l1 )) )
+  
+0.0022 false
+
+(div2,Node (Leaf (),3,Node (Leaf (),2,Node (Leaf (),1,Leaf ())))) -> Node (Leaf (),1,Node (Leaf (),1,Node (Leaf (),0,Leaf ())));
+(div2, Leaf ()) -> Leaf ();
+
+=================================
+start synthesis with ((mode SyRup) (atomicSize 3) (matchDepth 1) (ctorDepth 0) (condWidth 1)
+ (totalHeight 0))
+VSA done
+fix f0.fun (x0, x1).
+  match (x1) with
+  | Leaf -> x1
+  | Node(v1,l1,r1) ->
+    ( Node (div2 v1) l1
+      (f0 ( x0, r1 )) )
+  
+0.0035 false
+
+(div2,Node (Leaf (),3,Node (Leaf (),3,Leaf ()))) -> Node (Leaf (),1,Node (Leaf (),1,Leaf ()));
+(div2, Leaf ()) -> Leaf ();
+
+=================================
+start synthesis with ((mode SyRup) (atomicSize 3) (matchDepth 1) (ctorDepth 0) (condWidth 1)
+ (totalHeight 0))
+VSA done
+fix f0.fun (x0, x1).
+  match (x1) with
+  | Leaf -> x1
+  | Node(v1,l1,r1) ->
+    ( Node (div2 v1) l1
+      (f0 ( x0, r1 )) )
+  
+0.0024 false
+
+(div2,Node (Leaf (),3,Node (Node (Leaf (),2,Leaf ()),3,Leaf ()))) -> Node (Leaf (),1,Node (Node (Leaf (),1,Leaf ()),1,Leaf ()));
+(div2, Leaf ()) -> Leaf ();
+
+=================================
+start synthesis with ((mode SyRup) (atomicSize 3) (matchDepth 1) (ctorDepth 0) (condWidth 1)
+ (totalHeight 0))
+VSA done
+fix f0.fun (x0, x1).
+  match (x1) with
+  | Leaf -> x1
+  | Node(v1,l1,r1) ->
+    ( Node (div2 v1)
+      (f0 ( x0, l1 ))
+      (f0 ( x0, r1 )) )
+  
+0.0050 false
+
+(inc,Node (Leaf (),1,Node (Leaf (),0,Node (Leaf (),2,Leaf ())))) -> Node (Leaf (),2,Node (Leaf (),1,Node (Leaf (),3,Leaf ())));
+(div2, Leaf ()) -> Leaf ();
+
+=================================
+start synthesis with ((mode SyRup) (atomicSize 3) (matchDepth 1) (ctorDepth 0) (condWidth 1)
+ (totalHeight 0))
+VSA done
+fix f0.fun (x0, x1).
+  match (x1) with
+  | Leaf -> x1
+  | Node(v1,l1,r1) ->
+    ( Node (inc v1) l1
+      (f0 ( x0, r1 )) )
+  
+0.0052 false
+
+(div2,Node (Node (Node (Leaf (),0,Leaf ()),1,Leaf ()),3,Leaf ())) -> Node (Node (Node (Leaf (),0,Leaf ()),0,Leaf ()),1,Leaf ());
+(div2, Leaf ()) -> Leaf ();
+
+=================================
+start synthesis with ((mode SyRup) (atomicSize 3) (matchDepth 1) (ctorDepth 0) (condWidth 1)
+ (totalHeight 0))
+VSA done
+fix f0.fun (x0, x1).
+  match (x1) with
+  | Leaf -> x1
+  | Node(v1,l1,r1) ->
+    ( Node (div2 v1)
+      (f0 ( x0, l1 )) r1
+      )
+  
+0.0040 false
+
+(inc,Node (Node (Leaf (),0,Leaf ()),1,Node (Leaf (),0,Leaf ()))) -> Node (Node (Leaf (),1,Leaf ()),2,Node (Leaf (),1,Leaf ()));
+(div2, Leaf ()) -> Leaf ();
+
+=================================
+start synthesis with ((mode SyRup) (atomicSize 3) (matchDepth 1) (ctorDepth 0) (condWidth 1)
+ (totalHeight 0))
+VSA done
+fix f0.fun (x0, x1).
+  match (x1) with
+  | Leaf -> x1
+  | Node(v1,l1,r1) ->
+    ( Node (inc v1)
+      (f0 ( x0, l1 ))
+      (f0 ( x0, l1 )) )
+  
+0.0022 false
+
+(inc,Node (Node (Leaf (),2,Node (Leaf (),1,Leaf ())),0,Leaf ())) -> Node (Node (Leaf (),3,Node (Leaf (),2,Leaf ())),1,Leaf ());
+(div2, Leaf ()) -> Leaf ();
+
+=================================
+start synthesis with ((mode SyRup) (atomicSize 3) (matchDepth 1) (ctorDepth 0) (condWidth 1)
+ (totalHeight 0))
+VSA done
+fix f0.fun (x0, x1).
+  match (x1) with
+  | Leaf -> x1
+  | Node(v1,l1,r1) ->
+    ( Node (inc v1)
+      (f0 ( x0, l1 ))
+      (f0 ( x0, r1 )) )
+  
+0.0038 false
+
+(inc,Node (Node (Leaf (),2,Leaf ()),1,Leaf ())) -> Node (Node (Leaf (),3,Leaf ()),2,Leaf ());
+(div2, Leaf ()) -> Leaf ();
+
+=================================
+start synthesis with ((mode SyRup) (atomicSize 3) (matchDepth 1) (ctorDepth 0) (condWidth 1)
+ (totalHeight 0))
+VSA done
+fix f0.fun (x0, x1).
+  match (x1) with
+  | Leaf -> x1
+  | Node(v1,l1,r1) ->
+    ( Node (inc v1)
+      (f0 ( x0, l1 )) r1
+      )
+  
+0.0022 false
+
+(inc,Node (Leaf (),2,Node (Node (Leaf (),0,Leaf ()),2,Leaf ()))) -> Node (Leaf (),3,Node (Node (Leaf (),1,Leaf ()),3,Leaf ()));
+(inc,Node (Node (Node (Leaf (),0,Leaf ()),0,Leaf ()),3,Leaf ())) -> Node (Node (Node (Leaf (),1,Leaf ()),1,Leaf ()),4,Leaf ());
+(div2, Leaf ()) -> Leaf ();
+
+=================================
+start synthesis with ((mode SyRup) (atomicSize 3) (matchDepth 1) (ctorDepth 0) (condWidth 1)
+ (totalHeight 0))
+VSA done
+fix f0.fun (x0, x1).
+  match (x1) with
+  | Leaf -> x1
+  | Node(v1,l1,r1) ->
+    ( Node (inc v1)
+      (f0 ( x0, l1 ))
+      (f0 ( x0, r1 )) )
+  
+0.0487 false
+
+(div2,Node (Leaf (),1,Node (Leaf (),3,Node (Leaf (),3,Leaf ())))) -> Node (Leaf (),0,Node (Leaf (),1,Node (Leaf (),1,Leaf ())));
+(inc,Node (Leaf (),2,Node (Node (Leaf (),0,Leaf ()),2,Leaf ()))) -> Node (Leaf (),3,Node (Node (Leaf (),1,Leaf ()),3,Leaf ()));
+(div2, Leaf ()) -> Leaf ();
+
+=================================
+start synthesis with ((mode SyRup) (atomicSize 3) (matchDepth 1) (ctorDepth 0) (condWidth 1)
+ (totalHeight 0))
+VSA done
+fix f0.fun (x0, x1).
+  match (x1) with
+  | Leaf -> x1
+  | Node(v1,l1,r1) ->
+    ( Node (x0 v1)
+      (f0 ( x0, l1 ))
+      (f0 ( x0, r1 )) )
+  
+0.0554 true
+
+(div2,Node (Node (Node (Leaf (),0,Leaf ()),0,Leaf ()),1,Leaf ())) -> Node (Node (Node (Leaf (),0,Leaf ()),0,Leaf ()),0,Leaf ());
+(inc,Node (Leaf (),3,Node (Node (Leaf (),1,Leaf ()),2,Leaf ()))) -> Node (Leaf (),4,Node (Node (Leaf (),2,Leaf ()),3,Leaf ()));
+(div2, Leaf ()) -> Leaf ();
+
+=================================
+start synthesis with ((mode SyRup) (atomicSize 3) (matchDepth 1) (ctorDepth 0) (condWidth 1)
+ (totalHeight 0))
+VSA done
+fix f0.fun (x0, x1).
+  match (x1) with
+  | Leaf -> x1
+  | Node(v1,l1,r1) ->
+    ( Node (x0 v1)
+      (f0 ( x0, l1 ))
+      (f0 ( x0, r1 )) )
+  
+0.0537 true
+
+(div2,Node (Leaf (),2,Leaf ())) -> Node (Leaf (),1,Leaf ());
+(inc,Node (Leaf (),2,Leaf ())) -> Node (Leaf (),3,Leaf ());
+(div2, Leaf ()) -> Leaf ();
+
+=================================
+start synthesis with ((mode SyRup) (atomicSize 3) (matchDepth 1) (ctorDepth 0) (condWidth 1)
+ (totalHeight 0))
+VSA done
+fix f0.fun (x0, x1).
+  match (x1) with
+  | Leaf -> x1
+  | Node(v1,l1,r1) ->
+    ( Node (x0 v1) l1
+      (f0 ( x0, l1 )) )
+  
+0.0019 false
+
+(div2,Node (Node (Leaf (),1,Leaf ()),0,Leaf ())) -> Node (Node (Leaf (),0,Leaf ()),0,Leaf ());
+(div2,Node (Leaf (),0,Node (Node (Leaf (),1,Leaf ()),2,Leaf ()))) -> Node (Leaf (),0,Node (Node (Leaf (),0,Leaf ()),1,Leaf ()));
+(div2, Leaf ()) -> Leaf ();
+
+=================================
+start synthesis with ((mode SyRup) (atomicSize 3) (matchDepth 1) (ctorDepth 0) (condWidth 1)
+ (totalHeight 0))
+VSA done
+fix f0.fun (x0, x1).
+  match (x1) with
+  | Leaf -> x1
+  | Node(v1,l1,r1) ->
+    ( Node (div2 v1)
+      (f0 ( x0, l1 ))
+      (f0 ( x0, r1 )) )
+  
+0.0150 false
+
+(div2,Node (Node (Node (Leaf (),3,Leaf ()),3,Leaf ()),0,Leaf ())) -> Node (Node (Node (Leaf (),1,Leaf ()),1,Leaf ()),0,Leaf ());
+(inc,Node (Node (Leaf (),3,Node (Leaf (),2,Leaf ())),3,Leaf ())) -> Node (Node (Leaf (),4,Node (Leaf (),3,Leaf ())),4,Leaf ());
+(div2, Leaf ()) -> Leaf ();
+
+=================================
+start synthesis with ((mode SyRup) (atomicSize 3) (matchDepth 1) (ctorDepth 0) (condWidth 1)
+ (totalHeight 0))
+VSA done
+fix f0.fun (x0, x1).
+  match (x1) with
+  | Leaf -> x1
+  | Node(v1,l1,r1) ->
+    ( Node (x0 v1)
+      (f0 ( x0, l1 ))
+      (f0 ( x0, r1 )) )
+  
+0.0427 true
+
+(div2,Node (Node (Leaf (),2,Node (Leaf (),1,Leaf ())),3,Leaf ())) -> Node (Node (Leaf (),1,Node (Leaf (),0,Leaf ())),1,Leaf ());
+(inc,Node (Leaf (),0,Leaf ())) -> Node (Leaf (),1,Leaf ());
+(div2, Leaf ()) -> Leaf ();
+
+=================================
+start synthesis with ((mode SyRup) (atomicSize 3) (matchDepth 1) (ctorDepth 0) (condWidth 1)
+ (totalHeight 0))
+VSA done
+fix f0.fun (x0, x1).
+  match (x1) with
+  | Leaf -> x1
+  | Node(v1,l1,r1) ->
+    ( Node (x0 v1)
+      (f0 ( x0, l1 ))
+      (f0 ( x0, r1 )) )
+  
+0.0075 true
+
+(inc,Node (Leaf (),3,Node (Leaf (),1,Leaf ()))) -> Node (Leaf (),4,Node (Leaf (),2,Leaf ()));
+(inc,Node (Node (Node (Leaf (),0,Leaf ()),2,Leaf ()),1,Leaf ())) -> Node (Node (Node (Leaf (),1,Leaf ()),3,Leaf ()),2,Leaf ());
+(div2, Leaf ()) -> Leaf ();
+
+=================================
+start synthesis with ((mode SyRup) (atomicSize 3) (matchDepth 1) (ctorDepth 0) (condWidth 1)
+ (totalHeight 0))
+VSA done
+fix f0.fun (x0, x1).
+  match (x1) with
+  | Leaf -> x1
+  | Node(v1,l1,r1) ->
+    ( Node (inc v1)
+      (f0 ( x0, l1 ))
+      (f0 ( x0, r1 )) )
+  
+0.0320 false
+
+(div2,Node (Node (Leaf (),1,Leaf ()),3,Leaf ())) -> Node (Node (Leaf (),0,Leaf ()),1,Leaf ());
+(div2,Node (Node (Node (Leaf (),1,Leaf ()),3,Leaf ()),1,Leaf ())) -> Node (Node (Node (Leaf (),0,Leaf ()),1,Leaf ()),0,Leaf ());
+(div2, Leaf ()) -> Leaf ();
+
+=================================
+start synthesis with ((mode SyRup) (atomicSize 3) (matchDepth 1) (ctorDepth 0) (condWidth 1)
+ (totalHeight 0))
+VSA done
+fix f0.fun (x0, x1).
+  match (x1) with
+  | Leaf -> x1
+  | Node(v1,l1,r1) ->
+    ( Node (div2 v1)
+      (f0 ( x0, l1 )) r1
+      )
+  
+0.0096 false
+
+(div2,Node (Node (Node (Leaf (),1,Leaf ()),1,Leaf ()),1,Leaf ())) -> Node (Node (Node (Leaf (),0,Leaf ()),0,Leaf ()),0,Leaf ());
+(inc,Node (Node (Node (Leaf (),3,Leaf ()),3,Leaf ()),2,Leaf ())) -> Node (Node (Node (Leaf (),4,Leaf ()),4,Leaf ()),3,Leaf ());
+(div2, Leaf ()) -> Leaf ();
+
+=================================
+start synthesis with ((mode SyRup) (atomicSize 3) (matchDepth 1) (ctorDepth 0) (condWidth 1)
+ (totalHeight 0))
+VSA done
+fix f0.fun (x0, x1).
+  match (x1) with
+  | Leaf -> x1
+  | Node(v1,l1,r1) ->
+    ( Node (x0 v1)
+      (f0 ( x0, l1 )) r1
+      )
+  
+0.0570 false
+
+(div2,Node (Leaf (),1,Node (Node (Leaf (),2,Leaf ()),2,Leaf ()))) -> Node (Leaf (),0,Node (Node (Leaf (),1,Leaf ()),1,Leaf ()));
+(div2,Node (Node (Leaf (),0,Node (Leaf (),0,Leaf ())),3,Leaf ())) -> Node (Node (Leaf (),0,Node (Leaf (),0,Leaf ())),1,Leaf ());
+(inc,Node (Node (Leaf (),0,Leaf ()),0,Leaf ())) -> Node (Node (Leaf (),1,Leaf ()),1,Leaf ());
+(div2, Leaf ()) -> Leaf ();
+
+=================================
+start synthesis with ((mode SyRup) (atomicSize 3) (matchDepth 1) (ctorDepth 0) (condWidth 1)
+ (totalHeight 0))
+VSA done
+fix f0.fun (x0, x1).
+  match (x1) with
+  | Leaf -> x1
+  | Node(v1,l1,r1) ->
+    ( Node (x0 v1)
+      (f0 ( x0, l1 ))
+      (f0 ( x0, r1 )) )
+  
+0.5954 true
+
+(div2,Node (Node (Leaf (),0,Node (Leaf (),3,Leaf ())),2,Leaf ())) -> Node (Node (Leaf (),0,Node (Leaf (),1,Leaf ())),1,Leaf ());
+(div2,Node (Leaf (),2,Node (Leaf (),2,Leaf ()))) -> Node (Leaf (),1,Node (Leaf (),1,Leaf ()));
+(div2,Node (Node (Leaf (),2,Leaf ()),3,Node (Leaf (),3,Leaf ()))) -> Node (Node (Leaf (),1,Leaf ()),1,Node (Leaf (),1,Leaf ()));
+(div2, Leaf ()) -> Leaf ();
+
+=================================
+start synthesis with ((mode SyRup) (atomicSize 3) (matchDepth 1) (ctorDepth 0) (condWidth 1)
+ (totalHeight 0))
+VSA done
+fix f0.fun (x0, x1).
+  match (x1) with
+  | Leaf -> x1
+  | Node(v1,l1,r1) ->
+    ( Node (div2 v1)
+      (f0 ( x0, l1 ))
+      (f0 ( x0, r1 )) )
+  
+0.3882 false
+
+(div2,Node (Leaf (),0,Node (Node (Leaf (),0,Leaf ()),0,Leaf ()))) -> Node (Leaf (),0,Node (Node (Leaf (),0,Leaf ()),0,Leaf ()));
+(inc,Node (Node (Node (Leaf (),1,Leaf ()),2,Leaf ()),2,Leaf ())) -> Node (Node (Node (Leaf (),2,Leaf ()),3,Leaf ()),3,Leaf ());
+(inc,Node (Node (Leaf (),1,Leaf ()),0,Leaf ())) -> Node (Node (Leaf (),2,Leaf ()),1,Leaf ());
+(div2, Leaf ()) -> Leaf ();
+
+=================================
+start synthesis with ((mode SyRup) (atomicSize 3) (matchDepth 1) (ctorDepth 0) (condWidth 1)
+ (totalHeight 0))
+VSA done
+fix f0.fun (x0, x1).
+  match (x1) with
+  | Leaf -> x1
+  | Node(v1,l1,r1) ->
+    ( Node (x0 v1)
+      (f0 ( x0, l1 )) r1
+      )
+  
+0.4865 false
+
+(div2,Node (Node (Leaf (),1,Leaf ()),2,Node (Leaf (),2,Leaf ()))) -> Node (Node (Leaf (),0,Leaf ()),1,Node (Leaf (),1,Leaf ()));
+(div2,Node (Leaf (),0,Node (Node (Leaf (),2,Leaf ()),1,Leaf ()))) -> Node (Leaf (),0,Node (Node (Leaf (),1,Leaf ()),0,Leaf ()));
+(inc,Node (Leaf (),0,Node (Leaf (),0,Leaf ()))) -> Node (Leaf (),1,Node (Leaf (),1,Leaf ()));
+(div2, Leaf ()) -> Leaf ();
+
+=================================
+start synthesis with ((mode SyRup) (atomicSize 3) (matchDepth 1) (ctorDepth 0) (condWidth 1)
+ (totalHeight 0))
+VSA done
+fix f0.fun (x0, x1).
+  match (x1) with
+  | Leaf -> x1
+  | Node(v1,l1,r1) ->
+    ( Node (x0 v1)
+      (f0 ( x0, l1 ))
+      (f0 ( x0, r1 )) )
+  
+0.2513 true
+
+(div2,Node (Node (Node (Leaf (),1,Leaf ()),3,Leaf ()),1,Leaf ())) -> Node (Node (Node (Leaf (),0,Leaf ()),1,Leaf ()),0,Leaf ());
+(div2,Node (Node (Node (Leaf (),0,Leaf ()),0,Leaf ()),0,Leaf ())) -> Node (Node (Node (Leaf (),0,Leaf ()),0,Leaf ()),0,Leaf ());
+(div2,Node (Node (Leaf (),3,Node (Leaf (),0,Leaf ())),2,Leaf ())) -> Node (Node (Leaf (),1,Node (Leaf (),0,Leaf ())),1,Leaf ());
+(div2, Leaf ()) -> Leaf ();
+
+=================================
+start synthesis with ((mode SyRup) (atomicSize 3) (matchDepth 1) (ctorDepth 0) (condWidth 1)
+ (totalHeight 0))
+VSA done
+fix f0.fun (x0, x1).
+  match (x1) with
+  | Leaf -> x1
+  | Node(v1,l1,r1) ->
+    ( Node (div2 v1)
+      (f0 ( x0, l1 )) r1
+      )
+  
+1.4900 false
+
+(inc,Node (Leaf (),1,Node (Node (Leaf (),0,Leaf ()),1,Leaf ()))) -> Node (Leaf (),2,Node (Node (Leaf (),1,Leaf ()),2,Leaf ()));
+(inc,Node (Leaf (),1,Node (Leaf (),3,Leaf ()))) -> Node (Leaf (),2,Node (Leaf (),4,Leaf ()));
+(div2,Node (Leaf (),0,Node (Leaf (),0,Leaf ()))) -> Node (Leaf (),0,Node (Leaf (),0,Leaf ()));
+(div2, Leaf ()) -> Leaf ();
+
+=================================
+start synthesis with ((mode SyRup) (atomicSize 3) (matchDepth 1) (ctorDepth 0) (condWidth 1)
+ (totalHeight 0))
+VSA done
+fix f0.fun (x0, x1).
+  match (x1) with
+  | Leaf -> x1
+  | Node(v1,l1,r1) ->
+    ( Node (x0 v1)
+      (f0 ( x0, l1 ))
+      (f0 ( x0, r1 )) )
+  
+0.2468 true
+
+(inc,Node (Leaf (),3,Node (Leaf (),0,Node (Leaf (),0,Leaf ())))) -> Node (Leaf (),4,Node (Leaf (),1,Node (Leaf (),1,Leaf ())));
+(div2,Node (Node (Node (Leaf (),2,Leaf ()),2,Leaf ()),1,Leaf ())) -> Node (Node (Node (Leaf (),1,Leaf ()),1,Leaf ()),0,Leaf ());
+(inc,Node (Leaf (),3,Leaf ())) -> Node (Leaf (),4,Leaf ());
+(div2, Leaf ()) -> Leaf ();
+
+=================================
+start synthesis with ((mode SyRup) (atomicSize 3) (matchDepth 1) (ctorDepth 0) (condWidth 1)
+ (totalHeight 0))
+VSA done
+fix f0.fun (x0, x1).
+  match (x1) with
+  | Leaf -> x1
+  | Node(v1,l1,r1) ->
+    ( Node (x0 v1)
+      (f0 ( x0, l1 ))
+      (f0 ( x0, r1 )) )
+  
+0.1194 true
+
+(inc,Node (Node (Leaf (),3,Leaf ()),3,Node (Leaf (),0,Leaf ()))) -> Node (Node (Leaf (),4,Leaf ()),4,Node (Leaf (),1,Leaf ()));
+(div2,Node (Leaf (),1,Node (Leaf (),1,Node (Leaf (),0,Leaf ())))) -> Node (Leaf (),0,Node (Leaf (),0,Node (Leaf (),0,Leaf ())));
+(div2,Node (Node (Leaf (),1,Node (Leaf (),3,Leaf ())),2,Leaf ())) -> Node (Node (Leaf (),0,Node (Leaf (),1,Leaf ())),1,Leaf ());
+(div2, Leaf ()) -> Leaf ();
+
+=================================
+start synthesis with ((mode SyRup) (atomicSize 3) (matchDepth 1) (ctorDepth 0) (condWidth 1)
+ (totalHeight 0))
+VSA done
+fix f0.fun (x0, x1).
+  match (x1) with
+  | Leaf -> x1
+  | Node(v1,l1,r1) ->
+    ( Node (x0 v1)
+      (f0 ( x0, l1 ))
+      (f0 ( x0, r1 )) )
+  
+1.3920 true
+
+(div2,Node (Leaf (),2,Node (Node (Leaf (),2,Leaf ()),1,Leaf ()))) -> Node (Leaf (),1,Node (Node (Leaf (),1,Leaf ()),0,Leaf ()));
+(div2,Node (Node (Node (Leaf (),3,Leaf ()),2,Leaf ()),3,Leaf ())) -> Node (Node (Node (Leaf (),1,Leaf ()),1,Leaf ()),1,Leaf ());
+(inc,Node (Leaf (),3,Leaf ())) -> Node (Leaf (),4,Leaf ());
+(div2, Leaf ()) -> Leaf ();
+
+=================================
+start synthesis with ((mode SyRup) (atomicSize 3) (matchDepth 1) (ctorDepth 0) (condWidth 1)
+ (totalHeight 0))
+VSA done
+fix f0.fun (x0, x1).
+  match (x1) with
+  | Leaf -> x1
+  | Node(v1,l1,r1) ->
+    ( Node (x0 v1)
+      (f0 ( x0, l1 ))
+      (f0 ( x0, r1 )) )
+  
+0.1277 true
+
+(div2,Node (Node (Leaf (),3,Leaf ()),2,Leaf ())) -> Node (Node (Leaf (),1,Leaf ()),1,Leaf ());
+(div2,Node (Leaf (),0,Node (Leaf (),3,Node (Leaf (),3,Leaf ())))) -> Node (Leaf (),0,Node (Leaf (),1,Node (Leaf (),1,Leaf ())));
+(inc,Node (Node (Leaf (),0,Node (Leaf (),0,Leaf ())),1,Leaf ())) -> Node (Node (Leaf (),1,Node (Leaf (),1,Leaf ())),2,Leaf ());
+(div2, Leaf ()) -> Leaf ();
+
+=================================
+start synthesis with ((mode SyRup) (atomicSize 3) (matchDepth 1) (ctorDepth 0) (condWidth 1)
+ (totalHeight 0))
+VSA done
+fix f0.fun (x0, x1).
+  match (x1) with
+  | Leaf -> x1
+  | Node(v1,l1,r1) ->
+    ( Node (x0 v1)
+      (f0 ( x0, l1 ))
+      (f0 ( x0, r1 )) )
+  
+0.4194 true
+
+(inc,Node (Node (Leaf (),0,Leaf ()),0,Node (Leaf (),2,Leaf ()))) -> Node (Node (Leaf (),1,Leaf ()),1,Node (Leaf (),3,Leaf ()));
+(div2,Node (Node (Node (Leaf (),3,Leaf ()),0,Leaf ()),1,Leaf ())) -> Node (Node (Node (Leaf (),1,Leaf ()),0,Leaf ()),0,Leaf ());
+(div2,Node (Node (Leaf (),3,Leaf ()),2,Node (Leaf (),1,Leaf ()))) -> Node (Node (Leaf (),1,Leaf ()),1,Node (Leaf (),0,Leaf ()));
+(div2,Node (Leaf (),0,Leaf ())) -> Node (Leaf (),0,Leaf ());
+(div2, Leaf ()) -> Leaf ();
+
+=================================
+start synthesis with ((mode SyRup) (atomicSize 3) (matchDepth 1) (ctorDepth 0) (condWidth 1)
+ (totalHeight 0))
+VSA done
+fix f0.fun (x0, x1).
+  match (x1) with
+  | Leaf -> x1
+  | Node(v1,l1,r1) ->
+    ( Node (x0 v1)
+      (f0 ( x0, l1 ))
+      (f0 ( x0, r1 )) )
+  
+1.7821 true
+
+(inc,Node (Leaf (),0,Node (Leaf (),2,Node (Leaf (),0,Leaf ())))) -> Node (Leaf (),1,Node (Leaf (),3,Node (Leaf (),1,Leaf ())));
+(inc,Node (Leaf (),3,Node (Leaf (),0,Leaf ()))) -> Node (Leaf (),4,Node (Leaf (),1,Leaf ()));
+(inc,Node (Leaf (),2,Node (Leaf (),3,Node (Leaf (),1,Leaf ())))) -> Node (Leaf (),3,Node (Leaf (),4,Node (Leaf (),2,Leaf ())));
+(div2,Node (Leaf (),0,Node (Leaf (),1,Leaf ()))) -> Node (Leaf (),0,Node (Leaf (),0,Leaf ()));
+(div2, Leaf ()) -> Leaf ();
+
+=================================
+start synthesis with ((mode SyRup) (atomicSize 3) (matchDepth 1) (ctorDepth 0) (condWidth 1)
+ (totalHeight 0))
+VSA done
+fix f0.fun (x0, x1).
+  match (x1) with
+  | Leaf -> x1
+  | Node(v1,l1,r1) ->
+    ( Node (x0 v1) l1
+      (f0 ( x0, r1 )) )
+  
+5.2608 false
+
+(inc,Node (Leaf (),0,Node (Node (Leaf (),1,Leaf ()),1,Leaf ()))) -> Node (Leaf (),1,Node (Node (Leaf (),2,Leaf ()),2,Leaf ()));
+(inc,Node (Leaf (),0,Node (Leaf (),0,Leaf ()))) -> Node (Leaf (),1,Node (Leaf (),1,Leaf ()));
+(div2,Node (Leaf (),1,Leaf ())) -> Node (Leaf (),0,Leaf ());
+(inc,Node (Node (Leaf (),3,Node (Leaf (),2,Leaf ())),0,Leaf ())) -> Node (Node (Leaf (),4,Node (Leaf (),3,Leaf ())),1,Leaf ());
+(div2, Leaf ()) -> Leaf ();
+
+=================================
+start synthesis with ((mode SyRup) (atomicSize 3) (matchDepth 1) (ctorDepth 0) (condWidth 1)
+ (totalHeight 0))
+VSA done
+fix f0.fun (x0, x1).
+  match (x1) with
+  | Leaf -> x1
+  | Node(v1,l1,r1) ->
+    ( Node (x0 v1)
+      (f0 ( x0, l1 ))
+      (f0 ( x0, r1 )) )
+  
+3.2657 true
+
+(inc,Node (Leaf (),3,Leaf ())) -> Node (Leaf (),4,Leaf ());
+(inc,Node (Leaf (),0,Leaf ())) -> Node (Leaf (),1,Leaf ());
+(inc,Node (Leaf (),2,Node (Leaf (),3,Node (Leaf (),1,Leaf ())))) -> Node (Leaf (),3,Node (Leaf (),4,Node (Leaf (),2,Leaf ())));
+(inc,Node (Node (Leaf (),2,Node (Leaf (),1,Leaf ())),1,Leaf ())) -> Node (Node (Leaf (),3,Node (Leaf (),2,Leaf ())),2,Leaf ());
+(div2, Leaf ()) -> Leaf ();
+
+=================================
+start synthesis with ((mode SyRup) (atomicSize 3) (matchDepth 1) (ctorDepth 0) (condWidth 1)
+ (totalHeight 0))
+VSA done
+fix f0.fun (x0, x1).
+  match (x1) with
+  | Leaf -> x1
+  | Node(v1,l1,r1) ->
+    ( Node (inc v1)
+      (f0 ( x0, l1 ))
+      (f0 ( x0, r1 )) )
+  
+0.5381 false
+
+(inc,Node (Node (Leaf (),0,Leaf ()),0,Node (Leaf (),1,Leaf ()))) -> Node (Node (Leaf (),1,Leaf ()),1,Node (Leaf (),2,Leaf ()));
+(inc,Node (Node (Leaf (),2,Leaf ()),2,Node (Leaf (),3,Leaf ()))) -> Node (Node (Leaf (),3,Leaf ()),3,Node (Leaf (),4,Leaf ()));
+(inc,Node (Node (Node (Leaf (),0,Leaf ()),2,Leaf ()),1,Leaf ())) -> Node (Node (Node (Leaf (),1,Leaf ()),3,Leaf ()),2,Leaf ());
+(inc,Node (Leaf (),2,Node (Leaf (),1,Node (Leaf (),3,Leaf ())))) -> Node (Leaf (),3,Node (Leaf (),2,Node (Leaf (),4,Leaf ())));
+(div2, Leaf ()) -> Leaf ();
+
+=================================
+start synthesis with ((mode SyRup) (atomicSize 3) (matchDepth 1) (ctorDepth 0) (condWidth 1)
+ (totalHeight 0))
+VSA done
+fix f0.fun (x0, x1).
+  match (x1) with
+  | Leaf -> x1
+  | Node(v1,l1,r1) ->
+    ( Node (inc v1)
+      (f0 ( x0, l1 ))
+      (f0 ( x0, r1 )) )
+  
+39.6582 false
+
+(inc,Node (Leaf (),0,Node (Node (Leaf (),2,Leaf ()),1,Leaf ()))) -> Node (Leaf (),1,Node (Node (Leaf (),3,Leaf ()),2,Leaf ()));
+(div2,Node (Node (Leaf (),1,Leaf ()),0,Node (Leaf (),3,Leaf ()))) -> Node (Node (Leaf (),0,Leaf ()),0,Node (Leaf (),1,Leaf ()));
+(div2,Node (Leaf (),1,Node (Leaf (),1,Node (Leaf (),3,Leaf ())))) -> Node (Leaf (),0,Node (Leaf (),0,Node (Leaf (),1,Leaf ())));
+(div2,Node (Node (Leaf (),2,Leaf ()),1,Leaf ())) -> Node (Node (Leaf (),1,Leaf ()),0,Leaf ());
+(div2, Leaf ()) -> Leaf ();
+
+=================================
+start synthesis with ((mode SyRup) (atomicSize 3) (matchDepth 1) (ctorDepth 0) (condWidth 1)
+ (totalHeight 0))
+VSA done
+fix f0.fun (x0, x1).
+  match (x1) with
+  | Leaf -> x1
+  | Node(v1,l1,r1) ->
+    ( Node (x0 v1)
+      (f0 ( x0, l1 ))
+      (f0 ( x0, r1 )) )
+  
+8.6373 true
+
+(inc,Node (Node (Leaf (),0,Node (Leaf (),0,Leaf ())),1,Leaf ())) -> Node (Node (Leaf (),1,Node (Leaf (),1,Leaf ())),2,Leaf ());
+(div2,Node (Node (Leaf (),3,Node (Leaf (),1,Leaf ())),3,Leaf ())) -> Node (Node (Leaf (),1,Node (Leaf (),0,Leaf ())),1,Leaf ());
+(div2,Node (Leaf (),0,Leaf ())) -> Node (Leaf (),0,Leaf ());
+(div2,Node (Leaf (),0,Node (Leaf (),3,Leaf ()))) -> Node (Leaf (),0,Node (Leaf (),1,Leaf ()));
+(div2, Leaf ()) -> Leaf ();
+
+=================================
+start synthesis with ((mode SyRup) (atomicSize 3) (matchDepth 1) (ctorDepth 0) (condWidth 1)
+ (totalHeight 0))
+VSA done
+fix f0.fun (x0, x1).
+  match (x1) with
+  | Leaf -> x1
+  | Node(v1,l1,r1) ->
+    ( Node (x0 v1)
+      (f0 ( x0, l1 ))
+      (f0 ( x0, r1 )) )
+  
+1.8661 true
+
+(inc,Node (Node (Leaf (),2,Leaf ()),3,Node (Leaf (),3,Leaf ()))) -> Node (Node (Leaf (),3,Leaf ()),4,Node (Leaf (),4,Leaf ()));
+(div2,Node (Node (Leaf (),2,Node (Leaf (),0,Leaf ())),3,Leaf ())) -> Node (Node (Leaf (),1,Node (Leaf (),0,Leaf ())),1,Leaf ());
+(div2,Node (Node (Node (Leaf (),3,Leaf ()),0,Leaf ()),1,Leaf ())) -> Node (Node (Node (Leaf (),1,Leaf ()),0,Leaf ()),0,Leaf ());
+(div2,Node (Node (Leaf (),2,Leaf ()),0,Node (Leaf (),3,Leaf ()))) -> Node (Node (Leaf (),1,Leaf ()),0,Node (Leaf (),1,Leaf ()));
+(div2, Leaf ()) -> Leaf ();
+
+=================================
+start synthesis with ((mode SyRup) (atomicSize 3) (matchDepth 1) (ctorDepth 0) (condWidth 1)
+ (totalHeight 0))
+VSA done
+fix f0.fun (x0, x1).
+  match (x1) with
+  | Leaf -> x1
+  | Node(v1,l1,r1) ->
+    ( Node (x0 v1)
+      (f0 ( x0, l1 ))
+      (f0 ( x0, r1 )) )
+  
+16.2893 true
+
+(div2,Node (Leaf (),3,Node (Leaf (),3,Node (Leaf (),3,Leaf ())))) -> Node (Leaf (),1,Node (Leaf (),1,Node (Leaf (),1,Leaf ())));
+(div2,Node (Node (Leaf (),2,Leaf ()),0,Node (Leaf (),3,Leaf ()))) -> Node (Node (Leaf (),1,Leaf ()),0,Node (Leaf (),1,Leaf ()));
+(div2,Node (Node (Leaf (),3,Leaf ()),3,Leaf ())) -> Node (Node (Leaf (),1,Leaf ()),1,Leaf ());
+(div2,Node (Leaf (),2,Node (Leaf (),1,Leaf ()))) -> Node (Leaf (),1,Node (Leaf (),0,Leaf ()));
+(div2, Leaf ()) -> Leaf ();
+
+=================================
+start synthesis with ((mode SyRup) (atomicSize 3) (matchDepth 1) (ctorDepth 0) (condWidth 1)
+ (totalHeight 0))
+VSA done
+fix f0.fun (x0, x1).
+  match (x1) with
+  | Leaf -> x1
+  | Node(v1,l1,r1) ->
+    ( Node (div2 v1)
+      (f0 ( x0, l1 ))
+      (f0 ( x0, r1 )) )
+  
+1.7368 false
+
+(div2,Node (Leaf (),0,Node (Node (Leaf (),0,Leaf ()),0,Leaf ()))) -> Node (Leaf (),0,Node (Node (Leaf (),0,Leaf ()),0,Leaf ()));
+(inc,Node (Node (Leaf (),0,Leaf ()),3,Node (Leaf (),0,Leaf ()))) -> Node (Node (Leaf (),1,Leaf ()),4,Node (Leaf (),1,Leaf ()));
+(div2,Node (Leaf (),1,Leaf ())) -> Node (Leaf (),0,Leaf ());
+(inc,Node (Leaf (),0,Node (Leaf (),0,Node (Leaf (),0,Leaf ())))) -> Node (Leaf (),1,Node (Leaf (),1,Node (Leaf (),1,Leaf ())));
+(div2, Leaf ()) -> Leaf ();
+
+=================================
+start synthesis with ((mode SyRup) (atomicSize 3) (matchDepth 1) (ctorDepth 0) (condWidth 1)
+ (totalHeight 0))
+VSA done
+fix f0.fun (x0, x1).
+  match (x1) with
+  | Leaf -> x1
+  | Node(v1,l1,r1) ->
+    ( Node (x0 v1)
+      (f0 ( x0, l1 ))
+      (f0 ( x0, r1 )) )
+  
+0.8385 true
+
+(div2,Node (Node (Leaf (),1,Leaf ()),1,Node (Leaf (),1,Leaf ()))) -> Node (Node (Leaf (),0,Leaf ()),0,Node (Leaf (),0,Leaf ()));
+(inc,Node (Node (Node (Leaf (),2,Leaf ()),1,Leaf ()),3,Leaf ())) -> Node (Node (Node (Leaf (),3,Leaf ()),2,Leaf ()),4,Leaf ());
+(div2,Node (Leaf (),3,Node (Leaf (),3,Node (Leaf (),3,Leaf ())))) -> Node (Leaf (),1,Node (Leaf (),1,Node (Leaf (),1,Leaf ())));
+(div2,Node (Node (Leaf (),2,Node (Leaf (),0,Leaf ())),1,Leaf ())) -> Node (Node (Leaf (),1,Node (Leaf (),0,Leaf ())),0,Leaf ());
+(inc,Node (Node (Node (Leaf (),1,Leaf ()),3,Leaf ()),1,Leaf ())) -> Node (Node (Node (Leaf (),2,Leaf ()),4,Leaf ()),2,Leaf ());
+(div2, Leaf ()) -> Leaf ();
+
+=================================
+b'start synthesis with ((mode SyRup) (atomicSize 3) (matchDepth 1) (ctorDepth 0) (condWidth 1)\n (totalHeight 0))\n'
+(div2,Node (Node (Node (Leaf (),2,Leaf ()),2,Leaf ()),3,Leaf ())) -> Node (Node (Node (Leaf (),1,Leaf ()),1,Leaf ()),1,Leaf ());
+(inc,Node (Node (Leaf (),1,Leaf ()),2,Node (Leaf (),0,Leaf ()))) -> Node (Node (Leaf (),2,Leaf ()),3,Node (Leaf (),1,Leaf ()));
+(div2,Node (Node (Leaf (),1,Leaf ()),0,Node (Leaf (),1,Leaf ()))) -> Node (Node (Leaf (),0,Leaf ()),0,Node (Leaf (),0,Leaf ()));
+(inc,Node (Node (Leaf (),0,Leaf ()),3,Leaf ())) -> Node (Node (Leaf (),1,Leaf ()),4,Leaf ());
+(div2,Node (Leaf (),0,Node (Leaf (),1,Leaf ()))) -> Node (Leaf (),0,Node (Leaf (),0,Leaf ()));
+(div2, Leaf ()) -> Leaf ();
+
+=================================
+start synthesis with ((mode SyRup) (atomicSize 3) (matchDepth 1) (ctorDepth 0) (condWidth 1)
+ (totalHeight 0))
+VSA done
+fix f0.fun (x0, x1).
+  match (x1) with
+  | Leaf -> x1
+  | Node(v1,l1,r1) ->
+    ( Node (x0 v1)
+      (f0 ( x0, l1 ))
+      (f0 ( x0, r1 )) )
+  
+13.9454 true
+
+(div2,Node (Node (Leaf (),0,Leaf ()),3,Leaf ())) -> Node (Node (Leaf (),0,Leaf ()),1,Leaf ());
+(div2,Node (Node (Leaf (),3,Node (Leaf (),1,Leaf ())),2,Leaf ())) -> Node (Node (Leaf (),1,Node (Leaf (),0,Leaf ())),1,Leaf ());
+(inc,Node (Node (Node (Leaf (),1,Leaf ()),0,Leaf ()),1,Leaf ())) -> Node (Node (Node (Leaf (),2,Leaf ()),1,Leaf ()),2,Leaf ());
+(inc,Node (Leaf (),0,Leaf ())) -> Node (Leaf (),1,Leaf ());
+(div2,Node (Node (Leaf (),3,Leaf ()),2,Leaf ())) -> Node (Node (Leaf (),1,Leaf ()),1,Leaf ());
+(div2, Leaf ()) -> Leaf ();
+
+=================================
+start synthesis with ((mode SyRup) (atomicSize 3) (matchDepth 1) (ctorDepth 0) (condWidth 1)
+ (totalHeight 0))
+VSA done
+fix f0.fun (x0, x1).
+  match (x1) with
+  | Leaf -> x1
+  | Node(v1,l1,r1) ->
+    ( Node (x0 v1)
+      (f0 ( x0, l1 ))
+      (f0 ( x0, r1 )) )
+  
+19.2767 true
+
+(div2,Node (Node (Node (Leaf (),1,Leaf ()),2,Leaf ()),2,Leaf ())) -> Node (Node (Node (Leaf (),0,Leaf ()),1,Leaf ()),1,Leaf ());
+(inc,Node (Node (Node (Leaf (),1,Leaf ()),2,Leaf ()),0,Leaf ())) -> Node (Node (Node (Leaf (),2,Leaf ()),3,Leaf ()),1,Leaf ());
+(inc,Node (Leaf (),0,Node (Node (Leaf (),0,Leaf ()),3,Leaf ()))) -> Node (Leaf (),1,Node (Node (Leaf (),1,Leaf ()),4,Leaf ()));
+(div2,Node (Node (Leaf (),0,Leaf ()),3,Node (Leaf (),1,Leaf ()))) -> Node (Node (Leaf (),0,Leaf ()),1,Node (Leaf (),0,Leaf ()));
+(inc,Node (Node (Node (Leaf (),2,Leaf ()),0,Leaf ()),1,Leaf ())) -> Node (Node (Node (Leaf (),3,Leaf ()),1,Leaf ()),2,Leaf ());
+(div2, Leaf ()) -> Leaf ();
+
+=================================
+b'start synthesis with ((mode SyRup) (atomicSize 3) (matchDepth 1) (ctorDepth 0) (condWidth 1)\n (totalHeight 0))\n'
+(inc,Node (Node (Leaf (),1,Node (Leaf (),3,Leaf ())),3,Leaf ())) -> Node (Node (Leaf (),2,Node (Leaf (),4,Leaf ())),4,Leaf ());
+(inc,Node (Leaf (),2,Node (Node (Leaf (),3,Leaf ()),3,Leaf ()))) -> Node (Leaf (),3,Node (Node (Leaf (),4,Leaf ()),4,Leaf ()));
+(inc,Node (Node (Leaf (),1,Leaf ()),1,Leaf ())) -> Node (Node (Leaf (),2,Leaf ()),2,Leaf ());
+(inc,Node (Leaf (),3,Node (Leaf (),3,Leaf ()))) -> Node (Leaf (),4,Node (Leaf (),4,Leaf ()));
+(inc,Node (Leaf (),3,Node (Leaf (),1,Leaf ()))) -> Node (Leaf (),4,Node (Leaf (),2,Leaf ()));
+(div2, Leaf ()) -> Leaf ();
+
+=================================
+start synthesis with ((mode SyRup) (atomicSize 3) (matchDepth 1) (ctorDepth 0) (condWidth 1)
+ (totalHeight 0))
+VSA done
+fix f0.fun (x0, x1).
+  match (x1) with
+  | Leaf -> x1
+  | Node(v1,l1,r1) ->
+    ( Node (inc v1)
+      (f0 ( x0, l1 ))
+      (f0 ( x0, r1 )) )
+  
+68.3402 false
+
+(div2,Node (Node (Node (Leaf (),3,Leaf ()),0,Leaf ()),1,Leaf ())) -> Node (Node (Node (Leaf (),1,Leaf ()),0,Leaf ()),0,Leaf ());
+(div2,Node (Leaf (),3,Leaf ())) -> Node (Leaf (),1,Leaf ());
+(inc,Node (Leaf (),3,Node (Leaf (),3,Leaf ()))) -> Node (Leaf (),4,Node (Leaf (),4,Leaf ()));
+(inc,Node (Node (Leaf (),3,Node (Leaf (),0,Leaf ())),0,Leaf ())) -> Node (Node (Leaf (),4,Node (Leaf (),1,Leaf ())),1,Leaf ());
+(div2,Node (Node (Leaf (),2,Leaf ()),2,Node (Leaf (),1,Leaf ()))) -> Node (Node (Leaf (),1,Leaf ()),1,Node (Leaf (),0,Leaf ()));
+(div2, Leaf ()) -> Leaf ();
+
+=================================
+start synthesis with ((mode SyRup) (atomicSize 3) (matchDepth 1) (ctorDepth 0) (condWidth 1)
+ (totalHeight 0))
+VSA done
+fix f0.fun (x0, x1).
+  match (x1) with
+  | Leaf -> x1
+  | Node(v1,l1,r1) ->
+    ( Node (x0 v1)
+      (f0 ( x0, l1 ))
+      (f0 ( x0, r1 )) )
+  
+22.1687 true
+
+(inc,Node (Leaf (),0,Node (Leaf (),2,Leaf ()))) -> Node (Leaf (),1,Node (Leaf (),3,Leaf ()));
+(inc,Node (Leaf (),0,Node (Leaf (),0,Leaf ()))) -> Node (Leaf (),1,Node (Leaf (),1,Leaf ()));
+(inc,Node (Leaf (),2,Leaf ())) -> Node (Leaf (),3,Leaf ());
+(inc,Node (Node (Leaf (),2,Leaf ()),3,Node (Leaf (),3,Leaf ()))) -> Node (Node (Leaf (),3,Leaf ()),4,Node (Leaf (),4,Leaf ()));
+(div2,Node (Node (Leaf (),0,Node (Leaf (),2,Leaf ())),3,Leaf ())) -> Node (Node (Leaf (),0,Node (Leaf (),1,Leaf ())),1,Leaf ());
+(div2, Leaf ()) -> Leaf ();
+
+=================================
+start synthesis with ((mode SyRup) (atomicSize 3) (matchDepth 1) (ctorDepth 0) (condWidth 1)
+ (totalHeight 0))
+VSA done
+fix f0.fun (x0, x1).
+  match (x1) with
+  | Leaf -> x1
+  | Node(v1,l1,r1) ->
+    ( Node (x0 v1)
+      (f0 ( x0, l1 ))
+      (f0 ( x0, r1 )) )
+  
+4.2317 true
+
+(inc,Node (Node (Node (Leaf (),2,Leaf ()),1,Leaf ()),1,Leaf ())) -> Node (Node (Node (Leaf (),3,Leaf ()),2,Leaf ()),2,Leaf ());
+(div2,Node (Leaf (),0,Leaf ())) -> Node (Leaf (),0,Leaf ());
+(inc,Node (Leaf (),2,Node (Leaf (),3,Leaf ()))) -> Node (Leaf (),3,Node (Leaf (),4,Leaf ()));
+(div2,Node (Node (Leaf (),2,Leaf ()),2,Node (Leaf (),2,Leaf ()))) -> Node (Node (Leaf (),1,Leaf ()),1,Node (Leaf (),1,Leaf ()));
+(div2,Node (Leaf (),3,Node (Node (Leaf (),3,Leaf ()),1,Leaf ()))) -> Node (Leaf (),1,Node (Node (Leaf (),1,Leaf ()),0,Leaf ()));
+(div2, Leaf ()) -> Leaf ();
+
+=================================
+start synthesis with ((mode SyRup) (atomicSize 3) (matchDepth 1) (ctorDepth 0) (condWidth 1)
+ (totalHeight 0))
+VSA done
+fix f0.fun (x0, x1).
+  match (x1) with
+  | Leaf -> x1
+  | Node(v1,l1,r1) ->
+    ( Node (x0 v1)
+      (f0 ( x0, l1 ))
+      (f0 ( x0, r1 )) )
+  
+11.5094 true
+
+(inc,Node (Node (Node (Leaf (),1,Leaf ()),3,Leaf ()),1,Leaf ())) -> Node (Node (Node (Leaf (),2,Leaf ()),4,Leaf ()),2,Leaf ());
+(div2,Node (Leaf (),1,Node (Node (Leaf (),2,Leaf ()),1,Leaf ()))) -> Node (Leaf (),0,Node (Node (Leaf (),1,Leaf ()),0,Leaf ()));
+(inc,Node (Node (Leaf (),3,Node (Leaf (),3,Leaf ())),2,Leaf ())) -> Node (Node (Leaf (),4,Node (Leaf (),4,Leaf ())),3,Leaf ());
+(div2,Node (Leaf (),2,Node (Leaf (),3,Leaf ()))) -> Node (Leaf (),1,Node (Leaf (),1,Leaf ()));
+(div2,Node (Node (Leaf (),1,Leaf ()),2,Leaf ())) -> Node (Node (Leaf (),0,Leaf ()),1,Leaf ());
+(div2, Leaf ()) -> Leaf ();
+
+=================================
+b'start synthesis with ((mode SyRup) (atomicSize 3) (matchDepth 1) (ctorDepth 0) (condWidth 1)\n (totalHeight 0))\n'
+(div2,Node (Node (Leaf (),2,Node (Leaf (),0,Leaf ())),0,Leaf ())) -> Node (Node (Leaf (),1,Node (Leaf (),0,Leaf ())),0,Leaf ());
+(inc,Node (Leaf (),1,Node (Leaf (),3,Leaf ()))) -> Node (Leaf (),2,Node (Leaf (),4,Leaf ()));
+(div2,Node (Node (Node (Leaf (),1,Leaf ()),0,Leaf ()),1,Leaf ())) -> Node (Node (Node (Leaf (),0,Leaf ()),0,Leaf ()),0,Leaf ());
+(inc,Node (Node (Leaf (),1,Leaf ()),3,Leaf ())) -> Node (Node (Leaf (),2,Leaf ()),4,Leaf ());
+(inc,Node (Node (Leaf (),3,Leaf ()),3,Leaf ())) -> Node (Node (Leaf (),4,Leaf ()),4,Leaf ());
+(div2, Leaf ()) -> Leaf ();
+
+=================================
+start synthesis with ((mode SyRup) (atomicSize 3) (matchDepth 1) (ctorDepth 0) (condWidth 1)
+ (totalHeight 0))
+VSA done
+fix f0.fun (x0, x1).
+  match (x1) with
+  | Leaf -> x1
+  | Node(v1,l1,r1) ->
+    ( Node (x0 v1)
+      (f0 ( x0, l1 ))
+      (f0 ( x0, r1 )) )
+  
+51.0680 true
+
+(inc,Node (Node (Node (Leaf (),1,Leaf ()),2,Leaf ()),3,Leaf ())) -> Node (Node (Node (Leaf (),2,Leaf ()),3,Leaf ()),4,Leaf ());
+(inc,Node (Leaf (),1,Node (Node (Leaf (),0,Leaf ()),3,Leaf ()))) -> Node (Leaf (),2,Node (Node (Leaf (),1,Leaf ()),4,Leaf ()));
+(div2,Node (Node (Leaf (),0,Node (Leaf (),1,Leaf ())),2,Leaf ())) -> Node (Node (Leaf (),0,Node (Leaf (),0,Leaf ())),1,Leaf ());
+(div2,Node (Node (Leaf (),1,Node (Leaf (),2,Leaf ())),0,Leaf ())) -> Node (Node (Leaf (),0,Node (Leaf (),1,Leaf ())),0,Leaf ());
+(inc,Node (Node (Leaf (),0,Leaf ()),3,Node (Leaf (),3,Leaf ()))) -> Node (Node (Leaf (),1,Leaf ()),4,Node (Leaf (),4,Leaf ()));
+(div2,Node (Leaf (),1,Node (Leaf (),2,Node (Leaf (),2,Leaf ())))) -> Node (Leaf (),0,Node (Leaf (),1,Node (Leaf (),1,Leaf ())));
+(div2, Leaf ()) -> Leaf ();
+
+=================================
+b'start synthesis with ((mode SyRup) (atomicSize 3) (matchDepth 1) (ctorDepth 0) (condWidth 1)\n (totalHeight 0))\n'
+(div2,Node (Node (Leaf (),0,Leaf ()),2,Node (Leaf (),2,Leaf ()))) -> Node (Node (Leaf (),0,Leaf ()),1,Node (Leaf (),1,Leaf ()));
+(inc,Node (Leaf (),1,Node (Leaf (),3,Leaf ()))) -> Node (Leaf (),2,Node (Leaf (),4,Leaf ()));
+(inc,Node (Leaf (),1,Node (Leaf (),3,Node (Leaf (),1,Leaf ())))) -> Node (Leaf (),2,Node (Leaf (),4,Node (Leaf (),2,Leaf ())));
+(div2,Node (Node (Leaf (),1,Leaf ()),3,Node (Leaf (),2,Leaf ()))) -> Node (Node (Leaf (),0,Leaf ()),1,Node (Leaf (),1,Leaf ()));
+(inc,Node (Node (Node (Leaf (),2,Leaf ()),1,Leaf ()),0,Leaf ())) -> Node (Node (Node (Leaf (),3,Leaf ()),2,Leaf ()),1,Leaf ());
+(inc,Node (Node (Leaf (),1,Leaf ()),2,Leaf ())) -> Node (Node (Leaf (),2,Leaf ()),3,Leaf ());
+(div2, Leaf ()) -> Leaf ();
+
+=================================
+b'start synthesis with ((mode SyRup) (atomicSize 3) (matchDepth 1) (ctorDepth 0) (condWidth 1)\n (totalHeight 0))\n'
+(inc,Node (Node (Node (Leaf (),0,Leaf ()),0,Leaf ()),0,Leaf ())) -> Node (Node (Node (Leaf (),1,Leaf ()),1,Leaf ()),1,Leaf ());
+(div2,Node (Node (Leaf (),2,Node (Leaf (),2,Leaf ())),0,Leaf ())) -> Node (Node (Leaf (),1,Node (Leaf (),1,Leaf ())),0,Leaf ());
+(div2,Node (Leaf (),1,Node (Node (Leaf (),2,Leaf ()),3,Leaf ()))) -> Node (Leaf (),0,Node (Node (Leaf (),1,Leaf ()),1,Leaf ()));
+(inc,Node (Leaf (),2,Leaf ())) -> Node (Leaf (),3,Leaf ());
+(inc,Node (Leaf (),3,Node (Leaf (),3,Node (Leaf (),0,Leaf ())))) -> Node (Leaf (),4,Node (Leaf (),4,Node (Leaf (),1,Leaf ())));
+(div2,Node (Leaf (),2,Leaf ())) -> Node (Leaf (),1,Leaf ());
+(div2, Leaf ()) -> Leaf ();
+
+=================================
+start synthesis with ((mode SyRup) (atomicSize 3) (matchDepth 1) (ctorDepth 0) (condWidth 1)
+ (totalHeight 0))
+VSA done
+fix f0.fun (x0, x1).
+  match (x1) with
+  | Leaf -> x1
+  | Node(v1,l1,r1) ->
+    ( Node (x0 v1)
+      (f0 ( x0, l1 ))
+      (f0 ( x0, r1 )) )
+  
+117.8645 true
+
+(inc,Node (Node (Leaf (),0,Leaf ()),3,Node (Leaf (),2,Leaf ()))) -> Node (Node (Leaf (),1,Leaf ()),4,Node (Leaf (),3,Leaf ()));
+(div2,Node (Node (Leaf (),1,Leaf ()),3,Node (Leaf (),2,Leaf ()))) -> Node (Node (Leaf (),0,Leaf ()),1,Node (Leaf (),1,Leaf ()));
+(inc,Node (Leaf (),2,Node (Node (Leaf (),3,Leaf ()),0,Leaf ()))) -> Node (Leaf (),3,Node (Node (Leaf (),4,Leaf ()),1,Leaf ()));
+(inc,Node (Node (Leaf (),0,Leaf ()),2,Leaf ())) -> Node (Node (Leaf (),1,Leaf ()),3,Leaf ());
+(inc,Node (Node (Leaf (),2,Leaf ()),2,Node (Leaf (),0,Leaf ()))) -> Node (Node (Leaf (),3,Leaf ()),3,Node (Leaf (),1,Leaf ()));
+(div2,Node (Node (Leaf (),1,Node (Leaf (),2,Leaf ())),0,Leaf ())) -> Node (Node (Leaf (),0,Node (Leaf (),1,Leaf ())),0,Leaf ());
+(div2, Leaf ()) -> Leaf ();
+
+=================================
+b'start synthesis with ((mode SyRup) (atomicSize 3) (matchDepth 1) (ctorDepth 0) (condWidth 1)\n (totalHeight 0))\n'
+(div2,Node (Node (Leaf (),3,Node (Leaf (),2,Leaf ())),0,Leaf ())) -> Node (Node (Leaf (),1,Node (Leaf (),1,Leaf ())),0,Leaf ());
+(inc,Node (Node (Leaf (),0,Leaf ()),1,Node (Leaf (),2,Leaf ()))) -> Node (Node (Leaf (),1,Leaf ()),2,Node (Leaf (),3,Leaf ()));
+(inc,Node (Node (Leaf (),1,Node (Leaf (),1,Leaf ())),3,Leaf ())) -> Node (Node (Leaf (),2,Node (Leaf (),2,Leaf ())),4,Leaf ());
+(div2,Node (Node (Leaf (),3,Leaf ()),1,Node (Leaf (),0,Leaf ()))) -> Node (Node (Leaf (),1,Leaf ()),0,Node (Leaf (),0,Leaf ()));
+(inc,Node (Leaf (),2,Node (Leaf (),2,Leaf ()))) -> Node (Leaf (),3,Node (Leaf (),3,Leaf ()));
+(inc,Node (Node (Leaf (),1,Node (Leaf (),2,Leaf ())),1,Leaf ())) -> Node (Node (Leaf (),2,Node (Leaf (),3,Leaf ())),2,Leaf ());
+(div2, Leaf ()) -> Leaf ();
+
+=================================
+b'start synthesis with ((mode SyRup) (atomicSize 3) (matchDepth 1) (ctorDepth 0) (condWidth 1)\n (totalHeight 0))\n'
+(div2,Node (Node (Leaf (),1,Node (Leaf (),0,Leaf ())),2,Leaf ())) -> Node (Node (Leaf (),0,Node (Leaf (),0,Leaf ())),1,Leaf ());
+(div2,Node (Node (Node (Leaf (),2,Leaf ()),3,Leaf ()),1,Leaf ())) -> Node (Node (Node (Leaf (),1,Leaf ()),1,Leaf ()),0,Leaf ());
+(inc,Node (Node (Node (Leaf (),2,Leaf ()),3,Leaf ()),1,Leaf ())) -> Node (Node (Node (Leaf (),3,Leaf ()),4,Leaf ()),2,Leaf ());
+(inc,Node (Node (Leaf (),2,Leaf ()),2,Leaf ())) -> Node (Node (Leaf (),3,Leaf ()),3,Leaf ());
+(inc,Node (Node (Leaf (),0,Leaf ()),1,Node (Leaf (),3,Leaf ()))) -> Node (Node (Leaf (),1,Leaf ()),2,Node (Leaf (),4,Leaf ()));
+(inc,Node (Leaf (),3,Node (Leaf (),0,Leaf ()))) -> Node (Leaf (),4,Node (Leaf (),1,Leaf ()));
+(div2, Leaf ()) -> Leaf ();
+
+=================================
+b'start synthesis with ((mode SyRup) (atomicSize 3) (matchDepth 1) (ctorDepth 0) (condWidth 1)\n (totalHeight 0))\n'
+(div2,Node (Leaf (),2,Node (Leaf (),2,Node (Leaf (),3,Leaf ())))) -> Node (Leaf (),1,Node (Leaf (),1,Node (Leaf (),1,Leaf ())));
+(div2,Node (Node (Leaf (),1,Leaf ()),0,Node (Leaf (),3,Leaf ()))) -> Node (Node (Leaf (),0,Leaf ()),0,Node (Leaf (),1,Leaf ()));
+(div2,Node (Node (Leaf (),3,Leaf ()),3,Node (Leaf (),0,Leaf ()))) -> Node (Node (Leaf (),1,Leaf ()),1,Node (Leaf (),0,Leaf ()));
+(inc,Node (Node (Leaf (),2,Leaf ()),1,Node (Leaf (),2,Leaf ()))) -> Node (Node (Leaf (),3,Leaf ()),2,Node (Leaf (),3,Leaf ()));
+(div2,Node (Leaf (),0,Node (Node (Leaf (),3,Leaf ()),3,Leaf ()))) -> Node (Leaf (),0,Node (Node (Leaf (),1,Leaf ()),1,Leaf ()));
+(inc,Node (Leaf (),3,Node (Node (Leaf (),0,Leaf ()),1,Leaf ()))) -> Node (Leaf (),4,Node (Node (Leaf (),1,Leaf ()),2,Leaf ()));
+(div2, Leaf ()) -> Leaf ();
+
+=================================
+b'start synthesis with ((mode SyRup) (atomicSize 3) (matchDepth 1) (ctorDepth 0) (condWidth 1)\n (totalHeight 0))\n'
+(inc,Node (Node (Leaf (),0,Leaf ()),2,Node (Leaf (),2,Leaf ()))) -> Node (Node (Leaf (),1,Leaf ()),3,Node (Leaf (),3,Leaf ()));
+(div2,Node (Node (Leaf (),3,Leaf ()),1,Leaf ())) -> Node (Node (Leaf (),1,Leaf ()),0,Leaf ());
+(inc,Node (Node (Leaf (),1,Leaf ()),2,Node (Leaf (),0,Leaf ()))) -> Node (Node (Leaf (),2,Leaf ()),3,Node (Leaf (),1,Leaf ()));
+(div2,Node (Node (Leaf (),2,Leaf ()),0,Node (Leaf (),2,Leaf ()))) -> Node (Node (Leaf (),1,Leaf ()),0,Node (Leaf (),1,Leaf ()));
+(inc,Node (Leaf (),1,Leaf ())) -> Node (Leaf (),2,Leaf ());
+(div2,Node (Node (Leaf (),0,Node (Leaf (),1,Leaf ())),0,Leaf ())) -> Node (Node (Leaf (),0,Node (Leaf (),0,Leaf ())),0,Leaf ());
+(div2, Leaf ()) -> Leaf ();
+
+=================================
+start synthesis with ((mode SyRup) (atomicSize 3) (matchDepth 1) (ctorDepth 0) (condWidth 1)
+ (totalHeight 0))
+VSA done
+fix f0.fun (x0, x1).
+  match (x1) with
+  | Leaf -> x1
+  | Node(v1,l1,r1) ->
+    ( Node (x0 v1)
+      (f0 ( x0, l1 ))
+      (f0 ( x0, r1 )) )
+  
+47.8028 true
+
+(inc,Node (Leaf (),0,Leaf ())) -> Node (Leaf (),1,Leaf ());
+(inc,Node (Node (Leaf (),2,Node (Leaf (),3,Leaf ())),2,Leaf ())) -> Node (Node (Leaf (),3,Node (Leaf (),4,Leaf ())),3,Leaf ());
+(div2,Node (Node (Leaf (),2,Leaf ()),2,Node (Leaf (),1,Leaf ()))) -> Node (Node (Leaf (),1,Leaf ()),1,Node (Leaf (),0,Leaf ()));
+(div2,Node (Node (Leaf (),3,Leaf ()),3,Node (Leaf (),0,Leaf ()))) -> Node (Node (Leaf (),1,Leaf ()),1,Node (Leaf (),0,Leaf ()));
+(inc,Node (Leaf (),1,Node (Leaf (),2,Node (Leaf (),0,Leaf ())))) -> Node (Leaf (),2,Node (Leaf (),3,Node (Leaf (),1,Leaf ())));
+(inc,Node (Node (Node (Leaf (),0,Leaf ()),1,Leaf ()),0,Leaf ())) -> Node (Node (Node (Leaf (),1,Leaf ()),2,Leaf ()),1,Leaf ());
+(div2, Leaf ()) -> Leaf ();
+
+=================================
+b'start synthesis with ((mode SyRup) (atomicSize 3) (matchDepth 1) (ctorDepth 0) (condWidth 1)\n (totalHeight 0))\n'
+(div2,Node (Leaf (),2,Leaf ())) -> Node (Leaf (),1,Leaf ());
+(div2,Node (Leaf (),2,Node (Node (Leaf (),0,Leaf ()),1,Leaf ()))) -> Node (Leaf (),1,Node (Node (Leaf (),0,Leaf ()),0,Leaf ()));
+(inc,Node (Node (Node (Leaf (),2,Leaf ()),2,Leaf ()),0,Leaf ())) -> Node (Node (Node (Leaf (),3,Leaf ()),3,Leaf ()),1,Leaf ());
+(div2,Node (Node (Leaf (),3,Leaf ()),3,Leaf ())) -> Node (Node (Leaf (),1,Leaf ()),1,Leaf ());
+(div2,Node (Node (Leaf (),0,Node (Leaf (),1,Leaf ())),2,Leaf ())) -> Node (Node (Leaf (),0,Node (Leaf (),0,Leaf ())),1,Leaf ());
+(inc,Node (Node (Leaf (),3,Node (Leaf (),1,Leaf ())),1,Leaf ())) -> Node (Node (Leaf (),4,Node (Leaf (),2,Leaf ())),2,Leaf ());
+(div2, Leaf ()) -> Leaf ();
+
+=================================
+b'start synthesis with ((mode SyRup) (atomicSize 3) (matchDepth 1) (ctorDepth 0) (condWidth 1)\n (totalHeight 0))\n'
+(inc,Node (Node (Leaf (),1,Node (Leaf (),0,Leaf ())),3,Leaf ())) -> Node (Node (Leaf (),2,Node (Leaf (),1,Leaf ())),4,Leaf ());
+(div2,Node (Leaf (),1,Leaf ())) -> Node (Leaf (),0,Leaf ());
+(inc,Node (Node (Leaf (),0,Node (Leaf (),1,Leaf ())),0,Leaf ())) -> Node (Node (Leaf (),1,Node (Leaf (),2,Leaf ())),1,Leaf ());
+(div2,Node (Leaf (),0,Node (Leaf (),3,Node (Leaf (),3,Leaf ())))) -> Node (Leaf (),0,Node (Leaf (),1,Node (Leaf (),1,Leaf ())));
+(inc,Node (Node (Leaf (),1,Node (Leaf (),3,Leaf ())),0,Leaf ())) -> Node (Node (Leaf (),2,Node (Leaf (),4,Leaf ())),1,Leaf ());
+(inc,Node (Node (Leaf (),2,Leaf ()),0,Node (Leaf (),2,Leaf ()))) -> Node (Node (Leaf (),3,Leaf ()),1,Node (Leaf (),3,Leaf ()));
+(inc,Node (Node (Leaf (),3,Node (Leaf (),1,Leaf ())),2,Leaf ())) -> Node (Node (Leaf (),4,Node (Leaf (),2,Leaf ())),3,Leaf ());
+(div2, Leaf ()) -> Leaf ();
+
+=================================
+b'start synthesis with ((mode SyRup) (atomicSize 3) (matchDepth 1) (ctorDepth 0) (condWidth 1)\n (totalHeight 0))\n'
+(div2,Node (Node (Leaf (),0,Leaf ()),1,Leaf ())) -> Node (Node (Leaf (),0,Leaf ()),0,Leaf ());
+(inc,Node (Node (Leaf (),1,Leaf ()),2,Leaf ())) -> Node (Node (Leaf (),2,Leaf ()),3,Leaf ());
+(div2,Node (Leaf (),3,Leaf ())) -> Node (Leaf (),1,Leaf ());
+(div2,Node (Node (Leaf (),2,Node (Leaf (),0,Leaf ())),1,Leaf ())) -> Node (Node (Leaf (),1,Node (Leaf (),0,Leaf ())),0,Leaf ());
+(inc,Node (Node (Leaf (),3,Leaf ()),2,Node (Leaf (),1,Leaf ()))) -> Node (Node (Leaf (),4,Leaf ()),3,Node (Leaf (),2,Leaf ()));
+(div2,Node (Leaf (),0,Node (Leaf (),3,Node (Leaf (),0,Leaf ())))) -> Node (Leaf (),0,Node (Leaf (),1,Node (Leaf (),0,Leaf ())));
+(div2,Node (Leaf (),0,Leaf ())) -> Node (Leaf (),0,Leaf ());
+(div2, Leaf ()) -> Leaf ();
+
+=================================
+b'start synthesis with ((mode SyRup) (atomicSize 3) (matchDepth 1) (ctorDepth 0) (condWidth 1)\n (totalHeight 0))\n'
+(div2,Node (Node (Leaf (),0,Node (Leaf (),1,Leaf ())),1,Leaf ())) -> Node (Node (Leaf (),0,Node (Leaf (),0,Leaf ())),0,Leaf ());
+(inc,Node (Node (Node (Leaf (),3,Leaf ()),1,Leaf ()),3,Leaf ())) -> Node (Node (Node (Leaf (),4,Leaf ()),2,Leaf ()),4,Leaf ());
+(div2,Node (Leaf (),2,Node (Leaf (),3,Node (Leaf (),1,Leaf ())))) -> Node (Leaf (),1,Node (Leaf (),1,Node (Leaf (),0,Leaf ())));
+(div2,Node (Node (Node (Leaf (),1,Leaf ()),2,Leaf ()),3,Leaf ())) -> Node (Node (Node (Leaf (),0,Leaf ()),1,Leaf ()),1,Leaf ());
+(div2,Node (Leaf (),0,Node (Node (Leaf (),3,Leaf ()),3,Leaf ()))) -> Node (Leaf (),0,Node (Node (Leaf (),1,Leaf ()),1,Leaf ()));
+(inc,Node (Node (Leaf (),1,Leaf ()),2,Leaf ())) -> Node (Node (Leaf (),2,Leaf ()),3,Leaf ());
+(inc,Node (Node (Node (Leaf (),1,Leaf ()),0,Leaf ()),2,Leaf ())) -> Node (Node (Node (Leaf (),2,Leaf ()),1,Leaf ()),3,Leaf ());
+(div2, Leaf ()) -> Leaf ();
+
+=================================
+b'start synthesis with ((mode SyRup) (atomicSize 3) (matchDepth 1) (ctorDepth 0) (condWidth 1)\n (totalHeight 0))\n'
+(inc,Node (Leaf (),1,Node (Leaf (),0,Node (Leaf (),2,Leaf ())))) -> Node (Leaf (),2,Node (Leaf (),1,Node (Leaf (),3,Leaf ())));
+(div2,Node (Node (Node (Leaf (),0,Leaf ()),0,Leaf ()),0,Leaf ())) -> Node (Node (Node (Leaf (),0,Leaf ()),0,Leaf ()),0,Leaf ());
+(inc,Node (Leaf (),2,Node (Leaf (),3,Leaf ()))) -> Node (Leaf (),3,Node (Leaf (),4,Leaf ()));
+(inc,Node (Leaf (),3,Node (Leaf (),3,Leaf ()))) -> Node (Leaf (),4,Node (Leaf (),4,Leaf ()));
+(div2,Node (Leaf (),0,Leaf ())) -> Node (Leaf (),0,Leaf ());
+(inc,Node (Node (Node (Leaf (),2,Leaf ()),2,Leaf ()),0,Leaf ())) -> Node (Node (Node (Leaf (),3,Leaf ()),3,Leaf ()),1,Leaf ());
+(inc,Node (Node (Leaf (),1,Node (Leaf (),1,Leaf ())),0,Leaf ())) -> Node (Node (Leaf (),2,Node (Leaf (),2,Leaf ())),1,Leaf ());
+(div2, Leaf ()) -> Leaf ();
+
+=================================
+b'start synthesis with ((mode SyRup) (atomicSize 3) (matchDepth 1) (ctorDepth 0) (condWidth 1)\n (totalHeight 0))\n'
+(inc,Node (Node (Leaf (),3,Leaf ()),0,Node (Leaf (),0,Leaf ()))) -> Node (Node (Leaf (),4,Leaf ()),1,Node (Leaf (),1,Leaf ()));
+(div2,Node (Node (Leaf (),1,Leaf ()),2,Leaf ())) -> Node (Node (Leaf (),0,Leaf ()),1,Leaf ());
+(inc,Node (Leaf (),1,Node (Leaf (),0,Node (Leaf (),2,Leaf ())))) -> Node (Leaf (),2,Node (Leaf (),1,Node (Leaf (),3,Leaf ())));
+(inc,Node (Node (Leaf (),1,Leaf ()),2,Node (Leaf (),3,Leaf ()))) -> Node (Node (Leaf (),2,Leaf ()),3,Node (Leaf (),4,Leaf ()));
+(inc,Node (Node (Leaf (),3,Node (Leaf (),0,Leaf ())),0,Leaf ())) -> Node (Node (Leaf (),4,Node (Leaf (),1,Leaf ())),1,Leaf ());
+(inc,Node (Node (Leaf (),0,Node (Leaf (),3,Leaf ())),3,Leaf ())) -> Node (Node (Leaf (),1,Node (Leaf (),4,Leaf ())),4,Leaf ());
+(inc,Node (Node (Node (Leaf (),2,Leaf ()),2,Leaf ()),0,Leaf ())) -> Node (Node (Node (Leaf (),3,Leaf ()),3,Leaf ()),1,Leaf ());
+(div2, Leaf ()) -> Leaf ();
+
+=================================
+b'start synthesis with ((mode SyRup) (atomicSize 3) (matchDepth 1) (ctorDepth 0) (condWidth 1)\n (totalHeight 0))\n'
+(div2,Node (Node (Leaf (),2,Node (Leaf (),1,Leaf ())),3,Leaf ())) -> Node (Node (Leaf (),1,Node (Leaf (),0,Leaf ())),1,Leaf ());
+(div2,Node (Leaf (),2,Node (Node (Leaf (),2,Leaf ()),0,Leaf ()))) -> Node (Leaf (),1,Node (Node (Leaf (),1,Leaf ()),0,Leaf ()));
+(inc,Node (Node (Leaf (),2,Leaf ()),2,Node (Leaf (),0,Leaf ()))) -> Node (Node (Leaf (),3,Leaf ()),3,Node (Leaf (),1,Leaf ()));
+(inc,Node (Node (Leaf (),1,Node (Leaf (),3,Leaf ())),2,Leaf ())) -> Node (Node (Leaf (),2,Node (Leaf (),4,Leaf ())),3,Leaf ());
+(div2,Node (Leaf (),0,Leaf ())) -> Node (Leaf (),0,Leaf ());
+(div2,Node (Leaf (),0,Node (Leaf (),3,Leaf ()))) -> Node (Leaf (),0,Node (Leaf (),1,Leaf ()));
+(inc,Node (Node (Node (Leaf (),2,Leaf ()),0,Leaf ()),1,Leaf ())) -> Node (Node (Node (Leaf (),3,Leaf ()),1,Leaf ()),2,Leaf ());
+(div2, Leaf ()) -> Leaf ();
+
+=================================
+b'start synthesis with ((mode SyRup) (atomicSize 3) (matchDepth 1) (ctorDepth 0) (condWidth 1)\n (totalHeight 0))\n'
+(div2,Node (Node (Leaf (),1,Leaf ()),3,Leaf ())) -> Node (Node (Leaf (),0,Leaf ()),1,Leaf ());
+(inc,Node (Node (Node (Leaf (),2,Leaf ()),0,Leaf ()),3,Leaf ())) -> Node (Node (Node (Leaf (),3,Leaf ()),1,Leaf ()),4,Leaf ());
+(div2,Node (Leaf (),1,Node (Node (Leaf (),3,Leaf ()),2,Leaf ()))) -> Node (Leaf (),0,Node (Node (Leaf (),1,Leaf ()),1,Leaf ()));
+(div2,Node (Node (Leaf (),1,Leaf ()),0,Node (Leaf (),2,Leaf ()))) -> Node (Node (Leaf (),0,Leaf ()),0,Node (Leaf (),1,Leaf ()));
+(inc,Node (Leaf (),3,Node (Node (Leaf (),0,Leaf ()),3,Leaf ()))) -> Node (Leaf (),4,Node (Node (Leaf (),1,Leaf ()),4,Leaf ()));
+(div2,Node (Leaf (),1,Node (Leaf (),0,Leaf ()))) -> Node (Leaf (),0,Node (Leaf (),0,Leaf ()));
+(div2,Node (Leaf (),3,Node (Leaf (),3,Leaf ()))) -> Node (Leaf (),1,Node (Leaf (),1,Leaf ()));
+(div2, Leaf ()) -> Leaf ();
+
+=================================
+b'start synthesis with ((mode SyRup) (atomicSize 3) (matchDepth 1) (ctorDepth 0) (condWidth 1)\n (totalHeight 0))\n'
+(div2,Node (Node (Leaf (),3,Node (Leaf (),1,Leaf ())),1,Leaf ())) -> Node (Node (Leaf (),1,Node (Leaf (),0,Leaf ())),0,Leaf ());
+(inc,Node (Leaf (),3,Node (Leaf (),3,Leaf ()))) -> Node (Leaf (),4,Node (Leaf (),4,Leaf ()));
+(inc,Node (Leaf (),1,Node (Node (Leaf (),3,Leaf ()),3,Leaf ()))) -> Node (Leaf (),2,Node (Node (Leaf (),4,Leaf ()),4,Leaf ()));
+(inc,Node (Node (Leaf (),3,Leaf ()),0,Leaf ())) -> Node (Node (Leaf (),4,Leaf ()),1,Leaf ());
+(inc,Node (Leaf (),3,Node (Node (Leaf (),0,Leaf ()),0,Leaf ()))) -> Node (Leaf (),4,Node (Node (Leaf (),1,Leaf ()),1,Leaf ()));
+(div2,Node (Leaf (),0,Node (Leaf (),0,Node (Leaf (),0,Leaf ())))) -> Node (Leaf (),0,Node (Leaf (),0,Node (Leaf (),0,Leaf ())));
+(div2,Node (Leaf (),3,Leaf ())) -> Node (Leaf (),1,Leaf ());
+(div2, Leaf ()) -> Leaf ();
+
+=================================
+b'start synthesis with ((mode SyRup) (atomicSize 3) (matchDepth 1) (ctorDepth 0) (condWidth 1)\n (totalHeight 0))\n'
+(inc,Node (Node (Leaf (),0,Node (Leaf (),3,Leaf ())),1,Leaf ())) -> Node (Node (Leaf (),1,Node (Leaf (),4,Leaf ())),2,Leaf ());
+(inc,Node (Leaf (),2,Leaf ())) -> Node (Leaf (),3,Leaf ());
+(div2,Node (Leaf (),2,Node (Node (Leaf (),3,Leaf ()),0,Leaf ()))) -> Node (Leaf (),1,Node (Node (Leaf (),1,Leaf ()),0,Leaf ()));
+(inc,Node (Leaf (),0,Node (Node (Leaf (),0,Leaf ()),0,Leaf ()))) -> Node (Leaf (),1,Node (Node (Leaf (),1,Leaf ()),1,Leaf ()));
+(inc,Node (Node (Leaf (),3,Node (Leaf (),0,Leaf ())),0,Leaf ())) -> Node (Node (Leaf (),4,Node (Leaf (),1,Leaf ())),1,Leaf ());
+(inc,Node (Node (Leaf (),0,Node (Leaf (),1,Leaf ())),3,Leaf ())) -> Node (Node (Leaf (),1,Node (Leaf (),2,Leaf ())),4,Leaf ());
+(div2,Node (Node (Leaf (),0,Node (Leaf (),0,Leaf ())),2,Leaf ())) -> Node (Node (Leaf (),0,Node (Leaf (),0,Leaf ())),1,Leaf ());
+(div2, Leaf ()) -> Leaf ();
+
+=================================
+b'start synthesis with ((mode SyRup) (atomicSize 3) (matchDepth 1) (ctorDepth 0) (condWidth 1)\n (totalHeight 0))\n'
+(inc,Node (Leaf (),3,Node (Node (Leaf (),0,Leaf ()),3,Leaf ()))) -> Node (Leaf (),4,Node (Node (Leaf (),1,Leaf ()),4,Leaf ()));
+(inc,Node (Node (Leaf (),2,Node (Leaf (),0,Leaf ())),1,Leaf ())) -> Node (Node (Leaf (),3,Node (Leaf (),1,Leaf ())),2,Leaf ());
+(inc,Node (Leaf (),2,Node (Leaf (),2,Node (Leaf (),2,Leaf ())))) -> Node (Leaf (),3,Node (Leaf (),3,Node (Leaf (),3,Leaf ())));
+(div2,Node (Node (Leaf (),1,Leaf ()),0,Leaf ())) -> Node (Node (Leaf (),0,Leaf ()),0,Leaf ());
+(div2,Node (Leaf (),0,Node (Leaf (),0,Node (Leaf (),0,Leaf ())))) -> Node (Leaf (),0,Node (Leaf (),0,Node (Leaf (),0,Leaf ())));
+(inc,Node (Node (Leaf (),1,Node (Leaf (),3,Leaf ())),1,Leaf ())) -> Node (Node (Leaf (),2,Node (Leaf (),4,Leaf ())),2,Leaf ());
+(div2,Node (Node (Node (Leaf (),3,Leaf ()),0,Leaf ()),0,Leaf ())) -> Node (Node (Node (Leaf (),1,Leaf ()),0,Leaf ()),0,Leaf ());
+(div2, Leaf ()) -> Leaf ();
+
+=================================
+b'start synthesis with ((mode SyRup) (atomicSize 3) (matchDepth 1) (ctorDepth 0) (condWidth 1)\n (totalHeight 0))\n'
+(div2,Node (Node (Leaf (),2,Node (Leaf (),1,Leaf ())),2,Leaf ())) -> Node (Node (Leaf (),1,Node (Leaf (),0,Leaf ())),1,Leaf ());
+(inc,Node (Node (Leaf (),3,Node (Leaf (),3,Leaf ())),3,Leaf ())) -> Node (Node (Leaf (),4,Node (Leaf (),4,Leaf ())),4,Leaf ());
+(inc,Node (Node (Leaf (),0,Node (Leaf (),0,Leaf ())),2,Leaf ())) -> Node (Node (Leaf (),1,Node (Leaf (),1,Leaf ())),3,Leaf ());
+(inc,Node (Leaf (),2,Leaf ())) -> Node (Leaf (),3,Leaf ());
+(div2,Node (Leaf (),1,Leaf ())) -> Node (Leaf (),0,Leaf ());
+(div2,Node (Node (Leaf (),1,Node (Leaf (),1,Leaf ())),3,Leaf ())) -> Node (Node (Leaf (),0,Node (Leaf (),0,Leaf ())),1,Leaf ());
+(inc,Node (Leaf (),2,Node (Leaf (),1,Node (Leaf (),0,Leaf ())))) -> Node (Leaf (),3,Node (Leaf (),2,Node (Leaf (),1,Leaf ())));
+(div2,Node (Leaf (),3,Leaf ())) -> Node (Leaf (),1,Leaf ());
+(div2, Leaf ()) -> Leaf ();
+
+=================================
+b'start synthesis with ((mode SyRup) (atomicSize 3) (matchDepth 1) (ctorDepth 0) (condWidth 1)\n (totalHeight 0))\n'
+(div2,Node (Leaf (),2,Node (Node (Leaf (),0,Leaf ()),2,Leaf ()))) -> Node (Leaf (),1,Node (Node (Leaf (),0,Leaf ()),1,Leaf ()));
+(div2,Node (Leaf (),2,Node (Leaf (),1,Leaf ()))) -> Node (Leaf (),1,Node (Leaf (),0,Leaf ()));
+(div2,Node (Leaf (),3,Node (Leaf (),1,Leaf ()))) -> Node (Leaf (),1,Node (Leaf (),0,Leaf ()));
+(div2,Node (Leaf (),3,Node (Leaf (),3,Leaf ()))) -> Node (Leaf (),1,Node (Leaf (),1,Leaf ()));
+(inc,Node (Node (Node (Leaf (),1,Leaf ()),1,Leaf ()),3,Leaf ())) -> Node (Node (Node (Leaf (),2,Leaf ()),2,Leaf ()),4,Leaf ());
+(inc,Node (Leaf (),1,Leaf ())) -> Node (Leaf (),2,Leaf ());
+(inc,Node (Node (Leaf (),3,Leaf ()),3,Node (Leaf (),1,Leaf ()))) -> Node (Node (Leaf (),4,Leaf ()),4,Node (Leaf (),2,Leaf ()));
+(div2,Node (Node (Leaf (),0,Node (Leaf (),0,Leaf ())),0,Leaf ())) -> Node (Node (Leaf (),0,Node (Leaf (),0,Leaf ())),0,Leaf ());
+(div2, Leaf ()) -> Leaf ();
+
+=================================
+b'start synthesis with ((mode SyRup) (atomicSize 3) (matchDepth 1) (ctorDepth 0) (condWidth 1)\n (totalHeight 0))\n'
+(div2,Node (Leaf (),2,Leaf ())) -> Node (Leaf (),1,Leaf ());
+(inc,Node (Node (Node (Leaf (),2,Leaf ()),2,Leaf ()),0,Leaf ())) -> Node (Node (Node (Leaf (),3,Leaf ()),3,Leaf ()),1,Leaf ());
+(div2,Node (Node (Leaf (),2,Leaf ()),3,Node (Leaf (),2,Leaf ()))) -> Node (Node (Leaf (),1,Leaf ()),1,Node (Leaf (),1,Leaf ()));
+(inc,Node (Node (Leaf (),2,Leaf ()),1,Leaf ())) -> Node (Node (Leaf (),3,Leaf ()),2,Leaf ());
+(div2,Node (Leaf (),1,Node (Leaf (),2,Node (Leaf (),2,Leaf ())))) -> Node (Leaf (),0,Node (Leaf (),1,Node (Leaf (),1,Leaf ())));
+(div2,Node (Leaf (),1,Node (Node (Leaf (),2,Leaf ()),2,Leaf ()))) -> Node (Leaf (),0,Node (Node (Leaf (),1,Leaf ()),1,Leaf ()));
+(div2,Node (Leaf (),0,Leaf ())) -> Node (Leaf (),0,Leaf ());
+(inc,Node (Node (Leaf (),0,Node (Leaf (),1,Leaf ())),3,Leaf ())) -> Node (Node (Leaf (),1,Node (Leaf (),2,Leaf ())),4,Leaf ());
+(div2, Leaf ()) -> Leaf ();
+
+=================================
+b'start synthesis with ((mode SyRup) (atomicSize 3) (matchDepth 1) (ctorDepth 0) (condWidth 1)\n (totalHeight 0))\n'
+(div2,Node (Node (Leaf (),0,Node (Leaf (),0,Leaf ())),0,Leaf ())) -> Node (Node (Leaf (),0,Node (Leaf (),0,Leaf ())),0,Leaf ());
+(inc,Node (Node (Leaf (),0,Leaf ()),0,Node (Leaf (),3,Leaf ()))) -> Node (Node (Leaf (),1,Leaf ()),1,Node (Leaf (),4,Leaf ()));
+(div2,Node (Leaf (),0,Node (Node (Leaf (),3,Leaf ()),1,Leaf ()))) -> Node (Leaf (),0,Node (Node (Leaf (),1,Leaf ()),0,Leaf ()));
+(div2,Node (Leaf (),3,Node (Leaf (),3,Leaf ()))) -> Node (Leaf (),1,Node (Leaf (),1,Leaf ()));
+(inc,Node (Node (Node (Leaf (),1,Leaf ()),0,Leaf ()),3,Leaf ())) -> Node (Node (Node (Leaf (),2,Leaf ()),1,Leaf ()),4,Leaf ());
+(inc,Node (Node (Leaf (),2,Node (Leaf (),1,Leaf ())),0,Leaf ())) -> Node (Node (Leaf (),3,Node (Leaf (),2,Leaf ())),1,Leaf ());
+(div2,Node (Leaf (),3,Node (Leaf (),0,Node (Leaf (),0,Leaf ())))) -> Node (Leaf (),1,Node (Leaf (),0,Node (Leaf (),0,Leaf ())));
+(inc,Node (Leaf (),3,Leaf ())) -> Node (Leaf (),4,Leaf ());
+(div2, Leaf ()) -> Leaf ();
+
+=================================
+b'start synthesis with ((mode SyRup) (atomicSize 3) (matchDepth 1) (ctorDepth 0) (condWidth 1)\n (totalHeight 0))\n'
+(inc,Node (Node (Leaf (),3,Leaf ()),2,Leaf ())) -> Node (Node (Leaf (),4,Leaf ()),3,Leaf ());
+(div2,Node (Node (Node (Leaf (),3,Leaf ()),1,Leaf ()),1,Leaf ())) -> Node (Node (Node (Leaf (),1,Leaf ()),0,Leaf ()),0,Leaf ());
+(div2,Node (Node (Leaf (),1,Leaf ()),0,Node (Leaf (),0,Leaf ()))) -> Node (Node (Leaf (),0,Leaf ()),0,Node (Leaf (),0,Leaf ()));
+(div2,Node (Node (Leaf (),3,Node (Leaf (),0,Leaf ())),0,Leaf ())) -> Node (Node (Leaf (),1,Node (Leaf (),0,Leaf ())),0,Leaf ());
+(inc,Node (Leaf (),2,Node (Node (Leaf (),0,Leaf ()),1,Leaf ()))) -> Node (Leaf (),3,Node (Node (Leaf (),1,Leaf ()),2,Leaf ()));
+(inc,Node (Node (Node (Leaf (),3,Leaf ()),0,Leaf ()),1,Leaf ())) -> Node (Node (Node (Leaf (),4,Leaf ()),1,Leaf ()),2,Leaf ());
+(div2,Node (Node (Leaf (),1,Leaf ()),3,Node (Leaf (),1,Leaf ()))) -> Node (Node (Leaf (),0,Leaf ()),1,Node (Leaf (),0,Leaf ()));
+(div2,Node (Leaf (),3,Leaf ())) -> Node (Leaf (),1,Leaf ());
+(div2, Leaf ()) -> Leaf ();
+
+=================================
+b'start synthesis with ((mode SyRup) (atomicSize 3) (matchDepth 1) (ctorDepth 0) (condWidth 1)\n (totalHeight 0))\n'
+(div2,Node (Node (Node (Leaf (),3,Leaf ()),1,Leaf ()),2,Leaf ())) -> Node (Node (Node (Leaf (),1,Leaf ()),0,Leaf ()),1,Leaf ());
+(div2,Node (Leaf (),3,Node (Node (Leaf (),3,Leaf ()),1,Leaf ()))) -> Node (Leaf (),1,Node (Node (Leaf (),1,Leaf ()),0,Leaf ()));
+(div2,Node (Node (Leaf (),0,Leaf ()),0,Leaf ())) -> Node (Node (Leaf (),0,Leaf ()),0,Leaf ());
+(div2,Node (Node (Leaf (),1,Leaf ()),0,Node (Leaf (),2,Leaf ()))) -> Node (Node (Leaf (),0,Leaf ()),0,Node (Leaf (),1,Leaf ()));
+(div2,Node (Leaf (),3,Leaf ())) -> Node (Leaf (),1,Leaf ());
+(div2,Node (Leaf (),2,Node (Leaf (),2,Leaf ()))) -> Node (Leaf (),1,Node (Leaf (),1,Leaf ()));
+(div2,Node (Leaf (),0,Node (Node (Leaf (),2,Leaf ()),3,Leaf ()))) -> Node (Leaf (),0,Node (Node (Leaf (),1,Leaf ()),1,Leaf ()));
+(inc,Node (Leaf (),0,Leaf ())) -> Node (Leaf (),1,Leaf ());
+(div2, Leaf ()) -> Leaf ();
+
+=================================
+b'start synthesis with ((mode SyRup) (atomicSize 3) (matchDepth 1) (ctorDepth 0) (condWidth 1)\n (totalHeight 0))\n'
+(inc,Node (Leaf (),0,Leaf ())) -> Node (Leaf (),1,Leaf ());
+(div2,Node (Node (Leaf (),0,Leaf ()),0,Node (Leaf (),2,Leaf ()))) -> Node (Node (Leaf (),0,Leaf ()),0,Node (Leaf (),1,Leaf ()));
+(div2,Node (Node (Leaf (),0,Leaf ()),0,Leaf ())) -> Node (Node (Leaf (),0,Leaf ()),0,Leaf ());
+(div2,Node (Leaf (),0,Leaf ())) -> Node (Leaf (),0,Leaf ());
+(div2,Node (Node (Node (Leaf (),0,Leaf ()),1,Leaf ()),1,Leaf ())) -> Node (Node (Node (Leaf (),0,Leaf ()),0,Leaf ()),0,Leaf ());
+(inc,Node (Node (Leaf (),2,Node (Leaf (),2,Leaf ())),1,Leaf ())) -> Node (Node (Leaf (),3,Node (Leaf (),3,Leaf ())),2,Leaf ());
+(inc,Node (Node (Leaf (),0,Node (Leaf (),1,Leaf ())),1,Leaf ())) -> Node (Node (Leaf (),1,Node (Leaf (),2,Leaf ())),2,Leaf ());
+(inc,Node (Leaf (),3,Node (Leaf (),2,Leaf ()))) -> Node (Leaf (),4,Node (Leaf (),3,Leaf ()));
+(div2, Leaf ()) -> Leaf ();
+
+=================================
+b'start synthesis with ((mode SyRup) (atomicSize 3) (matchDepth 1) (ctorDepth 0) (condWidth 1)\n (totalHeight 0))\n'
+(div2,Node (Leaf (),1,Node (Leaf (),2,Node (Leaf (),1,Leaf ())))) -> Node (Leaf (),0,Node (Leaf (),1,Node (Leaf (),0,Leaf ())));
+(inc,Node (Leaf (),0,Node (Node (Leaf (),1,Leaf ()),3,Leaf ()))) -> Node (Leaf (),1,Node (Node (Leaf (),2,Leaf ()),4,Leaf ()));
+(div2,Node (Node (Leaf (),1,Leaf ()),3,Node (Leaf (),2,Leaf ()))) -> Node (Node (Leaf (),0,Leaf ()),1,Node (Leaf (),1,Leaf ()));
+(inc,Node (Leaf (),0,Node (Leaf (),3,Node (Leaf (),1,Leaf ())))) -> Node (Leaf (),1,Node (Leaf (),4,Node (Leaf (),2,Leaf ())));
+(inc,Node (Leaf (),3,Node (Leaf (),3,Leaf ()))) -> Node (Leaf (),4,Node (Leaf (),4,Leaf ()));
+(div2,Node (Leaf (),3,Node (Node (Leaf (),3,Leaf ()),0,Leaf ()))) -> Node (Leaf (),1,Node (Node (Leaf (),1,Leaf ()),0,Leaf ()));
+(inc,Node (Leaf (),3,Node (Leaf (),1,Leaf ()))) -> Node (Leaf (),4,Node (Leaf (),2,Leaf ()));
+(inc,Node (Leaf (),1,Node (Leaf (),0,Leaf ()))) -> Node (Leaf (),2,Node (Leaf (),1,Leaf ()));
+(div2, Leaf ()) -> Leaf ();
+
+=================================
+b'start synthesis with ((mode SyRup) (atomicSize 3) (matchDepth 1) (ctorDepth 0) (condWidth 1)\n (totalHeight 0))\n'
+(div2,Node (Leaf (),0,Node (Leaf (),3,Node (Leaf (),0,Leaf ())))) -> Node (Leaf (),0,Node (Leaf (),1,Node (Leaf (),0,Leaf ())));
+(div2,Node (Node (Node (Leaf (),3,Leaf ()),2,Leaf ()),1,Leaf ())) -> Node (Node (Node (Leaf (),1,Leaf ()),1,Leaf ()),0,Leaf ());
+(div2,Node (Leaf (),3,Node (Leaf (),2,Leaf ()))) -> Node (Leaf (),1,Node (Leaf (),1,Leaf ()));
+(inc,Node (Leaf (),2,Node (Leaf (),0,Node (Leaf (),0,Leaf ())))) -> Node (Leaf (),3,Node (Leaf (),1,Node (Leaf (),1,Leaf ())));
+(inc,Node (Leaf (),0,Node (Leaf (),0,Leaf ()))) -> Node (Leaf (),1,Node (Leaf (),1,Leaf ()));
+(inc,Node (Node (Leaf (),1,Leaf ()),2,Leaf ())) -> Node (Node (Leaf (),2,Leaf ()),3,Leaf ());
+(inc,Node (Leaf (),2,Leaf ())) -> Node (Leaf (),3,Leaf ());
+(div2,Node (Leaf (),1,Node (Node (Leaf (),1,Leaf ()),1,Leaf ()))) -> Node (Leaf (),0,Node (Node (Leaf (),0,Leaf ()),0,Leaf ()));
+(div2, Leaf ()) -> Leaf ();
+
+=================================
+b'start synthesis with ((mode SyRup) (atomicSize 3) (matchDepth 1) (ctorDepth 0) (condWidth 1)\n (totalHeight 0))\n'
+(div2,Node (Node (Leaf (),3,Node (Leaf (),1,Leaf ())),1,Leaf ())) -> Node (Node (Leaf (),1,Node (Leaf (),0,Leaf ())),0,Leaf ());
+(inc,Node (Node (Leaf (),3,Leaf ()),2,Node (Leaf (),1,Leaf ()))) -> Node (Node (Leaf (),4,Leaf ()),3,Node (Leaf (),2,Leaf ()));
+(inc,Node (Node (Leaf (),0,Leaf ()),1,Node (Leaf (),3,Leaf ()))) -> Node (Node (Leaf (),1,Leaf ()),2,Node (Leaf (),4,Leaf ()));
+(div2,Node (Leaf (),2,Leaf ())) -> Node (Leaf (),1,Leaf ());
+(div2,Node (Leaf (),2,Node (Node (Leaf (),1,Leaf ()),0,Leaf ()))) -> Node (Leaf (),1,Node (Node (Leaf (),0,Leaf ()),0,Leaf ()));
+(inc,Node (Node (Leaf (),0,Leaf ()),1,Leaf ())) -> Node (Node (Leaf (),1,Leaf ()),2,Leaf ());
+(inc,Node (Node (Node (Leaf (),2,Leaf ()),3,Leaf ()),1,Leaf ())) -> Node (Node (Node (Leaf (),3,Leaf ()),4,Leaf ()),2,Leaf ());
+(inc,Node (Node (Leaf (),3,Node (Leaf (),0,Leaf ())),1,Leaf ())) -> Node (Node (Leaf (),4,Node (Leaf (),1,Leaf ())),2,Leaf ());
+(div2, Leaf ()) -> Leaf ();
+
+=================================
+b'start synthesis with ((mode SyRup) (atomicSize 3) (matchDepth 1) (ctorDepth 0) (condWidth 1)\n (totalHeight 0))\n'
+(div2,Node (Leaf (),3,Leaf ())) -> Node (Leaf (),1,Leaf ());
+(div2,Node (Node (Leaf (),0,Leaf ()),2,Node (Leaf (),1,Leaf ()))) -> Node (Node (Leaf (),0,Leaf ()),1,Node (Leaf (),0,Leaf ()));
+(inc,Node (Leaf (),0,Node (Leaf (),2,Leaf ()))) -> Node (Leaf (),1,Node (Leaf (),3,Leaf ()));
+(inc,Node (Leaf (),2,Node (Leaf (),2,Leaf ()))) -> Node (Leaf (),3,Node (Leaf (),3,Leaf ()));
+(inc,Node (Node (Node (Leaf (),2,Leaf ()),3,Leaf ()),1,Leaf ())) -> Node (Node (Node (Leaf (),3,Leaf ()),4,Leaf ()),2,Leaf ());
+(inc,Node (Leaf (),1,Node (Leaf (),1,Node (Leaf (),3,Leaf ())))) -> Node (Leaf (),2,Node (Leaf (),2,Node (Leaf (),4,Leaf ())));
+(inc,Node (Leaf (),0,Node (Leaf (),0,Leaf ()))) -> Node (Leaf (),1,Node (Leaf (),1,Leaf ()));
+(inc,Node (Leaf (),2,Node (Node (Leaf (),3,Leaf ()),0,Leaf ()))) -> Node (Leaf (),3,Node (Node (Leaf (),4,Leaf ()),1,Leaf ()));
+(div2,Node (Leaf (),2,Node (Leaf (),2,Leaf ()))) -> Node (Leaf (),1,Node (Leaf (),1,Leaf ()));
+(div2, Leaf ()) -> Leaf ();
+
+=================================
+b'start synthesis with ((mode SyRup) (atomicSize 3) (matchDepth 1) (ctorDepth 0) (condWidth 1)\n (totalHeight 0))\n'
+(inc,Node (Leaf (),0,Node (Node (Leaf (),0,Leaf ()),1,Leaf ()))) -> Node (Leaf (),1,Node (Node (Leaf (),1,Leaf ()),2,Leaf ()));
+(div2,Node (Leaf (),2,Leaf ())) -> Node (Leaf (),1,Leaf ());
+(div2,Node (Node (Leaf (),3,Node (Leaf (),3,Leaf ())),0,Leaf ())) -> Node (Node (Leaf (),1,Node (Leaf (),1,Leaf ())),0,Leaf ());
+(div2,Node (Leaf (),2,Node (Leaf (),0,Node (Leaf (),0,Leaf ())))) -> Node (Leaf (),1,Node (Leaf (),0,Node (Leaf (),0,Leaf ())));
+(div2,Node (Node (Leaf (),1,Leaf ()),0,Node (Leaf (),3,Leaf ()))) -> Node (Node (Leaf (),0,Leaf ()),0,Node (Leaf (),1,Leaf ()));
+(inc,Node (Node (Leaf (),1,Node (Leaf (),2,Leaf ())),3,Leaf ())) -> Node (Node (Leaf (),2,Node (Leaf (),3,Leaf ())),4,Leaf ());
+(div2,Node (Node (Leaf (),3,Leaf ()),3,Leaf ())) -> Node (Node (Leaf (),1,Leaf ()),1,Leaf ());
+(inc,Node (Node (Leaf (),3,Node (Leaf (),2,Leaf ())),2,Leaf ())) -> Node (Node (Leaf (),4,Node (Leaf (),3,Leaf ())),3,Leaf ());
+(div2,Node (Leaf (),0,Node (Leaf (),2,Node (Leaf (),0,Leaf ())))) -> Node (Leaf (),0,Node (Leaf (),1,Node (Leaf (),0,Leaf ())));
+(div2, Leaf ()) -> Leaf ();
+
+=================================
+b'start synthesis with ((mode SyRup) (atomicSize 3) (matchDepth 1) (ctorDepth 0) (condWidth 1)\n (totalHeight 0))\n'
+(inc,Node (Leaf (),0,Leaf ())) -> Node (Leaf (),1,Leaf ());
+(div2,Node (Leaf (),1,Node (Node (Leaf (),1,Leaf ()),0,Leaf ()))) -> Node (Leaf (),0,Node (Node (Leaf (),0,Leaf ()),0,Leaf ()));
+(div2,Node (Leaf (),1,Node (Node (Leaf (),0,Leaf ()),3,Leaf ()))) -> Node (Leaf (),0,Node (Node (Leaf (),0,Leaf ()),1,Leaf ()));
+(inc,Node (Leaf (),2,Node (Node (Leaf (),0,Leaf ()),0,Leaf ()))) -> Node (Leaf (),3,Node (Node (Leaf (),1,Leaf ()),1,Leaf ()));
+(div2,Node (Leaf (),3,Node (Leaf (),0,Leaf ()))) -> Node (Leaf (),1,Node (Leaf (),0,Leaf ()));
+(div2,Node (Leaf (),1,Node (Leaf (),1,Leaf ()))) -> Node (Leaf (),0,Node (Leaf (),0,Leaf ()));
+(inc,Node (Node (Leaf (),1,Node (Leaf (),2,Leaf ())),2,Leaf ())) -> Node (Node (Leaf (),2,Node (Leaf (),3,Leaf ())),3,Leaf ());
+(inc,Node (Node (Leaf (),2,Leaf ()),2,Node (Leaf (),2,Leaf ()))) -> Node (Node (Leaf (),3,Leaf ()),3,Node (Leaf (),3,Leaf ()));
+(inc,Node (Leaf (),3,Node (Node (Leaf (),0,Leaf ()),0,Leaf ()))) -> Node (Leaf (),4,Node (Node (Leaf (),1,Leaf ()),1,Leaf ()));
+(div2, Leaf ()) -> Leaf ();
+
+=================================
+b'start synthesis with ((mode SyRup) (atomicSize 3) (matchDepth 1) (ctorDepth 0) (condWidth 1)\n (totalHeight 0))\n'
+(div2,Node (Node (Leaf (),0,Leaf ()),3,Node (Leaf (),0,Leaf ()))) -> Node (Node (Leaf (),0,Leaf ()),1,Node (Leaf (),0,Leaf ()));
+(inc,Node (Node (Leaf (),1,Leaf ()),0,Leaf ())) -> Node (Node (Leaf (),2,Leaf ()),1,Leaf ());
+(div2,Node (Node (Leaf (),2,Node (Leaf (),3,Leaf ())),0,Leaf ())) -> Node (Node (Leaf (),1,Node (Leaf (),1,Leaf ())),0,Leaf ());
+(div2,Node (Leaf (),1,Node (Leaf (),1,Node (Leaf (),2,Leaf ())))) -> Node (Leaf (),0,Node (Leaf (),0,Node (Leaf (),1,Leaf ())));
+(inc,Node (Leaf (),3,Leaf ())) -> Node (Leaf (),4,Leaf ());
+(div2,Node (Leaf (),0,Leaf ())) -> Node (Leaf (),0,Leaf ());
+(div2,Node (Leaf (),2,Node (Node (Leaf (),1,Leaf ()),1,Leaf ()))) -> Node (Leaf (),1,Node (Node (Leaf (),0,Leaf ()),0,Leaf ()));
+(div2,Node (Leaf (),2,Leaf ())) -> Node (Leaf (),1,Leaf ());
+(div2,Node (Leaf (),1,Node (Node (Leaf (),1,Leaf ()),3,Leaf ()))) -> Node (Leaf (),0,Node (Node (Leaf (),0,Leaf ()),1,Leaf ()));
+(div2, Leaf ()) -> Leaf ();
+
+=================================
+b'start synthesis with ((mode SyRup) (atomicSize 3) (matchDepth 1) (ctorDepth 0) (condWidth 1)\n (totalHeight 0))\n'
+(inc,Node (Node (Leaf (),3,Leaf ()),3,Leaf ())) -> Node (Node (Leaf (),4,Leaf ()),4,Leaf ());
+(inc,Node (Leaf (),3,Leaf ())) -> Node (Leaf (),4,Leaf ());
+(inc,Node (Node (Leaf (),2,Leaf ()),0,Node (Leaf (),2,Leaf ()))) -> Node (Node (Leaf (),3,Leaf ()),1,Node (Leaf (),3,Leaf ()));
+(div2,Node (Leaf (),2,Node (Node (Leaf (),3,Leaf ()),2,Leaf ()))) -> Node (Leaf (),1,Node (Node (Leaf (),1,Leaf ()),1,Leaf ()));
+(div2,Node (Node (Node (Leaf (),1,Leaf ()),1,Leaf ()),2,Leaf ())) -> Node (Node (Node (Leaf (),0,Leaf ()),0,Leaf ()),1,Leaf ());
+(inc,Node (Node (Leaf (),1,Leaf ()),1,Node (Leaf (),2,Leaf ()))) -> Node (Node (Leaf (),2,Leaf ()),2,Node (Leaf (),3,Leaf ()));
+(inc,Node (Leaf (),3,Node (Node (Leaf (),1,Leaf ()),1,Leaf ()))) -> Node (Leaf (),4,Node (Node (Leaf (),2,Leaf ()),2,Leaf ()));
+(inc,Node (Leaf (),0,Leaf ())) -> Node (Leaf (),1,Leaf ());
+(inc,Node (Node (Leaf (),2,Node (Leaf (),3,Leaf ())),3,Leaf ())) -> Node (Node (Leaf (),3,Node (Leaf (),4,Leaf ())),4,Leaf ());
+(div2, Leaf ()) -> Leaf ();
+
+=================================
+b'start synthesis with ((mode SyRup) (atomicSize 3) (matchDepth 1) (ctorDepth 0) (condWidth 1)\n (totalHeight 0))\n'
+(div2,Node (Node (Leaf (),2,Leaf ()),0,Node (Leaf (),1,Leaf ()))) -> Node (Node (Leaf (),1,Leaf ()),0,Node (Leaf (),0,Leaf ()));
+(inc,Node (Leaf (),1,Node (Leaf (),0,Leaf ()))) -> Node (Leaf (),2,Node (Leaf (),1,Leaf ()));
+(div2,Node (Leaf (),0,Node (Node (Leaf (),1,Leaf ()),0,Leaf ()))) -> Node (Leaf (),0,Node (Node (Leaf (),0,Leaf ()),0,Leaf ()));
+(inc,Node (Leaf (),3,Node (Node (Leaf (),1,Leaf ()),2,Leaf ()))) -> Node (Leaf (),4,Node (Node (Leaf (),2,Leaf ()),3,Leaf ()));
+(inc,Node (Node (Node (Leaf (),1,Leaf ()),1,Leaf ()),0,Leaf ())) -> Node (Node (Node (Leaf (),2,Leaf ()),2,Leaf ()),1,Leaf ());
+(inc,Node (Leaf (),3,Node (Node (Leaf (),1,Leaf ()),3,Leaf ()))) -> Node (Leaf (),4,Node (Node (Leaf (),2,Leaf ()),4,Leaf ()));
+(div2,Node (Node (Leaf (),3,Leaf ()),2,Leaf ())) -> Node (Node (Leaf (),1,Leaf ()),1,Leaf ());
+(div2,Node (Node (Leaf (),3,Leaf ()),0,Leaf ())) -> Node (Node (Leaf (),1,Leaf ()),0,Leaf ());
+(inc,Node (Node (Node (Leaf (),3,Leaf ()),3,Leaf ()),1,Leaf ())) -> Node (Node (Node (Leaf (),4,Leaf ()),4,Leaf ()),2,Leaf ());
+(div2, Leaf ()) -> Leaf ();
+
+=================================
+b'start synthesis with ((mode SyRup) (atomicSize 3) (matchDepth 1) (ctorDepth 0) (condWidth 1)\n (totalHeight 0))\n'
+(div2,Node (Node (Node (Leaf (),1,Leaf ()),1,Leaf ()),1,Leaf ())) -> Node (Node (Node (Leaf (),0,Leaf ()),0,Leaf ()),0,Leaf ());
+(inc,Node (Leaf (),0,Leaf ())) -> Node (Leaf (),1,Leaf ());
+(div2,Node (Leaf (),2,Node (Leaf (),3,Node (Leaf (),2,Leaf ())))) -> Node (Leaf (),1,Node (Leaf (),1,Node (Leaf (),1,Leaf ())));
+(inc,Node (Leaf (),3,Node (Node (Leaf (),2,Leaf ()),0,Leaf ()))) -> Node (Leaf (),4,Node (Node (Leaf (),3,Leaf ()),1,Leaf ()));
+(inc,Node (Node (Leaf (),0,Leaf ()),2,Node (Leaf (),2,Leaf ()))) -> Node (Node (Leaf (),1,Leaf ()),3,Node (Leaf (),3,Leaf ()));
+(inc,Node (Leaf (),0,Node (Node (Leaf (),3,Leaf ()),1,Leaf ()))) -> Node (Leaf (),1,Node (Node (Leaf (),4,Leaf ()),2,Leaf ()));
+(div2,Node (Node (Leaf (),3,Leaf ()),3,Node (Leaf (),1,Leaf ()))) -> Node (Node (Leaf (),1,Leaf ()),1,Node (Leaf (),0,Leaf ()));
+(div2,Node (Node (Leaf (),2,Node (Leaf (),2,Leaf ())),3,Leaf ())) -> Node (Node (Leaf (),1,Node (Leaf (),1,Leaf ())),1,Leaf ());
+(inc,Node (Node (Leaf (),0,Leaf ()),1,Leaf ())) -> Node (Node (Leaf (),1,Leaf ()),2,Leaf ());
+(div2, Leaf ()) -> Leaf ();
+
+=================================
+b'start synthesis with ((mode SyRup) (atomicSize 3) (matchDepth 1) (ctorDepth 0) (condWidth 1)\n (totalHeight 0))\n'
+(div2,Node (Leaf (),3,Node (Node (Leaf (),3,Leaf ()),2,Leaf ()))) -> Node (Leaf (),1,Node (Node (Leaf (),1,Leaf ()),1,Leaf ()));
+(div2,Node (Node (Leaf (),2,Leaf ()),0,Leaf ())) -> Node (Node (Leaf (),1,Leaf ()),0,Leaf ());
+(div2,Node (Node (Leaf (),2,Leaf ()),2,Leaf ())) -> Node (Node (Leaf (),1,Leaf ()),1,Leaf ());
+(inc,Node (Leaf (),0,Node (Leaf (),1,Leaf ()))) -> Node (Leaf (),1,Node (Leaf (),2,Leaf ()));
+(inc,Node (Leaf (),3,Leaf ())) -> Node (Leaf (),4,Leaf ());
+(div2,Node (Leaf (),3,Node (Leaf (),3,Node (Leaf (),1,Leaf ())))) -> Node (Leaf (),1,Node (Leaf (),1,Node (Leaf (),0,Leaf ())));
+(div2,Node (Leaf (),3,Node (Leaf (),2,Leaf ()))) -> Node (Leaf (),1,Node (Leaf (),1,Leaf ()));
+(inc,Node (Node (Leaf (),1,Leaf ()),2,Node (Leaf (),0,Leaf ()))) -> Node (Node (Leaf (),2,Leaf ()),3,Node (Leaf (),1,Leaf ()));
+(inc,Node (Leaf (),3,Node (Leaf (),2,Leaf ()))) -> Node (Leaf (),4,Node (Leaf (),3,Leaf ()));
+(div2, Leaf ()) -> Leaf ();
+
+=================================
+b'start synthesis with ((mode SyRup) (atomicSize 3) (matchDepth 1) (ctorDepth 0) (condWidth 1)\n (totalHeight 0))\n'
+(div2,Node (Node (Leaf (),3,Node (Leaf (),2,Leaf ())),3,Leaf ())) -> Node (Node (Leaf (),1,Node (Leaf (),1,Leaf ())),1,Leaf ());
+(div2,Node (Node (Leaf (),1,Leaf ()),2,Leaf ())) -> Node (Node (Leaf (),0,Leaf ()),1,Leaf ());
+(div2,Node (Node (Leaf (),0,Leaf ()),2,Leaf ())) -> Node (Node (Leaf (),0,Leaf ()),1,Leaf ());
+(inc,Node (Leaf (),3,Node (Leaf (),2,Leaf ()))) -> Node (Leaf (),4,Node (Leaf (),3,Leaf ()));
+(inc,Node (Node (Node (Leaf (),3,Leaf ()),0,Leaf ()),0,Leaf ())) -> Node (Node (Node (Leaf (),4,Leaf ()),1,Leaf ()),1,Leaf ());
+(inc,Node (Leaf (),3,Node (Leaf (),3,Leaf ()))) -> Node (Leaf (),4,Node (Leaf (),4,Leaf ()));
+(div2,Node (Node (Leaf (),2,Leaf ()),3,Node (Leaf (),3,Leaf ()))) -> Node (Node (Leaf (),1,Leaf ()),1,Node (Leaf (),1,Leaf ()));
+(div2,Node (Node (Leaf (),3,Leaf ()),2,Leaf ())) -> Node (Node (Leaf (),1,Leaf ()),1,Leaf ());
+(inc,Node (Leaf (),3,Node (Leaf (),1,Node (Leaf (),3,Leaf ())))) -> Node (Leaf (),4,Node (Leaf (),2,Node (Leaf (),4,Leaf ())));
+(div2, Leaf ()) -> Leaf ();
+
+=================================
+b'start synthesis with ((mode SyRup) (atomicSize 3) (matchDepth 1) (ctorDepth 0) (condWidth 1)\n (totalHeight 0))\n'
+(inc,Node (Node (Node (Leaf (),3,Leaf ()),3,Leaf ()),3,Leaf ())) -> Node (Node (Node (Leaf (),4,Leaf ()),4,Leaf ()),4,Leaf ());
+(inc,Node (Leaf (),0,Node (Leaf (),1,Node (Leaf (),3,Leaf ())))) -> Node (Leaf (),1,Node (Leaf (),2,Node (Leaf (),4,Leaf ())));
+(div2,Node (Node (Leaf (),3,Leaf ()),2,Leaf ())) -> Node (Node (Leaf (),1,Leaf ()),1,Leaf ());
+(div2,Node (Leaf (),3,Node (Node (Leaf (),0,Leaf ()),1,Leaf ()))) -> Node (Leaf (),1,Node (Node (Leaf (),0,Leaf ()),0,Leaf ()));
+(div2,Node (Node (Node (Leaf (),3,Leaf ()),1,Leaf ()),0,Leaf ())) -> Node (Node (Node (Leaf (),1,Leaf ()),0,Leaf ()),0,Leaf ());
+(div2,Node (Node (Leaf (),2,Leaf ()),1,Leaf ())) -> Node (Node (Leaf (),1,Leaf ()),0,Leaf ());
+(div2,Node (Leaf (),2,Node (Leaf (),2,Leaf ()))) -> Node (Leaf (),1,Node (Leaf (),1,Leaf ()));
+(inc,Node (Leaf (),3,Node (Node (Leaf (),0,Leaf ()),0,Leaf ()))) -> Node (Leaf (),4,Node (Node (Leaf (),1,Leaf ()),1,Leaf ()));
+(div2,Node (Leaf (),0,Leaf ())) -> Node (Leaf (),0,Leaf ());
+(div2, Leaf ()) -> Leaf ();
+
+=================================
+b'start synthesis with ((mode SyRup) (atomicSize 3) (matchDepth 1) (ctorDepth 0) (condWidth 1)\n (totalHeight 0))\n'
+(div2,Node (Leaf (),3,Leaf ())) -> Node (Leaf (),1,Leaf ());
+(inc,Node (Node (Leaf (),3,Node (Leaf (),0,Leaf ())),3,Leaf ())) -> Node (Node (Leaf (),4,Node (Leaf (),1,Leaf ())),4,Leaf ());
+(inc,Node (Node (Node (Leaf (),0,Leaf ()),0,Leaf ()),2,Leaf ())) -> Node (Node (Node (Leaf (),1,Leaf ()),1,Leaf ()),3,Leaf ());
+(inc,Node (Leaf (),1,Node (Node (Leaf (),3,Leaf ()),2,Leaf ()))) -> Node (Leaf (),2,Node (Node (Leaf (),4,Leaf ()),3,Leaf ()));
+(inc,Node (Leaf (),3,Node (Node (Leaf (),2,Leaf ()),3,Leaf ()))) -> Node (Leaf (),4,Node (Node (Leaf (),3,Leaf ()),4,Leaf ()));
+(inc,Node (Node (Node (Leaf (),0,Leaf ()),3,Leaf ()),2,Leaf ())) -> Node (Node (Node (Leaf (),1,Leaf ()),4,Leaf ()),3,Leaf ());
+(inc,Node (Leaf (),3,Node (Leaf (),1,Leaf ()))) -> Node (Leaf (),4,Node (Leaf (),2,Leaf ()));
+(inc,Node (Leaf (),0,Node (Leaf (),0,Node (Leaf (),0,Leaf ())))) -> Node (Leaf (),1,Node (Leaf (),1,Node (Leaf (),1,Leaf ())));
+(inc,Node (Node (Leaf (),1,Leaf ()),2,Leaf ())) -> Node (Node (Leaf (),2,Leaf ()),3,Leaf ());
+(div2,Node (Node (Node (Leaf (),0,Leaf ()),2,Leaf ()),2,Leaf ())) -> Node (Node (Node (Leaf (),0,Leaf ()),1,Leaf ()),1,Leaf ());
+(div2, Leaf ()) -> Leaf ();
+
+=================================
+b'start synthesis with ((mode SyRup) (atomicSize 3) (matchDepth 1) (ctorDepth 0) (condWidth 1)\n (totalHeight 0))\n'
+(inc,Node (Node (Leaf (),3,Leaf ()),3,Leaf ())) -> Node (Node (Leaf (),4,Leaf ()),4,Leaf ());
+(inc,Node (Node (Leaf (),3,Leaf ()),1,Node (Leaf (),1,Leaf ()))) -> Node (Node (Leaf (),4,Leaf ()),2,Node (Leaf (),2,Leaf ()));
+(div2,Node (Leaf (),0,Node (Node (Leaf (),2,Leaf ()),1,Leaf ()))) -> Node (Leaf (),0,Node (Node (Leaf (),1,Leaf ()),0,Leaf ()));
+(inc,Node (Node (Node (Leaf (),2,Leaf ()),1,Leaf ()),1,Leaf ())) -> Node (Node (Node (Leaf (),3,Leaf ()),2,Leaf ()),2,Leaf ());
+(inc,Node (Node (Leaf (),1,Leaf ()),3,Leaf ())) -> Node (Node (Leaf (),2,Leaf ()),4,Leaf ());
+(div2,Node (Node (Leaf (),1,Leaf ()),1,Node (Leaf (),1,Leaf ()))) -> Node (Node (Leaf (),0,Leaf ()),0,Node (Leaf (),0,Leaf ()));
+(div2,Node (Node (Leaf (),1,Leaf ()),2,Node (Leaf (),0,Leaf ()))) -> Node (Node (Leaf (),0,Leaf ()),1,Node (Leaf (),0,Leaf ()));
+(div2,Node (Leaf (),0,Node (Leaf (),3,Node (Leaf (),0,Leaf ())))) -> Node (Leaf (),0,Node (Leaf (),1,Node (Leaf (),0,Leaf ())));
+(inc,Node (Leaf (),0,Node (Leaf (),2,Leaf ()))) -> Node (Leaf (),1,Node (Leaf (),3,Leaf ()));
+(div2,Node (Leaf (),0,Leaf ())) -> Node (Leaf (),0,Leaf ());
+(div2, Leaf ()) -> Leaf ();
+
+=================================
+b'start synthesis with ((mode SyRup) (atomicSize 3) (matchDepth 1) (ctorDepth 0) (condWidth 1)\n (totalHeight 0))\n'
+(inc,Node (Leaf (),0,Node (Leaf (),1,Leaf ()))) -> Node (Leaf (),1,Node (Leaf (),2,Leaf ()));
+(inc,Node (Leaf (),1,Node (Node (Leaf (),1,Leaf ()),3,Leaf ()))) -> Node (Leaf (),2,Node (Node (Leaf (),2,Leaf ()),4,Leaf ()));
+(div2,Node (Leaf (),2,Leaf ())) -> Node (Leaf (),1,Leaf ());
+(div2,Node (Node (Leaf (),0,Node (Leaf (),0,Leaf ())),0,Leaf ())) -> Node (Node (Leaf (),0,Node (Leaf (),0,Leaf ())),0,Leaf ());
+(inc,Node (Leaf (),2,Node (Leaf (),1,Node (Leaf (),1,Leaf ())))) -> Node (Leaf (),3,Node (Leaf (),2,Node (Leaf (),2,Leaf ())));
+(div2,Node (Leaf (),0,Leaf ())) -> Node (Leaf (),0,Leaf ());
+(div2,Node (Node (Leaf (),1,Node (Leaf (),1,Leaf ())),0,Leaf ())) -> Node (Node (Leaf (),0,Node (Leaf (),0,Leaf ())),0,Leaf ());
+(inc,Node (Leaf (),2,Node (Node (Leaf (),2,Leaf ()),0,Leaf ()))) -> Node (Leaf (),3,Node (Node (Leaf (),3,Leaf ()),1,Leaf ()));
+(div2,Node (Node (Leaf (),0,Leaf ()),3,Leaf ())) -> Node (Node (Leaf (),0,Leaf ()),1,Leaf ());
+(inc,Node (Node (Node (Leaf (),3,Leaf ()),0,Leaf ()),0,Leaf ())) -> Node (Node (Node (Leaf (),4,Leaf ()),1,Leaf ()),1,Leaf ());
+(div2, Leaf ()) -> Leaf ();
+
+=================================
+b'start synthesis with ((mode SyRup) (atomicSize 3) (matchDepth 1) (ctorDepth 0) (condWidth 1)\n (totalHeight 0))\n'
+(inc,Node (Leaf (),3,Node (Leaf (),1,Node (Leaf (),1,Leaf ())))) -> Node (Leaf (),4,Node (Leaf (),2,Node (Leaf (),2,Leaf ())));
+(div2,Node (Node (Node (Leaf (),3,Leaf ()),2,Leaf ()),1,Leaf ())) -> Node (Node (Node (Leaf (),1,Leaf ()),1,Leaf ()),0,Leaf ());
+(div2,Node (Leaf (),1,Leaf ())) -> Node (Leaf (),0,Leaf ());
+(div2,Node (Leaf (),3,Leaf ())) -> Node (Leaf (),1,Leaf ());
+(inc,Node (Node (Leaf (),3,Leaf ()),1,Node (Leaf (),0,Leaf ()))) -> Node (Node (Leaf (),4,Leaf ()),2,Node (Leaf (),1,Leaf ()));
+(inc,Node (Leaf (),1,Node (Leaf (),3,Leaf ()))) -> Node (Leaf (),2,Node (Leaf (),4,Leaf ()));
+(inc,Node (Leaf (),1,Node (Leaf (),1,Leaf ()))) -> Node (Leaf (),2,Node (Leaf (),2,Leaf ()));
+(inc,Node (Node (Leaf (),0,Leaf ()),1,Leaf ())) -> Node (Node (Leaf (),1,Leaf ()),2,Leaf ());
+(inc,Node (Leaf (),0,Node (Leaf (),3,Leaf ()))) -> Node (Leaf (),1,Node (Leaf (),4,Leaf ()));
+(div2,Node (Leaf (),2,Node (Node (Leaf (),1,Leaf ()),0,Leaf ()))) -> Node (Leaf (),1,Node (Node (Leaf (),0,Leaf ()),0,Leaf ()));
+(div2, Leaf ()) -> Leaf ();
+
+=================================
+b'start synthesis with ((mode SyRup) (atomicSize 3) (matchDepth 1) (ctorDepth 0) (condWidth 1)\n (totalHeight 0))\n'
+(div2,Node (Node (Leaf (),1,Leaf ()),2,Leaf ())) -> Node (Node (Leaf (),0,Leaf ()),1,Leaf ());
+(div2,Node (Leaf (),2,Leaf ())) -> Node (Leaf (),1,Leaf ());
+(div2,Node (Leaf (),1,Node (Node (Leaf (),0,Leaf ()),0,Leaf ()))) -> Node (Leaf (),0,Node (Node (Leaf (),0,Leaf ()),0,Leaf ()));
+(div2,Node (Leaf (),1,Node (Node (Leaf (),2,Leaf ()),1,Leaf ()))) -> Node (Leaf (),0,Node (Node (Leaf (),1,Leaf ()),0,Leaf ()));
+(inc,Node (Node (Leaf (),0,Leaf ()),3,Node (Leaf (),3,Leaf ()))) -> Node (Node (Leaf (),1,Leaf ()),4,Node (Leaf (),4,Leaf ()));
+(div2,Node (Leaf (),3,Leaf ())) -> Node (Leaf (),1,Leaf ());
+(inc,Node (Leaf (),3,Node (Leaf (),2,Node (Leaf (),0,Leaf ())))) -> Node (Leaf (),4,Node (Leaf (),3,Node (Leaf (),1,Leaf ())));
+(div2,Node (Leaf (),2,Node (Leaf (),3,Node (Leaf (),1,Leaf ())))) -> Node (Leaf (),1,Node (Leaf (),1,Node (Leaf (),0,Leaf ())));
+(div2,Node (Node (Leaf (),3,Leaf ()),0,Node (Leaf (),3,Leaf ()))) -> Node (Node (Leaf (),1,Leaf ()),0,Node (Leaf (),1,Leaf ()));
+(div2,Node (Node (Leaf (),3,Leaf ()),0,Node (Leaf (),2,Leaf ()))) -> Node (Node (Leaf (),1,Leaf ()),0,Node (Leaf (),1,Leaf ()));
+(div2, Leaf ()) -> Leaf ();
+
+=================================
+b'start synthesis with ((mode SyRup) (atomicSize 3) (matchDepth 1) (ctorDepth 0) (condWidth 1)\n (totalHeight 0))\n'
+(div2,Node (Node (Leaf (),0,Node (Leaf (),1,Leaf ())),0,Leaf ())) -> Node (Node (Leaf (),0,Node (Leaf (),0,Leaf ())),0,Leaf ());
+(inc,Node (Leaf (),1,Leaf ())) -> Node (Leaf (),2,Leaf ());
+(inc,Node (Leaf (),0,Node (Leaf (),0,Node (Leaf (),1,Leaf ())))) -> Node (Leaf (),1,Node (Leaf (),1,Node (Leaf (),2,Leaf ())));
+(inc,Node (Node (Node (Leaf (),1,Leaf ()),0,Leaf ()),0,Leaf ())) -> Node (Node (Node (Leaf (),2,Leaf ()),1,Leaf ()),1,Leaf ());
+(div2,Node (Node (Node (Leaf (),0,Leaf ()),2,Leaf ()),2,Leaf ())) -> Node (Node (Node (Leaf (),0,Leaf ()),1,Leaf ()),1,Leaf ());
+(inc,Node (Node (Node (Leaf (),3,Leaf ()),1,Leaf ()),3,Leaf ())) -> Node (Node (Node (Leaf (),4,Leaf ()),2,Leaf ()),4,Leaf ());
+(inc,Node (Leaf (),0,Node (Node (Leaf (),3,Leaf ()),0,Leaf ()))) -> Node (Leaf (),1,Node (Node (Leaf (),4,Leaf ()),1,Leaf ()));
+(inc,Node (Leaf (),1,Node (Leaf (),1,Leaf ()))) -> Node (Leaf (),2,Node (Leaf (),2,Leaf ()));
+(div2,Node (Leaf (),0,Node (Leaf (),2,Node (Leaf (),3,Leaf ())))) -> Node (Leaf (),0,Node (Leaf (),1,Node (Leaf (),1,Leaf ())));
+(div2,Node (Node (Leaf (),1,Leaf ()),0,Node (Leaf (),3,Leaf ()))) -> Node (Node (Leaf (),0,Leaf ()),0,Node (Leaf (),1,Leaf ()));
+(div2, Leaf ()) -> Leaf ();
+
+=================================
+b'start synthesis with ((mode SyRup) (atomicSize 3) (matchDepth 1) (ctorDepth 0) (condWidth 1)\n (totalHeight 0))\n'
+(div2,Node (Node (Leaf (),0,Node (Leaf (),2,Leaf ())),2,Leaf ())) -> Node (Node (Leaf (),0,Node (Leaf (),1,Leaf ())),1,Leaf ());
+(div2,Node (Leaf (),2,Node (Leaf (),1,Node (Leaf (),2,Leaf ())))) -> Node (Leaf (),1,Node (Leaf (),0,Node (Leaf (),1,Leaf ())));
+(inc,Node (Leaf (),3,Node (Node (Leaf (),1,Leaf ()),1,Leaf ()))) -> Node (Leaf (),4,Node (Node (Leaf (),2,Leaf ()),2,Leaf ()));
+(div2,Node (Leaf (),2,Leaf ())) -> Node (Leaf (),1,Leaf ());
+(div2,Node (Node (Leaf (),2,Node (Leaf (),3,Leaf ())),2,Leaf ())) -> Node (Node (Leaf (),1,Node (Leaf (),1,Leaf ())),1,Leaf ());
+(div2,Node (Leaf (),1,Node (Node (Leaf (),3,Leaf ()),0,Leaf ()))) -> Node (Leaf (),0,Node (Node (Leaf (),1,Leaf ()),0,Leaf ()));
+(div2,Node (Node (Leaf (),0,Leaf ()),3,Node (Leaf (),0,Leaf ()))) -> Node (Node (Leaf (),0,Leaf ()),1,Node (Leaf (),0,Leaf ()));
+(div2,Node (Node (Node (Leaf (),0,Leaf ()),0,Leaf ()),3,Leaf ())) -> Node (Node (Node (Leaf (),0,Leaf ()),0,Leaf ()),1,Leaf ());
+(div2,Node (Node (Leaf (),0,Node (Leaf (),2,Leaf ())),3,Leaf ())) -> Node (Node (Leaf (),0,Node (Leaf (),1,Leaf ())),1,Leaf ());
+(inc,Node (Node (Leaf (),0,Leaf ()),1,Node (Leaf (),3,Leaf ()))) -> Node (Node (Leaf (),1,Leaf ()),2,Node (Leaf (),4,Leaf ()));
+(div2, Leaf ()) -> Leaf ();
+
+=================================
+b'start synthesis with ((mode SyRup) (atomicSize 3) (matchDepth 1) (ctorDepth 0) (condWidth 1)\n (totalHeight 0))\n'
+(inc,Node (Node (Leaf (),2,Leaf ()),1,Node (Leaf (),0,Leaf ()))) -> Node (Node (Leaf (),3,Leaf ()),2,Node (Leaf (),1,Leaf ()));
+(inc,Node (Leaf (),2,Node (Node (Leaf (),0,Leaf ()),1,Leaf ()))) -> Node (Leaf (),3,Node (Node (Leaf (),1,Leaf ()),2,Leaf ()));
+(inc,Node (Node (Leaf (),3,Node (Leaf (),2,Leaf ())),3,Leaf ())) -> Node (Node (Leaf (),4,Node (Leaf (),3,Leaf ())),4,Leaf ());
+(inc,Node (Leaf (),1,Node (Leaf (),0,Node (Leaf (),1,Leaf ())))) -> Node (Leaf (),2,Node (Leaf (),1,Node (Leaf (),2,Leaf ())));
+(div2,Node (Leaf (),0,Leaf ())) -> Node (Leaf (),0,Leaf ());
+(inc,Node (Node (Leaf (),0,Leaf ()),0,Node (Leaf (),1,Leaf ()))) -> Node (Node (Leaf (),1,Leaf ()),1,Node (Leaf (),2,Leaf ()));
+(inc,Node (Leaf (),1,Node (Leaf (),3,Node (Leaf (),0,Leaf ())))) -> Node (Leaf (),2,Node (Leaf (),4,Node (Leaf (),1,Leaf ())));
+(inc,Node (Leaf (),0,Node (Leaf (),1,Node (Leaf (),0,Leaf ())))) -> Node (Leaf (),1,Node (Leaf (),2,Node (Leaf (),1,Leaf ())));
+(div2,Node (Leaf (),0,Node (Node (Leaf (),2,Leaf ()),1,Leaf ()))) -> Node (Leaf (),0,Node (Node (Leaf (),1,Leaf ()),0,Leaf ()));
+(div2,Node (Node (Leaf (),3,Node (Leaf (),3,Leaf ())),2,Leaf ())) -> Node (Node (Leaf (),1,Node (Leaf (),1,Leaf ())),1,Leaf ());
+(div2, Leaf ()) -> Leaf ();
+
+=================================
+b'start synthesis with ((mode SyRup) (atomicSize 3) (matchDepth 1) (ctorDepth 0) (condWidth 1)\n (totalHeight 0))\n'
+(inc,Node (Node (Leaf (),1,Node (Leaf (),0,Leaf ())),0,Leaf ())) -> Node (Node (Leaf (),2,Node (Leaf (),1,Leaf ())),1,Leaf ());
+(inc,Node (Leaf (),3,Leaf ())) -> Node (Leaf (),4,Leaf ());
+(div2,Node (Node (Leaf (),0,Leaf ()),2,Leaf ())) -> Node (Node (Leaf (),0,Leaf ()),1,Leaf ());
+(div2,Node (Node (Leaf (),0,Node (Leaf (),3,Leaf ())),3,Leaf ())) -> Node (Node (Leaf (),0,Node (Leaf (),1,Leaf ())),1,Leaf ());
+(div2,Node (Leaf (),0,Node (Leaf (),0,Leaf ()))) -> Node (Leaf (),0,Node (Leaf (),0,Leaf ()));
+(inc,Node (Leaf (),3,Node (Leaf (),0,Leaf ()))) -> Node (Leaf (),4,Node (Leaf (),1,Leaf ()));
+(div2,Node (Node (Node (Leaf (),1,Leaf ()),1,Leaf ()),3,Leaf ())) -> Node (Node (Node (Leaf (),0,Leaf ()),0,Leaf ()),1,Leaf ());
+(div2,Node (Leaf (),3,Node (Node (Leaf (),0,Leaf ()),3,Leaf ()))) -> Node (Leaf (),1,Node (Node (Leaf (),0,Leaf ()),1,Leaf ()));
+(inc,Node (Leaf (),0,Leaf ())) -> Node (Leaf (),1,Leaf ());
+(div2,Node (Leaf (),3,Node (Leaf (),0,Leaf ()))) -> Node (Leaf (),1,Node (Leaf (),0,Leaf ()));
+(div2, Leaf ()) -> Leaf ();
+
+=================================
+b'start synthesis with ((mode SyRup) (atomicSize 3) (matchDepth 1) (ctorDepth 0) (condWidth 1)\n (totalHeight 0))\n'
+(div2,Node (Node (Leaf (),0,Leaf ()),1,Node (Leaf (),3,Leaf ()))) -> Node (Node (Leaf (),0,Leaf ()),0,Node (Leaf (),1,Leaf ()));
+(inc,Node (Node (Leaf (),1,Leaf ()),1,Leaf ())) -> Node (Node (Leaf (),2,Leaf ()),2,Leaf ());
+(div2,Node (Node (Leaf (),1,Node (Leaf (),0,Leaf ())),3,Leaf ())) -> Node (Node (Leaf (),0,Node (Leaf (),0,Leaf ())),1,Leaf ());
+(inc,Node (Node (Node (Leaf (),3,Leaf ()),3,Leaf ()),3,Leaf ())) -> Node (Node (Node (Leaf (),4,Leaf ()),4,Leaf ()),4,Leaf ());
+(inc,Node (Leaf (),3,Leaf ())) -> Node (Leaf (),4,Leaf ());
+(div2,Node (Leaf (),2,Node (Leaf (),1,Node (Leaf (),0,Leaf ())))) -> Node (Leaf (),1,Node (Leaf (),0,Node (Leaf (),0,Leaf ())));
+(inc,Node (Node (Leaf (),3,Leaf ()),2,Node (Leaf (),1,Leaf ()))) -> Node (Node (Leaf (),4,Leaf ()),3,Node (Leaf (),2,Leaf ()));
+(div2,Node (Leaf (),2,Node (Leaf (),0,Node (Leaf (),1,Leaf ())))) -> Node (Leaf (),1,Node (Leaf (),0,Node (Leaf (),0,Leaf ())));
+(inc,Node (Leaf (),0,Node (Leaf (),0,Node (Leaf (),2,Leaf ())))) -> Node (Leaf (),1,Node (Leaf (),1,Node (Leaf (),3,Leaf ())));
+(div2,Node (Leaf (),0,Node (Leaf (),3,Node (Leaf (),0,Leaf ())))) -> Node (Leaf (),0,Node (Leaf (),1,Node (Leaf (),0,Leaf ())));
+(div2, Leaf ()) -> Leaf ();
+
+=================================
+b'start synthesis with ((mode SyRup) (atomicSize 3) (matchDepth 1) (ctorDepth 0) (condWidth 1)\n (totalHeight 0))\n'

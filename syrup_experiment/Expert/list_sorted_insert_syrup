@@ -1,0 +1,3013 @@
+([], 0) -> [0];
+=================================
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] -> ( Cons x1 x0 )
+  | hd1::tl1 -> ( Nil )
+  
+0.0003 false
+
+([], 1) -> [1];
+=================================
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] -> ( Cons x1 x0 )
+  | hd1::tl1 -> ( Nil )
+  
+0.0019 false
+
+([], 2) -> [2];
+=================================
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] -> ( Cons x1 x0 )
+  | hd1::tl1 -> ( Nil )
+  
+0.0029 false
+
+([0, 1], 0) -> [0, 1];
+=================================
+fix f0.fun (x0, x1). x0
+0.0029 false
+
+([0], 1) -> [0, 1];
+=================================
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] -> ( Cons x1 x0 )
+  | hd1::tl1 ->
+    ( Cons hd1
+      (f0 ( tl1, x1 )) )
+  
+0.0038 false
+
+([1], 0) -> [0, 1];
+=================================
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] -> ( Nil )
+  | hd1::tl1 ->
+    ( Cons x1 x0 )
+  
+0.0026 false
+
+([1], 1) -> [1];
+=================================
+fix f0.fun (x0, x1). x0
+0.0032 false
+
+([1], 2) -> [1, 2];
+=================================
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] -> ( Cons x1 x0 )
+  | hd1::tl1 ->
+    ( Cons hd1
+      (f0 ( tl1, x1 )) )
+  
+0.0050 false
+
+([2], 0) -> [0, 2];
+=================================
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] -> ( Nil )
+  | hd1::tl1 ->
+    ( Cons x1 x0 )
+  
+0.0019 false
+
+([2], 1) -> [1, 2];
+=================================
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] -> ( Nil )
+  | hd1::tl1 ->
+    ( Cons x1 x0 )
+  
+0.0038 false
+
+([0], 0) -> [0];
+([1], 1) -> [1];
+=================================
+fix f0.fun (x0, x1). x0
+0.0041 false
+
+([1], 1) -> [1];
+([0, 1], 2) -> [0, 1, 2];
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] ->
+    match (x1) with
+    | Z -> ( Nil )
+    | Sn1 ->
+      ( Cons n1
+        ( Cons x1 x0 ) )
+    
+  | hd2::tl2 ->
+    match (tl2) with
+    | [] -> x0
+    | hd1::tl1 ->
+      ( Cons hd2
+        (f0 ( tl1, x1 ))
+        )
+    
+  
+0.7266 false
+
+([], 0) -> [0];
+([0, 1], 2) -> [0, 1, 2];
+=================================
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] -> ( Cons x1 x0 )
+  | hd1::tl1 ->
+    ( Cons hd1
+      (f0 ( tl1, x1 )) )
+  
+0.0094 false
+
+([], 2) -> [2];
+([0], 1) -> [0, 1];
+=================================
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] -> ( Cons x1 x0 )
+  | hd1::tl1 ->
+    ( Cons hd1
+      (f0 ( tl1, x1 )) )
+  
+0.0044 false
+
+([], 0) -> [0];
+([1], 0) -> [0, 1];
+=================================
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] -> ( Cons x1 x0 )
+  | hd1::tl1 ->
+    ( Cons x1 x0 )
+  
+0.0015 false
+
+([], 1) -> [1];
+([0], 1) -> [0, 1];
+=================================
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] -> ( Cons x1 x0 )
+  | hd1::tl1 ->
+    ( Cons hd1
+      (f0 ( tl1, x1 )) )
+  
+0.0035 false
+
+([0], 0) -> [0];
+([0, 1], 0) -> [0, 1];
+=================================
+fix f0.fun (x0, x1). x0
+0.0036 false
+
+([], 1) -> [1];
+([0, 1], 2) -> [0, 1, 2];
+=================================
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] -> ( Cons x1 x0 )
+  | hd1::tl1 ->
+    ( Cons hd1
+      (f0 ( tl1, x1 )) )
+  
+0.0089 false
+
+([], 1) -> [1];
+([0], 0) -> [0];
+=================================
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] -> ( Cons x1 x0 )
+  | hd1::tl1 ->
+    (f0 ( tl1, x1 ))
+  
+0.0028 false
+
+([1], 2) -> [1, 2];
+([0, 1], 0) -> [0, 1];
+=================================
+fix f0.fun (x0, x1).
+  match (x1) with
+  | Z -> x0
+  | Sn1 ->
+    ( Cons n1
+      ( Cons x1 ( Nil ) )
+      )
+  
+0.0063 false
+
+([], 0) -> [0];
+([1], 0) -> [0, 1];
+([0, 1], 0) -> [0, 1];
+=================================
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] -> ( Cons x1 x0 )
+  | hd1::tl1 ->
+    ( Cons x1
+      ( Cons ( Succ x1 )
+        ( Nil ) ) )
+  
+0.0037 false
+
+([0], 0) -> [0];
+([2], 1) -> [1, 2];
+([0, 1], 2) -> [0, 1, 2];
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x1) with
+  | Z -> x0
+  | Sn2 ->
+    match (n2) with
+    | Z -> ( Cons x1 x0 )
+    | Sn1 ->
+      ( Cons n1
+        ( Cons n2
+          ( Cons x1
+            ( Nil ) ) ) )
+    
+  
+1.1294 false
+
+([0], 0) -> [0];
+([1], 1) -> [1];
+([2], 1) -> [1, 2];
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] -> x0
+  | hd1::tl1 ->
+    ( Cons x1
+      if
+        (equal_to
+          ( hd1, x1 ))
+        then
+          (f0
+            ( tl1, x1 ))
+        else x0 )
+  
+2.8990 false
+
+([2], 0) -> [0, 2];
+([2], 1) -> [1, 2];
+([0, 1], 0) -> [0, 1];
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] -> x0
+  | hd2::tl2 ->
+    match (tl2) with
+    | [] ->
+      ( Cons x1 x0 )
+    | hd1::tl1 ->
+      ( Cons hd2
+        ( Cons hd1
+          (f0
+            ( tl1, x1 ))
+          ) )
+    
+  
+0.3020 false
+
+([1], 0) -> [0, 1];
+([2], 0) -> [0, 2];
+([2], 1) -> [1, 2];
+=================================
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] -> ( Nil )
+  | hd1::tl1 ->
+    ( Cons x1 x0 )
+  
+0.0043 false
+
+([], 0) -> [0];
+([1], 0) -> [0, 1];
+([1], 1) -> [1];
+=================================
+fix f0.fun (x0, x1).
+  match (x1) with
+  | Z -> ( Cons x1 x0 )
+  | Sn1 -> x0
+  
+0.0046 false
+
+([1], 1) -> [1];
+([1], 2) -> [1, 2];
+([2], 1) -> [1, 2];
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] -> ( Cons x1 x0 )
+  | hd1::tl1 ->
+    if
+      (equal_to
+        ( hd1, x1 ))
+      then
+        (f0 ( tl1, x1 ))
+      else
+        ( Cons
+          ( Succ ( Zero )
+            )
+          if
+            (less_than
+              ( hd1, x1 ))
+            then
+              (f0
+                ( tl1, x1
+                  ))
+            else x0 )
+  
+2.6187 false
+
+([], 1) -> [1];
+([1], 2) -> [1, 2];
+([0, 1], 2) -> [0, 1, 2];
+=================================
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] -> ( Cons x1 x0 )
+  | hd1::tl1 ->
+    ( Cons hd1
+      (f0 ( tl1, x1 )) )
+  
+0.0113 false
+
+([], 1) -> [1];
+([], 2) -> [2];
+([1], 1) -> [1];
+=================================
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] -> ( Cons x1 x0 )
+  | hd1::tl1 -> x0
+  
+0.0037 false
+
+([], 0) -> [0];
+([1], 0) -> [0, 1];
+([0, 1], 2) -> [0, 1, 2];
+=================================
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x1) with
+  | Z -> ( Cons x1 x0 )
+  | Sn1 ->
+    ( Cons ( Zero )
+      ( Cons n1
+        ( Cons x1 ( Nil )
+          ) ) )
+  
+0.0532 false
+
+([], 2) -> [2];
+([0], 0) -> [0];
+([1], 1) -> [1];
+([0, 1], 2) -> [0, 1, 2];
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] ->
+    match (x1) with
+    | Z -> ( Nil )
+    | Sn1 ->
+      ( Cons x1 x0 )
+    
+  | hd2::tl2 ->
+    match (tl2) with
+    | [] -> x0
+    | hd1::tl1 ->
+      ( Cons hd2
+        ( Cons hd1
+          (f0
+            ( tl1, x1 ))
+          ) )
+    
+  
+0.6641 false
+
+([0], 1) -> [0, 1];
+([1], 0) -> [0, 1];
+([2], 1) -> [1, 2];
+([0, 1], 2) -> [0, 1, 2];
+=================================
+None
+([], 0) -> [0];
+([], 1) -> [1];
+([1], 2) -> [1, 2];
+([2], 1) -> [1, 2];
+=================================
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] -> ( Cons x1 x0 )
+  | hd1::tl1 ->
+    ( Cons
+      ( Succ ( Zero ) )
+      ( Cons
+        ( Succ
+          ( Succ ( Zero )
+            ) ) tl1 ) )
+  
+0.0287 false
+
+([], 2) -> [2];
+([0], 1) -> [0, 1];
+([1], 2) -> [1, 2];
+([0, 1], 0) -> [0, 1];
+=================================
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] -> ( Cons x1 x0 )
+  | hd1::tl1 ->
+    ( Cons hd1
+      ( Cons ( Succ hd1 )
+        ( Nil ) ) )
+  
+0.0599 false
+
+([], 2) -> [2];
+([0], 0) -> [0];
+([1], 2) -> [1, 2];
+([0, 1], 2) -> [0, 1, 2];
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] ->
+    match (x1) with
+    | Z -> x0
+    | Sn1 ->
+      ( Cons x1 x0 )
+    
+  | hd2::tl2 ->
+    ( Cons hd2
+      (f0 ( tl2, x1 )) )
+  
+1.2088 false
+
+([], 1) -> [1];
+([1], 2) -> [1, 2];
+([2], 0) -> [0, 2];
+([0, 1], 0) -> [0, 1];
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] ->
+    match (x1) with
+    | Z -> ( Nil )
+    | Sn1 ->
+      ( Cons x1 x0 )
+    
+  | hd2::tl2 ->
+    ( Cons
+      match (x1) with
+      | Z -> x1
+      | Sn1 -> hd2
+      match (tl2) with
+      | [] ->
+        ( Cons
+          ( Succ
+            ( Succ
+              ( Zero ) )
+            ) tl2 )
+      | hd1::tl1 -> tl2
+      )
+  
+0.5189 false
+
+([], 0) -> [0];
+([1], 0) -> [0, 1];
+([1], 1) -> [1];
+([0, 1], 2) -> [0, 1, 2];
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x1) with
+  | Z ->
+    match (x0) with
+    | [] ->
+      ( Cons x1 x0 )
+    | hd1::tl1 ->
+      ( Cons x1 x0 )
+    
+  | Sn2 ->
+    match (n2) with
+    | Z -> x0
+    | Sn1 ->
+      ( Cons n1
+        ( Cons n2
+          ( Cons x1
+            ( Nil ) ) ) )
+    
+  
+0.4417 false
+
+([], 0) -> [0];
+([], 1) -> [1];
+([1], 0) -> [0, 1];
+([1], 2) -> [1, 2];
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] ->
+    match (x1) with
+    | Z -> ( Cons x1 x0 )
+    | Sn1 ->
+      ( Cons x1 x0 )
+    
+  | hd2::tl2 ->
+    match (x1) with
+    | Z -> ( Cons x1 x0 )
+    | Sn1 ->
+      ( Cons hd2
+        ( Cons x1 tl2 ) )
+    
+  
+0.1114 false
+
+([1], 1) -> [1];
+([1], 2) -> [1, 2];
+([2], 1) -> [1, 2];
+([0, 1], 2) -> [0, 1, 2];
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] -> ( Cons x1 x0 )
+  | hd1::tl1 ->
+    if
+      (equal_to
+        ( hd1, x1 ))
+      then
+        (f0 ( tl1, x1 ))
+      else
+        ( Cons
+          if
+            (less_than
+              ( hd1, x1 ))
+            then hd1
+            else x1
+          if
+            (less_than
+              ( hd1, x1 ))
+            then
+              (f0
+                ( tl1, x1
+                  ))
+            else x0 )
+  
+38.3002 false
+
+([], 0) -> [0];
+([], 1) -> [1];
+([0], 0) -> [0];
+([1], 0) -> [0, 1];
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] -> ( Cons x1 x0 )
+  | hd1::tl1 ->
+    ( Cons x1
+      if
+        (equal_to
+          ( hd1, x1 ))
+        then tl1 else x0
+      )
+  
+0.3444 false
+
+([0], 0) -> [0];
+([0], 1) -> [0, 1];
+([1], 2) -> [1, 2];
+([2], 0) -> [0, 2];
+([0, 1], 0) -> [0, 1];
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] -> ( Cons x1 x0 )
+  | hd1::tl1 ->
+    if
+      (equal_to
+        ( hd1, x1 ))
+      then
+        (f0 ( tl1, x1 ))
+      else
+        ( Cons
+          if
+            (equal_to
+              ( x1,
+                ( Zero )
+                ))
+            then x1
+            else hd1
+          if
+            (equal_to
+              ( x1,
+                ( Zero )
+                ))
+            then x0
+            else
+              (f0
+                ( tl1, x1
+                  )) )
+  
+89.5067 false
+
+([], 0) -> [0];
+([], 2) -> [2];
+([1], 0) -> [0, 1];
+([2], 1) -> [1, 2];
+([0, 1], 2) -> [0, 1, 2];
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] ->
+    match (x1) with
+    | Z -> ( Cons x1 x0 )
+    | Sn1 ->
+      ( Cons x1 x0 )
+    
+  | hd2::tl2 ->
+    match (tl2) with
+    | [] ->
+      ( Cons x1 x0 )
+    | hd1::tl1 ->
+      ( Cons hd2
+        ( Cons hd1
+          (f0
+            ( tl1, x1 ))
+          ) )
+    
+  
+0.6630 false
+
+([], 1) -> [1];
+([1], 0) -> [0, 1];
+([1], 1) -> [1];
+([2], 1) -> [1, 2];
+([0, 1], 0) -> [0, 1];
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] -> ( Cons x1 x0 )
+  | hd1::tl1 ->
+    ( Cons
+      if
+        (equal_to
+          ( x1, ( Zero )
+            ))
+        then ( Zero )
+        else x1
+      if
+        (equal_to
+          ( hd1, x1 ))
+        then tl1 else x0
+      )
+  
+1.5864 false
+
+([], 1) -> [1];
+([0], 0) -> [0];
+([0], 1) -> [0, 1];
+([1], 2) -> [1, 2];
+([2], 1) -> [1, 2];
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] ->
+    if
+      (equal_to
+        ( x1, ( Zero ) ))
+      then x0
+      else ( Cons x1 x0 )
+  | hd1::tl1 ->
+    ( Cons
+      if
+        (less_than
+          ( hd1, x1 ))
+        then hd1 else x1
+      if
+        (less_than
+          ( x1, hd1 ))
+        then x0
+        else
+          (f0
+            ( tl1, x1 ))
+      )
+  
+6.0713 false
+
+([], 2) -> [2];
+([0], 1) -> [0, 1];
+([2], 1) -> [1, 2];
+([0, 1], 0) -> [0, 1];
+([0, 1], 2) -> [0, 1, 2];
+=================================
+None
+([], 0) -> [0];
+([], 1) -> [1];
+([0], 0) -> [0];
+([1], 0) -> [0, 1];
+([0, 1], 2) -> [0, 1, 2];
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] -> ( Cons x1 x0 )
+  | hd1::tl1 ->
+    if
+      (equal_to
+        ( hd1, x1 ))
+      then x0
+      else
+        ( Cons
+          if
+            (equal_to
+              ( x1,
+                ( Zero )
+                ))
+            then x1
+            else hd1
+          if
+            (equal_to
+              ( x1,
+                ( Zero )
+                ))
+            then x0
+            else
+              (f0
+                ( tl1, x1
+                  )) )
+  
+3.8915 false
+
+([], 2) -> [2];
+([0], 0) -> [0];
+([1], 0) -> [0, 1];
+([2], 0) -> [0, 2];
+([0, 1], 2) -> [0, 1, 2];
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] ->
+    if
+      (equal_to
+        ( x1, ( Zero ) ))
+      then x0
+      else ( Cons x1 x0 )
+  | hd1::tl1 ->
+    ( Cons
+      if
+        (equal_to
+          ( x1, ( Zero )
+            )) then x1
+        else hd1
+      if
+        (less_than
+          ( x1, hd1 ))
+        then x0
+        else
+          (f0
+            ( tl1, x1 ))
+      )
+  
+49.0361 false
+
+([0], 1) -> [0, 1];
+([1], 2) -> [1, 2];
+([2], 1) -> [1, 2];
+([0, 1], 0) -> [0, 1];
+([0, 1], 2) -> [0, 1, 2];
+=================================
+None
+([], 0) -> [0];
+([], 1) -> [1];
+([1], 1) -> [1];
+([2], 0) -> [0, 2];
+([0, 1], 2) -> [0, 1, 2];
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x1) with
+  | Z ->
+    match (x0) with
+    | [] ->
+      ( Cons x1 x0 )
+    | hd1::tl1 ->
+      ( Cons x1 x0 )
+    
+  | Sn2 ->
+    match (n2) with
+    | Z ->
+      ( Cons x1 ( Nil ) )
+    | Sn1 ->
+      ( Cons n1
+        ( Cons n2
+          ( Cons x1
+            ( Nil ) ) ) )
+    
+  
+0.5256 false
+
+([], 2) -> [2];
+([0], 0) -> [0];
+([1], 0) -> [0, 1];
+([1], 1) -> [1];
+([1], 2) -> [1, 2];
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] -> ( Cons x1 x0 )
+  | hd1::tl1 ->
+    if
+      (equal_to
+        ( hd1, x1 ))
+      then
+        (f0 ( tl1, x1 ))
+      else
+        ( Cons
+          if
+            (equal_to
+              ( x1,
+                ( Zero )
+                ))
+            then x1
+            else hd1
+          if
+            (equal_to
+              ( x1,
+                ( Zero )
+                ))
+            then x0
+            else
+              (f0
+                ( tl1, x1
+                  )) )
+  
+2.7365 false
+
+([], 0) -> [0];
+([], 2) -> [2];
+([0], 0) -> [0];
+([0], 1) -> [0, 1];
+([1], 1) -> [1];
+([1], 2) -> [1, 2];
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] -> ( Cons x1 x0 )
+  | hd1::tl1 ->
+    ( Cons
+      if
+        (equal_to
+          ( x1, ( Zero )
+            ))
+        then ( Zero )
+        else hd1
+      if
+        (equal_to
+          ( hd1, x1 ))
+        then tl1
+        else
+          (f0
+            ( tl1, x1 ))
+      )
+  
+3.5593 false
+
+([], 0) -> [0];
+([0], 0) -> [0];
+([1], 0) -> [0, 1];
+([1], 1) -> [1];
+([1], 2) -> [1, 2];
+([2], 0) -> [0, 2];
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] -> ( Cons x1 x0 )
+  | hd1::tl1 ->
+    if
+      (equal_to
+        ( hd1, x1 ))
+      then
+        (f0 ( tl1, x1 ))
+      else
+        ( Cons
+          if
+            (equal_to
+              ( x1,
+                ( Zero )
+                ))
+            then x1
+            else hd1
+          if
+            (equal_to
+              ( x1,
+                ( Zero )
+                ))
+            then x0
+            else
+              (f0
+                ( tl1, x1
+                  )) )
+  
+8.3972 false
+
+([], 0) -> [0];
+([], 1) -> [1];
+([0], 0) -> [0];
+([1], 0) -> [0, 1];
+([1], 1) -> [1];
+([0, 1], 2) -> [0, 1, 2];
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] -> ( Cons x1 x0 )
+  | hd1::tl1 ->
+    if
+      (equal_to
+        ( hd1, x1 ))
+      then x0
+      else
+        ( Cons
+          if
+            (equal_to
+              ( x1,
+                ( Zero )
+                ))
+            then x1
+            else hd1
+          if
+            (equal_to
+              ( x1,
+                ( Zero )
+                ))
+            then x0
+            else
+              (f0
+                ( tl1, x1
+                  )) )
+  
+4.9333 false
+
+([], 0) -> [0];
+([], 1) -> [1];
+([0], 0) -> [0];
+([0], 1) -> [0, 1];
+([1], 0) -> [0, 1];
+([1], 1) -> [1];
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] -> ( Cons x1 x0 )
+  | hd1::tl1 ->
+    if
+      (equal_to
+        ( hd1, x1 ))
+      then x0
+      else
+        ( Cons ( Zero )
+          if
+            (equal_to
+              ( hd1,
+                ( Zero )
+                ))
+            then
+              (f0
+                ( tl1, x1
+                  ))
+            else x0 )
+  
+0.6152 false
+
+([], 1) -> [1];
+([0], 0) -> [0];
+([1], 0) -> [0, 1];
+([2], 0) -> [0, 2];
+([2], 1) -> [1, 2];
+([0, 1], 2) -> [0, 1, 2];
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] ->
+    if
+      (equal_to
+        ( x1, ( Zero ) ))
+      then x0
+      else ( Cons x1 x0 )
+  | hd1::tl1 ->
+    ( Cons
+      if
+        (less_than
+          ( hd1, x1 ))
+        then hd1 else x1
+      if
+        (less_than
+          ( x1, hd1 ))
+        then x0
+        else
+          (f0
+            ( tl1, x1 ))
+      )
+  
+30.3169 false
+
+([], 1) -> [1];
+([0], 0) -> [0];
+([1], 2) -> [1, 2];
+([2], 1) -> [1, 2];
+([0, 1], 0) -> [0, 1];
+([0, 1], 2) -> [0, 1, 2];
+=================================
+None
+([], 1) -> [1];
+([], 2) -> [2];
+([0], 1) -> [0, 1];
+([1], 0) -> [0, 1];
+([1], 2) -> [1, 2];
+([2], 0) -> [0, 2];
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] ->
+    match (x1) with
+    | Z -> ( Nil )
+    | Sn1 ->
+      ( Cons x1 x0 )
+    
+  | hd2::tl2 ->
+    match (x1) with
+    | Z -> ( Cons x1 x0 )
+    | Sn1 ->
+      ( Cons hd2
+        ( Cons x1 tl2 ) )
+    
+  
+0.4478 false
+
+([], 0) -> [0];
+([], 2) -> [2];
+([0], 0) -> [0];
+([0], 1) -> [0, 1];
+([1], 2) -> [1, 2];
+([0, 1], 2) -> [0, 1, 2];
+=================================
+None
+([], 1) -> [1];
+([], 2) -> [2];
+([0], 0) -> [0];
+([0], 1) -> [0, 1];
+([1], 0) -> [0, 1];
+([2], 0) -> [0, 2];
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] ->
+    if
+      (equal_to
+        ( x1, ( Zero ) ))
+      then x0
+      else ( Cons x1 x0 )
+  | hd1::tl1 ->
+    ( Cons
+      if
+        (equal_to
+          ( hd1, ( Zero )
+            )) then hd1
+        else x1
+      if
+        (equal_to
+          ( hd1, ( Zero )
+            ))
+        then
+          (f0
+            ( tl1, x1 ))
+        else x0 )
+  
+2.5675 false
+
+([], 1) -> [1];
+([], 2) -> [2];
+([0], 0) -> [0];
+([1], 0) -> [0, 1];
+([2], 1) -> [1, 2];
+([0, 1], 2) -> [0, 1, 2];
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] ->
+    if
+      (equal_to
+        ( x1, ( Zero ) ))
+      then x0
+      else ( Cons x1 x0 )
+  | hd1::tl1 ->
+    ( Cons
+      if
+        (less_than
+          ( hd1, x1 ))
+        then hd1 else x1
+      if
+        (less_than
+          ( x1, hd1 ))
+        then x0
+        else
+          (f0
+            ( tl1, x1 ))
+      )
+  
+78.6248 false
+
+([], 1) -> [1];
+([0], 1) -> [0, 1];
+([1], 1) -> [1];
+([2], 0) -> [0, 2];
+([2], 1) -> [1, 2];
+([0, 1], 0) -> [0, 1];
+([0, 1], 2) -> [0, 1, 2];
+=================================
+None
+([], 0) -> [0];
+([0], 0) -> [0];
+([0], 1) -> [0, 1];
+([1], 1) -> [1];
+([1], 2) -> [1, 2];
+([2], 0) -> [0, 2];
+([0, 1], 0) -> [0, 1];
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] -> ( Cons x1 x0 )
+  | hd1::tl1 ->
+    if
+      (equal_to
+        ( hd1, x1 ))
+      then
+        (f0 ( tl1, x1 ))
+      else
+        ( Cons
+          if
+            (equal_to
+              ( x1,
+                ( Zero )
+                ))
+            then x1
+            else hd1
+          if
+            (equal_to
+              ( x1,
+                ( Zero )
+                ))
+            then x0
+            else
+              (f0
+                ( tl1, x1
+                  )) )
+  
+44.9826 false
+
+([0], 0) -> [0];
+([0], 1) -> [0, 1];
+([1], 0) -> [0, 1];
+([1], 1) -> [1];
+([1], 2) -> [1, 2];
+([2], 0) -> [0, 2];
+([0, 1], 0) -> [0, 1];
+=================================
+None
+([], 0) -> [0];
+([0], 1) -> [0, 1];
+([1], 2) -> [1, 2];
+([2], 0) -> [0, 2];
+([2], 1) -> [1, 2];
+([0, 1], 0) -> [0, 1];
+([0, 1], 2) -> [0, 1, 2];
+=================================
+None
+([], 0) -> [0];
+([], 1) -> [1];
+([0], 0) -> [0];
+([1], 0) -> [0, 1];
+([1], 1) -> [1];
+([2], 0) -> [0, 2];
+([0, 1], 0) -> [0, 1];
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] -> ( Cons x1 x0 )
+  | hd1::tl1 ->
+    if
+      (equal_to
+        ( hd1, x1 ))
+      then x0
+      else ( Cons x1 x0 )
+  
+2.3065 false
+
+([], 0) -> [0];
+([], 1) -> [1];
+([0], 0) -> [0];
+([1], 1) -> [1];
+([1], 2) -> [1, 2];
+([0, 1], 0) -> [0, 1];
+([0, 1], 2) -> [0, 1, 2];
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] -> ( Cons x1 x0 )
+  | hd1::tl1 ->
+    if
+      (equal_to
+        ( hd1, x1 ))
+      then x0
+      else
+        ( Cons hd1
+          (f0
+            ( tl1, x1 ))
+          )
+  
+14.3955 false
+
+([], 0) -> [0];
+([], 1) -> [1];
+([], 2) -> [2];
+([1], 0) -> [0, 1];
+([1], 1) -> [1];
+([1], 2) -> [1, 2];
+([0, 1], 2) -> [0, 1, 2];
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  if
+    (equal_to
+      ( x1, ( Zero ) ))
+    then
+      match (x1) with
+      | Z ->
+        ( Cons x1 x0 )
+      | Sn1 -> ( Nil )
+    else
+      match (x0) with
+      | [] ->
+        ( Cons x1 x0 )
+      | hd1::tl1 ->
+        ( Cons
+          if
+            (equal_to
+              ( hd1, x1 ))
+            then x1
+            else hd1
+          if
+            (equal_to
+              ( hd1, x1 ))
+            then tl1
+            else
+              (f0
+                ( tl1, x1
+                  )) )
+  
+4.8963 false
+
+([], 0) -> [0];
+([], 2) -> [2];
+([0], 1) -> [0, 1];
+([1], 0) -> [0, 1];
+([2], 0) -> [0, 2];
+([2], 1) -> [1, 2];
+([0, 1], 2) -> [0, 1, 2];
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] -> ( Cons x1 x0 )
+  | hd1::tl1 ->
+    ( Cons
+      if
+        (less_than
+          ( hd1, x1 ))
+        then hd1 else x1
+      if
+        (less_than
+          ( hd1, x1 ))
+        then
+          (f0
+            ( tl1, x1 ))
+        else x0 )
+  
+114.0706 false
+
+([], 0) -> [0];
+([], 2) -> [2];
+([0], 1) -> [0, 1];
+([1], 2) -> [1, 2];
+([2], 0) -> [0, 2];
+([0, 1], 0) -> [0, 1];
+([0, 1], 2) -> [0, 1, 2];
+=================================
+None
+([], 1) -> [1];
+([], 2) -> [2];
+([1], 2) -> [1, 2];
+([2], 0) -> [0, 2];
+([2], 1) -> [1, 2];
+([0, 1], 0) -> [0, 1];
+([0, 1], 2) -> [0, 1, 2];
+=================================
+None
+([], 0) -> [0];
+([], 2) -> [2];
+([0], 0) -> [0];
+([1], 0) -> [0, 1];
+([1], 1) -> [1];
+([1], 2) -> [1, 2];
+([2], 1) -> [1, 2];
+([0, 1], 2) -> [0, 1, 2];
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] -> ( Cons x1 x0 )
+  | hd1::tl1 ->
+    if
+      (equal_to
+        ( hd1, x1 ))
+      then
+        (f0 ( tl1, x1 ))
+      else
+        ( Cons
+          if
+            (less_than
+              ( hd1, x1 ))
+            then hd1
+            else x1
+          if
+            (less_than
+              ( hd1, x1 ))
+            then
+              (f0
+                ( tl1, x1
+                  ))
+            else x0 )
+  
+43.4916 false
+
+([], 0) -> [0];
+([], 1) -> [1];
+([], 2) -> [2];
+([0], 0) -> [0];
+([1], 0) -> [0, 1];
+([1], 1) -> [1];
+([1], 2) -> [1, 2];
+([0, 1], 2) -> [0, 1, 2];
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] -> ( Cons x1 x0 )
+  | hd1::tl1 ->
+    if
+      (equal_to
+        ( hd1, x1 ))
+      then x0
+      else
+        ( Cons
+          if
+            (equal_to
+              ( x1,
+                ( Zero )
+                ))
+            then x1
+            else hd1
+          if
+            (equal_to
+              ( x1,
+                ( Zero )
+                ))
+            then x0
+            else
+              (f0
+                ( tl1, x1
+                  )) )
+  
+12.1182 false
+
+([], 0) -> [0];
+([], 1) -> [1];
+([], 2) -> [2];
+([0], 0) -> [0];
+([0], 1) -> [0, 1];
+([1], 1) -> [1];
+([2], 0) -> [0, 2];
+([0, 1], 2) -> [0, 1, 2];
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] -> ( Cons x1 x0 )
+  | hd1::tl1 ->
+    if
+      (equal_to
+        ( hd1, x1 ))
+      then x0
+      else
+        ( Cons
+          if
+            (equal_to
+              ( x1,
+                ( Zero )
+                ))
+            then x1
+            else hd1
+          if
+            (equal_to
+              ( x1,
+                ( Zero )
+                ))
+            then x0
+            else
+              (f0
+                ( tl1, x1
+                  )) )
+  
+16.4843 false
+
+([], 0) -> [0];
+([], 1) -> [1];
+([], 2) -> [2];
+([0], 0) -> [0];
+([0], 1) -> [0, 1];
+([1], 0) -> [0, 1];
+([1], 1) -> [1];
+([0, 1], 0) -> [0, 1];
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] -> ( Cons x1 x0 )
+  | hd1::tl1 ->
+    if
+      (equal_to
+        ( hd1, x1 ))
+      then x0
+      else
+        ( Cons ( Zero )
+          if
+            (equal_to
+              ( hd1,
+                ( Zero )
+                ))
+            then
+              (f0
+                ( tl1, x1
+                  ))
+            else x0 )
+  
+1.4914 false
+
+([], 0) -> [0];
+([], 1) -> [1];
+([1], 0) -> [0, 1];
+([1], 1) -> [1];
+([1], 2) -> [1, 2];
+([2], 0) -> [0, 2];
+([2], 1) -> [1, 2];
+([0, 1], 0) -> [0, 1];
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] -> ( Cons x1 x0 )
+  | hd1::tl1 ->
+    if
+      (equal_to
+        ( hd1, x1 ))
+      then x0
+      else
+        ( Cons
+          if
+            (less_than
+              ( hd1, x1 ))
+            then hd1
+            else x1
+          if
+            (less_than
+              ( hd1, x1 ))
+            then
+              (f0
+                ( tl1, x1
+                  ))
+            else x0 )
+  
+5.3013 true
+
+([], 1) -> [1];
+([], 2) -> [2];
+([0], 0) -> [0];
+([0], 1) -> [0, 1];
+([1], 0) -> [0, 1];
+([1], 1) -> [1];
+([2], 0) -> [0, 2];
+([0, 1], 2) -> [0, 1, 2];
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] -> ( Cons x1 x0 )
+  | hd1::tl1 ->
+    if
+      (equal_to
+        ( hd1, x1 ))
+      then
+        (f0 ( tl1, x1 ))
+      else
+        ( Cons
+          if
+            (equal_to
+              ( x1,
+                ( Zero )
+                ))
+            then x1
+            else hd1
+          if
+            (equal_to
+              ( x1,
+                ( Zero )
+                ))
+            then x0
+            else
+              (f0
+                ( tl1, x1
+                  )) )
+  
+29.0113 false
+
+([], 1) -> [1];
+([0], 0) -> [0];
+([0], 1) -> [0, 1];
+([1], 1) -> [1];
+([1], 2) -> [1, 2];
+([2], 1) -> [1, 2];
+([0, 1], 0) -> [0, 1];
+([0, 1], 2) -> [0, 1, 2];
+=================================
+None
+([0], 0) -> [0];
+([0], 1) -> [0, 1];
+([1], 0) -> [0, 1];
+([1], 1) -> [1];
+([1], 2) -> [1, 2];
+([2], 0) -> [0, 2];
+([2], 1) -> [1, 2];
+([0, 1], 2) -> [0, 1, 2];
+=================================
+None
+([0], 1) -> [0, 1];
+([1], 0) -> [0, 1];
+([1], 1) -> [1];
+([1], 2) -> [1, 2];
+([2], 0) -> [0, 2];
+([2], 1) -> [1, 2];
+([0, 1], 0) -> [0, 1];
+([0, 1], 2) -> [0, 1, 2];
+=================================
+None
+([], 2) -> [2];
+([0], 1) -> [0, 1];
+([1], 0) -> [0, 1];
+([1], 1) -> [1];
+([1], 2) -> [1, 2];
+([2], 0) -> [0, 2];
+([2], 1) -> [1, 2];
+([0, 1], 0) -> [0, 1];
+=================================
+None
+([], 0) -> [0];
+([], 1) -> [1];
+([], 2) -> [2];
+([0], 0) -> [0];
+([1], 0) -> [0, 1];
+([1], 2) -> [1, 2];
+([2], 0) -> [0, 2];
+([0, 1], 0) -> [0, 1];
+([0, 1], 2) -> [0, 1, 2];
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] -> ( Cons x1 x0 )
+  | hd1::tl1 ->
+    if
+      (equal_to
+        ( hd1, x1 ))
+      then x0
+      else
+        ( Cons
+          if
+            (equal_to
+              ( x1,
+                ( Zero )
+                ))
+            then x1
+            else hd1
+          if
+            (equal_to
+              ( x1,
+                ( Zero )
+                ))
+            then x0
+            else
+              (f0
+                ( tl1, x1
+                  )) )
+  
+14.6693 false
+
+([], 0) -> [0];
+([], 1) -> [1];
+([], 2) -> [2];
+([0], 0) -> [0];
+([1], 0) -> [0, 1];
+([1], 1) -> [1];
+([1], 2) -> [1, 2];
+([0, 1], 0) -> [0, 1];
+([0, 1], 2) -> [0, 1, 2];
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] -> ( Cons x1 x0 )
+  | hd1::tl1 ->
+    if
+      (equal_to
+        ( hd1, x1 ))
+      then x0
+      else
+        ( Cons
+          if
+            (equal_to
+              ( x1,
+                ( Zero )
+                ))
+            then x1
+            else hd1
+          if
+            (equal_to
+              ( x1,
+                ( Zero )
+                ))
+            then x0
+            else
+              (f0
+                ( tl1, x1
+                  )) )
+  
+2.9994 false
+
+([], 2) -> [2];
+([0], 0) -> [0];
+([0], 1) -> [0, 1];
+([1], 0) -> [0, 1];
+([1], 1) -> [1];
+([1], 2) -> [1, 2];
+([2], 1) -> [1, 2];
+([0, 1], 0) -> [0, 1];
+([0, 1], 2) -> [0, 1, 2];
+=================================
+None
+([], 0) -> [0];
+([], 1) -> [1];
+([0], 0) -> [0];
+([1], 1) -> [1];
+([1], 2) -> [1, 2];
+([2], 0) -> [0, 2];
+([2], 1) -> [1, 2];
+([0, 1], 0) -> [0, 1];
+([0, 1], 2) -> [0, 1, 2];
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] -> ( Cons x1 x0 )
+  | hd1::tl1 ->
+    if
+      (equal_to
+        ( hd1, x1 ))
+      then
+        (f0 ( tl1, x1 ))
+      else
+        ( Cons
+          if
+            (less_than
+              ( hd1, x1 ))
+            then hd1
+            else x1
+          if
+            (less_than
+              ( hd1, x1 ))
+            then
+              (f0
+                ( tl1, x1
+                  ))
+            else x0 )
+  
+77.4436 false
+
+([], 0) -> [0];
+([], 1) -> [1];
+([0], 0) -> [0];
+([0], 1) -> [0, 1];
+([1], 0) -> [0, 1];
+([1], 1) -> [1];
+([1], 2) -> [1, 2];
+([2], 1) -> [1, 2];
+([0, 1], 0) -> [0, 1];
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] -> ( Cons x1 x0 )
+  | hd1::tl1 ->
+    if
+      (equal_to
+        ( hd1, x1 ))
+      then x0
+      else
+        ( Cons
+          if
+            (less_than
+              ( hd1, x1 ))
+            then hd1
+            else x1
+          if
+            (less_than
+              ( hd1, x1 ))
+            then
+              (f0
+                ( tl1, x1
+                  ))
+            else x0 )
+  
+11.9948 true
+
+([], 1) -> [1];
+([], 2) -> [2];
+([0], 0) -> [0];
+([0], 1) -> [0, 1];
+([1], 1) -> [1];
+([1], 2) -> [1, 2];
+([2], 0) -> [0, 2];
+([2], 1) -> [1, 2];
+([0, 1], 2) -> [0, 1, 2];
+=================================
+None
+([], 0) -> [0];
+([], 2) -> [2];
+([0], 1) -> [0, 1];
+([1], 0) -> [0, 1];
+([1], 2) -> [1, 2];
+([2], 0) -> [0, 2];
+([2], 1) -> [1, 2];
+([0, 1], 0) -> [0, 1];
+([0, 1], 2) -> [0, 1, 2];
+=================================
+None
+([], 0) -> [0];
+([], 2) -> [2];
+([0], 0) -> [0];
+([1], 0) -> [0, 1];
+([1], 1) -> [1];
+([1], 2) -> [1, 2];
+([2], 0) -> [0, 2];
+([0, 1], 0) -> [0, 1];
+([0, 1], 2) -> [0, 1, 2];
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] -> ( Cons x1 x0 )
+  | hd1::tl1 ->
+    if
+      (equal_to
+        ( hd1, x1 ))
+      then
+        (f0 ( tl1, x1 ))
+      else
+        ( Cons
+          if
+            (equal_to
+              ( x1,
+                ( Zero )
+                ))
+            then x1
+            else hd1
+          if
+            (equal_to
+              ( x1,
+                ( Zero )
+                ))
+            then x0
+            else
+              (f0
+                ( tl1, x1
+                  )) )
+  
+13.4068 false
+
+([], 1) -> [1];
+([0], 0) -> [0];
+([0], 1) -> [0, 1];
+([1], 0) -> [0, 1];
+([1], 2) -> [1, 2];
+([2], 0) -> [0, 2];
+([2], 1) -> [1, 2];
+([0, 1], 0) -> [0, 1];
+([0, 1], 2) -> [0, 1, 2];
+=================================
+None
+([], 1) -> [1];
+([0], 0) -> [0];
+([1], 0) -> [0, 1];
+([1], 1) -> [1];
+([1], 2) -> [1, 2];
+([2], 0) -> [0, 2];
+([2], 1) -> [1, 2];
+([0, 1], 0) -> [0, 1];
+([0, 1], 2) -> [0, 1, 2];
+=================================
+None
+([], 0) -> [0];
+([], 2) -> [2];
+([0], 0) -> [0];
+([0], 1) -> [0, 1];
+([1], 0) -> [0, 1];
+([1], 1) -> [1];
+([1], 2) -> [1, 2];
+([2], 0) -> [0, 2];
+([0, 1], 0) -> [0, 1];
+([0, 1], 2) -> [0, 1, 2];
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] -> ( Cons x1 x0 )
+  | hd1::tl1 ->
+    if
+      (equal_to
+        ( hd1, x1 ))
+      then x0
+      else
+        ( Cons
+          if
+            (equal_to
+              ( x1,
+                ( Zero )
+                ))
+            then x1
+            else hd1
+          if
+            (equal_to
+              ( x1,
+                ( Zero )
+                ))
+            then x0
+            else
+              (f0
+                ( tl1, x1
+                  )) )
+  
+58.4916 false
+
+([], 0) -> [0];
+([], 1) -> [1];
+([0], 0) -> [0];
+([0], 1) -> [0, 1];
+([1], 0) -> [0, 1];
+([1], 1) -> [1];
+([1], 2) -> [1, 2];
+([2], 0) -> [0, 2];
+([2], 1) -> [1, 2];
+([0, 1], 2) -> [0, 1, 2];
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] -> ( Cons x1 x0 )
+  | hd1::tl1 ->
+    if
+      (equal_to
+        ( hd1, x1 ))
+      then x0
+      else
+        ( Cons
+          if
+            (less_than
+              ( hd1, x1 ))
+            then hd1
+            else x1
+          if
+            (less_than
+              ( hd1, x1 ))
+            then
+              (f0
+                ( tl1, x1
+                  ))
+            else x0 )
+  
+34.1102 true
+
+([], 0) -> [0];
+([], 1) -> [1];
+([], 2) -> [2];
+([0], 0) -> [0];
+([0], 1) -> [0, 1];
+([1], 1) -> [1];
+([1], 2) -> [1, 2];
+([2], 1) -> [1, 2];
+([0, 1], 0) -> [0, 1];
+([0, 1], 2) -> [0, 1, 2];
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] -> ( Cons x1 x0 )
+  | hd1::tl1 ->
+    if
+      (equal_to
+        ( hd1, x1 ))
+      then
+        (f0 ( tl1, x1 ))
+      else
+        ( Cons
+          if
+            (less_than
+              ( hd1, x1 ))
+            then hd1
+            else x1
+          if
+            (less_than
+              ( hd1, x1 ))
+            then
+              (f0
+                ( tl1, x1
+                  ))
+            else x0 )
+  
+60.8374 false
+
+([], 0) -> [0];
+([], 2) -> [2];
+([0], 0) -> [0];
+([0], 1) -> [0, 1];
+([1], 0) -> [0, 1];
+([1], 1) -> [1];
+([1], 2) -> [1, 2];
+([2], 0) -> [0, 2];
+([2], 1) -> [1, 2];
+([0, 1], 2) -> [0, 1, 2];
+=================================
+None
+([], 0) -> [0];
+([], 1) -> [1];
+([0], 0) -> [0];
+([0], 1) -> [0, 1];
+([1], 0) -> [0, 1];
+([1], 1) -> [1];
+([2], 0) -> [0, 2];
+([2], 1) -> [1, 2];
+([0, 1], 0) -> [0, 1];
+([0, 1], 2) -> [0, 1, 2];
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] -> ( Cons x1 x0 )
+  | hd1::tl1 ->
+    if
+      (equal_to
+        ( hd1, x1 ))
+      then x0
+      else
+        ( Cons
+          if
+            (less_than
+              ( hd1, x1 ))
+            then hd1
+            else x1
+          if
+            (less_than
+              ( hd1, x1 ))
+            then
+              (f0
+                ( tl1, x1
+                  ))
+            else x0 )
+  
+49.8850 true
+
+([], 0) -> [0];
+([], 1) -> [1];
+([0], 0) -> [0];
+([0], 1) -> [0, 1];
+([1], 0) -> [0, 1];
+([1], 2) -> [1, 2];
+([2], 0) -> [0, 2];
+([2], 1) -> [1, 2];
+([0, 1], 0) -> [0, 1];
+([0, 1], 2) -> [0, 1, 2];
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] -> ( Cons x1 x0 )
+  | hd1::tl1 ->
+    if
+      (equal_to
+        ( hd1, x1 ))
+      then x0
+      else
+        ( Cons
+          if
+            (less_than
+              ( hd1, x1 ))
+            then hd1
+            else x1
+          if
+            (less_than
+              ( hd1, x1 ))
+            then
+              (f0
+                ( tl1, x1
+                  ))
+            else x0 )
+  
+61.8998 true
+
+([], 0) -> [0];
+([], 1) -> [1];
+([], 2) -> [2];
+([0], 0) -> [0];
+([0], 1) -> [0, 1];
+([1], 0) -> [0, 1];
+([1], 2) -> [1, 2];
+([2], 0) -> [0, 2];
+([0, 1], 0) -> [0, 1];
+([0, 1], 2) -> [0, 1, 2];
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] -> ( Cons x1 x0 )
+  | hd1::tl1 ->
+    if
+      (equal_to
+        ( hd1, x1 ))
+      then x0
+      else
+        ( Cons
+          if
+            (equal_to
+              ( x1,
+                ( Zero )
+                ))
+            then x1
+            else hd1
+          if
+            (equal_to
+              ( x1,
+                ( Zero )
+                ))
+            then x0
+            else
+              (f0
+                ( tl1, x1
+                  )) )
+  
+27.8953 false
+
+([], 0) -> [0];
+([], 1) -> [1];
+([], 2) -> [2];
+([0], 0) -> [0];
+([0], 1) -> [0, 1];
+([1], 0) -> [0, 1];
+([1], 1) -> [1];
+([2], 0) -> [0, 2];
+([2], 1) -> [1, 2];
+([0, 1], 2) -> [0, 1, 2];
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] -> ( Cons x1 x0 )
+  | hd1::tl1 ->
+    if
+      (equal_to
+        ( hd1, x1 ))
+      then x0
+      else
+        ( Cons
+          if
+            (less_than
+              ( hd1, x1 ))
+            then hd1
+            else x1
+          if
+            (less_than
+              ( hd1, x1 ))
+            then
+              (f0
+                ( tl1, x1
+                  ))
+            else x0 )
+  
+26.9242 true
+
+([], 0) -> [0];
+([], 1) -> [1];
+([0], 0) -> [0];
+([0], 1) -> [0, 1];
+([1], 1) -> [1];
+([1], 2) -> [1, 2];
+([2], 0) -> [0, 2];
+([2], 1) -> [1, 2];
+([0, 1], 0) -> [0, 1];
+([0, 1], 2) -> [0, 1, 2];
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] -> ( Cons x1 x0 )
+  | hd1::tl1 ->
+    if
+      (equal_to
+        ( hd1, x1 ))
+      then
+        (f0 ( tl1, x1 ))
+      else
+        ( Cons
+          if
+            (less_than
+              ( hd1, x1 ))
+            then hd1
+            else x1
+          if
+            (less_than
+              ( hd1, x1 ))
+            then
+              (f0
+                ( tl1, x1
+                  ))
+            else x0 )
+  
+86.6914 false
+
+([], 0) -> [0];
+([], 1) -> [1];
+([], 2) -> [2];
+([0], 0) -> [0];
+([0], 1) -> [0, 1];
+([1], 0) -> [0, 1];
+([1], 1) -> [1];
+([2], 1) -> [1, 2];
+([0, 1], 0) -> [0, 1];
+([0, 1], 2) -> [0, 1, 2];
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] -> ( Cons x1 x0 )
+  | hd1::tl1 ->
+    if
+      (equal_to
+        ( hd1, x1 ))
+      then x0
+      else
+        ( Cons
+          if
+            (less_than
+              ( hd1, x1 ))
+            then hd1
+            else x1
+          if
+            (less_than
+              ( hd1, x1 ))
+            then
+              (f0
+                ( tl1, x1
+                  ))
+            else x0 )
+  
+28.1199 true
+
+([], 1) -> [1];
+([], 2) -> [2];
+([0], 0) -> [0];
+([0], 1) -> [0, 1];
+([1], 0) -> [0, 1];
+([1], 1) -> [1];
+([1], 2) -> [1, 2];
+([2], 0) -> [0, 2];
+([2], 1) -> [1, 2];
+([0, 1], 0) -> [0, 1];
+([0, 1], 2) -> [0, 1, 2];
+=================================
+None
+([], 0) -> [0];
+([], 1) -> [1];
+([], 2) -> [2];
+([0], 0) -> [0];
+([0], 1) -> [0, 1];
+([1], 0) -> [0, 1];
+([1], 1) -> [1];
+([1], 2) -> [1, 2];
+([2], 0) -> [0, 2];
+([2], 1) -> [1, 2];
+([0, 1], 2) -> [0, 1, 2];
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] -> ( Cons x1 x0 )
+  | hd1::tl1 ->
+    if
+      (equal_to
+        ( hd1, x1 ))
+      then x0
+      else
+        ( Cons
+          if
+            (less_than
+              ( hd1, x1 ))
+            then hd1
+            else x1
+          if
+            (less_than
+              ( hd1, x1 ))
+            then
+              (f0
+                ( tl1, x1
+                  ))
+            else x0 )
+  
+22.5543 true
+
+([], 0) -> [0];
+([], 1) -> [1];
+([], 2) -> [2];
+([0], 0) -> [0];
+([0], 1) -> [0, 1];
+([1], 0) -> [0, 1];
+([1], 1) -> [1];
+([1], 2) -> [1, 2];
+([2], 0) -> [0, 2];
+([0, 1], 0) -> [0, 1];
+([0, 1], 2) -> [0, 1, 2];
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] -> ( Cons x1 x0 )
+  | hd1::tl1 ->
+    if
+      (equal_to
+        ( hd1, x1 ))
+      then x0
+      else
+        ( Cons
+          if
+            (equal_to
+              ( x1,
+                ( Zero )
+                ))
+            then x1
+            else hd1
+          if
+            (equal_to
+              ( x1,
+                ( Zero )
+                ))
+            then x0
+            else
+              (f0
+                ( tl1, x1
+                  )) )
+  
+11.4923 false
+
+([], 0) -> [0];
+([], 1) -> [1];
+([], 2) -> [2];
+([0], 0) -> [0];
+([0], 1) -> [0, 1];
+([1], 0) -> [0, 1];
+([1], 1) -> [1];
+([1], 2) -> [1, 2];
+([2], 1) -> [1, 2];
+([0, 1], 0) -> [0, 1];
+([0, 1], 2) -> [0, 1, 2];
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] -> ( Cons x1 x0 )
+  | hd1::tl1 ->
+    if
+      (equal_to
+        ( hd1, x1 ))
+      then x0
+      else
+        ( Cons
+          if
+            (less_than
+              ( hd1, x1 ))
+            then hd1
+            else x1
+          if
+            (less_than
+              ( hd1, x1 ))
+            then
+              (f0
+                ( tl1, x1
+                  ))
+            else x0 )
+  
+26.6862 true
+
+([], 0) -> [0];
+([], 2) -> [2];
+([0], 0) -> [0];
+([0], 1) -> [0, 1];
+([1], 0) -> [0, 1];
+([1], 1) -> [1];
+([1], 2) -> [1, 2];
+([2], 0) -> [0, 2];
+([2], 1) -> [1, 2];
+([0, 1], 0) -> [0, 1];
+([0, 1], 2) -> [0, 1, 2];
+=================================
+None
+([], 0) -> [0];
+([], 1) -> [1];
+([], 2) -> [2];
+([0], 0) -> [0];
+([0], 1) -> [0, 1];
+([1], 0) -> [0, 1];
+([1], 2) -> [1, 2];
+([2], 0) -> [0, 2];
+([2], 1) -> [1, 2];
+([0, 1], 0) -> [0, 1];
+([0, 1], 2) -> [0, 1, 2];
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] -> ( Cons x1 x0 )
+  | hd1::tl1 ->
+    if
+      (equal_to
+        ( hd1, x1 ))
+      then x0
+      else
+        ( Cons
+          if
+            (less_than
+              ( hd1, x1 ))
+            then hd1
+            else x1
+          if
+            (less_than
+              ( hd1, x1 ))
+            then
+              (f0
+                ( tl1, x1
+                  ))
+            else x0 )
+  
+61.7824 true
+
+([], 0) -> [0];
+([], 1) -> [1];
+([], 2) -> [2];
+([0], 0) -> [0];
+([0], 1) -> [0, 1];
+([1], 1) -> [1];
+([1], 2) -> [1, 2];
+([2], 0) -> [0, 2];
+([2], 1) -> [1, 2];
+([0, 1], 0) -> [0, 1];
+([0, 1], 2) -> [0, 1, 2];
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] -> ( Cons x1 x0 )
+  | hd1::tl1 ->
+    if
+      (equal_to
+        ( hd1, x1 ))
+      then
+        (f0 ( tl1, x1 ))
+      else
+        ( Cons
+          if
+            (less_than
+              ( hd1, x1 ))
+            then hd1
+            else x1
+          if
+            (less_than
+              ( hd1, x1 ))
+            then
+              (f0
+                ( tl1, x1
+                  ))
+            else x0 )
+  
+53.5128 false
+
+([], 0) -> [0];
+([], 1) -> [1];
+([], 2) -> [2];
+([0], 0) -> [0];
+([1], 0) -> [0, 1];
+([1], 1) -> [1];
+([1], 2) -> [1, 2];
+([2], 0) -> [0, 2];
+([2], 1) -> [1, 2];
+([0, 1], 0) -> [0, 1];
+([0, 1], 2) -> [0, 1, 2];
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] -> ( Cons x1 x0 )
+  | hd1::tl1 ->
+    if
+      (equal_to
+        ( hd1, x1 ))
+      then x0
+      else
+        ( Cons
+          if
+            (less_than
+              ( hd1, x1 ))
+            then hd1
+            else x1
+          if
+            (less_than
+              ( hd1, x1 ))
+            then
+              (f0
+                ( tl1, x1
+                  ))
+            else x0 )
+  
+15.0630 true
+
+([], 0) -> [0];
+([], 1) -> [1];
+([], 2) -> [2];
+([0], 1) -> [0, 1];
+([1], 0) -> [0, 1];
+([1], 1) -> [1];
+([1], 2) -> [1, 2];
+([2], 0) -> [0, 2];
+([2], 1) -> [1, 2];
+([0, 1], 0) -> [0, 1];
+([0, 1], 2) -> [0, 1, 2];
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] -> ( Cons x1 x0 )
+  | hd1::tl1 ->
+    if
+      (equal_to
+        ( hd1, x1 ))
+      then x0
+      else
+        ( Cons
+          if
+            (less_than
+              ( hd1, x1 ))
+            then hd1
+            else x1
+          if
+            (less_than
+              ( hd1, x1 ))
+            then
+              (f0
+                ( tl1, x1
+                  ))
+            else x0 )
+  
+21.0778 true
+
+([], 0) -> [0];
+([], 1) -> [1];
+([0], 0) -> [0];
+([0], 1) -> [0, 1];
+([1], 0) -> [0, 1];
+([1], 1) -> [1];
+([1], 2) -> [1, 2];
+([2], 0) -> [0, 2];
+([2], 1) -> [1, 2];
+([0, 1], 0) -> [0, 1];
+([0, 1], 2) -> [0, 1, 2];
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] -> ( Cons x1 x0 )
+  | hd1::tl1 ->
+    if
+      (equal_to
+        ( hd1, x1 ))
+      then x0
+      else
+        ( Cons
+          if
+            (less_than
+              ( hd1, x1 ))
+            then hd1
+            else x1
+          if
+            (less_than
+              ( hd1, x1 ))
+            then
+              (f0
+                ( tl1, x1
+                  ))
+            else x0 )
+  
+47.0914 true
+
+([], 0) -> [0];
+([], 1) -> [1];
+([], 2) -> [2];
+([0], 0) -> [0];
+([0], 1) -> [0, 1];
+([1], 0) -> [0, 1];
+([1], 1) -> [1];
+([1], 2) -> [1, 2];
+([2], 0) -> [0, 2];
+([2], 1) -> [1, 2];
+([0, 1], 0) -> [0, 1];
+([0, 1], 2) -> [0, 1, 2];
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] -> ( Cons x1 x0 )
+  | hd1::tl1 ->
+    if
+      (equal_to
+        ( hd1, x1 ))
+      then x0
+      else
+        ( Cons
+          if
+            (less_than
+              ( hd1, x1 ))
+            then hd1
+            else x1
+          if
+            (less_than
+              ( hd1, x1 ))
+            then
+              (f0
+                ( tl1, x1
+                  ))
+            else x0 )
+  
+26.5860 true
+

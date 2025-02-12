@@ -1,0 +1,654 @@
+Leaf () -> 1;
+=================================
+fix (f : tree -> nat) = fun (x:tree) -> 1
+
+0.0015 false
+
+Node (Leaf (), T (), Leaf ()) -> 2;
+=================================
+fix (f : tree -> nat) = fun (x:tree) -> 2
+
+0.0110 false
+
+Node (Node (Leaf (), T (), Leaf ()), T (), Leaf ()) -> 3;
+=================================
+fix (f : tree -> nat) =
+  fun (x:tree) -> match x with
+                    | Leaf _ -> 2
+                    | Node _ -> 3
+
+0.1316 false
+
+Node (Leaf (), T (), Node (Leaf (), T (), Leaf ())) -> 3;
+=================================
+fix (f : tree -> nat) =
+  fun (x:tree) -> match x with
+                    | Leaf _ -> 2
+                    | Node _ -> 3
+
+0.1429 false
+
+Node (Node (Node (Leaf (), T (), Leaf ()), T (), Leaf ()), T (), Leaf ()) -> 4;
+=================================
+fix (f : tree -> nat) =
+  fun (x:tree) -> match x with
+                    | Leaf _ -> 1
+                    | Node _ -> S (f (Un_Node x . 0))
+
+2.2921 false
+
+Node (Node (Leaf (), T (), Leaf ()), T (), Node (Leaf (), T (), Leaf ())) -> 4;
+=================================
+fix (f : tree -> nat) = fun (x:tree) -> sum 2 2
+
+0.1984 false
+
+Node (Node (Leaf (), T (), Leaf ()), T (), Node (Node (Leaf (), T (), Leaf ()), T (), Node (Leaf (), T (), Leaf ()))) -> 6;
+=================================
+fix (f : tree -> nat) =
+  fun (x:tree) ->
+    match x with
+      | Leaf _ -> 0
+      | Node _ -> S (S (f (Un_Node x . 2)))
+
+13.8312 false
+
+Node (Leaf (), T (), Node (Leaf (), T (), Leaf ())) -> 3;
+Node (Node (Leaf (), T (), Leaf ()), T (), Node (Node (Leaf (), T (), Leaf ()), T (), Node (Leaf (), T (), Leaf ()))) -> 6;
+=================================
+fix (f : tree -> nat) =
+  fun (x:tree) ->
+    match x with
+      | Leaf _ -> 1
+      | Node _ -> sum (f (Un_Node x . 2)) (f (Un_Node x . 0))
+
+51.1195 true
+
+Node (Node (Leaf (), T (), Leaf ()), T (), Leaf ()) -> 3;
+Node (Node (Leaf (), T (), Leaf ()), T (), Node (Node (Leaf (), T (), Leaf ()), T (), Node (Leaf (), T (), Leaf ()))) -> 6;
+=================================
+fix (f : tree -> nat) =
+  fun (x:tree) ->
+    match x with
+      | Leaf _ -> 1
+      | Node _ -> sum (f (Un_Node x . 2)) (f (Un_Node x . 0))
+
+43.1352 true
+
+Node (Node (Leaf (), T (), Leaf ()), T (), Leaf ()) -> 3;
+Node (Node (Node (Leaf (), T (), Leaf ()), T (), Leaf ()), T (), Leaf ()) -> 4;
+=================================
+fix (f : tree -> nat) =
+  fun (x:tree) -> match x with
+                    | Leaf _ -> 1
+                    | Node _ -> S (f (Un_Node x . 0))
+
+0.2994 false
+
+Node (Node (Node (Leaf (), T (), Leaf ()), T (), Leaf ()), T (), Leaf ()) -> 4;
+Node (Node (Leaf (), T (), Leaf ()), T (), Node (Node (Leaf (), T (), Leaf ()), T (), Node (Leaf (), T (), Leaf ()))) -> 6;
+=================================
+None
+Leaf () -> 1;
+Node (Node (Leaf (), T (), Leaf ()), T (), Node (Leaf (), T (), Leaf ())) -> 4;
+=================================
+fix (f : tree -> nat) =
+  fun (x:tree) -> match x with
+                    | Leaf _ -> 1
+                    | Node _ -> sum 2 2
+
+0.0493 false
+
+Leaf () -> 1;
+Node (Node (Leaf (), T (), Leaf ()), T (), Node (Node (Leaf (), T (), Leaf ()), T (), Node (Leaf (), T (), Leaf ()))) -> 6;
+=================================
+fix (f : tree -> nat) =
+  fun (x:tree) -> match x with
+                    | Leaf _ -> 1
+                    | Node _ -> sum 3 3
+
+7.2439 false
+
+Node (Node (Leaf (), T (), Leaf ()), T (), Node (Leaf (), T (), Leaf ())) -> 4;
+Node (Node (Leaf (), T (), Leaf ()), T (), Node (Node (Leaf (), T (), Leaf ()), T (), Node (Leaf (), T (), Leaf ()))) -> 6;
+=================================
+fix (f : tree -> nat) =
+  fun (x:tree) ->
+    match x with
+      | Leaf _ -> 0
+      | Node _ -> S (S (f (Un_Node x . 2)))
+
+2.0064 false
+
+Node (Leaf (), T (), Leaf ()) -> 2;
+Node (Leaf (), T (), Node (Leaf (), T (), Leaf ())) -> 3;
+=================================
+fix (f : tree -> nat) =
+  fun (x:tree) -> match x with
+                    | Leaf _ -> 1
+                    | Node _ -> S (f (Un_Node x . 2))
+
+0.0337 false
+
+Node (Leaf (), T (), Leaf ()) -> 2;
+Node (Node (Node (Leaf (), T (), Leaf ()), T (), Leaf ()), T (), Leaf ()) -> 4;
+=================================
+fix (f : tree -> nat) =
+  fun (x:tree) -> match x with
+                    | Leaf _ -> 1
+                    | Node _ -> S (f (Un_Node x . 0))
+
+0.3382 false
+
+Node (Node (Leaf (), T (), Leaf ()), T (), Leaf ()) -> 3;
+Node (Node (Leaf (), T (), Leaf ()), T (), Node (Leaf (), T (), Leaf ())) -> 4;
+=================================
+fix (f : tree -> nat) =
+  fun (x:tree) ->
+    match x with
+      | Leaf _ -> 1
+      | Node _ -> sum (f (Un_Node x . 2)) (f (Un_Node x . 0))
+
+0.4146 true
+
+Node (Leaf (), T (), Leaf ()) -> 2;
+Node (Node (Leaf (), T (), Leaf ()), T (), Leaf ()) -> 3;
+Node (Leaf (), T (), Node (Leaf (), T (), Leaf ())) -> 3;
+=================================
+fix (f : tree -> nat) =
+  fun (x:tree) ->
+    match x with
+      | Leaf _ -> 1
+      | Node _ -> sum (f (Un_Node x . 2)) (f (Un_Node x . 0))
+
+0.1051 true
+
+Leaf () -> 1;
+Node (Leaf (), T (), Leaf ()) -> 2;
+Node (Leaf (), T (), Node (Leaf (), T (), Leaf ())) -> 3;
+=================================
+fix (f : tree -> nat) =
+  fun (x:tree) -> match x with
+                    | Leaf _ -> 1
+                    | Node _ -> S (f (Un_Node x . 2))
+
+0.0134 false
+
+Node (Leaf (), T (), Leaf ()) -> 2;
+Node (Node (Node (Leaf (), T (), Leaf ()), T (), Leaf ()), T (), Leaf ()) -> 4;
+Node (Node (Leaf (), T (), Leaf ()), T (), Node (Leaf (), T (), Leaf ())) -> 4;
+=================================
+fix (f : tree -> nat) =
+  fun (x:tree) -> match Un_Node x . 0 with
+                    | Leaf _ -> 2
+                    | Node _ -> sum 2 2
+
+1.6223 false
+
+Node (Node (Leaf (), T (), Leaf ()), T (), Leaf ()) -> 3;
+Node (Leaf (), T (), Node (Leaf (), T (), Leaf ())) -> 3;
+Node (Node (Node (Leaf (), T (), Leaf ()), T (), Leaf ()), T (), Leaf ()) -> 4;
+=================================
+fix (f : tree -> nat) =
+  fun (x:tree) ->
+    match x with
+      | Leaf _ -> 1
+      | Node _ -> sum (f (Un_Node x . 0)) (f (Un_Node x . 2))
+
+0.4540 true
+
+Leaf () -> 1;
+Node (Leaf (), T (), Leaf ()) -> 2;
+Node (Node (Leaf (), T (), Leaf ()), T (), Node (Node (Leaf (), T (), Leaf ()), T (), Node (Leaf (), T (), Leaf ()))) -> 6;
+=================================
+fix (f : tree -> nat) =
+  fun (x:tree) ->
+    match x with
+      | Leaf _ -> 1
+      | Node _ -> sum (f (Un_Node x . 0)) (f (Un_Node x . 2))
+
+1.5275 true
+
+Leaf () -> 1;
+Node (Node (Node (Leaf (), T (), Leaf ()), T (), Leaf ()), T (), Leaf ()) -> 4;
+Node (Node (Leaf (), T (), Leaf ()), T (), Node (Leaf (), T (), Leaf ())) -> 4;
+=================================
+fix (f : tree -> nat) =
+  fun (x:tree) -> match x with
+                    | Leaf _ -> 1
+                    | Node _ -> sum 2 2
+
+2.1495 false
+
+Node (Leaf (), T (), Node (Leaf (), T (), Leaf ())) -> 3;
+Node (Node (Node (Leaf (), T (), Leaf ()), T (), Leaf ()), T (), Leaf ()) -> 4;
+Node (Node (Leaf (), T (), Leaf ()), T (), Node (Node (Leaf (), T (), Leaf ()), T (), Node (Leaf (), T (), Leaf ()))) -> 6;
+=================================
+fix (f : tree -> nat) =
+  fun (x:tree) ->
+    match x with
+      | Leaf _ -> 1
+      | Node _ -> sum (f (Un_Node x . 2)) (f (Un_Node x . 0))
+
+20.8354 true
+
+Node (Leaf (), T (), Node (Leaf (), T (), Leaf ())) -> 3;
+Node (Node (Node (Leaf (), T (), Leaf ()), T (), Leaf ()), T (), Leaf ()) -> 4;
+Node (Node (Leaf (), T (), Leaf ()), T (), Node (Leaf (), T (), Leaf ())) -> 4;
+=================================
+fix (f : tree -> nat) =
+  fun (x:tree) ->
+    match x with
+      | Leaf _ -> 1
+      | Node _ -> sum (f (Un_Node x . 2)) (f (Un_Node x . 0))
+
+43.4707 true
+
+Leaf () -> 1;
+Node (Node (Leaf (), T (), Leaf ()), T (), Leaf ()) -> 3;
+Node (Node (Leaf (), T (), Leaf ()), T (), Node (Node (Leaf (), T (), Leaf ()), T (), Node (Leaf (), T (), Leaf ()))) -> 6;
+=================================
+fix (f : tree -> nat) =
+  fun (x:tree) ->
+    match x with
+      | Leaf _ -> 1
+      | Node _ -> sum (f (Un_Node x . 2)) (f (Un_Node x . 0))
+
+3.5945 true
+
+Leaf () -> 1;
+Node (Leaf (), T (), Node (Leaf (), T (), Leaf ())) -> 3;
+Node (Node (Node (Leaf (), T (), Leaf ()), T (), Leaf ()), T (), Leaf ()) -> 4;
+=================================
+fix (f : tree -> nat) =
+  fun (x:tree) ->
+    match x with
+      | Leaf _ -> 1
+      | Node _ -> sum (f (Un_Node x . 0)) (f (Un_Node x . 2))
+
+14.0433 true
+
+Leaf () -> 1;
+Node (Node (Leaf (), T (), Leaf ()), T (), Leaf ()) -> 3;
+Node (Node (Leaf (), T (), Leaf ()), T (), Node (Leaf (), T (), Leaf ())) -> 4;
+Node (Node (Leaf (), T (), Leaf ()), T (), Node (Node (Leaf (), T (), Leaf ()), T (), Node (Leaf (), T (), Leaf ()))) -> 6;
+=================================
+fix (f : tree -> nat) =
+  fun (x:tree) ->
+    match x with
+      | Leaf _ -> 1
+      | Node _ -> sum (f (Un_Node x . 2)) (f (Un_Node x . 0))
+
+0.2359 true
+
+Node (Leaf (), T (), Leaf ()) -> 2;
+Node (Node (Leaf (), T (), Leaf ()), T (), Leaf ()) -> 3;
+Node (Node (Node (Leaf (), T (), Leaf ()), T (), Leaf ()), T (), Leaf ()) -> 4;
+Node (Node (Leaf (), T (), Leaf ()), T (), Node (Node (Leaf (), T (), Leaf ()), T (), Node (Leaf (), T (), Leaf ()))) -> 6;
+=================================
+fix (f : tree -> nat) =
+  fun (x:tree) ->
+    match x with
+      | Leaf _ -> 1
+      | Node _ -> sum (f (Un_Node x . 0)) (f (Un_Node x . 2))
+
+1.1317 true
+
+Node (Node (Leaf (), T (), Leaf ()), T (), Leaf ()) -> 3;
+Node (Node (Node (Leaf (), T (), Leaf ()), T (), Leaf ()), T (), Leaf ()) -> 4;
+Node (Node (Leaf (), T (), Leaf ()), T (), Node (Leaf (), T (), Leaf ())) -> 4;
+Node (Node (Leaf (), T (), Leaf ()), T (), Node (Node (Leaf (), T (), Leaf ()), T (), Node (Leaf (), T (), Leaf ()))) -> 6;
+=================================
+fix (f : tree -> nat) =
+  fun (x:tree) ->
+    match x with
+      | Leaf _ -> 1
+      | Node _ -> sum (f (Un_Node x . 2)) (f (Un_Node x . 0))
+
+0.4029 true
+
+Leaf () -> 1;
+Node (Leaf (), T (), Leaf ()) -> 2;
+Node (Node (Leaf (), T (), Leaf ()), T (), Leaf ()) -> 3;
+Node (Node (Leaf (), T (), Leaf ()), T (), Node (Node (Leaf (), T (), Leaf ()), T (), Node (Leaf (), T (), Leaf ()))) -> 6;
+=================================
+fix (f : tree -> nat) =
+  fun (x:tree) ->
+    match x with
+      | Leaf _ -> 1
+      | Node _ -> sum (f (Un_Node x . 0)) (f (Un_Node x . 2))
+
+0.8428 true
+
+Node (Leaf (), T (), Leaf ()) -> 2;
+Node (Node (Leaf (), T (), Leaf ()), T (), Leaf ()) -> 3;
+Node (Leaf (), T (), Node (Leaf (), T (), Leaf ())) -> 3;
+Node (Node (Leaf (), T (), Leaf ()), T (), Node (Node (Leaf (), T (), Leaf ()), T (), Node (Leaf (), T (), Leaf ()))) -> 6;
+=================================
+fix (f : tree -> nat) =
+  fun (x:tree) ->
+    match x with
+      | Leaf _ -> 1
+      | Node _ -> sum (f (Un_Node x . 2)) (f (Un_Node x . 0))
+
+0.0964 true
+
+Node (Leaf (), T (), Leaf ()) -> 2;
+Node (Leaf (), T (), Node (Leaf (), T (), Leaf ())) -> 3;
+Node (Node (Leaf (), T (), Leaf ()), T (), Node (Leaf (), T (), Leaf ())) -> 4;
+Node (Node (Leaf (), T (), Leaf ()), T (), Node (Node (Leaf (), T (), Leaf ()), T (), Node (Leaf (), T (), Leaf ()))) -> 6;
+=================================
+fix (f : tree -> nat) =
+  fun (x:tree) ->
+    match x with
+      | Leaf _ -> 1
+      | Node _ -> sum (f (Un_Node x . 0)) (f (Un_Node x . 2))
+
+0.0846 true
+
+Node (Node (Leaf (), T (), Leaf ()), T (), Leaf ()) -> 3;
+Node (Leaf (), T (), Node (Leaf (), T (), Leaf ())) -> 3;
+Node (Node (Node (Leaf (), T (), Leaf ()), T (), Leaf ()), T (), Leaf ()) -> 4;
+Node (Node (Leaf (), T (), Leaf ()), T (), Node (Node (Leaf (), T (), Leaf ()), T (), Node (Leaf (), T (), Leaf ()))) -> 6;
+=================================
+fix (f : tree -> nat) =
+  fun (x:tree) ->
+    match x with
+      | Leaf _ -> 1
+      | Node _ -> sum (f (Un_Node x . 2)) (f (Un_Node x . 0))
+
+0.4452 true
+
+Leaf () -> 1;
+Node (Node (Node (Leaf (), T (), Leaf ()), T (), Leaf ()), T (), Leaf ()) -> 4;
+Node (Node (Leaf (), T (), Leaf ()), T (), Node (Leaf (), T (), Leaf ())) -> 4;
+Node (Node (Leaf (), T (), Leaf ()), T (), Node (Node (Leaf (), T (), Leaf ()), T (), Node (Leaf (), T (), Leaf ()))) -> 6;
+=================================
+None
+Node (Node (Leaf (), T (), Leaf ()), T (), Leaf ()) -> 3;
+Node (Leaf (), T (), Node (Leaf (), T (), Leaf ())) -> 3;
+Node (Node (Leaf (), T (), Leaf ()), T (), Node (Leaf (), T (), Leaf ())) -> 4;
+Node (Node (Leaf (), T (), Leaf ()), T (), Node (Node (Leaf (), T (), Leaf ()), T (), Node (Leaf (), T (), Leaf ()))) -> 6;
+=================================
+fix (f : tree -> nat) =
+  fun (x:tree) ->
+    match x with
+      | Leaf _ -> 1
+      | Node _ -> sum (f (Un_Node x . 2)) (f (Un_Node x . 0))
+
+0.3501 true
+
+Leaf () -> 1;
+Node (Leaf (), T (), Leaf ()) -> 2;
+Node (Node (Leaf (), T (), Leaf ()), T (), Node (Leaf (), T (), Leaf ())) -> 4;
+Node (Node (Leaf (), T (), Leaf ()), T (), Node (Node (Leaf (), T (), Leaf ()), T (), Node (Leaf (), T (), Leaf ()))) -> 6;
+=================================
+fix (f : tree -> nat) =
+  fun (x:tree) ->
+    match x with
+      | Leaf _ -> 1
+      | Node _ -> sum (f (Un_Node x . 0)) (f (Un_Node x . 2))
+
+0.3654 true
+
+Leaf () -> 1;
+Node (Leaf (), T (), Leaf ()) -> 2;
+Node (Node (Leaf (), T (), Leaf ()), T (), Leaf ()) -> 3;
+Node (Leaf (), T (), Node (Leaf (), T (), Leaf ())) -> 3;
+Node (Node (Node (Leaf (), T (), Leaf ()), T (), Leaf ()), T (), Leaf ()) -> 4;
+=================================
+fix (f : tree -> nat) =
+  fun (x:tree) ->
+    match x with
+      | Leaf _ -> 1
+      | Node _ -> sum (f (Un_Node x . 2)) (f (Un_Node x . 0))
+
+0.0716 true
+
+Node (Leaf (), T (), Leaf ()) -> 2;
+Node (Node (Leaf (), T (), Leaf ()), T (), Leaf ()) -> 3;
+Node (Leaf (), T (), Node (Leaf (), T (), Leaf ())) -> 3;
+Node (Node (Leaf (), T (), Leaf ()), T (), Node (Leaf (), T (), Leaf ())) -> 4;
+Node (Node (Leaf (), T (), Leaf ()), T (), Node (Node (Leaf (), T (), Leaf ()), T (), Node (Leaf (), T (), Leaf ()))) -> 6;
+=================================
+fix (f : tree -> nat) =
+  fun (x:tree) ->
+    match x with
+      | Leaf _ -> 1
+      | Node _ -> sum (f (Un_Node x . 0)) (f (Un_Node x . 2))
+
+0.1017 true
+
+Leaf () -> 1;
+Node (Leaf (), T (), Leaf ()) -> 2;
+Node (Node (Leaf (), T (), Leaf ()), T (), Leaf ()) -> 3;
+Node (Leaf (), T (), Node (Leaf (), T (), Leaf ())) -> 3;
+Node (Node (Leaf (), T (), Leaf ()), T (), Node (Node (Leaf (), T (), Leaf ()), T (), Node (Leaf (), T (), Leaf ()))) -> 6;
+=================================
+fix (f : tree -> nat) =
+  fun (x:tree) ->
+    match x with
+      | Leaf _ -> 1
+      | Node _ -> sum (f (Un_Node x . 0)) (f (Un_Node x . 2))
+
+0.0707 true
+
+Leaf () -> 1;
+Node (Leaf (), T (), Leaf ()) -> 2;
+Node (Node (Leaf (), T (), Leaf ()), T (), Leaf ()) -> 3;
+Node (Node (Node (Leaf (), T (), Leaf ()), T (), Leaf ()), T (), Leaf ()) -> 4;
+Node (Node (Leaf (), T (), Leaf ()), T (), Node (Leaf (), T (), Leaf ())) -> 4;
+=================================
+fix (f : tree -> nat) =
+  fun (x:tree) ->
+    match x with
+      | Leaf _ -> 1
+      | Node _ -> sum (f (Un_Node x . 2)) (f (Un_Node x . 0))
+
+0.0536 true
+
+Node (Leaf (), T (), Leaf ()) -> 2;
+Node (Leaf (), T (), Node (Leaf (), T (), Leaf ())) -> 3;
+Node (Node (Node (Leaf (), T (), Leaf ()), T (), Leaf ()), T (), Leaf ()) -> 4;
+Node (Node (Leaf (), T (), Leaf ()), T (), Node (Leaf (), T (), Leaf ())) -> 4;
+Node (Node (Leaf (), T (), Leaf ()), T (), Node (Node (Leaf (), T (), Leaf ()), T (), Node (Leaf (), T (), Leaf ()))) -> 6;
+=================================
+fix (f : tree -> nat) =
+  fun (x:tree) ->
+    match x with
+      | Leaf _ -> 1
+      | Node _ -> sum (f (Un_Node x . 2)) (f (Un_Node x . 0))
+
+1.4929 true
+
+Node (Leaf (), T (), Leaf ()) -> 2;
+Node (Node (Leaf (), T (), Leaf ()), T (), Leaf ()) -> 3;
+Node (Leaf (), T (), Node (Leaf (), T (), Leaf ())) -> 3;
+Node (Node (Node (Leaf (), T (), Leaf ()), T (), Leaf ()), T (), Leaf ()) -> 4;
+Node (Node (Leaf (), T (), Leaf ()), T (), Node (Leaf (), T (), Leaf ())) -> 4;
+=================================
+fix (f : tree -> nat) =
+  fun (x:tree) ->
+    match x with
+      | Leaf _ -> 1
+      | Node _ -> sum (f (Un_Node x . 0)) (f (Un_Node x . 2))
+
+0.1048 true
+
+Leaf () -> 1;
+Node (Leaf (), T (), Leaf ()) -> 2;
+Node (Leaf (), T (), Node (Leaf (), T (), Leaf ())) -> 3;
+Node (Node (Node (Leaf (), T (), Leaf ()), T (), Leaf ()), T (), Leaf ()) -> 4;
+Node (Node (Leaf (), T (), Leaf ()), T (), Node (Leaf (), T (), Leaf ())) -> 4;
+=================================
+fix (f : tree -> nat) =
+  fun (x:tree) ->
+    match x with
+      | Leaf _ -> 1
+      | Node _ -> sum (f (Un_Node x . 0)) (f (Un_Node x . 2))
+
+0.7963 true
+
+Node (Node (Leaf (), T (), Leaf ()), T (), Leaf ()) -> 3;
+Node (Leaf (), T (), Node (Leaf (), T (), Leaf ())) -> 3;
+Node (Node (Node (Leaf (), T (), Leaf ()), T (), Leaf ()), T (), Leaf ()) -> 4;
+Node (Node (Leaf (), T (), Leaf ()), T (), Node (Leaf (), T (), Leaf ())) -> 4;
+Node (Node (Leaf (), T (), Leaf ()), T (), Node (Node (Leaf (), T (), Leaf ()), T (), Node (Leaf (), T (), Leaf ()))) -> 6;
+=================================
+fix (f : tree -> nat) =
+  fun (x:tree) ->
+    match x with
+      | Leaf _ -> 1
+      | Node _ -> sum (f (Un_Node x . 2)) (f (Un_Node x . 0))
+
+4.7833 true
+
+Leaf () -> 1;
+Node (Leaf (), T (), Leaf ()) -> 2;
+Node (Leaf (), T (), Node (Leaf (), T (), Leaf ())) -> 3;
+Node (Node (Leaf (), T (), Leaf ()), T (), Node (Leaf (), T (), Leaf ())) -> 4;
+Node (Node (Leaf (), T (), Leaf ()), T (), Node (Node (Leaf (), T (), Leaf ()), T (), Node (Leaf (), T (), Leaf ()))) -> 6;
+=================================
+fix (f : tree -> nat) =
+  fun (x:tree) ->
+    match x with
+      | Leaf _ -> 1
+      | Node _ -> sum (f (Un_Node x . 0)) (f (Un_Node x . 2))
+
+0.0532 true
+
+Leaf () -> 1;
+Node (Node (Leaf (), T (), Leaf ()), T (), Leaf ()) -> 3;
+Node (Leaf (), T (), Node (Leaf (), T (), Leaf ())) -> 3;
+Node (Node (Leaf (), T (), Leaf ()), T (), Node (Leaf (), T (), Leaf ())) -> 4;
+Node (Node (Leaf (), T (), Leaf ()), T (), Node (Node (Leaf (), T (), Leaf ()), T (), Node (Leaf (), T (), Leaf ()))) -> 6;
+=================================
+fix (f : tree -> nat) =
+  fun (x:tree) ->
+    match x with
+      | Leaf _ -> 1
+      | Node _ -> sum (f (Un_Node x . 2)) (f (Un_Node x . 0))
+
+0.2477 true
+
+Leaf () -> 1;
+Node (Leaf (), T (), Leaf ()) -> 2;
+Node (Node (Leaf (), T (), Leaf ()), T (), Leaf ()) -> 3;
+Node (Leaf (), T (), Node (Leaf (), T (), Leaf ())) -> 3;
+Node (Node (Node (Leaf (), T (), Leaf ()), T (), Leaf ()), T (), Leaf ()) -> 4;
+Node (Node (Leaf (), T (), Leaf ()), T (), Node (Leaf (), T (), Leaf ())) -> 4;
+=================================
+fix (f : tree -> nat) =
+  fun (x:tree) ->
+    match x with
+      | Leaf _ -> 1
+      | Node _ -> sum (f (Un_Node x . 0)) (f (Un_Node x . 2))
+
+0.0878 true
+
+Leaf () -> 1;
+Node (Leaf (), T (), Leaf ()) -> 2;
+Node (Node (Leaf (), T (), Leaf ()), T (), Leaf ()) -> 3;
+Node (Leaf (), T (), Node (Leaf (), T (), Leaf ())) -> 3;
+Node (Node (Node (Leaf (), T (), Leaf ()), T (), Leaf ()), T (), Leaf ()) -> 4;
+Node (Node (Leaf (), T (), Leaf ()), T (), Node (Node (Leaf (), T (), Leaf ()), T (), Node (Leaf (), T (), Leaf ()))) -> 6;
+=================================
+fix (f : tree -> nat) =
+  fun (x:tree) ->
+    match x with
+      | Leaf _ -> 1
+      | Node _ -> sum (f (Un_Node x . 0)) (f (Un_Node x . 2))
+
+0.0721 true
+
+Leaf () -> 1;
+Node (Leaf (), T (), Leaf ()) -> 2;
+Node (Node (Leaf (), T (), Leaf ()), T (), Leaf ()) -> 3;
+Node (Leaf (), T (), Node (Leaf (), T (), Leaf ())) -> 3;
+Node (Node (Leaf (), T (), Leaf ()), T (), Node (Leaf (), T (), Leaf ())) -> 4;
+Node (Node (Leaf (), T (), Leaf ()), T (), Node (Node (Leaf (), T (), Leaf ()), T (), Node (Leaf (), T (), Leaf ()))) -> 6;
+=================================
+fix (f : tree -> nat) =
+  fun (x:tree) ->
+    match x with
+      | Leaf _ -> 1
+      | Node _ -> sum (f (Un_Node x . 0)) (f (Un_Node x . 2))
+
+0.0749 true
+
+Leaf () -> 1;
+Node (Leaf (), T (), Leaf ()) -> 2;
+Node (Node (Leaf (), T (), Leaf ()), T (), Leaf ()) -> 3;
+Node (Node (Node (Leaf (), T (), Leaf ()), T (), Leaf ()), T (), Leaf ()) -> 4;
+Node (Node (Leaf (), T (), Leaf ()), T (), Node (Leaf (), T (), Leaf ())) -> 4;
+Node (Node (Leaf (), T (), Leaf ()), T (), Node (Node (Leaf (), T (), Leaf ()), T (), Node (Leaf (), T (), Leaf ()))) -> 6;
+=================================
+fix (f : tree -> nat) =
+  fun (x:tree) ->
+    match x with
+      | Leaf _ -> 1
+      | Node _ -> sum (f (Un_Node x . 2)) (f (Un_Node x . 0))
+
+0.0539 true
+
+Leaf () -> 1;
+Node (Leaf (), T (), Leaf ()) -> 2;
+Node (Leaf (), T (), Node (Leaf (), T (), Leaf ())) -> 3;
+Node (Node (Node (Leaf (), T (), Leaf ()), T (), Leaf ()), T (), Leaf ()) -> 4;
+Node (Node (Leaf (), T (), Leaf ()), T (), Node (Leaf (), T (), Leaf ())) -> 4;
+Node (Node (Leaf (), T (), Leaf ()), T (), Node (Node (Leaf (), T (), Leaf ()), T (), Node (Leaf (), T (), Leaf ()))) -> 6;
+=================================
+fix (f : tree -> nat) =
+  fun (x:tree) ->
+    match x with
+      | Leaf _ -> 1
+      | Node _ -> sum (f (Un_Node x . 0)) (f (Un_Node x . 2))
+
+0.9050 true
+
+Leaf () -> 1;
+Node (Node (Leaf (), T (), Leaf ()), T (), Leaf ()) -> 3;
+Node (Leaf (), T (), Node (Leaf (), T (), Leaf ())) -> 3;
+Node (Node (Node (Leaf (), T (), Leaf ()), T (), Leaf ()), T (), Leaf ()) -> 4;
+Node (Node (Leaf (), T (), Leaf ()), T (), Node (Leaf (), T (), Leaf ())) -> 4;
+Node (Node (Leaf (), T (), Leaf ()), T (), Node (Node (Leaf (), T (), Leaf ()), T (), Node (Leaf (), T (), Leaf ()))) -> 6;
+=================================
+fix (f : tree -> nat) =
+  fun (x:tree) ->
+    match x with
+      | Leaf _ -> 1
+      | Node _ -> sum (f (Un_Node x . 0)) (f (Un_Node x . 2))
+
+1.5234 true
+
+Node (Leaf (), T (), Leaf ()) -> 2;
+Node (Node (Leaf (), T (), Leaf ()), T (), Leaf ()) -> 3;
+Node (Leaf (), T (), Node (Leaf (), T (), Leaf ())) -> 3;
+Node (Node (Node (Leaf (), T (), Leaf ()), T (), Leaf ()), T (), Leaf ()) -> 4;
+Node (Node (Leaf (), T (), Leaf ()), T (), Node (Leaf (), T (), Leaf ())) -> 4;
+Node (Node (Leaf (), T (), Leaf ()), T (), Node (Node (Leaf (), T (), Leaf ()), T (), Node (Leaf (), T (), Leaf ()))) -> 6;
+=================================
+fix (f : tree -> nat) =
+  fun (x:tree) ->
+    match x with
+      | Leaf _ -> 1
+      | Node _ -> sum (f (Un_Node x . 2)) (f (Un_Node x . 0))
+
+0.1038 true
+
+Leaf () -> 1;
+Node (Leaf (), T (), Leaf ()) -> 2;
+Node (Node (Leaf (), T (), Leaf ()), T (), Leaf ()) -> 3;
+Node (Leaf (), T (), Node (Leaf (), T (), Leaf ())) -> 3;
+Node (Node (Node (Leaf (), T (), Leaf ()), T (), Leaf ()), T (), Leaf ()) -> 4;
+Node (Node (Leaf (), T (), Leaf ()), T (), Node (Leaf (), T (), Leaf ())) -> 4;
+Node (Node (Leaf (), T (), Leaf ()), T (), Node (Node (Leaf (), T (), Leaf ()), T (), Node (Leaf (), T (), Leaf ()))) -> 6;
+=================================
+fix (f : tree -> nat) =
+  fun (x:tree) ->
+    match x with
+      | Leaf _ -> 1
+      | Node _ -> sum (f (Un_Node x . 2)) (f (Un_Node x . 0))
+
+0.0716 true
+

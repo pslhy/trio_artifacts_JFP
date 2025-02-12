@@ -1,0 +1,2630 @@
+(3,[2,3,2]) -> [2,3,2];
+(0, []) -> [];
+
+=================================
+(\list_take -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ((let list_take = \n -> \xs -> xs in list_take) : Nat -> NatList -> NatList)
+0.00378999999998 false false
+
+(2,[1]) -> [1];
+(0, []) -> [];
+
+=================================
+(\list_take -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ((let list_take = \n -> \xs -> xs in list_take) : Nat -> NatList -> NatList)
+0.004279 false false
+
+(2,[1,3]) -> [1,3];
+(0, []) -> [];
+
+=================================
+(\list_take -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ((let list_take = \n -> \xs -> xs in list_take) : Nat -> NatList -> NatList)
+0.00386099999992 false false
+
+(2,[3]) -> [3];
+(0, []) -> [];
+
+=================================
+(\list_take -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ((let list_take = \n -> \xs -> xs in list_take) : Nat -> NatList -> NatList)
+0.00371999999993 false false
+
+(2,[3,2,1]) -> [3,2];
+(0, []) -> [];
+
+=================================
+(\list_take -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_take = \n -> \xs -> case xs of
+    Nil y1 -> 
+      []
+
+    Cons y1 -> 
+      [#2.1 y1, n] in list_take) : Nat -> NatList -> NatList)
+(\list_take -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_take = \n -> \xs -> case n of
+    Z y1 -> 
+      []
+
+    S y1 -> 
+      Cons (S n, list_take y1 xs) in list_take) : Nat -> NatList -> NatList)
+0.00953000000004 false false
+
+(1,[2,2,0]) -> [2];
+(0, []) -> [];
+
+=================================
+(\list_take -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_take = \n -> \xs -> case xs of
+    Nil y1 -> 
+      []
+
+    Cons y1 -> 
+      [#2.1 y1] in list_take) : Nat -> NatList -> NatList)
+(\list_take -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_take = \n -> \xs -> case n of
+    Z y1 -> 
+      []
+
+    S y1 -> 
+      Cons (S n, list_take y1 xs) in list_take) : Nat -> NatList -> NatList)
+0.00742799999989 false false
+
+(3,[1,3]) -> [1,3];
+(0, []) -> [];
+
+=================================
+(\list_take -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ((let list_take = \n -> \xs -> xs in list_take) : Nat -> NatList -> NatList)
+0.00383600000009 false false
+
+(2,[2,2]) -> [2,2];
+(0, []) -> [];
+
+=================================
+(\list_take -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ((let list_take = \n -> \xs -> xs in list_take) : Nat -> NatList -> NatList)
+0.00385800000004 false false
+
+(0,[2,1]) -> [];
+(0, []) -> [];
+
+=================================
+(\list_take -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ((let list_take = \n -> \xs -> [] in list_take) : Nat -> NatList -> NatList)
+0.00382599999989 false false
+
+(0,[3]) -> [];
+(0, []) -> [];
+
+=================================
+(\list_take -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ((let list_take = \n -> \xs -> [] in list_take) : Nat -> NatList -> NatList)
+0.00398599999994 false false
+
+(0,[1,3]) -> [];
+(1,[1,1,1]) -> [1];
+(0, []) -> [];
+
+=================================
+(\list_take -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_take = \n -> \xs -> case n of
+    Z y1 -> 
+      []
+
+    S y1 -> 
+      [n] in list_take) : Nat -> NatList -> NatList)
+(\list_take -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_take = \n -> \xs -> case n of
+    Z y1 -> 
+      []
+
+    S y1 -> 
+      Cons (n, list_take y1 xs) in list_take) : Nat -> NatList -> NatList)
+0.00612599999999 false false
+
+(3,[2,1]) -> [2,1];
+(0,[0,3,3]) -> [];
+(0, []) -> [];
+
+=================================
+(\list_take -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_take = \n -> \xs -> case n of
+    Z y1 -> 
+      []
+
+    S y1 -> 
+      xs in list_take) : Nat -> NatList -> NatList)
+0.00709899999993 false false
+
+(0,[0]) -> [];
+(1,[2,0,1]) -> [2];
+(0, []) -> [];
+
+=================================
+(\list_take -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_take = \n -> \xs -> case n of
+    Z y1 -> 
+      []
+
+    S y1 -> 
+      [S n] in list_take) : Nat -> NatList -> NatList)
+(\list_take -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_take = \n -> \xs -> case n of
+    Z y1 -> 
+      []
+
+    S y1 -> 
+      Cons (S n, list_take y1 xs) in list_take) : Nat -> NatList -> NatList)
+0.00664899999992 false false
+
+(1,[3,2]) -> [3];
+(0,[3]) -> [];
+(0, []) -> [];
+
+=================================
+(\list_take -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_take = \n -> \xs -> case n of
+    Z y1 -> 
+      []
+
+    S y1 -> 
+      [S (S n)] in list_take) : Nat -> NatList -> NatList)
+(\list_take -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_take = \n -> \xs -> case n of
+    Z y1 -> 
+      []
+
+    S y1 -> 
+      Cons (S (S n), list_take y1 xs) in list_take) : Nat -> NatList -> NatList)
+0.00678399999993 false false
+
+(2,[3]) -> [3];
+(0,[3]) -> [];
+(0, []) -> [];
+
+=================================
+(\list_take -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_take = \n -> \xs -> case n of
+    Z y1 -> 
+      []
+
+    S y1 -> 
+      xs in list_take) : Nat -> NatList -> NatList)
+0.00600499999996 false false
+
+(3,[2,2,1]) -> [2,2,1];
+(1,[0,0,2]) -> [0];
+(0, []) -> [];
+
+=================================
+(\list_take -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_take = \n -> \xs -> case xs of
+    Nil y1 -> 
+      []
+
+    Cons y1 -> 
+      case #2.1 y1 of
+        Z y2 -> 
+          [0]
+
+        S y2 -> 
+          Cons (S y2, #2.2 y1) in list_take) : Nat -> NatList -> NatList)
+0.028863 false false
+
+(1,[2,1]) -> [2];
+(1,[1,0]) -> [1];
+(0, []) -> [];
+
+=================================
+(\list_take -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_take = \n -> \xs -> case xs of
+    Nil y1 -> 
+      []
+
+    Cons y1 -> 
+      [#2.1 y1] in list_take) : Nat -> NatList -> NatList)
+0.00765200000001 false false
+
+(3,[2,1]) -> [2,1];
+(3,[3,2]) -> [3,2];
+(0, []) -> [];
+
+=================================
+(\list_take -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ((let list_take = \n -> \xs -> xs in list_take) : Nat -> NatList -> NatList)
+0.00409599999989 false false
+
+(0,[1,3]) -> [];
+(3,[3,2]) -> [3,2];
+(0, []) -> [];
+
+=================================
+(\list_take -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_take = \n -> \xs -> case n of
+    Z y1 -> 
+      []
+
+    S y1 -> 
+      xs in list_take) : Nat -> NatList -> NatList)
+0.00737400000003 false false
+
+(0,[2,3]) -> [];
+(0,[3,1,3]) -> [];
+(0, []) -> [];
+
+=================================
+(\list_take -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ((let list_take = \n -> \xs -> [] in list_take) : Nat -> NatList -> NatList)
+0.0041389999999 false false
+
+(3,[1,1]) -> [1,1];
+(3,[3,0,2]) -> [3,0,2];
+(3,[1]) -> [1];
+(0, []) -> [];
+
+=================================
+(\list_take -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ((let list_take = \n -> \xs -> xs in list_take) : Nat -> NatList -> NatList)
+0.00378599999999 false false
+
+(3,[3,2,3]) -> [3,2,3];
+(1,[3]) -> [3];
+(1,[3,1]) -> [3];
+(0, []) -> [];
+
+=================================
+(\list_take -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_take = \n -> \xs -> case n of
+    Z y1 -> 
+      []
+
+    S y1 -> 
+      case y1 of
+        Z y2 -> 
+          [S (S n)]
+
+        S y2 -> 
+          [3, S y2, n] in list_take) : Nat -> NatList -> NatList)
+(\list_take -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_take = \n -> \xs -> case n of
+    Z y1 -> 
+      []
+
+    S y1 -> 
+      case y1 of
+        Z y2 -> 
+          [S (S n)]
+
+        S y2 -> 
+          Cons (3, Cons (S y2, list_take y2 xs)) in list_take) : Nat -> NatList -> NatList)
+0.0586960000001 false false
+
+(1,[0,2,0]) -> [0];
+(0,[1,3,0]) -> [];
+(0,[3]) -> [];
+(0, []) -> [];
+
+=================================
+(\list_take -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_take = \n -> \xs -> case n of
+    Z y1 -> 
+      []
+
+    S y1 -> 
+      [0] in list_take) : Nat -> NatList -> NatList)
+(\list_take -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_take = \n -> \xs -> case n of
+    Z y1 -> 
+      []
+
+    S y1 -> 
+      Cons (0, list_take y1 xs) in list_take) : Nat -> NatList -> NatList)
+0.00655899999992 false false
+
+(1,[3,0]) -> [3];
+(3,[3,1,1]) -> [3,1,1];
+(0,[0]) -> [];
+(0, []) -> [];
+
+=================================
+(\list_take -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_take = \n -> \xs -> case xs of
+    Nil y1 -> 
+      []
+
+    Cons y1 -> 
+      case n of
+        Z y2 -> 
+          []
+
+        S y2 -> 
+          Cons (#2.1 y1, list_take y2 (#2.2 y1)) in list_take) : Nat -> NatList -> NatList)
+(\list_take -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_take = \n -> \xs -> case xs of
+    Nil y1 -> 
+      []
+
+    Cons y1 -> 
+      case n of
+        Z y2 -> 
+          []
+
+        S y2 -> 
+          Cons (#2.1 y1, list_take y2 (#2.2 y1)) in list_take) : Nat -> NatList -> NatList)
+0.0442760000001 true true
+
+(1,[0,2,1]) -> [0];
+(1,[0,0]) -> [0];
+(3,[2,0]) -> [2,0];
+(0, []) -> [];
+
+=================================
+(\list_take -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_take = \n -> \xs -> case xs of
+    Nil y1 -> 
+      []
+
+    Cons y1 -> 
+      case #2.1 y1 of
+        Z y2 -> 
+          [0]
+
+        S y2 -> 
+          xs in list_take) : Nat -> NatList -> NatList)
+0.032119 false false
+
+(0,[3,0,2]) -> [];
+(0,[3,1]) -> [];
+(1,[2,2]) -> [2];
+(0, []) -> [];
+
+=================================
+(\list_take -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_take = \n -> \xs -> case n of
+    Z y1 -> 
+      []
+
+    S y1 -> 
+      [S n] in list_take) : Nat -> NatList -> NatList)
+(\list_take -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_take = \n -> \xs -> case n of
+    Z y1 -> 
+      []
+
+    S y1 -> 
+      Cons (S n, list_take y1 xs) in list_take) : Nat -> NatList -> NatList)
+0.00670799999989 false false
+
+(2,[0,3]) -> [0,3];
+(0,[2]) -> [];
+(0,[2,3,3]) -> [];
+(0, []) -> [];
+
+=================================
+(\list_take -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_take = \n -> \xs -> case n of
+    Z y1 -> 
+      []
+
+    S y1 -> 
+      xs in list_take) : Nat -> NatList -> NatList)
+0.00623199999995 false false
+
+(0,[2,2,3]) -> [];
+(2,[0]) -> [0];
+(1,[3,0]) -> [3];
+(0, []) -> [];
+
+=================================
+(\list_take -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_take = \n -> \xs -> case xs of
+    Nil y1 -> 
+      []
+
+    Cons y1 -> 
+      case n of
+        Z y2 -> 
+          []
+
+        S y2 -> 
+          [#2.1 y1] in list_take) : Nat -> NatList -> NatList)
+(\list_take -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_take = \n -> \xs -> case xs of
+    Nil y1 -> 
+      []
+
+    Cons y1 -> 
+      case n of
+        Z y2 -> 
+          []
+
+        S y2 -> 
+          Cons (#2.1 y1, list_take y2 (#2.2 y1)) in list_take) : Nat -> NatList -> NatList)
+0.0254480000001 false true
+
+(1,[2,3,3]) -> [2];
+(1,[1,3]) -> [1];
+(2,[1]) -> [1];
+(0, []) -> [];
+
+=================================
+(\list_take -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_take = \n -> \xs -> case xs of
+    Nil y1 -> 
+      []
+
+    Cons y1 -> 
+      [#2.1 y1] in list_take) : Nat -> NatList -> NatList)
+0.00698299999999 false false
+
+(1,[0]) -> [0];
+(2,[3]) -> [3];
+(2,[1,2]) -> [1,2];
+(0, []) -> [];
+
+=================================
+(\list_take -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ((let list_take = \n -> \xs -> xs in list_take) : Nat -> NatList -> NatList)
+0.00420600000007 false false
+
+(2,[3,1]) -> [3,1];
+(0,[0,1]) -> [];
+(0,[3,0,3]) -> [];
+(0,[2,2]) -> [];
+(0, []) -> [];
+
+=================================
+(\list_take -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_take = \n -> \xs -> case n of
+    Z y1 -> 
+      []
+
+    S y1 -> 
+      xs in list_take) : Nat -> NatList -> NatList)
+0.00672600000007 false false
+
+(3,[3,0]) -> [3,0];
+(2,[3,2]) -> [3,2];
+(3,[3,2,1]) -> [3,2,1];
+(2,[2]) -> [2];
+(0, []) -> [];
+
+=================================
+(\list_take -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ((let list_take = \n -> \xs -> xs in list_take) : Nat -> NatList -> NatList)
+0.00405099999989 false false
+
+(0,[3,2]) -> [];
+(0,[0,0,1]) -> [];
+(1,[3,3]) -> [3];
+(0,[3,3]) -> [];
+(0, []) -> [];
+
+=================================
+(\list_take -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_take = \n -> \xs -> case n of
+    Z y1 -> 
+      []
+
+    S y1 -> 
+      [S (S n)] in list_take) : Nat -> NatList -> NatList)
+(\list_take -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_take = \n -> \xs -> case n of
+    Z y1 -> 
+      []
+
+    S y1 -> 
+      Cons (S (S n), list_take y1 xs) in list_take) : Nat -> NatList -> NatList)
+0.00693799999999 false false
+
+(3,[0,3]) -> [0,3];
+(2,[3,2,2]) -> [3,2];
+(0,[2,1,1]) -> [];
+(2,[3]) -> [3];
+(0, []) -> [];
+
+=================================
+(\list_take -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_take = \n -> \xs -> case xs of
+    Nil y1 -> 
+      []
+
+    Cons y1 -> 
+      case n of
+        Z y2 -> 
+          []
+
+        S y2 -> 
+          Cons (#2.1 y1, list_take y2 (#2.2 y1)) in list_take) : Nat -> NatList -> NatList)
+(\list_take -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_take = \n -> \xs -> case xs of
+    Nil y1 -> 
+      []
+
+    Cons y1 -> 
+      case n of
+        Z y2 -> 
+          []
+
+        S y2 -> 
+          Cons (#2.1 y1, list_take y2 (#2.2 y1)) in list_take) : Nat -> NatList -> NatList)
+0.028468 true true
+
+(1,[0]) -> [0];
+(1,[3]) -> [3];
+(0,[1,3,0]) -> [];
+(2,[3,2]) -> [3,2];
+(0, []) -> [];
+
+=================================
+(\list_take -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_take = \n -> \xs -> case n of
+    Z y1 -> 
+      []
+
+    S y1 -> 
+      xs in list_take) : Nat -> NatList -> NatList)
+0.00654499999996 false false
+
+(3,[1]) -> [1];
+(0,[0,1,1]) -> [];
+(0,[3,2]) -> [];
+(2,[3]) -> [3];
+(0, []) -> [];
+
+=================================
+(\list_take -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_take = \n -> \xs -> case n of
+    Z y1 -> 
+      []
+
+    S y1 -> 
+      xs in list_take) : Nat -> NatList -> NatList)
+0.00707000000011 false false
+
+(2,[0,0,1]) -> [0,0];
+(2,[2]) -> [2];
+(2,[0]) -> [0];
+(1,[3]) -> [3];
+(0, []) -> [];
+
+=================================
+(\list_take -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_take = \n -> \xs -> case xs of
+    Nil y1 -> 
+      []
+
+    Cons y1 -> 
+      case #2.2 y1 of
+        Nil y2 -> 
+          xs
+
+        Cons y2 -> 
+          [0, 0] in list_take) : Nat -> NatList -> NatList)
+0.0253749999999 false false
+
+(0,[2,2]) -> [];
+(0,[0,0]) -> [];
+(1,[1]) -> [1];
+(3,[1,0]) -> [1,0];
+(0, []) -> [];
+
+=================================
+(\list_take -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_take = \n -> \xs -> case n of
+    Z y1 -> 
+      []
+
+    S y1 -> 
+      xs in list_take) : Nat -> NatList -> NatList)
+0.00664200000006 false false
+
+(3,[1,0,1]) -> [1,0,1];
+(0,[0,1,3]) -> [];
+(1,[1]) -> [1];
+(3,[2,0]) -> [2,0];
+(0, []) -> [];
+
+=================================
+(\list_take -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_take = \n -> \xs -> case n of
+    Z y1 -> 
+      []
+
+    S y1 -> 
+      xs in list_take) : Nat -> NatList -> NatList)
+0.00673800000004 false false
+
+(3,[1,1]) -> [1,1];
+(1,[0]) -> [0];
+(0,[3]) -> [];
+(1,[0,0]) -> [0];
+(0, []) -> [];
+
+=================================
+(\list_take -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_take = \n -> \xs -> case xs of
+    Nil y1 -> 
+      []
+
+    Cons y1 -> 
+      case n of
+        Z y2 -> 
+          []
+
+        S y2 -> 
+          Cons (#2.1 y1, list_take y2 (#2.2 y1)) in list_take) : Nat -> NatList -> NatList)
+(\list_take -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_take = \n -> \xs -> case xs of
+    Nil y1 -> 
+      []
+
+    Cons y1 -> 
+      case n of
+        Z y2 -> 
+          []
+
+        S y2 -> 
+          Cons (#2.1 y1, list_take y2 (#2.2 y1)) in list_take) : Nat -> NatList -> NatList)
+0.0362439999999 true true
+
+(2,[1,2,0]) -> [1,2];
+(3,[3,2,0]) -> [3,2,0];
+(2,[0,0]) -> [0,0];
+(2,[2]) -> [2];
+(3,[1]) -> [1];
+(0, []) -> [];
+
+=================================
+NOSOL
+
+(3,[0,2,3]) -> [0,2,3];
+(2,[1]) -> [1];
+(1,[3,2,1]) -> [3];
+(0,[0]) -> [];
+(2,[2]) -> [2];
+(0, []) -> [];
+
+=================================
+(\list_take -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_take = \n -> \xs -> case xs of
+    Nil y1 -> 
+      []
+
+    Cons y1 -> 
+      case n of
+        Z y2 -> 
+          []
+
+        S y2 -> 
+          Cons (#2.1 y1, list_take y2 (#2.2 y1)) in list_take) : Nat -> NatList -> NatList)
+(\list_take -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_take = \n -> \xs -> case xs of
+    Nil y1 -> 
+      []
+
+    Cons y1 -> 
+      case n of
+        Z y2 -> 
+          []
+
+        S y2 -> 
+          Cons (#2.1 y1, list_take y2 (#2.2 y1)) in list_take) : Nat -> NatList -> NatList)
+0.0352370000001 true true
+
+(0,[0,3,2]) -> [];
+(1,[2,2]) -> [2];
+(0,[2,2]) -> [];
+(3,[1]) -> [1];
+(0,[1]) -> [];
+(0, []) -> [];
+
+=================================
+(\list_take -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_take = \n -> \xs -> case xs of
+    Nil y1 -> 
+      []
+
+    Cons y1 -> 
+      case n of
+        Z y2 -> 
+          []
+
+        S y2 -> 
+          [#2.1 y1] in list_take) : Nat -> NatList -> NatList)
+(\list_take -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_take = \n -> \xs -> case xs of
+    Nil y1 -> 
+      []
+
+    Cons y1 -> 
+      case n of
+        Z y2 -> 
+          []
+
+        S y2 -> 
+          Cons (#2.1 y1, list_take y2 (#2.2 y1)) in list_take) : Nat -> NatList -> NatList)
+0.117787 false true
+
+(3,[3]) -> [3];
+(3,[2]) -> [2];
+(2,[0,0]) -> [0,0];
+(0,[2,2]) -> [];
+(2,[3]) -> [3];
+(0, []) -> [];
+
+=================================
+(\list_take -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_take = \n -> \xs -> case n of
+    Z y1 -> 
+      []
+
+    S y1 -> 
+      xs in list_take) : Nat -> NatList -> NatList)
+0.0061310000001 false false
+
+(1,[2]) -> [2];
+(3,[1,1,1]) -> [1,1,1];
+(0,[2]) -> [];
+(3,[1]) -> [1];
+(0,[3,2]) -> [];
+(0, []) -> [];
+
+=================================
+(\list_take -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_take = \n -> \xs -> case n of
+    Z y1 -> 
+      []
+
+    S y1 -> 
+      xs in list_take) : Nat -> NatList -> NatList)
+0.00771899999995 false false
+
+(1,[0,1,2]) -> [0];
+(2,[1]) -> [1];
+(1,[3,0]) -> [3];
+(2,[3,0,0]) -> [3,0];
+(1,[3]) -> [3];
+(0, []) -> [];
+
+=================================
+(\list_take -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_take = \n -> \xs -> case xs of
+    Nil y1 -> 
+      []
+
+    Cons y1 -> 
+      case #2.2 y1 of
+        Nil y2 -> 
+          xs
+
+        Cons y2 -> 
+          case #2.1 y1 of
+            Z y3 -> 
+              [0]
+
+            S y3 -> 
+              Cons (#2.1 y1, #2.2 y2) in list_take) : Nat -> NatList -> NatList)
+9.589842 false false
+
+(3,[2,0]) -> [2,0];
+(0,[3,2,1]) -> [];
+(3,[2]) -> [2];
+(3,[3,1]) -> [3,1];
+(2,[2,1,3]) -> [2,1];
+(0, []) -> [];
+
+=================================
+(\list_take -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_take = \n -> \xs -> case xs of
+    Nil y1 -> 
+      []
+
+    Cons y1 -> 
+      case n of
+        Z y2 -> 
+          []
+
+        S y2 -> 
+          Cons (#2.1 y1, list_take y2 (#2.2 y1)) in list_take) : Nat -> NatList -> NatList)
+(\list_take -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_take = \n -> \xs -> case xs of
+    Nil y1 -> 
+      []
+
+    Cons y1 -> 
+      case n of
+        Z y2 -> 
+          []
+
+        S y2 -> 
+          Cons (#2.1 y1, list_take y2 (#2.2 y1)) in list_take) : Nat -> NatList -> NatList)
+0.0385839999999 true true
+
+(3,[0,1,0]) -> [0,1,0];
+(2,[3,2]) -> [3,2];
+(1,[1]) -> [1];
+(0,[2,1]) -> [];
+(2,[3,1,2]) -> [3,1];
+(0, []) -> [];
+
+=================================
+(\list_take -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_take = \n -> \xs -> case xs of
+    Nil y1 -> 
+      []
+
+    Cons y1 -> 
+      case n of
+        Z y2 -> 
+          []
+
+        S y2 -> 
+          Cons (#2.1 y1, list_take y2 (#2.2 y1)) in list_take) : Nat -> NatList -> NatList)
+(\list_take -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_take = \n -> \xs -> case xs of
+    Nil y1 -> 
+      []
+
+    Cons y1 -> 
+      case n of
+        Z y2 -> 
+          []
+
+        S y2 -> 
+          Cons (#2.1 y1, list_take y2 (#2.2 y1)) in list_take) : Nat -> NatList -> NatList)
+0.040111 true true
+
+(1,[0,3]) -> [0];
+(3,[0,0,3]) -> [0,0,3];
+(0,[0]) -> [];
+(2,[0,0]) -> [0,0];
+(0,[2]) -> [];
+(0, []) -> [];
+
+=================================
+(\list_take -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_take = \n -> \xs -> case n of
+    Z y1 -> 
+      case xs of
+        Nil y2 -> 
+          []
+
+        Cons y2 -> 
+          []
+
+    S y1 -> 
+      case y1 of
+        Z y2 -> 
+          [0]
+
+        S y2 -> 
+          xs in list_take) : Nat -> NatList -> NatList)
+(\list_take -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_take = \n -> \xs -> case xs of
+    Nil y1 -> 
+      []
+
+    Cons y1 -> 
+      case n of
+        Z y2 -> 
+          []
+
+        S y2 -> 
+          Cons (#2.1 y1, list_take y2 (#2.2 y1)) in list_take) : Nat -> NatList -> NatList)
+0.049884 false true
+
+(0,[0]) -> [];
+(3,[0,0,3]) -> [0,0,3];
+(3,[2]) -> [2];
+(1,[3,1]) -> [3];
+(1,[0]) -> [0];
+(0, []) -> [];
+
+=================================
+(\list_take -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_take = \n -> \xs -> case xs of
+    Nil y1 -> 
+      []
+
+    Cons y1 -> 
+      case n of
+        Z y2 -> 
+          []
+
+        S y2 -> 
+          Cons (#2.1 y1, list_take y2 (#2.2 y1)) in list_take) : Nat -> NatList -> NatList)
+(\list_take -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_take = \n -> \xs -> case xs of
+    Nil y1 -> 
+      []
+
+    Cons y1 -> 
+      case n of
+        Z y2 -> 
+          []
+
+        S y2 -> 
+          Cons (#2.1 y1, list_take y2 (#2.2 y1)) in list_take) : Nat -> NatList -> NatList)
+0.097771 true true
+
+(0,[1]) -> [];
+(1,[0]) -> [0];
+(2,[0,0]) -> [0,0];
+(1,[3,2]) -> [3];
+(1,[1]) -> [1];
+(1,[1,0]) -> [1];
+(0, []) -> [];
+
+=================================
+(\list_take -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_take = \n -> \xs -> case xs of
+    Nil y1 -> 
+      []
+
+    Cons y1 -> 
+      case n of
+        Z y2 -> 
+          []
+
+        S y2 -> 
+          Cons (#2.1 y1, list_take y2 xs) in list_take) : Nat -> NatList -> NatList)
+(\list_take -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_take = \n -> \xs -> case xs of
+    Nil y1 -> 
+      []
+
+    Cons y1 -> 
+      case n of
+        Z y2 -> 
+          []
+
+        S y2 -> 
+          Cons (#2.1 y1, list_take y2 xs) in list_take) : Nat -> NatList -> NatList)
+0.0529309999999 false false
+
+(1,[3,0,3]) -> [3];
+(2,[3,2,1]) -> [3,2];
+(3,[1]) -> [1];
+(3,[3,3,2]) -> [3,3,2];
+(2,[0,2]) -> [0,2];
+(2,[1]) -> [1];
+(0, []) -> [];
+
+=================================
+None
+(1,[2,0,3]) -> [2];
+(2,[1]) -> [1];
+(0,[0]) -> [];
+(0,[1]) -> [];
+(0,[3,0,3]) -> [];
+(2,[3]) -> [3];
+(0, []) -> [];
+
+=================================
+(\list_take -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_take = \n -> \xs -> case xs of
+    Nil y1 -> 
+      []
+
+    Cons y1 -> 
+      case n of
+        Z y2 -> 
+          []
+
+        S y2 -> 
+          [#2.1 y1] in list_take) : Nat -> NatList -> NatList)
+(\list_take -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_take = \n -> \xs -> case xs of
+    Nil y1 -> 
+      []
+
+    Cons y1 -> 
+      case n of
+        Z y2 -> 
+          []
+
+        S y2 -> 
+          Cons (#2.1 y1, list_take y2 (#2.2 y1)) in list_take) : Nat -> NatList -> NatList)
+0.0495060000001 false true
+
+(1,[2,1]) -> [2];
+(1,[0,3,0]) -> [0];
+(2,[2,2]) -> [2,2];
+(2,[1,1]) -> [1,1];
+(1,[2]) -> [2];
+(3,[2]) -> [2];
+(0, []) -> [];
+
+=================================
+(\list_take -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_take = \n -> \xs -> case n of
+    Z y1 -> 
+      []
+
+    S y1 -> 
+      case y1 of
+        Z y2 -> 
+          Cons
+            (case xs of
+              Nil y3 -> 
+                (S n, [])
+
+              Cons y3 -> 
+                (#2.1 y3, []))
+
+        S y2 -> 
+          case list_take y2 xs of
+            Nil y3 -> 
+              xs
+
+            Cons y3 -> 
+              list_take y2 (#2.2 y3) in list_take) : Nat -> NatList -> NatList)
+(\list_take -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_take = \n -> \xs -> case n of
+    Z y1 -> 
+      []
+
+    S y1 -> 
+      case y1 of
+        Z y2 -> 
+          Cons
+            (case xs of
+              Nil y3 -> 
+                (S n, [])
+
+              Cons y3 -> 
+                (#2.1 y3, []))
+
+        S y2 -> 
+          case list_take y2 xs of
+            Nil y3 -> 
+              xs
+
+            Cons y3 -> 
+              list_take y2 (#2.2 y3) in list_take) : Nat -> NatList -> NatList)
+21.540288 false false
+
+(3,[0,0]) -> [0,0];
+(2,[3]) -> [3];
+(2,[3,0,2]) -> [3,0];
+(0,[2]) -> [];
+(2,[3,0]) -> [3,0];
+(3,[2]) -> [2];
+(0, []) -> [];
+
+=================================
+(\list_take -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_take = \n -> \xs -> case xs of
+    Nil y1 -> 
+      []
+
+    Cons y1 -> 
+      case n of
+        Z y2 -> 
+          []
+
+        S y2 -> 
+          Cons (#2.1 y1, list_take y2 (#2.2 y1)) in list_take) : Nat -> NatList -> NatList)
+(\list_take -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_take = \n -> \xs -> case xs of
+    Nil y1 -> 
+      []
+
+    Cons y1 -> 
+      case n of
+        Z y2 -> 
+          []
+
+        S y2 -> 
+          Cons (#2.1 y1, list_take y2 (#2.2 y1)) in list_take) : Nat -> NatList -> NatList)
+0.0334130000001 true true
+
+(1,[2,3]) -> [2];
+(0,[1]) -> [];
+(1,[3,3,2]) -> [3];
+(2,[2]) -> [2];
+(0,[2,3,3]) -> [];
+(3,[3,1,1]) -> [3,1,1];
+(0, []) -> [];
+
+=================================
+(\list_take -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_take = \n -> \xs -> case xs of
+    Nil y1 -> 
+      []
+
+    Cons y1 -> 
+      case n of
+        Z y2 -> 
+          []
+
+        S y2 -> 
+          Cons (#2.1 y1, list_take y2 (#2.2 y1)) in list_take) : Nat -> NatList -> NatList)
+(\list_take -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_take = \n -> \xs -> case xs of
+    Nil y1 -> 
+      []
+
+    Cons y1 -> 
+      case n of
+        Z y2 -> 
+          []
+
+        S y2 -> 
+          Cons (#2.1 y1, list_take y2 (#2.2 y1)) in list_take) : Nat -> NatList -> NatList)
+0.066509 true true
+
+(1,[0,2]) -> [0];
+(3,[3,2,2]) -> [3,2,2];
+(0,[1,0,3]) -> [];
+(0,[1]) -> [];
+(3,[3,2,3]) -> [3,2,3];
+(0,[1,2]) -> [];
+(0, []) -> [];
+
+=================================
+(\list_take -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_take = \n -> \xs -> case n of
+    Z y1 -> 
+      []
+
+    S y1 -> 
+      case y1 of
+        Z y2 -> 
+          [0]
+
+        S y2 -> 
+          xs in list_take) : Nat -> NatList -> NatList)
+(\list_take -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_take = \n -> \xs -> case xs of
+    Nil y1 -> 
+      []
+
+    Cons y1 -> 
+      case n of
+        Z y2 -> 
+          []
+
+        S y2 -> 
+          Cons (#2.1 y1, list_take y2 (#2.2 y1)) in list_take) : Nat -> NatList -> NatList)
+0.351468 false true
+
+(0,[0,2,0]) -> [];
+(0,[1]) -> [];
+(2,[3]) -> [3];
+(0,[3]) -> [];
+(1,[1,1,3]) -> [1];
+(0,[2,1]) -> [];
+(0, []) -> [];
+
+=================================
+(\list_take -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_take = \n -> \xs -> case xs of
+    Nil y1 -> 
+      []
+
+    Cons y1 -> 
+      case n of
+        Z y2 -> 
+          []
+
+        S y2 -> 
+          [#2.1 y1] in list_take) : Nat -> NatList -> NatList)
+(\list_take -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_take = \n -> \xs -> case xs of
+    Nil y1 -> 
+      []
+
+    Cons y1 -> 
+      case n of
+        Z y2 -> 
+          []
+
+        S y2 -> 
+          Cons (#2.1 y1, list_take y2 (#2.2 y1)) in list_take) : Nat -> NatList -> NatList)
+0.0285269999999 false true
+
+(1,[0,3,1]) -> [0];
+(3,[3]) -> [3];
+(2,[1]) -> [1];
+(3,[2]) -> [2];
+(2,[1,2]) -> [1,2];
+(1,[1]) -> [1];
+(0, []) -> [];
+
+=================================
+(\list_take -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_take = \n -> \xs -> case xs of
+    Nil y1 -> 
+      []
+
+    Cons y1 -> 
+      case #2.1 y1 of
+        Z y2 -> 
+          [0]
+
+        S y2 -> 
+          xs in list_take) : Nat -> NatList -> NatList)
+0.048661 false false
+
+(3,[3,1]) -> [3,1];
+(1,[3,2]) -> [3];
+(1,[2,0,3]) -> [2];
+(0,[1]) -> [];
+(3,[2,2,2]) -> [2,2,2];
+(3,[3,1,2]) -> [3,1,2];
+(0, []) -> [];
+
+=================================
+(\list_take -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_take = \n -> \xs -> case xs of
+    Nil y1 -> 
+      []
+
+    Cons y1 -> 
+      case n of
+        Z y2 -> 
+          []
+
+        S y2 -> 
+          Cons (#2.1 y1, list_take y2 (#2.2 y1)) in list_take) : Nat -> NatList -> NatList)
+(\list_take -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_take = \n -> \xs -> case xs of
+    Nil y1 -> 
+      []
+
+    Cons y1 -> 
+      case n of
+        Z y2 -> 
+          []
+
+        S y2 -> 
+          Cons (#2.1 y1, list_take y2 (#2.2 y1)) in list_take) : Nat -> NatList -> NatList)
+0.157826 true true
+
+(3,[0,1]) -> [0,1];
+(2,[1,2]) -> [1,2];
+(3,[3]) -> [3];
+(2,[1,0]) -> [1,0];
+(2,[0,2]) -> [0,2];
+(0,[3,0,1]) -> [];
+(0,[0,2,0]) -> [];
+(0, []) -> [];
+
+=================================
+(\list_take -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_take = \n -> \xs -> case n of
+    Z y1 -> 
+      []
+
+    S y1 -> 
+      xs in list_take) : Nat -> NatList -> NatList)
+0.00615300000004 false false
+
+(1,[0]) -> [0];
+(0,[3,1]) -> [];
+(0,[3,3]) -> [];
+(3,[0,0,2]) -> [0,0,2];
+(2,[1,3,3]) -> [1,3];
+(0,[1]) -> [];
+(3,[3]) -> [3];
+(0, []) -> [];
+
+=================================
+(\list_take -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_take = \n -> \xs -> case xs of
+    Nil y1 -> 
+      []
+
+    Cons y1 -> 
+      case n of
+        Z y2 -> 
+          []
+
+        S y2 -> 
+          Cons (#2.1 y1, list_take y2 (#2.2 y1)) in list_take) : Nat -> NatList -> NatList)
+(\list_take -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_take = \n -> \xs -> case xs of
+    Nil y1 -> 
+      []
+
+    Cons y1 -> 
+      case n of
+        Z y2 -> 
+          []
+
+        S y2 -> 
+          Cons (#2.1 y1, list_take y2 (#2.2 y1)) in list_take) : Nat -> NatList -> NatList)
+0.04412 true true
+
+(3,[2,3]) -> [2,3];
+(3,[3,3,1]) -> [3,3,1];
+(0,[1]) -> [];
+(1,[2,0]) -> [2];
+(1,[1]) -> [1];
+(2,[1,1]) -> [1,1];
+(1,[2,2,0]) -> [2];
+(0, []) -> [];
+
+=================================
+(\list_take -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_take = \n -> \xs -> case xs of
+    Nil y1 -> 
+      []
+
+    Cons y1 -> 
+      case n of
+        Z y2 -> 
+          []
+
+        S y2 -> 
+          Cons (#2.1 y1, list_take y2 (#2.2 y1)) in list_take) : Nat -> NatList -> NatList)
+(\list_take -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_take = \n -> \xs -> case xs of
+    Nil y1 -> 
+      []
+
+    Cons y1 -> 
+      case n of
+        Z y2 -> 
+          []
+
+        S y2 -> 
+          Cons (#2.1 y1, list_take y2 (#2.2 y1)) in list_take) : Nat -> NatList -> NatList)
+0.0877809999999 true true
+
+(3,[2,2]) -> [2,2];
+(2,[0,1,3]) -> [0,1];
+(2,[1,2]) -> [1,2];
+(3,[1]) -> [1];
+(3,[2]) -> [2];
+(0,[2]) -> [];
+(0,[3]) -> [];
+(0, []) -> [];
+
+=================================
+(\list_take -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_take = \n -> \xs -> case xs of
+    Nil y1 -> 
+      []
+
+    Cons y1 -> 
+      case n of
+        Z y2 -> 
+          []
+
+        S y2 -> 
+          Cons (#2.1 y1, list_take y2 (#2.2 y1)) in list_take) : Nat -> NatList -> NatList)
+(\list_take -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_take = \n -> \xs -> case xs of
+    Nil y1 -> 
+      []
+
+    Cons y1 -> 
+      case n of
+        Z y2 -> 
+          []
+
+        S y2 -> 
+          Cons (#2.1 y1, list_take y2 (#2.2 y1)) in list_take) : Nat -> NatList -> NatList)
+0.037581 true true
+
+(2,[2,0,1]) -> [2,0];
+(0,[2,0]) -> [];
+(3,[0]) -> [0];
+(3,[3,2,2]) -> [3,2,2];
+(1,[0]) -> [0];
+(0,[3]) -> [];
+(0,[2,2]) -> [];
+(0, []) -> [];
+
+=================================
+(\list_take -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_take = \n -> \xs -> case xs of
+    Nil y1 -> 
+      []
+
+    Cons y1 -> 
+      case n of
+        Z y2 -> 
+          []
+
+        S y2 -> 
+          Cons (#2.1 y1, list_take y2 (#2.2 y1)) in list_take) : Nat -> NatList -> NatList)
+(\list_take -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_take = \n -> \xs -> case xs of
+    Nil y1 -> 
+      []
+
+    Cons y1 -> 
+      case n of
+        Z y2 -> 
+          []
+
+        S y2 -> 
+          Cons (#2.1 y1, list_take y2 (#2.2 y1)) in list_take) : Nat -> NatList -> NatList)
+0.044928 true true
+
+(1,[1]) -> [1];
+(2,[3,2]) -> [3,2];
+(3,[2,1]) -> [2,1];
+(3,[2,0,1]) -> [2,0,1];
+(3,[2]) -> [2];
+(0,[2]) -> [];
+(1,[0,0]) -> [0];
+(0, []) -> [];
+
+=================================
+(\list_take -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_take = \n -> \xs -> case xs of
+    Nil y1 -> 
+      []
+
+    Cons y1 -> 
+      case n of
+        Z y2 -> 
+          []
+
+        S y2 -> 
+          Cons (#2.1 y1, list_take y2 (#2.2 y1)) in list_take) : Nat -> NatList -> NatList)
+(\list_take -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_take = \n -> \xs -> case xs of
+    Nil y1 -> 
+      []
+
+    Cons y1 -> 
+      case n of
+        Z y2 -> 
+          []
+
+        S y2 -> 
+          Cons (#2.1 y1, list_take y2 (#2.2 y1)) in list_take) : Nat -> NatList -> NatList)
+0.056358 true true
+
+(3,[2,1,3]) -> [2,1,3];
+(3,[3]) -> [3];
+(1,[3,1]) -> [3];
+(0,[3,3]) -> [];
+(1,[2,3]) -> [2];
+(0,[2,3]) -> [];
+(2,[1]) -> [1];
+(0, []) -> [];
+
+=================================
+(\list_take -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_take = \n -> \xs -> case xs of
+    Nil y1 -> 
+      []
+
+    Cons y1 -> 
+      case n of
+        Z y2 -> 
+          []
+
+        S y2 -> 
+          Cons (#2.1 y1, list_take y2 (#2.2 y1)) in list_take) : Nat -> NatList -> NatList)
+(\list_take -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_take = \n -> \xs -> case xs of
+    Nil y1 -> 
+      []
+
+    Cons y1 -> 
+      case n of
+        Z y2 -> 
+          []
+
+        S y2 -> 
+          Cons (#2.1 y1, list_take y2 (#2.2 y1)) in list_take) : Nat -> NatList -> NatList)
+0.062324 true true
+
+(1,[3,0]) -> [3];
+(2,[1]) -> [1];
+(0,[0,1]) -> [];
+(0,[1,1]) -> [];
+(2,[2,2,0]) -> [2,2];
+(2,[0]) -> [0];
+(2,[0,0]) -> [0,0];
+(0, []) -> [];
+
+=================================
+(\list_take -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_take = \n -> \xs -> case xs of
+    Nil y1 -> 
+      []
+
+    Cons y1 -> 
+      case n of
+        Z y2 -> 
+          []
+
+        S y2 -> 
+          Cons (#2.1 y1, list_take y2 (#2.2 y1)) in list_take) : Nat -> NatList -> NatList)
+(\list_take -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_take = \n -> \xs -> case xs of
+    Nil y1 -> 
+      []
+
+    Cons y1 -> 
+      case n of
+        Z y2 -> 
+          []
+
+        S y2 -> 
+          Cons (#2.1 y1, list_take y2 (#2.2 y1)) in list_take) : Nat -> NatList -> NatList)
+0.0496410000001 true true
+
+(0,[3,3]) -> [];
+(0,[1]) -> [];
+(2,[3]) -> [3];
+(3,[2,0]) -> [2,0];
+(2,[3,1]) -> [3,1];
+(1,[1]) -> [1];
+(1,[0]) -> [0];
+(0, []) -> [];
+
+=================================
+(\list_take -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_take = \n -> \xs -> case n of
+    Z y1 -> 
+      []
+
+    S y1 -> 
+      xs in list_take) : Nat -> NatList -> NatList)
+0.00954700000011 false false
+
+(3,[2,1]) -> [2,1];
+(2,[1,3]) -> [1,3];
+(0,[1]) -> [];
+(0,[0]) -> [];
+(2,[1,2]) -> [1,2];
+(1,[3,2]) -> [3];
+(1,[1,2]) -> [1];
+(0, []) -> [];
+
+=================================
+(\list_take -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_take = \n -> \xs -> case xs of
+    Nil y1 -> 
+      []
+
+    Cons y1 -> 
+      case n of
+        Z y2 -> 
+          []
+
+        S y2 -> 
+          Cons (#2.1 y1, list_take y2 (#2.2 y1)) in list_take) : Nat -> NatList -> NatList)
+(\list_take -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_take = \n -> \xs -> case xs of
+    Nil y1 -> 
+      []
+
+    Cons y1 -> 
+      case n of
+        Z y2 -> 
+          []
+
+        S y2 -> 
+          Cons (#2.1 y1, list_take y2 (#2.2 y1)) in list_take) : Nat -> NatList -> NatList)
+0.198681 true true
+
+(2,[1,1,1]) -> [1,1];
+(0,[3]) -> [];
+(1,[3,2]) -> [3];
+(0,[0,0,3]) -> [];
+(0,[3,3,2]) -> [];
+(1,[3]) -> [3];
+(3,[2,2]) -> [2,2];
+(2,[0]) -> [0];
+(0, []) -> [];
+
+=================================
+(\list_take -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_take = \n -> \xs -> case xs of
+    Nil y1 -> 
+      []
+
+    Cons y1 -> 
+      case n of
+        Z y2 -> 
+          []
+
+        S y2 -> 
+          Cons (#2.1 y1, list_take y2 (#2.2 y1)) in list_take) : Nat -> NatList -> NatList)
+(\list_take -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_take = \n -> \xs -> case xs of
+    Nil y1 -> 
+      []
+
+    Cons y1 -> 
+      case n of
+        Z y2 -> 
+          []
+
+        S y2 -> 
+          Cons (#2.1 y1, list_take y2 (#2.2 y1)) in list_take) : Nat -> NatList -> NatList)
+0.047883 true true
+
+(3,[2]) -> [2];
+(1,[0,0,0]) -> [0];
+(1,[0,2]) -> [0];
+(3,[2,0]) -> [2,0];
+(2,[1,0,2]) -> [1,0];
+(1,[1,0,0]) -> [1];
+(2,[3]) -> [3];
+(3,[3]) -> [3];
+(0, []) -> [];
+
+=================================
+None
+(1,[1,2,3]) -> [1];
+(1,[1,1,0]) -> [1];
+(3,[3]) -> [3];
+(2,[3]) -> [3];
+(1,[0]) -> [0];
+(3,[2,0,0]) -> [2,0,0];
+(0,[0]) -> [];
+(1,[3,3,1]) -> [3];
+(0, []) -> [];
+
+=================================
+(\list_take -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_take = \n -> \xs -> case xs of
+    Nil y1 -> 
+      []
+
+    Cons y1 -> 
+      case n of
+        Z y2 -> 
+          []
+
+        S y2 -> 
+          Cons (#2.1 y1, list_take y2 (#2.2 y1)) in list_take) : Nat -> NatList -> NatList)
+(\list_take -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_take = \n -> \xs -> case xs of
+    Nil y1 -> 
+      []
+
+    Cons y1 -> 
+      case n of
+        Z y2 -> 
+          []
+
+        S y2 -> 
+          Cons (#2.1 y1, list_take y2 (#2.2 y1)) in list_take) : Nat -> NatList -> NatList)
+0.057221 true true
+
+(0,[2,1]) -> [];
+(1,[2,0,2]) -> [2];
+(3,[1]) -> [1];
+(0,[0,0,2]) -> [];
+(3,[2,1,2]) -> [2,1,2];
+(0,[2,0,2]) -> [];
+(0,[0,3,0]) -> [];
+(2,[0]) -> [0];
+(0, []) -> [];
+
+=================================
+(\list_take -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_take = \n -> \xs -> case xs of
+    Nil y1 -> 
+      []
+
+    Cons y1 -> 
+      case n of
+        Z y2 -> 
+          []
+
+        S y2 -> 
+          Cons (#2.1 y1, list_take y2 (#2.2 y1)) in list_take) : Nat -> NatList -> NatList)
+(\list_take -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_take = \n -> \xs -> case xs of
+    Nil y1 -> 
+      []
+
+    Cons y1 -> 
+      case n of
+        Z y2 -> 
+          []
+
+        S y2 -> 
+          Cons (#2.1 y1, list_take y2 (#2.2 y1)) in list_take) : Nat -> NatList -> NatList)
+0.043001 true true
+
+(3,[0,1]) -> [0,1];
+(3,[3]) -> [3];
+(1,[3]) -> [3];
+(2,[1]) -> [1];
+(3,[2,2]) -> [2,2];
+(2,[0,2,3]) -> [0,2];
+(1,[1,1,2]) -> [1];
+(3,[1,2]) -> [1,2];
+(0, []) -> [];
+
+=================================
+None
+(3,[0,2,2]) -> [0,2,2];
+(2,[0]) -> [0];
+(0,[3,1]) -> [];
+(2,[1]) -> [1];
+(3,[1,3]) -> [1,3];
+(0,[2,0,2]) -> [];
+(1,[1]) -> [1];
+(0,[2,3,3]) -> [];
+(0, []) -> [];
+
+=================================
+(\list_take -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_take = \n -> \xs -> case n of
+    Z y1 -> 
+      []
+
+    S y1 -> 
+      xs in list_take) : Nat -> NatList -> NatList)
+0.00680499999999 false false
+
+(0,[2,1,3]) -> [];
+(3,[3,0,0]) -> [3,0,0];
+(1,[1]) -> [1];
+(0,[3,3]) -> [];
+(3,[0]) -> [0];
+(0,[0]) -> [];
+(3,[1,0,3]) -> [1,0,3];
+(0,[3,2]) -> [];
+(0, []) -> [];
+
+=================================
+(\list_take -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_take = \n -> \xs -> case n of
+    Z y1 -> 
+      []
+
+    S y1 -> 
+      xs in list_take) : Nat -> NatList -> NatList)
+0.00669100000005 false false
+
+(2,[3,2]) -> [3,2];
+(1,[2]) -> [2];
+(3,[1,1,0]) -> [1,1,0];
+(1,[1]) -> [1];
+(0,[3]) -> [];
+(1,[2,1]) -> [2];
+(3,[2]) -> [2];
+(2,[0,0]) -> [0,0];
+(0, []) -> [];
+
+=================================
+(\list_take -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_take = \n -> \xs -> case xs of
+    Nil y1 -> 
+      []
+
+    Cons y1 -> 
+      case n of
+        Z y2 -> 
+          []
+
+        S y2 -> 
+          Cons (#2.1 y1, list_take y2 (#2.2 y1)) in list_take) : Nat -> NatList -> NatList)
+(\list_take -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_take = \n -> \xs -> case xs of
+    Nil y1 -> 
+      []
+
+    Cons y1 -> 
+      case n of
+        Z y2 -> 
+          []
+
+        S y2 -> 
+          Cons (#2.1 y1, list_take y2 (#2.2 y1)) in list_take) : Nat -> NatList -> NatList)
+0.059428 true true
+
+(1,[1,0,1]) -> [1];
+(1,[2,0]) -> [2];
+(2,[1,2,1]) -> [1,2];
+(2,[0,3]) -> [0,3];
+(0,[1,2,2]) -> [];
+(3,[2]) -> [2];
+(1,[0,3,2]) -> [0];
+(2,[1,2]) -> [1,2];
+(0, []) -> [];
+
+=================================
+(\list_take -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_take = \n -> \xs -> case xs of
+    Nil y1 -> 
+      []
+
+    Cons y1 -> 
+      case n of
+        Z y2 -> 
+          []
+
+        S y2 -> 
+          Cons (#2.1 y1, list_take y2 (#2.2 y1)) in list_take) : Nat -> NatList -> NatList)
+(\list_take -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_take = \n -> \xs -> case xs of
+    Nil y1 -> 
+      []
+
+    Cons y1 -> 
+      case n of
+        Z y2 -> 
+          []
+
+        S y2 -> 
+          Cons (#2.1 y1, list_take y2 (#2.2 y1)) in list_take) : Nat -> NatList -> NatList)
+0.101703 true true
+
+(0,[0,3,1]) -> [];
+(0,[3,3,2]) -> [];
+(1,[0,3]) -> [0];
+(1,[3]) -> [3];
+(1,[1,2,2]) -> [1];
+(1,[2]) -> [2];
+(1,[3,3,2]) -> [3];
+(1,[0,0]) -> [0];
+(0, []) -> [];
+
+=================================
+(\list_take -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_take = \n -> \xs -> case xs of
+    Nil y1 -> 
+      []
+
+    Cons y1 -> 
+      case n of
+        Z y2 -> 
+          []
+
+        S y2 -> 
+          [#2.1 y1] in list_take) : Nat -> NatList -> NatList)
+(\list_take -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_take = \n -> \xs -> case xs of
+    Nil y1 -> 
+      []
+
+    Cons y1 -> 
+      case n of
+        Z y2 -> 
+          []
+
+        S y2 -> 
+          Cons (#2.1 y1, list_take y2 xs) in list_take) : Nat -> NatList -> NatList)
+0.049933 false false
+
+(1,[1]) -> [1];
+(2,[0,0]) -> [0,0];
+(1,[3,2,1]) -> [3];
+(1,[1,0]) -> [1];
+(2,[1,1]) -> [1,1];
+(2,[0]) -> [0];
+(1,[0,0,1]) -> [0];
+(0,[3,3,3]) -> [];
+(1,[1,1,2]) -> [1];
+(0, []) -> [];
+
+=================================
+(\list_take -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_take = \n -> \xs -> case xs of
+    Nil y1 -> 
+      []
+
+    Cons y1 -> 
+      case n of
+        Z y2 -> 
+          []
+
+        S y2 -> 
+          Cons (#2.1 y1, list_take y2 (#2.2 y1)) in list_take) : Nat -> NatList -> NatList)
+(\list_take -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_take = \n -> \xs -> case xs of
+    Nil y1 -> 
+      []
+
+    Cons y1 -> 
+      case n of
+        Z y2 -> 
+          []
+
+        S y2 -> 
+          Cons (#2.1 y1, list_take y2 (#2.2 y1)) in list_take) : Nat -> NatList -> NatList)
+0.0502610000001 true true
+
+(0,[3,0]) -> [];
+(0,[0,2]) -> [];
+(3,[1]) -> [1];
+(0,[1]) -> [];
+(1,[0,1,3]) -> [0];
+(1,[2,1]) -> [2];
+(2,[2]) -> [2];
+(0,[0,0]) -> [];
+(1,[0,1]) -> [0];
+(0, []) -> [];
+
+=================================
+(\list_take -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_take = \n -> \xs -> case xs of
+    Nil y1 -> 
+      []
+
+    Cons y1 -> 
+      case n of
+        Z y2 -> 
+          []
+
+        S y2 -> 
+          [#2.1 y1] in list_take) : Nat -> NatList -> NatList)
+(\list_take -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_take = \n -> \xs -> case xs of
+    Nil y1 -> 
+      []
+
+    Cons y1 -> 
+      case n of
+        Z y2 -> 
+          []
+
+        S y2 -> 
+          Cons (#2.1 y1, list_take y2 (#2.2 y1)) in list_take) : Nat -> NatList -> NatList)
+0.051561 false true
+
+(2,[3,0,2]) -> [3,0];
+(2,[2]) -> [2];
+(2,[0,2]) -> [0,2];
+(1,[1,1,3]) -> [1];
+(3,[3,0,0]) -> [3,0,0];
+(3,[1,1]) -> [1,1];
+(1,[3,3,0]) -> [3];
+(0,[1,1]) -> [];
+(0,[3]) -> [];
+(0, []) -> [];
+
+=================================
+(\list_take -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_take = \n -> \xs -> case xs of
+    Nil y1 -> 
+      []
+
+    Cons y1 -> 
+      case n of
+        Z y2 -> 
+          []
+
+        S y2 -> 
+          Cons (#2.1 y1, list_take y2 (#2.2 y1)) in list_take) : Nat -> NatList -> NatList)
+(\list_take -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_take = \n -> \xs -> case xs of
+    Nil y1 -> 
+      []
+
+    Cons y1 -> 
+      case n of
+        Z y2 -> 
+          []
+
+        S y2 -> 
+          Cons (#2.1 y1, list_take y2 (#2.2 y1)) in list_take) : Nat -> NatList -> NatList)
+0.0556260000001 true true
+
+(1,[0,1,2]) -> [0];
+(3,[1,3,0]) -> [1,3,0];
+(2,[3,1,2]) -> [3,1];
+(2,[3,0,0]) -> [3,0];
+(2,[2,1]) -> [2,1];
+(0,[2,0,0]) -> [];
+(0,[3,2]) -> [];
+(0,[2,0,1]) -> [];
+(3,[2]) -> [2];
+(0, []) -> [];
+
+=================================
+(\list_take -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_take = \n -> \xs -> case xs of
+    Nil y1 -> 
+      []
+
+    Cons y1 -> 
+      case n of
+        Z y2 -> 
+          []
+
+        S y2 -> 
+          Cons (#2.1 y1, list_take y2 (#2.2 y1)) in list_take) : Nat -> NatList -> NatList)
+(\list_take -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_take = \n -> \xs -> case xs of
+    Nil y1 -> 
+      []
+
+    Cons y1 -> 
+      case n of
+        Z y2 -> 
+          []
+
+        S y2 -> 
+          Cons (#2.1 y1, list_take y2 (#2.2 y1)) in list_take) : Nat -> NatList -> NatList)
+0.057262 true true
+
+(2,[1]) -> [1];
+(0,[2,1]) -> [];
+(1,[3,2,3]) -> [3];
+(2,[3]) -> [3];
+(3,[1]) -> [1];
+(1,[3,2]) -> [3];
+(0,[0,2,0]) -> [];
+(1,[0]) -> [0];
+(2,[2,3]) -> [2,3];
+(0, []) -> [];
+
+=================================
+(\list_take -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_take = \n -> \xs -> case xs of
+    Nil y1 -> 
+      []
+
+    Cons y1 -> 
+      case n of
+        Z y2 -> 
+          []
+
+        S y2 -> 
+          Cons (#2.1 y1, list_take y2 (#2.2 y1)) in list_take) : Nat -> NatList -> NatList)
+(\list_take -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_take = \n -> \xs -> case xs of
+    Nil y1 -> 
+      []
+
+    Cons y1 -> 
+      case n of
+        Z y2 -> 
+          []
+
+        S y2 -> 
+          Cons (#2.1 y1, list_take y2 (#2.2 y1)) in list_take) : Nat -> NatList -> NatList)
+0.0512980000001 true true
+
+(0,[2,1]) -> [];
+(3,[0]) -> [0];
+(0,[0]) -> [];
+(1,[2,2,3]) -> [2];
+(0,[3]) -> [];
+(0,[0,3]) -> [];
+(3,[1]) -> [1];
+(2,[2]) -> [2];
+(2,[0]) -> [0];
+(0, []) -> [];
+
+=================================
+(\list_take -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_take = \n -> \xs -> case xs of
+    Nil y1 -> 
+      []
+
+    Cons y1 -> 
+      case n of
+        Z y2 -> 
+          []
+
+        S y2 -> 
+          [#2.1 y1] in list_take) : Nat -> NatList -> NatList)
+(\list_take -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_take = \n -> \xs -> case xs of
+    Nil y1 -> 
+      []
+
+    Cons y1 -> 
+      case n of
+        Z y2 -> 
+          []
+
+        S y2 -> 
+          Cons (#2.1 y1, list_take y2 (#2.2 y1)) in list_take) : Nat -> NatList -> NatList)
+0.038055 false true
+
+(0,[3,0,2]) -> [];
+(1,[2]) -> [2];
+(2,[2]) -> [2];
+(2,[0,2]) -> [0,2];
+(3,[3,2,0]) -> [3,2,0];
+(0,[0]) -> [];
+(2,[2,3,0]) -> [2,3];
+(1,[3,3,3]) -> [3];
+(0,[3,0]) -> [];
+(0, []) -> [];
+
+=================================
+(\list_take -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_take = \n -> \xs -> case xs of
+    Nil y1 -> 
+      []
+
+    Cons y1 -> 
+      case n of
+        Z y2 -> 
+          []
+
+        S y2 -> 
+          Cons (#2.1 y1, list_take y2 (#2.2 y1)) in list_take) : Nat -> NatList -> NatList)
+(\list_take -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_take = \n -> \xs -> case xs of
+    Nil y1 -> 
+      []
+
+    Cons y1 -> 
+      case n of
+        Z y2 -> 
+          []
+
+        S y2 -> 
+          Cons (#2.1 y1, list_take y2 (#2.2 y1)) in list_take) : Nat -> NatList -> NatList)
+0.0464039999999 true true
+
+(1,[2,1,2]) -> [2];
+(0,[1]) -> [];
+(1,[1]) -> [1];
+(0,[0]) -> [];
+(2,[2,2,3]) -> [2,2];
+(3,[2,3]) -> [2,3];
+(3,[2,3,1]) -> [2,3,1];
+(2,[0,0]) -> [0,0];
+(1,[1,3,1]) -> [1];
+(0, []) -> [];
+
+=================================
+(\list_take -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_take = \n -> \xs -> case xs of
+    Nil y1 -> 
+      []
+
+    Cons y1 -> 
+      case n of
+        Z y2 -> 
+          []
+
+        S y2 -> 
+          Cons (#2.1 y1, list_take y2 (#2.2 y1)) in list_take) : Nat -> NatList -> NatList)
+(\list_take -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_take = \n -> \xs -> case xs of
+    Nil y1 -> 
+      []
+
+    Cons y1 -> 
+      case n of
+        Z y2 -> 
+          []
+
+        S y2 -> 
+          Cons (#2.1 y1, list_take y2 (#2.2 y1)) in list_take) : Nat -> NatList -> NatList)
+0.0553910000001 true true
+
+(1,[3]) -> [3];
+(2,[0,0,2]) -> [0,0];
+(2,[0,1,3]) -> [0,1];
+(0,[0,1]) -> [];
+(1,[1]) -> [1];
+(1,[0,1]) -> [0];
+(2,[2,2,2]) -> [2,2];
+(1,[2]) -> [2];
+(1,[3,3]) -> [3];
+(0, []) -> [];
+
+=================================
+(\list_take -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_take = \n -> \xs -> case xs of
+    Nil y1 -> 
+      []
+
+    Cons y1 -> 
+      case n of
+        Z y2 -> 
+          []
+
+        S y2 -> 
+          Cons (#2.1 y1, list_take y2 (#2.2 y1)) in list_take) : Nat -> NatList -> NatList)
+(\list_take -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_take = \n -> \xs -> case xs of
+    Nil y1 -> 
+      []
+
+    Cons y1 -> 
+      case n of
+        Z y2 -> 
+          []
+
+        S y2 -> 
+          Cons (#2.1 y1, list_take y2 (#2.2 y1)) in list_take) : Nat -> NatList -> NatList)
+0.068094 true true
+
+(3,[2,3,1]) -> [2,3,1];
+(2,[0]) -> [0];
+(3,[1,0]) -> [1,0];
+(3,[1,1,0]) -> [1,1,0];
+(3,[2]) -> [2];
+(3,[0,3]) -> [0,3];
+(1,[0,0]) -> [0];
+(0,[1,0,3]) -> [];
+(1,[3]) -> [3];
+(0, []) -> [];
+
+=================================
+(\list_take -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_take = \n -> \xs -> case xs of
+    Nil y1 -> 
+      []
+
+    Cons y1 -> 
+      case n of
+        Z y2 -> 
+          []
+
+        S y2 -> 
+          Cons (#2.1 y1, list_take y2 (#2.2 y1)) in list_take) : Nat -> NatList -> NatList)
+(\list_take -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_take = \n -> \xs -> case xs of
+    Nil y1 -> 
+      []
+
+    Cons y1 -> 
+      case n of
+        Z y2 -> 
+          []
+
+        S y2 -> 
+          Cons (#2.1 y1, list_take y2 (#2.2 y1)) in list_take) : Nat -> NatList -> NatList)
+0.184766 true true
+
+(2,[3,0]) -> [3,0];
+(2,[1,2]) -> [1,2];
+(0,[3,3,0]) -> [];
+(0,[0,3]) -> [];
+(1,[0,3,1]) -> [0];
+(3,[0,1]) -> [0,1];
+(1,[0]) -> [0];
+(3,[3]) -> [3];
+(3,[3,2]) -> [3,2];
+(2,[2]) -> [2];
+(0, []) -> [];
+
+=================================
+(\list_take -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_take = \n -> \xs -> case n of
+    Z y1 -> 
+      []
+
+    S y1 -> 
+      case y1 of
+        Z y2 -> 
+          [0]
+
+        S y2 -> 
+          xs in list_take) : Nat -> NatList -> NatList)
+(\list_take -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_take = \n -> \xs -> case xs of
+    Nil y1 -> 
+      []
+
+    Cons y1 -> 
+      case n of
+        Z y2 -> 
+          []
+
+        S y2 -> 
+          Cons (#2.1 y1, list_take y2 (#2.2 y1)) in list_take) : Nat -> NatList -> NatList)
+0.049127 false true
+
+(3,[3,0,3]) -> [3,0,3];
+(3,[2]) -> [2];
+(0,[2]) -> [];
+(1,[0,2,3]) -> [0];
+(2,[3,3,3]) -> [3,3];
+(2,[1]) -> [1];
+(2,[1,3]) -> [1,3];
+(3,[0,2,3]) -> [0,2,3];
+(3,[0,3]) -> [0,3];
+(2,[3,0]) -> [3,0];
+(0, []) -> [];
+
+=================================
+(\list_take -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_take = \n -> \xs -> case xs of
+    Nil y1 -> 
+      []
+
+    Cons y1 -> 
+      case n of
+        Z y2 -> 
+          []
+
+        S y2 -> 
+          Cons (#2.1 y1, list_take y2 (#2.2 y1)) in list_take) : Nat -> NatList -> NatList)
+(\list_take -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_take = \n -> \xs -> case xs of
+    Nil y1 -> 
+      []
+
+    Cons y1 -> 
+      case n of
+        Z y2 -> 
+          []
+
+        S y2 -> 
+          Cons (#2.1 y1, list_take y2 (#2.2 y1)) in list_take) : Nat -> NatList -> NatList)
+0.066466 true true
+
+(2,[2,0]) -> [2,0];
+(1,[0]) -> [0];
+(1,[3,1,0]) -> [3];
+(0,[3]) -> [];
+(3,[1,0,2]) -> [1,0,2];
+(2,[1,2]) -> [1,2];
+(3,[0,3,2]) -> [0,3,2];
+(0,[3,3,0]) -> [];
+(0,[0]) -> [];
+(3,[3,3]) -> [3,3];
+(0, []) -> [];
+
+=================================
+(\list_take -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_take = \n -> \xs -> case xs of
+    Nil y1 -> 
+      []
+
+    Cons y1 -> 
+      case n of
+        Z y2 -> 
+          []
+
+        S y2 -> 
+          Cons (#2.1 y1, list_take y2 (#2.2 y1)) in list_take) : Nat -> NatList -> NatList)
+(\list_take -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_take = \n -> \xs -> case xs of
+    Nil y1 -> 
+      []
+
+    Cons y1 -> 
+      case n of
+        Z y2 -> 
+          []
+
+        S y2 -> 
+          Cons (#2.1 y1, list_take y2 (#2.2 y1)) in list_take) : Nat -> NatList -> NatList)
+0.072471 true true
+
+(1,[3,1,3]) -> [3];
+(0,[2]) -> [];
+(3,[1,1,2]) -> [1,1,2];
+(3,[3]) -> [3];
+(2,[3,2,3]) -> [3,2];
+(1,[1,2]) -> [1];
+(1,[0,3,1]) -> [0];
+(2,[3]) -> [3];
+(0,[3,2,1]) -> [];
+(3,[2]) -> [2];
+(0, []) -> [];
+
+=================================
+(\list_take -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_take = \n -> \xs -> case xs of
+    Nil y1 -> 
+      []
+
+    Cons y1 -> 
+      case n of
+        Z y2 -> 
+          []
+
+        S y2 -> 
+          Cons (#2.1 y1, list_take y2 (#2.2 y1)) in list_take) : Nat -> NatList -> NatList)
+(\list_take -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_take = \n -> \xs -> case xs of
+    Nil y1 -> 
+      []
+
+    Cons y1 -> 
+      case n of
+        Z y2 -> 
+          []
+
+        S y2 -> 
+          Cons (#2.1 y1, list_take y2 (#2.2 y1)) in list_take) : Nat -> NatList -> NatList)
+0.060602 true true
+
+(1,[3,3,1]) -> [3];
+(1,[2,2,1]) -> [2];
+(1,[3,3,3]) -> [3];
+(0,[2]) -> [];
+(3,[2,0,2]) -> [2,0,2];
+(3,[3,1,1]) -> [3,1,1];
+(1,[2,3,0]) -> [2];
+(0,[1]) -> [];
+(1,[0]) -> [0];
+(0,[2,3,2]) -> [];
+(0, []) -> [];
+
+=================================
+(\list_take -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_take = \n -> \xs -> case xs of
+    Nil y1 -> 
+      []
+
+    Cons y1 -> 
+      case n of
+        Z y2 -> 
+          []
+
+        S y2 -> 
+          Cons (#2.1 y1, list_take y2 (#2.2 y1)) in list_take) : Nat -> NatList -> NatList)
+(\list_take -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_take = \n -> \xs -> case xs of
+    Nil y1 -> 
+      []
+
+    Cons y1 -> 
+      case n of
+        Z y2 -> 
+          []
+
+        S y2 -> 
+          Cons (#2.1 y1, list_take y2 (#2.2 y1)) in list_take) : Nat -> NatList -> NatList)
+0.063232 true true
+
+(3,[3,3,0]) -> [3,3,0];
+(1,[1]) -> [1];
+(0,[2,0]) -> [];
+(1,[3,3,3]) -> [3];
+(0,[0]) -> [];
+(2,[1]) -> [1];
+(0,[1,2,3]) -> [];
+(2,[3]) -> [3];
+(0,[3,3]) -> [];
+(2,[2,1]) -> [2,1];
+(0, []) -> [];
+
+=================================
+(\list_take -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_take = \n -> \xs -> case xs of
+    Nil y1 -> 
+      []
+
+    Cons y1 -> 
+      case n of
+        Z y2 -> 
+          []
+
+        S y2 -> 
+          Cons (#2.1 y1, list_take y2 (#2.2 y1)) in list_take) : Nat -> NatList -> NatList)
+(\list_take -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_take = \n -> \xs -> case xs of
+    Nil y1 -> 
+      []
+
+    Cons y1 -> 
+      case n of
+        Z y2 -> 
+          []
+
+        S y2 -> 
+          Cons (#2.1 y1, list_take y2 (#2.2 y1)) in list_take) : Nat -> NatList -> NatList)
+0.0934199999999 true true
+
+(2,[1]) -> [1];
+(2,[1,1]) -> [1,1];
+(3,[1,2]) -> [1,2];
+(2,[1,3]) -> [1,3];
+(2,[2,1,2]) -> [2,1];
+(3,[0,1]) -> [0,1];
+(1,[1,1,2]) -> [1];
+(1,[1]) -> [1];
+(2,[1,2,3]) -> [1,2];
+(2,[2,0]) -> [2,0];
+(0, []) -> [];
+
+=================================
+None
+(2,[2,2,3]) -> [2,2];
+(0,[2,1]) -> [];
+(1,[1]) -> [1];
+(2,[3]) -> [3];
+(1,[1,3,1]) -> [1];
+(3,[1,1]) -> [1,1];
+(1,[2]) -> [2];
+(2,[0,2]) -> [0,2];
+(1,[1,2]) -> [1];
+(3,[3,1,1]) -> [3,1,1];
+(0, []) -> [];
+
+=================================
+(\list_take -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_take = \n -> \xs -> case xs of
+    Nil y1 -> 
+      []
+
+    Cons y1 -> 
+      case n of
+        Z y2 -> 
+          []
+
+        S y2 -> 
+          Cons (#2.1 y1, list_take y2 (#2.2 y1)) in list_take) : Nat -> NatList -> NatList)
+(\list_take -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_take = \n -> \xs -> case xs of
+    Nil y1 -> 
+      []
+
+    Cons y1 -> 
+      case n of
+        Z y2 -> 
+          []
+
+        S y2 -> 
+          Cons (#2.1 y1, list_take y2 (#2.2 y1)) in list_take) : Nat -> NatList -> NatList)
+0.054355 true true
+
+(2,[3]) -> [3];
+(0,[0]) -> [];
+(0,[0,2,0]) -> [];
+(0,[3]) -> [];
+(2,[2,0]) -> [2,0];
+(2,[2]) -> [2];
+(1,[0]) -> [0];
+(0,[0,0,1]) -> [];
+(1,[1,0]) -> [1];
+(3,[1,2,1]) -> [1,2,1];
+(0, []) -> [];
+
+=================================
+(\list_take -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_take = \n -> \xs -> case xs of
+    Nil y1 -> 
+      []
+
+    Cons y1 -> 
+      case n of
+        Z y2 -> 
+          []
+
+        S y2 -> 
+          Cons (#2.1 y1, list_take y2 (#2.2 y1)) in list_take) : Nat -> NatList -> NatList)
+(\list_take -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_take = \n -> \xs -> case xs of
+    Nil y1 -> 
+      []
+
+    Cons y1 -> 
+      case n of
+        Z y2 -> 
+          []
+
+        S y2 -> 
+          Cons (#2.1 y1, list_take y2 (#2.2 y1)) in list_take) : Nat -> NatList -> NatList)
+0.0499359999999 true true
+
+(1,[2,3,2]) -> [2];
+(3,[2,3]) -> [2,3];
+(3,[2]) -> [2];
+(1,[3,0]) -> [3];
+(1,[2,3,0]) -> [2];
+(0,[1,0,0]) -> [];
+(2,[1]) -> [1];
+(0,[3,0,1]) -> [];
+(2,[3,1,3]) -> [3,1];
+(2,[1,3,0]) -> [1,3];
+(0, []) -> [];
+
+=================================
+(\list_take -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_take = \n -> \xs -> case xs of
+    Nil y1 -> 
+      []
+
+    Cons y1 -> 
+      case n of
+        Z y2 -> 
+          []
+
+        S y2 -> 
+          Cons (#2.1 y1, list_take y2 (#2.2 y1)) in list_take) : Nat -> NatList -> NatList)
+(\list_take -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_take = \n -> \xs -> case xs of
+    Nil y1 -> 
+      []
+
+    Cons y1 -> 
+      case n of
+        Z y2 -> 
+          []
+
+        S y2 -> 
+          Cons (#2.1 y1, list_take y2 (#2.2 y1)) in list_take) : Nat -> NatList -> NatList)
+0.0708400000001 true true
+

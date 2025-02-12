@@ -1,0 +1,506 @@
+Node (Leaf (), 1, Leaf ()) -> [1];
+Leaf () -> [];
+=================================
+(\append -> (\tree_preorder -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_preorder = \tree -> case tree of
+    Node y1 -> 
+      [#3.2 y1]
+
+    Leaf y1 -> 
+      [] in tree_preorder) : NatTree -> NatList))
+  ((let append = \l1 -> \l2 -> case l1 of
+    Nil _ -> 
+      l2
+
+    Cons p -> 
+      Cons (#2.1 p, append (#2.2 p) l2) in append) : NatList -> NatList -> NatList)
+(\append -> (\tree_preorder -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_preorder = \tree -> case tree of
+    Node y1 -> 
+      Cons (#3.2 y1, tree_preorder (#3.1 y1))
+
+    Leaf y1 -> 
+      [] in tree_preorder) : NatTree -> NatList))
+  ((let append = \l1 -> \l2 -> case l1 of
+    Nil _ -> 
+      l2
+
+    Cons p -> 
+      Cons (#2.1 p, append (#2.2 p) l2) in append) : NatList -> NatList -> NatList)
+0.015703 false false
+
+Node (Leaf (), 2, Leaf ()) -> [2];
+Leaf () -> [];
+=================================
+(\append -> (\tree_preorder -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_preorder = \tree -> case tree of
+    Node y1 -> 
+      [#3.2 y1]
+
+    Leaf y1 -> 
+      [] in tree_preorder) : NatTree -> NatList))
+  ((let append = \l1 -> \l2 -> case l1 of
+    Nil _ -> 
+      l2
+
+    Cons p -> 
+      Cons (#2.1 p, append (#2.2 p) l2) in append) : NatList -> NatList -> NatList)
+(\append -> (\tree_preorder -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_preorder = \tree -> case tree of
+    Node y1 -> 
+      Cons (#3.2 y1, tree_preorder (#3.1 y1))
+
+    Leaf y1 -> 
+      [] in tree_preorder) : NatTree -> NatList))
+  ((let append = \l1 -> \l2 -> case l1 of
+    Nil _ -> 
+      l2
+
+    Cons p -> 
+      Cons (#2.1 p, append (#2.2 p) l2) in append) : NatList -> NatList -> NatList)
+0.02377 false false
+
+Node (Node (Leaf (), 1, Leaf ()), 2, Leaf ()) -> [2, 1];
+Leaf () -> [];
+=================================
+(\append -> (\tree_preorder -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_preorder = \tree -> case tree of
+    Node y1 -> 
+      Cons (#3.2 y1, tree_preorder (#3.1 y1))
+
+    Leaf y1 -> 
+      [] in tree_preorder) : NatTree -> NatList))
+  ((let append = \l1 -> \l2 -> case l1 of
+    Nil _ -> 
+      l2
+
+    Cons p -> 
+      Cons (#2.1 p, append (#2.2 p) l2) in append) : NatList -> NatList -> NatList)
+(\append -> (\tree_preorder -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_preorder = \tree -> case tree of
+    Node y1 -> 
+      Cons (#3.2 y1, tree_preorder (#3.1 y1))
+
+    Leaf y1 -> 
+      [] in tree_preorder) : NatTree -> NatList))
+  ((let append = \l1 -> \l2 -> case l1 of
+    Nil _ -> 
+      l2
+
+    Cons p -> 
+      Cons (#2.1 p, append (#2.2 p) l2) in append) : NatList -> NatList -> NatList)
+0.017777 false false
+
+Node (Leaf (), 1, Node (Leaf (), 2, Leaf ())) -> [1, 2];
+Leaf () -> [];
+=================================
+(\append -> (\tree_preorder -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_preorder = \tree -> case tree of
+    Node y1 -> 
+      Cons (#3.2 y1, tree_preorder (#3.3 y1))
+
+    Leaf y1 -> 
+      [] in tree_preorder) : NatTree -> NatList))
+  ((let append = \l1 -> \l2 -> case l1 of
+    Nil _ -> 
+      l2
+
+    Cons p -> 
+      Cons (#2.1 p, append (#2.2 p) l2) in append) : NatList -> NatList -> NatList)
+(\append -> (\tree_preorder -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_preorder = \tree -> case tree of
+    Node y1 -> 
+      Cons (#3.2 y1, tree_preorder (#3.3 y1))
+
+    Leaf y1 -> 
+      [] in tree_preorder) : NatTree -> NatList))
+  ((let append = \l1 -> \l2 -> case l1 of
+    Nil _ -> 
+      l2
+
+    Cons p -> 
+      Cons (#2.1 p, append (#2.2 p) l2) in append) : NatList -> NatList -> NatList)
+0.0265460000001 false false
+
+Node (Leaf (), 1, Leaf ()) -> [1];
+Node (Leaf (), 2, Leaf ()) -> [2];
+Leaf () -> [];
+=================================
+(\append -> (\tree_preorder -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_preorder = \tree -> case tree of
+    Node y1 -> 
+      [#3.2 y1]
+
+    Leaf y1 -> 
+      [] in tree_preorder) : NatTree -> NatList))
+  ((let append = \l1 -> \l2 -> case l1 of
+    Nil _ -> 
+      l2
+
+    Cons p -> 
+      Cons (#2.1 p, append (#2.2 p) l2) in append) : NatList -> NatList -> NatList)
+(\append -> (\tree_preorder -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_preorder = \tree -> case tree of
+    Node y1 -> 
+      Cons (#3.2 y1, tree_preorder (#3.1 y1))
+
+    Leaf y1 -> 
+      [] in tree_preorder) : NatTree -> NatList))
+  ((let append = \l1 -> \l2 -> case l1 of
+    Nil _ -> 
+      l2
+
+    Cons p -> 
+      Cons (#2.1 p, append (#2.2 p) l2) in append) : NatList -> NatList -> NatList)
+0.0271439999999 false false
+
+Node (Leaf (), 1, Leaf ()) -> [1];
+Node (Node (Leaf (), 1, Leaf ()), 2, Leaf ()) -> [2, 1];
+Leaf () -> [];
+=================================
+(\append -> (\tree_preorder -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_preorder = \tree -> case tree of
+    Node y1 -> 
+      Cons (#3.2 y1, tree_preorder (#3.1 y1))
+
+    Leaf y1 -> 
+      [] in tree_preorder) : NatTree -> NatList))
+  ((let append = \l1 -> \l2 -> case l1 of
+    Nil _ -> 
+      l2
+
+    Cons p -> 
+      Cons (#2.1 p, append (#2.2 p) l2) in append) : NatList -> NatList -> NatList)
+(\append -> (\tree_preorder -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_preorder = \tree -> case tree of
+    Node y1 -> 
+      Cons (#3.2 y1, tree_preorder (#3.1 y1))
+
+    Leaf y1 -> 
+      [] in tree_preorder) : NatTree -> NatList))
+  ((let append = \l1 -> \l2 -> case l1 of
+    Nil _ -> 
+      l2
+
+    Cons p -> 
+      Cons (#2.1 p, append (#2.2 p) l2) in append) : NatList -> NatList -> NatList)
+0.025907 false false
+
+Node (Leaf (), 1, Leaf ()) -> [1];
+Node (Leaf (), 1, Node (Leaf (), 2, Leaf ())) -> [1, 2];
+Leaf () -> [];
+=================================
+(\append -> (\tree_preorder -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_preorder = \tree -> case tree of
+    Node y1 -> 
+      Cons (#3.2 y1, tree_preorder (#3.3 y1))
+
+    Leaf y1 -> 
+      [] in tree_preorder) : NatTree -> NatList))
+  ((let append = \l1 -> \l2 -> case l1 of
+    Nil _ -> 
+      l2
+
+    Cons p -> 
+      Cons (#2.1 p, append (#2.2 p) l2) in append) : NatList -> NatList -> NatList)
+(\append -> (\tree_preorder -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_preorder = \tree -> case tree of
+    Node y1 -> 
+      Cons (#3.2 y1, tree_preorder (#3.3 y1))
+
+    Leaf y1 -> 
+      [] in tree_preorder) : NatTree -> NatList))
+  ((let append = \l1 -> \l2 -> case l1 of
+    Nil _ -> 
+      l2
+
+    Cons p -> 
+      Cons (#2.1 p, append (#2.2 p) l2) in append) : NatList -> NatList -> NatList)
+0.0254480000001 false false
+
+Node (Leaf (), 2, Leaf ()) -> [2];
+Node (Node (Leaf (), 1, Leaf ()), 2, Leaf ()) -> [2, 1];
+Leaf () -> [];
+=================================
+(\append -> (\tree_preorder -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_preorder = \tree -> case tree of
+    Node y1 -> 
+      Cons (#3.2 y1, tree_preorder (#3.1 y1))
+
+    Leaf y1 -> 
+      [] in tree_preorder) : NatTree -> NatList))
+  ((let append = \l1 -> \l2 -> case l1 of
+    Nil _ -> 
+      l2
+
+    Cons p -> 
+      Cons (#2.1 p, append (#2.2 p) l2) in append) : NatList -> NatList -> NatList)
+(\append -> (\tree_preorder -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_preorder = \tree -> case tree of
+    Node y1 -> 
+      Cons (#3.2 y1, tree_preorder (#3.1 y1))
+
+    Leaf y1 -> 
+      [] in tree_preorder) : NatTree -> NatList))
+  ((let append = \l1 -> \l2 -> case l1 of
+    Nil _ -> 
+      l2
+
+    Cons p -> 
+      Cons (#2.1 p, append (#2.2 p) l2) in append) : NatList -> NatList -> NatList)
+0.026224 false false
+
+Node (Leaf (), 2, Leaf ()) -> [2];
+Node (Leaf (), 1, Node (Leaf (), 2, Leaf ())) -> [1, 2];
+Leaf () -> [];
+=================================
+(\append -> (\tree_preorder -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_preorder = \tree -> case tree of
+    Node y1 -> 
+      Cons (#3.2 y1, tree_preorder (#3.3 y1))
+
+    Leaf y1 -> 
+      [] in tree_preorder) : NatTree -> NatList))
+  ((let append = \l1 -> \l2 -> case l1 of
+    Nil _ -> 
+      l2
+
+    Cons p -> 
+      Cons (#2.1 p, append (#2.2 p) l2) in append) : NatList -> NatList -> NatList)
+(\append -> (\tree_preorder -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_preorder = \tree -> case tree of
+    Node y1 -> 
+      Cons (#3.2 y1, tree_preorder (#3.3 y1))
+
+    Leaf y1 -> 
+      [] in tree_preorder) : NatTree -> NatList))
+  ((let append = \l1 -> \l2 -> case l1 of
+    Nil _ -> 
+      l2
+
+    Cons p -> 
+      Cons (#2.1 p, append (#2.2 p) l2) in append) : NatList -> NatList -> NatList)
+0.0301489999999 false false
+
+Node (Node (Leaf (), 1, Leaf ()), 2, Leaf ()) -> [2, 1];
+Node (Leaf (), 1, Node (Leaf (), 2, Leaf ())) -> [1, 2];
+Leaf () -> [];
+=================================
+(\append -> (\tree_preorder -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_preorder = \tree -> case tree of
+    Node y1 -> 
+      Cons
+        ( #3.2 y1
+        , append (tree_preorder (#3.1 y1)) (tree_preorder (#3.3 y1))
+        )
+
+    Leaf y1 -> 
+      [] in tree_preorder) : NatTree -> NatList))
+  ((let append = \l1 -> \l2 -> case l1 of
+    Nil _ -> 
+      l2
+
+    Cons p -> 
+      Cons (#2.1 p, append (#2.2 p) l2) in append) : NatList -> NatList -> NatList)
+(\append -> (\tree_preorder -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_preorder = \tree -> case tree of
+    Node y1 -> 
+      Cons
+        ( #3.2 y1
+        , append (tree_preorder (#3.1 y1)) (tree_preorder (#3.3 y1))
+        )
+
+    Leaf y1 -> 
+      [] in tree_preorder) : NatTree -> NatList))
+  ((let append = \l1 -> \l2 -> case l1 of
+    Nil _ -> 
+      l2
+
+    Cons p -> 
+      Cons (#2.1 p, append (#2.2 p) l2) in append) : NatList -> NatList -> NatList)
+0.273857 true true
+
+Node (Leaf (), 1, Leaf ()) -> [1];
+Node (Leaf (), 2, Leaf ()) -> [2];
+Node (Node (Leaf (), 1, Leaf ()), 2, Leaf ()) -> [2, 1];
+Leaf () -> [];
+=================================
+(\append -> (\tree_preorder -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_preorder = \tree -> case tree of
+    Node y1 -> 
+      Cons (#3.2 y1, tree_preorder (#3.1 y1))
+
+    Leaf y1 -> 
+      [] in tree_preorder) : NatTree -> NatList))
+  ((let append = \l1 -> \l2 -> case l1 of
+    Nil _ -> 
+      l2
+
+    Cons p -> 
+      Cons (#2.1 p, append (#2.2 p) l2) in append) : NatList -> NatList -> NatList)
+(\append -> (\tree_preorder -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_preorder = \tree -> case tree of
+    Node y1 -> 
+      Cons (#3.2 y1, tree_preorder (#3.1 y1))
+
+    Leaf y1 -> 
+      [] in tree_preorder) : NatTree -> NatList))
+  ((let append = \l1 -> \l2 -> case l1 of
+    Nil _ -> 
+      l2
+
+    Cons p -> 
+      Cons (#2.1 p, append (#2.2 p) l2) in append) : NatList -> NatList -> NatList)
+0.021221 false false
+
+Node (Leaf (), 1, Leaf ()) -> [1];
+Node (Leaf (), 2, Leaf ()) -> [2];
+Node (Leaf (), 1, Node (Leaf (), 2, Leaf ())) -> [1, 2];
+Leaf () -> [];
+=================================
+(\append -> (\tree_preorder -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_preorder = \tree -> case tree of
+    Node y1 -> 
+      Cons (#3.2 y1, tree_preorder (#3.3 y1))
+
+    Leaf y1 -> 
+      [] in tree_preorder) : NatTree -> NatList))
+  ((let append = \l1 -> \l2 -> case l1 of
+    Nil _ -> 
+      l2
+
+    Cons p -> 
+      Cons (#2.1 p, append (#2.2 p) l2) in append) : NatList -> NatList -> NatList)
+(\append -> (\tree_preorder -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_preorder = \tree -> case tree of
+    Node y1 -> 
+      Cons (#3.2 y1, tree_preorder (#3.3 y1))
+
+    Leaf y1 -> 
+      [] in tree_preorder) : NatTree -> NatList))
+  ((let append = \l1 -> \l2 -> case l1 of
+    Nil _ -> 
+      l2
+
+    Cons p -> 
+      Cons (#2.1 p, append (#2.2 p) l2) in append) : NatList -> NatList -> NatList)
+0.0270370000001 false false
+
+Node (Leaf (), 1, Leaf ()) -> [1];
+Node (Node (Leaf (), 1, Leaf ()), 2, Leaf ()) -> [2, 1];
+Node (Leaf (), 1, Node (Leaf (), 2, Leaf ())) -> [1, 2];
+Leaf () -> [];
+=================================
+(\append -> (\tree_preorder -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_preorder = \tree -> case tree of
+    Node y1 -> 
+      Cons
+        ( #3.2 y1
+        , append (tree_preorder (#3.1 y1)) (tree_preorder (#3.3 y1))
+        )
+
+    Leaf y1 -> 
+      [] in tree_preorder) : NatTree -> NatList))
+  ((let append = \l1 -> \l2 -> case l1 of
+    Nil _ -> 
+      l2
+
+    Cons p -> 
+      Cons (#2.1 p, append (#2.2 p) l2) in append) : NatList -> NatList -> NatList)
+(\append -> (\tree_preorder -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_preorder = \tree -> case tree of
+    Node y1 -> 
+      Cons
+        ( #3.2 y1
+        , append (tree_preorder (#3.1 y1)) (tree_preorder (#3.3 y1))
+        )
+
+    Leaf y1 -> 
+      [] in tree_preorder) : NatTree -> NatList))
+  ((let append = \l1 -> \l2 -> case l1 of
+    Nil _ -> 
+      l2
+
+    Cons p -> 
+      Cons (#2.1 p, append (#2.2 p) l2) in append) : NatList -> NatList -> NatList)
+0.262817 true true
+
+Node (Leaf (), 2, Leaf ()) -> [2];
+Node (Node (Leaf (), 1, Leaf ()), 2, Leaf ()) -> [2, 1];
+Node (Leaf (), 1, Node (Leaf (), 2, Leaf ())) -> [1, 2];
+Leaf () -> [];
+=================================
+(\append -> (\tree_preorder -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_preorder = \tree -> case tree of
+    Node y1 -> 
+      Cons
+        ( #3.2 y1
+        , append (tree_preorder (#3.1 y1)) (tree_preorder (#3.3 y1))
+        )
+
+    Leaf y1 -> 
+      [] in tree_preorder) : NatTree -> NatList))
+  ((let append = \l1 -> \l2 -> case l1 of
+    Nil _ -> 
+      l2
+
+    Cons p -> 
+      Cons (#2.1 p, append (#2.2 p) l2) in append) : NatList -> NatList -> NatList)
+(\append -> (\tree_preorder -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_preorder = \tree -> case tree of
+    Node y1 -> 
+      Cons
+        ( #3.2 y1
+        , append (tree_preorder (#3.1 y1)) (tree_preorder (#3.3 y1))
+        )
+
+    Leaf y1 -> 
+      [] in tree_preorder) : NatTree -> NatList))
+  ((let append = \l1 -> \l2 -> case l1 of
+    Nil _ -> 
+      l2
+
+    Cons p -> 
+      Cons (#2.1 p, append (#2.2 p) l2) in append) : NatList -> NatList -> NatList)
+0.207523 true true
+
+Node (Leaf (), 1, Leaf ()) -> [1];
+Node (Leaf (), 2, Leaf ()) -> [2];
+Node (Node (Leaf (), 1, Leaf ()), 2, Leaf ()) -> [2, 1];
+Node (Leaf (), 1, Node (Leaf (), 2, Leaf ())) -> [1, 2];
+Leaf () -> [];
+=================================
+(\append -> (\tree_preorder -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_preorder = \tree -> case tree of
+    Node y1 -> 
+      Cons
+        ( #3.2 y1
+        , append (tree_preorder (#3.1 y1)) (tree_preorder (#3.3 y1))
+        )
+
+    Leaf y1 -> 
+      [] in tree_preorder) : NatTree -> NatList))
+  ((let append = \l1 -> \l2 -> case l1 of
+    Nil _ -> 
+      l2
+
+    Cons p -> 
+      Cons (#2.1 p, append (#2.2 p) l2) in append) : NatList -> NatList -> NatList)
+(\append -> (\tree_preorder -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_preorder = \tree -> case tree of
+    Node y1 -> 
+      Cons
+        ( #3.2 y1
+        , append (tree_preorder (#3.1 y1)) (tree_preorder (#3.3 y1))
+        )
+
+    Leaf y1 -> 
+      [] in tree_preorder) : NatTree -> NatList))
+  ((let append = \l1 -> \l2 -> case l1 of
+    Nil _ -> 
+      l2
+
+    Cons p -> 
+      Cons (#2.1 p, append (#2.2 p) l2) in append) : NatList -> NatList -> NatList)
+0.315512 true true
+

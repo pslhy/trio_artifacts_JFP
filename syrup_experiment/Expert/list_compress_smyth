@@ -1,0 +1,3067 @@
+[] -> [];
+=================================
+(\compare -> (\list_compress -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ((let list_compress = \xs -> [] in list_compress) : NatList -> NatList))
+  ((let compare = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      case n2 of
+        Z _ -> 
+          EQ
+
+        S _ -> 
+          LT
+
+    S m1 -> 
+      case n2 of
+        Z _ -> 
+          GT
+
+        S m2 -> 
+          compare m1 m2 in compare) : Nat -> Nat -> Cmp)
+0.00300100000004 false false
+
+[0] -> [0];
+=================================
+(\compare -> (\list_compress -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ((let list_compress = \xs -> xs in list_compress) : NatList -> NatList))
+  ((let compare = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      case n2 of
+        Z _ -> 
+          EQ
+
+        S _ -> 
+          LT
+
+    S m1 -> 
+      case n2 of
+        Z _ -> 
+          GT
+
+        S m2 -> 
+          compare m1 m2 in compare) : Nat -> Nat -> Cmp)
+0.003289 false false
+
+[1] -> [1];
+=================================
+(\compare -> (\list_compress -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ((let list_compress = \xs -> xs in list_compress) : NatList -> NatList))
+  ((let compare = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      case n2 of
+        Z _ -> 
+          EQ
+
+        S _ -> 
+          LT
+
+    S m1 -> 
+      case n2 of
+        Z _ -> 
+          GT
+
+        S m2 -> 
+          compare m1 m2 in compare) : Nat -> Nat -> Cmp)
+0.0033719999999 false false
+
+[1,2,2,2,0] -> [1,2,0];
+=================================
+(\compare -> (\list_compress -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ((let list_compress = \xs -> [1, 2, 0] in list_compress) : NatList -> NatList))
+  ((let compare = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      case n2 of
+        Z _ -> 
+          EQ
+
+        S _ -> 
+          LT
+
+    S m1 -> 
+      case n2 of
+        Z _ -> 
+          GT
+
+        S m2 -> 
+          compare m1 m2 in compare) : Nat -> Nat -> Cmp)
+0.00673699999993 false false
+
+[1,1] -> [1];
+=================================
+(\compare -> (\list_compress -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ((let list_compress = \xs -> [1] in list_compress) : NatList -> NatList))
+  ((let compare = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      case n2 of
+        Z _ -> 
+          EQ
+
+        S _ -> 
+          LT
+
+    S m1 -> 
+      case n2 of
+        Z _ -> 
+          GT
+
+        S m2 -> 
+          compare m1 m2 in compare) : Nat -> Nat -> Cmp)
+0.00691600000005 false false
+
+[2,0] -> [2,0];
+=================================
+(\compare -> (\list_compress -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ((let list_compress = \xs -> xs in list_compress) : NatList -> NatList))
+  ((let compare = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      case n2 of
+        Z _ -> 
+          EQ
+
+        S _ -> 
+          LT
+
+    S m1 -> 
+      case n2 of
+        Z _ -> 
+          GT
+
+        S m2 -> 
+          compare m1 m2 in compare) : Nat -> Nat -> Cmp)
+0.00673099999995 false false
+
+[2,2,0] -> [2,0];
+=================================
+(\compare -> (\list_compress -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ((let list_compress = \xs -> [2, 0] in list_compress) : NatList -> NatList))
+  ((let compare = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      case n2 of
+        Z _ -> 
+          EQ
+
+        S _ -> 
+          LT
+
+    S m1 -> 
+      case n2 of
+        Z _ -> 
+          GT
+
+        S m2 -> 
+          compare m1 m2 in compare) : Nat -> Nat -> Cmp)
+0.00644899999998 false false
+
+[0,1,1] -> [0,1];
+=================================
+(\compare -> (\list_compress -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ((let list_compress = \xs -> [0, 1] in list_compress) : NatList -> NatList))
+  ((let compare = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      case n2 of
+        Z _ -> 
+          EQ
+
+        S _ -> 
+          LT
+
+    S m1 -> 
+      case n2 of
+        Z _ -> 
+          GT
+
+        S m2 -> 
+          compare m1 m2 in compare) : Nat -> Nat -> Cmp)
+0.00587199999995 false false
+
+[2,1,0,0] -> [2,1,0];
+=================================
+(\compare -> (\list_compress -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ((let list_compress = \xs -> [2, 1, 0] in list_compress) : NatList -> NatList))
+  ((let compare = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      case n2 of
+        Z _ -> 
+          EQ
+
+        S _ -> 
+          LT
+
+    S m1 -> 
+      case n2 of
+        Z _ -> 
+          GT
+
+        S m2 -> 
+          compare m1 m2 in compare) : Nat -> Nat -> Cmp)
+0.00653800000009 false false
+
+[2,2,1,0,0] -> [2,1,0];
+=================================
+(\compare -> (\list_compress -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ((let list_compress = \xs -> [2, 1, 0] in list_compress) : NatList -> NatList))
+  ((let compare = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      case n2 of
+        Z _ -> 
+          EQ
+
+        S _ -> 
+          LT
+
+    S m1 -> 
+      case n2 of
+        Z _ -> 
+          GT
+
+        S m2 -> 
+          compare m1 m2 in compare) : Nat -> Nat -> Cmp)
+0.00583600000004 false false
+
+[2,1,0,0] -> [2,1,0];
+[2,2,1,0,0] -> [2,1,0];
+=================================
+(\compare -> (\list_compress -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ((let list_compress = \xs -> [2, 1, 0] in list_compress) : NatList -> NatList))
+  ((let compare = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      case n2 of
+        Z _ -> 
+          EQ
+
+        S _ -> 
+          LT
+
+    S m1 -> 
+      case n2 of
+        Z _ -> 
+          GT
+
+        S m2 -> 
+          compare m1 m2 in compare) : Nat -> Nat -> Cmp)
+0.00533599999994 false false
+
+[] -> [];
+[1] -> [1];
+=================================
+(\compare -> (\list_compress -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ((let list_compress = \xs -> xs in list_compress) : NatList -> NatList))
+  ((let compare = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      case n2 of
+        Z _ -> 
+          EQ
+
+        S _ -> 
+          LT
+
+    S m1 -> 
+      case n2 of
+        Z _ -> 
+          GT
+
+        S m2 -> 
+          compare m1 m2 in compare) : Nat -> Nat -> Cmp)
+0.00511299999994 false false
+
+[0] -> [0];
+[2,2,1,0,0] -> [2,1,0];
+=================================
+NOSOL
+
+[1,0,0] -> [1,0];
+[2,1,0,0] -> [2,1,0];
+=================================
+NOSOL
+
+[1,1] -> [1];
+[2,2,0] -> [2,0];
+=================================
+NOSOL
+
+[0] -> [0];
+[1] -> [1];
+=================================
+(\compare -> (\list_compress -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ((let list_compress = \xs -> xs in list_compress) : NatList -> NatList))
+  ((let compare = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      case n2 of
+        Z _ -> 
+          EQ
+
+        S _ -> 
+          LT
+
+    S m1 -> 
+      case n2 of
+        Z _ -> 
+          GT
+
+        S m2 -> 
+          compare m1 m2 in compare) : Nat -> Nat -> Cmp)
+0.00559799999996 false false
+
+[1] -> [1];
+[1,1] -> [1];
+=================================
+(\compare -> (\list_compress -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ((let list_compress = \xs -> [1] in list_compress) : NatList -> NatList))
+  ((let compare = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      case n2 of
+        Z _ -> 
+          EQ
+
+        S _ -> 
+          LT
+
+    S m1 -> 
+      case n2 of
+        Z _ -> 
+          GT
+
+        S m2 -> 
+          compare m1 m2 in compare) : Nat -> Nat -> Cmp)
+0.00493299999994 false false
+
+[1] -> [1];
+[2,1,0,0] -> [2,1,0];
+=================================
+NOSOL
+
+[] -> [];
+[2,2,1,0,0] -> [2,1,0];
+=================================
+(\compare -> (\list_compress -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_compress = \xs -> case xs of
+    Nil y1 -> 
+      []
+
+    Cons y1 -> 
+      [#2.1 y1, 1, 0] in list_compress) : NatList -> NatList))
+  ((let compare = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      case n2 of
+        Z _ -> 
+          EQ
+
+        S _ -> 
+          LT
+
+    S m1 -> 
+      case n2 of
+        Z _ -> 
+          GT
+
+        S m2 -> 
+          compare m1 m2 in compare) : Nat -> Nat -> Cmp)
+0.00660199999993 false false
+
+[0,0] -> [0];
+[1,2,2,2,0] -> [1,2,0];
+=================================
+NOSOL
+
+[] -> [];
+[2,0] -> [2,0];
+[2,1,0,0] -> [2,1,0];
+=================================
+NOSOL
+
+[] -> [];
+[1,1] -> [1];
+[2,1,0,0] -> [2,1,0];
+=================================
+NOSOL
+
+[0,1,1] -> [0,1];
+[2,1,0,0] -> [2,1,0];
+[2,2,0] -> [2,0];
+=================================
+NOSOL
+
+[0,0] -> [0];
+[2,0] -> [2,0];
+[1,0,0] -> [1,0];
+=================================
+NOSOL
+
+[0] -> [0];
+[2,0] -> [2,0];
+[1,2,2,2,0] -> [1,2,0];
+=================================
+NOSOL
+
+[0,1,1] -> [0,1];
+[2,2,0] -> [2,0];
+[2,2,2,0] -> [2,0];
+=================================
+NOSOL
+
+[] -> [];
+[0,0] -> [0];
+[0,1,1] -> [0,1];
+=================================
+(\compare -> (\list_compress -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_compress = \xs -> case xs of
+    Nil y1 -> 
+      []
+
+    Cons y1 -> 
+      case list_compress (#2.2 y1) of
+        Nil y2 -> 
+          #2.2 y1
+
+        Cons y2 -> 
+          Cons (0, list_compress (#2.2 y1)) in list_compress) : NatList -> NatList))
+  ((let compare = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      case n2 of
+        Z _ -> 
+          EQ
+
+        S _ -> 
+          LT
+
+    S m1 -> 
+      case n2 of
+        Z _ -> 
+          GT
+
+        S m2 -> 
+          compare m1 m2 in compare) : Nat -> Nat -> Cmp)
+(\compare -> (\list_compress -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_compress = \xs -> case xs of
+    Nil y1 -> 
+      []
+
+    Cons y1 -> 
+      case list_compress (#2.2 y1) of
+        Nil y2 -> 
+          #2.2 y1
+
+        Cons y2 -> 
+          Cons (0, list_compress (#2.2 y1)) in list_compress) : NatList -> NatList))
+  ((let compare = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      case n2 of
+        Z _ -> 
+          EQ
+
+        S _ -> 
+          LT
+
+    S m1 -> 
+      case n2 of
+        Z _ -> 
+          GT
+
+        S m2 -> 
+          compare m1 m2 in compare) : Nat -> Nat -> Cmp)
+0.0572990000001 false false
+
+[1,1] -> [1];
+[2,1,0,0] -> [2,1,0];
+[2,2,1,0,0] -> [2,1,0];
+=================================
+NOSOL
+
+[0] -> [0];
+[1] -> [1];
+[2,2,1,0,0] -> [2,1,0];
+=================================
+NOSOL
+
+[1] -> [1];
+[0,0] -> [0];
+[2,2,1,0,0] -> [2,1,0];
+=================================
+NOSOL
+
+[1] -> [1];
+[0,0] -> [0];
+[0,1,1] -> [0,1];
+[2,2,2,0] -> [2,0];
+=================================
+NOSOL
+
+[] -> [];
+[0,0] -> [0];
+[0,1,1] -> [0,1];
+[2,2,1,0,0] -> [2,1,0];
+=================================
+(\compare -> (\list_compress -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_compress = \xs -> case xs of
+    Nil y1 -> 
+      []
+
+    Cons y1 -> 
+      case compare (#2.1 y1) 0 of
+        LT y2 -> 
+          ??
+
+        GT y2 -> 
+          [#2.1 y1, 1, 0]
+
+        EQ y2 -> 
+          case list_compress (#2.2 y1) of
+            Nil y3 -> 
+              #2.2 y1
+
+            Cons y3 -> 
+              [0, #2.1 y3] in list_compress) : NatList -> NatList))
+  ((let compare = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      case n2 of
+        Z _ -> 
+          EQ
+
+        S _ -> 
+          LT
+
+    S m1 -> 
+      case n2 of
+        Z _ -> 
+          GT
+
+        S m2 -> 
+          compare m1 m2 in compare) : Nat -> Nat -> Cmp)
+(\compare -> (\list_compress -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_compress = \xs -> case xs of
+    Nil y1 -> 
+      []
+
+    Cons y1 -> 
+      case compare (#2.1 y1) 0 of
+        LT y2 -> 
+          ??
+
+        GT y2 -> 
+          [#2.1 y1, 1, 0]
+
+        EQ y2 -> 
+          case list_compress (#2.2 y1) of
+            Nil y3 -> 
+              #2.2 y1
+
+            Cons y3 -> 
+              [0, #2.1 y3] in list_compress) : NatList -> NatList))
+  ((let compare = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      case n2 of
+        Z _ -> 
+          EQ
+
+        S _ -> 
+          LT
+
+    S m1 -> 
+      case n2 of
+        Z _ -> 
+          GT
+
+        S m2 -> 
+          compare m1 m2 in compare) : Nat -> Nat -> Cmp)
+0.164199 false false
+
+[0] -> [0];
+[1] -> [1];
+[2,1,0,0] -> [2,1,0];
+[2,2,1,0,0] -> [2,1,0];
+=================================
+NOSOL
+
+[0,0] -> [0];
+[2,0] -> [2,0];
+[2,2,1,0,0] -> [2,1,0];
+[1,2,2,2,0] -> [1,2,0];
+=================================
+NOSOL
+
+[] -> [];
+[0] -> [0];
+[0,0] -> [0];
+[2,0] -> [2,0];
+=================================
+(\compare -> (\list_compress -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_compress = \xs -> case xs of
+    Nil y1 -> 
+      []
+
+    Cons y1 -> 
+      case #2.1 y1 of
+        Z y2 -> 
+          [0]
+
+        S y2 -> 
+          xs in list_compress) : NatList -> NatList))
+  ((let compare = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      case n2 of
+        Z _ -> 
+          EQ
+
+        S _ -> 
+          LT
+
+    S m1 -> 
+      case n2 of
+        Z _ -> 
+          GT
+
+        S m2 -> 
+          compare m1 m2 in compare) : Nat -> Nat -> Cmp)
+(\compare -> (\list_compress -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_compress = \xs -> case xs of
+    Nil y1 -> 
+      []
+
+    Cons y1 -> 
+      case #2.1 y1 of
+        Z y2 -> 
+          [0]
+
+        S y2 -> 
+          Cons (#2.1 y1, list_compress (#2.2 y1)) in list_compress) : NatList -> NatList))
+  ((let compare = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      case n2 of
+        Z _ -> 
+          EQ
+
+        S _ -> 
+          LT
+
+    S m1 -> 
+      case n2 of
+        Z _ -> 
+          GT
+
+        S m2 -> 
+          compare m1 m2 in compare) : Nat -> Nat -> Cmp)
+0.0288760000001 false false
+
+[0] -> [0];
+[0,0] -> [0];
+[2,0] -> [2,0];
+[2,2,1,0,0] -> [2,1,0];
+=================================
+NOSOL
+
+[] -> [];
+[1,1] -> [1];
+[2,1,0,0] -> [2,1,0];
+[1,2,2,2,0] -> [1,2,0];
+=================================
+NOSOL
+
+[0] -> [0];
+[1] -> [1];
+[2,1,0,0] -> [2,1,0];
+[2,2,2,0] -> [2,0];
+=================================
+NOSOL
+
+[1,1] -> [1];
+[2,2,0] -> [2,0];
+[2,2,2,0] -> [2,0];
+[1,2,2,2,0] -> [1,2,0];
+=================================
+NOSOL
+
+[1] -> [1];
+[0,0] -> [0];
+[1,1] -> [1];
+[1,2,2,2,0] -> [1,2,0];
+=================================
+NOSOL
+
+[1] -> [1];
+[0,0] -> [0];
+[2,0] -> [2,0];
+[2,2,0] -> [2,0];
+[2,2,2,0] -> [2,0];
+=================================
+NOSOL
+
+[] -> [];
+[1] -> [1];
+[1,0,0] -> [1,0];
+[2,2,2,0] -> [2,0];
+[1,2,2,2,0] -> [1,2,0];
+=================================
+(\compare -> (\list_compress -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_compress = \xs -> case xs of
+    Nil y1 -> 
+      []
+
+    Cons y1 -> 
+      case #2.2 y1 of
+        Nil y2 -> 
+          [1]
+
+        Cons y2 -> 
+          case compare (#2.1 y1) (#2.1 y2) of
+            LT y3 -> 
+              Cons (#2.1 y1, list_compress (#2.2 y1))
+
+            GT y3 -> 
+              [1, 0]
+
+            EQ y3 -> 
+              [2, 0] in list_compress) : NatList -> NatList))
+  ((let compare = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      case n2 of
+        Z _ -> 
+          EQ
+
+        S _ -> 
+          LT
+
+    S m1 -> 
+      case n2 of
+        Z _ -> 
+          GT
+
+        S m2 -> 
+          compare m1 m2 in compare) : Nat -> Nat -> Cmp)
+(\compare -> (\list_compress -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_compress = \xs -> case xs of
+    Nil y1 -> 
+      []
+
+    Cons y1 -> 
+      case #2.2 y1 of
+        Nil y2 -> 
+          [1]
+
+        Cons y2 -> 
+          case compare (#2.1 y1) (#2.1 y2) of
+            LT y3 -> 
+              Cons (#2.1 y1, list_compress (#2.2 y1))
+
+            GT y3 -> 
+              [1, 0]
+
+            EQ y3 -> 
+              [2, 0] in list_compress) : NatList -> NatList))
+  ((let compare = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      case n2 of
+        Z _ -> 
+          EQ
+
+        S _ -> 
+          LT
+
+    S m1 -> 
+      case n2 of
+        Z _ -> 
+          GT
+
+        S m2 -> 
+          compare m1 m2 in compare) : Nat -> Nat -> Cmp)
+0.338739 false false
+
+[] -> [];
+[1,0,0] -> [1,0];
+[2,1,0,0] -> [2,1,0];
+[2,2,2,0] -> [2,0];
+[1,2,2,2,0] -> [1,2,0];
+=================================
+NOSOL
+
+[] -> [];
+[1] -> [1];
+[0,0] -> [0];
+[2,2,1,0,0] -> [2,1,0];
+[2,2,0] -> [2,0];
+=================================
+(\compare -> (\list_compress -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_compress = \xs -> case xs of
+    Nil y1 -> 
+      []
+
+    Cons y1 -> 
+      case #2.2 y1 of
+        Nil y2 -> 
+          xs
+
+        Cons y2 -> 
+          Cons (#2.1 y1, list_compress (#2.2 y2)) in list_compress) : NatList -> NatList))
+  ((let compare = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      case n2 of
+        Z _ -> 
+          EQ
+
+        S _ -> 
+          LT
+
+    S m1 -> 
+      case n2 of
+        Z _ -> 
+          GT
+
+        S m2 -> 
+          compare m1 m2 in compare) : Nat -> Nat -> Cmp)
+(\compare -> (\list_compress -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_compress = \xs -> case xs of
+    Nil y1 -> 
+      []
+
+    Cons y1 -> 
+      case #2.2 y1 of
+        Nil y2 -> 
+          xs
+
+        Cons y2 -> 
+          Cons (#2.1 y1, list_compress (#2.2 y2)) in list_compress) : NatList -> NatList))
+  ((let compare = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      case n2 of
+        Z _ -> 
+          EQ
+
+        S _ -> 
+          LT
+
+    S m1 -> 
+      case n2 of
+        Z _ -> 
+          GT
+
+        S m2 -> 
+          compare m1 m2 in compare) : Nat -> Nat -> Cmp)
+0.022543 false false
+
+[1] -> [1];
+[2,1,0,0] -> [2,1,0];
+[2,2,1,0,0] -> [2,1,0];
+[2,2,0] -> [2,0];
+[1,2,2,2,0] -> [1,2,0];
+=================================
+NOSOL
+
+[0] -> [0];
+[1] -> [1];
+[0,0] -> [0];
+[2,1,0,0] -> [2,1,0];
+[1,2,2,2,0] -> [1,2,0];
+=================================
+NOSOL
+
+[] -> [];
+[0,0] -> [0];
+[2,1,0,0] -> [2,1,0];
+[2,2,1,0,0] -> [2,1,0];
+[2,2,0] -> [2,0];
+=================================
+NOSOL
+
+[2,0] -> [2,0];
+[1,0,0] -> [1,0];
+[0,1,1] -> [0,1];
+[2,2,1,0,0] -> [2,1,0];
+[1,2,2,2,0] -> [1,2,0];
+=================================
+NOSOL
+
+[0] -> [0];
+[1,1] -> [1];
+[2,0] -> [2,0];
+[1,0,0] -> [1,0];
+[2,2,0] -> [2,0];
+=================================
+NOSOL
+
+[0] -> [0];
+[0,0] -> [0];
+[1,1] -> [1];
+[2,2,0] -> [2,0];
+[1,2,2,2,0] -> [1,2,0];
+=================================
+NOSOL
+
+[0] -> [0];
+[1] -> [1];
+[2,0] -> [2,0];
+[1,0,0] -> [1,0];
+[2,2,1,0,0] -> [2,1,0];
+[2,2,0] -> [2,0];
+=================================
+NOSOL
+
+[1,1] -> [1];
+[2,0] -> [2,0];
+[0,1,1] -> [0,1];
+[2,1,0,0] -> [2,1,0];
+[2,2,1,0,0] -> [2,1,0];
+[2,2,0] -> [2,0];
+=================================
+NOSOL
+
+[] -> [];
+[0] -> [0];
+[1] -> [1];
+[2,2,1,0,0] -> [2,1,0];
+[2,2,0] -> [2,0];
+[2,2,2,0] -> [2,0];
+=================================
+STACKOVERFLOW
+
+[] -> [];
+[1] -> [1];
+[2,0] -> [2,0];
+[2,1,0,0] -> [2,1,0];
+[2,2,2,0] -> [2,0];
+[1,2,2,2,0] -> [1,2,0];
+=================================
+None
+[1,1] -> [1];
+[2,0] -> [2,0];
+[1,0,0] -> [1,0];
+[2,2,1,0,0] -> [2,1,0];
+[2,2,2,0] -> [2,0];
+[1,2,2,2,0] -> [1,2,0];
+=================================
+NOSOL
+
+[1] -> [1];
+[1,1] -> [1];
+[1,0,0] -> [1,0];
+[0,1,1] -> [0,1];
+[2,2,1,0,0] -> [2,1,0];
+[1,2,2,2,0] -> [1,2,0];
+=================================
+NOSOL
+
+[0] -> [0];
+[1,1] -> [1];
+[2,0] -> [2,0];
+[0,1,1] -> [0,1];
+[2,1,0,0] -> [2,1,0];
+[2,2,1,0,0] -> [2,1,0];
+=================================
+NOSOL
+
+[1,1] -> [1];
+[2,0] -> [2,0];
+[1,0,0] -> [1,0];
+[2,2,1,0,0] -> [2,1,0];
+[2,2,0] -> [2,0];
+[2,2,2,0] -> [2,0];
+=================================
+NOSOL
+
+[0,0] -> [0];
+[1,1] -> [1];
+[0,1,1] -> [0,1];
+[2,2,1,0,0] -> [2,1,0];
+[2,2,2,0] -> [2,0];
+[1,2,2,2,0] -> [1,2,0];
+=================================
+NOSOL
+
+[0] -> [0];
+[2,0] -> [2,0];
+[0,1,1] -> [0,1];
+[2,1,0,0] -> [2,1,0];
+[2,2,1,0,0] -> [2,1,0];
+[1,2,2,2,0] -> [1,2,0];
+=================================
+NOSOL
+
+[] -> [];
+[1] -> [1];
+[1,1] -> [1];
+[2,0] -> [2,0];
+[0,1,1] -> [0,1];
+[2,2,2,0] -> [2,0];
+[1,2,2,2,0] -> [1,2,0];
+=================================
+(\compare -> (\list_compress -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_compress = \xs -> case xs of
+    Nil y1 -> 
+      []
+
+    Cons y1 -> 
+      case #2.2 y1 of
+        Nil y2 -> 
+          [1]
+
+        Cons y2 -> 
+          case compare (#2.1 y1) (#2.1 y2) of
+            LT y3 -> 
+              Cons (#2.1 y1, list_compress (#2.2 y1))
+
+            GT y3 -> 
+              Cons (2, #2.2 y1)
+
+            EQ y3 -> 
+              list_compress (#2.2 y1) in list_compress) : NatList -> NatList))
+  ((let compare = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      case n2 of
+        Z _ -> 
+          EQ
+
+        S _ -> 
+          LT
+
+    S m1 -> 
+      case n2 of
+        Z _ -> 
+          GT
+
+        S m2 -> 
+          compare m1 m2 in compare) : Nat -> Nat -> Cmp)
+(\compare -> (\list_compress -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_compress = \xs -> case xs of
+    Nil y1 -> 
+      []
+
+    Cons y1 -> 
+      case #2.2 y1 of
+        Nil y2 -> 
+          [1]
+
+        Cons y2 -> 
+          case compare (#2.1 y1) (#2.1 y2) of
+            LT y3 -> 
+              Cons (#2.1 y1, list_compress (#2.2 y1))
+
+            GT y3 -> 
+              Cons (2, #2.2 y1)
+
+            EQ y3 -> 
+              list_compress (#2.2 y1) in list_compress) : NatList -> NatList))
+  ((let compare = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      case n2 of
+        Z _ -> 
+          EQ
+
+        S _ -> 
+          LT
+
+    S m1 -> 
+      case n2 of
+        Z _ -> 
+          GT
+
+        S m2 -> 
+          compare m1 m2 in compare) : Nat -> Nat -> Cmp)
+2.735961 false false
+
+[] -> [];
+[1] -> [1];
+[0,0] -> [0];
+[0,1,1] -> [0,1];
+[2,2,0] -> [2,0];
+[2,2,2,0] -> [2,0];
+[1,2,2,2,0] -> [1,2,0];
+=================================
+(\compare -> (\list_compress -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_compress = \xs -> case xs of
+    Nil y1 -> 
+      []
+
+    Cons y1 -> 
+      case #2.2 y1 of
+        Nil y2 -> 
+          Cons
+            (case compare (#2.1 y1) (Z y2) of
+              LT y3 -> 
+                ??
+
+              GT y3 -> 
+                (#2.1 y1, [])
+
+              EQ y3 -> 
+                (0, []))
+
+        Cons y2 -> 
+          case compare (#2.1 y1) (#2.1 y2) of
+            LT y3 -> 
+              Cons (#2.1 y1, list_compress (#2.2 y1))
+
+            GT y3 -> 
+              [2, 0]
+
+            EQ y3 -> 
+              list_compress (#2.2 y1) in list_compress) : NatList -> NatList))
+  ((let compare = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      case n2 of
+        Z _ -> 
+          EQ
+
+        S _ -> 
+          LT
+
+    S m1 -> 
+      case n2 of
+        Z _ -> 
+          GT
+
+        S m2 -> 
+          compare m1 m2 in compare) : Nat -> Nat -> Cmp)
+(\compare -> (\list_compress -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_compress = \xs -> case xs of
+    Nil y1 -> 
+      []
+
+    Cons y1 -> 
+      case #2.2 y1 of
+        Nil y2 -> 
+          Cons
+            (case compare (#2.1 y1) (Z y2) of
+              LT y3 -> 
+                ??
+
+              GT y3 -> 
+                (#2.1 y1, [])
+
+              EQ y3 -> 
+                (0, []))
+
+        Cons y2 -> 
+          case compare (#2.1 y1) (#2.1 y2) of
+            LT y3 -> 
+              Cons (#2.1 y1, list_compress (#2.2 y1))
+
+            GT y3 -> 
+              [2, 0]
+
+            EQ y3 -> 
+              list_compress (#2.2 y1) in list_compress) : NatList -> NatList))
+  ((let compare = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      case n2 of
+        Z _ -> 
+          EQ
+
+        S _ -> 
+          LT
+
+    S m1 -> 
+      case n2 of
+        Z _ -> 
+          GT
+
+        S m2 -> 
+          compare m1 m2 in compare) : Nat -> Nat -> Cmp)
+2.794948 false false
+
+[] -> [];
+[0] -> [0];
+[0,0] -> [0];
+[1,1] -> [1];
+[2,0] -> [2,0];
+[0,1,1] -> [0,1];
+[2,2,1,0,0] -> [2,1,0];
+=================================
+(\compare -> (\list_compress -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_compress = \xs -> case xs of
+    Nil y1 -> 
+      []
+
+    Cons y1 -> 
+      case #2.2 y1 of
+        Nil y2 -> 
+          [0]
+
+        Cons y2 -> 
+          case compare (#2.1 y1) (#2.1 y2) of
+            LT y3 -> 
+              Cons (0, #2.2 y2)
+
+            GT y3 -> 
+              Cons (#2.1 y1, list_compress (#2.2 y1))
+
+            EQ y3 -> 
+              Cons (#2.1 y1, list_compress (#2.2 y2)) in list_compress) : NatList -> NatList))
+  ((let compare = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      case n2 of
+        Z _ -> 
+          EQ
+
+        S _ -> 
+          LT
+
+    S m1 -> 
+      case n2 of
+        Z _ -> 
+          GT
+
+        S m2 -> 
+          compare m1 m2 in compare) : Nat -> Nat -> Cmp)
+(\compare -> (\list_compress -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_compress = \xs -> case xs of
+    Nil y1 -> 
+      []
+
+    Cons y1 -> 
+      case #2.2 y1 of
+        Nil y2 -> 
+          [0]
+
+        Cons y2 -> 
+          case compare (#2.1 y1) (#2.1 y2) of
+            LT y3 -> 
+              Cons (0, #2.2 y2)
+
+            GT y3 -> 
+              Cons (#2.1 y1, list_compress (#2.2 y1))
+
+            EQ y3 -> 
+              Cons (#2.1 y1, list_compress (#2.2 y2)) in list_compress) : NatList -> NatList))
+  ((let compare = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      case n2 of
+        Z _ -> 
+          EQ
+
+        S _ -> 
+          LT
+
+    S m1 -> 
+      case n2 of
+        Z _ -> 
+          GT
+
+        S m2 -> 
+          compare m1 m2 in compare) : Nat -> Nat -> Cmp)
+0.687386 false false
+
+[] -> [];
+[0] -> [0];
+[1] -> [1];
+[1,0,0] -> [1,0];
+[0,1,1] -> [0,1];
+[2,1,0,0] -> [2,1,0];
+[2,2,0] -> [2,0];
+=================================
+None
+[0] -> [0];
+[2,0] -> [2,0];
+[1,0,0] -> [1,0];
+[0,1,1] -> [0,1];
+[2,1,0,0] -> [2,1,0];
+[2,2,0] -> [2,0];
+[2,2,2,0] -> [2,0];
+=================================
+NOSOL
+
+[0] -> [0];
+[1] -> [1];
+[2,0] -> [2,0];
+[1,0,0] -> [1,0];
+[2,2,0] -> [2,0];
+[2,2,2,0] -> [2,0];
+[1,2,2,2,0] -> [1,2,0];
+=================================
+NOSOL
+
+[] -> [];
+[0,0] -> [0];
+[1,1] -> [1];
+[2,0] -> [2,0];
+[1,0,0] -> [1,0];
+[2,2,1,0,0] -> [2,1,0];
+[2,2,2,0] -> [2,0];
+=================================
+NOSOL
+
+[] -> [];
+[0] -> [0];
+[1] -> [1];
+[2,1,0,0] -> [2,1,0];
+[2,2,1,0,0] -> [2,1,0];
+[2,2,0] -> [2,0];
+[1,2,2,2,0] -> [1,2,0];
+=================================
+None
+[1] -> [1];
+[1,1] -> [1];
+[2,0] -> [2,0];
+[0,1,1] -> [0,1];
+[2,1,0,0] -> [2,1,0];
+[2,2,2,0] -> [2,0];
+[1,2,2,2,0] -> [1,2,0];
+=================================
+NOSOL
+
+[0] -> [0];
+[0,0] -> [0];
+[2,0] -> [2,0];
+[1,0,0] -> [1,0];
+[2,1,0,0] -> [2,1,0];
+[2,2,0] -> [2,0];
+[1,2,2,2,0] -> [1,2,0];
+=================================
+NOSOL
+
+[] -> [];
+[0] -> [0];
+[1] -> [1];
+[1,1] -> [1];
+[2,0] -> [2,0];
+[2,1,0,0] -> [2,1,0];
+[2,2,0] -> [2,0];
+[1,2,2,2,0] -> [1,2,0];
+=================================
+(\compare -> (\list_compress -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_compress = \xs -> case xs of
+    Nil y1 -> 
+      []
+
+    Cons y1 -> 
+      case #2.2 y1 of
+        Nil y2 -> 
+          case compare (#2.1 y1) (Z y2) of
+            LT y3 -> 
+              ??
+
+            GT y3 -> 
+              [#2.1 y1]
+
+            EQ y3 -> 
+              [0]
+
+        Cons y2 -> 
+          case compare (#2.1 y1) (#2.1 y2) of
+            LT y3 -> 
+              [1, #2.1 y2, 0]
+
+            GT y3 -> 
+              Cons
+                ( 2
+                , Cons (#2.1 y2, list_compress (#2.2 y2))
+                )
+
+            EQ y3 -> 
+              Cons (#2.1 y1, #2.2 y2) in list_compress) : NatList -> NatList))
+  ((let compare = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      case n2 of
+        Z _ -> 
+          EQ
+
+        S _ -> 
+          LT
+
+    S m1 -> 
+      case n2 of
+        Z _ -> 
+          GT
+
+        S m2 -> 
+          compare m1 m2 in compare) : Nat -> Nat -> Cmp)
+(\compare -> (\list_compress -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_compress = \xs -> case xs of
+    Nil y1 -> 
+      []
+
+    Cons y1 -> 
+      case #2.2 y1 of
+        Nil y2 -> 
+          case compare (#2.1 y1) (Z y2) of
+            LT y3 -> 
+              ??
+
+            GT y3 -> 
+              [#2.1 y1]
+
+            EQ y3 -> 
+              [0]
+
+        Cons y2 -> 
+          case compare (#2.1 y1) (#2.1 y2) of
+            LT y3 -> 
+              [1, #2.1 y2, 0]
+
+            GT y3 -> 
+              Cons
+                ( 2
+                , Cons (#2.1 y2, list_compress (#2.2 y2))
+                )
+
+            EQ y3 -> 
+              Cons (#2.1 y1, #2.2 y2) in list_compress) : NatList -> NatList))
+  ((let compare = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      case n2 of
+        Z _ -> 
+          EQ
+
+        S _ -> 
+          LT
+
+    S m1 -> 
+      case n2 of
+        Z _ -> 
+          GT
+
+        S m2 -> 
+          compare m1 m2 in compare) : Nat -> Nat -> Cmp)
+3.529218 false false
+
+[] -> [];
+[0] -> [0];
+[2,0] -> [2,0];
+[0,1,1] -> [0,1];
+[2,1,0,0] -> [2,1,0];
+[2,2,1,0,0] -> [2,1,0];
+[2,2,0] -> [2,0];
+[2,2,2,0] -> [2,0];
+=================================
+None
+[] -> [];
+[0] -> [0];
+[1] -> [1];
+[0,0] -> [0];
+[1,1] -> [1];
+[2,0] -> [2,0];
+[0,1,1] -> [0,1];
+[1,2,2,2,0] -> [1,2,0];
+=================================
+None
+[] -> [];
+[0] -> [0];
+[1] -> [1];
+[0,0] -> [0];
+[1,0,0] -> [1,0];
+[2,1,0,0] -> [2,1,0];
+[2,2,1,0,0] -> [2,1,0];
+[2,2,2,0] -> [2,0];
+=================================
+None
+[0] -> [0];
+[1] -> [1];
+[0,0] -> [0];
+[1,1] -> [1];
+[2,0] -> [2,0];
+[0,1,1] -> [0,1];
+[2,2,0] -> [2,0];
+[1,2,2,2,0] -> [1,2,0];
+=================================
+NOSOL
+
+[] -> [];
+[0] -> [0];
+[1] -> [1];
+[0,0] -> [0];
+[1,0,0] -> [1,0];
+[0,1,1] -> [0,1];
+[2,2,1,0,0] -> [2,1,0];
+[2,2,0] -> [2,0];
+=================================
+(\compare -> (\list_compress -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_compress = \xs -> case xs of
+    Nil y1 -> 
+      []
+
+    Cons y1 -> 
+      case #2.2 y1 of
+        Nil y2 -> 
+          xs
+
+        Cons y2 -> 
+          Cons (#2.1 y1, list_compress (#2.2 y2)) in list_compress) : NatList -> NatList))
+  ((let compare = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      case n2 of
+        Z _ -> 
+          EQ
+
+        S _ -> 
+          LT
+
+    S m1 -> 
+      case n2 of
+        Z _ -> 
+          GT
+
+        S m2 -> 
+          compare m1 m2 in compare) : Nat -> Nat -> Cmp)
+(\compare -> (\list_compress -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_compress = \xs -> case xs of
+    Nil y1 -> 
+      []
+
+    Cons y1 -> 
+      case #2.2 y1 of
+        Nil y2 -> 
+          xs
+
+        Cons y2 -> 
+          Cons (#2.1 y1, list_compress (#2.2 y2)) in list_compress) : NatList -> NatList))
+  ((let compare = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      case n2 of
+        Z _ -> 
+          EQ
+
+        S _ -> 
+          LT
+
+    S m1 -> 
+      case n2 of
+        Z _ -> 
+          GT
+
+        S m2 -> 
+          compare m1 m2 in compare) : Nat -> Nat -> Cmp)
+0.02172 false false
+
+[] -> [];
+[1] -> [1];
+[0,0] -> [0];
+[0,1,1] -> [0,1];
+[2,1,0,0] -> [2,1,0];
+[2,2,1,0,0] -> [2,1,0];
+[2,2,2,0] -> [2,0];
+[1,2,2,2,0] -> [1,2,0];
+=================================
+(\compare -> (\list_compress -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_compress = \xs -> case xs of
+    Nil y1 -> 
+      []
+
+    Cons y1 -> 
+      case #2.2 y1 of
+        Nil y2 -> 
+          Cons
+            (case compare (#2.1 y1) (Z y2) of
+              LT y3 -> 
+                ??
+
+              GT y3 -> 
+                (#2.1 y1, [])
+
+              EQ y3 -> 
+                (0, []))
+
+        Cons y2 -> 
+          case compare (#2.1 y1) (#2.1 y2) of
+            LT y3 -> 
+              Cons (#2.1 y1, list_compress (#2.2 y1))
+
+            GT y3 -> 
+              Cons
+                ( 2
+                , Cons (#2.1 y2, list_compress (#2.2 y2))
+                )
+
+            EQ y3 -> 
+              list_compress (#2.2 y1) in list_compress) : NatList -> NatList))
+  ((let compare = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      case n2 of
+        Z _ -> 
+          EQ
+
+        S _ -> 
+          LT
+
+    S m1 -> 
+      case n2 of
+        Z _ -> 
+          GT
+
+        S m2 -> 
+          compare m1 m2 in compare) : Nat -> Nat -> Cmp)
+(\compare -> (\list_compress -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_compress = \xs -> case xs of
+    Nil y1 -> 
+      []
+
+    Cons y1 -> 
+      case #2.2 y1 of
+        Nil y2 -> 
+          Cons
+            (case compare (#2.1 y1) (Z y2) of
+              LT y3 -> 
+                ??
+
+              GT y3 -> 
+                (#2.1 y1, [])
+
+              EQ y3 -> 
+                (0, []))
+
+        Cons y2 -> 
+          case compare (#2.1 y1) (#2.1 y2) of
+            LT y3 -> 
+              Cons (#2.1 y1, list_compress (#2.2 y1))
+
+            GT y3 -> 
+              Cons
+                ( 2
+                , Cons (#2.1 y2, list_compress (#2.2 y2))
+                )
+
+            EQ y3 -> 
+              list_compress (#2.2 y1) in list_compress) : NatList -> NatList))
+  ((let compare = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      case n2 of
+        Z _ -> 
+          EQ
+
+        S _ -> 
+          LT
+
+    S m1 -> 
+      case n2 of
+        Z _ -> 
+          GT
+
+        S m2 -> 
+          compare m1 m2 in compare) : Nat -> Nat -> Cmp)
+4.21845 false false
+
+[] -> [];
+[1] -> [1];
+[0,0] -> [0];
+[2,0] -> [2,0];
+[2,1,0,0] -> [2,1,0];
+[2,2,1,0,0] -> [2,1,0];
+[2,2,0] -> [2,0];
+[1,2,2,2,0] -> [1,2,0];
+=================================
+(\compare -> (\list_compress -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_compress = \xs -> case xs of
+    Nil y1 -> 
+      []
+
+    Cons y1 -> 
+      case #2.2 y1 of
+        Nil y2 -> 
+          [#2.1 y1]
+
+        Cons y2 -> 
+          case compare (#2.1 y1) (#2.1 y2) of
+            LT y3 -> 
+              Cons (1, list_compress (#2.2 y2))
+
+            GT y3 -> 
+              Cons (#2.1 y1, list_compress (#2.2 y1))
+
+            EQ y3 -> 
+              Cons (#2.1 y1, list_compress (#2.2 y2)) in list_compress) : NatList -> NatList))
+  ((let compare = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      case n2 of
+        Z _ -> 
+          EQ
+
+        S _ -> 
+          LT
+
+    S m1 -> 
+      case n2 of
+        Z _ -> 
+          GT
+
+        S m2 -> 
+          compare m1 m2 in compare) : Nat -> Nat -> Cmp)
+(\compare -> (\list_compress -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_compress = \xs -> case xs of
+    Nil y1 -> 
+      []
+
+    Cons y1 -> 
+      case #2.2 y1 of
+        Nil y2 -> 
+          [#2.1 y1]
+
+        Cons y2 -> 
+          case compare (#2.1 y1) (#2.1 y2) of
+            LT y3 -> 
+              Cons (1, list_compress (#2.2 y2))
+
+            GT y3 -> 
+              Cons (#2.1 y1, list_compress (#2.2 y1))
+
+            EQ y3 -> 
+              Cons (#2.1 y1, list_compress (#2.2 y2)) in list_compress) : NatList -> NatList))
+  ((let compare = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      case n2 of
+        Z _ -> 
+          EQ
+
+        S _ -> 
+          LT
+
+    S m1 -> 
+      case n2 of
+        Z _ -> 
+          GT
+
+        S m2 -> 
+          compare m1 m2 in compare) : Nat -> Nat -> Cmp)
+3.132224 false false
+
+[] -> [];
+[0,0] -> [0];
+[2,0] -> [2,0];
+[1,0,0] -> [1,0];
+[2,2,1,0,0] -> [2,1,0];
+[2,2,0] -> [2,0];
+[2,2,2,0] -> [2,0];
+[1,2,2,2,0] -> [1,2,0];
+=================================
+NOSOL
+
+[] -> [];
+[0] -> [0];
+[0,0] -> [0];
+[2,1,0,0] -> [2,1,0];
+[2,2,1,0,0] -> [2,1,0];
+[2,2,0] -> [2,0];
+[2,2,2,0] -> [2,0];
+[1,2,2,2,0] -> [1,2,0];
+=================================
+(\compare -> (\list_compress -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_compress = \xs -> case xs of
+    Nil y1 -> 
+      []
+
+    Cons y1 -> 
+      case #2.2 y1 of
+        Nil y2 -> 
+          [0]
+
+        Cons y2 -> 
+          case compare (#2.1 y1) (#2.1 y2) of
+            LT y3 -> 
+              Cons (#2.1 y1, list_compress (#2.2 y1))
+
+            GT y3 -> 
+              Cons (#2.1 y1, list_compress (#2.2 y1))
+
+            EQ y3 -> 
+              list_compress (#2.2 y1) in list_compress) : NatList -> NatList))
+  ((let compare = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      case n2 of
+        Z _ -> 
+          EQ
+
+        S _ -> 
+          LT
+
+    S m1 -> 
+      case n2 of
+        Z _ -> 
+          GT
+
+        S m2 -> 
+          compare m1 m2 in compare) : Nat -> Nat -> Cmp)
+(\compare -> (\list_compress -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_compress = \xs -> case xs of
+    Nil y1 -> 
+      []
+
+    Cons y1 -> 
+      case #2.2 y1 of
+        Nil y2 -> 
+          [0]
+
+        Cons y2 -> 
+          case compare (#2.1 y1) (#2.1 y2) of
+            LT y3 -> 
+              Cons (#2.1 y1, list_compress (#2.2 y1))
+
+            GT y3 -> 
+              Cons (#2.1 y1, list_compress (#2.2 y1))
+
+            EQ y3 -> 
+              list_compress (#2.2 y1) in list_compress) : NatList -> NatList))
+  ((let compare = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      case n2 of
+        Z _ -> 
+          EQ
+
+        S _ -> 
+          LT
+
+    S m1 -> 
+      case n2 of
+        Z _ -> 
+          GT
+
+        S m2 -> 
+          compare m1 m2 in compare) : Nat -> Nat -> Cmp)
+39.557049 false false
+
+[] -> [];
+[1] -> [1];
+[1,1] -> [1];
+[2,0] -> [2,0];
+[1,0,0] -> [1,0];
+[0,1,1] -> [0,1];
+[2,2,1,0,0] -> [2,1,0];
+[2,2,2,0] -> [2,0];
+[1,2,2,2,0] -> [1,2,0];
+=================================
+None
+[] -> [];
+[0] -> [0];
+[1] -> [1];
+[0,0] -> [0];
+[1,1] -> [1];
+[2,0] -> [2,0];
+[0,1,1] -> [0,1];
+[2,1,0,0] -> [2,1,0];
+[2,2,2,0] -> [2,0];
+=================================
+None
+[] -> [];
+[0] -> [0];
+[0,0] -> [0];
+[1,1] -> [1];
+[2,1,0,0] -> [2,1,0];
+[2,2,1,0,0] -> [2,1,0];
+[2,2,0] -> [2,0];
+[2,2,2,0] -> [2,0];
+[1,2,2,2,0] -> [1,2,0];
+=================================
+(\compare -> (\list_compress -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_compress = \xs -> case xs of
+    Nil y1 -> 
+      []
+
+    Cons y1 -> 
+      case #2.2 y1 of
+        Nil y2 -> 
+          Cons
+            (case compare (#2.1 y1) (Z y2) of
+              LT y3 -> 
+                ??
+
+              GT y3 -> 
+                (#2.1 y1, [])
+
+              EQ y3 -> 
+                (0, []))
+
+        Cons y2 -> 
+          case compare (#2.1 y1) (#2.1 y2) of
+            LT y3 -> 
+              [1, #2.1 y2, 0]
+
+            GT y3 -> 
+              Cons
+                ( 2
+                , Cons (#2.1 y2, list_compress (#2.2 y2))
+                )
+
+            EQ y3 -> 
+              list_compress (#2.2 y1) in list_compress) : NatList -> NatList))
+  ((let compare = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      case n2 of
+        Z _ -> 
+          EQ
+
+        S _ -> 
+          LT
+
+    S m1 -> 
+      case n2 of
+        Z _ -> 
+          GT
+
+        S m2 -> 
+          compare m1 m2 in compare) : Nat -> Nat -> Cmp)
+(\compare -> (\list_compress -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_compress = \xs -> case xs of
+    Nil y1 -> 
+      []
+
+    Cons y1 -> 
+      case #2.2 y1 of
+        Nil y2 -> 
+          Cons
+            (case compare (#2.1 y1) (Z y2) of
+              LT y3 -> 
+                ??
+
+              GT y3 -> 
+                (#2.1 y1, [])
+
+              EQ y3 -> 
+                (0, []))
+
+        Cons y2 -> 
+          case compare (#2.1 y1) (#2.1 y2) of
+            LT y3 -> 
+              [1, #2.1 y2, 0]
+
+            GT y3 -> 
+              Cons
+                ( 2
+                , Cons (#2.1 y2, list_compress (#2.2 y2))
+                )
+
+            EQ y3 -> 
+              list_compress (#2.2 y1) in list_compress) : NatList -> NatList))
+  ((let compare = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      case n2 of
+        Z _ -> 
+          EQ
+
+        S _ -> 
+          LT
+
+    S m1 -> 
+      case n2 of
+        Z _ -> 
+          GT
+
+        S m2 -> 
+          compare m1 m2 in compare) : Nat -> Nat -> Cmp)
+7.50544 false false
+
+[0] -> [0];
+[0,0] -> [0];
+[1,1] -> [1];
+[2,0] -> [2,0];
+[1,0,0] -> [1,0];
+[0,1,1] -> [0,1];
+[2,1,0,0] -> [2,1,0];
+[2,2,1,0,0] -> [2,1,0];
+[2,2,2,0] -> [2,0];
+=================================
+NOSOL
+
+[] -> [];
+[0] -> [0];
+[1] -> [1];
+[1,1] -> [1];
+[1,0,0] -> [1,0];
+[0,1,1] -> [0,1];
+[2,2,1,0,0] -> [2,1,0];
+[2,2,2,0] -> [2,0];
+[1,2,2,2,0] -> [1,2,0];
+=================================
+None
+[] -> [];
+[0] -> [0];
+[0,0] -> [0];
+[2,0] -> [2,0];
+[1,0,0] -> [1,0];
+[2,1,0,0] -> [2,1,0];
+[2,2,1,0,0] -> [2,1,0];
+[2,2,0] -> [2,0];
+[1,2,2,2,0] -> [1,2,0];
+=================================
+(\compare -> (\list_compress -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_compress = \xs -> case xs of
+    Nil y1 -> 
+      []
+
+    Cons y1 -> 
+      case #2.2 y1 of
+        Nil y2 -> 
+          [0]
+
+        Cons y2 -> 
+          case compare (#2.1 y1) (#2.1 y2) of
+            LT y3 -> 
+              Cons (#2.1 y1, list_compress (#2.2 y2))
+
+            GT y3 -> 
+              Cons (#2.1 y1, list_compress (#2.2 y1))
+
+            EQ y3 -> 
+              Cons (#2.1 y1, list_compress (#2.2 y2)) in list_compress) : NatList -> NatList))
+  ((let compare = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      case n2 of
+        Z _ -> 
+          EQ
+
+        S _ -> 
+          LT
+
+    S m1 -> 
+      case n2 of
+        Z _ -> 
+          GT
+
+        S m2 -> 
+          compare m1 m2 in compare) : Nat -> Nat -> Cmp)
+(\compare -> (\list_compress -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_compress = \xs -> case xs of
+    Nil y1 -> 
+      []
+
+    Cons y1 -> 
+      case #2.2 y1 of
+        Nil y2 -> 
+          [0]
+
+        Cons y2 -> 
+          case compare (#2.1 y1) (#2.1 y2) of
+            LT y3 -> 
+              Cons (#2.1 y1, list_compress (#2.2 y2))
+
+            GT y3 -> 
+              Cons (#2.1 y1, list_compress (#2.2 y1))
+
+            EQ y3 -> 
+              Cons (#2.1 y1, list_compress (#2.2 y2)) in list_compress) : NatList -> NatList))
+  ((let compare = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      case n2 of
+        Z _ -> 
+          EQ
+
+        S _ -> 
+          LT
+
+    S m1 -> 
+      case n2 of
+        Z _ -> 
+          GT
+
+        S m2 -> 
+          compare m1 m2 in compare) : Nat -> Nat -> Cmp)
+76.108058 false false
+
+[0] -> [0];
+[1] -> [1];
+[0,0] -> [0];
+[1,1] -> [1];
+[2,1,0,0] -> [2,1,0];
+[2,2,1,0,0] -> [2,1,0];
+[2,2,0] -> [2,0];
+[2,2,2,0] -> [2,0];
+[1,2,2,2,0] -> [1,2,0];
+=================================
+NOSOL
+
+[1] -> [1];
+[0,0] -> [0];
+[1,1] -> [1];
+[1,0,0] -> [1,0];
+[2,1,0,0] -> [2,1,0];
+[2,2,1,0,0] -> [2,1,0];
+[2,2,0] -> [2,0];
+[2,2,2,0] -> [2,0];
+[1,2,2,2,0] -> [1,2,0];
+=================================
+NOSOL
+
+[1] -> [1];
+[0,0] -> [0];
+[1,1] -> [1];
+[2,0] -> [2,0];
+[1,0,0] -> [1,0];
+[0,1,1] -> [0,1];
+[2,1,0,0] -> [2,1,0];
+[2,2,1,0,0] -> [2,1,0];
+[2,2,0] -> [2,0];
+=================================
+NOSOL
+
+[] -> [];
+[0] -> [0];
+[0,0] -> [0];
+[1,1] -> [1];
+[1,0,0] -> [1,0];
+[0,1,1] -> [0,1];
+[2,1,0,0] -> [2,1,0];
+[2,2,1,0,0] -> [2,1,0];
+[2,2,0] -> [2,0];
+=================================
+(\compare -> (\list_compress -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_compress = \xs -> case xs of
+    Nil y1 -> 
+      []
+
+    Cons y1 -> 
+      case #2.2 y1 of
+        Nil y2 -> 
+          [0]
+
+        Cons y2 -> 
+          case compare (#2.1 y1) (#2.1 y2) of
+            LT y3 -> 
+              Cons (0, #2.2 y2)
+
+            GT y3 -> 
+              Cons (#2.1 y1, list_compress (#2.2 y1))
+
+            EQ y3 -> 
+              Cons (#2.1 y1, list_compress (#2.2 y2)) in list_compress) : NatList -> NatList))
+  ((let compare = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      case n2 of
+        Z _ -> 
+          EQ
+
+        S _ -> 
+          LT
+
+    S m1 -> 
+      case n2 of
+        Z _ -> 
+          GT
+
+        S m2 -> 
+          compare m1 m2 in compare) : Nat -> Nat -> Cmp)
+(\compare -> (\list_compress -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_compress = \xs -> case xs of
+    Nil y1 -> 
+      []
+
+    Cons y1 -> 
+      case #2.2 y1 of
+        Nil y2 -> 
+          [0]
+
+        Cons y2 -> 
+          case compare (#2.1 y1) (#2.1 y2) of
+            LT y3 -> 
+              Cons (0, #2.2 y2)
+
+            GT y3 -> 
+              Cons (#2.1 y1, list_compress (#2.2 y1))
+
+            EQ y3 -> 
+              Cons (#2.1 y1, list_compress (#2.2 y2)) in list_compress) : NatList -> NatList))
+  ((let compare = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      case n2 of
+        Z _ -> 
+          EQ
+
+        S _ -> 
+          LT
+
+    S m1 -> 
+      case n2 of
+        Z _ -> 
+          GT
+
+        S m2 -> 
+          compare m1 m2 in compare) : Nat -> Nat -> Cmp)
+3.324091 false false
+
+[] -> [];
+[1] -> [1];
+[1,1] -> [1];
+[2,0] -> [2,0];
+[1,0,0] -> [1,0];
+[0,1,1] -> [0,1];
+[2,1,0,0] -> [2,1,0];
+[2,2,1,0,0] -> [2,1,0];
+[2,2,2,0] -> [2,0];
+[1,2,2,2,0] -> [1,2,0];
+=================================
+STACKOVERFLOW
+
+[0] -> [0];
+[1] -> [1];
+[0,0] -> [0];
+[1,1] -> [1];
+[2,0] -> [2,0];
+[2,1,0,0] -> [2,1,0];
+[2,2,1,0,0] -> [2,1,0];
+[2,2,0] -> [2,0];
+[2,2,2,0] -> [2,0];
+[1,2,2,2,0] -> [1,2,0];
+=================================
+NOSOL
+
+[] -> [];
+[0] -> [0];
+[1,1] -> [1];
+[2,0] -> [2,0];
+[1,0,0] -> [1,0];
+[0,1,1] -> [0,1];
+[2,1,0,0] -> [2,1,0];
+[2,2,1,0,0] -> [2,1,0];
+[2,2,0] -> [2,0];
+[1,2,2,2,0] -> [1,2,0];
+=================================
+(\compare -> (\list_compress -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_compress = \xs -> case xs of
+    Nil y1 -> 
+      []
+
+    Cons y1 -> 
+      case #2.2 y1 of
+        Nil y2 -> 
+          [#2.1 y1]
+
+        Cons y2 -> 
+          case compare (#2.1 y1) (#2.1 y2) of
+            LT y3 -> 
+              Cons (#2.1 y1, list_compress (#2.2 y2))
+
+            GT y3 -> 
+              Cons (#2.1 y1, list_compress (#2.2 y1))
+
+            EQ y3 -> 
+              Cons (#2.1 y1, list_compress (#2.2 y2)) in list_compress) : NatList -> NatList))
+  ((let compare = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      case n2 of
+        Z _ -> 
+          EQ
+
+        S _ -> 
+          LT
+
+    S m1 -> 
+      case n2 of
+        Z _ -> 
+          GT
+
+        S m2 -> 
+          compare m1 m2 in compare) : Nat -> Nat -> Cmp)
+(\compare -> (\list_compress -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_compress = \xs -> case xs of
+    Nil y1 -> 
+      []
+
+    Cons y1 -> 
+      case #2.2 y1 of
+        Nil y2 -> 
+          [#2.1 y1]
+
+        Cons y2 -> 
+          case compare (#2.1 y1) (#2.1 y2) of
+            LT y3 -> 
+              Cons (#2.1 y1, list_compress (#2.2 y2))
+
+            GT y3 -> 
+              Cons (#2.1 y1, list_compress (#2.2 y1))
+
+            EQ y3 -> 
+              Cons (#2.1 y1, list_compress (#2.2 y2)) in list_compress) : NatList -> NatList))
+  ((let compare = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      case n2 of
+        Z _ -> 
+          EQ
+
+        S _ -> 
+          LT
+
+    S m1 -> 
+      case n2 of
+        Z _ -> 
+          GT
+
+        S m2 -> 
+          compare m1 m2 in compare) : Nat -> Nat -> Cmp)
+18.677676 false false
+
+[] -> [];
+[0] -> [0];
+[1] -> [1];
+[1,1] -> [1];
+[2,0] -> [2,0];
+[1,0,0] -> [1,0];
+[2,1,0,0] -> [2,1,0];
+[2,2,1,0,0] -> [2,1,0];
+[2,2,2,0] -> [2,0];
+[1,2,2,2,0] -> [1,2,0];
+=================================
+(\compare -> (\list_compress -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_compress = \xs -> case xs of
+    Nil y1 -> 
+      []
+
+    Cons y1 -> 
+      case #2.2 y1 of
+        Nil y2 -> 
+          case compare (#2.1 y1) (Z y2) of
+            LT y3 -> 
+              ??
+
+            GT y3 -> 
+              [#2.1 y1]
+
+            EQ y3 -> 
+              [0]
+
+        Cons y2 -> 
+          case compare (#2.1 y1) (#2.1 y2) of
+            LT y3 -> 
+              [1, #2.1 y2, 0]
+
+            GT y3 -> 
+              Cons (#2.1 y1, list_compress (#2.2 y1))
+
+            EQ y3 -> 
+              list_compress (#2.2 y1) in list_compress) : NatList -> NatList))
+  ((let compare = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      case n2 of
+        Z _ -> 
+          EQ
+
+        S _ -> 
+          LT
+
+    S m1 -> 
+      case n2 of
+        Z _ -> 
+          GT
+
+        S m2 -> 
+          compare m1 m2 in compare) : Nat -> Nat -> Cmp)
+(\compare -> (\list_compress -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_compress = \xs -> case xs of
+    Nil y1 -> 
+      []
+
+    Cons y1 -> 
+      case #2.2 y1 of
+        Nil y2 -> 
+          case compare (#2.1 y1) (Z y2) of
+            LT y3 -> 
+              ??
+
+            GT y3 -> 
+              [#2.1 y1]
+
+            EQ y3 -> 
+              [0]
+
+        Cons y2 -> 
+          case compare (#2.1 y1) (#2.1 y2) of
+            LT y3 -> 
+              [1, #2.1 y2, 0]
+
+            GT y3 -> 
+              Cons (#2.1 y1, list_compress (#2.2 y1))
+
+            EQ y3 -> 
+              list_compress (#2.2 y1) in list_compress) : NatList -> NatList))
+  ((let compare = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      case n2 of
+        Z _ -> 
+          EQ
+
+        S _ -> 
+          LT
+
+    S m1 -> 
+      case n2 of
+        Z _ -> 
+          GT
+
+        S m2 -> 
+          compare m1 m2 in compare) : Nat -> Nat -> Cmp)
+18.471128 false false
+
+[] -> [];
+[0] -> [0];
+[1] -> [1];
+[0,0] -> [0];
+[2,0] -> [2,0];
+[1,0,0] -> [1,0];
+[0,1,1] -> [0,1];
+[2,2,1,0,0] -> [2,1,0];
+[2,2,0] -> [2,0];
+[2,2,2,0] -> [2,0];
+=================================
+None
+[] -> [];
+[0,0] -> [0];
+[1,1] -> [1];
+[1,0,0] -> [1,0];
+[0,1,1] -> [0,1];
+[2,1,0,0] -> [2,1,0];
+[2,2,1,0,0] -> [2,1,0];
+[2,2,0] -> [2,0];
+[2,2,2,0] -> [2,0];
+[1,2,2,2,0] -> [1,2,0];
+=================================
+STACKOVERFLOW
+
+[] -> [];
+[0] -> [0];
+[1] -> [1];
+[0,0] -> [0];
+[1,1] -> [1];
+[2,0] -> [2,0];
+[2,2,1,0,0] -> [2,1,0];
+[2,2,0] -> [2,0];
+[2,2,2,0] -> [2,0];
+[1,2,2,2,0] -> [1,2,0];
+=================================
+None
+[] -> [];
+[0] -> [0];
+[0,0] -> [0];
+[1,1] -> [1];
+[1,0,0] -> [1,0];
+[0,1,1] -> [0,1];
+[2,1,0,0] -> [2,1,0];
+[2,2,1,0,0] -> [2,1,0];
+[2,2,0] -> [2,0];
+[2,2,2,0] -> [2,0];
+=================================
+(\compare -> (\list_compress -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_compress = \xs -> case xs of
+    Nil y1 -> 
+      []
+
+    Cons y1 -> 
+      case #2.2 y1 of
+        Nil y2 -> 
+          Cons
+            (case compare (#2.1 y1) (Z y2) of
+              LT y3 -> 
+                ??
+
+              GT y3 -> 
+                (#2.1 y1, [])
+
+              EQ y3 -> 
+                (0, []))
+
+        Cons y2 -> 
+          case compare (#2.1 y1) (#2.1 y2) of
+            LT y3 -> 
+              [0, #2.1 y2]
+
+            GT y3 -> 
+              Cons (#2.1 y1, list_compress (#2.2 y1))
+
+            EQ y3 -> 
+              list_compress (#2.2 y1) in list_compress) : NatList -> NatList))
+  ((let compare = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      case n2 of
+        Z _ -> 
+          EQ
+
+        S _ -> 
+          LT
+
+    S m1 -> 
+      case n2 of
+        Z _ -> 
+          GT
+
+        S m2 -> 
+          compare m1 m2 in compare) : Nat -> Nat -> Cmp)
+(\compare -> (\list_compress -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_compress = \xs -> case xs of
+    Nil y1 -> 
+      []
+
+    Cons y1 -> 
+      case #2.2 y1 of
+        Nil y2 -> 
+          Cons
+            (case compare (#2.1 y1) (Z y2) of
+              LT y3 -> 
+                ??
+
+              GT y3 -> 
+                (#2.1 y1, [])
+
+              EQ y3 -> 
+                (0, []))
+
+        Cons y2 -> 
+          case compare (#2.1 y1) (#2.1 y2) of
+            LT y3 -> 
+              [0, #2.1 y2]
+
+            GT y3 -> 
+              Cons (#2.1 y1, list_compress (#2.2 y1))
+
+            EQ y3 -> 
+              list_compress (#2.2 y1) in list_compress) : NatList -> NatList))
+  ((let compare = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      case n2 of
+        Z _ -> 
+          EQ
+
+        S _ -> 
+          LT
+
+    S m1 -> 
+      case n2 of
+        Z _ -> 
+          GT
+
+        S m2 -> 
+          compare m1 m2 in compare) : Nat -> Nat -> Cmp)
+7.990655 false false
+
+[] -> [];
+[0] -> [0];
+[1] -> [1];
+[0,0] -> [0];
+[2,0] -> [2,0];
+[1,0,0] -> [1,0];
+[2,1,0,0] -> [2,1,0];
+[2,2,1,0,0] -> [2,1,0];
+[2,2,0] -> [2,0];
+[2,2,2,0] -> [2,0];
+=================================
+None
+[0] -> [0];
+[1] -> [1];
+[0,0] -> [0];
+[1,1] -> [1];
+[1,0,0] -> [1,0];
+[0,1,1] -> [0,1];
+[2,1,0,0] -> [2,1,0];
+[2,2,1,0,0] -> [2,1,0];
+[2,2,2,0] -> [2,0];
+[1,2,2,2,0] -> [1,2,0];
+=================================
+NOSOL
+
+[] -> [];
+[0] -> [0];
+[1] -> [1];
+[0,0] -> [0];
+[1,1] -> [1];
+[2,0] -> [2,0];
+[0,1,1] -> [0,1];
+[2,1,0,0] -> [2,1,0];
+[2,2,1,0,0] -> [2,1,0];
+[2,2,2,0] -> [2,0];
+[1,2,2,2,0] -> [1,2,0];
+=================================
+None
+[1] -> [1];
+[0,0] -> [0];
+[1,1] -> [1];
+[2,0] -> [2,0];
+[1,0,0] -> [1,0];
+[0,1,1] -> [0,1];
+[2,1,0,0] -> [2,1,0];
+[2,2,1,0,0] -> [2,1,0];
+[2,2,0] -> [2,0];
+[2,2,2,0] -> [2,0];
+[1,2,2,2,0] -> [1,2,0];
+=================================
+NOSOL
+
+[] -> [];
+[0] -> [0];
+[1] -> [1];
+[0,0] -> [0];
+[2,0] -> [2,0];
+[1,0,0] -> [1,0];
+[0,1,1] -> [0,1];
+[2,1,0,0] -> [2,1,0];
+[2,2,1,0,0] -> [2,1,0];
+[2,2,2,0] -> [2,0];
+[1,2,2,2,0] -> [1,2,0];
+=================================
+None
+[] -> [];
+[0] -> [0];
+[1] -> [1];
+[0,0] -> [0];
+[1,1] -> [1];
+[2,0] -> [2,0];
+[1,0,0] -> [1,0];
+[2,1,0,0] -> [2,1,0];
+[2,2,1,0,0] -> [2,1,0];
+[2,2,2,0] -> [2,0];
+[1,2,2,2,0] -> [1,2,0];
+=================================
+None
+[] -> [];
+[0] -> [0];
+[1] -> [1];
+[1,1] -> [1];
+[1,0,0] -> [1,0];
+[0,1,1] -> [0,1];
+[2,1,0,0] -> [2,1,0];
+[2,2,1,0,0] -> [2,1,0];
+[2,2,0] -> [2,0];
+[2,2,2,0] -> [2,0];
+[1,2,2,2,0] -> [1,2,0];
+=================================
+None
+[] -> [];
+[0] -> [0];
+[1] -> [1];
+[0,0] -> [0];
+[1,1] -> [1];
+[2,0] -> [2,0];
+[1,0,0] -> [1,0];
+[0,1,1] -> [0,1];
+[2,1,0,0] -> [2,1,0];
+[2,2,2,0] -> [2,0];
+[1,2,2,2,0] -> [1,2,0];
+=================================
+None
+[] -> [];
+[0] -> [0];
+[0,0] -> [0];
+[1,1] -> [1];
+[2,0] -> [2,0];
+[1,0,0] -> [1,0];
+[0,1,1] -> [0,1];
+[2,1,0,0] -> [2,1,0];
+[2,2,1,0,0] -> [2,1,0];
+[2,2,0] -> [2,0];
+[1,2,2,2,0] -> [1,2,0];
+=================================
+(\compare -> (\list_compress -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_compress = \xs -> case xs of
+    Nil y1 -> 
+      []
+
+    Cons y1 -> 
+      case #2.2 y1 of
+        Nil y2 -> 
+          [#2.1 y1]
+
+        Cons y2 -> 
+          case compare (#2.1 y1) (#2.1 y2) of
+            LT y3 -> 
+              Cons (#2.1 y1, list_compress (#2.2 y2))
+
+            GT y3 -> 
+              Cons (#2.1 y1, list_compress (#2.2 y1))
+
+            EQ y3 -> 
+              Cons (#2.1 y1, list_compress (#2.2 y2)) in list_compress) : NatList -> NatList))
+  ((let compare = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      case n2 of
+        Z _ -> 
+          EQ
+
+        S _ -> 
+          LT
+
+    S m1 -> 
+      case n2 of
+        Z _ -> 
+          GT
+
+        S m2 -> 
+          compare m1 m2 in compare) : Nat -> Nat -> Cmp)
+(\compare -> (\list_compress -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_compress = \xs -> case xs of
+    Nil y1 -> 
+      []
+
+    Cons y1 -> 
+      case #2.2 y1 of
+        Nil y2 -> 
+          [#2.1 y1]
+
+        Cons y2 -> 
+          case compare (#2.1 y1) (#2.1 y2) of
+            LT y3 -> 
+              Cons (#2.1 y1, list_compress (#2.2 y2))
+
+            GT y3 -> 
+              Cons (#2.1 y1, list_compress (#2.2 y1))
+
+            EQ y3 -> 
+              Cons (#2.1 y1, list_compress (#2.2 y2)) in list_compress) : NatList -> NatList))
+  ((let compare = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      case n2 of
+        Z _ -> 
+          EQ
+
+        S _ -> 
+          LT
+
+    S m1 -> 
+      case n2 of
+        Z _ -> 
+          GT
+
+        S m2 -> 
+          compare m1 m2 in compare) : Nat -> Nat -> Cmp)
+18.690394 false false
+
+[] -> [];
+[0] -> [0];
+[1] -> [1];
+[0,0] -> [0];
+[1,1] -> [1];
+[2,0] -> [2,0];
+[1,0,0] -> [1,0];
+[0,1,1] -> [0,1];
+[2,2,1,0,0] -> [2,1,0];
+[2,2,0] -> [2,0];
+[1,2,2,2,0] -> [1,2,0];
+=================================
+None
+[] -> [];
+[0] -> [0];
+[1] -> [1];
+[0,0] -> [0];
+[2,0] -> [2,0];
+[1,0,0] -> [1,0];
+[0,1,1] -> [0,1];
+[2,1,0,0] -> [2,1,0];
+[2,2,0] -> [2,0];
+[2,2,2,0] -> [2,0];
+[1,2,2,2,0] -> [1,2,0];
+=================================
+None
+[] -> [];
+[0] -> [0];
+[1] -> [1];
+[0,0] -> [0];
+[1,1] -> [1];
+[1,0,0] -> [1,0];
+[0,1,1] -> [0,1];
+[2,2,1,0,0] -> [2,1,0];
+[2,2,0] -> [2,0];
+[2,2,2,0] -> [2,0];
+[1,2,2,2,0] -> [1,2,0];
+=================================
+None
+[] -> [];
+[0] -> [0];
+[1] -> [1];
+[0,0] -> [0];
+[1,1] -> [1];
+[2,0] -> [2,0];
+[1,0,0] -> [1,0];
+[0,1,1] -> [0,1];
+[2,1,0,0] -> [2,1,0];
+[2,2,1,0,0] -> [2,1,0];
+[2,2,0] -> [2,0];
+[2,2,2,0] -> [2,0];
+=================================
+None
+[0] -> [0];
+[1] -> [1];
+[0,0] -> [0];
+[1,1] -> [1];
+[2,0] -> [2,0];
+[1,0,0] -> [1,0];
+[0,1,1] -> [0,1];
+[2,1,0,0] -> [2,1,0];
+[2,2,1,0,0] -> [2,1,0];
+[2,2,0] -> [2,0];
+[2,2,2,0] -> [2,0];
+[1,2,2,2,0] -> [1,2,0];
+=================================
+NOSOL
+
+[] -> [];
+[0] -> [0];
+[1] -> [1];
+[0,0] -> [0];
+[1,1] -> [1];
+[2,0] -> [2,0];
+[1,0,0] -> [1,0];
+[0,1,1] -> [0,1];
+[2,1,0,0] -> [2,1,0];
+[2,2,1,0,0] -> [2,1,0];
+[2,2,2,0] -> [2,0];
+[1,2,2,2,0] -> [1,2,0];
+=================================
+None
+[] -> [];
+[0] -> [0];
+[0,0] -> [0];
+[1,1] -> [1];
+[2,0] -> [2,0];
+[1,0,0] -> [1,0];
+[0,1,1] -> [0,1];
+[2,1,0,0] -> [2,1,0];
+[2,2,1,0,0] -> [2,1,0];
+[2,2,0] -> [2,0];
+[2,2,2,0] -> [2,0];
+[1,2,2,2,0] -> [1,2,0];
+=================================
+(\compare -> (\list_compress -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_compress = \xs -> case xs of
+    Nil y1 -> 
+      []
+
+    Cons y1 -> 
+      case #2.2 y1 of
+        Nil y2 -> 
+          Cons
+            (case compare (#2.1 y1) (Z y2) of
+              LT y3 -> 
+                ??
+
+              GT y3 -> 
+                (#2.1 y1, [])
+
+              EQ y3 -> 
+                (0, []))
+
+        Cons y2 -> 
+          case compare (#2.1 y1) (#2.1 y2) of
+            LT y3 -> 
+              Cons (#2.1 y1, list_compress (#2.2 y1))
+
+            GT y3 -> 
+              Cons (#2.1 y1, list_compress (#2.2 y1))
+
+            EQ y3 -> 
+              list_compress (#2.2 y1) in list_compress) : NatList -> NatList))
+  ((let compare = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      case n2 of
+        Z _ -> 
+          EQ
+
+        S _ -> 
+          LT
+
+    S m1 -> 
+      case n2 of
+        Z _ -> 
+          GT
+
+        S m2 -> 
+          compare m1 m2 in compare) : Nat -> Nat -> Cmp)
+(\compare -> (\list_compress -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_compress = \xs -> case xs of
+    Nil y1 -> 
+      []
+
+    Cons y1 -> 
+      case #2.2 y1 of
+        Nil y2 -> 
+          Cons
+            (case compare (#2.1 y1) (Z y2) of
+              LT y3 -> 
+                ??
+
+              GT y3 -> 
+                (#2.1 y1, [])
+
+              EQ y3 -> 
+                (0, []))
+
+        Cons y2 -> 
+          case compare (#2.1 y1) (#2.1 y2) of
+            LT y3 -> 
+              Cons (#2.1 y1, list_compress (#2.2 y1))
+
+            GT y3 -> 
+              Cons (#2.1 y1, list_compress (#2.2 y1))
+
+            EQ y3 -> 
+              list_compress (#2.2 y1) in list_compress) : NatList -> NatList))
+  ((let compare = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      case n2 of
+        Z _ -> 
+          EQ
+
+        S _ -> 
+          LT
+
+    S m1 -> 
+      case n2 of
+        Z _ -> 
+          GT
+
+        S m2 -> 
+          compare m1 m2 in compare) : Nat -> Nat -> Cmp)
+47.167561 true true
+
+[] -> [];
+[0] -> [0];
+[1] -> [1];
+[0,0] -> [0];
+[1,1] -> [1];
+[2,0] -> [2,0];
+[1,0,0] -> [1,0];
+[0,1,1] -> [0,1];
+[2,2,1,0,0] -> [2,1,0];
+[2,2,0] -> [2,0];
+[2,2,2,0] -> [2,0];
+[1,2,2,2,0] -> [1,2,0];
+=================================
+None
+[] -> [];
+[0] -> [0];
+[1] -> [1];
+[0,0] -> [0];
+[1,1] -> [1];
+[2,0] -> [2,0];
+[1,0,0] -> [1,0];
+[2,1,0,0] -> [2,1,0];
+[2,2,1,0,0] -> [2,1,0];
+[2,2,0] -> [2,0];
+[2,2,2,0] -> [2,0];
+[1,2,2,2,0] -> [1,2,0];
+=================================
+None
+[] -> [];
+[0] -> [0];
+[1] -> [1];
+[0,0] -> [0];
+[1,1] -> [1];
+[2,0] -> [2,0];
+[0,1,1] -> [0,1];
+[2,1,0,0] -> [2,1,0];
+[2,2,1,0,0] -> [2,1,0];
+[2,2,0] -> [2,0];
+[2,2,2,0] -> [2,0];
+[1,2,2,2,0] -> [1,2,0];
+=================================
+None
+[] -> [];
+[1] -> [1];
+[0,0] -> [0];
+[1,1] -> [1];
+[2,0] -> [2,0];
+[1,0,0] -> [1,0];
+[0,1,1] -> [0,1];
+[2,1,0,0] -> [2,1,0];
+[2,2,1,0,0] -> [2,1,0];
+[2,2,0] -> [2,0];
+[2,2,2,0] -> [2,0];
+[1,2,2,2,0] -> [1,2,0];
+=================================
+(\compare -> (\list_compress -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_compress = \xs -> case xs of
+    Nil y1 -> 
+      []
+
+    Cons y1 -> 
+      case #2.2 y1 of
+        Nil y2 -> 
+          Cons
+            (case compare (#2.1 y1) (Z y2) of
+              LT y3 -> 
+                ??
+
+              GT y3 -> 
+                (#2.1 y1, [])
+
+              EQ y3 -> 
+                (0, []))
+
+        Cons y2 -> 
+          case compare (#2.1 y1) (#2.1 y2) of
+            LT y3 -> 
+              Cons (#2.1 y1, list_compress (#2.2 y1))
+
+            GT y3 -> 
+              Cons (#2.1 y1, list_compress (#2.2 y1))
+
+            EQ y3 -> 
+              list_compress (#2.2 y1) in list_compress) : NatList -> NatList))
+  ((let compare = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      case n2 of
+        Z _ -> 
+          EQ
+
+        S _ -> 
+          LT
+
+    S m1 -> 
+      case n2 of
+        Z _ -> 
+          GT
+
+        S m2 -> 
+          compare m1 m2 in compare) : Nat -> Nat -> Cmp)
+(\compare -> (\list_compress -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_compress = \xs -> case xs of
+    Nil y1 -> 
+      []
+
+    Cons y1 -> 
+      case #2.2 y1 of
+        Nil y2 -> 
+          Cons
+            (case compare (#2.1 y1) (Z y2) of
+              LT y3 -> 
+                ??
+
+              GT y3 -> 
+                (#2.1 y1, [])
+
+              EQ y3 -> 
+                (0, []))
+
+        Cons y2 -> 
+          case compare (#2.1 y1) (#2.1 y2) of
+            LT y3 -> 
+              Cons (#2.1 y1, list_compress (#2.2 y1))
+
+            GT y3 -> 
+              Cons (#2.1 y1, list_compress (#2.2 y1))
+
+            EQ y3 -> 
+              list_compress (#2.2 y1) in list_compress) : NatList -> NatList))
+  ((let compare = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      case n2 of
+        Z _ -> 
+          EQ
+
+        S _ -> 
+          LT
+
+    S m1 -> 
+      case n2 of
+        Z _ -> 
+          GT
+
+        S m2 -> 
+          compare m1 m2 in compare) : Nat -> Nat -> Cmp)
+51.687118 true true
+
+[] -> [];
+[0] -> [0];
+[1] -> [1];
+[0,0] -> [0];
+[2,0] -> [2,0];
+[1,0,0] -> [1,0];
+[0,1,1] -> [0,1];
+[2,1,0,0] -> [2,1,0];
+[2,2,1,0,0] -> [2,1,0];
+[2,2,0] -> [2,0];
+[2,2,2,0] -> [2,0];
+[1,2,2,2,0] -> [1,2,0];
+=================================
+None
+[] -> [];
+[0] -> [0];
+[1] -> [1];
+[1,1] -> [1];
+[2,0] -> [2,0];
+[1,0,0] -> [1,0];
+[0,1,1] -> [0,1];
+[2,1,0,0] -> [2,1,0];
+[2,2,1,0,0] -> [2,1,0];
+[2,2,0] -> [2,0];
+[2,2,2,0] -> [2,0];
+[1,2,2,2,0] -> [1,2,0];
+=================================
+None
+[] -> [];
+[0] -> [0];
+[1] -> [1];
+[0,0] -> [0];
+[1,1] -> [1];
+[2,0] -> [2,0];
+[1,0,0] -> [1,0];
+[0,1,1] -> [0,1];
+[2,1,0,0] -> [2,1,0];
+[2,2,1,0,0] -> [2,1,0];
+[2,2,0] -> [2,0];
+[2,2,2,0] -> [2,0];
+[1,2,2,2,0] -> [1,2,0];
+=================================
+None

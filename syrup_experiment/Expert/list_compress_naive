@@ -1,0 +1,3752 @@
+[] -> [];
+=================================
+fix f0.fun x0. x0
+0.0003 false
+
+[0] -> [0];
+=================================
+fix f0.fun x0. x0
+0.0016 false
+
+[1] -> [1];
+=================================
+fix f0.fun x0.
+  match (x0) with
+  | [] -> x0
+  | hd1::tl1 ->
+    ( Cons hd1 (f0 tl1) )
+  
+0.0015 false
+
+[1,2,2,2,0] -> [1,2,0];
+=================================
+fail to find a solution
+fail to find a solution
+fix f0.fun x0.
+  match (x0) with
+  | [] -> ( Nil )
+  | hd1::tl1 ->
+    ( Cons hd1
+      ( Cons ( Succ hd1 )
+        ( Cons ( Zero )
+          ( Nil ) ) ) )
+  
+0.1060 false
+
+[1,1] -> [1];
+=================================
+fix f0.fun x0.
+  match (x0) with
+  | [] -> ( Nil )
+  | hd1::tl1 -> tl1
+  
+0.0033 false
+
+[2,0] -> [2,0];
+=================================
+fix f0.fun x0. x0
+0.0041 false
+
+[2,2,0] -> [2,0];
+=================================
+fix f0.fun x0.
+  match (x0) with
+  | [] -> ( Nil )
+  | hd1::tl1 -> tl1
+  
+0.0053 false
+
+[0,1,1] -> [0,1];
+=================================
+fail to find a solution
+fix f0.fun x0.
+  match (x0) with
+  | [] -> ( Nil )
+  | hd1::tl1 ->
+    ( Cons hd1
+      ( Cons ( Succ hd1 )
+        ( Nil ) ) )
+  
+0.0312 false
+
+[2,1,0,0] -> [2,1,0];
+=================================
+fail to find a solution
+fail to find a solution
+fix f0.fun x0.
+  match (x0) with
+  | [] -> ( Nil )
+  | hd1::tl1 ->
+    ( Cons hd1
+      ( Cons
+        ( Succ ( Zero ) )
+        ( Cons ( Zero )
+          ( Nil ) ) ) )
+  
+0.1404 false
+
+[2,2,1,0,0] -> [2,1,0];
+=================================
+fail to find a solution
+fail to find a solution
+fix f0.fun x0.
+  match (x0) with
+  | [] -> ( Nil )
+  | hd1::tl1 ->
+    ( Cons hd1
+      ( Cons
+        ( Succ ( Zero ) )
+        ( Cons ( Zero )
+          ( Nil ) ) ) )
+  
+0.1783 false
+
+[2,1,0,0] -> [2,1,0];
+[2,2,1,0,0] -> [2,1,0];
+=================================
+fail to find a solution
+fail to find a solution
+fix f0.fun x0.
+  match (x0) with
+  | [] -> ( Nil )
+  | hd1::tl1 ->
+    ( Cons hd1
+      ( Cons
+        ( Succ ( Zero ) )
+        ( Cons ( Zero )
+          ( Nil ) ) ) )
+  
+0.1303 false
+
+[] -> [];
+[1] -> [1];
+=================================
+fix f0.fun x0. x0
+0.0007 false
+
+[0] -> [0];
+[2,2,1,0,0] -> [2,1,0];
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun x0.
+  match (x0) with
+  | [] -> ( Nil )
+  | hd2::tl2 ->
+    match (tl2) with
+    | [] -> x0
+    | hd1::tl1 ->
+      ( Cons hd2 (f0 tl1)
+        )
+    
+  
+0.3217 false
+
+[1,0,0] -> [1,0];
+[2,1,0,0] -> [2,1,0];
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun x0.
+  match (x0) with
+  | [] ->
+    ( Cons ( Zero ) x0 )
+  | hd2::tl2 ->
+    match (tl2) with
+    | [] -> x0
+    | hd1::tl1 ->
+      ( Cons ( Succ hd1 )
+        (f0 tl1) )
+    
+  
+0.1530 false
+
+[1,1] -> [1];
+[2,2,0] -> [2,0];
+=================================
+fix f0.fun x0.
+  match (x0) with
+  | [] -> ( Nil )
+  | hd1::tl1 -> tl1
+  
+0.0046 false
+
+[0] -> [0];
+[1] -> [1];
+=================================
+fix f0.fun x0.
+  match (x0) with
+  | [] -> ( Nil )
+  | hd1::tl1 -> x0
+  
+0.0028 false
+
+[1] -> [1];
+[1,1] -> [1];
+=================================
+fix f0.fun x0.
+  match (x0) with
+  | [] -> ( Nil )
+  | hd1::tl1 ->
+    ( Cons hd1 ( Nil ) )
+  
+0.0022 false
+
+[1] -> [1];
+[2,1,0,0] -> [2,1,0];
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun x0.
+  match (x0) with
+  | [] ->
+    ( Cons ( Zero ) x0 )
+  | hd2::tl2 ->
+    match (tl2) with
+    | [] -> x0
+    | hd1::tl1 ->
+      ( Cons ( Succ hd1 )
+        (f0 tl1) )
+    
+  
+0.4625 false
+
+[] -> [];
+[2,2,1,0,0] -> [2,1,0];
+=================================
+fail to find a solution
+fail to find a solution
+fix f0.fun x0.
+  match (x0) with
+  | [] -> x0
+  | hd1::tl1 ->
+    ( Cons hd1
+      ( Cons
+        ( Succ ( Zero ) )
+        ( Cons ( Zero )
+          ( Nil ) ) ) )
+  
+0.1149 false
+
+[0,0] -> [0];
+[1,2,2,2,0] -> [1,2,0];
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun x0.
+  match (x0) with
+  | [] -> x0
+  | hd2::tl2 ->
+    match (tl2) with
+    | [] -> x0
+    | hd1::tl1 ->
+      ( Cons hd2 (f0 tl1)
+        )
+    
+  
+0.3747 false
+
+[] -> [];
+[2,0] -> [2,0];
+[2,1,0,0] -> [2,1,0];
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun x0.
+  if
+    match (x0) with
+    | [] -> ( True )
+    | hd'4::tl'4 ->
+      (less_than
+        ( ( Zero ), hd'4
+          ))
+  then
+    match (x0) with
+    | [] -> x0
+    | hd1::tl1 ->
+      ( Cons hd1 (f0 tl1)
+        )
+  else
+    ( Cons ( Zero )
+      ( Nil ) )
+2.7907 false
+
+[] -> [];
+[1,1] -> [1];
+[2,1,0,0] -> [2,1,0];
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun x0.
+  if
+    match (x0) with
+    | [] -> ( True )
+    | hd'3::tl'3 ->
+      match (tl'3) with
+      | [] -> ( False )
+      | hd'2::tl'2 ->
+        ( True )
+      
+  then
+    match (x0) with
+    | [] -> x0
+    | hd1::tl1 ->
+      ( Cons hd1 (f0 tl1)
+        )
+  else ( Nil )
+2.2544 false
+
+[0,1,1] -> [0,1];
+[2,1,0,0] -> [2,1,0];
+[2,2,0] -> [2,0];
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun x0.
+  match (x0) with
+  | [] -> x0
+  | hd1::tl1 ->
+    if
+      match (tl1) with
+      | [] -> ( True )
+      | hd'3::tl'3 ->
+        match (tl'3) with
+        | [] -> ( False )
+        | hd'2::tl'2 ->
+          ( True )
+        
+    then
+      ( Cons hd1 (f0 tl1)
+        ) else (f0 tl1)
+  
+44.7357 false
+
+[0,0] -> [0];
+[2,0] -> [2,0];
+[1,0,0] -> [1,0];
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun x0.
+  match (x0) with
+  | [] ->
+    ( Cons ( Zero ) x0 )
+  | hd1::tl1 ->
+    if
+      (equal_to
+        ( hd1, ( Zero ) ))
+      then (f0 tl1)
+      else
+        ( Cons hd1
+          ( Cons ( Zero )
+            ( Nil ) ) )
+  
+0.7659 false
+
+[0] -> [0];
+[2,0] -> [2,0];
+[1,2,2,2,0] -> [1,2,0];
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun x0.
+  match (x0) with
+  | [] ->
+    ( Cons ( Zero ) x0 )
+  | hd2::tl2 ->
+    match (tl2) with
+    | [] -> x0
+    | hd1::tl1 ->
+      ( Cons hd2 (f0 tl1)
+        )
+    
+  
+0.1472 false
+
+[0,1,1] -> [0,1];
+[2,2,0] -> [2,0];
+[2,2,2,0] -> [2,0];
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun x0.
+  match (x0) with
+  | [] ->
+    ( Cons ( Zero ) x0 )
+  | hd1::tl1 ->
+    if
+      match (tl1) with
+      | [] ->
+        (equal_to
+          ( hd1, ( Zero )
+            ))
+      | hd'4::tl'4 ->
+        match (tl'4) with
+        | [] -> ( True )
+        | hd'3::tl'3 ->
+          match (tl'3)
+            with
+          | [] ->
+            ( False )
+          | hd'2::tl'2 ->
+            ( True )
+          
+        
+    then (f0 tl1)
+      else
+        ( Cons hd1
+          if
+            match (tl1)
+              with
+            | [] ->
+              ( True )
+            | hd'2::tl'2
+              ->
+              ( False )
+          then tl1
+            else (f0 tl1)
+          )
+  
+3.8065 false
+
+[] -> [];
+[0,0] -> [0];
+[0,1,1] -> [0,1];
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun x0.
+  match (x0) with
+  | [] -> x0
+  | hd2::tl2 ->
+    match (tl2) with
+    | [] -> x0
+    | hd1::tl1 ->
+      ( Cons hd2 (f0 tl1)
+        )
+    
+  
+0.1620 false
+
+[1,1] -> [1];
+[2,1,0,0] -> [2,1,0];
+[2,2,1,0,0] -> [2,1,0];
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun x0.
+  match (x0) with
+  | [] -> ( Nil )
+  | hd1::tl1 ->
+    if
+      match (tl1) with
+      | [] -> ( True )
+      | hd'4::tl'4 ->
+        (less_than
+          ( hd'4, hd1 ))
+    then
+      ( Cons hd1
+        if
+          match (tl1)
+            with
+          | [] ->
+            ( True )
+          | hd'2::tl'2 ->
+            ( False )
+        then tl1
+          else (f0 tl1) )
+      else (f0 tl1)
+  
+9.1022 false
+
+[0] -> [0];
+[1] -> [1];
+[2,2,1,0,0] -> [2,1,0];
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun x0.
+  match (x0) with
+  | [] -> ( Nil )
+  | hd2::tl2 ->
+    match (tl2) with
+    | [] -> x0
+    | hd1::tl1 ->
+      ( Cons hd2 (f0 tl1)
+        )
+    
+  
+0.4666 false
+
+[1] -> [1];
+[0,0] -> [0];
+[2,2,1,0,0] -> [2,1,0];
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun x0.
+  match (x0) with
+  | [] -> x0
+  | hd2::tl2 ->
+    match (tl2) with
+    | [] -> x0
+    | hd1::tl1 ->
+      ( Cons hd2 (f0 tl1)
+        )
+    
+  
+0.1988 false
+
+[1] -> [1];
+[0,0] -> [0];
+[0,1,1] -> [0,1];
+[2,2,2,0] -> [2,0];
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun x0.
+  match (x0) with
+  | [] -> ( Nil )
+  | hd1::tl1 ->
+    if
+      match (tl1) with
+      | [] -> ( False )
+      | hd'4::tl'4 ->
+        (equal_to
+          ( hd'4, hd1 ))
+    then (f0 tl1)
+      else
+        ( Cons hd1
+          if
+            match (tl1)
+              with
+            | [] ->
+              ( True )
+            | hd'2::tl'2
+              ->
+              ( False )
+          then tl1
+            else (f0 tl1)
+          )
+  
+47.9510 true
+
+[] -> [];
+[0,0] -> [0];
+[0,1,1] -> [0,1];
+[2,2,1,0,0] -> [2,1,0];
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun x0.
+  match (x0) with
+  | [] -> x0
+  | hd2::tl2 ->
+    match (tl2) with
+    | [] -> x0
+    | hd1::tl1 ->
+      ( Cons hd2 (f0 tl1)
+        )
+    
+  
+0.3955 false
+
+[0] -> [0];
+[1] -> [1];
+[2,1,0,0] -> [2,1,0];
+[2,2,1,0,0] -> [2,1,0];
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun x0.
+  match (x0) with
+  | [] -> ( Nil )
+  | hd2::tl2 ->
+    match (tl2) with
+    | [] -> x0
+    | hd1::tl1 ->
+      ( Cons hd2
+        ( Cons
+          ( Succ ( Zero )
+            )
+          ( Cons ( Zero )
+            ( Nil ) ) ) )
+    
+  
+0.2615 false
+
+[0,0] -> [0];
+[2,0] -> [2,0];
+[2,2,1,0,0] -> [2,1,0];
+[1,2,2,2,0] -> [1,2,0];
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun x0.
+  match (x0) with
+  | [] -> x0
+  | hd1::tl1 ->
+    if
+      match (tl1) with
+      | [] -> ( False )
+      | hd'4::tl'4 ->
+        (equal_to
+          ( hd'4, hd1 ))
+    then (f0 tl1)
+      else
+        ( Cons
+          if
+            match (tl1)
+              with
+            | [] ->
+              ( True )
+            | hd'2::tl'2
+              ->
+              ( False )
+          then ( Zero )
+            else hd1
+          (f0 tl1) )
+  
+103.1312 false
+
+[] -> [];
+[0] -> [0];
+[0,0] -> [0];
+[2,0] -> [2,0];
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun x0.
+  if
+    match (x0) with
+    | [] -> ( True )
+    | hd'4::tl'4 ->
+      (equal_to
+        ( hd'4, ( Zero )
+          ))
+  then
+    match (x0) with
+    | [] -> x0
+    | hd1::tl1 ->
+      ( Cons hd1 ( Nil )
+        )
+  else x0
+0.1438 false
+
+[0] -> [0];
+[0,0] -> [0];
+[2,0] -> [2,0];
+[2,2,1,0,0] -> [2,1,0];
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun x0.
+  match (x0) with
+  | [] -> x0
+  | hd1::tl1 ->
+    if
+      match (tl1) with
+      | [] -> ( True )
+      | hd'4::tl'4 ->
+        (less_than
+          ( hd'4, hd1 ))
+    then
+      ( Cons
+        if
+          match (tl1)
+            with
+          | [] ->
+            ( True )
+          | hd'2::tl'2 ->
+            ( False )
+        then ( Zero )
+          else hd1
+        (f0 tl1) )
+      else (f0 tl1)
+  
+2.9226 false
+
+[] -> [];
+[1,1] -> [1];
+[2,1,0,0] -> [2,1,0];
+[1,2,2,2,0] -> [1,2,0];
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun x0.
+  match (x0) with
+  | [] -> x0
+  | hd1::tl1 ->
+    if
+      match (tl1) with
+      | [] -> ( False )
+      | hd'4::tl'4 ->
+        (equal_to
+          ( hd'4, hd1 ))
+    then (f0 tl1)
+      else
+        ( Cons hd1
+          if
+            match (tl1)
+              with
+            | [] ->
+              ( True )
+            | hd'2::tl'2
+              ->
+              ( False )
+          then tl1
+            else (f0 tl1)
+          )
+  
+90.2641 true
+
+[0] -> [0];
+[1] -> [1];
+[2,1,0,0] -> [2,1,0];
+[2,2,2,0] -> [2,0];
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun x0.
+  match (x0) with
+  | [] -> x0
+  | hd1::tl1 ->
+    if
+      match (tl1) with
+      | [] -> ( True )
+      | hd'4::tl'4 ->
+        (less_than
+          ( hd'4, hd1 ))
+    then
+      ( Cons hd1 (f0 tl1)
+        ) else (f0 tl1)
+  
+14.4474 false
+
+[1,1] -> [1];
+[2,2,0] -> [2,0];
+[2,2,2,0] -> [2,0];
+[1,2,2,2,0] -> [1,2,0];
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun x0.
+  match (x0) with
+  | [] -> x0
+  | hd1::tl1 ->
+    if
+      match (tl1) with
+      | [] -> ( False )
+      | hd'4::tl'4 ->
+        (equal_to
+          ( hd'4, hd1 ))
+    then (f0 tl1)
+      else
+        ( Cons hd1
+          (f0 tl1) )
+  
+1.9297 true
+
+[1] -> [1];
+[0,0] -> [0];
+[1,1] -> [1];
+[1,2,2,2,0] -> [1,2,0];
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun x0.
+  match (x0) with
+  | [] -> x0
+  | hd2::tl2 ->
+    match (tl2) with
+    | [] -> x0
+    | hd1::tl1 ->
+      ( Cons hd2 (f0 tl1)
+        )
+    
+  
+0.5157 false
+
+[1] -> [1];
+[0,0] -> [0];
+[2,0] -> [2,0];
+[2,2,0] -> [2,0];
+[2,2,2,0] -> [2,0];
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun x0.
+  if
+    match (x0) with
+    | [] -> ( True )
+    | hd'4::tl'4 ->
+      (equal_to
+        ( hd'4, ( Zero )
+          ))
+  then
+    ( Cons ( Zero )
+      ( Nil ) )
+    else
+      match (x0) with
+      | [] -> ( Nil )
+      | hd1::tl1 ->
+        if
+          match (tl1)
+            with
+          | [] ->
+            ( True )
+          | hd'2::tl'2 ->
+            ( False )
+        then x0
+          else
+            ( Cons hd1
+              ( Cons
+                ( Zero )
+                ( Nil ) )
+              )
+  
+3.2912 false
+
+[] -> [];
+[1] -> [1];
+[1,0,0] -> [1,0];
+[2,2,2,0] -> [2,0];
+[1,2,2,2,0] -> [1,2,0];
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun x0.
+  if
+    match (x0) with
+    | [] -> ( False )
+    | hd'5::tl'5 ->
+      match (tl'5) with
+      | [] ->
+        (equal_to
+          ( hd'5,
+            ( Zero ) ))
+      | hd'4::tl'4 ->
+        (less_than
+          (
+            ( Succ hd'4 ),
+            hd'5 ))
+      
+  then x0
+    else
+      match (x0) with
+      | [] -> x0
+      | hd1::tl1 ->
+        if
+          (equal_to
+            (
+              ( Succ
+                ( Zero )
+                ), hd1 ))
+          then
+            ( Cons hd1
+              (f0 tl1) )
+          else (f0 tl1)
+  
+7.9152 false
+
+[] -> [];
+[1,0,0] -> [1,0];
+[2,1,0,0] -> [2,1,0];
+[2,2,2,0] -> [2,0];
+[1,2,2,2,0] -> [1,2,0];
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun x0.
+  match (x0) with
+  | [] -> x0
+  | hd1::tl1 ->
+    if
+      match (tl1) with
+      | [] -> ( False )
+      | hd'4::tl'4 ->
+        (equal_to
+          ( hd'4, hd1 ))
+    then (f0 tl1)
+      else
+        ( Cons
+          if
+            match (tl1)
+              with
+            | [] ->
+              ( True )
+            | hd'2::tl'2
+              ->
+              ( False )
+          then ( Zero )
+            else hd1
+          if
+            match (tl1)
+              with
+            | [] ->
+              ( True )
+            | hd'2::tl'2
+              ->
+              ( False )
+          then tl1
+            else (f0 tl1)
+          )
+  
+10.4749 false
+
+[] -> [];
+[1] -> [1];
+[0,0] -> [0];
+[2,2,1,0,0] -> [2,1,0];
+[2,2,0] -> [2,0];
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun x0.
+  match (x0) with
+  | [] -> x0
+  | hd2::tl2 ->
+    match (tl2) with
+    | [] -> x0
+    | hd1::tl1 ->
+      ( Cons hd2 (f0 tl1)
+        )
+    
+  
+0.2703 false
+
+[1] -> [1];
+[2,1,0,0] -> [2,1,0];
+[2,2,1,0,0] -> [2,1,0];
+[2,2,0] -> [2,0];
+[1,2,2,2,0] -> [1,2,0];
+=================================
+None
+[0] -> [0];
+[1] -> [1];
+[0,0] -> [0];
+[2,1,0,0] -> [2,1,0];
+[1,2,2,2,0] -> [1,2,0];
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun x0.
+  match (x0) with
+  | [] -> x0
+  | hd1::tl1 ->
+    if
+      match (tl1) with
+      | [] -> ( False )
+      | hd'4::tl'4 ->
+        (equal_to
+          ( hd'4, hd1 ))
+    then (f0 tl1)
+      else
+        ( Cons hd1
+          (f0 tl1) )
+  
+25.6034 true
+
+[] -> [];
+[0,0] -> [0];
+[2,1,0,0] -> [2,1,0];
+[2,2,1,0,0] -> [2,1,0];
+[2,2,0] -> [2,0];
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun x0.
+  match (x0) with
+  | [] -> x0
+  | hd1::tl1 ->
+    if
+      match (tl1) with
+      | [] -> ( True )
+      | hd'4::tl'4 ->
+        (less_than
+          ( hd'4, hd1 ))
+    then
+      ( Cons
+        if
+          match (tl1)
+            with
+          | [] ->
+            ( True )
+          | hd'2::tl'2 ->
+            ( False )
+        then ( Zero )
+          else hd1
+        if
+          match (tl1)
+            with
+          | [] ->
+            ( True )
+          | hd'2::tl'2 ->
+            ( False )
+        then tl1
+          else (f0 tl1) )
+      else (f0 tl1)
+  
+6.7033 false
+
+[2,0] -> [2,0];
+[1,0,0] -> [1,0];
+[0,1,1] -> [0,1];
+[2,2,1,0,0] -> [2,1,0];
+[1,2,2,2,0] -> [1,2,0];
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun x0.
+  match (x0) with
+  | [] ->
+    ( Cons ( Zero ) x0 )
+  | hd2::tl2 ->
+    match (tl2) with
+    | [] -> x0
+    | hd1::tl1 ->
+      ( Cons hd2 (f0 tl1)
+        )
+    
+  
+27.0408 false
+
+[0] -> [0];
+[1,1] -> [1];
+[2,0] -> [2,0];
+[1,0,0] -> [1,0];
+[2,2,0] -> [2,0];
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun x0.
+  match (x0) with
+  | [] -> x0
+  | hd1::tl1 ->
+    if
+      match (tl1) with
+      | [] -> ( True )
+      | hd'4::tl'4 ->
+        (equal_to
+          ( hd'4,
+            ( Zero ) ))
+    then
+      ( Cons hd1
+        if
+          match (tl1)
+            with
+          | [] ->
+            ( True )
+          | hd'2::tl'2 ->
+            ( False )
+        then (f0 tl1)
+          else
+            ( Cons
+              ( Zero )
+              ( Nil ) ) )
+      else (f0 tl1)
+  
+3.8801 false
+
+[0] -> [0];
+[0,0] -> [0];
+[1,1] -> [1];
+[2,2,0] -> [2,0];
+[1,2,2,2,0] -> [1,2,0];
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun x0.
+  match (x0) with
+  | [] -> x0
+  | hd2::tl2 ->
+    match (tl2) with
+    | [] -> x0
+    | hd1::tl1 ->
+      ( Cons hd2 (f0 tl1)
+        )
+    
+  
+0.2432 false
+
+[0] -> [0];
+[1] -> [1];
+[2,0] -> [2,0];
+[1,0,0] -> [1,0];
+[2,2,1,0,0] -> [2,1,0];
+[2,2,0] -> [2,0];
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun x0.
+  match (x0) with
+  | [] ->
+    ( Cons ( Zero ) x0 )
+  | hd2::tl2 ->
+    match (tl2) with
+    | [] -> x0
+    | hd1::tl1 ->
+      ( Cons hd2 (f0 tl1)
+        )
+    
+  
+0.4297 false
+
+[1,1] -> [1];
+[2,0] -> [2,0];
+[0,1,1] -> [0,1];
+[2,1,0,0] -> [2,1,0];
+[2,2,1,0,0] -> [2,1,0];
+[2,2,0] -> [2,0];
+=================================
+None
+[] -> [];
+[0] -> [0];
+[1] -> [1];
+[2,2,1,0,0] -> [2,1,0];
+[2,2,0] -> [2,0];
+[2,2,2,0] -> [2,0];
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun x0.
+  match (x0) with
+  | [] -> x0
+  | hd1::tl1 ->
+    if
+      match (tl1) with
+      | [] -> ( True )
+      | hd'4::tl'4 ->
+        (less_than
+          ( hd'4, hd1 ))
+    then
+      ( Cons hd1
+        if
+          match (tl1)
+            with
+          | [] ->
+            ( True )
+          | hd'2::tl'2 ->
+            ( False )
+        then ( Nil )
+          else (f0 tl1) )
+      else (f0 tl1)
+  
+11.7008 false
+
+[] -> [];
+[1] -> [1];
+[2,0] -> [2,0];
+[2,1,0,0] -> [2,1,0];
+[2,2,2,0] -> [2,0];
+[1,2,2,2,0] -> [1,2,0];
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun x0.
+  match (x0) with
+  | [] -> x0
+  | hd1::tl1 ->
+    if
+      match (tl1) with
+      | [] -> ( False )
+      | hd'4::tl'4 ->
+        (equal_to
+          ( hd'4, hd1 ))
+    then (f0 tl1)
+      else
+        ( Cons hd1
+          if
+            match (tl1)
+              with
+            | [] ->
+              ( True )
+            | hd'2::tl'2
+              ->
+              ( False )
+          then tl1
+            else (f0 tl1)
+          )
+  
+20.0854 true
+
+[1,1] -> [1];
+[2,0] -> [2,0];
+[1,0,0] -> [1,0];
+[2,2,1,0,0] -> [2,1,0];
+[2,2,2,0] -> [2,0];
+[1,2,2,2,0] -> [1,2,0];
+=================================
+None
+[1] -> [1];
+[1,1] -> [1];
+[1,0,0] -> [1,0];
+[0,1,1] -> [0,1];
+[2,2,1,0,0] -> [2,1,0];
+[1,2,2,2,0] -> [1,2,0];
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun x0.
+  match (x0) with
+  | [] -> x0
+  | hd2::tl2 ->
+    match (tl2) with
+    | [] -> x0
+    | hd1::tl1 ->
+      ( Cons hd2 (f0 tl1)
+        )
+    
+  
+8.8210 false
+
+[0] -> [0];
+[1,1] -> [1];
+[2,0] -> [2,0];
+[0,1,1] -> [0,1];
+[2,1,0,0] -> [2,1,0];
+[2,2,1,0,0] -> [2,1,0];
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun x0.
+  match (x0) with
+  | [] -> x0
+  | hd1::tl1 ->
+    if
+      match (tl1) with
+      | [] -> ( False )
+      | hd'4::tl'4 ->
+        (equal_to
+          ( hd'4, hd1 ))
+    then (f0 tl1)
+      else
+        ( Cons hd1
+          (f0 tl1) )
+  
+38.4877 true
+
+[1,1] -> [1];
+[2,0] -> [2,0];
+[1,0,0] -> [1,0];
+[2,2,1,0,0] -> [2,1,0];
+[2,2,0] -> [2,0];
+[2,2,2,0] -> [2,0];
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun x0.
+  match (x0) with
+  | [] -> x0
+  | hd1::tl1 ->
+    if
+      match (tl1) with
+      | [] -> ( True )
+      | hd'4::tl'4 ->
+        (less_than
+          ( hd'4, hd1 ))
+    then
+      ( Cons hd1 (f0 tl1)
+        ) else (f0 tl1)
+  
+113.4463 false
+
+[0,0] -> [0];
+[1,1] -> [1];
+[0,1,1] -> [0,1];
+[2,2,1,0,0] -> [2,1,0];
+[2,2,2,0] -> [2,0];
+[1,2,2,2,0] -> [1,2,0];
+=================================
+None
+[0] -> [0];
+[2,0] -> [2,0];
+[0,1,1] -> [0,1];
+[2,1,0,0] -> [2,1,0];
+[2,2,1,0,0] -> [2,1,0];
+[1,2,2,2,0] -> [1,2,0];
+=================================
+None
+[] -> [];
+[1] -> [1];
+[1,1] -> [1];
+[2,0] -> [2,0];
+[0,1,1] -> [0,1];
+[2,2,2,0] -> [2,0];
+[1,2,2,2,0] -> [1,2,0];
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun x0.
+  match (x0) with
+  | [] -> x0
+  | hd1::tl1 ->
+    if
+      match (tl1) with
+      | [] -> ( False )
+      | hd'4::tl'4 ->
+        (equal_to
+          ( hd'4, hd1 ))
+    then (f0 tl1)
+      else
+        ( Cons hd1
+          if
+            match (tl1)
+              with
+            | [] ->
+              ( True )
+            | hd'2::tl'2
+              ->
+              ( False )
+          then ( Nil )
+            else (f0 tl1)
+          )
+  
+3.1330 true
+
+[] -> [];
+[1] -> [1];
+[0,0] -> [0];
+[0,1,1] -> [0,1];
+[2,2,0] -> [2,0];
+[2,2,2,0] -> [2,0];
+[1,2,2,2,0] -> [1,2,0];
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun x0.
+  match (x0) with
+  | [] -> x0
+  | hd1::tl1 ->
+    if
+      match (tl1) with
+      | [] -> ( False )
+      | hd'4::tl'4 ->
+        (equal_to
+          ( hd'4, hd1 ))
+    then (f0 tl1)
+      else
+        ( Cons hd1
+          if
+            match (tl1)
+              with
+            | [] ->
+              ( True )
+            | hd'2::tl'2
+              ->
+              ( False )
+          then ( Nil )
+            else (f0 tl1)
+          )
+  
+11.2190 true
+
+[] -> [];
+[0] -> [0];
+[0,0] -> [0];
+[1,1] -> [1];
+[2,0] -> [2,0];
+[0,1,1] -> [0,1];
+[2,2,1,0,0] -> [2,1,0];
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun x0.
+  match (x0) with
+  | [] -> x0
+  | hd1::tl1 ->
+    if
+      match (tl1) with
+      | [] -> ( False )
+      | hd'4::tl'4 ->
+        (equal_to
+          ( hd'4, hd1 ))
+    then (f0 tl1)
+      else
+        ( Cons hd1
+          if
+            match (tl1)
+              with
+            | [] ->
+              ( True )
+            | hd'2::tl'2
+              ->
+              ( False )
+          then ( Nil )
+            else (f0 tl1)
+          )
+  
+15.9446 true
+
+[] -> [];
+[0] -> [0];
+[1] -> [1];
+[1,0,0] -> [1,0];
+[0,1,1] -> [0,1];
+[2,1,0,0] -> [2,1,0];
+[2,2,0] -> [2,0];
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun x0.
+  match (x0) with
+  | [] -> x0
+  | hd1::tl1 ->
+    if
+      match (tl1) with
+      | [] -> ( True )
+      | hd'3::tl'3 ->
+        match (tl'3) with
+        | [] -> ( False )
+        | hd'2::tl'2 ->
+          ( True )
+        
+    then
+      ( Cons hd1 (f0 tl1)
+        ) else tl1
+  
+5.5991 false
+
+[0] -> [0];
+[2,0] -> [2,0];
+[1,0,0] -> [1,0];
+[0,1,1] -> [0,1];
+[2,1,0,0] -> [2,1,0];
+[2,2,0] -> [2,0];
+[2,2,2,0] -> [2,0];
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun x0.
+  match (x0) with
+  | [] -> x0
+  | hd1::tl1 ->
+    if
+      match (tl1) with
+      | [] -> ( False )
+      | hd'4::tl'4 ->
+        (equal_to
+          ( hd'4, hd1 ))
+    then (f0 tl1)
+      else
+        ( Cons hd1
+          (f0 tl1) )
+  
+39.3186 true
+
+[0] -> [0];
+[1] -> [1];
+[2,0] -> [2,0];
+[1,0,0] -> [1,0];
+[2,2,0] -> [2,0];
+[2,2,2,0] -> [2,0];
+[1,2,2,2,0] -> [1,2,0];
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun x0.
+  match (x0) with
+  | [] -> x0
+  | hd1::tl1 ->
+    if
+      match (tl1) with
+      | [] -> ( False )
+      | hd'4::tl'4 ->
+        (equal_to
+          ( hd'4, hd1 ))
+    then (f0 tl1)
+      else
+        ( Cons hd1
+          (f0 tl1) )
+  
+9.8770 true
+
+[] -> [];
+[0,0] -> [0];
+[1,1] -> [1];
+[2,0] -> [2,0];
+[1,0,0] -> [1,0];
+[2,2,1,0,0] -> [2,1,0];
+[2,2,2,0] -> [2,0];
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun x0.
+  match (x0) with
+  | [] -> x0
+  | hd1::tl1 ->
+    if
+      match (tl1) with
+      | [] -> ( True )
+      | hd'4::tl'4 ->
+        (less_than
+          ( hd'4, hd1 ))
+    then
+      ( Cons hd1
+        if
+          match (tl1)
+            with
+          | [] ->
+            ( True )
+          | hd'2::tl'2 ->
+            ( False )
+        then tl1
+          else (f0 tl1) )
+      else (f0 tl1)
+  
+30.2311 false
+
+[] -> [];
+[0] -> [0];
+[1] -> [1];
+[2,1,0,0] -> [2,1,0];
+[2,2,1,0,0] -> [2,1,0];
+[2,2,0] -> [2,0];
+[1,2,2,2,0] -> [1,2,0];
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun x0.
+  match (x0) with
+  | [] -> x0
+  | hd1::tl1 ->
+    if
+      match (tl1) with
+      | [] -> ( False )
+      | hd'4::tl'4 ->
+        (equal_to
+          ( hd'4, hd1 ))
+    then (f0 tl1)
+      else
+        ( Cons hd1
+          if
+            match (tl1)
+              with
+            | [] ->
+              ( True )
+            | hd'2::tl'2
+              ->
+              ( False )
+          then ( Nil )
+            else (f0 tl1)
+          )
+  
+43.1806 true
+
+[1] -> [1];
+[1,1] -> [1];
+[2,0] -> [2,0];
+[0,1,1] -> [0,1];
+[2,1,0,0] -> [2,1,0];
+[2,2,2,0] -> [2,0];
+[1,2,2,2,0] -> [1,2,0];
+=================================
+None
+[0] -> [0];
+[0,0] -> [0];
+[2,0] -> [2,0];
+[1,0,0] -> [1,0];
+[2,1,0,0] -> [2,1,0];
+[2,2,0] -> [2,0];
+[1,2,2,2,0] -> [1,2,0];
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun x0.
+  match (x0) with
+  | [] -> x0
+  | hd1::tl1 ->
+    if
+      match (tl1) with
+      | [] -> ( False )
+      | hd'4::tl'4 ->
+        (equal_to
+          ( hd'4, hd1 ))
+    then (f0 tl1)
+      else
+        ( Cons
+          if
+            match (tl1)
+              with
+            | [] ->
+              ( True )
+            | hd'2::tl'2
+              ->
+              ( False )
+          then ( Zero )
+            else hd1
+          (f0 tl1) )
+  
+2.8145 false
+
+[] -> [];
+[0] -> [0];
+[1] -> [1];
+[1,1] -> [1];
+[2,0] -> [2,0];
+[2,1,0,0] -> [2,1,0];
+[2,2,0] -> [2,0];
+[1,2,2,2,0] -> [1,2,0];
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun x0.
+  match (x0) with
+  | [] -> x0
+  | hd1::tl1 ->
+    if
+      match (tl1) with
+      | [] -> ( False )
+      | hd'4::tl'4 ->
+        (equal_to
+          ( hd'4, hd1 ))
+    then (f0 tl1)
+      else
+        ( Cons hd1
+          if
+            match (tl1)
+              with
+            | [] ->
+              ( True )
+            | hd'2::tl'2
+              ->
+              ( False )
+          then ( Nil )
+            else (f0 tl1)
+          )
+  
+33.5346 true
+
+[] -> [];
+[0] -> [0];
+[2,0] -> [2,0];
+[0,1,1] -> [0,1];
+[2,1,0,0] -> [2,1,0];
+[2,2,1,0,0] -> [2,1,0];
+[2,2,0] -> [2,0];
+[2,2,2,0] -> [2,0];
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun x0.
+  match (x0) with
+  | [] -> x0
+  | hd1::tl1 ->
+    if
+      match (tl1) with
+      | [] -> ( False )
+      | hd'4::tl'4 ->
+        (equal_to
+          ( hd'4, hd1 ))
+    then (f0 tl1)
+      else
+        ( Cons hd1
+          if
+            match (tl1)
+              with
+            | [] ->
+              ( True )
+            | hd'2::tl'2
+              ->
+              ( False )
+          then tl1
+            else (f0 tl1)
+          )
+  
+68.4614 true
+
+[] -> [];
+[0] -> [0];
+[1] -> [1];
+[0,0] -> [0];
+[1,1] -> [1];
+[2,0] -> [2,0];
+[0,1,1] -> [0,1];
+[1,2,2,2,0] -> [1,2,0];
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun x0.
+  match (x0) with
+  | [] -> x0
+  | hd1::tl1 ->
+    if
+      match (tl1) with
+      | [] -> ( False )
+      | hd'4::tl'4 ->
+        (equal_to
+          ( hd'4, hd1 ))
+    then (f0 tl1)
+      else
+        ( Cons hd1
+          if
+            match (tl1)
+              with
+            | [] ->
+              ( True )
+            | hd'2::tl'2
+              ->
+              ( False )
+          then tl1
+            else (f0 tl1)
+          )
+  
+12.9820 true
+
+[] -> [];
+[0] -> [0];
+[1] -> [1];
+[0,0] -> [0];
+[1,0,0] -> [1,0];
+[2,1,0,0] -> [2,1,0];
+[2,2,1,0,0] -> [2,1,0];
+[2,2,2,0] -> [2,0];
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun x0.
+  match (x0) with
+  | [] -> x0
+  | hd1::tl1 ->
+    if
+      match (tl1) with
+      | [] -> ( True )
+      | hd'4::tl'4 ->
+        (less_than
+          ( hd'4, hd1 ))
+    then
+      ( Cons hd1
+        if
+          match (tl1)
+            with
+          | [] ->
+            ( True )
+          | hd'2::tl'2 ->
+            ( False )
+        then tl1
+          else (f0 tl1) )
+      else (f0 tl1)
+  
+6.4991 false
+
+[0] -> [0];
+[1] -> [1];
+[0,0] -> [0];
+[1,1] -> [1];
+[2,0] -> [2,0];
+[0,1,1] -> [0,1];
+[2,2,0] -> [2,0];
+[1,2,2,2,0] -> [1,2,0];
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun x0.
+  match (x0) with
+  | [] -> x0
+  | hd1::tl1 ->
+    if
+      match (tl1) with
+      | [] -> ( False )
+      | hd'4::tl'4 ->
+        (equal_to
+          ( hd'4, hd1 ))
+    then (f0 tl1)
+      else
+        ( Cons hd1
+          (f0 tl1) )
+  
+36.0612 true
+
+[] -> [];
+[0] -> [0];
+[1] -> [1];
+[0,0] -> [0];
+[1,0,0] -> [1,0];
+[0,1,1] -> [0,1];
+[2,2,1,0,0] -> [2,1,0];
+[2,2,0] -> [2,0];
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun x0.
+  match (x0) with
+  | [] -> x0
+  | hd2::tl2 ->
+    match (tl2) with
+    | [] -> x0
+    | hd1::tl1 ->
+      ( Cons hd2 (f0 tl1)
+        )
+    
+  
+0.6391 false
+
+[] -> [];
+[1] -> [1];
+[0,0] -> [0];
+[0,1,1] -> [0,1];
+[2,1,0,0] -> [2,1,0];
+[2,2,1,0,0] -> [2,1,0];
+[2,2,2,0] -> [2,0];
+[1,2,2,2,0] -> [1,2,0];
+=================================
+None
+[] -> [];
+[1] -> [1];
+[0,0] -> [0];
+[2,0] -> [2,0];
+[2,1,0,0] -> [2,1,0];
+[2,2,1,0,0] -> [2,1,0];
+[2,2,0] -> [2,0];
+[1,2,2,2,0] -> [1,2,0];
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun x0.
+  match (x0) with
+  | [] -> x0
+  | hd1::tl1 ->
+    if
+      match (tl1) with
+      | [] -> ( False )
+      | hd'4::tl'4 ->
+        (equal_to
+          ( hd'4, hd1 ))
+    then (f0 tl1)
+      else
+        ( Cons hd1
+          if
+            match (tl1)
+              with
+            | [] ->
+              ( True )
+            | hd'2::tl'2
+              ->
+              ( False )
+          then tl1
+            else (f0 tl1)
+          )
+  
+72.1819 true
+
+[] -> [];
+[0,0] -> [0];
+[2,0] -> [2,0];
+[1,0,0] -> [1,0];
+[2,2,1,0,0] -> [2,1,0];
+[2,2,0] -> [2,0];
+[2,2,2,0] -> [2,0];
+[1,2,2,2,0] -> [1,2,0];
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun x0.
+  match (x0) with
+  | [] -> x0
+  | hd1::tl1 ->
+    if
+      match (tl1) with
+      | [] -> ( False )
+      | hd'4::tl'4 ->
+        (equal_to
+          ( hd'4, hd1 ))
+    then (f0 tl1)
+      else
+        ( Cons
+          if
+            match (tl1)
+              with
+            | [] ->
+              ( True )
+            | hd'2::tl'2
+              ->
+              ( False )
+          then ( Zero )
+            else hd1
+          if
+            match (tl1)
+              with
+            | [] ->
+              ( True )
+            | hd'2::tl'2
+              ->
+              ( False )
+          then tl1
+            else (f0 tl1)
+          )
+  
+13.9687 false
+
+[] -> [];
+[0] -> [0];
+[0,0] -> [0];
+[2,1,0,0] -> [2,1,0];
+[2,2,1,0,0] -> [2,1,0];
+[2,2,0] -> [2,0];
+[2,2,2,0] -> [2,0];
+[1,2,2,2,0] -> [1,2,0];
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun x0.
+  match (x0) with
+  | [] -> x0
+  | hd1::tl1 ->
+    if
+      match (tl1) with
+      | [] -> ( False )
+      | hd'4::tl'4 ->
+        (equal_to
+          ( hd'4, hd1 ))
+    then (f0 tl1)
+      else
+        ( Cons
+          if
+            match (tl1)
+              with
+            | [] ->
+              ( True )
+            | hd'2::tl'2
+              ->
+              ( False )
+          then ( Zero )
+            else hd1
+          if
+            match (tl1)
+              with
+            | [] ->
+              ( True )
+            | hd'2::tl'2
+              ->
+              ( False )
+          then tl1
+            else (f0 tl1)
+          )
+  
+10.1267 false
+
+[] -> [];
+[1] -> [1];
+[1,1] -> [1];
+[2,0] -> [2,0];
+[1,0,0] -> [1,0];
+[0,1,1] -> [0,1];
+[2,2,1,0,0] -> [2,1,0];
+[2,2,2,0] -> [2,0];
+[1,2,2,2,0] -> [1,2,0];
+=================================
+None
+[] -> [];
+[0] -> [0];
+[1] -> [1];
+[0,0] -> [0];
+[1,1] -> [1];
+[2,0] -> [2,0];
+[0,1,1] -> [0,1];
+[2,1,0,0] -> [2,1,0];
+[2,2,2,0] -> [2,0];
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun x0.
+  match (x0) with
+  | [] -> x0
+  | hd1::tl1 ->
+    if
+      match (tl1) with
+      | [] -> ( False )
+      | hd'4::tl'4 ->
+        (equal_to
+          ( hd'4, hd1 ))
+    then (f0 tl1)
+      else
+        ( Cons hd1
+          if
+            match (tl1)
+              with
+            | [] ->
+              ( True )
+            | hd'2::tl'2
+              ->
+              ( False )
+          then tl1
+            else (f0 tl1)
+          )
+  
+15.5105 true
+
+[] -> [];
+[0] -> [0];
+[0,0] -> [0];
+[1,1] -> [1];
+[2,1,0,0] -> [2,1,0];
+[2,2,1,0,0] -> [2,1,0];
+[2,2,0] -> [2,0];
+[2,2,2,0] -> [2,0];
+[1,2,2,2,0] -> [1,2,0];
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun x0.
+  match (x0) with
+  | [] -> x0
+  | hd1::tl1 ->
+    if
+      match (tl1) with
+      | [] -> ( False )
+      | hd'4::tl'4 ->
+        (equal_to
+          ( hd'4, hd1 ))
+    then (f0 tl1)
+      else
+        ( Cons hd1
+          if
+            match (tl1)
+              with
+            | [] ->
+              ( True )
+            | hd'2::tl'2
+              ->
+              ( False )
+          then ( Nil )
+            else (f0 tl1)
+          )
+  
+28.7324 true
+
+[0] -> [0];
+[0,0] -> [0];
+[1,1] -> [1];
+[2,0] -> [2,0];
+[1,0,0] -> [1,0];
+[0,1,1] -> [0,1];
+[2,1,0,0] -> [2,1,0];
+[2,2,1,0,0] -> [2,1,0];
+[2,2,2,0] -> [2,0];
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun x0.
+  match (x0) with
+  | [] -> x0
+  | hd1::tl1 ->
+    if
+      match (tl1) with
+      | [] -> ( False )
+      | hd'4::tl'4 ->
+        (equal_to
+          ( hd'4, hd1 ))
+    then (f0 tl1)
+      else
+        ( Cons hd1
+          (f0 tl1) )
+  
+25.9159 true
+
+[] -> [];
+[0] -> [0];
+[1] -> [1];
+[1,1] -> [1];
+[1,0,0] -> [1,0];
+[0,1,1] -> [0,1];
+[2,2,1,0,0] -> [2,1,0];
+[2,2,2,0] -> [2,0];
+[1,2,2,2,0] -> [1,2,0];
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun x0.
+  match (x0) with
+  | [] -> x0
+  | hd1::tl1 ->
+    if
+      match (tl1) with
+      | [] -> ( False )
+      | hd'4::tl'4 ->
+        (equal_to
+          ( hd'4, hd1 ))
+    then (f0 tl1)
+      else
+        ( Cons hd1
+          if
+            match (tl1)
+              with
+            | [] ->
+              ( True )
+            | hd'2::tl'2
+              ->
+              ( False )
+          then tl1
+            else (f0 tl1)
+          )
+  
+66.3219 true
+
+[] -> [];
+[0] -> [0];
+[0,0] -> [0];
+[2,0] -> [2,0];
+[1,0,0] -> [1,0];
+[2,1,0,0] -> [2,1,0];
+[2,2,1,0,0] -> [2,1,0];
+[2,2,0] -> [2,0];
+[1,2,2,2,0] -> [1,2,0];
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun x0.
+  match (x0) with
+  | [] -> x0
+  | hd1::tl1 ->
+    if
+      match (tl1) with
+      | [] -> ( False )
+      | hd'4::tl'4 ->
+        (equal_to
+          ( hd'4, hd1 ))
+    then (f0 tl1)
+      else
+        ( Cons
+          if
+            match (tl1)
+              with
+            | [] ->
+              ( True )
+            | hd'2::tl'2
+              ->
+              ( False )
+          then ( Zero )
+            else hd1
+          if
+            match (tl1)
+              with
+            | [] ->
+              ( True )
+            | hd'2::tl'2
+              ->
+              ( False )
+          then ( Nil )
+            else (f0 tl1)
+          )
+  
+4.5471 false
+
+[0] -> [0];
+[1] -> [1];
+[0,0] -> [0];
+[1,1] -> [1];
+[2,1,0,0] -> [2,1,0];
+[2,2,1,0,0] -> [2,1,0];
+[2,2,0] -> [2,0];
+[2,2,2,0] -> [2,0];
+[1,2,2,2,0] -> [1,2,0];
+=================================
+None
+[1] -> [1];
+[0,0] -> [0];
+[1,1] -> [1];
+[1,0,0] -> [1,0];
+[2,1,0,0] -> [2,1,0];
+[2,2,1,0,0] -> [2,1,0];
+[2,2,0] -> [2,0];
+[2,2,2,0] -> [2,0];
+[1,2,2,2,0] -> [1,2,0];
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun x0.
+  match (x0) with
+  | [] -> x0
+  | hd1::tl1 ->
+    if
+      match (tl1) with
+      | [] -> ( False )
+      | hd'4::tl'4 ->
+        (equal_to
+          ( hd'4, hd1 ))
+    then (f0 tl1)
+      else
+        ( Cons hd1
+          (f0 tl1) )
+  
+75.1211 true
+
+[1] -> [1];
+[0,0] -> [0];
+[1,1] -> [1];
+[2,0] -> [2,0];
+[1,0,0] -> [1,0];
+[0,1,1] -> [0,1];
+[2,1,0,0] -> [2,1,0];
+[2,2,1,0,0] -> [2,1,0];
+[2,2,0] -> [2,0];
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun x0.
+  match (x0) with
+  | [] ->
+    ( Cons ( Zero ) x0 )
+  | hd1::tl1 ->
+    if
+      match (tl1) with
+      | [] ->
+        (equal_to
+          ( hd1, ( Zero )
+            ))
+      | hd'4::tl'4 ->
+        (equal_to
+          ( hd'4, hd1 ))
+    then (f0 tl1)
+      else
+        ( Cons hd1
+          if
+            match (tl1)
+              with
+            | [] ->
+              ( True )
+            | hd'2::tl'2
+              ->
+              ( False )
+          then tl1
+            else (f0 tl1)
+          )
+  
+84.4182 false
+
+[] -> [];
+[0] -> [0];
+[0,0] -> [0];
+[1,1] -> [1];
+[1,0,0] -> [1,0];
+[0,1,1] -> [0,1];
+[2,1,0,0] -> [2,1,0];
+[2,2,1,0,0] -> [2,1,0];
+[2,2,0] -> [2,0];
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun x0.
+  match (x0) with
+  | [] -> x0
+  | hd1::tl1 ->
+    if
+      match (tl1) with
+      | [] -> ( False )
+      | hd'4::tl'4 ->
+        (equal_to
+          ( hd'4, hd1 ))
+    then (f0 tl1)
+      else
+        ( Cons hd1
+          if
+            match (tl1)
+              with
+            | [] ->
+              ( True )
+            | hd'2::tl'2
+              ->
+              ( False )
+          then ( Nil )
+            else (f0 tl1)
+          )
+  
+7.9094 true
+
+[] -> [];
+[1] -> [1];
+[1,1] -> [1];
+[2,0] -> [2,0];
+[1,0,0] -> [1,0];
+[0,1,1] -> [0,1];
+[2,1,0,0] -> [2,1,0];
+[2,2,1,0,0] -> [2,1,0];
+[2,2,2,0] -> [2,0];
+[1,2,2,2,0] -> [1,2,0];
+=================================
+None
+[0] -> [0];
+[1] -> [1];
+[0,0] -> [0];
+[1,1] -> [1];
+[2,0] -> [2,0];
+[2,1,0,0] -> [2,1,0];
+[2,2,1,0,0] -> [2,1,0];
+[2,2,0] -> [2,0];
+[2,2,2,0] -> [2,0];
+[1,2,2,2,0] -> [1,2,0];
+=================================
+None
+[] -> [];
+[0] -> [0];
+[1,1] -> [1];
+[2,0] -> [2,0];
+[1,0,0] -> [1,0];
+[0,1,1] -> [0,1];
+[2,1,0,0] -> [2,1,0];
+[2,2,1,0,0] -> [2,1,0];
+[2,2,0] -> [2,0];
+[1,2,2,2,0] -> [1,2,0];
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun x0.
+  match (x0) with
+  | [] -> x0
+  | hd1::tl1 ->
+    if
+      match (tl1) with
+      | [] -> ( False )
+      | hd'4::tl'4 ->
+        (equal_to
+          ( hd'4, hd1 ))
+    then (f0 tl1)
+      else
+        ( Cons hd1
+          if
+            match (tl1)
+              with
+            | [] ->
+              ( True )
+            | hd'2::tl'2
+              ->
+              ( False )
+          then ( Nil )
+            else (f0 tl1)
+          )
+  
+104.5170 true
+
+[] -> [];
+[0] -> [0];
+[1] -> [1];
+[1,1] -> [1];
+[2,0] -> [2,0];
+[1,0,0] -> [1,0];
+[2,1,0,0] -> [2,1,0];
+[2,2,1,0,0] -> [2,1,0];
+[2,2,2,0] -> [2,0];
+[1,2,2,2,0] -> [1,2,0];
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun x0.
+  match (x0) with
+  | [] -> x0
+  | hd1::tl1 ->
+    if
+      match (tl1) with
+      | [] -> ( False )
+      | hd'4::tl'4 ->
+        (equal_to
+          ( hd'4, hd1 ))
+    then (f0 tl1)
+      else
+        ( Cons hd1
+          if
+            match (tl1)
+              with
+            | [] ->
+              ( True )
+            | hd'2::tl'2
+              ->
+              ( False )
+          then tl1
+            else (f0 tl1)
+          )
+  
+54.0666 true
+
+[] -> [];
+[0] -> [0];
+[1] -> [1];
+[0,0] -> [0];
+[2,0] -> [2,0];
+[1,0,0] -> [1,0];
+[0,1,1] -> [0,1];
+[2,2,1,0,0] -> [2,1,0];
+[2,2,0] -> [2,0];
+[2,2,2,0] -> [2,0];
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun x0.
+  match (x0) with
+  | [] -> x0
+  | hd1::tl1 ->
+    if
+      match (tl1) with
+      | [] -> ( False )
+      | hd'4::tl'4 ->
+        (equal_to
+          ( hd'4, hd1 ))
+    then (f0 tl1)
+      else
+        ( Cons hd1
+          if
+            match (tl1)
+              with
+            | [] ->
+              ( True )
+            | hd'2::tl'2
+              ->
+              ( False )
+          then tl1
+            else (f0 tl1)
+          )
+  
+104.3192 true
+
+[] -> [];
+[0,0] -> [0];
+[1,1] -> [1];
+[1,0,0] -> [1,0];
+[0,1,1] -> [0,1];
+[2,1,0,0] -> [2,1,0];
+[2,2,1,0,0] -> [2,1,0];
+[2,2,0] -> [2,0];
+[2,2,2,0] -> [2,0];
+[1,2,2,2,0] -> [1,2,0];
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun x0.
+  match (x0) with
+  | [] -> x0
+  | hd1::tl1 ->
+    if
+      match (tl1) with
+      | [] -> ( False )
+      | hd'4::tl'4 ->
+        (equal_to
+          ( hd'4, hd1 ))
+    then (f0 tl1)
+      else
+        ( Cons hd1
+          if
+            match (tl1)
+              with
+            | [] ->
+              ( True )
+            | hd'2::tl'2
+              ->
+              ( False )
+          then tl1
+            else (f0 tl1)
+          )
+  
+100.6090 true
+
+[] -> [];
+[0] -> [0];
+[1] -> [1];
+[0,0] -> [0];
+[1,1] -> [1];
+[2,0] -> [2,0];
+[2,2,1,0,0] -> [2,1,0];
+[2,2,0] -> [2,0];
+[2,2,2,0] -> [2,0];
+[1,2,2,2,0] -> [1,2,0];
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun x0.
+  match (x0) with
+  | [] -> x0
+  | hd1::tl1 ->
+    if
+      match (tl1) with
+      | [] -> ( False )
+      | hd'4::tl'4 ->
+        (equal_to
+          ( hd'4, hd1 ))
+    then (f0 tl1)
+      else
+        ( Cons hd1
+          if
+            match (tl1)
+              with
+            | [] ->
+              ( True )
+            | hd'2::tl'2
+              ->
+              ( False )
+          then tl1
+            else (f0 tl1)
+          )
+  
+73.5997 true
+
+[] -> [];
+[0] -> [0];
+[0,0] -> [0];
+[1,1] -> [1];
+[1,0,0] -> [1,0];
+[0,1,1] -> [0,1];
+[2,1,0,0] -> [2,1,0];
+[2,2,1,0,0] -> [2,1,0];
+[2,2,0] -> [2,0];
+[2,2,2,0] -> [2,0];
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun x0.
+  match (x0) with
+  | [] -> x0
+  | hd1::tl1 ->
+    if
+      match (tl1) with
+      | [] -> ( False )
+      | hd'4::tl'4 ->
+        (equal_to
+          ( hd'4, hd1 ))
+    then (f0 tl1)
+      else
+        ( Cons hd1
+          if
+            match (tl1)
+              with
+            | [] ->
+              ( True )
+            | hd'2::tl'2
+              ->
+              ( False )
+          then ( Nil )
+            else (f0 tl1)
+          )
+  
+16.0302 true
+
+[] -> [];
+[0] -> [0];
+[1] -> [1];
+[0,0] -> [0];
+[2,0] -> [2,0];
+[1,0,0] -> [1,0];
+[2,1,0,0] -> [2,1,0];
+[2,2,1,0,0] -> [2,1,0];
+[2,2,0] -> [2,0];
+[2,2,2,0] -> [2,0];
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun x0.
+  match (x0) with
+  | [] -> x0
+  | hd1::tl1 ->
+    if
+      match (tl1) with
+      | [] -> ( True )
+      | hd'4::tl'4 ->
+        (less_than
+          ( hd'4, hd1 ))
+    then
+      ( Cons hd1
+        if
+          match (tl1)
+            with
+          | [] ->
+            ( True )
+          | hd'2::tl'2 ->
+            ( False )
+        then tl1
+          else (f0 tl1) )
+      else (f0 tl1)
+  
+9.5927 false
+
+[0] -> [0];
+[1] -> [1];
+[0,0] -> [0];
+[1,1] -> [1];
+[1,0,0] -> [1,0];
+[0,1,1] -> [0,1];
+[2,1,0,0] -> [2,1,0];
+[2,2,1,0,0] -> [2,1,0];
+[2,2,2,0] -> [2,0];
+[1,2,2,2,0] -> [1,2,0];
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun x0.
+  match (x0) with
+  | [] -> x0
+  | hd1::tl1 ->
+    if
+      match (tl1) with
+      | [] -> ( False )
+      | hd'4::tl'4 ->
+        (equal_to
+          ( hd'4, hd1 ))
+    then (f0 tl1)
+      else
+        ( Cons hd1
+          (f0 tl1) )
+  
+81.1251 true
+
+[] -> [];
+[0] -> [0];
+[1] -> [1];
+[0,0] -> [0];
+[1,1] -> [1];
+[2,0] -> [2,0];
+[0,1,1] -> [0,1];
+[2,1,0,0] -> [2,1,0];
+[2,2,1,0,0] -> [2,1,0];
+[2,2,2,0] -> [2,0];
+[1,2,2,2,0] -> [1,2,0];
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun x0.
+  match (x0) with
+  | [] -> x0
+  | hd1::tl1 ->
+    if
+      match (tl1) with
+      | [] -> ( False )
+      | hd'4::tl'4 ->
+        (equal_to
+          ( hd'4, hd1 ))
+    then (f0 tl1)
+      else
+        ( Cons hd1
+          if
+            match (tl1)
+              with
+            | [] ->
+              ( True )
+            | hd'2::tl'2
+              ->
+              ( False )
+          then tl1
+            else (f0 tl1)
+          )
+  
+116.5400 true
+
+[1] -> [1];
+[0,0] -> [0];
+[1,1] -> [1];
+[2,0] -> [2,0];
+[1,0,0] -> [1,0];
+[0,1,1] -> [0,1];
+[2,1,0,0] -> [2,1,0];
+[2,2,1,0,0] -> [2,1,0];
+[2,2,0] -> [2,0];
+[2,2,2,0] -> [2,0];
+[1,2,2,2,0] -> [1,2,0];
+=================================
+None
+[] -> [];
+[0] -> [0];
+[1] -> [1];
+[0,0] -> [0];
+[2,0] -> [2,0];
+[1,0,0] -> [1,0];
+[0,1,1] -> [0,1];
+[2,1,0,0] -> [2,1,0];
+[2,2,1,0,0] -> [2,1,0];
+[2,2,2,0] -> [2,0];
+[1,2,2,2,0] -> [1,2,0];
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun x0.
+  match (x0) with
+  | [] -> x0
+  | hd1::tl1 ->
+    if
+      match (tl1) with
+      | [] -> ( False )
+      | hd'4::tl'4 ->
+        (equal_to
+          ( hd'4, hd1 ))
+    then (f0 tl1)
+      else
+        ( Cons hd1
+          if
+            match (tl1)
+              with
+            | [] ->
+              ( True )
+            | hd'2::tl'2
+              ->
+              ( False )
+          then tl1
+            else (f0 tl1)
+          )
+  
+78.3121 true
+
+[] -> [];
+[0] -> [0];
+[1] -> [1];
+[0,0] -> [0];
+[1,1] -> [1];
+[2,0] -> [2,0];
+[1,0,0] -> [1,0];
+[2,1,0,0] -> [2,1,0];
+[2,2,1,0,0] -> [2,1,0];
+[2,2,2,0] -> [2,0];
+[1,2,2,2,0] -> [1,2,0];
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun x0.
+  match (x0) with
+  | [] -> x0
+  | hd1::tl1 ->
+    if
+      match (tl1) with
+      | [] -> ( False )
+      | hd'4::tl'4 ->
+        (equal_to
+          ( hd'4, hd1 ))
+    then (f0 tl1)
+      else
+        ( Cons hd1
+          if
+            match (tl1)
+              with
+            | [] ->
+              ( True )
+            | hd'2::tl'2
+              ->
+              ( False )
+          then tl1
+            else (f0 tl1)
+          )
+  
+25.2080 true
+
+[] -> [];
+[0] -> [0];
+[1] -> [1];
+[1,1] -> [1];
+[1,0,0] -> [1,0];
+[0,1,1] -> [0,1];
+[2,1,0,0] -> [2,1,0];
+[2,2,1,0,0] -> [2,1,0];
+[2,2,0] -> [2,0];
+[2,2,2,0] -> [2,0];
+[1,2,2,2,0] -> [1,2,0];
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun x0.
+  match (x0) with
+  | [] -> x0
+  | hd1::tl1 ->
+    if
+      match (tl1) with
+      | [] -> ( False )
+      | hd'4::tl'4 ->
+        (equal_to
+          ( hd'4, hd1 ))
+    then (f0 tl1)
+      else
+        ( Cons hd1
+          if
+            match (tl1)
+              with
+            | [] ->
+              ( True )
+            | hd'2::tl'2
+              ->
+              ( False )
+          then tl1
+            else (f0 tl1)
+          )
+  
+69.5854 true
+
+[] -> [];
+[0] -> [0];
+[1] -> [1];
+[0,0] -> [0];
+[1,1] -> [1];
+[2,0] -> [2,0];
+[1,0,0] -> [1,0];
+[0,1,1] -> [0,1];
+[2,1,0,0] -> [2,1,0];
+[2,2,2,0] -> [2,0];
+[1,2,2,2,0] -> [1,2,0];
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun x0.
+  match (x0) with
+  | [] -> x0
+  | hd1::tl1 ->
+    if
+      match (tl1) with
+      | [] -> ( False )
+      | hd'4::tl'4 ->
+        (equal_to
+          ( hd'4, hd1 ))
+    then (f0 tl1)
+      else
+        ( Cons hd1
+          if
+            match (tl1)
+              with
+            | [] ->
+              ( True )
+            | hd'2::tl'2
+              ->
+              ( False )
+          then tl1
+            else (f0 tl1)
+          )
+  
+32.6819 true
+
+[] -> [];
+[0] -> [0];
+[0,0] -> [0];
+[1,1] -> [1];
+[2,0] -> [2,0];
+[1,0,0] -> [1,0];
+[0,1,1] -> [0,1];
+[2,1,0,0] -> [2,1,0];
+[2,2,1,0,0] -> [2,1,0];
+[2,2,0] -> [2,0];
+[1,2,2,2,0] -> [1,2,0];
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun x0.
+  match (x0) with
+  | [] -> x0
+  | hd1::tl1 ->
+    if
+      match (tl1) with
+      | [] -> ( False )
+      | hd'4::tl'4 ->
+        (equal_to
+          ( hd'4, hd1 ))
+    then (f0 tl1)
+      else
+        ( Cons hd1
+          if
+            match (tl1)
+              with
+            | [] ->
+              ( True )
+            | hd'2::tl'2
+              ->
+              ( False )
+          then ( Nil )
+            else (f0 tl1)
+          )
+  
+62.4618 true
+
+[] -> [];
+[0] -> [0];
+[1] -> [1];
+[0,0] -> [0];
+[1,1] -> [1];
+[2,0] -> [2,0];
+[1,0,0] -> [1,0];
+[0,1,1] -> [0,1];
+[2,2,1,0,0] -> [2,1,0];
+[2,2,0] -> [2,0];
+[1,2,2,2,0] -> [1,2,0];
+=================================
+None
+[] -> [];
+[0] -> [0];
+[1] -> [1];
+[0,0] -> [0];
+[2,0] -> [2,0];
+[1,0,0] -> [1,0];
+[0,1,1] -> [0,1];
+[2,1,0,0] -> [2,1,0];
+[2,2,0] -> [2,0];
+[2,2,2,0] -> [2,0];
+[1,2,2,2,0] -> [1,2,0];
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun x0.
+  match (x0) with
+  | [] -> x0
+  | hd1::tl1 ->
+    if
+      match (tl1) with
+      | [] -> ( False )
+      | hd'4::tl'4 ->
+        (equal_to
+          ( hd'4, hd1 ))
+    then (f0 tl1)
+      else
+        ( Cons hd1
+          if
+            match (tl1)
+              with
+            | [] ->
+              ( True )
+            | hd'2::tl'2
+              ->
+              ( False )
+          then tl1
+            else (f0 tl1)
+          )
+  
+48.2427 true
+
+[] -> [];
+[0] -> [0];
+[1] -> [1];
+[0,0] -> [0];
+[1,1] -> [1];
+[1,0,0] -> [1,0];
+[0,1,1] -> [0,1];
+[2,2,1,0,0] -> [2,1,0];
+[2,2,0] -> [2,0];
+[2,2,2,0] -> [2,0];
+[1,2,2,2,0] -> [1,2,0];
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun x0.
+  match (x0) with
+  | [] -> x0
+  | hd1::tl1 ->
+    if
+      match (tl1) with
+      | [] -> ( False )
+      | hd'4::tl'4 ->
+        (equal_to
+          ( hd'4, hd1 ))
+    then (f0 tl1)
+      else
+        ( Cons hd1
+          if
+            match (tl1)
+              with
+            | [] ->
+              ( True )
+            | hd'2::tl'2
+              ->
+              ( False )
+          then tl1
+            else (f0 tl1)
+          )
+  
+82.9314 true
+
+[] -> [];
+[0] -> [0];
+[1] -> [1];
+[0,0] -> [0];
+[1,1] -> [1];
+[2,0] -> [2,0];
+[1,0,0] -> [1,0];
+[0,1,1] -> [0,1];
+[2,1,0,0] -> [2,1,0];
+[2,2,1,0,0] -> [2,1,0];
+[2,2,0] -> [2,0];
+[2,2,2,0] -> [2,0];
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun x0.
+  match (x0) with
+  | [] -> x0
+  | hd1::tl1 ->
+    if
+      match (tl1) with
+      | [] -> ( False )
+      | hd'4::tl'4 ->
+        (equal_to
+          ( hd'4, hd1 ))
+    then (f0 tl1)
+      else
+        ( Cons hd1
+          if
+            match (tl1)
+              with
+            | [] ->
+              ( True )
+            | hd'2::tl'2
+              ->
+              ( False )
+          then tl1
+            else (f0 tl1)
+          )
+  
+47.0046 true
+
+[0] -> [0];
+[1] -> [1];
+[0,0] -> [0];
+[1,1] -> [1];
+[2,0] -> [2,0];
+[1,0,0] -> [1,0];
+[0,1,1] -> [0,1];
+[2,1,0,0] -> [2,1,0];
+[2,2,1,0,0] -> [2,1,0];
+[2,2,0] -> [2,0];
+[2,2,2,0] -> [2,0];
+[1,2,2,2,0] -> [1,2,0];
+=================================
+None
+[] -> [];
+[0] -> [0];
+[1] -> [1];
+[0,0] -> [0];
+[1,1] -> [1];
+[2,0] -> [2,0];
+[1,0,0] -> [1,0];
+[0,1,1] -> [0,1];
+[2,1,0,0] -> [2,1,0];
+[2,2,1,0,0] -> [2,1,0];
+[2,2,2,0] -> [2,0];
+[1,2,2,2,0] -> [1,2,0];
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun x0.
+  match (x0) with
+  | [] -> x0
+  | hd1::tl1 ->
+    if
+      match (tl1) with
+      | [] -> ( False )
+      | hd'4::tl'4 ->
+        (equal_to
+          ( hd'4, hd1 ))
+    then (f0 tl1)
+      else
+        ( Cons hd1
+          if
+            match (tl1)
+              with
+            | [] ->
+              ( True )
+            | hd'2::tl'2
+              ->
+              ( False )
+          then tl1
+            else (f0 tl1)
+          )
+  
+47.5731 true
+
+[] -> [];
+[0] -> [0];
+[0,0] -> [0];
+[1,1] -> [1];
+[2,0] -> [2,0];
+[1,0,0] -> [1,0];
+[0,1,1] -> [0,1];
+[2,1,0,0] -> [2,1,0];
+[2,2,1,0,0] -> [2,1,0];
+[2,2,0] -> [2,0];
+[2,2,2,0] -> [2,0];
+[1,2,2,2,0] -> [1,2,0];
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun x0.
+  match (x0) with
+  | [] -> x0
+  | hd1::tl1 ->
+    if
+      match (tl1) with
+      | [] -> ( False )
+      | hd'4::tl'4 ->
+        (equal_to
+          ( hd'4, hd1 ))
+    then (f0 tl1)
+      else
+        ( Cons hd1
+          if
+            match (tl1)
+              with
+            | [] ->
+              ( True )
+            | hd'2::tl'2
+              ->
+              ( False )
+          then ( Nil )
+            else (f0 tl1)
+          )
+  
+85.4068 true
+
+[] -> [];
+[0] -> [0];
+[1] -> [1];
+[0,0] -> [0];
+[1,1] -> [1];
+[2,0] -> [2,0];
+[1,0,0] -> [1,0];
+[0,1,1] -> [0,1];
+[2,2,1,0,0] -> [2,1,0];
+[2,2,0] -> [2,0];
+[2,2,2,0] -> [2,0];
+[1,2,2,2,0] -> [1,2,0];
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun x0.
+  match (x0) with
+  | [] -> x0
+  | hd1::tl1 ->
+    if
+      match (tl1) with
+      | [] -> ( False )
+      | hd'4::tl'4 ->
+        (equal_to
+          ( hd'4, hd1 ))
+    then (f0 tl1)
+      else
+        ( Cons hd1
+          if
+            match (tl1)
+              with
+            | [] ->
+              ( True )
+            | hd'2::tl'2
+              ->
+              ( False )
+          then tl1
+            else (f0 tl1)
+          )
+  
+61.3255 true
+
+[] -> [];
+[0] -> [0];
+[1] -> [1];
+[0,0] -> [0];
+[1,1] -> [1];
+[2,0] -> [2,0];
+[1,0,0] -> [1,0];
+[2,1,0,0] -> [2,1,0];
+[2,2,1,0,0] -> [2,1,0];
+[2,2,0] -> [2,0];
+[2,2,2,0] -> [2,0];
+[1,2,2,2,0] -> [1,2,0];
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun x0.
+  match (x0) with
+  | [] -> x0
+  | hd1::tl1 ->
+    if
+      match (tl1) with
+      | [] -> ( False )
+      | hd'4::tl'4 ->
+        (equal_to
+          ( hd'4, hd1 ))
+    then (f0 tl1)
+      else
+        ( Cons hd1
+          if
+            match (tl1)
+              with
+            | [] ->
+              ( True )
+            | hd'2::tl'2
+              ->
+              ( False )
+          then tl1
+            else (f0 tl1)
+          )
+  
+48.4011 true
+
+[] -> [];
+[0] -> [0];
+[1] -> [1];
+[0,0] -> [0];
+[1,1] -> [1];
+[2,0] -> [2,0];
+[0,1,1] -> [0,1];
+[2,1,0,0] -> [2,1,0];
+[2,2,1,0,0] -> [2,1,0];
+[2,2,0] -> [2,0];
+[2,2,2,0] -> [2,0];
+[1,2,2,2,0] -> [1,2,0];
+=================================
+None
+[] -> [];
+[1] -> [1];
+[0,0] -> [0];
+[1,1] -> [1];
+[2,0] -> [2,0];
+[1,0,0] -> [1,0];
+[0,1,1] -> [0,1];
+[2,1,0,0] -> [2,1,0];
+[2,2,1,0,0] -> [2,1,0];
+[2,2,0] -> [2,0];
+[2,2,2,0] -> [2,0];
+[1,2,2,2,0] -> [1,2,0];
+=================================
+None
+[] -> [];
+[0] -> [0];
+[1] -> [1];
+[0,0] -> [0];
+[2,0] -> [2,0];
+[1,0,0] -> [1,0];
+[0,1,1] -> [0,1];
+[2,1,0,0] -> [2,1,0];
+[2,2,1,0,0] -> [2,1,0];
+[2,2,0] -> [2,0];
+[2,2,2,0] -> [2,0];
+[1,2,2,2,0] -> [1,2,0];
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun x0.
+  match (x0) with
+  | [] -> x0
+  | hd1::tl1 ->
+    if
+      match (tl1) with
+      | [] -> ( False )
+      | hd'4::tl'4 ->
+        (equal_to
+          ( hd'4, hd1 ))
+    then (f0 tl1)
+      else
+        ( Cons hd1
+          if
+            match (tl1)
+              with
+            | [] ->
+              ( True )
+            | hd'2::tl'2
+              ->
+              ( False )
+          then tl1
+            else (f0 tl1)
+          )
+  
+88.0498 true
+
+[] -> [];
+[0] -> [0];
+[1] -> [1];
+[1,1] -> [1];
+[2,0] -> [2,0];
+[1,0,0] -> [1,0];
+[0,1,1] -> [0,1];
+[2,1,0,0] -> [2,1,0];
+[2,2,1,0,0] -> [2,1,0];
+[2,2,0] -> [2,0];
+[2,2,2,0] -> [2,0];
+[1,2,2,2,0] -> [1,2,0];
+=================================
+None
+[] -> [];
+[0] -> [0];
+[1] -> [1];
+[0,0] -> [0];
+[1,1] -> [1];
+[2,0] -> [2,0];
+[1,0,0] -> [1,0];
+[0,1,1] -> [0,1];
+[2,1,0,0] -> [2,1,0];
+[2,2,1,0,0] -> [2,1,0];
+[2,2,0] -> [2,0];
+[2,2,2,0] -> [2,0];
+[1,2,2,2,0] -> [1,2,0];
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun x0.
+  match (x0) with
+  | [] -> x0
+  | hd1::tl1 ->
+    if
+      match (tl1) with
+      | [] -> ( False )
+      | hd'4::tl'4 ->
+        (equal_to
+          ( hd'4, hd1 ))
+    then (f0 tl1)
+      else
+        ( Cons hd1
+          if
+            match (tl1)
+              with
+            | [] ->
+              ( True )
+            | hd'2::tl'2
+              ->
+              ( False )
+          then tl1
+            else (f0 tl1)
+          )
+  
+115.5592 true
+

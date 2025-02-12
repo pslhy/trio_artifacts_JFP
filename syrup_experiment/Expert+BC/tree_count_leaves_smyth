@@ -1,0 +1,1389 @@
+Node (Leaf (), T (), Leaf ()) -> 2;
+Leaf () -> 1;
+=================================
+(\sum -> (\tree_count_leaves -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_leaves = \tree -> case tree of
+    Node y1 -> 
+      2
+
+    Leaf y1 -> 
+      1 in tree_count_leaves) : BooleanTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+(\sum -> (\tree_count_leaves -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_leaves = \tree -> case tree of
+    Node y1 -> 
+      S (tree_count_leaves (#3.1 y1))
+
+    Leaf y1 -> 
+      1 in tree_count_leaves) : BooleanTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+0.065826 false false
+
+Node (Node (Leaf (), T (), Leaf ()), T (), Leaf ()) -> 3;
+Leaf () -> 1;
+=================================
+(\sum -> (\tree_count_leaves -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_leaves = \tree -> case tree of
+    Node y1 -> 
+      3
+
+    Leaf y1 -> 
+      1 in tree_count_leaves) : BooleanTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+(\sum -> (\tree_count_leaves -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_leaves = \tree -> case tree of
+    Node y1 -> 
+      S (tree_count_leaves (#3.1 y1))
+
+    Leaf y1 -> 
+      1 in tree_count_leaves) : BooleanTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+0.105021 false false
+
+Node (Leaf (), T (), Node (Leaf (), T (), Leaf ())) -> 3;
+Leaf () -> 1;
+=================================
+(\sum -> (\tree_count_leaves -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_leaves = \tree -> case tree of
+    Node y1 -> 
+      3
+
+    Leaf y1 -> 
+      1 in tree_count_leaves) : BooleanTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+(\sum -> (\tree_count_leaves -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_leaves = \tree -> case tree of
+    Node y1 -> 
+      S (tree_count_leaves (#3.3 y1))
+
+    Leaf y1 -> 
+      1 in tree_count_leaves) : BooleanTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+0.0488290000001 false false
+
+Node (Node (Node (Leaf (), T (), Leaf ()), T (), Leaf ()), T (), Leaf ()) -> 4;
+Leaf () -> 1;
+=================================
+(\sum -> (\tree_count_leaves -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_leaves = \tree -> case tree of
+    Node y1 -> 
+      S (tree_count_leaves (#3.1 y1))
+
+    Leaf y1 -> 
+      1 in tree_count_leaves) : BooleanTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+(\sum -> (\tree_count_leaves -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_leaves = \tree -> case tree of
+    Node y1 -> 
+      S (tree_count_leaves (#3.1 y1))
+
+    Leaf y1 -> 
+      1 in tree_count_leaves) : BooleanTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+0.0279579999999 false false
+
+Node (Node (Leaf (), T (), Leaf ()), T (), Node (Leaf (), T (), Leaf ())) -> 4;
+Leaf () -> 1;
+=================================
+(\sum -> (\tree_count_leaves -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_leaves = \tree -> case tree of
+    Node y1 -> 
+      4
+
+    Leaf y1 -> 
+      1 in tree_count_leaves) : BooleanTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+0.028556 false false
+
+Node (Node (Leaf (), T (), Leaf ()), T (), Node (Node (Leaf (), T (), Leaf ()), T (), Node (Leaf (), T (), Leaf ()))) -> 6;
+Leaf () -> 1;
+=================================
+(\sum -> (\tree_count_leaves -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_leaves = \tree -> case tree of
+    Node y1 -> 
+      6
+
+    Leaf y1 -> 
+      1 in tree_count_leaves) : BooleanTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+0.0453749999999 false false
+
+Node (Leaf (), T (), Leaf ()) -> 2;
+Node (Node (Leaf (), T (), Leaf ()), T (), Leaf ()) -> 3;
+Leaf () -> 1;
+=================================
+(\sum -> (\tree_count_leaves -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_leaves = \tree -> S
+    (case tree of
+      Node y1 -> 
+        tree_count_leaves (#3.1 y1)
+
+      Leaf y1 -> 
+        0) in tree_count_leaves) : BooleanTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+(\sum -> (\tree_count_leaves -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_leaves = \tree -> S
+    (case tree of
+      Node y1 -> 
+        tree_count_leaves (#3.1 y1)
+
+      Leaf y1 -> 
+        0) in tree_count_leaves) : BooleanTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+0.0723190000001 false false
+
+Node (Leaf (), T (), Node (Leaf (), T (), Leaf ())) -> 3;
+Node (Node (Leaf (), T (), Leaf ()), T (), Node (Node (Leaf (), T (), Leaf ()), T (), Node (Leaf (), T (), Leaf ()))) -> 6;
+Leaf () -> 1;
+=================================
+(\sum -> (\tree_count_leaves -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_leaves = \tree -> case tree of
+    Node y1 -> 
+      sum (tree_count_leaves (#3.1 y1)) (tree_count_leaves (#3.3 y1))
+
+    Leaf y1 -> 
+      sum 1 0 in tree_count_leaves) : BooleanTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+(\sum -> (\tree_count_leaves -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_leaves = \tree -> case tree of
+    Node y1 -> 
+      sum (tree_count_leaves (#3.1 y1)) (tree_count_leaves (#3.3 y1))
+
+    Leaf y1 -> 
+      sum 1 0 in tree_count_leaves) : BooleanTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+4.197685 true true
+
+Node (Leaf (), T (), Leaf ()) -> 2;
+Node (Node (Node (Leaf (), T (), Leaf ()), T (), Leaf ()), T (), Leaf ()) -> 4;
+Leaf () -> 1;
+=================================
+(\sum -> (\tree_count_leaves -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_leaves = \tree -> S
+    (case tree of
+      Node y1 -> 
+        tree_count_leaves (#3.1 y1)
+
+      Leaf y1 -> 
+        0) in tree_count_leaves) : BooleanTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+(\sum -> (\tree_count_leaves -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_leaves = \tree -> S
+    (case tree of
+      Node y1 -> 
+        tree_count_leaves (#3.1 y1)
+
+      Leaf y1 -> 
+        0) in tree_count_leaves) : BooleanTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+0.0288009999999 false false
+
+Node (Leaf (), T (), Leaf ()) -> 2;
+Node (Node (Leaf (), T (), Leaf ()), T (), Node (Leaf (), T (), Leaf ())) -> 4;
+Leaf () -> 1;
+=================================
+(\sum -> (\tree_count_leaves -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_leaves = \tree -> case tree of
+    Node y1 -> 
+      sum (tree_count_leaves (#3.1 y1)) (tree_count_leaves (#3.1 y1))
+
+    Leaf y1 -> 
+      sum 1 0 in tree_count_leaves) : BooleanTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+(\sum -> (\tree_count_leaves -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_leaves = \tree -> case tree of
+    Node y1 -> 
+      sum (tree_count_leaves (#3.1 y1)) (tree_count_leaves (#3.1 y1))
+
+    Leaf y1 -> 
+      sum 1 0 in tree_count_leaves) : BooleanTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+1.090553 false false
+
+Node (Node (Leaf (), T (), Leaf ()), T (), Node (Leaf (), T (), Leaf ())) -> 4;
+Node (Node (Leaf (), T (), Leaf ()), T (), Node (Node (Leaf (), T (), Leaf ()), T (), Node (Leaf (), T (), Leaf ()))) -> 6;
+Leaf () -> 1;
+=================================
+(\sum -> (\tree_count_leaves -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_leaves = \tree -> case tree of
+    Node y1 -> 
+      sum (tree_count_leaves (#3.1 y1)) (tree_count_leaves (#3.3 y1))
+
+    Leaf y1 -> 
+      sum 1 0 in tree_count_leaves) : BooleanTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+(\sum -> (\tree_count_leaves -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_leaves = \tree -> case tree of
+    Node y1 -> 
+      sum (tree_count_leaves (#3.1 y1)) (tree_count_leaves (#3.3 y1))
+
+    Leaf y1 -> 
+      sum 1 0 in tree_count_leaves) : BooleanTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+6.361441 true true
+
+Node (Node (Leaf (), T (), Leaf ()), T (), Leaf ()) -> 3;
+Node (Leaf (), T (), Node (Leaf (), T (), Leaf ())) -> 3;
+Leaf () -> 1;
+=================================
+(\sum -> (\tree_count_leaves -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_leaves = \tree -> case tree of
+    Node y1 -> 
+      3
+
+    Leaf y1 -> 
+      1 in tree_count_leaves) : BooleanTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+0.0290520000001 false false
+
+Node (Node (Leaf (), T (), Leaf ()), T (), Leaf ()) -> 3;
+Node (Node (Node (Leaf (), T (), Leaf ()), T (), Leaf ()), T (), Leaf ()) -> 4;
+Leaf () -> 1;
+=================================
+(\sum -> (\tree_count_leaves -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_leaves = \tree -> S
+    (case tree of
+      Node y1 -> 
+        tree_count_leaves (#3.1 y1)
+
+      Leaf y1 -> 
+        0) in tree_count_leaves) : BooleanTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+(\sum -> (\tree_count_leaves -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_leaves = \tree -> S
+    (case tree of
+      Node y1 -> 
+        tree_count_leaves (#3.1 y1)
+
+      Leaf y1 -> 
+        0) in tree_count_leaves) : BooleanTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+0.0348349999999 false false
+
+Node (Leaf (), T (), Node (Leaf (), T (), Leaf ())) -> 3;
+Node (Node (Leaf (), T (), Leaf ()), T (), Node (Leaf (), T (), Leaf ())) -> 4;
+Leaf () -> 1;
+=================================
+(\sum -> (\tree_count_leaves -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_leaves = \tree -> case tree of
+    Node y1 -> 
+      sum (tree_count_leaves (#3.1 y1)) (tree_count_leaves (#3.3 y1))
+
+    Leaf y1 -> 
+      sum 1 0 in tree_count_leaves) : BooleanTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+(\sum -> (\tree_count_leaves -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_leaves = \tree -> case tree of
+    Node y1 -> 
+      sum (tree_count_leaves (#3.1 y1)) (tree_count_leaves (#3.3 y1))
+
+    Leaf y1 -> 
+      sum 1 0 in tree_count_leaves) : BooleanTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+2.600036 true true
+
+Node (Node (Leaf (), T (), Leaf ()), T (), Leaf ()) -> 3;
+Node (Node (Leaf (), T (), Leaf ()), T (), Node (Node (Leaf (), T (), Leaf ()), T (), Node (Leaf (), T (), Leaf ()))) -> 6;
+Leaf () -> 1;
+=================================
+(\sum -> (\tree_count_leaves -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_leaves = \tree -> case tree of
+    Node y1 -> 
+      sum (tree_count_leaves (#3.1 y1)) (tree_count_leaves (#3.3 y1))
+
+    Leaf y1 -> 
+      sum 1 0 in tree_count_leaves) : BooleanTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+(\sum -> (\tree_count_leaves -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_leaves = \tree -> case tree of
+    Node y1 -> 
+      sum (tree_count_leaves (#3.1 y1)) (tree_count_leaves (#3.3 y1))
+
+    Leaf y1 -> 
+      sum 1 0 in tree_count_leaves) : BooleanTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+4.228728 true true
+
+Node (Leaf (), T (), Node (Leaf (), T (), Leaf ())) -> 3;
+Node (Node (Node (Leaf (), T (), Leaf ()), T (), Leaf ()), T (), Leaf ()) -> 4;
+Leaf () -> 1;
+=================================
+(\sum -> (\tree_count_leaves -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_leaves = \tree -> case tree of
+    Node y1 -> 
+      sum (tree_count_leaves (#3.1 y1)) (tree_count_leaves (#3.3 y1))
+
+    Leaf y1 -> 
+      sum 1 0 in tree_count_leaves) : BooleanTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+(\sum -> (\tree_count_leaves -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_leaves = \tree -> case tree of
+    Node y1 -> 
+      sum (tree_count_leaves (#3.1 y1)) (tree_count_leaves (#3.3 y1))
+
+    Leaf y1 -> 
+      sum 1 0 in tree_count_leaves) : BooleanTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+3.683643 true true
+
+Node (Node (Leaf (), T (), Leaf ()), T (), Leaf ()) -> 3;
+Node (Leaf (), T (), Node (Leaf (), T (), Leaf ())) -> 3;
+Node (Node (Node (Leaf (), T (), Leaf ()), T (), Leaf ()), T (), Leaf ()) -> 4;
+Leaf () -> 1;
+=================================
+(\sum -> (\tree_count_leaves -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_leaves = \tree -> case tree of
+    Node y1 -> 
+      sum (tree_count_leaves (#3.1 y1)) (tree_count_leaves (#3.3 y1))
+
+    Leaf y1 -> 
+      sum 1 0 in tree_count_leaves) : BooleanTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+(\sum -> (\tree_count_leaves -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_leaves = \tree -> case tree of
+    Node y1 -> 
+      sum (tree_count_leaves (#3.1 y1)) (tree_count_leaves (#3.3 y1))
+
+    Leaf y1 -> 
+      sum 1 0 in tree_count_leaves) : BooleanTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+4.702685 true true
+
+Node (Node (Leaf (), T (), Leaf ()), T (), Leaf ()) -> 3;
+Node (Node (Node (Leaf (), T (), Leaf ()), T (), Leaf ()), T (), Leaf ()) -> 4;
+Node (Node (Leaf (), T (), Leaf ()), T (), Node (Leaf (), T (), Leaf ())) -> 4;
+Leaf () -> 1;
+=================================
+(\sum -> (\tree_count_leaves -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_leaves = \tree -> case tree of
+    Node y1 -> 
+      sum (tree_count_leaves (#3.1 y1)) (tree_count_leaves (#3.3 y1))
+
+    Leaf y1 -> 
+      sum 1 0 in tree_count_leaves) : BooleanTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+(\sum -> (\tree_count_leaves -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_leaves = \tree -> case tree of
+    Node y1 -> 
+      sum (tree_count_leaves (#3.1 y1)) (tree_count_leaves (#3.3 y1))
+
+    Leaf y1 -> 
+      sum 1 0 in tree_count_leaves) : BooleanTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+5.404508 true true
+
+Node (Leaf (), T (), Node (Leaf (), T (), Leaf ())) -> 3;
+Node (Node (Leaf (), T (), Leaf ()), T (), Node (Leaf (), T (), Leaf ())) -> 4;
+Node (Node (Leaf (), T (), Leaf ()), T (), Node (Node (Leaf (), T (), Leaf ()), T (), Node (Leaf (), T (), Leaf ()))) -> 6;
+Leaf () -> 1;
+=================================
+(\sum -> (\tree_count_leaves -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_leaves = \tree -> case tree of
+    Node y1 -> 
+      sum (tree_count_leaves (#3.1 y1)) (tree_count_leaves (#3.3 y1))
+
+    Leaf y1 -> 
+      sum 1 0 in tree_count_leaves) : BooleanTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+(\sum -> (\tree_count_leaves -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_leaves = \tree -> case tree of
+    Node y1 -> 
+      sum (tree_count_leaves (#3.1 y1)) (tree_count_leaves (#3.3 y1))
+
+    Leaf y1 -> 
+      sum 1 0 in tree_count_leaves) : BooleanTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+6.060461 true true
+
+Node (Leaf (), T (), Leaf ()) -> 2;
+Node (Node (Leaf (), T (), Leaf ()), T (), Leaf ()) -> 3;
+Node (Node (Leaf (), T (), Leaf ()), T (), Node (Node (Leaf (), T (), Leaf ()), T (), Node (Leaf (), T (), Leaf ()))) -> 6;
+Leaf () -> 1;
+=================================
+(\sum -> (\tree_count_leaves -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_leaves = \tree -> case tree of
+    Node y1 -> 
+      sum (tree_count_leaves (#3.1 y1)) (tree_count_leaves (#3.3 y1))
+
+    Leaf y1 -> 
+      sum 1 0 in tree_count_leaves) : BooleanTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+(\sum -> (\tree_count_leaves -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_leaves = \tree -> case tree of
+    Node y1 -> 
+      sum (tree_count_leaves (#3.1 y1)) (tree_count_leaves (#3.3 y1))
+
+    Leaf y1 -> 
+      sum 1 0 in tree_count_leaves) : BooleanTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+3.426966 true true
+
+Node (Leaf (), T (), Leaf ()) -> 2;
+Node (Leaf (), T (), Node (Leaf (), T (), Leaf ())) -> 3;
+Node (Node (Node (Leaf (), T (), Leaf ()), T (), Leaf ()), T (), Leaf ()) -> 4;
+Leaf () -> 1;
+=================================
+(\sum -> (\tree_count_leaves -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_leaves = \tree -> case tree of
+    Node y1 -> 
+      sum (tree_count_leaves (#3.1 y1)) (tree_count_leaves (#3.3 y1))
+
+    Leaf y1 -> 
+      sum 1 0 in tree_count_leaves) : BooleanTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+(\sum -> (\tree_count_leaves -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_leaves = \tree -> case tree of
+    Node y1 -> 
+      sum (tree_count_leaves (#3.1 y1)) (tree_count_leaves (#3.3 y1))
+
+    Leaf y1 -> 
+      sum 1 0 in tree_count_leaves) : BooleanTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+3.185812 true true
+
+Node (Leaf (), T (), Node (Leaf (), T (), Leaf ())) -> 3;
+Node (Node (Node (Leaf (), T (), Leaf ()), T (), Leaf ()), T (), Leaf ()) -> 4;
+Node (Node (Leaf (), T (), Leaf ()), T (), Node (Node (Leaf (), T (), Leaf ()), T (), Node (Leaf (), T (), Leaf ()))) -> 6;
+Leaf () -> 1;
+=================================
+(\sum -> (\tree_count_leaves -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_leaves = \tree -> case tree of
+    Node y1 -> 
+      sum (tree_count_leaves (#3.1 y1)) (tree_count_leaves (#3.3 y1))
+
+    Leaf y1 -> 
+      sum 1 0 in tree_count_leaves) : BooleanTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+(\sum -> (\tree_count_leaves -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_leaves = \tree -> case tree of
+    Node y1 -> 
+      sum (tree_count_leaves (#3.1 y1)) (tree_count_leaves (#3.3 y1))
+
+    Leaf y1 -> 
+      sum 1 0 in tree_count_leaves) : BooleanTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+6.746999 true true
+
+Node (Node (Node (Leaf (), T (), Leaf ()), T (), Leaf ()), T (), Leaf ()) -> 4;
+Node (Node (Leaf (), T (), Leaf ()), T (), Node (Leaf (), T (), Leaf ())) -> 4;
+Node (Node (Leaf (), T (), Leaf ()), T (), Node (Node (Leaf (), T (), Leaf ()), T (), Node (Leaf (), T (), Leaf ()))) -> 6;
+Leaf () -> 1;
+=================================
+(\sum -> (\tree_count_leaves -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_leaves = \tree -> case tree of
+    Node y1 -> 
+      sum (tree_count_leaves (#3.1 y1)) (tree_count_leaves (#3.3 y1))
+
+    Leaf y1 -> 
+      sum 1 0 in tree_count_leaves) : BooleanTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+(\sum -> (\tree_count_leaves -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_leaves = \tree -> case tree of
+    Node y1 -> 
+      sum (tree_count_leaves (#3.1 y1)) (tree_count_leaves (#3.3 y1))
+
+    Leaf y1 -> 
+      sum 1 0 in tree_count_leaves) : BooleanTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+9.983988 true true
+
+Node (Node (Leaf (), T (), Leaf ()), T (), Leaf ()) -> 3;
+Node (Node (Node (Leaf (), T (), Leaf ()), T (), Leaf ()), T (), Leaf ()) -> 4;
+Node (Node (Leaf (), T (), Leaf ()), T (), Node (Node (Leaf (), T (), Leaf ()), T (), Node (Leaf (), T (), Leaf ()))) -> 6;
+Leaf () -> 1;
+=================================
+(\sum -> (\tree_count_leaves -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_leaves = \tree -> case tree of
+    Node y1 -> 
+      sum (tree_count_leaves (#3.1 y1)) (tree_count_leaves (#3.3 y1))
+
+    Leaf y1 -> 
+      sum 1 0 in tree_count_leaves) : BooleanTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+(\sum -> (\tree_count_leaves -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_leaves = \tree -> case tree of
+    Node y1 -> 
+      sum (tree_count_leaves (#3.1 y1)) (tree_count_leaves (#3.3 y1))
+
+    Leaf y1 -> 
+      sum 1 0 in tree_count_leaves) : BooleanTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+6.297935 true true
+
+Node (Leaf (), T (), Node (Leaf (), T (), Leaf ())) -> 3;
+Node (Node (Node (Leaf (), T (), Leaf ()), T (), Leaf ()), T (), Leaf ()) -> 4;
+Node (Node (Leaf (), T (), Leaf ()), T (), Node (Leaf (), T (), Leaf ())) -> 4;
+Leaf () -> 1;
+=================================
+(\sum -> (\tree_count_leaves -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_leaves = \tree -> case tree of
+    Node y1 -> 
+      sum (tree_count_leaves (#3.1 y1)) (tree_count_leaves (#3.3 y1))
+
+    Leaf y1 -> 
+      sum 1 0 in tree_count_leaves) : BooleanTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+(\sum -> (\tree_count_leaves -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_leaves = \tree -> case tree of
+    Node y1 -> 
+      sum (tree_count_leaves (#3.1 y1)) (tree_count_leaves (#3.3 y1))
+
+    Leaf y1 -> 
+      sum 1 0 in tree_count_leaves) : BooleanTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+5.681929 true true
+
+Node (Node (Leaf (), T (), Leaf ()), T (), Leaf ()) -> 3;
+Node (Node (Leaf (), T (), Leaf ()), T (), Node (Leaf (), T (), Leaf ())) -> 4;
+Node (Node (Leaf (), T (), Leaf ()), T (), Node (Node (Leaf (), T (), Leaf ()), T (), Node (Leaf (), T (), Leaf ()))) -> 6;
+Leaf () -> 1;
+=================================
+(\sum -> (\tree_count_leaves -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_leaves = \tree -> case tree of
+    Node y1 -> 
+      sum (tree_count_leaves (#3.1 y1)) (tree_count_leaves (#3.3 y1))
+
+    Leaf y1 -> 
+      sum 1 0 in tree_count_leaves) : BooleanTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+(\sum -> (\tree_count_leaves -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_leaves = \tree -> case tree of
+    Node y1 -> 
+      sum (tree_count_leaves (#3.1 y1)) (tree_count_leaves (#3.3 y1))
+
+    Leaf y1 -> 
+      sum 1 0 in tree_count_leaves) : BooleanTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+6.066687 true true
+
+Node (Node (Leaf (), T (), Leaf ()), T (), Leaf ()) -> 3;
+Node (Leaf (), T (), Node (Leaf (), T (), Leaf ())) -> 3;
+Node (Node (Node (Leaf (), T (), Leaf ()), T (), Leaf ()), T (), Leaf ()) -> 4;
+Node (Node (Leaf (), T (), Leaf ()), T (), Node (Node (Leaf (), T (), Leaf ()), T (), Node (Leaf (), T (), Leaf ()))) -> 6;
+Leaf () -> 1;
+=================================
+(\sum -> (\tree_count_leaves -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_leaves = \tree -> case tree of
+    Node y1 -> 
+      sum (tree_count_leaves (#3.1 y1)) (tree_count_leaves (#3.3 y1))
+
+    Leaf y1 -> 
+      sum 1 0 in tree_count_leaves) : BooleanTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+(\sum -> (\tree_count_leaves -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_leaves = \tree -> case tree of
+    Node y1 -> 
+      sum (tree_count_leaves (#3.1 y1)) (tree_count_leaves (#3.3 y1))
+
+    Leaf y1 -> 
+      sum 1 0 in tree_count_leaves) : BooleanTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+8.373426 true true
+
+Node (Leaf (), T (), Leaf ()) -> 2;
+Node (Node (Leaf (), T (), Leaf ()), T (), Leaf ()) -> 3;
+Node (Leaf (), T (), Node (Leaf (), T (), Leaf ())) -> 3;
+Node (Node (Leaf (), T (), Leaf ()), T (), Node (Leaf (), T (), Leaf ())) -> 4;
+Leaf () -> 1;
+=================================
+(\sum -> (\tree_count_leaves -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_leaves = \tree -> case tree of
+    Node y1 -> 
+      sum (tree_count_leaves (#3.1 y1)) (tree_count_leaves (#3.3 y1))
+
+    Leaf y1 -> 
+      sum 1 0 in tree_count_leaves) : BooleanTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+(\sum -> (\tree_count_leaves -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_leaves = \tree -> case tree of
+    Node y1 -> 
+      sum (tree_count_leaves (#3.1 y1)) (tree_count_leaves (#3.3 y1))
+
+    Leaf y1 -> 
+      sum 1 0 in tree_count_leaves) : BooleanTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+2.82575 true true
+
+Node (Leaf (), T (), Leaf ()) -> 2;
+Node (Node (Leaf (), T (), Leaf ()), T (), Leaf ()) -> 3;
+Node (Leaf (), T (), Node (Leaf (), T (), Leaf ())) -> 3;
+Node (Node (Leaf (), T (), Leaf ()), T (), Node (Node (Leaf (), T (), Leaf ()), T (), Node (Leaf (), T (), Leaf ()))) -> 6;
+Leaf () -> 1;
+=================================
+(\sum -> (\tree_count_leaves -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_leaves = \tree -> case tree of
+    Node y1 -> 
+      sum (tree_count_leaves (#3.1 y1)) (tree_count_leaves (#3.3 y1))
+
+    Leaf y1 -> 
+      sum 1 0 in tree_count_leaves) : BooleanTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+(\sum -> (\tree_count_leaves -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_leaves = \tree -> case tree of
+    Node y1 -> 
+      sum (tree_count_leaves (#3.1 y1)) (tree_count_leaves (#3.3 y1))
+
+    Leaf y1 -> 
+      sum 1 0 in tree_count_leaves) : BooleanTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+4.129993 true true
+
+Node (Node (Leaf (), T (), Leaf ()), T (), Leaf ()) -> 3;
+Node (Node (Node (Leaf (), T (), Leaf ()), T (), Leaf ()), T (), Leaf ()) -> 4;
+Node (Node (Leaf (), T (), Leaf ()), T (), Node (Leaf (), T (), Leaf ())) -> 4;
+Node (Node (Leaf (), T (), Leaf ()), T (), Node (Node (Leaf (), T (), Leaf ()), T (), Node (Leaf (), T (), Leaf ()))) -> 6;
+Leaf () -> 1;
+=================================
+(\sum -> (\tree_count_leaves -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_leaves = \tree -> case tree of
+    Node y1 -> 
+      sum (tree_count_leaves (#3.1 y1)) (tree_count_leaves (#3.3 y1))
+
+    Leaf y1 -> 
+      sum 1 0 in tree_count_leaves) : BooleanTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+(\sum -> (\tree_count_leaves -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_leaves = \tree -> case tree of
+    Node y1 -> 
+      sum (tree_count_leaves (#3.1 y1)) (tree_count_leaves (#3.3 y1))
+
+    Leaf y1 -> 
+      sum 1 0 in tree_count_leaves) : BooleanTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+8.657202 true true
+
+Node (Leaf (), T (), Leaf ()) -> 2;
+Node (Node (Leaf (), T (), Leaf ()), T (), Leaf ()) -> 3;
+Node (Node (Node (Leaf (), T (), Leaf ()), T (), Leaf ()), T (), Leaf ()) -> 4;
+Node (Node (Leaf (), T (), Leaf ()), T (), Node (Node (Leaf (), T (), Leaf ()), T (), Node (Leaf (), T (), Leaf ()))) -> 6;
+Leaf () -> 1;
+=================================
+(\sum -> (\tree_count_leaves -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_leaves = \tree -> case tree of
+    Node y1 -> 
+      sum (tree_count_leaves (#3.1 y1)) (tree_count_leaves (#3.3 y1))
+
+    Leaf y1 -> 
+      sum 1 0 in tree_count_leaves) : BooleanTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+(\sum -> (\tree_count_leaves -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_leaves = \tree -> case tree of
+    Node y1 -> 
+      sum (tree_count_leaves (#3.1 y1)) (tree_count_leaves (#3.3 y1))
+
+    Leaf y1 -> 
+      sum 1 0 in tree_count_leaves) : BooleanTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+5.084086 true true
+
+Node (Leaf (), T (), Leaf ()) -> 2;
+Node (Node (Leaf (), T (), Leaf ()), T (), Leaf ()) -> 3;
+Node (Node (Leaf (), T (), Leaf ()), T (), Node (Leaf (), T (), Leaf ())) -> 4;
+Node (Node (Leaf (), T (), Leaf ()), T (), Node (Node (Leaf (), T (), Leaf ()), T (), Node (Leaf (), T (), Leaf ()))) -> 6;
+Leaf () -> 1;
+=================================
+(\sum -> (\tree_count_leaves -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_leaves = \tree -> case tree of
+    Node y1 -> 
+      sum (tree_count_leaves (#3.1 y1)) (tree_count_leaves (#3.3 y1))
+
+    Leaf y1 -> 
+      sum 1 0 in tree_count_leaves) : BooleanTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+(\sum -> (\tree_count_leaves -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_leaves = \tree -> case tree of
+    Node y1 -> 
+      sum (tree_count_leaves (#3.1 y1)) (tree_count_leaves (#3.3 y1))
+
+    Leaf y1 -> 
+      sum 1 0 in tree_count_leaves) : BooleanTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+4.630173 true true
+
+Node (Leaf (), T (), Leaf ()) -> 2;
+Node (Leaf (), T (), Node (Leaf (), T (), Leaf ())) -> 3;
+Node (Node (Node (Leaf (), T (), Leaf ()), T (), Leaf ()), T (), Leaf ()) -> 4;
+Node (Node (Leaf (), T (), Leaf ()), T (), Node (Leaf (), T (), Leaf ())) -> 4;
+Leaf () -> 1;
+=================================
+(\sum -> (\tree_count_leaves -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_leaves = \tree -> case tree of
+    Node y1 -> 
+      sum (tree_count_leaves (#3.1 y1)) (tree_count_leaves (#3.3 y1))
+
+    Leaf y1 -> 
+      sum 1 0 in tree_count_leaves) : BooleanTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+(\sum -> (\tree_count_leaves -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_leaves = \tree -> case tree of
+    Node y1 -> 
+      sum (tree_count_leaves (#3.1 y1)) (tree_count_leaves (#3.3 y1))
+
+    Leaf y1 -> 
+      sum 1 0 in tree_count_leaves) : BooleanTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+3.994294 true true
+
+Node (Leaf (), T (), Leaf ()) -> 2;
+Node (Leaf (), T (), Node (Leaf (), T (), Leaf ())) -> 3;
+Node (Node (Node (Leaf (), T (), Leaf ()), T (), Leaf ()), T (), Leaf ()) -> 4;
+Node (Node (Leaf (), T (), Leaf ()), T (), Node (Node (Leaf (), T (), Leaf ()), T (), Node (Leaf (), T (), Leaf ()))) -> 6;
+Leaf () -> 1;
+=================================
+(\sum -> (\tree_count_leaves -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_leaves = \tree -> case tree of
+    Node y1 -> 
+      sum (tree_count_leaves (#3.1 y1)) (tree_count_leaves (#3.3 y1))
+
+    Leaf y1 -> 
+      sum 1 0 in tree_count_leaves) : BooleanTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+(\sum -> (\tree_count_leaves -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_leaves = \tree -> case tree of
+    Node y1 -> 
+      sum (tree_count_leaves (#3.1 y1)) (tree_count_leaves (#3.3 y1))
+
+    Leaf y1 -> 
+      sum 1 0 in tree_count_leaves) : BooleanTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+4.480601 true true
+
+Node (Leaf (), T (), Leaf ()) -> 2;
+Node (Leaf (), T (), Node (Leaf (), T (), Leaf ())) -> 3;
+Node (Node (Leaf (), T (), Leaf ()), T (), Node (Leaf (), T (), Leaf ())) -> 4;
+Node (Node (Leaf (), T (), Leaf ()), T (), Node (Node (Leaf (), T (), Leaf ()), T (), Node (Leaf (), T (), Leaf ()))) -> 6;
+Leaf () -> 1;
+=================================
+(\sum -> (\tree_count_leaves -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_leaves = \tree -> case tree of
+    Node y1 -> 
+      sum (tree_count_leaves (#3.1 y1)) (tree_count_leaves (#3.3 y1))
+
+    Leaf y1 -> 
+      sum 1 0 in tree_count_leaves) : BooleanTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+(\sum -> (\tree_count_leaves -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_leaves = \tree -> case tree of
+    Node y1 -> 
+      sum (tree_count_leaves (#3.1 y1)) (tree_count_leaves (#3.3 y1))
+
+    Leaf y1 -> 
+      sum 1 0 in tree_count_leaves) : BooleanTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+4.732535 true true
+
+Node (Node (Leaf (), T (), Leaf ()), T (), Leaf ()) -> 3;
+Node (Leaf (), T (), Node (Leaf (), T (), Leaf ())) -> 3;
+Node (Node (Node (Leaf (), T (), Leaf ()), T (), Leaf ()), T (), Leaf ()) -> 4;
+Node (Node (Leaf (), T (), Leaf ()), T (), Node (Leaf (), T (), Leaf ())) -> 4;
+Leaf () -> 1;
+=================================
+(\sum -> (\tree_count_leaves -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_leaves = \tree -> case tree of
+    Node y1 -> 
+      sum (tree_count_leaves (#3.1 y1)) (tree_count_leaves (#3.3 y1))
+
+    Leaf y1 -> 
+      sum 1 0 in tree_count_leaves) : BooleanTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+(\sum -> (\tree_count_leaves -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_leaves = \tree -> case tree of
+    Node y1 -> 
+      sum (tree_count_leaves (#3.1 y1)) (tree_count_leaves (#3.3 y1))
+
+    Leaf y1 -> 
+      sum 1 0 in tree_count_leaves) : BooleanTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+6.417581 true true
+
+Node (Leaf (), T (), Leaf ()) -> 2;
+Node (Node (Leaf (), T (), Leaf ()), T (), Leaf ()) -> 3;
+Node (Leaf (), T (), Node (Leaf (), T (), Leaf ())) -> 3;
+Node (Node (Node (Leaf (), T (), Leaf ()), T (), Leaf ()), T (), Leaf ()) -> 4;
+Node (Node (Leaf (), T (), Leaf ()), T (), Node (Leaf (), T (), Leaf ())) -> 4;
+Leaf () -> 1;
+=================================
+(\sum -> (\tree_count_leaves -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_leaves = \tree -> case tree of
+    Node y1 -> 
+      sum (tree_count_leaves (#3.1 y1)) (tree_count_leaves (#3.3 y1))
+
+    Leaf y1 -> 
+      sum 1 0 in tree_count_leaves) : BooleanTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+(\sum -> (\tree_count_leaves -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_leaves = \tree -> case tree of
+    Node y1 -> 
+      sum (tree_count_leaves (#3.1 y1)) (tree_count_leaves (#3.3 y1))
+
+    Leaf y1 -> 
+      sum 1 0 in tree_count_leaves) : BooleanTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+4.877406 true true
+
+Node (Leaf (), T (), Leaf ()) -> 2;
+Node (Node (Leaf (), T (), Leaf ()), T (), Leaf ()) -> 3;
+Node (Leaf (), T (), Node (Leaf (), T (), Leaf ())) -> 3;
+Node (Node (Node (Leaf (), T (), Leaf ()), T (), Leaf ()), T (), Leaf ()) -> 4;
+Node (Node (Leaf (), T (), Leaf ()), T (), Node (Node (Leaf (), T (), Leaf ()), T (), Node (Leaf (), T (), Leaf ()))) -> 6;
+Leaf () -> 1;
+=================================
+(\sum -> (\tree_count_leaves -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_leaves = \tree -> case tree of
+    Node y1 -> 
+      sum (tree_count_leaves (#3.1 y1)) (tree_count_leaves (#3.3 y1))
+
+    Leaf y1 -> 
+      sum 1 0 in tree_count_leaves) : BooleanTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+(\sum -> (\tree_count_leaves -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_leaves = \tree -> case tree of
+    Node y1 -> 
+      sum (tree_count_leaves (#3.1 y1)) (tree_count_leaves (#3.3 y1))
+
+    Leaf y1 -> 
+      sum 1 0 in tree_count_leaves) : BooleanTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+6.684115 true true
+
+Node (Leaf (), T (), Leaf ()) -> 2;
+Node (Node (Leaf (), T (), Leaf ()), T (), Leaf ()) -> 3;
+Node (Leaf (), T (), Node (Leaf (), T (), Leaf ())) -> 3;
+Node (Node (Leaf (), T (), Leaf ()), T (), Node (Leaf (), T (), Leaf ())) -> 4;
+Node (Node (Leaf (), T (), Leaf ()), T (), Node (Node (Leaf (), T (), Leaf ()), T (), Node (Leaf (), T (), Leaf ()))) -> 6;
+Leaf () -> 1;
+=================================
+(\sum -> (\tree_count_leaves -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_leaves = \tree -> case tree of
+    Node y1 -> 
+      sum (tree_count_leaves (#3.1 y1)) (tree_count_leaves (#3.3 y1))
+
+    Leaf y1 -> 
+      sum 1 0 in tree_count_leaves) : BooleanTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+(\sum -> (\tree_count_leaves -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_leaves = \tree -> case tree of
+    Node y1 -> 
+      sum (tree_count_leaves (#3.1 y1)) (tree_count_leaves (#3.3 y1))
+
+    Leaf y1 -> 
+      sum 1 0 in tree_count_leaves) : BooleanTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+6.008303 true true
+
+Node (Leaf (), T (), Leaf ()) -> 2;
+Node (Node (Leaf (), T (), Leaf ()), T (), Leaf ()) -> 3;
+Node (Node (Node (Leaf (), T (), Leaf ()), T (), Leaf ()), T (), Leaf ()) -> 4;
+Node (Node (Leaf (), T (), Leaf ()), T (), Node (Leaf (), T (), Leaf ())) -> 4;
+Node (Node (Leaf (), T (), Leaf ()), T (), Node (Node (Leaf (), T (), Leaf ()), T (), Node (Leaf (), T (), Leaf ()))) -> 6;
+Leaf () -> 1;
+=================================
+(\sum -> (\tree_count_leaves -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_leaves = \tree -> case tree of
+    Node y1 -> 
+      sum (tree_count_leaves (#3.1 y1)) (tree_count_leaves (#3.3 y1))
+
+    Leaf y1 -> 
+      sum 1 0 in tree_count_leaves) : BooleanTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+(\sum -> (\tree_count_leaves -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_leaves = \tree -> case tree of
+    Node y1 -> 
+      sum (tree_count_leaves (#3.1 y1)) (tree_count_leaves (#3.3 y1))
+
+    Leaf y1 -> 
+      sum 1 0 in tree_count_leaves) : BooleanTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+7.991154 true true
+
+Node (Leaf (), T (), Leaf ()) -> 2;
+Node (Leaf (), T (), Node (Leaf (), T (), Leaf ())) -> 3;
+Node (Node (Node (Leaf (), T (), Leaf ()), T (), Leaf ()), T (), Leaf ()) -> 4;
+Node (Node (Leaf (), T (), Leaf ()), T (), Node (Leaf (), T (), Leaf ())) -> 4;
+Node (Node (Leaf (), T (), Leaf ()), T (), Node (Node (Leaf (), T (), Leaf ()), T (), Node (Leaf (), T (), Leaf ()))) -> 6;
+Leaf () -> 1;
+=================================
+(\sum -> (\tree_count_leaves -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_leaves = \tree -> case tree of
+    Node y1 -> 
+      sum (tree_count_leaves (#3.1 y1)) (tree_count_leaves (#3.3 y1))
+
+    Leaf y1 -> 
+      sum 1 0 in tree_count_leaves) : BooleanTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+(\sum -> (\tree_count_leaves -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_leaves = \tree -> case tree of
+    Node y1 -> 
+      sum (tree_count_leaves (#3.1 y1)) (tree_count_leaves (#3.3 y1))
+
+    Leaf y1 -> 
+      sum 1 0 in tree_count_leaves) : BooleanTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+5.392313 true true
+
+Node (Node (Leaf (), T (), Leaf ()), T (), Leaf ()) -> 3;
+Node (Leaf (), T (), Node (Leaf (), T (), Leaf ())) -> 3;
+Node (Node (Node (Leaf (), T (), Leaf ()), T (), Leaf ()), T (), Leaf ()) -> 4;
+Node (Node (Leaf (), T (), Leaf ()), T (), Node (Leaf (), T (), Leaf ())) -> 4;
+Node (Node (Leaf (), T (), Leaf ()), T (), Node (Node (Leaf (), T (), Leaf ()), T (), Node (Leaf (), T (), Leaf ()))) -> 6;
+Leaf () -> 1;
+=================================
+(\sum -> (\tree_count_leaves -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_leaves = \tree -> case tree of
+    Node y1 -> 
+      sum (tree_count_leaves (#3.1 y1)) (tree_count_leaves (#3.3 y1))
+
+    Leaf y1 -> 
+      sum 1 0 in tree_count_leaves) : BooleanTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+(\sum -> (\tree_count_leaves -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_leaves = \tree -> case tree of
+    Node y1 -> 
+      sum (tree_count_leaves (#3.1 y1)) (tree_count_leaves (#3.3 y1))
+
+    Leaf y1 -> 
+      sum 1 0 in tree_count_leaves) : BooleanTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+7.658621 true true
+
+Node (Leaf (), T (), Leaf ()) -> 2;
+Node (Node (Leaf (), T (), Leaf ()), T (), Leaf ()) -> 3;
+Node (Leaf (), T (), Node (Leaf (), T (), Leaf ())) -> 3;
+Node (Node (Node (Leaf (), T (), Leaf ()), T (), Leaf ()), T (), Leaf ()) -> 4;
+Node (Node (Leaf (), T (), Leaf ()), T (), Node (Leaf (), T (), Leaf ())) -> 4;
+Node (Node (Leaf (), T (), Leaf ()), T (), Node (Node (Leaf (), T (), Leaf ()), T (), Node (Leaf (), T (), Leaf ()))) -> 6;
+Leaf () -> 1;
+=================================
+(\sum -> (\tree_count_leaves -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_leaves = \tree -> case tree of
+    Node y1 -> 
+      sum (tree_count_leaves (#3.1 y1)) (tree_count_leaves (#3.3 y1))
+
+    Leaf y1 -> 
+      sum 1 0 in tree_count_leaves) : BooleanTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+(\sum -> (\tree_count_leaves -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_leaves = \tree -> case tree of
+    Node y1 -> 
+      sum (tree_count_leaves (#3.1 y1)) (tree_count_leaves (#3.3 y1))
+
+    Leaf y1 -> 
+      sum 1 0 in tree_count_leaves) : BooleanTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+7.296864 true true
+

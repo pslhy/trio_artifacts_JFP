@@ -1,0 +1,3468 @@
+Node (Leaf (),2,Leaf ()) -> 1;
+Leaf () -> 0;
+
+=================================
+(\sum -> (\tree_count_nodes -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_nodes = \tree -> case tree of
+    Node y1 -> 
+      1
+
+    Leaf y1 -> 
+      0 in tree_count_nodes) : NatTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+(\sum -> (\tree_count_nodes -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_nodes = \tree -> case tree of
+    Node y1 -> 
+      S (tree_count_nodes (#3.1 y1))
+
+    Leaf y1 -> 
+      0 in tree_count_nodes) : NatTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+0.0129420000001 false false
+
+Node (Node (Leaf (),2,Leaf ()),2,Node (Leaf (),3,Leaf ())) -> 3;
+Leaf () -> 0;
+
+=================================
+(\sum -> (\tree_count_nodes -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_nodes = \tree -> case tree of
+    Node y1 -> 
+      S (#3.2 y1)
+
+    Leaf y1 -> 
+      0 in tree_count_nodes) : NatTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+0.0169860000001 false false
+
+Node (Leaf (),1,Leaf ()) -> 1;
+Leaf () -> 0;
+
+=================================
+(\sum -> (\tree_count_nodes -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_nodes = \tree -> case tree of
+    Node y1 -> 
+      #3.2 y1
+
+    Leaf y1 -> 
+      0 in tree_count_nodes) : NatTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+(\sum -> (\tree_count_nodes -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_nodes = \tree -> case tree of
+    Node y1 -> 
+      S (tree_count_nodes (#3.1 y1))
+
+    Leaf y1 -> 
+      0 in tree_count_nodes) : NatTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+0.012187 false false
+
+Node (Leaf (),1,Node (Leaf (),1,Node (Leaf (),3,Leaf ()))) -> 3;
+Leaf () -> 0;
+
+=================================
+(\sum -> (\tree_count_nodes -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_nodes = \tree -> case tree of
+    Node y1 -> 
+      S (S (#3.2 y1))
+
+    Leaf y1 -> 
+      0 in tree_count_nodes) : NatTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+(\sum -> (\tree_count_nodes -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_nodes = \tree -> case tree of
+    Node y1 -> 
+      S (tree_count_nodes (#3.3 y1))
+
+    Leaf y1 -> 
+      0 in tree_count_nodes) : NatTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+0.013772 false false
+
+Node (Node (Leaf (),1,Leaf ()),1,Leaf ()) -> 2;
+Leaf () -> 0;
+
+=================================
+(\sum -> (\tree_count_nodes -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_nodes = \tree -> case tree of
+    Node y1 -> 
+      S (#3.2 y1)
+
+    Leaf y1 -> 
+      0 in tree_count_nodes) : NatTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+(\sum -> (\tree_count_nodes -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_nodes = \tree -> case tree of
+    Node y1 -> 
+      S (tree_count_nodes (#3.1 y1))
+
+    Leaf y1 -> 
+      0 in tree_count_nodes) : NatTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+0.0126170000001 false false
+
+Node (Leaf (),2,Node (Leaf (),1,Node (Leaf (),3,Leaf ()))) -> 3;
+Leaf () -> 0;
+
+=================================
+(\sum -> (\tree_count_nodes -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_nodes = \tree -> case tree of
+    Node y1 -> 
+      S (#3.2 y1)
+
+    Leaf y1 -> 
+      0 in tree_count_nodes) : NatTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+(\sum -> (\tree_count_nodes -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_nodes = \tree -> case tree of
+    Node y1 -> 
+      S (tree_count_nodes (#3.3 y1))
+
+    Leaf y1 -> 
+      0 in tree_count_nodes) : NatTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+0.0139549999999 false false
+
+Node (Leaf (),2,Node (Leaf (),3,Node (Leaf (),0,Leaf ()))) -> 3;
+Leaf () -> 0;
+
+=================================
+(\sum -> (\tree_count_nodes -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_nodes = \tree -> case tree of
+    Node y1 -> 
+      S (#3.2 y1)
+
+    Leaf y1 -> 
+      0 in tree_count_nodes) : NatTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+(\sum -> (\tree_count_nodes -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_nodes = \tree -> case tree of
+    Node y1 -> 
+      S (tree_count_nodes (#3.3 y1))
+
+    Leaf y1 -> 
+      0 in tree_count_nodes) : NatTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+0.0139750000001 false false
+
+Node (Leaf (),0,Node (Node (Leaf (),0,Leaf ()),2,Leaf ())) -> 3;
+Leaf () -> 0;
+
+=================================
+(\sum -> (\tree_count_nodes -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_nodes = \tree -> case tree of
+    Node y1 -> 
+      3
+
+    Leaf y1 -> 
+      0 in tree_count_nodes) : NatTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+(\sum -> (\tree_count_nodes -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_nodes = \tree -> case tree of
+    Node y1 -> 
+      S (S (S (tree_count_nodes (#3.1 y1))))
+
+    Leaf y1 -> 
+      0 in tree_count_nodes) : NatTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+0.0196989999999 false false
+
+Node (Node (Leaf (),0,Leaf ()),3,Node (Leaf (),2,Leaf ())) -> 3;
+Leaf () -> 0;
+
+=================================
+(\sum -> (\tree_count_nodes -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_nodes = \tree -> case tree of
+    Node y1 -> 
+      #3.2 y1
+
+    Leaf y1 -> 
+      0 in tree_count_nodes) : NatTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+(\sum -> (\tree_count_nodes -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_nodes = \tree -> case tree of
+    Node y1 -> 
+      sum (tree_count_nodes (#3.1 y1)) (#3.2 y1)
+
+    Leaf y1 -> 
+      0 in tree_count_nodes) : NatTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+0.0185980000001 false false
+
+Node (Node (Node (Leaf (),0,Leaf ()),0,Leaf ()),2,Leaf ()) -> 3;
+Leaf () -> 0;
+
+=================================
+(\sum -> (\tree_count_nodes -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_nodes = \tree -> case tree of
+    Node y1 -> 
+      S (#3.2 y1)
+
+    Leaf y1 -> 
+      0 in tree_count_nodes) : NatTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+(\sum -> (\tree_count_nodes -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_nodes = \tree -> case tree of
+    Node y1 -> 
+      S (tree_count_nodes (#3.1 y1))
+
+    Leaf y1 -> 
+      0 in tree_count_nodes) : NatTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+0.013457 false false
+
+Node (Node (Leaf (),0,Node (Leaf (),3,Leaf ())),0,Leaf ()) -> 3;
+Node (Node (Node (Leaf (),0,Leaf ()),2,Leaf ()),3,Leaf ()) -> 3;
+Leaf () -> 0;
+
+=================================
+(\sum -> (\tree_count_nodes -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_nodes = \tree -> case tree of
+    Node y1 -> 
+      3
+
+    Leaf y1 -> 
+      0 in tree_count_nodes) : NatTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+(\sum -> (\tree_count_nodes -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_nodes = \tree -> case tree of
+    Node y1 -> 
+      S (S (S (tree_count_nodes (#3.3 y1))))
+
+    Leaf y1 -> 
+      0 in tree_count_nodes) : NatTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+0.0278189999999 false false
+
+Node (Leaf (),2,Node (Leaf (),2,Leaf ())) -> 2;
+Node (Node (Leaf (),0,Node (Leaf (),2,Leaf ())),0,Leaf ()) -> 3;
+Leaf () -> 0;
+
+=================================
+(\sum -> (\tree_count_nodes -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_nodes = \tree -> case tree of
+    Node y1 -> 
+      S (sum (tree_count_nodes (#3.1 y1)) (tree_count_nodes (#3.3 y1)))
+
+    Leaf y1 -> 
+      0 in tree_count_nodes) : NatTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+(\sum -> (\tree_count_nodes -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_nodes = \tree -> case tree of
+    Node y1 -> 
+      S (sum (tree_count_nodes (#3.1 y1)) (tree_count_nodes (#3.3 y1)))
+
+    Leaf y1 -> 
+      0 in tree_count_nodes) : NatTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+0.878665 true true
+
+Node (Leaf (),2,Node (Leaf (),3,Node (Leaf (),3,Leaf ()))) -> 3;
+Node (Node (Leaf (),2,Node (Leaf (),0,Leaf ())),3,Leaf ()) -> 3;
+Leaf () -> 0;
+
+=================================
+(\sum -> (\tree_count_nodes -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_nodes = \tree -> case tree of
+    Node y1 -> 
+      3
+
+    Leaf y1 -> 
+      0 in tree_count_nodes) : NatTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+0.0295369999999 false false
+
+Node (Leaf (),2,Node (Leaf (),2,Leaf ())) -> 2;
+Node (Node (Leaf (),1,Leaf ()),2,Leaf ()) -> 2;
+Leaf () -> 0;
+
+=================================
+(\sum -> (\tree_count_nodes -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_nodes = \tree -> case tree of
+    Node y1 -> 
+      #3.2 y1
+
+    Leaf y1 -> 
+      0 in tree_count_nodes) : NatTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+0.021234 false false
+
+Node (Node (Leaf (),3,Leaf ()),1,Node (Leaf (),0,Leaf ())) -> 3;
+Node (Node (Node (Leaf (),1,Leaf ()),1,Leaf ()),1,Leaf ()) -> 3;
+Leaf () -> 0;
+
+=================================
+(\sum -> (\tree_count_nodes -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_nodes = \tree -> case tree of
+    Node y1 -> 
+      S (S (#3.2 y1))
+
+    Leaf y1 -> 
+      0 in tree_count_nodes) : NatTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+0.0176180000001 false false
+
+Node (Leaf (),2,Node (Leaf (),1,Node (Leaf (),1,Leaf ()))) -> 3;
+Node (Node (Leaf (),0,Node (Leaf (),0,Leaf ())),2,Leaf ()) -> 3;
+Leaf () -> 0;
+
+=================================
+(\sum -> (\tree_count_nodes -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_nodes = \tree -> case tree of
+    Node y1 -> 
+      S (#3.2 y1)
+
+    Leaf y1 -> 
+      0 in tree_count_nodes) : NatTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+0.0226720000001 false false
+
+Node (Leaf (),2,Node (Node (Leaf (),0,Leaf ()),3,Leaf ())) -> 3;
+Node (Node (Node (Leaf (),1,Leaf ()),0,Leaf ()),1,Leaf ()) -> 3;
+Leaf () -> 0;
+
+=================================
+(\sum -> (\tree_count_nodes -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_nodes = \tree -> case tree of
+    Node y1 -> 
+      3
+
+    Leaf y1 -> 
+      0 in tree_count_nodes) : NatTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+0.031833 false false
+
+Node (Node (Node (Leaf (),1,Leaf ()),3,Leaf ()),0,Leaf ()) -> 3;
+Node (Node (Node (Leaf (),0,Leaf ()),1,Leaf ()),2,Leaf ()) -> 3;
+Leaf () -> 0;
+
+=================================
+(\sum -> (\tree_count_nodes -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_nodes = \tree -> case tree of
+    Node y1 -> 
+      3
+
+    Leaf y1 -> 
+      0 in tree_count_nodes) : NatTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+(\sum -> (\tree_count_nodes -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_nodes = \tree -> case tree of
+    Node y1 -> 
+      S (tree_count_nodes (#3.1 y1))
+
+    Leaf y1 -> 
+      0 in tree_count_nodes) : NatTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+0.0262640000001 false false
+
+Node (Node (Leaf (),0,Leaf ()),2,Leaf ()) -> 2;
+Node (Leaf (),1,Node (Leaf (),1,Leaf ())) -> 2;
+Leaf () -> 0;
+
+=================================
+(\sum -> (\tree_count_nodes -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_nodes = \tree -> case tree of
+    Node y1 -> 
+      2
+
+    Leaf y1 -> 
+      0 in tree_count_nodes) : NatTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+(\sum -> (\tree_count_nodes -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_nodes = \tree -> case tree of
+    Node y1 -> 
+      sum (tree_count_nodes (#3.3 y1)) (#3.2 y1)
+
+    Leaf y1 -> 
+      0 in tree_count_nodes) : NatTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+0.020319 false false
+
+Node (Leaf (),1,Leaf ()) -> 1;
+Node (Leaf (),1,Node (Leaf (),3,Leaf ())) -> 2;
+Leaf () -> 0;
+
+=================================
+(\sum -> (\tree_count_nodes -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_nodes = \tree -> case tree of
+    Node y1 -> 
+      S (tree_count_nodes (#3.3 y1))
+
+    Leaf y1 -> 
+      0 in tree_count_nodes) : NatTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+(\sum -> (\tree_count_nodes -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_nodes = \tree -> case tree of
+    Node y1 -> 
+      S (tree_count_nodes (#3.3 y1))
+
+    Leaf y1 -> 
+      0 in tree_count_nodes) : NatTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+0.016613 false false
+
+Node (Node (Leaf (),2,Leaf ()),2,Leaf ()) -> 2;
+Node (Leaf (),3,Node (Node (Leaf (),2,Leaf ()),0,Leaf ())) -> 3;
+Node (Leaf (),3,Node (Leaf (),3,Node (Leaf (),3,Leaf ()))) -> 3;
+Leaf () -> 0;
+
+=================================
+(\sum -> (\tree_count_nodes -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_nodes = \tree -> case tree of
+    Node y1 -> 
+      #3.2 y1
+
+    Leaf y1 -> 
+      0 in tree_count_nodes) : NatTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+0.0296410000001 false false
+
+Node (Leaf (),2,Node (Node (Leaf (),0,Leaf ()),1,Leaf ())) -> 3;
+Node (Leaf (),3,Node (Node (Leaf (),0,Leaf ()),0,Leaf ())) -> 3;
+Node (Leaf (),0,Node (Leaf (),2,Leaf ())) -> 2;
+Leaf () -> 0;
+
+=================================
+(\sum -> (\tree_count_nodes -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_nodes = \tree -> case tree of
+    Node y1 -> 
+      sum (tree_count_nodes (#3.3 y1)) (#3.2 y1)
+
+    Leaf y1 -> 
+      0 in tree_count_nodes) : NatTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+(\sum -> (\tree_count_nodes -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_nodes = \tree -> case tree of
+    Node y1 -> 
+      sum (tree_count_nodes (#3.3 y1)) (#3.2 y1)
+
+    Leaf y1 -> 
+      0 in tree_count_nodes) : NatTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+0.023549 false false
+
+Node (Node (Node (Leaf (),3,Leaf ()),0,Leaf ()),0,Leaf ()) -> 3;
+Node (Node (Leaf (),2,Node (Leaf (),3,Leaf ())),1,Leaf ()) -> 3;
+Node (Node (Node (Leaf (),2,Leaf ()),3,Leaf ()),1,Leaf ()) -> 3;
+Leaf () -> 0;
+
+=================================
+(\sum -> (\tree_count_nodes -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_nodes = \tree -> case tree of
+    Node y1 -> 
+      3
+
+    Leaf y1 -> 
+      0 in tree_count_nodes) : NatTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+(\sum -> (\tree_count_nodes -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_nodes = \tree -> case tree of
+    Node y1 -> 
+      S (S (S (tree_count_nodes (#3.3 y1))))
+
+    Leaf y1 -> 
+      0 in tree_count_nodes) : NatTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+0.0346139999999 false false
+
+Node (Leaf (),2,Leaf ()) -> 1;
+Node (Leaf (),3,Leaf ()) -> 1;
+Node (Node (Leaf (),1,Node (Leaf (),0,Leaf ())),0,Leaf ()) -> 3;
+Leaf () -> 0;
+
+=================================
+(\sum -> (\tree_count_nodes -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_nodes = \tree -> case tree of
+    Node y1 -> 
+      S (sum (tree_count_nodes (#3.1 y1)) (tree_count_nodes (#3.1 y1)))
+
+    Leaf y1 -> 
+      0 in tree_count_nodes) : NatTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+(\sum -> (\tree_count_nodes -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_nodes = \tree -> case tree of
+    Node y1 -> 
+      S (sum (tree_count_nodes (#3.1 y1)) (tree_count_nodes (#3.1 y1)))
+
+    Leaf y1 -> 
+      0 in tree_count_nodes) : NatTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+0.470521 false false
+
+Node (Leaf (),1,Node (Node (Leaf (),2,Leaf ()),3,Leaf ())) -> 3;
+Node (Node (Node (Leaf (),1,Leaf ()),2,Leaf ()),0,Leaf ()) -> 3;
+Node (Node (Leaf (),1,Leaf ()),1,Node (Leaf (),2,Leaf ())) -> 3;
+Leaf () -> 0;
+
+=================================
+(\sum -> (\tree_count_nodes -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_nodes = \tree -> case tree of
+    Node y1 -> 
+      3
+
+    Leaf y1 -> 
+      0 in tree_count_nodes) : NatTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+0.0337480000001 false false
+
+Node (Node (Leaf (),0,Leaf ()),1,Leaf ()) -> 2;
+Node (Node (Leaf (),0,Node (Leaf (),0,Leaf ())),2,Leaf ()) -> 3;
+Node (Leaf (),1,Node (Leaf (),1,Leaf ())) -> 2;
+Leaf () -> 0;
+
+=================================
+(\sum -> (\tree_count_nodes -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_nodes = \tree -> case tree of
+    Node y1 -> 
+      S (#3.2 y1)
+
+    Leaf y1 -> 
+      0 in tree_count_nodes) : NatTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+0.022817 false false
+
+Node (Leaf (),3,Node (Node (Leaf (),3,Leaf ()),3,Leaf ())) -> 3;
+Node (Node (Leaf (),0,Node (Leaf (),1,Leaf ())),3,Leaf ()) -> 3;
+Node (Leaf (),2,Node (Leaf (),0,Leaf ())) -> 2;
+Leaf () -> 0;
+
+=================================
+(\sum -> (\tree_count_nodes -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_nodes = \tree -> case tree of
+    Node y1 -> 
+      #3.2 y1
+
+    Leaf y1 -> 
+      0 in tree_count_nodes) : NatTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+(\sum -> (\tree_count_nodes -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_nodes = \tree -> case tree of
+    Node y1 -> 
+      sum (tree_count_nodes (#3.1 y1)) (#3.2 y1)
+
+    Leaf y1 -> 
+      0 in tree_count_nodes) : NatTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+0.0244299999999 false false
+
+Node (Node (Leaf (),2,Leaf ()),2,Node (Leaf (),3,Leaf ())) -> 3;
+Node (Leaf (),0,Node (Leaf (),3,Node (Leaf (),2,Leaf ()))) -> 3;
+Node (Leaf (),2,Node (Node (Leaf (),3,Leaf ()),1,Leaf ())) -> 3;
+Leaf () -> 0;
+
+=================================
+(\sum -> (\tree_count_nodes -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_nodes = \tree -> case tree of
+    Node y1 -> 
+      3
+
+    Leaf y1 -> 
+      0 in tree_count_nodes) : NatTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+0.0364970000001 false false
+
+Node (Node (Leaf (),0,Leaf ()),0,Leaf ()) -> 2;
+Node (Leaf (),0,Node (Leaf (),3,Node (Leaf (),2,Leaf ()))) -> 3;
+Node (Leaf (),2,Node (Node (Leaf (),0,Leaf ()),3,Leaf ())) -> 3;
+Leaf () -> 0;
+
+=================================
+(\sum -> (\tree_count_nodes -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_nodes = \tree -> case tree of
+    Node y1 -> 
+      S (sum (tree_count_nodes (#3.1 y1)) (tree_count_nodes (#3.3 y1)))
+
+    Leaf y1 -> 
+      0 in tree_count_nodes) : NatTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+(\sum -> (\tree_count_nodes -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_nodes = \tree -> case tree of
+    Node y1 -> 
+      S (sum (tree_count_nodes (#3.1 y1)) (tree_count_nodes (#3.3 y1)))
+
+    Leaf y1 -> 
+      0 in tree_count_nodes) : NatTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+1.790854 true true
+
+Node (Leaf (),0,Node (Node (Leaf (),2,Leaf ()),3,Leaf ())) -> 3;
+Node (Leaf (),2,Leaf ()) -> 1;
+Node (Leaf (),0,Leaf ()) -> 1;
+Leaf () -> 0;
+
+=================================
+(\sum -> (\tree_count_nodes -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_nodes = \tree -> case tree of
+    Node y1 -> 
+      S (sum (tree_count_nodes (#3.1 y1)) (tree_count_nodes (#3.3 y1)))
+
+    Leaf y1 -> 
+      0 in tree_count_nodes) : NatTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+(\sum -> (\tree_count_nodes -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_nodes = \tree -> case tree of
+    Node y1 -> 
+      S (sum (tree_count_nodes (#3.1 y1)) (tree_count_nodes (#3.3 y1)))
+
+    Leaf y1 -> 
+      0 in tree_count_nodes) : NatTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+0.432653 true true
+
+Node (Node (Node (Leaf (),0,Leaf ()),2,Leaf ()),2,Leaf ()) -> 3;
+Node (Leaf (),3,Leaf ()) -> 1;
+Node (Node (Leaf (),2,Node (Leaf (),3,Leaf ())),3,Leaf ()) -> 3;
+Node (Leaf (),2,Node (Node (Leaf (),2,Leaf ()),0,Leaf ())) -> 3;
+Leaf () -> 0;
+
+=================================
+(\sum -> (\tree_count_nodes -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_nodes = \tree -> case tree of
+    Node y1 -> 
+      S (sum (tree_count_nodes (#3.1 y1)) (tree_count_nodes (#3.3 y1)))
+
+    Leaf y1 -> 
+      0 in tree_count_nodes) : NatTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+(\sum -> (\tree_count_nodes -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_nodes = \tree -> case tree of
+    Node y1 -> 
+      S (sum (tree_count_nodes (#3.1 y1)) (tree_count_nodes (#3.3 y1)))
+
+    Leaf y1 -> 
+      0 in tree_count_nodes) : NatTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+1.372753 true true
+
+Node (Node (Leaf (),3,Leaf ()),3,Leaf ()) -> 2;
+Node (Node (Leaf (),1,Node (Leaf (),3,Leaf ())),1,Leaf ()) -> 3;
+Node (Node (Leaf (),0,Leaf ()),3,Leaf ()) -> 2;
+Node (Leaf (),0,Node (Leaf (),3,Node (Leaf (),2,Leaf ()))) -> 3;
+Leaf () -> 0;
+
+=================================
+(\sum -> (\tree_count_nodes -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_nodes = \tree -> case tree of
+    Node y1 -> 
+      S (sum (tree_count_nodes (#3.1 y1)) (tree_count_nodes (#3.3 y1)))
+
+    Leaf y1 -> 
+      0 in tree_count_nodes) : NatTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+(\sum -> (\tree_count_nodes -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_nodes = \tree -> case tree of
+    Node y1 -> 
+      S (sum (tree_count_nodes (#3.1 y1)) (tree_count_nodes (#3.3 y1)))
+
+    Leaf y1 -> 
+      0 in tree_count_nodes) : NatTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+2.256496 true true
+
+Node (Leaf (),3,Node (Leaf (),1,Node (Leaf (),1,Leaf ()))) -> 3;
+Node (Node (Leaf (),1,Leaf ()),1,Leaf ()) -> 2;
+Node (Node (Node (Leaf (),0,Leaf ()),1,Leaf ()),1,Leaf ()) -> 3;
+Node (Node (Node (Leaf (),1,Leaf ()),3,Leaf ()),3,Leaf ()) -> 3;
+Leaf () -> 0;
+
+=================================
+(\sum -> (\tree_count_nodes -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_nodes = \tree -> case tree of
+    Node y1 -> 
+      S (sum (tree_count_nodes (#3.1 y1)) (tree_count_nodes (#3.3 y1)))
+
+    Leaf y1 -> 
+      0 in tree_count_nodes) : NatTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+(\sum -> (\tree_count_nodes -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_nodes = \tree -> case tree of
+    Node y1 -> 
+      S (sum (tree_count_nodes (#3.1 y1)) (tree_count_nodes (#3.3 y1)))
+
+    Leaf y1 -> 
+      0 in tree_count_nodes) : NatTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+2.857739 true true
+
+Node (Leaf (),0,Leaf ()) -> 1;
+Node (Leaf (),1,Leaf ()) -> 1;
+Node (Node (Leaf (),2,Leaf ()),3,Node (Leaf (),1,Leaf ())) -> 3;
+Node (Node (Leaf (),2,Node (Leaf (),0,Leaf ())),0,Leaf ()) -> 3;
+Leaf () -> 0;
+
+=================================
+(\sum -> (\tree_count_nodes -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_nodes = \tree -> case tree of
+    Node y1 -> 
+      S (sum (tree_count_nodes (#3.1 y1)) (tree_count_nodes (#3.1 y1)))
+
+    Leaf y1 -> 
+      0 in tree_count_nodes) : NatTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+(\sum -> (\tree_count_nodes -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_nodes = \tree -> case tree of
+    Node y1 -> 
+      S (sum (tree_count_nodes (#3.1 y1)) (tree_count_nodes (#3.1 y1)))
+
+    Leaf y1 -> 
+      0 in tree_count_nodes) : NatTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+0.68402 false false
+
+Node (Node (Node (Leaf (),1,Leaf ()),1,Leaf ()),0,Leaf ()) -> 3;
+Node (Node (Node (Leaf (),3,Leaf ()),2,Leaf ()),3,Leaf ()) -> 3;
+Node (Leaf (),2,Node (Leaf (),0,Node (Leaf (),1,Leaf ()))) -> 3;
+Node (Leaf (),1,Node (Leaf (),3,Leaf ())) -> 2;
+Leaf () -> 0;
+
+=================================
+(\sum -> (\tree_count_nodes -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_nodes = \tree -> case tree of
+    Node y1 -> 
+      S (sum (tree_count_nodes (#3.1 y1)) (tree_count_nodes (#3.3 y1)))
+
+    Leaf y1 -> 
+      0 in tree_count_nodes) : NatTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+(\sum -> (\tree_count_nodes -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_nodes = \tree -> case tree of
+    Node y1 -> 
+      S (sum (tree_count_nodes (#3.1 y1)) (tree_count_nodes (#3.3 y1)))
+
+    Leaf y1 -> 
+      0 in tree_count_nodes) : NatTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+3.081552 true true
+
+Node (Leaf (),2,Leaf ()) -> 1;
+Node (Node (Leaf (),0,Leaf ()),1,Leaf ()) -> 2;
+Node (Leaf (),3,Node (Leaf (),0,Node (Leaf (),0,Leaf ()))) -> 3;
+Node (Node (Leaf (),0,Leaf ()),3,Node (Leaf (),3,Leaf ())) -> 3;
+Leaf () -> 0;
+
+=================================
+(\sum -> (\tree_count_nodes -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_nodes = \tree -> case tree of
+    Node y1 -> 
+      S (sum (tree_count_nodes (#3.1 y1)) (tree_count_nodes (#3.3 y1)))
+
+    Leaf y1 -> 
+      0 in tree_count_nodes) : NatTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+(\sum -> (\tree_count_nodes -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_nodes = \tree -> case tree of
+    Node y1 -> 
+      S (sum (tree_count_nodes (#3.1 y1)) (tree_count_nodes (#3.3 y1)))
+
+    Leaf y1 -> 
+      0 in tree_count_nodes) : NatTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+1.262283 true true
+
+Node (Leaf (),0,Node (Leaf (),3,Leaf ())) -> 2;
+Node (Node (Leaf (),3,Leaf ()),0,Leaf ()) -> 2;
+Node (Node (Leaf (),1,Leaf ()),0,Leaf ()) -> 2;
+Node (Leaf (),0,Node (Node (Leaf (),0,Leaf ()),2,Leaf ())) -> 3;
+Leaf () -> 0;
+
+=================================
+(\sum -> (\tree_count_nodes -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_nodes = \tree -> case tree of
+    Node y1 -> 
+      S (sum (tree_count_nodes (#3.1 y1)) (tree_count_nodes (#3.3 y1)))
+
+    Leaf y1 -> 
+      0 in tree_count_nodes) : NatTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+(\sum -> (\tree_count_nodes -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_nodes = \tree -> case tree of
+    Node y1 -> 
+      S (sum (tree_count_nodes (#3.1 y1)) (tree_count_nodes (#3.3 y1)))
+
+    Leaf y1 -> 
+      0 in tree_count_nodes) : NatTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+1.549249 true true
+
+Node (Leaf (),3,Leaf ()) -> 1;
+Node (Leaf (),0,Leaf ()) -> 1;
+Node (Leaf (),2,Node (Leaf (),3,Leaf ())) -> 2;
+Node (Node (Leaf (),0,Leaf ()),0,Leaf ()) -> 2;
+Leaf () -> 0;
+
+=================================
+(\sum -> (\tree_count_nodes -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_nodes = \tree -> case tree of
+    Node y1 -> 
+      S (sum (tree_count_nodes (#3.1 y1)) (tree_count_nodes (#3.3 y1)))
+
+    Leaf y1 -> 
+      0 in tree_count_nodes) : NatTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+(\sum -> (\tree_count_nodes -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_nodes = \tree -> case tree of
+    Node y1 -> 
+      S (sum (tree_count_nodes (#3.1 y1)) (tree_count_nodes (#3.3 y1)))
+
+    Leaf y1 -> 
+      0 in tree_count_nodes) : NatTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+0.856863 true true
+
+Node (Leaf (),3,Node (Leaf (),1,Node (Leaf (),0,Leaf ()))) -> 3;
+Node (Node (Node (Leaf (),2,Leaf ()),0,Leaf ()),2,Leaf ()) -> 3;
+Node (Node (Node (Leaf (),2,Leaf ()),0,Leaf ()),1,Leaf ()) -> 3;
+Node (Node (Node (Leaf (),0,Leaf ()),3,Leaf ()),0,Leaf ()) -> 3;
+Leaf () -> 0;
+
+=================================
+(\sum -> (\tree_count_nodes -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_nodes = \tree -> case tree of
+    Node y1 -> 
+      3
+
+    Leaf y1 -> 
+      0 in tree_count_nodes) : NatTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+0.046092 false false
+
+Node (Node (Leaf (),1,Leaf ()),1,Leaf ()) -> 2;
+Node (Leaf (),2,Leaf ()) -> 1;
+Node (Leaf (),0,Node (Leaf (),1,Leaf ())) -> 2;
+Node (Node (Leaf (),3,Leaf ()),2,Node (Leaf (),0,Leaf ())) -> 3;
+Leaf () -> 0;
+
+=================================
+(\sum -> (\tree_count_nodes -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_nodes = \tree -> case tree of
+    Node y1 -> 
+      S (sum (tree_count_nodes (#3.1 y1)) (tree_count_nodes (#3.3 y1)))
+
+    Leaf y1 -> 
+      0 in tree_count_nodes) : NatTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+(\sum -> (\tree_count_nodes -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_nodes = \tree -> case tree of
+    Node y1 -> 
+      S (sum (tree_count_nodes (#3.1 y1)) (tree_count_nodes (#3.3 y1)))
+
+    Leaf y1 -> 
+      0 in tree_count_nodes) : NatTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+1.076939 true true
+
+Node (Leaf (),2,Node (Leaf (),3,Leaf ())) -> 2;
+Node (Leaf (),2,Node (Leaf (),0,Node (Leaf (),0,Leaf ()))) -> 3;
+Node (Leaf (),3,Node (Leaf (),0,Node (Leaf (),0,Leaf ()))) -> 3;
+Node (Leaf (),3,Leaf ()) -> 1;
+Node (Node (Node (Leaf (),3,Leaf ()),0,Leaf ()),2,Leaf ()) -> 3;
+Leaf () -> 0;
+
+=================================
+(\sum -> (\tree_count_nodes -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_nodes = \tree -> case tree of
+    Node y1 -> 
+      S (sum (tree_count_nodes (#3.1 y1)) (tree_count_nodes (#3.3 y1)))
+
+    Leaf y1 -> 
+      0 in tree_count_nodes) : NatTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+(\sum -> (\tree_count_nodes -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_nodes = \tree -> case tree of
+    Node y1 -> 
+      S (sum (tree_count_nodes (#3.1 y1)) (tree_count_nodes (#3.3 y1)))
+
+    Leaf y1 -> 
+      0 in tree_count_nodes) : NatTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+2.13824 true true
+
+Node (Node (Leaf (),0,Leaf ()),3,Leaf ()) -> 2;
+Node (Node (Leaf (),0,Leaf ()),2,Leaf ()) -> 2;
+Node (Leaf (),3,Node (Leaf (),1,Node (Leaf (),0,Leaf ()))) -> 3;
+Node (Leaf (),0,Node (Leaf (),0,Leaf ())) -> 2;
+Node (Node (Leaf (),0,Leaf ()),0,Node (Leaf (),1,Leaf ())) -> 3;
+Leaf () -> 0;
+
+=================================
+(\sum -> (\tree_count_nodes -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_nodes = \tree -> case tree of
+    Node y1 -> 
+      S (sum (tree_count_nodes (#3.1 y1)) (tree_count_nodes (#3.3 y1)))
+
+    Leaf y1 -> 
+      0 in tree_count_nodes) : NatTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+(\sum -> (\tree_count_nodes -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_nodes = \tree -> case tree of
+    Node y1 -> 
+      S (sum (tree_count_nodes (#3.1 y1)) (tree_count_nodes (#3.3 y1)))
+
+    Leaf y1 -> 
+      0 in tree_count_nodes) : NatTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+3.189716 true true
+
+Node (Node (Node (Leaf (),1,Leaf ()),3,Leaf ()),3,Leaf ()) -> 3;
+Node (Node (Leaf (),0,Leaf ()),3,Leaf ()) -> 2;
+Node (Leaf (),1,Node (Leaf (),3,Node (Leaf (),0,Leaf ()))) -> 3;
+Node (Leaf (),0,Node (Leaf (),3,Node (Leaf (),0,Leaf ()))) -> 3;
+Node (Leaf (),3,Node (Node (Leaf (),0,Leaf ()),1,Leaf ())) -> 3;
+Leaf () -> 0;
+
+=================================
+(\sum -> (\tree_count_nodes -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_nodes = \tree -> case tree of
+    Node y1 -> 
+      S (sum (tree_count_nodes (#3.1 y1)) (tree_count_nodes (#3.3 y1)))
+
+    Leaf y1 -> 
+      0 in tree_count_nodes) : NatTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+(\sum -> (\tree_count_nodes -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_nodes = \tree -> case tree of
+    Node y1 -> 
+      S (sum (tree_count_nodes (#3.1 y1)) (tree_count_nodes (#3.3 y1)))
+
+    Leaf y1 -> 
+      0 in tree_count_nodes) : NatTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+3.481115 true true
+
+Node (Leaf (),2,Leaf ()) -> 1;
+Node (Leaf (),3,Node (Leaf (),0,Leaf ())) -> 2;
+Node (Node (Leaf (),3,Leaf ()),2,Leaf ()) -> 2;
+Node (Leaf (),1,Node (Leaf (),0,Leaf ())) -> 2;
+Node (Node (Leaf (),2,Leaf ()),3,Leaf ()) -> 2;
+Leaf () -> 0;
+
+=================================
+(\sum -> (\tree_count_nodes -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_nodes = \tree -> case tree of
+    Node y1 -> 
+      S (sum (tree_count_nodes (#3.1 y1)) (tree_count_nodes (#3.3 y1)))
+
+    Leaf y1 -> 
+      0 in tree_count_nodes) : NatTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+(\sum -> (\tree_count_nodes -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_nodes = \tree -> case tree of
+    Node y1 -> 
+      S (sum (tree_count_nodes (#3.1 y1)) (tree_count_nodes (#3.3 y1)))
+
+    Leaf y1 -> 
+      0 in tree_count_nodes) : NatTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+1.302758 true true
+
+Node (Leaf (),3,Node (Leaf (),0,Node (Leaf (),3,Leaf ()))) -> 3;
+Node (Node (Node (Leaf (),1,Leaf ()),0,Leaf ()),0,Leaf ()) -> 3;
+Node (Node (Leaf (),2,Leaf ()),2,Leaf ()) -> 2;
+Node (Leaf (),1,Leaf ()) -> 1;
+Node (Leaf (),1,Node (Leaf (),0,Leaf ())) -> 2;
+Leaf () -> 0;
+
+=================================
+(\sum -> (\tree_count_nodes -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_nodes = \tree -> case tree of
+    Node y1 -> 
+      S (sum (tree_count_nodes (#3.1 y1)) (tree_count_nodes (#3.3 y1)))
+
+    Leaf y1 -> 
+      0 in tree_count_nodes) : NatTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+(\sum -> (\tree_count_nodes -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_nodes = \tree -> case tree of
+    Node y1 -> 
+      S (sum (tree_count_nodes (#3.1 y1)) (tree_count_nodes (#3.3 y1)))
+
+    Leaf y1 -> 
+      0 in tree_count_nodes) : NatTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+1.829069 true true
+
+Node (Node (Leaf (),2,Node (Leaf (),0,Leaf ())),2,Leaf ()) -> 3;
+Node (Leaf (),1,Node (Leaf (),2,Leaf ())) -> 2;
+Node (Leaf (),2,Node (Leaf (),2,Leaf ())) -> 2;
+Node (Leaf (),2,Leaf ()) -> 1;
+Node (Node (Node (Leaf (),1,Leaf ()),3,Leaf ()),2,Leaf ()) -> 3;
+Leaf () -> 0;
+
+=================================
+(\sum -> (\tree_count_nodes -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_nodes = \tree -> case tree of
+    Node y1 -> 
+      S (sum (tree_count_nodes (#3.1 y1)) (tree_count_nodes (#3.3 y1)))
+
+    Leaf y1 -> 
+      0 in tree_count_nodes) : NatTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+(\sum -> (\tree_count_nodes -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_nodes = \tree -> case tree of
+    Node y1 -> 
+      S (sum (tree_count_nodes (#3.1 y1)) (tree_count_nodes (#3.3 y1)))
+
+    Leaf y1 -> 
+      0 in tree_count_nodes) : NatTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+2.066013 true true
+
+Node (Leaf (),2,Node (Leaf (),1,Leaf ())) -> 2;
+Node (Node (Leaf (),2,Node (Leaf (),2,Leaf ())),1,Leaf ()) -> 3;
+Node (Node (Node (Leaf (),2,Leaf ()),3,Leaf ()),2,Leaf ()) -> 3;
+Node (Node (Leaf (),1,Leaf ()),1,Node (Leaf (),2,Leaf ())) -> 3;
+Node (Leaf (),2,Leaf ()) -> 1;
+Leaf () -> 0;
+
+=================================
+(\sum -> (\tree_count_nodes -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_nodes = \tree -> case tree of
+    Node y1 -> 
+      S (sum (tree_count_nodes (#3.1 y1)) (tree_count_nodes (#3.3 y1)))
+
+    Leaf y1 -> 
+      0 in tree_count_nodes) : NatTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+(\sum -> (\tree_count_nodes -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_nodes = \tree -> case tree of
+    Node y1 -> 
+      S (sum (tree_count_nodes (#3.1 y1)) (tree_count_nodes (#3.3 y1)))
+
+    Leaf y1 -> 
+      0 in tree_count_nodes) : NatTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+1.709514 true true
+
+Node (Node (Leaf (),3,Node (Leaf (),3,Leaf ())),0,Leaf ()) -> 3;
+Node (Leaf (),3,Leaf ()) -> 1;
+Node (Node (Leaf (),3,Node (Leaf (),2,Leaf ())),2,Leaf ()) -> 3;
+Node (Leaf (),2,Node (Node (Leaf (),0,Leaf ()),1,Leaf ())) -> 3;
+Node (Leaf (),0,Node (Node (Leaf (),2,Leaf ()),2,Leaf ())) -> 3;
+Leaf () -> 0;
+
+=================================
+(\sum -> (\tree_count_nodes -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_nodes = \tree -> case tree of
+    Node y1 -> 
+      S (sum (tree_count_nodes (#3.1 y1)) (tree_count_nodes (#3.3 y1)))
+
+    Leaf y1 -> 
+      0 in tree_count_nodes) : NatTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+(\sum -> (\tree_count_nodes -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_nodes = \tree -> case tree of
+    Node y1 -> 
+      S (sum (tree_count_nodes (#3.1 y1)) (tree_count_nodes (#3.3 y1)))
+
+    Leaf y1 -> 
+      0 in tree_count_nodes) : NatTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+1.40329 true true
+
+Node (Node (Leaf (),3,Leaf ()),0,Leaf ()) -> 2;
+Node (Leaf (),3,Leaf ()) -> 1;
+Node (Leaf (),1,Node (Leaf (),2,Node (Leaf (),1,Leaf ()))) -> 3;
+Node (Leaf (),2,Node (Node (Leaf (),2,Leaf ()),0,Leaf ())) -> 3;
+Node (Node (Leaf (),1,Leaf ()),3,Node (Leaf (),0,Leaf ())) -> 3;
+Leaf () -> 0;
+
+=================================
+(\sum -> (\tree_count_nodes -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_nodes = \tree -> case tree of
+    Node y1 -> 
+      S (sum (tree_count_nodes (#3.1 y1)) (tree_count_nodes (#3.3 y1)))
+
+    Leaf y1 -> 
+      0 in tree_count_nodes) : NatTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+(\sum -> (\tree_count_nodes -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_nodes = \tree -> case tree of
+    Node y1 -> 
+      S (sum (tree_count_nodes (#3.1 y1)) (tree_count_nodes (#3.3 y1)))
+
+    Leaf y1 -> 
+      0 in tree_count_nodes) : NatTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+1.731112 true true
+
+Node (Leaf (),3,Leaf ()) -> 1;
+Node (Leaf (),3,Node (Leaf (),1,Node (Leaf (),0,Leaf ()))) -> 3;
+Node (Node (Leaf (),3,Leaf ()),2,Leaf ()) -> 2;
+Node (Leaf (),1,Leaf ()) -> 1;
+Node (Leaf (),2,Node (Leaf (),1,Leaf ())) -> 2;
+Leaf () -> 0;
+
+=================================
+(\sum -> (\tree_count_nodes -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_nodes = \tree -> case tree of
+    Node y1 -> 
+      S (sum (tree_count_nodes (#3.1 y1)) (tree_count_nodes (#3.3 y1)))
+
+    Leaf y1 -> 
+      0 in tree_count_nodes) : NatTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+(\sum -> (\tree_count_nodes -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_nodes = \tree -> case tree of
+    Node y1 -> 
+      S (sum (tree_count_nodes (#3.1 y1)) (tree_count_nodes (#3.3 y1)))
+
+    Leaf y1 -> 
+      0 in tree_count_nodes) : NatTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+1.488228 true true
+
+Node (Leaf (),1,Node (Node (Leaf (),0,Leaf ()),3,Leaf ())) -> 3;
+Node (Leaf (),0,Node (Node (Leaf (),3,Leaf ()),2,Leaf ())) -> 3;
+Node (Leaf (),2,Leaf ()) -> 1;
+Node (Node (Leaf (),2,Leaf ()),2,Leaf ()) -> 2;
+Node (Node (Leaf (),1,Node (Leaf (),2,Leaf ())),1,Leaf ()) -> 3;
+Node (Node (Leaf (),2,Node (Leaf (),2,Leaf ())),3,Leaf ()) -> 3;
+Leaf () -> 0;
+
+=================================
+(\sum -> (\tree_count_nodes -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_nodes = \tree -> case tree of
+    Node y1 -> 
+      S (sum (tree_count_nodes (#3.1 y1)) (tree_count_nodes (#3.3 y1)))
+
+    Leaf y1 -> 
+      0 in tree_count_nodes) : NatTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+(\sum -> (\tree_count_nodes -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_nodes = \tree -> case tree of
+    Node y1 -> 
+      S (sum (tree_count_nodes (#3.1 y1)) (tree_count_nodes (#3.3 y1)))
+
+    Leaf y1 -> 
+      0 in tree_count_nodes) : NatTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+1.711499 true true
+
+Node (Node (Leaf (),1,Leaf ()),3,Node (Leaf (),0,Leaf ())) -> 3;
+Node (Leaf (),2,Node (Node (Leaf (),2,Leaf ()),1,Leaf ())) -> 3;
+Node (Node (Leaf (),0,Leaf ()),1,Node (Leaf (),1,Leaf ())) -> 3;
+Node (Node (Leaf (),0,Leaf ()),2,Node (Leaf (),2,Leaf ())) -> 3;
+Node (Node (Leaf (),3,Node (Leaf (),1,Leaf ())),3,Leaf ()) -> 3;
+Node (Leaf (),2,Node (Leaf (),2,Node (Leaf (),3,Leaf ()))) -> 3;
+Leaf () -> 0;
+
+=================================
+(\sum -> (\tree_count_nodes -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_nodes = \tree -> case tree of
+    Node y1 -> 
+      3
+
+    Leaf y1 -> 
+      0 in tree_count_nodes) : NatTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+0.060534 false false
+
+Node (Leaf (),1,Leaf ()) -> 1;
+Node (Leaf (),3,Leaf ()) -> 1;
+Node (Leaf (),1,Node (Node (Leaf (),2,Leaf ()),0,Leaf ())) -> 3;
+Node (Leaf (),2,Node (Leaf (),0,Node (Leaf (),0,Leaf ()))) -> 3;
+Node (Leaf (),2,Node (Node (Leaf (),1,Leaf ()),3,Leaf ())) -> 3;
+Node (Leaf (),2,Node (Leaf (),2,Node (Leaf (),2,Leaf ()))) -> 3;
+Leaf () -> 0;
+
+=================================
+(\sum -> (\tree_count_nodes -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_nodes = \tree -> case tree of
+    Node y1 -> 
+      S (sum (tree_count_nodes (#3.1 y1)) (tree_count_nodes (#3.3 y1)))
+
+    Leaf y1 -> 
+      0 in tree_count_nodes) : NatTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+(\sum -> (\tree_count_nodes -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_nodes = \tree -> case tree of
+    Node y1 -> 
+      S (sum (tree_count_nodes (#3.1 y1)) (tree_count_nodes (#3.3 y1)))
+
+    Leaf y1 -> 
+      0 in tree_count_nodes) : NatTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+2.043043 true true
+
+Node (Leaf (),2,Node (Leaf (),1,Node (Leaf (),3,Leaf ()))) -> 3;
+Node (Leaf (),1,Node (Leaf (),1,Leaf ())) -> 2;
+Node (Node (Leaf (),1,Leaf ()),3,Leaf ()) -> 2;
+Node (Leaf (),0,Leaf ()) -> 1;
+Node (Leaf (),0,Node (Node (Leaf (),3,Leaf ()),2,Leaf ())) -> 3;
+Node (Leaf (),3,Node (Node (Leaf (),3,Leaf ()),2,Leaf ())) -> 3;
+Leaf () -> 0;
+
+=================================
+(\sum -> (\tree_count_nodes -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_nodes = \tree -> case tree of
+    Node y1 -> 
+      S (sum (tree_count_nodes (#3.1 y1)) (tree_count_nodes (#3.3 y1)))
+
+    Leaf y1 -> 
+      0 in tree_count_nodes) : NatTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+(\sum -> (\tree_count_nodes -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_nodes = \tree -> case tree of
+    Node y1 -> 
+      S (sum (tree_count_nodes (#3.1 y1)) (tree_count_nodes (#3.3 y1)))
+
+    Leaf y1 -> 
+      0 in tree_count_nodes) : NatTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+2.002543 true true
+
+Node (Leaf (),1,Node (Node (Leaf (),3,Leaf ()),0,Leaf ())) -> 3;
+Node (Leaf (),2,Node (Leaf (),1,Node (Leaf (),2,Leaf ()))) -> 3;
+Node (Leaf (),1,Node (Leaf (),0,Node (Leaf (),2,Leaf ()))) -> 3;
+Node (Node (Leaf (),2,Leaf ()),0,Node (Leaf (),2,Leaf ())) -> 3;
+Node (Leaf (),2,Node (Leaf (),3,Node (Leaf (),0,Leaf ()))) -> 3;
+Node (Node (Leaf (),3,Node (Leaf (),0,Leaf ())),1,Leaf ()) -> 3;
+Leaf () -> 0;
+
+=================================
+(\sum -> (\tree_count_nodes -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_nodes = \tree -> case tree of
+    Node y1 -> 
+      3
+
+    Leaf y1 -> 
+      0 in tree_count_nodes) : NatTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+0.060084 false false
+
+Node (Node (Node (Leaf (),2,Leaf ()),2,Leaf ()),3,Leaf ()) -> 3;
+Node (Leaf (),0,Leaf ()) -> 1;
+Node (Node (Leaf (),0,Node (Leaf (),1,Leaf ())),2,Leaf ()) -> 3;
+Node (Leaf (),2,Node (Leaf (),1,Node (Leaf (),1,Leaf ()))) -> 3;
+Node (Node (Leaf (),2,Node (Leaf (),1,Leaf ())),2,Leaf ()) -> 3;
+Node (Leaf (),0,Node (Node (Leaf (),1,Leaf ()),0,Leaf ())) -> 3;
+Leaf () -> 0;
+
+=================================
+(\sum -> (\tree_count_nodes -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_nodes = \tree -> case tree of
+    Node y1 -> 
+      S (sum (tree_count_nodes (#3.1 y1)) (tree_count_nodes (#3.3 y1)))
+
+    Leaf y1 -> 
+      0 in tree_count_nodes) : NatTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+(\sum -> (\tree_count_nodes -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_nodes = \tree -> case tree of
+    Node y1 -> 
+      S (sum (tree_count_nodes (#3.1 y1)) (tree_count_nodes (#3.3 y1)))
+
+    Leaf y1 -> 
+      0 in tree_count_nodes) : NatTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+2.154588 true true
+
+Node (Node (Leaf (),1,Leaf ()),3,Node (Leaf (),2,Leaf ())) -> 3;
+Node (Leaf (),1,Leaf ()) -> 1;
+Node (Node (Leaf (),1,Leaf ()),1,Node (Leaf (),1,Leaf ())) -> 3;
+Node (Node (Leaf (),3,Leaf ()),0,Leaf ()) -> 2;
+Node (Leaf (),0,Leaf ()) -> 1;
+Node (Node (Node (Leaf (),0,Leaf ()),1,Leaf ()),0,Leaf ()) -> 3;
+Leaf () -> 0;
+
+=================================
+(\sum -> (\tree_count_nodes -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_nodes = \tree -> case tree of
+    Node y1 -> 
+      S (sum (tree_count_nodes (#3.1 y1)) (tree_count_nodes (#3.3 y1)))
+
+    Leaf y1 -> 
+      0 in tree_count_nodes) : NatTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+(\sum -> (\tree_count_nodes -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_nodes = \tree -> case tree of
+    Node y1 -> 
+      S (sum (tree_count_nodes (#3.1 y1)) (tree_count_nodes (#3.3 y1)))
+
+    Leaf y1 -> 
+      0 in tree_count_nodes) : NatTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+1.812943 true true
+
+Node (Node (Leaf (),1,Node (Leaf (),0,Leaf ())),1,Leaf ()) -> 3;
+Node (Leaf (),2,Node (Leaf (),1,Node (Leaf (),3,Leaf ()))) -> 3;
+Node (Node (Node (Leaf (),1,Leaf ()),1,Leaf ()),1,Leaf ()) -> 3;
+Node (Node (Leaf (),0,Leaf ()),2,Leaf ()) -> 2;
+Node (Leaf (),3,Node (Node (Leaf (),3,Leaf ()),2,Leaf ())) -> 3;
+Node (Leaf (),3,Node (Node (Leaf (),2,Leaf ()),1,Leaf ())) -> 3;
+Leaf () -> 0;
+
+=================================
+(\sum -> (\tree_count_nodes -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_nodes = \tree -> case tree of
+    Node y1 -> 
+      S (sum (tree_count_nodes (#3.1 y1)) (tree_count_nodes (#3.3 y1)))
+
+    Leaf y1 -> 
+      0 in tree_count_nodes) : NatTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+(\sum -> (\tree_count_nodes -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_nodes = \tree -> case tree of
+    Node y1 -> 
+      S (sum (tree_count_nodes (#3.1 y1)) (tree_count_nodes (#3.3 y1)))
+
+    Leaf y1 -> 
+      0 in tree_count_nodes) : NatTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+3.597697 true true
+
+Node (Leaf (),1,Leaf ()) -> 1;
+Node (Node (Leaf (),3,Leaf ()),3,Node (Leaf (),3,Leaf ())) -> 3;
+Node (Node (Node (Leaf (),2,Leaf ()),1,Leaf ()),1,Leaf ()) -> 3;
+Node (Leaf (),1,Node (Node (Leaf (),2,Leaf ()),3,Leaf ())) -> 3;
+Node (Node (Leaf (),2,Leaf ()),2,Node (Leaf (),1,Leaf ())) -> 3;
+Node (Leaf (),1,Node (Leaf (),1,Node (Leaf (),2,Leaf ()))) -> 3;
+Leaf () -> 0;
+
+=================================
+(\sum -> (\tree_count_nodes -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_nodes = \tree -> case tree of
+    Node y1 -> 
+      S (sum (tree_count_nodes (#3.1 y1)) (tree_count_nodes (#3.3 y1)))
+
+    Leaf y1 -> 
+      0 in tree_count_nodes) : NatTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+(\sum -> (\tree_count_nodes -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_nodes = \tree -> case tree of
+    Node y1 -> 
+      S (sum (tree_count_nodes (#3.1 y1)) (tree_count_nodes (#3.3 y1)))
+
+    Leaf y1 -> 
+      0 in tree_count_nodes) : NatTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+2.44528 true true
+
+Node (Leaf (),0,Node (Node (Leaf (),0,Leaf ()),0,Leaf ())) -> 3;
+Node (Leaf (),3,Node (Node (Leaf (),0,Leaf ()),3,Leaf ())) -> 3;
+Node (Leaf (),0,Node (Leaf (),2,Leaf ())) -> 2;
+Node (Node (Leaf (),3,Leaf ()),2,Leaf ()) -> 2;
+Node (Leaf (),1,Node (Node (Leaf (),2,Leaf ()),2,Leaf ())) -> 3;
+Node (Leaf (),0,Node (Leaf (),0,Leaf ())) -> 2;
+Leaf () -> 0;
+
+=================================
+(\sum -> (\tree_count_nodes -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_nodes = \tree -> case tree of
+    Node y1 -> 
+      S (sum (tree_count_nodes (#3.1 y1)) (tree_count_nodes (#3.3 y1)))
+
+    Leaf y1 -> 
+      0 in tree_count_nodes) : NatTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+(\sum -> (\tree_count_nodes -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_nodes = \tree -> case tree of
+    Node y1 -> 
+      S (sum (tree_count_nodes (#3.1 y1)) (tree_count_nodes (#3.3 y1)))
+
+    Leaf y1 -> 
+      0 in tree_count_nodes) : NatTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+2.484576 true true
+
+Node (Node (Leaf (),2,Node (Leaf (),0,Leaf ())),3,Leaf ()) -> 3;
+Node (Leaf (),3,Leaf ()) -> 1;
+Node (Node (Leaf (),2,Node (Leaf (),2,Leaf ())),1,Leaf ()) -> 3;
+Node (Node (Leaf (),0,Leaf ()),0,Leaf ()) -> 2;
+Node (Node (Leaf (),2,Node (Leaf (),1,Leaf ())),3,Leaf ()) -> 3;
+Node (Node (Leaf (),0,Node (Leaf (),3,Leaf ())),1,Leaf ()) -> 3;
+Node (Leaf (),3,Node (Leaf (),1,Node (Leaf (),0,Leaf ()))) -> 3;
+Leaf () -> 0;
+
+=================================
+(\sum -> (\tree_count_nodes -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_nodes = \tree -> case tree of
+    Node y1 -> 
+      S (sum (tree_count_nodes (#3.1 y1)) (tree_count_nodes (#3.3 y1)))
+
+    Leaf y1 -> 
+      0 in tree_count_nodes) : NatTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+(\sum -> (\tree_count_nodes -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_nodes = \tree -> case tree of
+    Node y1 -> 
+      S (sum (tree_count_nodes (#3.1 y1)) (tree_count_nodes (#3.3 y1)))
+
+    Leaf y1 -> 
+      0 in tree_count_nodes) : NatTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+2.367779 true true
+
+Node (Node (Leaf (),2,Leaf ()),1,Node (Leaf (),2,Leaf ())) -> 3;
+Node (Node (Leaf (),1,Node (Leaf (),3,Leaf ())),2,Leaf ()) -> 3;
+Node (Leaf (),3,Node (Leaf (),1,Node (Leaf (),0,Leaf ()))) -> 3;
+Node (Leaf (),1,Node (Leaf (),1,Leaf ())) -> 2;
+Node (Leaf (),0,Node (Node (Leaf (),2,Leaf ()),3,Leaf ())) -> 3;
+Node (Node (Leaf (),3,Leaf ()),0,Leaf ()) -> 2;
+Node (Leaf (),1,Node (Leaf (),1,Node (Leaf (),1,Leaf ()))) -> 3;
+Leaf () -> 0;
+
+=================================
+(\sum -> (\tree_count_nodes -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_nodes = \tree -> case tree of
+    Node y1 -> 
+      S (sum (tree_count_nodes (#3.1 y1)) (tree_count_nodes (#3.3 y1)))
+
+    Leaf y1 -> 
+      0 in tree_count_nodes) : NatTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+(\sum -> (\tree_count_nodes -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_nodes = \tree -> case tree of
+    Node y1 -> 
+      S (sum (tree_count_nodes (#3.1 y1)) (tree_count_nodes (#3.3 y1)))
+
+    Leaf y1 -> 
+      0 in tree_count_nodes) : NatTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+3.932865 true true
+
+Node (Node (Leaf (),2,Leaf ()),0,Leaf ()) -> 2;
+Node (Node (Leaf (),0,Leaf ()),1,Leaf ()) -> 2;
+Node (Node (Leaf (),3,Leaf ()),3,Leaf ()) -> 2;
+Node (Node (Node (Leaf (),3,Leaf ()),0,Leaf ()),3,Leaf ()) -> 3;
+Node (Leaf (),1,Node (Node (Leaf (),1,Leaf ()),1,Leaf ())) -> 3;
+Node (Node (Node (Leaf (),0,Leaf ()),3,Leaf ()),1,Leaf ()) -> 3;
+Node (Leaf (),0,Leaf ()) -> 1;
+Leaf () -> 0;
+
+=================================
+(\sum -> (\tree_count_nodes -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_nodes = \tree -> case tree of
+    Node y1 -> 
+      S (sum (tree_count_nodes (#3.1 y1)) (tree_count_nodes (#3.3 y1)))
+
+    Leaf y1 -> 
+      0 in tree_count_nodes) : NatTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+(\sum -> (\tree_count_nodes -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_nodes = \tree -> case tree of
+    Node y1 -> 
+      S (sum (tree_count_nodes (#3.1 y1)) (tree_count_nodes (#3.3 y1)))
+
+    Leaf y1 -> 
+      0 in tree_count_nodes) : NatTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+2.390084 true true
+
+Node (Leaf (),0,Node (Leaf (),0,Leaf ())) -> 2;
+Node (Node (Leaf (),1,Leaf ()),2,Node (Leaf (),1,Leaf ())) -> 3;
+Node (Node (Leaf (),1,Leaf ()),0,Leaf ()) -> 2;
+Node (Node (Leaf (),1,Leaf ()),1,Node (Leaf (),1,Leaf ())) -> 3;
+Node (Leaf (),0,Node (Node (Leaf (),1,Leaf ()),1,Leaf ())) -> 3;
+Node (Leaf (),1,Node (Node (Leaf (),0,Leaf ()),3,Leaf ())) -> 3;
+Node (Node (Leaf (),1,Leaf ()),2,Node (Leaf (),0,Leaf ())) -> 3;
+Leaf () -> 0;
+
+=================================
+(\sum -> (\tree_count_nodes -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_nodes = \tree -> case tree of
+    Node y1 -> 
+      S (sum (tree_count_nodes (#3.1 y1)) (tree_count_nodes (#3.3 y1)))
+
+    Leaf y1 -> 
+      0 in tree_count_nodes) : NatTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+(\sum -> (\tree_count_nodes -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_nodes = \tree -> case tree of
+    Node y1 -> 
+      S (sum (tree_count_nodes (#3.1 y1)) (tree_count_nodes (#3.3 y1)))
+
+    Leaf y1 -> 
+      0 in tree_count_nodes) : NatTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+3.192686 true true
+
+Node (Leaf (),2,Leaf ()) -> 1;
+Node (Leaf (),1,Leaf ()) -> 1;
+Node (Leaf (),3,Node (Leaf (),0,Node (Leaf (),2,Leaf ()))) -> 3;
+Node (Leaf (),3,Node (Leaf (),3,Node (Leaf (),0,Leaf ()))) -> 3;
+Node (Node (Leaf (),2,Leaf ()),3,Node (Leaf (),3,Leaf ())) -> 3;
+Node (Leaf (),3,Node (Node (Leaf (),2,Leaf ()),3,Leaf ())) -> 3;
+Node (Node (Leaf (),2,Leaf ()),2,Leaf ()) -> 2;
+Leaf () -> 0;
+
+=================================
+(\sum -> (\tree_count_nodes -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_nodes = \tree -> case tree of
+    Node y1 -> 
+      S (sum (tree_count_nodes (#3.1 y1)) (tree_count_nodes (#3.3 y1)))
+
+    Leaf y1 -> 
+      0 in tree_count_nodes) : NatTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+(\sum -> (\tree_count_nodes -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_nodes = \tree -> case tree of
+    Node y1 -> 
+      S (sum (tree_count_nodes (#3.1 y1)) (tree_count_nodes (#3.3 y1)))
+
+    Leaf y1 -> 
+      0 in tree_count_nodes) : NatTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+2.582056 true true
+
+Node (Node (Leaf (),2,Leaf ()),3,Leaf ()) -> 2;
+Node (Leaf (),0,Leaf ()) -> 1;
+Node (Node (Leaf (),2,Leaf ()),1,Node (Leaf (),2,Leaf ())) -> 3;
+Node (Leaf (),3,Node (Leaf (),3,Leaf ())) -> 2;
+Node (Node (Leaf (),2,Leaf ()),2,Leaf ()) -> 2;
+Node (Leaf (),3,Node (Leaf (),0,Leaf ())) -> 2;
+Node (Leaf (),0,Node (Node (Leaf (),0,Leaf ()),0,Leaf ())) -> 3;
+Leaf () -> 0;
+
+=================================
+(\sum -> (\tree_count_nodes -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_nodes = \tree -> case tree of
+    Node y1 -> 
+      S (sum (tree_count_nodes (#3.1 y1)) (tree_count_nodes (#3.3 y1)))
+
+    Leaf y1 -> 
+      0 in tree_count_nodes) : NatTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+(\sum -> (\tree_count_nodes -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_nodes = \tree -> case tree of
+    Node y1 -> 
+      S (sum (tree_count_nodes (#3.1 y1)) (tree_count_nodes (#3.3 y1)))
+
+    Leaf y1 -> 
+      0 in tree_count_nodes) : NatTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+1.939119 true true
+
+Node (Leaf (),3,Node (Leaf (),3,Node (Leaf (),1,Leaf ()))) -> 3;
+Node (Leaf (),2,Node (Leaf (),0,Node (Leaf (),2,Leaf ()))) -> 3;
+Node (Leaf (),3,Node (Node (Leaf (),1,Leaf ()),2,Leaf ())) -> 3;
+Node (Leaf (),0,Node (Leaf (),2,Node (Leaf (),3,Leaf ()))) -> 3;
+Node (Leaf (),3,Node (Node (Leaf (),0,Leaf ()),0,Leaf ())) -> 3;
+Node (Leaf (),3,Leaf ()) -> 1;
+Node (Node (Node (Leaf (),0,Leaf ()),0,Leaf ()),3,Leaf ()) -> 3;
+Leaf () -> 0;
+
+=================================
+(\sum -> (\tree_count_nodes -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_nodes = \tree -> case tree of
+    Node y1 -> 
+      S (sum (tree_count_nodes (#3.1 y1)) (tree_count_nodes (#3.3 y1)))
+
+    Leaf y1 -> 
+      0 in tree_count_nodes) : NatTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+(\sum -> (\tree_count_nodes -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_nodes = \tree -> case tree of
+    Node y1 -> 
+      S (sum (tree_count_nodes (#3.1 y1)) (tree_count_nodes (#3.3 y1)))
+
+    Leaf y1 -> 
+      0 in tree_count_nodes) : NatTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+3.286101 true true
+
+Node (Leaf (),0,Node (Leaf (),1,Node (Leaf (),0,Leaf ()))) -> 3;
+Node (Node (Leaf (),2,Leaf ()),1,Node (Leaf (),1,Leaf ())) -> 3;
+Node (Leaf (),0,Node (Node (Leaf (),1,Leaf ()),2,Leaf ())) -> 3;
+Node (Node (Leaf (),1,Leaf ()),3,Node (Leaf (),2,Leaf ())) -> 3;
+Node (Node (Leaf (),1,Leaf ()),2,Leaf ()) -> 2;
+Node (Node (Leaf (),1,Node (Leaf (),2,Leaf ())),1,Leaf ()) -> 3;
+Node (Node (Leaf (),3,Leaf ()),2,Leaf ()) -> 2;
+Leaf () -> 0;
+
+=================================
+(\sum -> (\tree_count_nodes -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_nodes = \tree -> case tree of
+    Node y1 -> 
+      S (sum (tree_count_nodes (#3.1 y1)) (tree_count_nodes (#3.3 y1)))
+
+    Leaf y1 -> 
+      0 in tree_count_nodes) : NatTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+(\sum -> (\tree_count_nodes -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_nodes = \tree -> case tree of
+    Node y1 -> 
+      S (sum (tree_count_nodes (#3.1 y1)) (tree_count_nodes (#3.3 y1)))
+
+    Leaf y1 -> 
+      0 in tree_count_nodes) : NatTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+3.562812 true true
+
+Node (Node (Leaf (),1,Node (Leaf (),0,Leaf ())),2,Leaf ()) -> 3;
+Node (Node (Node (Leaf (),3,Leaf ()),2,Leaf ()),1,Leaf ()) -> 3;
+Node (Node (Node (Leaf (),0,Leaf ()),2,Leaf ()),2,Leaf ()) -> 3;
+Node (Leaf (),3,Node (Node (Leaf (),0,Leaf ()),1,Leaf ())) -> 3;
+Node (Leaf (),2,Node (Leaf (),0,Node (Leaf (),1,Leaf ()))) -> 3;
+Node (Leaf (),2,Node (Node (Leaf (),3,Leaf ()),0,Leaf ())) -> 3;
+Node (Node (Node (Leaf (),0,Leaf ()),3,Leaf ()),1,Leaf ()) -> 3;
+Leaf () -> 0;
+
+=================================
+(\sum -> (\tree_count_nodes -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_nodes = \tree -> case tree of
+    Node y1 -> 
+      3
+
+    Leaf y1 -> 
+      0 in tree_count_nodes) : NatTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+0.0676470000001 false false
+
+Node (Leaf (),0,Node (Leaf (),2,Node (Leaf (),0,Leaf ()))) -> 3;
+Node (Leaf (),3,Node (Leaf (),1,Leaf ())) -> 2;
+Node (Node (Leaf (),0,Leaf ()),3,Node (Leaf (),2,Leaf ())) -> 3;
+Node (Leaf (),0,Leaf ()) -> 1;
+Node (Node (Node (Leaf (),0,Leaf ()),3,Leaf ()),3,Leaf ()) -> 3;
+Node (Node (Leaf (),1,Leaf ()),2,Node (Leaf (),1,Leaf ())) -> 3;
+Node (Leaf (),3,Node (Leaf (),2,Leaf ())) -> 2;
+Leaf () -> 0;
+
+=================================
+(\sum -> (\tree_count_nodes -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_nodes = \tree -> case tree of
+    Node y1 -> 
+      S (sum (tree_count_nodes (#3.1 y1)) (tree_count_nodes (#3.3 y1)))
+
+    Leaf y1 -> 
+      0 in tree_count_nodes) : NatTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+(\sum -> (\tree_count_nodes -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_nodes = \tree -> case tree of
+    Node y1 -> 
+      S (sum (tree_count_nodes (#3.1 y1)) (tree_count_nodes (#3.3 y1)))
+
+    Leaf y1 -> 
+      0 in tree_count_nodes) : NatTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+2.5673 true true
+
+Node (Node (Node (Leaf (),0,Leaf ()),3,Leaf ()),1,Leaf ()) -> 3;
+Node (Node (Leaf (),2,Leaf ()),2,Node (Leaf (),2,Leaf ())) -> 3;
+Node (Node (Leaf (),1,Leaf ()),0,Node (Leaf (),0,Leaf ())) -> 3;
+Node (Node (Leaf (),3,Node (Leaf (),3,Leaf ())),3,Leaf ()) -> 3;
+Node (Leaf (),2,Node (Leaf (),3,Node (Leaf (),0,Leaf ()))) -> 3;
+Node (Leaf (),0,Node (Leaf (),2,Node (Leaf (),3,Leaf ()))) -> 3;
+Node (Node (Leaf (),3,Leaf ()),1,Leaf ()) -> 2;
+Node (Leaf (),0,Node (Leaf (),1,Node (Leaf (),0,Leaf ()))) -> 3;
+Leaf () -> 0;
+
+=================================
+(\sum -> (\tree_count_nodes -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_nodes = \tree -> case tree of
+    Node y1 -> 
+      S (sum (tree_count_nodes (#3.1 y1)) (tree_count_nodes (#3.3 y1)))
+
+    Leaf y1 -> 
+      0 in tree_count_nodes) : NatTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+(\sum -> (\tree_count_nodes -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_nodes = \tree -> case tree of
+    Node y1 -> 
+      S (sum (tree_count_nodes (#3.1 y1)) (tree_count_nodes (#3.3 y1)))
+
+    Leaf y1 -> 
+      0 in tree_count_nodes) : NatTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+5.479024 true true
+
+Node (Node (Leaf (),1,Leaf ()),1,Node (Leaf (),2,Leaf ())) -> 3;
+Node (Leaf (),3,Leaf ()) -> 1;
+Node (Node (Leaf (),0,Leaf ()),0,Node (Leaf (),0,Leaf ())) -> 3;
+Node (Node (Node (Leaf (),0,Leaf ()),3,Leaf ()),2,Leaf ()) -> 3;
+Node (Node (Leaf (),1,Node (Leaf (),1,Leaf ())),2,Leaf ()) -> 3;
+Node (Node (Node (Leaf (),1,Leaf ()),0,Leaf ()),2,Leaf ()) -> 3;
+Node (Leaf (),0,Node (Node (Leaf (),2,Leaf ()),1,Leaf ())) -> 3;
+Node (Node (Leaf (),3,Leaf ()),1,Leaf ()) -> 2;
+Leaf () -> 0;
+
+=================================
+(\sum -> (\tree_count_nodes -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_nodes = \tree -> case tree of
+    Node y1 -> 
+      S (sum (tree_count_nodes (#3.1 y1)) (tree_count_nodes (#3.3 y1)))
+
+    Leaf y1 -> 
+      0 in tree_count_nodes) : NatTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+(\sum -> (\tree_count_nodes -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_nodes = \tree -> case tree of
+    Node y1 -> 
+      S (sum (tree_count_nodes (#3.1 y1)) (tree_count_nodes (#3.3 y1)))
+
+    Leaf y1 -> 
+      0 in tree_count_nodes) : NatTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+2.868817 true true
+
+Node (Leaf (),1,Node (Leaf (),0,Node (Leaf (),1,Leaf ()))) -> 3;
+Node (Leaf (),3,Node (Node (Leaf (),0,Leaf ()),0,Leaf ())) -> 3;
+Node (Leaf (),0,Node (Leaf (),0,Node (Leaf (),0,Leaf ()))) -> 3;
+Node (Leaf (),1,Leaf ()) -> 1;
+Node (Leaf (),3,Node (Leaf (),2,Leaf ())) -> 2;
+Node (Leaf (),0,Node (Node (Leaf (),1,Leaf ()),2,Leaf ())) -> 3;
+Node (Node (Leaf (),0,Leaf ()),0,Leaf ()) -> 2;
+Node (Leaf (),0,Node (Leaf (),3,Node (Leaf (),3,Leaf ()))) -> 3;
+Leaf () -> 0;
+
+=================================
+(\sum -> (\tree_count_nodes -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_nodes = \tree -> case tree of
+    Node y1 -> 
+      S (sum (tree_count_nodes (#3.1 y1)) (tree_count_nodes (#3.3 y1)))
+
+    Leaf y1 -> 
+      0 in tree_count_nodes) : NatTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+(\sum -> (\tree_count_nodes -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_nodes = \tree -> case tree of
+    Node y1 -> 
+      S (sum (tree_count_nodes (#3.1 y1)) (tree_count_nodes (#3.3 y1)))
+
+    Leaf y1 -> 
+      0 in tree_count_nodes) : NatTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+2.840694 true true
+
+Node (Leaf (),1,Node (Leaf (),2,Node (Leaf (),2,Leaf ()))) -> 3;
+Node (Leaf (),0,Node (Leaf (),0,Node (Leaf (),3,Leaf ()))) -> 3;
+Node (Leaf (),0,Node (Leaf (),3,Leaf ())) -> 2;
+Node (Leaf (),2,Leaf ()) -> 1;
+Node (Leaf (),3,Node (Leaf (),3,Leaf ())) -> 2;
+Node (Node (Node (Leaf (),1,Leaf ()),0,Leaf ()),2,Leaf ()) -> 3;
+Node (Leaf (),2,Node (Node (Leaf (),0,Leaf ()),2,Leaf ())) -> 3;
+Node (Node (Leaf (),2,Leaf ()),0,Leaf ()) -> 2;
+Leaf () -> 0;
+
+=================================
+(\sum -> (\tree_count_nodes -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_nodes = \tree -> case tree of
+    Node y1 -> 
+      S (sum (tree_count_nodes (#3.1 y1)) (tree_count_nodes (#3.3 y1)))
+
+    Leaf y1 -> 
+      0 in tree_count_nodes) : NatTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+(\sum -> (\tree_count_nodes -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_nodes = \tree -> case tree of
+    Node y1 -> 
+      S (sum (tree_count_nodes (#3.1 y1)) (tree_count_nodes (#3.3 y1)))
+
+    Leaf y1 -> 
+      0 in tree_count_nodes) : NatTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+3.21611 true true
+
+Node (Node (Node (Leaf (),0,Leaf ()),2,Leaf ()),2,Leaf ()) -> 3;
+Node (Leaf (),1,Node (Leaf (),0,Leaf ())) -> 2;
+Node (Node (Leaf (),2,Leaf ()),2,Node (Leaf (),2,Leaf ())) -> 3;
+Node (Leaf (),3,Node (Leaf (),3,Node (Leaf (),2,Leaf ()))) -> 3;
+Node (Node (Node (Leaf (),1,Leaf ()),1,Leaf ()),2,Leaf ()) -> 3;
+Node (Leaf (),0,Node (Leaf (),0,Leaf ())) -> 2;
+Node (Leaf (),1,Node (Node (Leaf (),3,Leaf ()),2,Leaf ())) -> 3;
+Node (Leaf (),3,Leaf ()) -> 1;
+Leaf () -> 0;
+
+=================================
+(\sum -> (\tree_count_nodes -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_nodes = \tree -> case tree of
+    Node y1 -> 
+      S (sum (tree_count_nodes (#3.1 y1)) (tree_count_nodes (#3.3 y1)))
+
+    Leaf y1 -> 
+      0 in tree_count_nodes) : NatTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+(\sum -> (\tree_count_nodes -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_nodes = \tree -> case tree of
+    Node y1 -> 
+      S (sum (tree_count_nodes (#3.1 y1)) (tree_count_nodes (#3.3 y1)))
+
+    Leaf y1 -> 
+      0 in tree_count_nodes) : NatTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+3.129887 true true
+
+Node (Leaf (),0,Node (Leaf (),3,Node (Leaf (),3,Leaf ()))) -> 3;
+Node (Leaf (),2,Leaf ()) -> 1;
+Node (Leaf (),1,Node (Leaf (),3,Leaf ())) -> 2;
+Node (Node (Leaf (),2,Leaf ()),0,Node (Leaf (),1,Leaf ())) -> 3;
+Node (Node (Leaf (),2,Node (Leaf (),0,Leaf ())),1,Leaf ()) -> 3;
+Node (Node (Leaf (),1,Leaf ()),1,Leaf ()) -> 2;
+Node (Node (Leaf (),1,Leaf ()),3,Leaf ()) -> 2;
+Node (Node (Leaf (),1,Node (Leaf (),2,Leaf ())),0,Leaf ()) -> 3;
+Leaf () -> 0;
+
+=================================
+(\sum -> (\tree_count_nodes -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_nodes = \tree -> case tree of
+    Node y1 -> 
+      S (sum (tree_count_nodes (#3.1 y1)) (tree_count_nodes (#3.3 y1)))
+
+    Leaf y1 -> 
+      0 in tree_count_nodes) : NatTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+(\sum -> (\tree_count_nodes -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_nodes = \tree -> case tree of
+    Node y1 -> 
+      S (sum (tree_count_nodes (#3.1 y1)) (tree_count_nodes (#3.3 y1)))
+
+    Leaf y1 -> 
+      0 in tree_count_nodes) : NatTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+2.651112 true true
+
+Node (Node (Node (Leaf (),3,Leaf ()),1,Leaf ()),0,Leaf ()) -> 3;
+Node (Node (Leaf (),0,Leaf ()),1,Node (Leaf (),3,Leaf ())) -> 3;
+Node (Leaf (),2,Leaf ()) -> 1;
+Node (Node (Leaf (),0,Node (Leaf (),1,Leaf ())),1,Leaf ()) -> 3;
+Node (Leaf (),2,Node (Node (Leaf (),0,Leaf ()),3,Leaf ())) -> 3;
+Node (Node (Leaf (),1,Leaf ()),1,Leaf ()) -> 2;
+Node (Node (Leaf (),3,Leaf ()),0,Node (Leaf (),2,Leaf ())) -> 3;
+Node (Node (Leaf (),1,Leaf ()),0,Node (Leaf (),1,Leaf ())) -> 3;
+Leaf () -> 0;
+
+=================================
+(\sum -> (\tree_count_nodes -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_nodes = \tree -> case tree of
+    Node y1 -> 
+      S (sum (tree_count_nodes (#3.1 y1)) (tree_count_nodes (#3.3 y1)))
+
+    Leaf y1 -> 
+      0 in tree_count_nodes) : NatTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+(\sum -> (\tree_count_nodes -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_nodes = \tree -> case tree of
+    Node y1 -> 
+      S (sum (tree_count_nodes (#3.1 y1)) (tree_count_nodes (#3.3 y1)))
+
+    Leaf y1 -> 
+      0 in tree_count_nodes) : NatTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+2.575712 true true
+
+Node (Leaf (),3,Node (Leaf (),2,Leaf ())) -> 2;
+Node (Leaf (),2,Node (Leaf (),1,Node (Leaf (),2,Leaf ()))) -> 3;
+Node (Node (Leaf (),1,Leaf ()),0,Node (Leaf (),0,Leaf ())) -> 3;
+Node (Leaf (),0,Leaf ()) -> 1;
+Node (Leaf (),3,Node (Node (Leaf (),3,Leaf ()),0,Leaf ())) -> 3;
+Node (Leaf (),1,Node (Leaf (),1,Node (Leaf (),2,Leaf ()))) -> 3;
+Node (Node (Leaf (),1,Leaf ()),1,Leaf ()) -> 2;
+Node (Leaf (),3,Node (Leaf (),0,Leaf ())) -> 2;
+Leaf () -> 0;
+
+=================================
+(\sum -> (\tree_count_nodes -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_nodes = \tree -> case tree of
+    Node y1 -> 
+      S (sum (tree_count_nodes (#3.1 y1)) (tree_count_nodes (#3.3 y1)))
+
+    Leaf y1 -> 
+      0 in tree_count_nodes) : NatTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+(\sum -> (\tree_count_nodes -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_nodes = \tree -> case tree of
+    Node y1 -> 
+      S (sum (tree_count_nodes (#3.1 y1)) (tree_count_nodes (#3.3 y1)))
+
+    Leaf y1 -> 
+      0 in tree_count_nodes) : NatTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+2.8591 true true
+
+Node (Leaf (),1,Node (Leaf (),1,Leaf ())) -> 2;
+Node (Node (Leaf (),0,Node (Leaf (),2,Leaf ())),1,Leaf ()) -> 3;
+Node (Node (Leaf (),1,Node (Leaf (),0,Leaf ())),0,Leaf ()) -> 3;
+Node (Leaf (),2,Node (Node (Leaf (),1,Leaf ()),0,Leaf ())) -> 3;
+Node (Leaf (),1,Leaf ()) -> 1;
+Node (Node (Node (Leaf (),2,Leaf ()),3,Leaf ()),1,Leaf ()) -> 3;
+Node (Node (Leaf (),2,Leaf ()),1,Node (Leaf (),2,Leaf ())) -> 3;
+Node (Leaf (),1,Node (Leaf (),0,Leaf ())) -> 2;
+Leaf () -> 0;
+
+=================================
+(\sum -> (\tree_count_nodes -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_nodes = \tree -> case tree of
+    Node y1 -> 
+      S (sum (tree_count_nodes (#3.1 y1)) (tree_count_nodes (#3.3 y1)))
+
+    Leaf y1 -> 
+      0 in tree_count_nodes) : NatTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+(\sum -> (\tree_count_nodes -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_nodes = \tree -> case tree of
+    Node y1 -> 
+      S (sum (tree_count_nodes (#3.1 y1)) (tree_count_nodes (#3.3 y1)))
+
+    Leaf y1 -> 
+      0 in tree_count_nodes) : NatTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+2.517483 true true
+
+Node (Node (Leaf (),1,Leaf ()),1,Leaf ()) -> 2;
+Node (Node (Leaf (),2,Node (Leaf (),1,Leaf ())),3,Leaf ()) -> 3;
+Node (Leaf (),0,Leaf ()) -> 1;
+Node (Node (Leaf (),2,Node (Leaf (),1,Leaf ())),0,Leaf ()) -> 3;
+Node (Leaf (),1,Node (Leaf (),2,Leaf ())) -> 2;
+Node (Leaf (),0,Node (Leaf (),1,Leaf ())) -> 2;
+Node (Leaf (),3,Node (Leaf (),2,Node (Leaf (),0,Leaf ()))) -> 3;
+Node (Node (Leaf (),3,Node (Leaf (),2,Leaf ())),2,Leaf ()) -> 3;
+Leaf () -> 0;
+
+=================================
+(\sum -> (\tree_count_nodes -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_nodes = \tree -> case tree of
+    Node y1 -> 
+      S (sum (tree_count_nodes (#3.1 y1)) (tree_count_nodes (#3.3 y1)))
+
+    Leaf y1 -> 
+      0 in tree_count_nodes) : NatTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+(\sum -> (\tree_count_nodes -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_nodes = \tree -> case tree of
+    Node y1 -> 
+      S (sum (tree_count_nodes (#3.1 y1)) (tree_count_nodes (#3.3 y1)))
+
+    Leaf y1 -> 
+      0 in tree_count_nodes) : NatTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+2.509706 true true
+
+Node (Leaf (),3,Node (Leaf (),1,Leaf ())) -> 2;
+Node (Node (Leaf (),1,Leaf ()),2,Leaf ()) -> 2;
+Node (Node (Leaf (),3,Leaf ()),3,Leaf ()) -> 2;
+Node (Node (Leaf (),0,Leaf ()),1,Node (Leaf (),3,Leaf ())) -> 3;
+Node (Node (Node (Leaf (),0,Leaf ()),3,Leaf ()),0,Leaf ()) -> 3;
+Node (Node (Leaf (),1,Leaf ()),3,Node (Leaf (),0,Leaf ())) -> 3;
+Node (Node (Leaf (),0,Leaf ()),0,Node (Leaf (),1,Leaf ())) -> 3;
+Node (Node (Leaf (),0,Node (Leaf (),0,Leaf ())),1,Leaf ()) -> 3;
+Node (Leaf (),3,Leaf ()) -> 1;
+Leaf () -> 0;
+
+=================================
+(\sum -> (\tree_count_nodes -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_nodes = \tree -> case tree of
+    Node y1 -> 
+      S (sum (tree_count_nodes (#3.1 y1)) (tree_count_nodes (#3.3 y1)))
+
+    Leaf y1 -> 
+      0 in tree_count_nodes) : NatTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+(\sum -> (\tree_count_nodes -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_nodes = \tree -> case tree of
+    Node y1 -> 
+      S (sum (tree_count_nodes (#3.1 y1)) (tree_count_nodes (#3.3 y1)))
+
+    Leaf y1 -> 
+      0 in tree_count_nodes) : NatTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+3.094646 true true
+
+Node (Leaf (),3,Leaf ()) -> 1;
+Node (Node (Leaf (),2,Leaf ()),0,Leaf ()) -> 2;
+Node (Node (Leaf (),0,Node (Leaf (),3,Leaf ())),1,Leaf ()) -> 3;
+Node (Node (Leaf (),2,Leaf ()),1,Node (Leaf (),3,Leaf ())) -> 3;
+Node (Node (Leaf (),0,Node (Leaf (),1,Leaf ())),2,Leaf ()) -> 3;
+Node (Leaf (),1,Node (Node (Leaf (),3,Leaf ()),0,Leaf ())) -> 3;
+Node (Leaf (),3,Node (Node (Leaf (),1,Leaf ()),2,Leaf ())) -> 3;
+Node (Leaf (),2,Node (Leaf (),0,Node (Leaf (),1,Leaf ()))) -> 3;
+Node (Node (Leaf (),2,Node (Leaf (),3,Leaf ())),1,Leaf ()) -> 3;
+Leaf () -> 0;
+
+=================================
+(\sum -> (\tree_count_nodes -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_nodes = \tree -> case tree of
+    Node y1 -> 
+      S (sum (tree_count_nodes (#3.1 y1)) (tree_count_nodes (#3.3 y1)))
+
+    Leaf y1 -> 
+      0 in tree_count_nodes) : NatTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+(\sum -> (\tree_count_nodes -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_nodes = \tree -> case tree of
+    Node y1 -> 
+      S (sum (tree_count_nodes (#3.1 y1)) (tree_count_nodes (#3.3 y1)))
+
+    Leaf y1 -> 
+      0 in tree_count_nodes) : NatTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+2.765371 true true
+
+Node (Node (Leaf (),1,Leaf ()),0,Leaf ()) -> 2;
+Node (Node (Node (Leaf (),0,Leaf ()),0,Leaf ()),1,Leaf ()) -> 3;
+Node (Node (Leaf (),1,Leaf ()),1,Node (Leaf (),0,Leaf ())) -> 3;
+Node (Leaf (),2,Node (Leaf (),3,Node (Leaf (),2,Leaf ()))) -> 3;
+Node (Leaf (),3,Leaf ()) -> 1;
+Node (Node (Leaf (),3,Leaf ()),2,Leaf ()) -> 2;
+Node (Leaf (),0,Node (Leaf (),0,Node (Leaf (),2,Leaf ()))) -> 3;
+Node (Leaf (),0,Node (Leaf (),3,Leaf ())) -> 2;
+Node (Node (Leaf (),2,Node (Leaf (),3,Leaf ())),0,Leaf ()) -> 3;
+Leaf () -> 0;
+
+=================================
+(\sum -> (\tree_count_nodes -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_nodes = \tree -> case tree of
+    Node y1 -> 
+      S (sum (tree_count_nodes (#3.1 y1)) (tree_count_nodes (#3.3 y1)))
+
+    Leaf y1 -> 
+      0 in tree_count_nodes) : NatTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+(\sum -> (\tree_count_nodes -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_nodes = \tree -> case tree of
+    Node y1 -> 
+      S (sum (tree_count_nodes (#3.1 y1)) (tree_count_nodes (#3.3 y1)))
+
+    Leaf y1 -> 
+      0 in tree_count_nodes) : NatTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+3.954668 true true
+
+Node (Node (Node (Leaf (),0,Leaf ()),1,Leaf ()),2,Leaf ()) -> 3;
+Node (Leaf (),0,Node (Leaf (),1,Leaf ())) -> 2;
+Node (Node (Node (Leaf (),3,Leaf ()),1,Leaf ()),0,Leaf ()) -> 3;
+Node (Leaf (),2,Leaf ()) -> 1;
+Node (Leaf (),2,Node (Leaf (),1,Leaf ())) -> 2;
+Node (Leaf (),1,Node (Leaf (),2,Leaf ())) -> 2;
+Node (Leaf (),1,Leaf ()) -> 1;
+Node (Leaf (),3,Node (Node (Leaf (),0,Leaf ()),0,Leaf ())) -> 3;
+Node (Node (Leaf (),2,Leaf ()),2,Leaf ()) -> 2;
+Leaf () -> 0;
+
+=================================
+(\sum -> (\tree_count_nodes -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_nodes = \tree -> case tree of
+    Node y1 -> 
+      S (sum (tree_count_nodes (#3.1 y1)) (tree_count_nodes (#3.3 y1)))
+
+    Leaf y1 -> 
+      0 in tree_count_nodes) : NatTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+(\sum -> (\tree_count_nodes -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_nodes = \tree -> case tree of
+    Node y1 -> 
+      S (sum (tree_count_nodes (#3.1 y1)) (tree_count_nodes (#3.3 y1)))
+
+    Leaf y1 -> 
+      0 in tree_count_nodes) : NatTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+2.944516 true true
+
+Node (Node (Node (Leaf (),0,Leaf ()),2,Leaf ()),3,Leaf ()) -> 3;
+Node (Node (Leaf (),1,Leaf ()),2,Leaf ()) -> 2;
+Node (Node (Leaf (),2,Leaf ()),1,Node (Leaf (),3,Leaf ())) -> 3;
+Node (Leaf (),1,Node (Leaf (),0,Leaf ())) -> 2;
+Node (Node (Leaf (),3,Node (Leaf (),3,Leaf ())),2,Leaf ()) -> 3;
+Node (Node (Leaf (),0,Leaf ()),3,Leaf ()) -> 2;
+Node (Node (Leaf (),0,Node (Leaf (),1,Leaf ())),2,Leaf ()) -> 3;
+Node (Leaf (),0,Node (Leaf (),0,Node (Leaf (),2,Leaf ()))) -> 3;
+Node (Leaf (),3,Node (Leaf (),2,Leaf ())) -> 2;
+Leaf () -> 0;
+
+=================================
+(\sum -> (\tree_count_nodes -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_nodes = \tree -> case tree of
+    Node y1 -> 
+      S (sum (tree_count_nodes (#3.1 y1)) (tree_count_nodes (#3.3 y1)))
+
+    Leaf y1 -> 
+      0 in tree_count_nodes) : NatTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+(\sum -> (\tree_count_nodes -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_nodes = \tree -> case tree of
+    Node y1 -> 
+      S (sum (tree_count_nodes (#3.1 y1)) (tree_count_nodes (#3.3 y1)))
+
+    Leaf y1 -> 
+      0 in tree_count_nodes) : NatTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+4.927339 true true
+
+Node (Node (Leaf (),0,Leaf ()),3,Leaf ()) -> 2;
+Node (Leaf (),1,Leaf ()) -> 1;
+Node (Node (Leaf (),3,Leaf ()),3,Node (Leaf (),2,Leaf ())) -> 3;
+Node (Node (Node (Leaf (),3,Leaf ()),2,Leaf ()),0,Leaf ()) -> 3;
+Node (Leaf (),0,Node (Leaf (),0,Node (Leaf (),0,Leaf ()))) -> 3;
+Node (Node (Leaf (),3,Leaf ()),1,Node (Leaf (),2,Leaf ())) -> 3;
+Node (Node (Leaf (),2,Leaf ()),2,Leaf ()) -> 2;
+Node (Node (Leaf (),1,Leaf ()),3,Node (Leaf (),1,Leaf ())) -> 3;
+Node (Leaf (),1,Node (Leaf (),2,Leaf ())) -> 2;
+Leaf () -> 0;
+
+=================================
+(\sum -> (\tree_count_nodes -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_nodes = \tree -> case tree of
+    Node y1 -> 
+      S (sum (tree_count_nodes (#3.1 y1)) (tree_count_nodes (#3.3 y1)))
+
+    Leaf y1 -> 
+      0 in tree_count_nodes) : NatTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+(\sum -> (\tree_count_nodes -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_nodes = \tree -> case tree of
+    Node y1 -> 
+      S (sum (tree_count_nodes (#3.1 y1)) (tree_count_nodes (#3.3 y1)))
+
+    Leaf y1 -> 
+      0 in tree_count_nodes) : NatTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+3.242623 true true
+
+Node (Node (Leaf (),2,Node (Leaf (),0,Leaf ())),1,Leaf ()) -> 3;
+Node (Leaf (),1,Node (Leaf (),1,Leaf ())) -> 2;
+Node (Leaf (),0,Leaf ()) -> 1;
+Node (Leaf (),0,Node (Leaf (),2,Leaf ())) -> 2;
+Node (Leaf (),1,Node (Node (Leaf (),3,Leaf ()),1,Leaf ())) -> 3;
+Node (Node (Node (Leaf (),3,Leaf ()),1,Leaf ()),3,Leaf ()) -> 3;
+Node (Node (Leaf (),0,Leaf ()),1,Leaf ()) -> 2;
+Node (Node (Leaf (),0,Node (Leaf (),0,Leaf ())),0,Leaf ()) -> 3;
+Node (Node (Leaf (),3,Leaf ()),2,Node (Leaf (),2,Leaf ())) -> 3;
+Leaf () -> 0;
+
+=================================
+(\sum -> (\tree_count_nodes -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_nodes = \tree -> case tree of
+    Node y1 -> 
+      S (sum (tree_count_nodes (#3.1 y1)) (tree_count_nodes (#3.3 y1)))
+
+    Leaf y1 -> 
+      0 in tree_count_nodes) : NatTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+(\sum -> (\tree_count_nodes -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_nodes = \tree -> case tree of
+    Node y1 -> 
+      S (sum (tree_count_nodes (#3.1 y1)) (tree_count_nodes (#3.3 y1)))
+
+    Leaf y1 -> 
+      0 in tree_count_nodes) : NatTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+2.765146 true true
+
+Node (Node (Leaf (),1,Leaf ()),1,Node (Leaf (),0,Leaf ())) -> 3;
+Node (Leaf (),3,Leaf ()) -> 1;
+Node (Leaf (),2,Node (Leaf (),0,Leaf ())) -> 2;
+Node (Node (Leaf (),3,Leaf ()),2,Leaf ()) -> 2;
+Node (Leaf (),3,Node (Leaf (),0,Leaf ())) -> 2;
+Node (Leaf (),0,Node (Leaf (),1,Node (Leaf (),2,Leaf ()))) -> 3;
+Node (Leaf (),2,Leaf ()) -> 1;
+Node (Node (Leaf (),0,Leaf ()),3,Leaf ()) -> 2;
+Node (Leaf (),0,Node (Node (Leaf (),3,Leaf ()),3,Leaf ())) -> 3;
+Leaf () -> 0;
+
+=================================
+(\sum -> (\tree_count_nodes -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_nodes = \tree -> case tree of
+    Node y1 -> 
+      S (sum (tree_count_nodes (#3.1 y1)) (tree_count_nodes (#3.3 y1)))
+
+    Leaf y1 -> 
+      0 in tree_count_nodes) : NatTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+(\sum -> (\tree_count_nodes -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_nodes = \tree -> case tree of
+    Node y1 -> 
+      S (sum (tree_count_nodes (#3.1 y1)) (tree_count_nodes (#3.3 y1)))
+
+    Leaf y1 -> 
+      0 in tree_count_nodes) : NatTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+2.738138 true true
+
+Node (Leaf (),1,Node (Leaf (),1,Node (Leaf (),2,Leaf ()))) -> 3;
+Node (Node (Leaf (),3,Node (Leaf (),1,Leaf ())),1,Leaf ()) -> 3;
+Node (Node (Leaf (),3,Leaf ()),0,Node (Leaf (),0,Leaf ())) -> 3;
+Node (Node (Leaf (),1,Leaf ()),1,Leaf ()) -> 2;
+Node (Node (Node (Leaf (),2,Leaf ()),2,Leaf ()),3,Leaf ()) -> 3;
+Node (Leaf (),0,Node (Leaf (),0,Leaf ())) -> 2;
+Node (Leaf (),1,Node (Leaf (),3,Leaf ())) -> 2;
+Node (Node (Leaf (),3,Leaf ()),1,Node (Leaf (),0,Leaf ())) -> 3;
+Node (Node (Leaf (),1,Leaf ()),0,Node (Leaf (),3,Leaf ())) -> 3;
+Leaf () -> 0;
+
+=================================
+(\sum -> (\tree_count_nodes -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_nodes = \tree -> case tree of
+    Node y1 -> 
+      S (sum (tree_count_nodes (#3.1 y1)) (tree_count_nodes (#3.3 y1)))
+
+    Leaf y1 -> 
+      0 in tree_count_nodes) : NatTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+(\sum -> (\tree_count_nodes -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_nodes = \tree -> case tree of
+    Node y1 -> 
+      S (sum (tree_count_nodes (#3.1 y1)) (tree_count_nodes (#3.3 y1)))
+
+    Leaf y1 -> 
+      0 in tree_count_nodes) : NatTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+5.166515 true true
+
+Node (Leaf (),0,Node (Node (Leaf (),3,Leaf ()),0,Leaf ())) -> 3;
+Node (Leaf (),3,Leaf ()) -> 1;
+Node (Leaf (),3,Node (Leaf (),2,Leaf ())) -> 2;
+Node (Leaf (),3,Node (Node (Leaf (),1,Leaf ()),0,Leaf ())) -> 3;
+Node (Node (Leaf (),1,Node (Leaf (),1,Leaf ())),3,Leaf ()) -> 3;
+Node (Node (Leaf (),0,Leaf ()),2,Leaf ()) -> 2;
+Node (Leaf (),2,Leaf ()) -> 1;
+Node (Node (Leaf (),1,Node (Leaf (),1,Leaf ())),0,Leaf ()) -> 3;
+Node (Leaf (),0,Node (Node (Leaf (),3,Leaf ()),2,Leaf ())) -> 3;
+Leaf () -> 0;
+
+=================================
+(\sum -> (\tree_count_nodes -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_nodes = \tree -> case tree of
+    Node y1 -> 
+      S (sum (tree_count_nodes (#3.1 y1)) (tree_count_nodes (#3.3 y1)))
+
+    Leaf y1 -> 
+      0 in tree_count_nodes) : NatTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+(\sum -> (\tree_count_nodes -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_nodes = \tree -> case tree of
+    Node y1 -> 
+      S (sum (tree_count_nodes (#3.1 y1)) (tree_count_nodes (#3.3 y1)))
+
+    Leaf y1 -> 
+      0 in tree_count_nodes) : NatTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+2.35689 true true
+
+Node (Node (Leaf (),0,Node (Leaf (),1,Leaf ())),3,Leaf ()) -> 3;
+Node (Node (Node (Leaf (),0,Leaf ()),0,Leaf ()),3,Leaf ()) -> 3;
+Node (Leaf (),0,Node (Leaf (),3,Leaf ())) -> 2;
+Node (Node (Leaf (),1,Leaf ()),3,Leaf ()) -> 2;
+Node (Node (Leaf (),0,Node (Leaf (),3,Leaf ())),0,Leaf ()) -> 3;
+Node (Node (Leaf (),3,Leaf ()),2,Leaf ()) -> 2;
+Node (Leaf (),3,Node (Leaf (),2,Leaf ())) -> 2;
+Node (Leaf (),0,Node (Leaf (),1,Node (Leaf (),1,Leaf ()))) -> 3;
+Node (Node (Leaf (),0,Leaf ()),0,Node (Leaf (),2,Leaf ())) -> 3;
+Node (Node (Leaf (),1,Node (Leaf (),1,Leaf ())),1,Leaf ()) -> 3;
+Leaf () -> 0;
+
+=================================
+(\sum -> (\tree_count_nodes -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_nodes = \tree -> case tree of
+    Node y1 -> 
+      S (sum (tree_count_nodes (#3.1 y1)) (tree_count_nodes (#3.3 y1)))
+
+    Leaf y1 -> 
+      0 in tree_count_nodes) : NatTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+(\sum -> (\tree_count_nodes -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_nodes = \tree -> case tree of
+    Node y1 -> 
+      S (sum (tree_count_nodes (#3.1 y1)) (tree_count_nodes (#3.3 y1)))
+
+    Leaf y1 -> 
+      0 in tree_count_nodes) : NatTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+5.26995 true true
+
+Node (Leaf (),0,Node (Leaf (),3,Node (Leaf (),3,Leaf ()))) -> 3;
+Node (Node (Node (Leaf (),2,Leaf ()),0,Leaf ()),1,Leaf ()) -> 3;
+Node (Node (Leaf (),0,Leaf ()),1,Node (Leaf (),2,Leaf ())) -> 3;
+Node (Leaf (),0,Node (Node (Leaf (),3,Leaf ()),0,Leaf ())) -> 3;
+Node (Leaf (),2,Leaf ()) -> 1;
+Node (Leaf (),3,Leaf ()) -> 1;
+Node (Leaf (),2,Node (Leaf (),3,Node (Leaf (),3,Leaf ()))) -> 3;
+Node (Node (Node (Leaf (),2,Leaf ()),0,Leaf ()),3,Leaf ()) -> 3;
+Node (Node (Leaf (),1,Leaf ()),1,Leaf ()) -> 2;
+Node (Node (Leaf (),1,Node (Leaf (),2,Leaf ())),1,Leaf ()) -> 3;
+Leaf () -> 0;
+
+=================================
+(\sum -> (\tree_count_nodes -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_nodes = \tree -> case tree of
+    Node y1 -> 
+      S (sum (tree_count_nodes (#3.1 y1)) (tree_count_nodes (#3.3 y1)))
+
+    Leaf y1 -> 
+      0 in tree_count_nodes) : NatTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+(\sum -> (\tree_count_nodes -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_nodes = \tree -> case tree of
+    Node y1 -> 
+      S (sum (tree_count_nodes (#3.1 y1)) (tree_count_nodes (#3.3 y1)))
+
+    Leaf y1 -> 
+      0 in tree_count_nodes) : NatTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+3.870714 true true
+
+Node (Leaf (),0,Node (Node (Leaf (),1,Leaf ()),2,Leaf ())) -> 3;
+Node (Leaf (),0,Node (Node (Leaf (),1,Leaf ()),3,Leaf ())) -> 3;
+Node (Node (Node (Leaf (),0,Leaf ()),3,Leaf ()),3,Leaf ()) -> 3;
+Node (Node (Node (Leaf (),3,Leaf ()),1,Leaf ()),3,Leaf ()) -> 3;
+Node (Leaf (),1,Node (Leaf (),3,Leaf ())) -> 2;
+Node (Leaf (),0,Leaf ()) -> 1;
+Node (Leaf (),1,Node (Leaf (),1,Node (Leaf (),0,Leaf ()))) -> 3;
+Node (Node (Leaf (),2,Leaf ()),2,Node (Leaf (),0,Leaf ())) -> 3;
+Node (Node (Leaf (),1,Leaf ()),0,Node (Leaf (),1,Leaf ())) -> 3;
+Node (Leaf (),3,Node (Leaf (),2,Leaf ())) -> 2;
+Leaf () -> 0;
+
+=================================
+(\sum -> (\tree_count_nodes -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_nodes = \tree -> case tree of
+    Node y1 -> 
+      S (sum (tree_count_nodes (#3.1 y1)) (tree_count_nodes (#3.3 y1)))
+
+    Leaf y1 -> 
+      0 in tree_count_nodes) : NatTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+(\sum -> (\tree_count_nodes -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_nodes = \tree -> case tree of
+    Node y1 -> 
+      S (sum (tree_count_nodes (#3.1 y1)) (tree_count_nodes (#3.3 y1)))
+
+    Leaf y1 -> 
+      0 in tree_count_nodes) : NatTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+3.687838 true true
+
+Node (Leaf (),2,Node (Leaf (),0,Node (Leaf (),3,Leaf ()))) -> 3;
+Node (Node (Leaf (),1,Node (Leaf (),1,Leaf ())),3,Leaf ()) -> 3;
+Node (Node (Leaf (),1,Node (Leaf (),0,Leaf ())),2,Leaf ()) -> 3;
+Node (Node (Node (Leaf (),2,Leaf ()),3,Leaf ()),2,Leaf ()) -> 3;
+Node (Leaf (),2,Node (Leaf (),3,Node (Leaf (),3,Leaf ()))) -> 3;
+Node (Node (Leaf (),3,Node (Leaf (),0,Leaf ())),2,Leaf ()) -> 3;
+Node (Node (Leaf (),0,Leaf ()),1,Node (Leaf (),0,Leaf ())) -> 3;
+Node (Node (Node (Leaf (),2,Leaf ()),3,Leaf ()),3,Leaf ()) -> 3;
+Node (Leaf (),3,Node (Leaf (),2,Leaf ())) -> 2;
+Node (Node (Leaf (),3,Node (Leaf (),2,Leaf ())),2,Leaf ()) -> 3;
+Leaf () -> 0;
+
+=================================
+(\sum -> (\tree_count_nodes -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_nodes = \tree -> case tree of
+    Node y1 -> 
+      S (sum (tree_count_nodes (#3.1 y1)) (tree_count_nodes (#3.3 y1)))
+
+    Leaf y1 -> 
+      0 in tree_count_nodes) : NatTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+(\sum -> (\tree_count_nodes -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_nodes = \tree -> case tree of
+    Node y1 -> 
+      S (sum (tree_count_nodes (#3.1 y1)) (tree_count_nodes (#3.3 y1)))
+
+    Leaf y1 -> 
+      0 in tree_count_nodes) : NatTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+6.842711 true true
+
+Node (Node (Leaf (),3,Node (Leaf (),0,Leaf ())),0,Leaf ()) -> 3;
+Node (Node (Leaf (),3,Leaf ()),1,Node (Leaf (),2,Leaf ())) -> 3;
+Node (Leaf (),2,Node (Leaf (),1,Node (Leaf (),0,Leaf ()))) -> 3;
+Node (Leaf (),0,Node (Leaf (),1,Leaf ())) -> 2;
+Node (Node (Leaf (),1,Leaf ()),3,Node (Leaf (),1,Leaf ())) -> 3;
+Node (Node (Leaf (),0,Node (Leaf (),0,Leaf ())),2,Leaf ()) -> 3;
+Node (Node (Node (Leaf (),2,Leaf ()),3,Leaf ()),3,Leaf ()) -> 3;
+Node (Leaf (),2,Leaf ()) -> 1;
+Node (Node (Leaf (),3,Node (Leaf (),0,Leaf ())),2,Leaf ()) -> 3;
+Node (Leaf (),0,Node (Node (Leaf (),1,Leaf ()),3,Leaf ())) -> 3;
+Leaf () -> 0;
+
+=================================
+(\sum -> (\tree_count_nodes -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_nodes = \tree -> case tree of
+    Node y1 -> 
+      S (sum (tree_count_nodes (#3.1 y1)) (tree_count_nodes (#3.3 y1)))
+
+    Leaf y1 -> 
+      0 in tree_count_nodes) : NatTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+(\sum -> (\tree_count_nodes -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_nodes = \tree -> case tree of
+    Node y1 -> 
+      S (sum (tree_count_nodes (#3.1 y1)) (tree_count_nodes (#3.3 y1)))
+
+    Leaf y1 -> 
+      0 in tree_count_nodes) : NatTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+3.575372 true true
+
+Node (Node (Leaf (),0,Node (Leaf (),1,Leaf ())),3,Leaf ()) -> 3;
+Node (Leaf (),0,Node (Leaf (),1,Node (Leaf (),3,Leaf ()))) -> 3;
+Node (Node (Node (Leaf (),0,Leaf ()),0,Leaf ()),0,Leaf ()) -> 3;
+Node (Leaf (),0,Node (Node (Leaf (),3,Leaf ()),2,Leaf ())) -> 3;
+Node (Leaf (),3,Node (Leaf (),0,Node (Leaf (),1,Leaf ()))) -> 3;
+Node (Node (Node (Leaf (),1,Leaf ()),1,Leaf ()),0,Leaf ()) -> 3;
+Node (Leaf (),3,Node (Leaf (),0,Leaf ())) -> 2;
+Node (Leaf (),1,Leaf ()) -> 1;
+Node (Leaf (),1,Node (Node (Leaf (),0,Leaf ()),2,Leaf ())) -> 3;
+Node (Leaf (),1,Node (Leaf (),1,Node (Leaf (),2,Leaf ()))) -> 3;
+Leaf () -> 0;
+
+=================================
+(\sum -> (\tree_count_nodes -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_nodes = \tree -> case tree of
+    Node y1 -> 
+      S (sum (tree_count_nodes (#3.1 y1)) (tree_count_nodes (#3.3 y1)))
+
+    Leaf y1 -> 
+      0 in tree_count_nodes) : NatTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+(\sum -> (\tree_count_nodes -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_nodes = \tree -> case tree of
+    Node y1 -> 
+      S (sum (tree_count_nodes (#3.1 y1)) (tree_count_nodes (#3.3 y1)))
+
+    Leaf y1 -> 
+      0 in tree_count_nodes) : NatTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+4.192272 true true
+
+Node (Node (Leaf (),0,Leaf ()),0,Leaf ()) -> 2;
+Node (Leaf (),3,Node (Leaf (),3,Leaf ())) -> 2;
+Node (Leaf (),1,Node (Leaf (),1,Node (Leaf (),3,Leaf ()))) -> 3;
+Node (Node (Leaf (),0,Node (Leaf (),3,Leaf ())),1,Leaf ()) -> 3;
+Node (Leaf (),0,Node (Leaf (),3,Node (Leaf (),3,Leaf ()))) -> 3;
+Node (Node (Leaf (),2,Leaf ()),0,Leaf ()) -> 2;
+Node (Node (Node (Leaf (),2,Leaf ()),0,Leaf ()),0,Leaf ()) -> 3;
+Node (Leaf (),1,Node (Leaf (),0,Leaf ())) -> 2;
+Node (Leaf (),3,Node (Leaf (),2,Node (Leaf (),2,Leaf ()))) -> 3;
+Node (Node (Node (Leaf (),2,Leaf ()),2,Leaf ()),1,Leaf ()) -> 3;
+Leaf () -> 0;
+
+=================================
+(\sum -> (\tree_count_nodes -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_nodes = \tree -> case tree of
+    Node y1 -> 
+      S (sum (tree_count_nodes (#3.1 y1)) (tree_count_nodes (#3.3 y1)))
+
+    Leaf y1 -> 
+      0 in tree_count_nodes) : NatTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+(\sum -> (\tree_count_nodes -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_nodes = \tree -> case tree of
+    Node y1 -> 
+      S (sum (tree_count_nodes (#3.1 y1)) (tree_count_nodes (#3.3 y1)))
+
+    Leaf y1 -> 
+      0 in tree_count_nodes) : NatTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+6.478906 true true
+
+Node (Leaf (),2,Node (Leaf (),0,Node (Leaf (),0,Leaf ()))) -> 3;
+Node (Node (Leaf (),3,Leaf ()),2,Leaf ()) -> 2;
+Node (Leaf (),1,Leaf ()) -> 1;
+Node (Node (Node (Leaf (),3,Leaf ()),3,Leaf ()),2,Leaf ()) -> 3;
+Node (Leaf (),2,Node (Leaf (),1,Leaf ())) -> 2;
+Node (Leaf (),1,Node (Leaf (),1,Leaf ())) -> 2;
+Node (Leaf (),1,Node (Node (Leaf (),0,Leaf ()),3,Leaf ())) -> 3;
+Node (Leaf (),0,Node (Node (Leaf (),3,Leaf ()),1,Leaf ())) -> 3;
+Node (Node (Leaf (),3,Leaf ()),2,Node (Leaf (),2,Leaf ())) -> 3;
+Node (Leaf (),1,Node (Leaf (),0,Node (Leaf (),2,Leaf ()))) -> 3;
+Leaf () -> 0;
+
+=================================
+(\sum -> (\tree_count_nodes -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_nodes = \tree -> case tree of
+    Node y1 -> 
+      S (sum (tree_count_nodes (#3.1 y1)) (tree_count_nodes (#3.3 y1)))
+
+    Leaf y1 -> 
+      0 in tree_count_nodes) : NatTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+(\sum -> (\tree_count_nodes -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_nodes = \tree -> case tree of
+    Node y1 -> 
+      S (sum (tree_count_nodes (#3.1 y1)) (tree_count_nodes (#3.3 y1)))
+
+    Leaf y1 -> 
+      0 in tree_count_nodes) : NatTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+3.932009 true true
+
+Node (Node (Leaf (),2,Leaf ()),1,Node (Leaf (),0,Leaf ())) -> 3;
+Node (Leaf (),1,Node (Leaf (),0,Node (Leaf (),0,Leaf ()))) -> 3;
+Node (Node (Leaf (),2,Node (Leaf (),0,Leaf ())),1,Leaf ()) -> 3;
+Node (Leaf (),3,Node (Node (Leaf (),3,Leaf ()),2,Leaf ())) -> 3;
+Node (Node (Leaf (),1,Leaf ()),1,Leaf ()) -> 2;
+Node (Node (Leaf (),3,Node (Leaf (),3,Leaf ())),3,Leaf ()) -> 3;
+Node (Leaf (),1,Node (Node (Leaf (),3,Leaf ()),0,Leaf ())) -> 3;
+Node (Node (Leaf (),3,Leaf ()),2,Leaf ()) -> 2;
+Node (Leaf (),3,Leaf ()) -> 1;
+Node (Leaf (),0,Node (Node (Leaf (),0,Leaf ()),1,Leaf ())) -> 3;
+Leaf () -> 0;
+
+=================================
+(\sum -> (\tree_count_nodes -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_nodes = \tree -> case tree of
+    Node y1 -> 
+      S (sum (tree_count_nodes (#3.1 y1)) (tree_count_nodes (#3.3 y1)))
+
+    Leaf y1 -> 
+      0 in tree_count_nodes) : NatTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+(\sum -> (\tree_count_nodes -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_nodes = \tree -> case tree of
+    Node y1 -> 
+      S (sum (tree_count_nodes (#3.1 y1)) (tree_count_nodes (#3.3 y1)))
+
+    Leaf y1 -> 
+      0 in tree_count_nodes) : NatTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+3.223227 true true
+
+Node (Leaf (),3,Node (Leaf (),2,Node (Leaf (),0,Leaf ()))) -> 3;
+Node (Node (Leaf (),1,Leaf ()),1,Node (Leaf (),0,Leaf ())) -> 3;
+Node (Node (Node (Leaf (),0,Leaf ()),3,Leaf ()),3,Leaf ()) -> 3;
+Node (Leaf (),2,Node (Leaf (),0,Leaf ())) -> 2;
+Node (Node (Leaf (),0,Node (Leaf (),3,Leaf ())),2,Leaf ()) -> 3;
+Node (Node (Node (Leaf (),2,Leaf ()),2,Leaf ()),2,Leaf ()) -> 3;
+Node (Node (Leaf (),0,Leaf ()),2,Node (Leaf (),2,Leaf ())) -> 3;
+Node (Node (Leaf (),3,Leaf ()),1,Leaf ()) -> 2;
+Node (Node (Leaf (),2,Node (Leaf (),0,Leaf ())),2,Leaf ()) -> 3;
+Node (Node (Leaf (),0,Leaf ()),1,Node (Leaf (),1,Leaf ())) -> 3;
+Leaf () -> 0;
+
+=================================
+(\sum -> (\tree_count_nodes -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_nodes = \tree -> case tree of
+    Node y1 -> 
+      S (sum (tree_count_nodes (#3.1 y1)) (tree_count_nodes (#3.3 y1)))
+
+    Leaf y1 -> 
+      0 in tree_count_nodes) : NatTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+(\sum -> (\tree_count_nodes -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_count_nodes = \tree -> case tree of
+    Node y1 -> 
+      S (sum (tree_count_nodes (#3.1 y1)) (tree_count_nodes (#3.3 y1)))
+
+    Leaf y1 -> 
+      0 in tree_count_nodes) : NatTree -> Nat))
+  ((let sum = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (sum m n2) in sum) : Nat -> Nat -> Nat)
+6.275982 true true
+

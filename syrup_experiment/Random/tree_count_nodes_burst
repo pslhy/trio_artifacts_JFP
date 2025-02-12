@@ -1,0 +1,1762 @@
+Node (Leaf (),3,Node (Leaf (),3,Node (Leaf (),0,Leaf ()))) -> 3;
+
+=================================
+fix (f : tree -> nat) = fun (x:tree) -> Un_Node x . 1
+
+0.1464 false
+
+Leaf () -> 0;
+
+=================================
+fix (f : tree -> nat) = fun (x:tree) -> 0
+
+0.0000 false
+
+Node (Node (Leaf (),2,Leaf ()),2,Leaf ()) -> 2;
+
+=================================
+fix (f : tree -> nat) = fun (x:tree) -> Un_Node x . 1
+
+0.0459 false
+
+Node (Leaf (),2,Node (Node (Leaf (),2,Leaf ()),1,Leaf ())) -> 3;
+
+=================================
+fix (f : tree -> nat) = fun (x:tree) -> S (Un_Node x . 1)
+
+0.5881 false
+
+Node (Leaf (),1,Node (Leaf (),0,Leaf ())) -> 2;
+
+=================================
+fix (f : tree -> nat) = fun (x:tree) -> S (Un_Node x . 1)
+
+0.1192 false
+
+Node (Node (Leaf (),3,Leaf ()),1,Node (Leaf (),0,Leaf ())) -> 3;
+
+=================================
+fix (f : tree -> nat) = fun (x:tree) -> Un_Node (Un_Node x . 0) . 1
+
+0.7163 false
+
+Leaf () -> 0;
+
+=================================
+fix (f : tree -> nat) = fun (x:tree) -> 0
+
+0.0001 false
+
+Node (Leaf (),3,Leaf ()) -> 1;
+
+=================================
+fix (f : tree -> nat) = fun (x:tree) -> 1
+
+0.0256 false
+
+Node (Leaf (),2,Node (Node (Leaf (),2,Leaf ()),0,Leaf ())) -> 3;
+
+=================================
+fix (f : tree -> nat) = fun (x:tree) -> S (Un_Node x . 1)
+
+0.9986 false
+
+Node (Leaf (),2,Node (Node (Leaf (),3,Leaf ()),2,Leaf ())) -> 3;
+
+=================================
+fix (f : tree -> nat) = fun (x:tree) -> S (Un_Node x . 1)
+
+0.7184 false
+
+Node (Leaf (),3,Node (Node (Leaf (),0,Leaf ()),2,Leaf ())) -> 3;
+Leaf () -> 0;
+
+=================================
+fix (f : tree -> nat) =
+  fun (x:tree) -> match x with
+                    | Leaf _ -> 0
+                    | Node _ -> Un_Node x . 1
+
+0.2652 false
+
+Node (Leaf (),1,Leaf ()) -> 1;
+Node (Node (Leaf (),3,Leaf ()),1,Leaf ()) -> 2;
+
+=================================
+fix (f : tree -> nat) =
+  fun (x:tree) ->
+    match Un_Node x . 0 with
+      | Leaf _ -> Un_Node x . 1
+      | Node _ -> S (Un_Node x . 1)
+
+7.9798 false
+
+Node (Leaf (),2,Node (Leaf (),0,Node (Leaf (),0,Leaf ()))) -> 3;
+Node (Leaf (),1,Node (Leaf (),1,Leaf ())) -> 2;
+
+=================================
+fix (f : tree -> nat) = fun (x:tree) -> S (Un_Node x . 1)
+
+0.8508 false
+
+Node (Node (Leaf (),0,Node (Leaf (),2,Leaf ())),2,Leaf ()) -> 3;
+Node (Node (Leaf (),2,Leaf ()),0,Node (Leaf (),2,Leaf ())) -> 3;
+
+=================================
+None
+Node (Leaf (),0,Leaf ()) -> 1;
+Node (Node (Node (Leaf (),3,Leaf ()),3,Leaf ()),2,Leaf ()) -> 3;
+
+=================================
+fix (f : tree -> nat) = fun (x:tree) -> S (Un_Node x . 1)
+
+1.9993 false
+
+Node (Leaf (),1,Leaf ()) -> 1;
+Node (Node (Leaf (),1,Leaf ()),3,Node (Leaf (),1,Leaf ())) -> 3;
+
+=================================
+fix (f : tree -> nat) = fun (x:tree) -> Un_Node x . 1
+
+0.0047 false
+
+Node (Node (Node (Leaf (),2,Leaf ()),0,Leaf ()),3,Leaf ()) -> 3;
+Node (Node (Leaf (),3,Leaf ()),2,Leaf ()) -> 2;
+
+=================================
+fix (f : tree -> nat) = fun (x:tree) -> Un_Node x . 1
+
+0.1329 false
+
+Leaf () -> 0;
+Node (Leaf (),2,Node (Node (Leaf (),2,Leaf ()),0,Leaf ())) -> 3;
+
+=================================
+fix (f : tree -> nat) =
+  fun (x:tree) -> match x with
+                    | Leaf _ -> 0
+                    | Node _ -> S (Un_Node x . 1)
+
+11.0495 false
+
+Node (Node (Leaf (),2,Leaf ()),1,Node (Leaf (),2,Leaf ())) -> 3;
+Node (Node (Leaf (),1,Node (Leaf (),0,Leaf ())),0,Leaf ()) -> 3;
+
+=================================
+None
+Node (Node (Leaf (),0,Leaf ()),3,Leaf ()) -> 2;
+Node (Node (Leaf (),0,Leaf ()),1,Node (Leaf (),2,Leaf ())) -> 3;
+
+=================================
+None
+Node (Node (Leaf (),1,Leaf ()),2,Node (Leaf (),3,Leaf ())) -> 3;
+Node (Leaf (),0,Node (Node (Leaf (),0,Leaf ()),3,Leaf ())) -> 3;
+Leaf () -> 0;
+
+=================================
+fix (f : tree -> nat) =
+  fun (x:tree) ->
+    match x with
+      | Leaf _ -> 0
+      | Node _ -> Un_Node (Un_Node x . 2) . 1
+
+11.9318 false
+
+Node (Node (Leaf (),2,Node (Leaf (),2,Leaf ())),2,Leaf ()) -> 3;
+Node (Leaf (),1,Node (Leaf (),0,Leaf ())) -> 2;
+Node (Leaf (),2,Leaf ()) -> 1;
+
+=================================
+None
+Node (Leaf (),0,Node (Leaf (),0,Leaf ())) -> 2;
+Node (Node (Node (Leaf (),2,Leaf ()),1,Leaf ()),3,Leaf ()) -> 3;
+Node (Leaf (),1,Node (Leaf (),1,Leaf ())) -> 2;
+
+=================================
+None
+Node (Node (Node (Leaf (),2,Leaf ()),2,Leaf ()),2,Leaf ()) -> 3;
+Node (Leaf (),2,Leaf ()) -> 1;
+Node (Leaf (),3,Leaf ()) -> 1;
+
+=================================
+None
+Node (Node (Leaf (),3,Node (Leaf (),0,Leaf ())),0,Leaf ()) -> 3;
+Node (Node (Leaf (),1,Leaf ()),3,Node (Leaf (),0,Leaf ())) -> 3;
+Node (Node (Leaf (),1,Leaf ()),3,Node (Leaf (),3,Leaf ())) -> 3;
+
+=================================
+None
+Node (Node (Leaf (),0,Leaf ()),3,Leaf ()) -> 2;
+Node (Node (Leaf (),0,Node (Leaf (),1,Leaf ())),0,Leaf ()) -> 3;
+Node (Node (Leaf (),3,Leaf ()),3,Leaf ()) -> 2;
+
+=================================
+None
+Leaf () -> 0;
+Node (Leaf (),3,Node (Leaf (),1,Leaf ())) -> 2;
+Node (Leaf (),2,Node (Leaf (),0,Node (Leaf (),2,Leaf ()))) -> 3;
+
+=================================
+None
+Node (Node (Leaf (),1,Leaf ()),2,Leaf ()) -> 2;
+Node (Node (Leaf (),0,Leaf ()),3,Leaf ()) -> 2;
+Node (Leaf (),3,Leaf ()) -> 1;
+
+=================================
+None
+Node (Node (Leaf (),3,Leaf ()),1,Node (Leaf (),1,Leaf ())) -> 3;
+Leaf () -> 0;
+Node (Node (Node (Leaf (),0,Leaf ()),0,Leaf ()),1,Leaf ()) -> 3;
+
+=================================
+None
+Node (Node (Leaf (),3,Leaf ()),0,Node (Leaf (),2,Leaf ())) -> 3;
+Leaf () -> 0;
+Node (Leaf (),3,Node (Leaf (),1,Node (Leaf (),1,Leaf ()))) -> 3;
+
+=================================
+None
+Node (Leaf (),1,Node (Leaf (),1,Leaf ())) -> 2;
+Leaf () -> 0;
+Node (Node (Leaf (),2,Leaf ()),3,Node (Leaf (),0,Leaf ())) -> 3;
+Node (Leaf (),2,Node (Node (Leaf (),0,Leaf ()),1,Leaf ())) -> 3;
+
+=================================
+None
+Node (Leaf (),1,Node (Leaf (),0,Node (Leaf (),3,Leaf ()))) -> 3;
+Node (Node (Node (Leaf (),1,Leaf ()),1,Leaf ()),0,Leaf ()) -> 3;
+Node (Node (Node (Leaf (),2,Leaf ()),3,Leaf ()),3,Leaf ()) -> 3;
+Node (Leaf (),3,Leaf ()) -> 1;
+
+=================================
+None
+Node (Node (Leaf (),1,Leaf ()),3,Node (Leaf (),3,Leaf ())) -> 3;
+Node (Leaf (),2,Node (Leaf (),3,Leaf ())) -> 2;
+Node (Leaf (),3,Leaf ()) -> 1;
+Node (Node (Node (Leaf (),2,Leaf ()),1,Leaf ()),0,Leaf ()) -> 3;
+
+=================================
+None
+Node (Node (Node (Leaf (),3,Leaf ()),1,Leaf ()),2,Leaf ()) -> 3;
+Leaf () -> 0;
+Node (Leaf (),1,Node (Node (Leaf (),1,Leaf ()),0,Leaf ())) -> 3;
+Node (Node (Node (Leaf (),1,Leaf ()),0,Leaf ()),0,Leaf ()) -> 3;
+
+=================================
+None
+Node (Node (Node (Leaf (),3,Leaf ()),2,Leaf ()),1,Leaf ()) -> 3;
+Node (Leaf (),0,Node (Leaf (),1,Leaf ())) -> 2;
+Node (Leaf (),0,Node (Leaf (),2,Leaf ())) -> 2;
+Node (Node (Leaf (),1,Node (Leaf (),2,Leaf ())),2,Leaf ()) -> 3;
+
+=================================
+None
+Node (Node (Node (Leaf (),2,Leaf ()),2,Leaf ()),3,Leaf ()) -> 3;
+Node (Node (Leaf (),0,Leaf ()),2,Leaf ()) -> 2;
+Node (Leaf (),2,Node (Leaf (),1,Leaf ())) -> 2;
+Node (Leaf (),0,Leaf ()) -> 1;
+
+=================================
+fix (f : tree -> nat) =
+  fun (x:tree) ->
+    match Un_Node x . 1 with
+      | O _ -> S (Un_Node x . 1)
+      | S _ -> Un_Node x . 1
+
+40.7159 false
+
+Node (Leaf (),3,Node (Node (Leaf (),3,Leaf ()),3,Leaf ())) -> 3;
+Leaf () -> 0;
+Node (Leaf (),3,Leaf ()) -> 1;
+Node (Leaf (),2,Node (Node (Leaf (),2,Leaf ()),1,Leaf ())) -> 3;
+
+=================================
+fix (f : tree -> nat) =
+  fun (x:tree) ->
+    match x with
+      | Leaf _ -> 0
+      | Node _ -> sum (f (Un_Node x . 2)) S (f (Un_Node x . 2))
+
+7.7483 false
+
+Node (Leaf (),0,Node (Leaf (),3,Node (Leaf (),3,Leaf ()))) -> 3;
+Node (Leaf (),2,Node (Leaf (),1,Leaf ())) -> 2;
+Node (Node (Leaf (),1,Leaf ()),0,Node (Leaf (),1,Leaf ())) -> 3;
+Node (Node (Leaf (),1,Leaf ()),3,Node (Leaf (),0,Leaf ())) -> 3;
+
+=================================
+None
+Node (Node (Leaf (),0,Node (Leaf (),1,Leaf ())),0,Leaf ()) -> 3;
+Node (Node (Leaf (),0,Leaf ()),1,Node (Leaf (),3,Leaf ())) -> 3;
+Node (Leaf (),0,Node (Leaf (),2,Leaf ())) -> 2;
+Node (Node (Leaf (),0,Leaf ()),2,Node (Leaf (),1,Leaf ())) -> 3;
+
+=================================
+None
+Node (Leaf (),1,Node (Leaf (),1,Node (Leaf (),0,Leaf ()))) -> 3;
+Leaf () -> 0;
+Node (Node (Node (Leaf (),3,Leaf ()),1,Leaf ()),0,Leaf ()) -> 3;
+Node (Node (Leaf (),1,Leaf ()),0,Node (Leaf (),2,Leaf ())) -> 3;
+
+=================================
+None
+Leaf () -> 0;
+Node (Leaf (),3,Leaf ()) -> 1;
+Node (Leaf (),0,Node (Leaf (),2,Node (Leaf (),0,Leaf ()))) -> 3;
+Node (Node (Node (Leaf (),2,Leaf ()),2,Leaf ()),1,Leaf ()) -> 3;
+Node (Node (Leaf (),1,Leaf ()),2,Leaf ()) -> 2;
+
+=================================
+None
+Leaf () -> 0;
+Node (Node (Leaf (),0,Leaf ()),0,Node (Leaf (),0,Leaf ())) -> 3;
+Node (Leaf (),1,Node (Leaf (),1,Node (Leaf (),2,Leaf ()))) -> 3;
+Node (Leaf (),3,Leaf ()) -> 1;
+Node (Leaf (),3,Node (Leaf (),2,Node (Leaf (),3,Leaf ()))) -> 3;
+
+=================================
+None
+Node (Node (Leaf (),1,Leaf ()),3,Leaf ()) -> 2;
+Node (Node (Node (Leaf (),2,Leaf ()),3,Leaf ()),3,Leaf ()) -> 3;
+Node (Leaf (),3,Node (Leaf (),0,Leaf ())) -> 2;
+Node (Leaf (),2,Node (Leaf (),0,Node (Leaf (),2,Leaf ()))) -> 3;
+Node (Leaf (),2,Node (Node (Leaf (),2,Leaf ()),0,Leaf ())) -> 3;
+
+=================================
+None
+Node (Node (Node (Leaf (),2,Leaf ()),0,Leaf ()),2,Leaf ()) -> 3;
+Node (Leaf (),0,Node (Leaf (),2,Node (Leaf (),1,Leaf ()))) -> 3;
+Node (Node (Leaf (),2,Leaf ()),1,Leaf ()) -> 2;
+Node (Node (Leaf (),1,Leaf ()),2,Node (Leaf (),2,Leaf ())) -> 3;
+Node (Leaf (),2,Node (Leaf (),3,Node (Leaf (),1,Leaf ()))) -> 3;
+
+=================================
+None
+Node (Leaf (),0,Node (Node (Leaf (),0,Leaf ()),0,Leaf ())) -> 3;
+Node (Node (Leaf (),3,Node (Leaf (),1,Leaf ())),2,Leaf ()) -> 3;
+Node (Leaf (),0,Node (Leaf (),1,Leaf ())) -> 2;
+Node (Node (Leaf (),0,Leaf ()),0,Leaf ()) -> 2;
+Node (Leaf (),2,Node (Node (Leaf (),2,Leaf ()),2,Leaf ())) -> 3;
+
+=================================
+None
+Node (Node (Node (Leaf (),3,Leaf ()),3,Leaf ()),2,Leaf ()) -> 3;
+Node (Node (Leaf (),3,Leaf ()),1,Leaf ()) -> 2;
+Node (Node (Leaf (),2,Leaf ()),3,Leaf ()) -> 2;
+Node (Leaf (),1,Node (Node (Leaf (),3,Leaf ()),2,Leaf ())) -> 3;
+Node (Leaf (),2,Node (Leaf (),2,Leaf ())) -> 2;
+
+=================================
+None
+Node (Node (Leaf (),2,Node (Leaf (),1,Leaf ())),0,Leaf ()) -> 3;
+Node (Node (Leaf (),2,Leaf ()),0,Leaf ()) -> 2;
+Leaf () -> 0;
+Node (Leaf (),1,Node (Node (Leaf (),1,Leaf ()),1,Leaf ())) -> 3;
+Node (Node (Node (Leaf (),1,Leaf ()),0,Leaf ()),0,Leaf ()) -> 3;
+
+=================================
+None
+Node (Leaf (),1,Node (Node (Leaf (),3,Leaf ()),2,Leaf ())) -> 3;
+Node (Node (Leaf (),0,Leaf ()),0,Leaf ()) -> 2;
+Node (Leaf (),1,Node (Leaf (),3,Node (Leaf (),0,Leaf ()))) -> 3;
+Node (Node (Node (Leaf (),2,Leaf ()),2,Leaf ()),3,Leaf ()) -> 3;
+Node (Node (Leaf (),3,Leaf ()),3,Leaf ()) -> 2;
+
+=================================
+None
+Node (Leaf (),2,Node (Leaf (),2,Node (Leaf (),0,Leaf ()))) -> 3;
+Node (Leaf (),1,Node (Leaf (),1,Node (Leaf (),0,Leaf ()))) -> 3;
+Node (Leaf (),3,Node (Leaf (),0,Node (Leaf (),2,Leaf ()))) -> 3;
+Node (Leaf (),1,Node (Leaf (),0,Leaf ())) -> 2;
+Node (Node (Node (Leaf (),2,Leaf ()),1,Leaf ()),1,Leaf ()) -> 3;
+
+=================================
+None
+Node (Node (Leaf (),1,Node (Leaf (),2,Leaf ())),3,Leaf ()) -> 3;
+Node (Node (Leaf (),1,Leaf ()),0,Node (Leaf (),1,Leaf ())) -> 3;
+Node (Leaf (),3,Leaf ()) -> 1;
+Node (Leaf (),2,Node (Leaf (),1,Leaf ())) -> 2;
+Node (Node (Node (Leaf (),0,Leaf ()),3,Leaf ()),2,Leaf ()) -> 3;
+
+=================================
+None
+Node (Node (Leaf (),1,Leaf ()),1,Node (Leaf (),1,Leaf ())) -> 3;
+Node (Leaf (),0,Node (Leaf (),0,Leaf ())) -> 2;
+Node (Node (Node (Leaf (),1,Leaf ()),2,Leaf ()),3,Leaf ()) -> 3;
+Leaf () -> 0;
+Node (Leaf (),2,Node (Leaf (),2,Leaf ())) -> 2;
+Node (Leaf (),0,Node (Leaf (),2,Node (Leaf (),0,Leaf ()))) -> 3;
+
+=================================
+None
+Node (Node (Leaf (),2,Leaf ()),3,Leaf ()) -> 2;
+Node (Leaf (),3,Node (Node (Leaf (),3,Leaf ()),0,Leaf ())) -> 3;
+Node (Leaf (),3,Leaf ()) -> 1;
+Node (Leaf (),1,Node (Leaf (),0,Node (Leaf (),0,Leaf ()))) -> 3;
+Node (Node (Leaf (),0,Leaf ()),0,Leaf ()) -> 2;
+Node (Node (Leaf (),1,Leaf ()),1,Node (Leaf (),2,Leaf ())) -> 3;
+
+=================================
+None
+Node (Leaf (),2,Leaf ()) -> 1;
+Node (Node (Node (Leaf (),3,Leaf ()),0,Leaf ()),1,Leaf ()) -> 3;
+Node (Node (Leaf (),3,Leaf ()),0,Node (Leaf (),0,Leaf ())) -> 3;
+Node (Leaf (),1,Node (Leaf (),3,Leaf ())) -> 2;
+Node (Leaf (),3,Node (Leaf (),0,Leaf ())) -> 2;
+Node (Leaf (),2,Node (Leaf (),2,Leaf ())) -> 2;
+
+=================================
+None
+Node (Node (Leaf (),3,Leaf ()),1,Leaf ()) -> 2;
+Node (Leaf (),2,Node (Leaf (),0,Leaf ())) -> 2;
+Node (Node (Leaf (),0,Node (Leaf (),0,Leaf ())),3,Leaf ()) -> 3;
+Node (Node (Leaf (),2,Leaf ()),3,Node (Leaf (),2,Leaf ())) -> 3;
+Node (Node (Node (Leaf (),2,Leaf ()),3,Leaf ()),2,Leaf ()) -> 3;
+Node (Leaf (),1,Node (Leaf (),0,Leaf ())) -> 2;
+
+=================================
+None
+Node (Leaf (),1,Leaf ()) -> 1;
+Node (Node (Leaf (),3,Leaf ()),1,Node (Leaf (),1,Leaf ())) -> 3;
+Node (Leaf (),1,Node (Leaf (),0,Leaf ())) -> 2;
+Node (Node (Leaf (),1,Leaf ()),1,Node (Leaf (),1,Leaf ())) -> 3;
+Node (Node (Node (Leaf (),1,Leaf ()),3,Leaf ()),1,Leaf ()) -> 3;
+Node (Leaf (),0,Leaf ()) -> 1;
+
+=================================
+None
+Node (Node (Node (Leaf (),2,Leaf ()),3,Leaf ()),3,Leaf ()) -> 3;
+Node (Node (Leaf (),2,Node (Leaf (),1,Leaf ())),2,Leaf ()) -> 3;
+Node (Node (Leaf (),2,Leaf ()),1,Node (Leaf (),2,Leaf ())) -> 3;
+Node (Leaf (),0,Node (Leaf (),2,Node (Leaf (),3,Leaf ()))) -> 3;
+Node (Node (Leaf (),1,Leaf ()),3,Node (Leaf (),3,Leaf ())) -> 3;
+Node (Node (Leaf (),1,Leaf ()),1,Node (Leaf (),2,Leaf ())) -> 3;
+
+=================================
+None
+Node (Node (Leaf (),3,Leaf ()),3,Leaf ()) -> 2;
+Node (Node (Leaf (),2,Leaf ()),3,Leaf ()) -> 2;
+Node (Node (Leaf (),1,Leaf ()),2,Node (Leaf (),0,Leaf ())) -> 3;
+Node (Leaf (),0,Node (Leaf (),0,Node (Leaf (),3,Leaf ()))) -> 3;
+Node (Leaf (),1,Leaf ()) -> 1;
+Node (Leaf (),2,Node (Leaf (),3,Node (Leaf (),3,Leaf ()))) -> 3;
+
+=================================
+None
+Node (Leaf (),1,Leaf ()) -> 1;
+Node (Node (Leaf (),0,Leaf ()),2,Leaf ()) -> 2;
+Leaf () -> 0;
+Node (Leaf (),1,Node (Leaf (),0,Node (Leaf (),0,Leaf ()))) -> 3;
+Node (Node (Leaf (),2,Leaf ()),1,Node (Leaf (),3,Leaf ())) -> 3;
+Node (Node (Leaf (),2,Leaf ()),2,Node (Leaf (),0,Leaf ())) -> 3;
+
+=================================
+None
+Node (Leaf (),0,Node (Node (Leaf (),0,Leaf ()),2,Leaf ())) -> 3;
+Node (Node (Node (Leaf (),2,Leaf ()),2,Leaf ()),3,Leaf ()) -> 3;
+Node (Node (Leaf (),1,Leaf ()),0,Node (Leaf (),2,Leaf ())) -> 3;
+Node (Node (Leaf (),1,Node (Leaf (),0,Leaf ())),0,Leaf ()) -> 3;
+Node (Leaf (),0,Node (Node (Leaf (),3,Leaf ()),3,Leaf ())) -> 3;
+Node (Leaf (),2,Node (Leaf (),3,Node (Leaf (),1,Leaf ()))) -> 3;
+
+=================================
+fix (f : tree -> nat) = fun (x:tree) -> 3
+
+89.9107 false
+
+Node (Leaf (),3,Leaf ()) -> 1;
+Node (Node (Node (Leaf (),1,Leaf ()),3,Leaf ()),3,Leaf ()) -> 3;
+Node (Leaf (),0,Node (Node (Leaf (),0,Leaf ()),1,Leaf ())) -> 3;
+Node (Leaf (),2,Node (Leaf (),0,Leaf ())) -> 2;
+Node (Leaf (),3,Node (Leaf (),3,Node (Leaf (),1,Leaf ()))) -> 3;
+Node (Node (Node (Leaf (),1,Leaf ()),0,Leaf ()),1,Leaf ()) -> 3;
+
+=================================
+None
+Node (Node (Node (Leaf (),0,Leaf ()),2,Leaf ()),0,Leaf ()) -> 3;
+Node (Node (Leaf (),0,Leaf ()),1,Node (Leaf (),3,Leaf ())) -> 3;
+Leaf () -> 0;
+Node (Node (Leaf (),2,Leaf ()),2,Node (Leaf (),2,Leaf ())) -> 3;
+Node (Node (Node (Leaf (),1,Leaf ()),1,Leaf ()),1,Leaf ()) -> 3;
+Node (Leaf (),0,Node (Node (Leaf (),0,Leaf ()),0,Leaf ())) -> 3;
+Node (Node (Leaf (),1,Node (Leaf (),3,Leaf ())),1,Leaf ()) -> 3;
+
+=================================
+fix (f : tree -> nat) =
+  fun (x:tree) -> match x with
+                    | Leaf _ -> 0
+                    | Node _ -> 3
+
+13.7609 false
+
+Node (Node (Node (Leaf (),3,Leaf ()),2,Leaf ()),1,Leaf ()) -> 3;
+Node (Node (Leaf (),1,Node (Leaf (),3,Leaf ())),3,Leaf ()) -> 3;
+Node (Node (Leaf (),0,Leaf ()),1,Leaf ()) -> 2;
+Node (Node (Leaf (),1,Node (Leaf (),0,Leaf ())),2,Leaf ()) -> 3;
+Node (Leaf (),1,Node (Node (Leaf (),3,Leaf ()),1,Leaf ())) -> 3;
+Node (Node (Leaf (),2,Leaf ()),0,Leaf ()) -> 2;
+Leaf () -> 0;
+
+=================================
+None
+Node (Leaf (),0,Node (Leaf (),3,Node (Leaf (),2,Leaf ()))) -> 3;
+Node (Node (Leaf (),3,Node (Leaf (),2,Leaf ())),2,Leaf ()) -> 3;
+Node (Leaf (),0,Leaf ()) -> 1;
+Node (Node (Node (Leaf (),1,Leaf ()),1,Leaf ()),1,Leaf ()) -> 3;
+Node (Node (Leaf (),1,Leaf ()),1,Leaf ()) -> 2;
+Node (Node (Leaf (),2,Leaf ()),0,Leaf ()) -> 2;
+Node (Leaf (),1,Node (Leaf (),0,Leaf ())) -> 2;
+
+=================================
+None
+Leaf () -> 0;
+Node (Leaf (),1,Node (Node (Leaf (),3,Leaf ()),2,Leaf ())) -> 3;
+Node (Node (Leaf (),1,Node (Leaf (),0,Leaf ())),0,Leaf ()) -> 3;
+Node (Leaf (),0,Leaf ()) -> 1;
+Node (Node (Leaf (),3,Leaf ()),3,Leaf ()) -> 2;
+Node (Node (Node (Leaf (),0,Leaf ()),3,Leaf ()),0,Leaf ()) -> 3;
+Node (Node (Leaf (),0,Leaf ()),3,Leaf ()) -> 2;
+
+=================================
+None
+Node (Leaf (),2,Node (Leaf (),1,Node (Leaf (),2,Leaf ()))) -> 3;
+Node (Node (Node (Leaf (),0,Leaf ()),1,Leaf ()),2,Leaf ()) -> 3;
+Node (Node (Leaf (),1,Leaf ()),1,Leaf ()) -> 2;
+Node (Leaf (),3,Node (Node (Leaf (),0,Leaf ()),3,Leaf ())) -> 3;
+Node (Leaf (),2,Leaf ()) -> 1;
+Node (Leaf (),1,Leaf ()) -> 1;
+Node (Node (Leaf (),0,Node (Leaf (),1,Leaf ())),3,Leaf ()) -> 3;
+
+=================================
+None
+Node (Leaf (),1,Node (Leaf (),1,Node (Leaf (),1,Leaf ()))) -> 3;
+Node (Node (Leaf (),2,Leaf ()),0,Leaf ()) -> 2;
+Node (Leaf (),2,Node (Leaf (),2,Node (Leaf (),1,Leaf ()))) -> 3;
+Node (Node (Node (Leaf (),2,Leaf ()),0,Leaf ()),2,Leaf ()) -> 3;
+Node (Node (Leaf (),3,Node (Leaf (),1,Leaf ())),2,Leaf ()) -> 3;
+Node (Node (Leaf (),1,Leaf ()),2,Node (Leaf (),1,Leaf ())) -> 3;
+Node (Node (Leaf (),1,Node (Leaf (),3,Leaf ())),0,Leaf ()) -> 3;
+
+=================================
+None
+Node (Node (Leaf (),1,Leaf ()),3,Node (Leaf (),0,Leaf ())) -> 3;
+Node (Leaf (),2,Node (Node (Leaf (),3,Leaf ()),1,Leaf ())) -> 3;
+Node (Node (Leaf (),0,Leaf ()),3,Node (Leaf (),1,Leaf ())) -> 3;
+Node (Leaf (),1,Node (Node (Leaf (),3,Leaf ()),0,Leaf ())) -> 3;
+Node (Node (Leaf (),0,Leaf ()),2,Node (Leaf (),1,Leaf ())) -> 3;
+Node (Leaf (),3,Node (Leaf (),0,Node (Leaf (),2,Leaf ()))) -> 3;
+Leaf () -> 0;
+
+=================================
+None
+Leaf () -> 0;
+Node (Node (Leaf (),1,Node (Leaf (),2,Leaf ())),0,Leaf ()) -> 3;
+Node (Leaf (),3,Node (Leaf (),3,Leaf ())) -> 2;
+Node (Node (Leaf (),1,Leaf ()),3,Node (Leaf (),2,Leaf ())) -> 3;
+Node (Leaf (),2,Node (Leaf (),2,Leaf ())) -> 2;
+Node (Leaf (),2,Node (Node (Leaf (),2,Leaf ()),2,Leaf ())) -> 3;
+Node (Leaf (),3,Node (Leaf (),2,Leaf ())) -> 2;
+
+=================================
+None
+Node (Leaf (),2,Node (Leaf (),0,Node (Leaf (),3,Leaf ()))) -> 3;
+Node (Node (Leaf (),3,Node (Leaf (),1,Leaf ())),0,Leaf ()) -> 3;
+Node (Leaf (),2,Node (Leaf (),2,Leaf ())) -> 2;
+Leaf () -> 0;
+Node (Node (Node (Leaf (),0,Leaf ()),1,Leaf ()),1,Leaf ()) -> 3;
+Node (Leaf (),2,Node (Node (Leaf (),1,Leaf ()),1,Leaf ())) -> 3;
+Node (Node (Node (Leaf (),1,Leaf ()),1,Leaf ()),2,Leaf ()) -> 3;
+
+=================================
+None
+Node (Node (Leaf (),3,Leaf ()),2,Leaf ()) -> 2;
+Node (Node (Leaf (),2,Leaf ()),2,Leaf ()) -> 2;
+Node (Node (Leaf (),0,Leaf ()),1,Leaf ()) -> 2;
+Node (Leaf (),2,Node (Leaf (),2,Leaf ())) -> 2;
+Node (Leaf (),0,Node (Leaf (),1,Leaf ())) -> 2;
+Node (Leaf (),3,Node (Leaf (),2,Leaf ())) -> 2;
+Node (Leaf (),3,Leaf ()) -> 1;
+
+=================================
+None
+Node (Leaf (),2,Node (Node (Leaf (),2,Leaf ()),1,Leaf ())) -> 3;
+Node (Node (Leaf (),2,Leaf ()),0,Leaf ()) -> 2;
+Leaf () -> 0;
+Node (Leaf (),1,Node (Leaf (),2,Leaf ())) -> 2;
+Node (Node (Leaf (),2,Node (Leaf (),3,Leaf ())),3,Leaf ()) -> 3;
+Node (Node (Leaf (),1,Leaf ()),2,Leaf ()) -> 2;
+Node (Leaf (),0,Leaf ()) -> 1;
+Node (Node (Leaf (),3,Node (Leaf (),0,Leaf ())),1,Leaf ()) -> 3;
+
+=================================
+None
+Node (Leaf (),2,Node (Leaf (),1,Leaf ())) -> 2;
+Node (Leaf (),3,Node (Leaf (),1,Leaf ())) -> 2;
+Leaf () -> 0;
+Node (Leaf (),0,Node (Leaf (),1,Leaf ())) -> 2;
+Node (Leaf (),3,Node (Node (Leaf (),1,Leaf ()),1,Leaf ())) -> 3;
+Node (Node (Leaf (),1,Leaf ()),1,Leaf ()) -> 2;
+Node (Node (Leaf (),2,Leaf ()),3,Node (Leaf (),2,Leaf ())) -> 3;
+Node (Node (Leaf (),0,Leaf ()),3,Leaf ()) -> 2;
+
+=================================
+None
+Node (Node (Leaf (),3,Leaf ()),2,Node (Leaf (),2,Leaf ())) -> 3;
+Node (Leaf (),2,Node (Leaf (),0,Leaf ())) -> 2;
+Leaf () -> 0;
+Node (Leaf (),1,Node (Leaf (),0,Node (Leaf (),3,Leaf ()))) -> 3;
+Node (Leaf (),0,Node (Leaf (),0,Leaf ())) -> 2;
+Node (Node (Leaf (),1,Node (Leaf (),0,Leaf ())),2,Leaf ()) -> 3;
+Node (Leaf (),2,Node (Leaf (),1,Node (Leaf (),1,Leaf ()))) -> 3;
+Node (Node (Leaf (),1,Leaf ()),0,Leaf ()) -> 2;
+
+=================================
+None
+Node (Leaf (),2,Node (Node (Leaf (),0,Leaf ()),1,Leaf ())) -> 3;
+Node (Leaf (),3,Node (Leaf (),3,Leaf ())) -> 2;
+Node (Leaf (),1,Node (Node (Leaf (),3,Leaf ()),2,Leaf ())) -> 3;
+Node (Node (Leaf (),0,Leaf ()),2,Node (Leaf (),2,Leaf ())) -> 3;
+Node (Leaf (),0,Leaf ()) -> 1;
+Node (Node (Node (Leaf (),3,Leaf ()),0,Leaf ()),1,Leaf ()) -> 3;
+Node (Node (Node (Leaf (),2,Leaf ()),0,Leaf ()),1,Leaf ()) -> 3;
+Node (Leaf (),3,Node (Leaf (),0,Leaf ())) -> 2;
+
+=================================
+None
+Node (Leaf (),1,Node (Leaf (),2,Leaf ())) -> 2;
+Node (Leaf (),3,Node (Node (Leaf (),0,Leaf ()),2,Leaf ())) -> 3;
+Node (Leaf (),2,Leaf ()) -> 1;
+Node (Node (Leaf (),0,Leaf ()),1,Leaf ()) -> 2;
+Node (Leaf (),3,Node (Leaf (),1,Leaf ())) -> 2;
+Leaf () -> 0;
+Node (Leaf (),1,Node (Leaf (),3,Node (Leaf (),2,Leaf ()))) -> 3;
+Node (Node (Node (Leaf (),0,Leaf ()),2,Leaf ()),3,Leaf ()) -> 3;
+
+=================================
+None
+Node (Node (Leaf (),0,Leaf ()),0,Leaf ()) -> 2;
+Node (Node (Leaf (),2,Node (Leaf (),2,Leaf ())),3,Leaf ()) -> 3;
+Leaf () -> 0;
+Node (Node (Leaf (),2,Leaf ()),0,Node (Leaf (),2,Leaf ())) -> 3;
+Node (Leaf (),3,Leaf ()) -> 1;
+Node (Node (Node (Leaf (),0,Leaf ()),0,Leaf ()),2,Leaf ()) -> 3;
+Node (Leaf (),1,Node (Leaf (),1,Node (Leaf (),2,Leaf ()))) -> 3;
+Node (Leaf (),0,Node (Leaf (),1,Leaf ())) -> 2;
+
+=================================
+None
+Node (Leaf (),2,Leaf ()) -> 1;
+Node (Node (Leaf (),0,Node (Leaf (),3,Leaf ())),1,Leaf ()) -> 3;
+Node (Node (Leaf (),2,Leaf ()),1,Node (Leaf (),2,Leaf ())) -> 3;
+Node (Node (Leaf (),2,Leaf ()),3,Node (Leaf (),0,Leaf ())) -> 3;
+Node (Node (Leaf (),0,Leaf ()),3,Node (Leaf (),0,Leaf ())) -> 3;
+Node (Node (Leaf (),2,Leaf ()),2,Node (Leaf (),2,Leaf ())) -> 3;
+Node (Node (Leaf (),3,Leaf ()),1,Leaf ()) -> 2;
+Node (Node (Leaf (),2,Leaf ()),0,Leaf ()) -> 2;
+
+=================================
+None
+Leaf () -> 0;
+Node (Leaf (),0,Node (Leaf (),3,Node (Leaf (),2,Leaf ()))) -> 3;
+Node (Node (Leaf (),3,Node (Leaf (),0,Leaf ())),2,Leaf ()) -> 3;
+Node (Node (Leaf (),1,Leaf ()),0,Node (Leaf (),3,Leaf ())) -> 3;
+Node (Leaf (),1,Node (Leaf (),2,Node (Leaf (),2,Leaf ()))) -> 3;
+Node (Leaf (),0,Node (Leaf (),3,Leaf ())) -> 2;
+Node (Node (Leaf (),2,Leaf ()),0,Leaf ()) -> 2;
+Node (Leaf (),0,Node (Node (Leaf (),1,Leaf ()),3,Leaf ())) -> 3;
+
+=================================
+None
+Node (Leaf (),2,Node (Leaf (),1,Node (Leaf (),0,Leaf ()))) -> 3;
+Node (Leaf (),1,Node (Leaf (),3,Leaf ())) -> 2;
+Node (Leaf (),2,Node (Node (Leaf (),3,Leaf ()),2,Leaf ())) -> 3;
+Node (Node (Leaf (),3,Leaf ()),3,Node (Leaf (),1,Leaf ())) -> 3;
+Node (Node (Leaf (),1,Leaf ()),1,Leaf ()) -> 2;
+Node (Leaf (),1,Node (Leaf (),0,Leaf ())) -> 2;
+Node (Node (Leaf (),1,Leaf ()),2,Leaf ()) -> 2;
+Node (Node (Leaf (),0,Leaf ()),1,Leaf ()) -> 2;
+
+=================================
+None
+Node (Node (Leaf (),2,Leaf ()),2,Leaf ()) -> 2;
+Node (Leaf (),0,Node (Leaf (),0,Node (Leaf (),3,Leaf ()))) -> 3;
+Leaf () -> 0;
+Node (Leaf (),1,Node (Node (Leaf (),2,Leaf ()),3,Leaf ())) -> 3;
+Node (Leaf (),0,Node (Node (Leaf (),2,Leaf ()),3,Leaf ())) -> 3;
+Node (Leaf (),2,Node (Node (Leaf (),2,Leaf ()),2,Leaf ())) -> 3;
+Node (Node (Node (Leaf (),2,Leaf ()),1,Leaf ()),0,Leaf ()) -> 3;
+Node (Node (Leaf (),1,Node (Leaf (),2,Leaf ())),1,Leaf ()) -> 3;
+
+=================================
+None
+Node (Node (Leaf (),1,Leaf ()),2,Node (Leaf (),2,Leaf ())) -> 3;
+Node (Node (Leaf (),1,Node (Leaf (),2,Leaf ())),1,Leaf ()) -> 3;
+Node (Leaf (),1,Node (Leaf (),2,Leaf ())) -> 2;
+Leaf () -> 0;
+Node (Leaf (),0,Node (Leaf (),1,Node (Leaf (),2,Leaf ()))) -> 3;
+Node (Leaf (),0,Leaf ()) -> 1;
+Node (Leaf (),0,Node (Node (Leaf (),1,Leaf ()),0,Leaf ())) -> 3;
+Node (Leaf (),1,Node (Leaf (),0,Node (Leaf (),3,Leaf ()))) -> 3;
+Node (Node (Leaf (),0,Node (Leaf (),2,Leaf ())),1,Leaf ()) -> 3;
+
+=================================
+None
+Node (Leaf (),1,Node (Leaf (),0,Leaf ())) -> 2;
+Leaf () -> 0;
+Node (Node (Leaf (),2,Leaf ()),0,Leaf ()) -> 2;
+Node (Node (Leaf (),2,Node (Leaf (),1,Leaf ())),2,Leaf ()) -> 3;
+Node (Node (Node (Leaf (),0,Leaf ()),0,Leaf ()),3,Leaf ()) -> 3;
+Node (Leaf (),3,Node (Leaf (),3,Node (Leaf (),1,Leaf ()))) -> 3;
+Node (Node (Leaf (),3,Leaf ()),3,Node (Leaf (),2,Leaf ())) -> 3;
+Node (Leaf (),0,Node (Leaf (),1,Leaf ())) -> 2;
+Node (Leaf (),1,Node (Leaf (),0,Node (Leaf (),2,Leaf ()))) -> 3;
+
+=================================
+None
+Node (Leaf (),2,Node (Node (Leaf (),1,Leaf ()),3,Leaf ())) -> 3;
+Node (Node (Leaf (),3,Node (Leaf (),1,Leaf ())),2,Leaf ()) -> 3;
+Node (Node (Leaf (),3,Leaf ()),0,Leaf ()) -> 2;
+Node (Node (Leaf (),0,Node (Leaf (),0,Leaf ())),2,Leaf ()) -> 3;
+Node (Node (Leaf (),2,Leaf ()),1,Leaf ()) -> 2;
+Node (Leaf (),3,Node (Node (Leaf (),3,Leaf ()),0,Leaf ())) -> 3;
+Node (Node (Node (Leaf (),0,Leaf ()),0,Leaf ()),0,Leaf ()) -> 3;
+Node (Node (Leaf (),2,Node (Leaf (),0,Leaf ())),1,Leaf ()) -> 3;
+Node (Leaf (),1,Node (Leaf (),1,Leaf ())) -> 2;
+
+=================================
+None
+Node (Leaf (),2,Node (Leaf (),3,Leaf ())) -> 2;
+Node (Leaf (),3,Node (Leaf (),1,Node (Leaf (),1,Leaf ()))) -> 3;
+Node (Node (Leaf (),1,Leaf ()),2,Leaf ()) -> 2;
+Node (Node (Leaf (),3,Leaf ()),1,Node (Leaf (),0,Leaf ())) -> 3;
+Node (Node (Leaf (),2,Leaf ()),0,Node (Leaf (),0,Leaf ())) -> 3;
+Node (Leaf (),1,Node (Leaf (),3,Node (Leaf (),3,Leaf ()))) -> 3;
+Node (Node (Leaf (),0,Leaf ()),3,Leaf ()) -> 2;
+Node (Node (Leaf (),0,Node (Leaf (),2,Leaf ())),3,Leaf ()) -> 3;
+Node (Leaf (),0,Node (Node (Leaf (),0,Leaf ()),3,Leaf ())) -> 3;
+
+=================================
+None
+Node (Node (Leaf (),1,Leaf ()),3,Leaf ()) -> 2;
+Node (Leaf (),1,Node (Leaf (),3,Node (Leaf (),3,Leaf ()))) -> 3;
+Node (Leaf (),3,Node (Node (Leaf (),2,Leaf ()),0,Leaf ())) -> 3;
+Leaf () -> 0;
+Node (Leaf (),0,Node (Leaf (),1,Node (Leaf (),3,Leaf ()))) -> 3;
+Node (Leaf (),2,Node (Leaf (),2,Node (Leaf (),3,Leaf ()))) -> 3;
+Node (Node (Leaf (),2,Node (Leaf (),1,Leaf ())),3,Leaf ()) -> 3;
+Node (Leaf (),3,Node (Node (Leaf (),0,Leaf ()),2,Leaf ())) -> 3;
+Node (Leaf (),3,Leaf ()) -> 1;
+
+=================================
+None
+Node (Node (Node (Leaf (),0,Leaf ()),1,Leaf ()),3,Leaf ()) -> 3;
+Node (Node (Leaf (),3,Leaf ()),1,Leaf ()) -> 2;
+Node (Node (Leaf (),1,Leaf ()),0,Node (Leaf (),1,Leaf ())) -> 3;
+Node (Leaf (),0,Node (Node (Leaf (),3,Leaf ()),1,Leaf ())) -> 3;
+Node (Leaf (),2,Node (Leaf (),1,Node (Leaf (),1,Leaf ()))) -> 3;
+Node (Node (Leaf (),0,Node (Leaf (),0,Leaf ())),2,Leaf ()) -> 3;
+Leaf () -> 0;
+Node (Node (Leaf (),1,Leaf ()),0,Leaf ()) -> 2;
+Node (Node (Leaf (),1,Node (Leaf (),2,Leaf ())),1,Leaf ()) -> 3;
+
+=================================
+None
+Node (Node (Leaf (),0,Leaf ()),0,Node (Leaf (),3,Leaf ())) -> 3;
+Node (Node (Leaf (),3,Leaf ()),2,Node (Leaf (),2,Leaf ())) -> 3;
+Node (Node (Leaf (),1,Leaf ()),0,Node (Leaf (),2,Leaf ())) -> 3;
+Leaf () -> 0;
+Node (Leaf (),0,Node (Node (Leaf (),1,Leaf ()),1,Leaf ())) -> 3;
+Node (Node (Leaf (),2,Leaf ()),2,Leaf ()) -> 2;
+Node (Leaf (),2,Node (Leaf (),3,Leaf ())) -> 2;
+Node (Leaf (),2,Node (Leaf (),1,Node (Leaf (),1,Leaf ()))) -> 3;
+Node (Leaf (),0,Node (Leaf (),2,Node (Leaf (),1,Leaf ()))) -> 3;
+
+=================================
+None
+Node (Leaf (),1,Node (Leaf (),2,Node (Leaf (),3,Leaf ()))) -> 3;
+Node (Node (Leaf (),0,Leaf ()),2,Leaf ()) -> 2;
+Node (Leaf (),2,Node (Leaf (),2,Node (Leaf (),1,Leaf ()))) -> 3;
+Node (Node (Leaf (),0,Leaf ()),3,Leaf ()) -> 2;
+Leaf () -> 0;
+Node (Leaf (),0,Leaf ()) -> 1;
+Node (Node (Node (Leaf (),1,Leaf ()),3,Leaf ()),0,Leaf ()) -> 3;
+Node (Node (Leaf (),1,Leaf ()),0,Node (Leaf (),0,Leaf ())) -> 3;
+Node (Node (Leaf (),0,Node (Leaf (),0,Leaf ())),0,Leaf ()) -> 3;
+
+=================================
+None
+Node (Leaf (),2,Node (Leaf (),3,Leaf ())) -> 2;
+Node (Leaf (),0,Leaf ()) -> 1;
+Node (Node (Leaf (),3,Node (Leaf (),2,Leaf ())),1,Leaf ()) -> 3;
+Node (Node (Node (Leaf (),2,Leaf ()),3,Leaf ()),1,Leaf ()) -> 3;
+Node (Node (Leaf (),3,Node (Leaf (),1,Leaf ())),3,Leaf ()) -> 3;
+Node (Node (Node (Leaf (),3,Leaf ()),3,Leaf ()),1,Leaf ()) -> 3;
+Node (Leaf (),1,Node (Node (Leaf (),1,Leaf ()),0,Leaf ())) -> 3;
+Leaf () -> 0;
+Node (Node (Leaf (),1,Node (Leaf (),0,Leaf ())),1,Leaf ()) -> 3;
+
+=================================
+None
+Node (Leaf (),2,Leaf ()) -> 1;
+Node (Leaf (),3,Node (Leaf (),0,Node (Leaf (),0,Leaf ()))) -> 3;
+Node (Leaf (),1,Node (Leaf (),1,Leaf ())) -> 2;
+Node (Node (Leaf (),3,Leaf ()),3,Leaf ()) -> 2;
+Node (Leaf (),2,Node (Node (Leaf (),1,Leaf ()),0,Leaf ())) -> 3;
+Node (Node (Leaf (),3,Leaf ()),1,Node (Leaf (),2,Leaf ())) -> 3;
+Node (Leaf (),1,Node (Node (Leaf (),0,Leaf ()),1,Leaf ())) -> 3;
+Node (Node (Leaf (),3,Node (Leaf (),0,Leaf ())),0,Leaf ()) -> 3;
+Node (Leaf (),1,Leaf ()) -> 1;
+
+=================================
+None
+Node (Leaf (),0,Node (Leaf (),1,Node (Leaf (),3,Leaf ()))) -> 3;
+Node (Leaf (),0,Node (Leaf (),2,Leaf ())) -> 2;
+Node (Node (Leaf (),1,Leaf ()),0,Node (Leaf (),2,Leaf ())) -> 3;
+Node (Node (Leaf (),0,Leaf ()),0,Node (Leaf (),0,Leaf ())) -> 3;
+Node (Node (Leaf (),3,Node (Leaf (),3,Leaf ())),3,Leaf ()) -> 3;
+Node (Leaf (),2,Node (Leaf (),3,Leaf ())) -> 2;
+Node (Leaf (),2,Node (Node (Leaf (),2,Leaf ()),3,Leaf ())) -> 3;
+Node (Node (Node (Leaf (),1,Leaf ()),3,Leaf ()),0,Leaf ()) -> 3;
+Node (Node (Leaf (),0,Leaf ()),0,Node (Leaf (),2,Leaf ())) -> 3;
+Node (Leaf (),0,Node (Node (Leaf (),2,Leaf ()),3,Leaf ())) -> 3;
+
+=================================
+None
+Node (Node (Leaf (),2,Leaf ()),2,Node (Leaf (),2,Leaf ())) -> 3;
+Node (Node (Leaf (),1,Node (Leaf (),2,Leaf ())),2,Leaf ()) -> 3;
+Leaf () -> 0;
+Node (Node (Leaf (),1,Leaf ()),3,Node (Leaf (),1,Leaf ())) -> 3;
+Node (Node (Leaf (),2,Leaf ()),1,Node (Leaf (),2,Leaf ())) -> 3;
+Node (Leaf (),2,Node (Leaf (),0,Node (Leaf (),1,Leaf ()))) -> 3;
+Node (Node (Leaf (),2,Node (Leaf (),3,Leaf ())),1,Leaf ()) -> 3;
+Node (Leaf (),1,Node (Leaf (),0,Leaf ())) -> 2;
+Node (Leaf (),0,Node (Node (Leaf (),2,Leaf ()),3,Leaf ())) -> 3;
+Node (Node (Leaf (),0,Node (Leaf (),3,Leaf ())),0,Leaf ()) -> 3;
+
+=================================
+None
+Node (Leaf (),2,Leaf ()) -> 1;
+Node (Node (Leaf (),1,Node (Leaf (),0,Leaf ())),1,Leaf ()) -> 3;
+Node (Node (Node (Leaf (),1,Leaf ()),1,Leaf ()),0,Leaf ()) -> 3;
+Node (Node (Leaf (),2,Node (Leaf (),3,Leaf ())),2,Leaf ()) -> 3;
+Node (Node (Leaf (),0,Leaf ()),1,Leaf ()) -> 2;
+Node (Leaf (),3,Node (Node (Leaf (),3,Leaf ()),3,Leaf ())) -> 3;
+Node (Leaf (),0,Node (Leaf (),1,Leaf ())) -> 2;
+Node (Node (Node (Leaf (),3,Leaf ()),0,Leaf ()),0,Leaf ()) -> 3;
+Node (Leaf (),3,Node (Leaf (),2,Leaf ())) -> 2;
+Node (Leaf (),2,Node (Leaf (),1,Leaf ())) -> 2;
+
+=================================
+None
+Node (Node (Leaf (),0,Leaf ()),3,Leaf ()) -> 2;
+Node (Leaf (),1,Node (Leaf (),1,Leaf ())) -> 2;
+Node (Leaf (),3,Node (Node (Leaf (),0,Leaf ()),3,Leaf ())) -> 3;
+Node (Node (Leaf (),1,Leaf ()),2,Leaf ()) -> 2;
+Node (Leaf (),3,Leaf ()) -> 1;
+Node (Node (Leaf (),1,Node (Leaf (),0,Leaf ())),1,Leaf ()) -> 3;
+Node (Leaf (),0,Node (Leaf (),1,Leaf ())) -> 2;
+Node (Node (Leaf (),0,Node (Leaf (),1,Leaf ())),2,Leaf ()) -> 3;
+Node (Leaf (),3,Node (Node (Leaf (),3,Leaf ()),1,Leaf ())) -> 3;
+Node (Node (Node (Leaf (),2,Leaf ()),1,Leaf ()),0,Leaf ()) -> 3;
+
+=================================
+None
+Node (Leaf (),3,Node (Leaf (),3,Leaf ())) -> 2;
+Node (Node (Leaf (),3,Leaf ()),3,Leaf ()) -> 2;
+Node (Node (Leaf (),1,Leaf ()),2,Leaf ()) -> 2;
+Node (Node (Leaf (),2,Node (Leaf (),1,Leaf ())),1,Leaf ()) -> 3;
+Node (Node (Node (Leaf (),1,Leaf ()),1,Leaf ()),2,Leaf ()) -> 3;
+Node (Leaf (),0,Leaf ()) -> 1;
+Leaf () -> 0;
+Node (Node (Leaf (),0,Node (Leaf (),1,Leaf ())),3,Leaf ()) -> 3;
+Node (Leaf (),3,Node (Leaf (),1,Leaf ())) -> 2;
+Node (Node (Leaf (),2,Leaf ()),1,Leaf ()) -> 2;
+
+=================================
+None
+Node (Node (Leaf (),3,Leaf ()),2,Leaf ()) -> 2;
+Leaf () -> 0;
+Node (Leaf (),0,Leaf ()) -> 1;
+Node (Leaf (),1,Node (Node (Leaf (),1,Leaf ()),2,Leaf ())) -> 3;
+Node (Node (Leaf (),3,Node (Leaf (),1,Leaf ())),2,Leaf ()) -> 3;
+Node (Node (Node (Leaf (),1,Leaf ()),1,Leaf ()),0,Leaf ()) -> 3;
+Node (Leaf (),2,Leaf ()) -> 1;
+Node (Node (Leaf (),2,Leaf ()),1,Leaf ()) -> 2;
+Node (Leaf (),3,Node (Leaf (),0,Leaf ())) -> 2;
+Node (Leaf (),0,Node (Node (Leaf (),2,Leaf ()),2,Leaf ())) -> 3;
+
+=================================
+None
+Node (Node (Leaf (),2,Leaf ()),3,Leaf ()) -> 2;
+Node (Leaf (),2,Node (Leaf (),3,Leaf ())) -> 2;
+Leaf () -> 0;
+Node (Node (Node (Leaf (),2,Leaf ()),2,Leaf ()),2,Leaf ()) -> 3;
+Node (Leaf (),1,Node (Leaf (),3,Leaf ())) -> 2;
+Node (Node (Leaf (),1,Leaf ()),0,Node (Leaf (),1,Leaf ())) -> 3;
+Node (Leaf (),3,Leaf ()) -> 1;
+Node (Node (Leaf (),1,Leaf ()),0,Node (Leaf (),0,Leaf ())) -> 3;
+Node (Node (Node (Leaf (),2,Leaf ()),0,Leaf ()),0,Leaf ()) -> 3;
+Node (Leaf (),2,Node (Leaf (),3,Node (Leaf (),2,Leaf ()))) -> 3;
+
+=================================
+None
+Node (Node (Leaf (),2,Leaf ()),1,Leaf ()) -> 2;
+Node (Node (Leaf (),3,Leaf ()),0,Leaf ()) -> 2;
+Node (Leaf (),1,Leaf ()) -> 1;
+Node (Leaf (),2,Node (Leaf (),1,Leaf ())) -> 2;
+Node (Leaf (),0,Node (Leaf (),3,Leaf ())) -> 2;
+Node (Node (Leaf (),0,Leaf ()),1,Node (Leaf (),0,Leaf ())) -> 3;
+Node (Leaf (),3,Leaf ()) -> 1;
+Node (Node (Leaf (),2,Node (Leaf (),2,Leaf ())),1,Leaf ()) -> 3;
+Node (Leaf (),0,Node (Leaf (),1,Leaf ())) -> 2;
+Leaf () -> 0;
+
+=================================
+None
+Node (Node (Leaf (),2,Leaf ()),3,Node (Leaf (),2,Leaf ())) -> 3;
+Leaf () -> 0;
+Node (Leaf (),2,Node (Node (Leaf (),3,Leaf ()),3,Leaf ())) -> 3;
+Node (Leaf (),1,Node (Leaf (),0,Node (Leaf (),2,Leaf ()))) -> 3;
+Node (Node (Leaf (),0,Node (Leaf (),2,Leaf ())),1,Leaf ()) -> 3;
+Node (Node (Leaf (),1,Leaf ()),0,Leaf ()) -> 2;
+Node (Node (Leaf (),2,Node (Leaf (),0,Leaf ())),2,Leaf ()) -> 3;
+Node (Leaf (),3,Node (Leaf (),1,Node (Leaf (),0,Leaf ()))) -> 3;
+Node (Leaf (),2,Node (Leaf (),1,Leaf ())) -> 2;
+Node (Node (Node (Leaf (),0,Leaf ()),3,Leaf ()),2,Leaf ()) -> 3;
+
+=================================
+None
+Node (Node (Node (Leaf (),0,Leaf ()),0,Leaf ()),3,Leaf ()) -> 3;
+Node (Node (Leaf (),1,Leaf ()),2,Node (Leaf (),0,Leaf ())) -> 3;
+Node (Leaf (),2,Node (Leaf (),2,Node (Leaf (),2,Leaf ()))) -> 3;
+Node (Leaf (),0,Node (Leaf (),1,Leaf ())) -> 2;
+Node (Leaf (),0,Node (Node (Leaf (),3,Leaf ()),1,Leaf ())) -> 3;
+Node (Node (Leaf (),2,Node (Leaf (),3,Leaf ())),2,Leaf ()) -> 3;
+Node (Leaf (),1,Leaf ()) -> 1;
+Node (Leaf (),3,Node (Leaf (),2,Node (Leaf (),2,Leaf ()))) -> 3;
+Node (Node (Leaf (),0,Node (Leaf (),3,Leaf ())),1,Leaf ()) -> 3;
+Node (Leaf (),1,Node (Leaf (),0,Leaf ())) -> 2;
+
+=================================
+None
+Node (Node (Leaf (),0,Node (Leaf (),3,Leaf ())),0,Leaf ()) -> 3;
+Node (Node (Leaf (),2,Leaf ()),0,Leaf ()) -> 2;
+Node (Leaf (),1,Node (Node (Leaf (),0,Leaf ()),0,Leaf ())) -> 3;
+Node (Node (Leaf (),0,Node (Leaf (),2,Leaf ())),2,Leaf ()) -> 3;
+Node (Leaf (),0,Leaf ()) -> 1;
+Node (Leaf (),3,Leaf ()) -> 1;
+Node (Node (Leaf (),3,Node (Leaf (),0,Leaf ())),3,Leaf ()) -> 3;
+Node (Node (Leaf (),0,Leaf ()),0,Node (Leaf (),2,Leaf ())) -> 3;
+Node (Leaf (),0,Node (Leaf (),1,Leaf ())) -> 2;
+Node (Leaf (),1,Node (Leaf (),3,Leaf ())) -> 2;
+Node (Node (Leaf (),1,Node (Leaf (),2,Leaf ())),1,Leaf ()) -> 3;
+
+=================================
+None
+Node (Leaf (),0,Node (Leaf (),1,Node (Leaf (),2,Leaf ()))) -> 3;
+Node (Node (Leaf (),1,Leaf ()),3,Leaf ()) -> 2;
+Leaf () -> 0;
+Node (Leaf (),3,Node (Leaf (),1,Leaf ())) -> 2;
+Node (Leaf (),2,Node (Leaf (),3,Node (Leaf (),3,Leaf ()))) -> 3;
+Node (Leaf (),2,Node (Node (Leaf (),1,Leaf ()),1,Leaf ())) -> 3;
+Node (Leaf (),1,Leaf ()) -> 1;
+Node (Node (Leaf (),0,Leaf ()),3,Leaf ()) -> 2;
+Node (Node (Leaf (),1,Leaf ()),0,Node (Leaf (),2,Leaf ())) -> 3;
+Node (Node (Leaf (),3,Leaf ()),1,Node (Leaf (),0,Leaf ())) -> 3;
+Node (Node (Node (Leaf (),2,Leaf ()),1,Leaf ()),2,Leaf ()) -> 3;
+
+=================================
+None
+Node (Leaf (),1,Node (Leaf (),0,Node (Leaf (),0,Leaf ()))) -> 3;
+Node (Node (Leaf (),2,Leaf ()),0,Leaf ()) -> 2;
+Node (Leaf (),2,Node (Node (Leaf (),2,Leaf ()),2,Leaf ())) -> 3;
+Node (Leaf (),3,Leaf ()) -> 1;
+Node (Leaf (),2,Node (Leaf (),1,Node (Leaf (),0,Leaf ()))) -> 3;
+Node (Leaf (),1,Node (Leaf (),2,Node (Leaf (),0,Leaf ()))) -> 3;
+Node (Leaf (),2,Node (Leaf (),2,Node (Leaf (),3,Leaf ()))) -> 3;
+Node (Node (Leaf (),2,Node (Leaf (),1,Leaf ())),2,Leaf ()) -> 3;
+Node (Leaf (),0,Node (Leaf (),2,Leaf ())) -> 2;
+Node (Leaf (),2,Node (Leaf (),0,Leaf ())) -> 2;
+Leaf () -> 0;
+
+=================================
+None
+Node (Leaf (),1,Node (Leaf (),1,Node (Leaf (),3,Leaf ()))) -> 3;
+Node (Leaf (),0,Node (Leaf (),1,Node (Leaf (),1,Leaf ()))) -> 3;
+Node (Leaf (),2,Leaf ()) -> 1;
+Node (Leaf (),0,Node (Node (Leaf (),2,Leaf ()),2,Leaf ())) -> 3;
+Leaf () -> 0;
+Node (Node (Leaf (),0,Node (Leaf (),0,Leaf ())),1,Leaf ()) -> 3;
+Node (Leaf (),1,Node (Leaf (),1,Node (Leaf (),0,Leaf ()))) -> 3;
+Node (Leaf (),3,Node (Node (Leaf (),3,Leaf ()),3,Leaf ())) -> 3;
+Node (Node (Leaf (),1,Leaf ()),0,Node (Leaf (),3,Leaf ())) -> 3;
+Node (Node (Leaf (),2,Node (Leaf (),0,Leaf ())),1,Leaf ()) -> 3;
+Node (Node (Leaf (),0,Leaf ()),0,Node (Leaf (),0,Leaf ())) -> 3;
+
+=================================
+None
+Node (Node (Leaf (),2,Leaf ()),2,Leaf ()) -> 2;
+Node (Leaf (),3,Node (Leaf (),0,Node (Leaf (),3,Leaf ()))) -> 3;
+Leaf () -> 0;
+Node (Node (Leaf (),3,Leaf ()),1,Node (Leaf (),2,Leaf ())) -> 3;
+Node (Node (Node (Leaf (),1,Leaf ()),0,Leaf ()),0,Leaf ()) -> 3;
+Node (Leaf (),2,Node (Leaf (),2,Node (Leaf (),2,Leaf ()))) -> 3;
+Node (Node (Node (Leaf (),0,Leaf ()),3,Leaf ()),2,Leaf ()) -> 3;
+Node (Leaf (),2,Node (Leaf (),2,Node (Leaf (),1,Leaf ()))) -> 3;
+Node (Node (Leaf (),0,Node (Leaf (),0,Leaf ())),2,Leaf ()) -> 3;
+Node (Leaf (),2,Node (Leaf (),1,Node (Leaf (),0,Leaf ()))) -> 3;
+Node (Node (Leaf (),0,Node (Leaf (),3,Leaf ())),3,Leaf ()) -> 3;
+
+=================================
+None
+Node (Node (Leaf (),3,Leaf ()),1,Leaf ()) -> 2;
+Node (Node (Leaf (),2,Leaf ()),3,Leaf ()) -> 2;
+Node (Node (Leaf (),3,Leaf ()),2,Leaf ()) -> 2;
+Leaf () -> 0;
+Node (Leaf (),0,Node (Leaf (),2,Leaf ())) -> 2;
+Node (Leaf (),3,Node (Leaf (),2,Node (Leaf (),1,Leaf ()))) -> 3;
+Node (Leaf (),0,Node (Leaf (),2,Node (Leaf (),2,Leaf ()))) -> 3;
+Node (Node (Leaf (),0,Leaf ()),1,Node (Leaf (),3,Leaf ())) -> 3;
+Node (Node (Leaf (),1,Leaf ()),3,Leaf ()) -> 2;
+Node (Node (Node (Leaf (),1,Leaf ()),3,Leaf ()),3,Leaf ()) -> 3;
+Node (Leaf (),3,Node (Leaf (),0,Node (Leaf (),2,Leaf ()))) -> 3;
+
+=================================
+None
+Node (Node (Leaf (),1,Leaf ()),3,Leaf ()) -> 2;
+Node (Node (Node (Leaf (),3,Leaf ()),0,Leaf ()),0,Leaf ()) -> 3;
+Node (Node (Leaf (),2,Leaf ()),2,Leaf ()) -> 2;
+Leaf () -> 0;
+Node (Node (Leaf (),1,Node (Leaf (),1,Leaf ())),2,Leaf ()) -> 3;
+Node (Node (Node (Leaf (),3,Leaf ()),0,Leaf ()),2,Leaf ()) -> 3;
+Node (Leaf (),2,Node (Node (Leaf (),2,Leaf ()),0,Leaf ())) -> 3;
+Node (Node (Leaf (),0,Node (Leaf (),0,Leaf ())),3,Leaf ()) -> 3;
+Node (Node (Leaf (),1,Leaf ()),0,Leaf ()) -> 2;
+Node (Node (Leaf (),0,Leaf ()),0,Leaf ()) -> 2;
+Node (Node (Node (Leaf (),2,Leaf ()),0,Leaf ()),3,Leaf ()) -> 3;
+
+=================================
+None
+Node (Node (Leaf (),3,Leaf ()),2,Leaf ()) -> 2;
+Node (Node (Leaf (),1,Node (Leaf (),0,Leaf ())),1,Leaf ()) -> 3;
+Node (Leaf (),1,Node (Leaf (),0,Node (Leaf (),1,Leaf ()))) -> 3;
+Node (Leaf (),1,Node (Node (Leaf (),1,Leaf ()),3,Leaf ())) -> 3;
+Leaf () -> 0;
+Node (Leaf (),0,Node (Leaf (),0,Leaf ())) -> 2;
+Node (Leaf (),2,Node (Leaf (),1,Node (Leaf (),0,Leaf ()))) -> 3;
+Node (Leaf (),2,Leaf ()) -> 1;
+Node (Leaf (),3,Node (Leaf (),3,Node (Leaf (),3,Leaf ()))) -> 3;
+Node (Leaf (),1,Node (Node (Leaf (),3,Leaf ()),2,Leaf ())) -> 3;
+Node (Leaf (),1,Node (Leaf (),2,Leaf ())) -> 2;
+
+=================================
+None
+Node (Node (Leaf (),0,Leaf ()),2,Node (Leaf (),1,Leaf ())) -> 3;
+Node (Leaf (),1,Leaf ()) -> 1;
+Node (Leaf (),1,Node (Leaf (),0,Leaf ())) -> 2;
+Node (Node (Leaf (),3,Leaf ()),3,Leaf ()) -> 2;
+Node (Node (Leaf (),1,Leaf ()),2,Node (Leaf (),1,Leaf ())) -> 3;
+Node (Leaf (),1,Node (Node (Leaf (),2,Leaf ()),1,Leaf ())) -> 3;
+Node (Node (Leaf (),1,Leaf ()),3,Node (Leaf (),2,Leaf ())) -> 3;
+Node (Leaf (),3,Leaf ()) -> 1;
+Node (Node (Node (Leaf (),2,Leaf ()),0,Leaf ()),3,Leaf ()) -> 3;
+Node (Node (Leaf (),1,Leaf ()),0,Node (Leaf (),3,Leaf ())) -> 3;
+Node (Leaf (),3,Node (Leaf (),1,Leaf ())) -> 2;
+
+=================================
+None
+Node (Leaf (),0,Node (Leaf (),3,Node (Leaf (),0,Leaf ()))) -> 3;
+Node (Leaf (),1,Leaf ()) -> 1;
+Node (Node (Leaf (),3,Node (Leaf (),2,Leaf ())),2,Leaf ()) -> 3;
+Node (Leaf (),3,Node (Node (Leaf (),0,Leaf ()),1,Leaf ())) -> 3;
+Node (Leaf (),0,Node (Leaf (),3,Node (Leaf (),1,Leaf ()))) -> 3;
+Node (Leaf (),3,Leaf ()) -> 1;
+Node (Leaf (),3,Node (Leaf (),3,Leaf ())) -> 2;
+Node (Node (Leaf (),1,Leaf ()),1,Node (Leaf (),3,Leaf ())) -> 3;
+Leaf () -> 0;
+Node (Leaf (),2,Node (Node (Leaf (),1,Leaf ()),1,Leaf ())) -> 3;
+Node (Node (Node (Leaf (),0,Leaf ()),3,Leaf ()),0,Leaf ()) -> 3;
+
+=================================
+None
+Node (Node (Leaf (),0,Leaf ()),3,Node (Leaf (),2,Leaf ())) -> 3;
+Node (Leaf (),3,Leaf ()) -> 1;
+Leaf () -> 0;
+Node (Leaf (),0,Node (Node (Leaf (),1,Leaf ()),3,Leaf ())) -> 3;
+Node (Leaf (),2,Node (Leaf (),2,Leaf ())) -> 2;
+Node (Leaf (),2,Leaf ()) -> 1;
+Node (Node (Leaf (),0,Node (Leaf (),3,Leaf ())),0,Leaf ()) -> 3;
+Node (Leaf (),1,Node (Leaf (),1,Leaf ())) -> 2;
+Node (Leaf (),2,Node (Leaf (),1,Node (Leaf (),3,Leaf ()))) -> 3;
+Node (Leaf (),2,Node (Node (Leaf (),3,Leaf ()),0,Leaf ())) -> 3;
+Node (Leaf (),2,Node (Node (Leaf (),1,Leaf ()),1,Leaf ())) -> 3;
+Node (Leaf (),1,Node (Leaf (),3,Leaf ())) -> 2;
+
+=================================
+fix (f : tree -> nat) =
+  fun (x:tree) ->
+    match x with
+      | Leaf _ -> 0
+      | Node _ -> S (sum (f (Un_Node x . 0)) (f (Un_Node x . 2)))
+
+61.7392 true
+
+Node (Leaf (),1,Node (Node (Leaf (),2,Leaf ()),2,Leaf ())) -> 3;
+Node (Leaf (),3,Node (Leaf (),2,Leaf ())) -> 2;
+Node (Node (Node (Leaf (),2,Leaf ()),1,Leaf ()),2,Leaf ()) -> 3;
+Node (Leaf (),0,Node (Leaf (),1,Node (Leaf (),0,Leaf ()))) -> 3;
+Leaf () -> 0;
+Node (Leaf (),2,Node (Leaf (),3,Node (Leaf (),1,Leaf ()))) -> 3;
+Node (Node (Node (Leaf (),1,Leaf ()),3,Leaf ()),0,Leaf ()) -> 3;
+Node (Node (Node (Leaf (),2,Leaf ()),3,Leaf ()),1,Leaf ()) -> 3;
+Node (Leaf (),0,Leaf ()) -> 1;
+Node (Leaf (),2,Node (Node (Leaf (),1,Leaf ()),0,Leaf ())) -> 3;
+Node (Leaf (),2,Node (Leaf (),3,Node (Leaf (),2,Leaf ()))) -> 3;
+Node (Node (Leaf (),1,Leaf ()),2,Node (Leaf (),3,Leaf ())) -> 3;
+
+=================================
+None
+Node (Leaf (),0,Leaf ()) -> 1;
+Node (Leaf (),2,Node (Node (Leaf (),1,Leaf ()),3,Leaf ())) -> 3;
+Node (Leaf (),1,Leaf ()) -> 1;
+Node (Leaf (),3,Node (Leaf (),1,Node (Leaf (),1,Leaf ()))) -> 3;
+Node (Node (Leaf (),1,Leaf ()),2,Node (Leaf (),2,Leaf ())) -> 3;
+Node (Leaf (),1,Node (Node (Leaf (),0,Leaf ()),0,Leaf ())) -> 3;
+Node (Node (Node (Leaf (),2,Leaf ()),0,Leaf ()),2,Leaf ()) -> 3;
+Node (Node (Leaf (),1,Leaf ()),1,Node (Leaf (),0,Leaf ())) -> 3;
+Node (Node (Leaf (),1,Leaf ()),1,Leaf ()) -> 2;
+Node (Leaf (),2,Node (Node (Leaf (),0,Leaf ()),3,Leaf ())) -> 3;
+Node (Node (Node (Leaf (),1,Leaf ()),2,Leaf ()),1,Leaf ()) -> 3;
+Node (Node (Node (Leaf (),1,Leaf ()),3,Leaf ()),3,Leaf ()) -> 3;
+
+=================================
+None
+Node (Leaf (),2,Node (Leaf (),3,Leaf ())) -> 2;
+Leaf () -> 0;
+Node (Leaf (),0,Leaf ()) -> 1;
+Node (Leaf (),1,Node (Leaf (),1,Leaf ())) -> 2;
+Node (Leaf (),1,Node (Node (Leaf (),0,Leaf ()),0,Leaf ())) -> 3;
+Node (Leaf (),0,Node (Leaf (),3,Node (Leaf (),1,Leaf ()))) -> 3;
+Node (Node (Node (Leaf (),1,Leaf ()),3,Leaf ()),2,Leaf ()) -> 3;
+Node (Node (Leaf (),3,Node (Leaf (),1,Leaf ())),3,Leaf ()) -> 3;
+Node (Leaf (),2,Leaf ()) -> 1;
+Node (Leaf (),3,Node (Leaf (),0,Leaf ())) -> 2;
+Node (Node (Leaf (),1,Leaf ()),0,Leaf ()) -> 2;
+Node (Node (Leaf (),1,Leaf ()),1,Node (Leaf (),2,Leaf ())) -> 3;
+
+=================================
+None
+Node (Node (Leaf (),3,Leaf ()),2,Leaf ()) -> 2;
+Leaf () -> 0;
+Node (Node (Leaf (),2,Leaf ()),2,Leaf ()) -> 2;
+Node (Leaf (),0,Node (Leaf (),2,Node (Leaf (),2,Leaf ()))) -> 3;
+Node (Leaf (),3,Node (Leaf (),2,Node (Leaf (),0,Leaf ()))) -> 3;
+Node (Node (Leaf (),0,Leaf ()),0,Leaf ()) -> 2;
+Node (Leaf (),2,Leaf ()) -> 1;
+Node (Leaf (),3,Node (Leaf (),0,Node (Leaf (),0,Leaf ()))) -> 3;
+Node (Leaf (),3,Node (Leaf (),0,Leaf ())) -> 2;
+Node (Leaf (),3,Node (Leaf (),3,Leaf ())) -> 2;
+Node (Leaf (),1,Node (Leaf (),1,Node (Leaf (),0,Leaf ()))) -> 3;
+Node (Node (Leaf (),2,Node (Leaf (),0,Leaf ())),3,Leaf ()) -> 3;
+
+=================================
+None
+Node (Leaf (),2,Node (Node (Leaf (),2,Leaf ()),1,Leaf ())) -> 3;
+Node (Node (Leaf (),0,Leaf ()),2,Node (Leaf (),0,Leaf ())) -> 3;
+Leaf () -> 0;
+Node (Leaf (),3,Node (Leaf (),3,Node (Leaf (),1,Leaf ()))) -> 3;
+Node (Leaf (),2,Leaf ()) -> 1;
+Node (Leaf (),0,Leaf ()) -> 1;
+Node (Leaf (),1,Node (Node (Leaf (),1,Leaf ()),1,Leaf ())) -> 3;
+Node (Leaf (),3,Node (Leaf (),2,Node (Leaf (),1,Leaf ()))) -> 3;
+Node (Leaf (),0,Node (Leaf (),3,Leaf ())) -> 2;
+Node (Leaf (),2,Node (Node (Leaf (),2,Leaf ()),3,Leaf ())) -> 3;
+Node (Node (Node (Leaf (),3,Leaf ()),0,Leaf ()),3,Leaf ()) -> 3;
+Node (Node (Node (Leaf (),2,Leaf ()),2,Leaf ()),2,Leaf ()) -> 3;
+
+=================================
+None
+Node (Node (Leaf (),0,Node (Leaf (),3,Leaf ())),1,Leaf ()) -> 3;
+Node (Leaf (),1,Node (Leaf (),3,Leaf ())) -> 2;
+Node (Node (Leaf (),2,Node (Leaf (),0,Leaf ())),2,Leaf ()) -> 3;
+Node (Leaf (),3,Node (Leaf (),3,Leaf ())) -> 2;
+Node (Leaf (),2,Node (Node (Leaf (),2,Leaf ()),1,Leaf ())) -> 3;
+Node (Node (Leaf (),3,Leaf ()),3,Leaf ()) -> 2;
+Node (Leaf (),1,Node (Leaf (),3,Node (Leaf (),2,Leaf ()))) -> 3;
+Leaf () -> 0;
+Node (Node (Leaf (),3,Leaf ()),1,Leaf ()) -> 2;
+Node (Node (Leaf (),0,Node (Leaf (),2,Leaf ())),2,Leaf ()) -> 3;
+Node (Leaf (),2,Node (Node (Leaf (),0,Leaf ()),2,Leaf ())) -> 3;
+Node (Node (Leaf (),3,Node (Leaf (),1,Leaf ())),3,Leaf ()) -> 3;
+
+=================================
+None
+Node (Leaf (),2,Leaf ()) -> 1;
+Node (Node (Leaf (),0,Node (Leaf (),3,Leaf ())),2,Leaf ()) -> 3;
+Node (Node (Leaf (),3,Leaf ()),3,Node (Leaf (),3,Leaf ())) -> 3;
+Node (Node (Leaf (),1,Node (Leaf (),1,Leaf ())),1,Leaf ()) -> 3;
+Node (Node (Node (Leaf (),2,Leaf ()),2,Leaf ()),3,Leaf ()) -> 3;
+Node (Node (Leaf (),3,Leaf ()),1,Node (Leaf (),0,Leaf ())) -> 3;
+Node (Leaf (),0,Leaf ()) -> 1;
+Node (Leaf (),1,Node (Leaf (),3,Node (Leaf (),2,Leaf ()))) -> 3;
+Node (Node (Leaf (),1,Leaf ()),1,Node (Leaf (),3,Leaf ())) -> 3;
+Node (Leaf (),2,Node (Node (Leaf (),1,Leaf ()),2,Leaf ())) -> 3;
+Node (Leaf (),3,Node (Leaf (),3,Leaf ())) -> 2;
+Node (Node (Leaf (),1,Leaf ()),1,Leaf ()) -> 2;
+
+=================================
+None
+Node (Leaf (),1,Node (Leaf (),0,Leaf ())) -> 2;
+Node (Leaf (),0,Node (Node (Leaf (),3,Leaf ()),2,Leaf ())) -> 3;
+Node (Leaf (),3,Node (Node (Leaf (),2,Leaf ()),0,Leaf ())) -> 3;
+Node (Node (Leaf (),2,Leaf ()),1,Leaf ()) -> 2;
+Node (Node (Leaf (),3,Leaf ()),3,Leaf ()) -> 2;
+Node (Leaf (),2,Leaf ()) -> 1;
+Node (Leaf (),3,Node (Node (Leaf (),1,Leaf ()),2,Leaf ())) -> 3;
+Leaf () -> 0;
+Node (Node (Leaf (),3,Node (Leaf (),3,Leaf ())),0,Leaf ()) -> 3;
+Node (Node (Leaf (),2,Leaf ()),3,Leaf ()) -> 2;
+Node (Node (Node (Leaf (),0,Leaf ()),3,Leaf ()),3,Leaf ()) -> 3;
+Node (Node (Node (Leaf (),3,Leaf ()),3,Leaf ()),2,Leaf ()) -> 3;
+
+=================================
+None
+Leaf () -> 0;
+Node (Node (Leaf (),1,Leaf ()),2,Leaf ()) -> 2;
+Node (Node (Leaf (),2,Leaf ()),2,Leaf ()) -> 2;
+Node (Node (Node (Leaf (),2,Leaf ()),2,Leaf ()),1,Leaf ()) -> 3;
+Node (Node (Leaf (),0,Leaf ()),0,Leaf ()) -> 2;
+Node (Node (Leaf (),0,Leaf ()),1,Node (Leaf (),1,Leaf ())) -> 3;
+Node (Leaf (),1,Node (Leaf (),0,Leaf ())) -> 2;
+Node (Node (Leaf (),0,Leaf ()),3,Node (Leaf (),1,Leaf ())) -> 3;
+Node (Leaf (),0,Node (Leaf (),1,Leaf ())) -> 2;
+Node (Node (Leaf (),3,Node (Leaf (),3,Leaf ())),2,Leaf ()) -> 3;
+Node (Node (Leaf (),0,Leaf ()),3,Leaf ()) -> 2;
+Node (Leaf (),0,Node (Leaf (),2,Node (Leaf (),1,Leaf ()))) -> 3;
+
+=================================
+None
+Node (Leaf (),1,Node (Node (Leaf (),2,Leaf ()),3,Leaf ())) -> 3;
+Node (Leaf (),3,Leaf ()) -> 1;
+Node (Leaf (),1,Node (Node (Leaf (),0,Leaf ()),2,Leaf ())) -> 3;
+Node (Leaf (),1,Leaf ()) -> 1;
+Leaf () -> 0;
+Node (Leaf (),0,Node (Leaf (),0,Leaf ())) -> 2;
+Node (Leaf (),1,Node (Leaf (),1,Node (Leaf (),1,Leaf ()))) -> 3;
+Node (Leaf (),3,Node (Node (Leaf (),3,Leaf ()),0,Leaf ())) -> 3;
+Node (Node (Leaf (),3,Node (Leaf (),2,Leaf ())),1,Leaf ()) -> 3;
+Node (Node (Node (Leaf (),1,Leaf ()),2,Leaf ()),2,Leaf ()) -> 3;
+Node (Node (Node (Leaf (),2,Leaf ()),0,Leaf ()),0,Leaf ()) -> 3;
+Node (Leaf (),0,Node (Leaf (),2,Node (Leaf (),2,Leaf ()))) -> 3;
+Node (Leaf (),3,Node (Leaf (),3,Leaf ())) -> 2;
+
+=================================
+None
+Node (Leaf (),3,Node (Leaf (),3,Node (Leaf (),2,Leaf ()))) -> 3;
+Leaf () -> 0;
+Node (Node (Leaf (),3,Leaf ()),2,Leaf ()) -> 2;
+Node (Leaf (),1,Node (Leaf (),1,Leaf ())) -> 2;
+Node (Node (Leaf (),2,Leaf ()),0,Leaf ()) -> 2;
+Node (Leaf (),2,Leaf ()) -> 1;
+Node (Node (Leaf (),1,Leaf ()),1,Node (Leaf (),2,Leaf ())) -> 3;
+Node (Node (Node (Leaf (),0,Leaf ()),3,Leaf ()),2,Leaf ()) -> 3;
+Node (Node (Leaf (),1,Leaf ()),0,Node (Leaf (),2,Leaf ())) -> 3;
+Node (Leaf (),3,Node (Node (Leaf (),0,Leaf ()),0,Leaf ())) -> 3;
+Node (Leaf (),1,Node (Leaf (),2,Node (Leaf (),0,Leaf ()))) -> 3;
+Node (Leaf (),3,Node (Node (Leaf (),3,Leaf ()),3,Leaf ())) -> 3;
+Node (Leaf (),2,Node (Leaf (),0,Leaf ())) -> 2;
+
+=================================
+None
+Node (Node (Leaf (),0,Node (Leaf (),2,Leaf ())),0,Leaf ()) -> 3;
+Node (Node (Leaf (),3,Leaf ()),1,Node (Leaf (),0,Leaf ())) -> 3;
+Node (Node (Leaf (),2,Leaf ()),2,Leaf ()) -> 2;
+Node (Node (Leaf (),2,Leaf ()),2,Node (Leaf (),3,Leaf ())) -> 3;
+Node (Leaf (),0,Leaf ()) -> 1;
+Leaf () -> 0;
+Node (Node (Node (Leaf (),2,Leaf ()),1,Leaf ()),1,Leaf ()) -> 3;
+Node (Leaf (),2,Leaf ()) -> 1;
+Node (Node (Node (Leaf (),2,Leaf ()),2,Leaf ()),3,Leaf ()) -> 3;
+Node (Node (Leaf (),2,Leaf ()),3,Leaf ()) -> 2;
+Node (Leaf (),1,Node (Leaf (),3,Node (Leaf (),2,Leaf ()))) -> 3;
+Node (Leaf (),1,Node (Leaf (),3,Node (Leaf (),1,Leaf ()))) -> 3;
+Node (Node (Leaf (),3,Leaf ()),2,Node (Leaf (),2,Leaf ())) -> 3;
+
+=================================
+None
+Node (Leaf (),1,Node (Leaf (),3,Node (Leaf (),2,Leaf ()))) -> 3;
+Node (Leaf (),2,Node (Node (Leaf (),2,Leaf ()),2,Leaf ())) -> 3;
+Node (Leaf (),3,Node (Leaf (),0,Leaf ())) -> 2;
+Node (Leaf (),2,Node (Node (Leaf (),0,Leaf ()),0,Leaf ())) -> 3;
+Node (Leaf (),2,Node (Node (Leaf (),3,Leaf ()),3,Leaf ())) -> 3;
+Node (Leaf (),3,Node (Node (Leaf (),3,Leaf ()),1,Leaf ())) -> 3;
+Node (Node (Node (Leaf (),1,Leaf ()),2,Leaf ()),2,Leaf ()) -> 3;
+Node (Leaf (),3,Node (Leaf (),0,Node (Leaf (),1,Leaf ()))) -> 3;
+Node (Node (Node (Leaf (),0,Leaf ()),1,Leaf ()),2,Leaf ()) -> 3;
+Node (Leaf (),1,Node (Node (Leaf (),2,Leaf ()),1,Leaf ())) -> 3;
+Node (Node (Leaf (),1,Leaf ()),2,Leaf ()) -> 2;
+Node (Leaf (),1,Node (Node (Leaf (),0,Leaf ()),1,Leaf ())) -> 3;
+Node (Leaf (),2,Node (Leaf (),2,Leaf ())) -> 2;
+
+=================================
+None
+Node (Leaf (),2,Node (Node (Leaf (),0,Leaf ()),3,Leaf ())) -> 3;
+Node (Leaf (),1,Node (Leaf (),2,Leaf ())) -> 2;
+Node (Leaf (),3,Node (Leaf (),3,Node (Leaf (),3,Leaf ()))) -> 3;
+Node (Node (Node (Leaf (),3,Leaf ()),1,Leaf ()),0,Leaf ()) -> 3;
+Node (Leaf (),0,Leaf ()) -> 1;
+Node (Node (Node (Leaf (),0,Leaf ()),1,Leaf ()),2,Leaf ()) -> 3;
+Node (Leaf (),0,Node (Leaf (),1,Leaf ())) -> 2;
+Node (Leaf (),0,Node (Leaf (),2,Node (Leaf (),2,Leaf ()))) -> 3;
+Leaf () -> 0;
+Node (Node (Leaf (),3,Node (Leaf (),2,Leaf ())),0,Leaf ()) -> 3;
+Node (Node (Node (Leaf (),0,Leaf ()),1,Leaf ()),1,Leaf ()) -> 3;
+Node (Node (Leaf (),1,Node (Leaf (),3,Leaf ())),3,Leaf ()) -> 3;
+Node (Leaf (),1,Node (Leaf (),2,Node (Leaf (),3,Leaf ()))) -> 3;
+
+=================================
+None
+Node (Node (Node (Leaf (),1,Leaf ()),1,Leaf ()),1,Leaf ()) -> 3;
+Node (Node (Leaf (),2,Node (Leaf (),0,Leaf ())),1,Leaf ()) -> 3;
+Node (Leaf (),1,Node (Leaf (),1,Leaf ())) -> 2;
+Node (Node (Leaf (),3,Node (Leaf (),2,Leaf ())),2,Leaf ()) -> 3;
+Node (Node (Leaf (),2,Leaf ()),3,Leaf ()) -> 2;
+Leaf () -> 0;
+Node (Node (Leaf (),1,Leaf ()),3,Node (Leaf (),1,Leaf ())) -> 3;
+Node (Node (Node (Leaf (),0,Leaf ()),0,Leaf ()),2,Leaf ()) -> 3;
+Node (Node (Leaf (),0,Node (Leaf (),3,Leaf ())),0,Leaf ()) -> 3;
+Node (Leaf (),1,Node (Leaf (),2,Leaf ())) -> 2;
+Node (Node (Node (Leaf (),0,Leaf ()),3,Leaf ()),1,Leaf ()) -> 3;
+Node (Leaf (),2,Node (Leaf (),1,Node (Leaf (),3,Leaf ()))) -> 3;
+Node (Leaf (),0,Node (Node (Leaf (),2,Leaf ()),2,Leaf ())) -> 3;
+
+=================================
+None
+Node (Leaf (),2,Node (Leaf (),1,Leaf ())) -> 2;
+Leaf () -> 0;
+Node (Node (Node (Leaf (),0,Leaf ()),0,Leaf ()),3,Leaf ()) -> 3;
+Node (Node (Leaf (),0,Leaf ()),3,Leaf ()) -> 2;
+Node (Leaf (),1,Node (Leaf (),2,Leaf ())) -> 2;
+Node (Leaf (),2,Node (Leaf (),2,Node (Leaf (),2,Leaf ()))) -> 3;
+Node (Node (Leaf (),3,Leaf ()),0,Node (Leaf (),3,Leaf ())) -> 3;
+Node (Node (Leaf (),1,Leaf ()),0,Leaf ()) -> 2;
+Node (Node (Leaf (),0,Node (Leaf (),2,Leaf ())),0,Leaf ()) -> 3;
+Node (Node (Leaf (),3,Leaf ()),3,Node (Leaf (),3,Leaf ())) -> 3;
+Node (Node (Leaf (),0,Node (Leaf (),2,Leaf ())),1,Leaf ()) -> 3;
+Node (Node (Leaf (),3,Leaf ()),3,Leaf ()) -> 2;
+Node (Leaf (),3,Leaf ()) -> 1;
+
+=================================
+None
+Node (Node (Node (Leaf (),1,Leaf ()),1,Leaf ()),0,Leaf ()) -> 3;
+Node (Leaf (),0,Leaf ()) -> 1;
+Node (Node (Leaf (),1,Leaf ()),0,Node (Leaf (),1,Leaf ())) -> 3;
+Node (Leaf (),2,Node (Leaf (),2,Leaf ())) -> 2;
+Node (Node (Leaf (),2,Node (Leaf (),0,Leaf ())),0,Leaf ()) -> 3;
+Node (Node (Leaf (),3,Node (Leaf (),1,Leaf ())),2,Leaf ()) -> 3;
+Node (Leaf (),3,Node (Leaf (),0,Node (Leaf (),0,Leaf ()))) -> 3;
+Node (Leaf (),1,Node (Node (Leaf (),1,Leaf ()),1,Leaf ())) -> 3;
+Node (Node (Node (Leaf (),3,Leaf ()),3,Leaf ()),3,Leaf ()) -> 3;
+Leaf () -> 0;
+Node (Node (Leaf (),2,Leaf ()),0,Leaf ()) -> 2;
+Node (Leaf (),1,Node (Leaf (),3,Leaf ())) -> 2;
+Node (Node (Node (Leaf (),3,Leaf ()),2,Leaf ()),1,Leaf ()) -> 3;
+
+=================================
+None
+Node (Leaf (),0,Node (Leaf (),2,Leaf ())) -> 2;
+Node (Leaf (),2,Node (Leaf (),2,Leaf ())) -> 2;
+Node (Leaf (),1,Node (Leaf (),2,Leaf ())) -> 2;
+Node (Node (Node (Leaf (),1,Leaf ()),0,Leaf ()),0,Leaf ()) -> 3;
+Node (Node (Leaf (),3,Node (Leaf (),1,Leaf ())),2,Leaf ()) -> 3;
+Node (Leaf (),1,Leaf ()) -> 1;
+Node (Node (Node (Leaf (),0,Leaf ()),1,Leaf ()),2,Leaf ()) -> 3;
+Node (Leaf (),3,Leaf ()) -> 1;
+Node (Leaf (),1,Node (Leaf (),1,Node (Leaf (),1,Leaf ()))) -> 3;
+Node (Node (Node (Leaf (),2,Leaf ()),1,Leaf ()),1,Leaf ()) -> 3;
+Node (Node (Node (Leaf (),0,Leaf ()),2,Leaf ()),3,Leaf ()) -> 3;
+Node (Leaf (),3,Node (Leaf (),2,Node (Leaf (),3,Leaf ()))) -> 3;
+Node (Node (Leaf (),2,Node (Leaf (),2,Leaf ())),2,Leaf ()) -> 3;
+
+=================================
+None
+Node (Node (Node (Leaf (),0,Leaf ()),2,Leaf ()),1,Leaf ()) -> 3;
+Node (Leaf (),3,Node (Leaf (),1,Node (Leaf (),0,Leaf ()))) -> 3;
+Node (Node (Leaf (),3,Leaf ()),1,Node (Leaf (),2,Leaf ())) -> 3;
+Node (Node (Leaf (),1,Leaf ()),1,Node (Leaf (),0,Leaf ())) -> 3;
+Node (Leaf (),0,Node (Leaf (),3,Node (Leaf (),1,Leaf ()))) -> 3;
+Node (Leaf (),0,Node (Leaf (),3,Leaf ())) -> 2;
+Node (Node (Leaf (),0,Leaf ()),3,Leaf ()) -> 2;
+Leaf () -> 0;
+Node (Node (Leaf (),1,Leaf ()),3,Leaf ()) -> 2;
+Node (Leaf (),3,Node (Leaf (),2,Leaf ())) -> 2;
+Node (Leaf (),3,Node (Leaf (),3,Leaf ())) -> 2;
+Node (Leaf (),1,Leaf ()) -> 1;
+Node (Leaf (),0,Node (Leaf (),0,Leaf ())) -> 2;
+
+=================================
+None
+Node (Leaf (),2,Leaf ()) -> 1;
+Node (Node (Leaf (),0,Leaf ()),1,Node (Leaf (),0,Leaf ())) -> 3;
+Node (Leaf (),0,Node (Leaf (),2,Leaf ())) -> 2;
+Node (Leaf (),1,Node (Node (Leaf (),1,Leaf ()),3,Leaf ())) -> 3;
+Node (Node (Leaf (),1,Leaf ()),2,Node (Leaf (),1,Leaf ())) -> 3;
+Node (Leaf (),3,Node (Node (Leaf (),2,Leaf ()),3,Leaf ())) -> 3;
+Node (Leaf (),1,Node (Node (Leaf (),0,Leaf ()),2,Leaf ())) -> 3;
+Leaf () -> 0;
+Node (Node (Node (Leaf (),1,Leaf ()),1,Leaf ()),1,Leaf ()) -> 3;
+Node (Node (Leaf (),2,Leaf ()),1,Leaf ()) -> 2;
+Node (Leaf (),0,Node (Leaf (),1,Leaf ())) -> 2;
+Node (Leaf (),3,Node (Leaf (),1,Node (Leaf (),0,Leaf ()))) -> 3;
+Node (Leaf (),0,Node (Leaf (),1,Node (Leaf (),2,Leaf ()))) -> 3;
+Node (Leaf (),0,Node (Node (Leaf (),1,Leaf ()),1,Leaf ())) -> 3;
+
+=================================
+None
+Node (Node (Leaf (),2,Leaf ()),3,Node (Leaf (),1,Leaf ())) -> 3;
+Node (Leaf (),1,Leaf ()) -> 1;
+Node (Leaf (),2,Node (Leaf (),3,Node (Leaf (),1,Leaf ()))) -> 3;
+Node (Leaf (),1,Node (Node (Leaf (),0,Leaf ()),2,Leaf ())) -> 3;
+Node (Leaf (),3,Node (Node (Leaf (),0,Leaf ()),0,Leaf ())) -> 3;
+Node (Node (Leaf (),1,Leaf ()),0,Leaf ()) -> 2;
+Node (Leaf (),2,Leaf ()) -> 1;
+Leaf () -> 0;
+Node (Leaf (),0,Leaf ()) -> 1;
+Node (Node (Node (Leaf (),1,Leaf ()),1,Leaf ()),0,Leaf ()) -> 3;
+Node (Leaf (),3,Leaf ()) -> 1;
+Node (Node (Leaf (),2,Leaf ()),3,Leaf ()) -> 2;
+Node (Leaf (),1,Node (Leaf (),2,Node (Leaf (),1,Leaf ()))) -> 3;
+Node (Node (Leaf (),3,Leaf ()),0,Leaf ()) -> 2;
+
+=================================
+None
+Node (Node (Leaf (),0,Leaf ()),2,Node (Leaf (),0,Leaf ())) -> 3;
+Node (Node (Leaf (),1,Leaf ()),0,Leaf ()) -> 2;
+Node (Node (Leaf (),2,Leaf ()),3,Leaf ()) -> 2;
+Node (Leaf (),1,Node (Node (Leaf (),0,Leaf ()),0,Leaf ())) -> 3;
+Node (Leaf (),3,Node (Leaf (),0,Node (Leaf (),2,Leaf ()))) -> 3;
+Node (Leaf (),2,Node (Node (Leaf (),2,Leaf ()),0,Leaf ())) -> 3;
+Node (Leaf (),0,Node (Leaf (),1,Leaf ())) -> 2;
+Leaf () -> 0;
+Node (Node (Leaf (),3,Leaf ()),2,Node (Leaf (),3,Leaf ())) -> 3;
+Node (Node (Leaf (),3,Leaf ()),1,Node (Leaf (),3,Leaf ())) -> 3;
+Node (Leaf (),1,Leaf ()) -> 1;
+Node (Leaf (),3,Node (Node (Leaf (),2,Leaf ()),3,Leaf ())) -> 3;
+Node (Node (Leaf (),1,Leaf ()),0,Node (Leaf (),0,Leaf ())) -> 3;
+Node (Leaf (),0,Node (Leaf (),2,Leaf ())) -> 2;
+
+=================================
+None
+Node (Node (Leaf (),3,Leaf ()),2,Leaf ()) -> 2;
+Node (Leaf (),2,Node (Node (Leaf (),3,Leaf ()),3,Leaf ())) -> 3;
+Node (Leaf (),0,Leaf ()) -> 1;
+Node (Node (Leaf (),0,Node (Leaf (),3,Leaf ())),2,Leaf ()) -> 3;
+Node (Node (Leaf (),0,Leaf ()),3,Node (Leaf (),0,Leaf ())) -> 3;
+Node (Leaf (),3,Leaf ()) -> 1;
+Node (Node (Leaf (),3,Leaf ()),3,Node (Leaf (),3,Leaf ())) -> 3;
+Node (Leaf (),0,Node (Node (Leaf (),2,Leaf ()),1,Leaf ())) -> 3;
+Node (Node (Node (Leaf (),2,Leaf ()),0,Leaf ()),3,Leaf ()) -> 3;
+Node (Leaf (),1,Leaf ()) -> 1;
+Node (Leaf (),0,Node (Leaf (),1,Leaf ())) -> 2;
+Leaf () -> 0;
+Node (Node (Leaf (),2,Leaf ()),1,Leaf ()) -> 2;
+Node (Node (Leaf (),2,Leaf ()),3,Leaf ()) -> 2;
+
+=================================
+None
+Node (Leaf (),1,Node (Leaf (),0,Node (Leaf (),3,Leaf ()))) -> 3;
+Node (Leaf (),3,Node (Leaf (),3,Node (Leaf (),0,Leaf ()))) -> 3;
+Leaf () -> 0;
+Node (Node (Node (Leaf (),1,Leaf ()),0,Leaf ()),2,Leaf ()) -> 3;
+Node (Node (Leaf (),3,Node (Leaf (),3,Leaf ())),1,Leaf ()) -> 3;
+Node (Leaf (),1,Node (Leaf (),3,Node (Leaf (),2,Leaf ()))) -> 3;
+Node (Leaf (),0,Node (Node (Leaf (),3,Leaf ()),3,Leaf ())) -> 3;
+Node (Leaf (),0,Node (Leaf (),1,Node (Leaf (),2,Leaf ()))) -> 3;
+Node (Node (Leaf (),1,Leaf ()),1,Leaf ()) -> 2;
+Node (Node (Leaf (),1,Node (Leaf (),0,Leaf ())),2,Leaf ()) -> 3;
+Node (Node (Leaf (),3,Leaf ()),3,Leaf ()) -> 2;
+Node (Node (Leaf (),0,Leaf ()),2,Leaf ()) -> 2;
+Node (Leaf (),0,Node (Node (Leaf (),2,Leaf ()),1,Leaf ())) -> 3;
+Node (Leaf (),1,Node (Node (Leaf (),1,Leaf ()),3,Leaf ())) -> 3;
+
+=================================
+None
+Node (Node (Node (Leaf (),0,Leaf ()),2,Leaf ()),3,Leaf ()) -> 3;
+Node (Node (Leaf (),1,Node (Leaf (),3,Leaf ())),0,Leaf ()) -> 3;
+Node (Node (Node (Leaf (),3,Leaf ()),1,Leaf ()),0,Leaf ()) -> 3;
+Node (Leaf (),0,Node (Node (Leaf (),2,Leaf ()),0,Leaf ())) -> 3;
+Node (Node (Leaf (),1,Leaf ()),0,Node (Leaf (),2,Leaf ())) -> 3;
+Node (Node (Leaf (),2,Leaf ()),2,Leaf ()) -> 2;
+Leaf () -> 0;
+Node (Leaf (),3,Node (Leaf (),3,Leaf ())) -> 2;
+Node (Leaf (),0,Leaf ()) -> 1;
+Node (Node (Node (Leaf (),0,Leaf ()),3,Leaf ()),3,Leaf ()) -> 3;
+Node (Node (Leaf (),2,Leaf ()),0,Leaf ()) -> 2;
+Node (Node (Node (Leaf (),2,Leaf ()),1,Leaf ()),0,Leaf ()) -> 3;
+Node (Leaf (),2,Node (Leaf (),3,Node (Leaf (),1,Leaf ()))) -> 3;
+Node (Node (Leaf (),1,Leaf ()),3,Leaf ()) -> 2;
+
+=================================
+None
+Node (Leaf (),3,Node (Leaf (),3,Node (Leaf (),1,Leaf ()))) -> 3;
+Node (Leaf (),1,Node (Leaf (),1,Leaf ())) -> 2;
+Node (Node (Leaf (),1,Leaf ()),3,Leaf ()) -> 2;
+Node (Node (Node (Leaf (),0,Leaf ()),3,Leaf ()),2,Leaf ()) -> 3;
+Node (Leaf (),3,Node (Leaf (),2,Leaf ())) -> 2;
+Node (Node (Leaf (),3,Leaf ()),1,Node (Leaf (),3,Leaf ())) -> 3;
+Node (Node (Leaf (),0,Node (Leaf (),3,Leaf ())),3,Leaf ()) -> 3;
+Leaf () -> 0;
+Node (Leaf (),1,Leaf ()) -> 1;
+Node (Node (Leaf (),1,Leaf ()),0,Leaf ()) -> 2;
+Node (Node (Leaf (),2,Leaf ()),1,Leaf ()) -> 2;
+Node (Leaf (),1,Node (Leaf (),0,Node (Leaf (),1,Leaf ()))) -> 3;
+Node (Node (Leaf (),1,Node (Leaf (),3,Leaf ())),2,Leaf ()) -> 3;
+Node (Leaf (),3,Leaf ()) -> 1;
+
+=================================
+fix (f : tree -> nat) =
+  fun (x:tree) ->
+    match x with
+      | Leaf _ -> 0
+      | Node _ -> sum S (f (Un_Node x . 2)) (f (Un_Node x . 0))
+
+108.8205 true
+
+Node (Leaf (),1,Node (Leaf (),2,Leaf ())) -> 2;
+Node (Node (Leaf (),2,Leaf ()),0,Leaf ()) -> 2;
+Leaf () -> 0;
+Node (Node (Leaf (),0,Leaf ()),1,Node (Leaf (),0,Leaf ())) -> 3;
+Node (Node (Leaf (),3,Leaf ()),1,Leaf ()) -> 2;
+Node (Leaf (),0,Node (Leaf (),2,Leaf ())) -> 2;
+Node (Leaf (),0,Node (Leaf (),2,Node (Leaf (),3,Leaf ()))) -> 3;
+Node (Node (Leaf (),3,Leaf ()),3,Node (Leaf (),1,Leaf ())) -> 3;
+Node (Node (Node (Leaf (),3,Leaf ()),0,Leaf ()),2,Leaf ()) -> 3;
+Node (Node (Leaf (),0,Leaf ()),1,Node (Leaf (),2,Leaf ())) -> 3;
+Node (Node (Leaf (),2,Node (Leaf (),0,Leaf ())),1,Leaf ()) -> 3;
+Node (Leaf (),3,Node (Leaf (),2,Node (Leaf (),3,Leaf ()))) -> 3;
+Node (Node (Leaf (),2,Node (Leaf (),1,Leaf ())),3,Leaf ()) -> 3;
+Node (Node (Leaf (),3,Leaf ()),0,Leaf ()) -> 2;
+
+=================================
+None
+Leaf () -> 0;
+Node (Node (Leaf (),1,Leaf ()),0,Leaf ()) -> 2;
+Node (Node (Leaf (),2,Leaf ()),2,Leaf ()) -> 2;
+Node (Node (Leaf (),3,Node (Leaf (),0,Leaf ())),3,Leaf ()) -> 3;
+Node (Leaf (),2,Leaf ()) -> 1;
+Node (Leaf (),0,Node (Node (Leaf (),1,Leaf ()),2,Leaf ())) -> 3;
+Node (Node (Leaf (),2,Node (Leaf (),1,Leaf ())),1,Leaf ()) -> 3;
+Node (Node (Node (Leaf (),0,Leaf ()),0,Leaf ()),2,Leaf ()) -> 3;
+Node (Node (Node (Leaf (),2,Leaf ()),2,Leaf ()),2,Leaf ()) -> 3;
+Node (Node (Leaf (),3,Leaf ()),2,Leaf ()) -> 2;
+Node (Node (Leaf (),2,Leaf ()),3,Leaf ()) -> 2;
+Node (Node (Node (Leaf (),2,Leaf ()),1,Leaf ()),2,Leaf ()) -> 3;
+Node (Leaf (),3,Node (Leaf (),1,Leaf ())) -> 2;
+Node (Node (Node (Leaf (),3,Leaf ()),2,Leaf ()),3,Leaf ()) -> 3;
+
+=================================
+None
+Node (Node (Leaf (),2,Leaf ()),3,Leaf ()) -> 2;
+Node (Node (Node (Leaf (),0,Leaf ()),1,Leaf ()),0,Leaf ()) -> 3;
+Node (Node (Leaf (),0,Leaf ()),3,Node (Leaf (),2,Leaf ())) -> 3;
+Node (Node (Leaf (),0,Leaf ()),2,Node (Leaf (),0,Leaf ())) -> 3;
+Node (Leaf (),2,Leaf ()) -> 1;
+Node (Leaf (),0,Node (Leaf (),1,Node (Leaf (),1,Leaf ()))) -> 3;
+Node (Leaf (),2,Node (Leaf (),0,Node (Leaf (),3,Leaf ()))) -> 3;
+Node (Leaf (),2,Node (Leaf (),1,Leaf ())) -> 2;
+Leaf () -> 0;
+Node (Node (Node (Leaf (),2,Leaf ()),2,Leaf ()),1,Leaf ()) -> 3;
+Node (Node (Node (Leaf (),1,Leaf ()),2,Leaf ()),3,Leaf ()) -> 3;
+Node (Leaf (),3,Node (Leaf (),1,Leaf ())) -> 2;
+Node (Node (Leaf (),0,Node (Leaf (),0,Leaf ())),0,Leaf ()) -> 3;
+Node (Leaf (),2,Node (Leaf (),0,Node (Leaf (),0,Leaf ()))) -> 3;
+
+=================================
+None
+Node (Node (Node (Leaf (),2,Leaf ()),2,Leaf ()),1,Leaf ()) -> 3;
+Node (Leaf (),2,Node (Leaf (),3,Node (Leaf (),3,Leaf ()))) -> 3;
+Node (Node (Leaf (),1,Leaf ()),3,Leaf ()) -> 2;
+Node (Leaf (),1,Node (Node (Leaf (),0,Leaf ()),1,Leaf ())) -> 3;
+Node (Leaf (),0,Node (Leaf (),1,Node (Leaf (),2,Leaf ()))) -> 3;
+Node (Node (Leaf (),0,Leaf ()),1,Node (Leaf (),3,Leaf ())) -> 3;
+Node (Node (Node (Leaf (),1,Leaf ()),0,Leaf ()),3,Leaf ()) -> 3;
+Node (Leaf (),2,Node (Leaf (),0,Leaf ())) -> 2;
+Node (Node (Leaf (),0,Node (Leaf (),1,Leaf ())),1,Leaf ()) -> 3;
+Leaf () -> 0;
+Node (Leaf (),2,Node (Node (Leaf (),1,Leaf ()),1,Leaf ())) -> 3;
+Node (Node (Node (Leaf (),3,Leaf ()),1,Leaf ()),0,Leaf ()) -> 3;
+Node (Node (Leaf (),3,Leaf ()),0,Node (Leaf (),2,Leaf ())) -> 3;
+Node (Node (Leaf (),2,Leaf ()),3,Leaf ()) -> 2;
+Node (Leaf (),0,Node (Node (Leaf (),0,Leaf ()),1,Leaf ())) -> 3;
+
+=================================
+None
+Node (Node (Node (Leaf (),2,Leaf ()),3,Leaf ()),3,Leaf ()) -> 3;
+Node (Node (Node (Leaf (),3,Leaf ()),0,Leaf ()),1,Leaf ()) -> 3;
+Node (Node (Leaf (),3,Leaf ()),1,Node (Leaf (),3,Leaf ())) -> 3;
+Node (Leaf (),2,Leaf ()) -> 1;
+Node (Node (Leaf (),0,Node (Leaf (),0,Leaf ())),3,Leaf ()) -> 3;
+Node (Node (Node (Leaf (),1,Leaf ()),0,Leaf ()),3,Leaf ()) -> 3;
+Node (Node (Leaf (),1,Leaf ()),2,Leaf ()) -> 2;
+Node (Node (Leaf (),0,Node (Leaf (),1,Leaf ())),3,Leaf ()) -> 3;
+Node (Node (Node (Leaf (),1,Leaf ()),2,Leaf ()),0,Leaf ()) -> 3;
+Node (Node (Leaf (),3,Leaf ()),1,Node (Leaf (),0,Leaf ())) -> 3;
+Node (Node (Node (Leaf (),0,Leaf ()),2,Leaf ()),1,Leaf ()) -> 3;
+Node (Node (Node (Leaf (),3,Leaf ()),2,Leaf ()),2,Leaf ()) -> 3;
+Node (Leaf (),0,Node (Leaf (),3,Leaf ())) -> 2;
+Node (Leaf (),3,Leaf ()) -> 1;
+Leaf () -> 0;
+
+=================================
+None
+Node (Node (Leaf (),2,Leaf ()),0,Node (Leaf (),0,Leaf ())) -> 3;
+Node (Leaf (),3,Node (Leaf (),2,Leaf ())) -> 2;
+Node (Node (Leaf (),2,Leaf ()),1,Leaf ()) -> 2;
+Leaf () -> 0;
+Node (Node (Leaf (),0,Leaf ()),2,Leaf ()) -> 2;
+Node (Leaf (),0,Node (Node (Leaf (),1,Leaf ()),3,Leaf ())) -> 3;
+Node (Leaf (),0,Node (Leaf (),0,Node (Leaf (),1,Leaf ()))) -> 3;
+Node (Leaf (),0,Leaf ()) -> 1;
+Node (Leaf (),1,Node (Node (Leaf (),1,Leaf ()),3,Leaf ())) -> 3;
+Node (Leaf (),3,Node (Leaf (),0,Node (Leaf (),0,Leaf ()))) -> 3;
+Node (Node (Node (Leaf (),1,Leaf ()),3,Leaf ()),2,Leaf ()) -> 3;
+Node (Node (Leaf (),0,Leaf ()),3,Node (Leaf (),0,Leaf ())) -> 3;
+Node (Leaf (),2,Node (Leaf (),0,Node (Leaf (),0,Leaf ()))) -> 3;
+Node (Leaf (),3,Node (Node (Leaf (),1,Leaf ()),3,Leaf ())) -> 3;
+Node (Node (Leaf (),2,Leaf ()),2,Leaf ()) -> 2;
+
+=================================
+None
+Leaf () -> 0;
+Node (Leaf (),0,Node (Leaf (),0,Leaf ())) -> 2;
+Node (Node (Node (Leaf (),2,Leaf ()),1,Leaf ()),1,Leaf ()) -> 3;
+Node (Node (Leaf (),0,Node (Leaf (),3,Leaf ())),1,Leaf ()) -> 3;
+Node (Node (Node (Leaf (),1,Leaf ()),2,Leaf ()),2,Leaf ()) -> 3;
+Node (Node (Leaf (),2,Leaf ()),2,Node (Leaf (),2,Leaf ())) -> 3;
+Node (Node (Leaf (),0,Leaf ()),0,Node (Leaf (),0,Leaf ())) -> 3;
+Node (Node (Leaf (),3,Leaf ()),3,Leaf ()) -> 2;
+Node (Node (Node (Leaf (),0,Leaf ()),1,Leaf ()),1,Leaf ()) -> 3;
+Node (Node (Leaf (),1,Leaf ()),1,Leaf ()) -> 2;
+Node (Node (Node (Leaf (),1,Leaf ()),1,Leaf ()),3,Leaf ()) -> 3;
+Node (Node (Leaf (),2,Node (Leaf (),2,Leaf ())),0,Leaf ()) -> 3;
+Node (Leaf (),2,Node (Leaf (),3,Node (Leaf (),2,Leaf ()))) -> 3;
+Node (Node (Leaf (),0,Leaf ()),2,Leaf ()) -> 2;
+Node (Leaf (),2,Node (Node (Leaf (),1,Leaf ()),3,Leaf ())) -> 3;
+
+=================================
+None
+Node (Node (Leaf (),3,Node (Leaf (),0,Leaf ())),2,Leaf ()) -> 3;
+Node (Node (Leaf (),2,Leaf ()),3,Node (Leaf (),1,Leaf ())) -> 3;
+Node (Node (Node (Leaf (),0,Leaf ()),1,Leaf ()),3,Leaf ()) -> 3;
+Node (Leaf (),1,Leaf ()) -> 1;
+Node (Node (Leaf (),2,Node (Leaf (),1,Leaf ())),2,Leaf ()) -> 3;
+Node (Node (Node (Leaf (),1,Leaf ()),0,Leaf ()),3,Leaf ()) -> 3;
+Node (Leaf (),2,Node (Leaf (),0,Node (Leaf (),1,Leaf ()))) -> 3;
+Node (Leaf (),0,Node (Leaf (),1,Node (Leaf (),1,Leaf ()))) -> 3;
+Node (Leaf (),1,Node (Leaf (),0,Leaf ())) -> 2;
+Node (Node (Node (Leaf (),3,Leaf ()),0,Leaf ()),0,Leaf ()) -> 3;
+Node (Leaf (),2,Leaf ()) -> 1;
+Node (Node (Node (Leaf (),2,Leaf ()),0,Leaf ()),3,Leaf ()) -> 3;
+Node (Leaf (),2,Node (Leaf (),2,Node (Leaf (),1,Leaf ()))) -> 3;
+Node (Node (Leaf (),1,Leaf ()),0,Node (Leaf (),1,Leaf ())) -> 3;
+Node (Node (Node (Leaf (),2,Leaf ()),2,Leaf ()),3,Leaf ()) -> 3;
+
+=================================
+None
+Node (Leaf (),1,Node (Leaf (),1,Node (Leaf (),3,Leaf ()))) -> 3;
+Node (Node (Node (Leaf (),2,Leaf ()),2,Leaf ()),0,Leaf ()) -> 3;
+Node (Node (Leaf (),0,Leaf ()),2,Leaf ()) -> 2;
+Node (Leaf (),0,Node (Leaf (),1,Node (Leaf (),3,Leaf ()))) -> 3;
+Node (Node (Node (Leaf (),0,Leaf ()),1,Leaf ()),2,Leaf ()) -> 3;
+Node (Node (Leaf (),0,Node (Leaf (),0,Leaf ())),3,Leaf ()) -> 3;
+Leaf () -> 0;
+Node (Leaf (),0,Leaf ()) -> 1;
+Node (Leaf (),0,Node (Leaf (),3,Node (Leaf (),2,Leaf ()))) -> 3;
+Node (Leaf (),3,Node (Leaf (),0,Leaf ())) -> 2;
+Node (Node (Leaf (),3,Leaf ()),1,Node (Leaf (),2,Leaf ())) -> 3;
+Node (Leaf (),3,Node (Leaf (),3,Leaf ())) -> 2;
+Node (Leaf (),1,Node (Leaf (),2,Leaf ())) -> 2;
+Node (Node (Leaf (),0,Leaf ()),0,Leaf ()) -> 2;
+Node (Leaf (),2,Node (Leaf (),2,Node (Leaf (),1,Leaf ()))) -> 3;
+
+=================================
+None
+Leaf () -> 0;
+Node (Leaf (),0,Node (Node (Leaf (),2,Leaf ()),0,Leaf ())) -> 3;
+Node (Leaf (),3,Node (Node (Leaf (),3,Leaf ()),0,Leaf ())) -> 3;
+Node (Node (Node (Leaf (),1,Leaf ()),1,Leaf ()),1,Leaf ()) -> 3;
+Node (Node (Leaf (),1,Leaf ()),0,Leaf ()) -> 2;
+Node (Leaf (),0,Leaf ()) -> 1;
+Node (Node (Node (Leaf (),0,Leaf ()),3,Leaf ()),0,Leaf ()) -> 3;
+Node (Leaf (),3,Node (Node (Leaf (),3,Leaf ()),2,Leaf ())) -> 3;
+Node (Leaf (),3,Leaf ()) -> 1;
+Node (Node (Leaf (),2,Leaf ()),1,Leaf ()) -> 2;
+Node (Node (Leaf (),0,Node (Leaf (),2,Leaf ())),3,Leaf ()) -> 3;
+Node (Node (Leaf (),0,Node (Leaf (),3,Leaf ())),0,Leaf ()) -> 3;
+Node (Leaf (),2,Node (Leaf (),3,Node (Leaf (),0,Leaf ()))) -> 3;
+Node (Leaf (),0,Node (Node (Leaf (),0,Leaf ()),0,Leaf ())) -> 3;
+Node (Leaf (),1,Node (Leaf (),0,Node (Leaf (),3,Leaf ()))) -> 3;
+
+=================================
+None
+Node (Node (Leaf (),2,Leaf ()),1,Leaf ()) -> 2;
+Node (Node (Leaf (),2,Node (Leaf (),1,Leaf ())),1,Leaf ()) -> 3;
+Node (Leaf (),0,Leaf ()) -> 1;
+Node (Node (Leaf (),2,Leaf ()),2,Node (Leaf (),0,Leaf ())) -> 3;
+Node (Leaf (),1,Node (Leaf (),1,Node (Leaf (),3,Leaf ()))) -> 3;
+Node (Leaf (),2,Node (Leaf (),3,Leaf ())) -> 2;
+Node (Leaf (),2,Leaf ()) -> 1;
+Node (Node (Leaf (),1,Leaf ()),0,Node (Leaf (),1,Leaf ())) -> 3;
+Node (Node (Leaf (),2,Node (Leaf (),2,Leaf ())),3,Leaf ()) -> 3;
+Node (Leaf (),2,Node (Node (Leaf (),2,Leaf ()),1,Leaf ())) -> 3;
+Node (Leaf (),1,Node (Node (Leaf (),0,Leaf ()),0,Leaf ())) -> 3;
+Node (Leaf (),1,Leaf ()) -> 1;
+Leaf () -> 0;
+Node (Leaf (),1,Node (Leaf (),1,Leaf ())) -> 2;
+Node (Leaf (),3,Node (Node (Leaf (),3,Leaf ()),3,Leaf ())) -> 3;
+
+=================================
+fix (f : tree -> nat) =
+  fun (x:tree) ->
+    match x with
+      | Leaf _ -> 0
+      | Node _ -> S (sum (f (Un_Node x . 0)) (f (Un_Node x . 2)))
+
+77.2938 true
+
+Node (Node (Leaf (),3,Leaf ()),1,Leaf ()) -> 2;
+Leaf () -> 0;
+Node (Node (Leaf (),2,Leaf ()),1,Leaf ()) -> 2;
+Node (Leaf (),1,Node (Leaf (),1,Node (Leaf (),0,Leaf ()))) -> 3;
+Node (Leaf (),1,Node (Node (Leaf (),2,Leaf ()),1,Leaf ())) -> 3;
+Node (Leaf (),1,Leaf ()) -> 1;
+Node (Node (Leaf (),0,Node (Leaf (),0,Leaf ())),2,Leaf ()) -> 3;
+Node (Leaf (),2,Node (Leaf (),2,Leaf ())) -> 2;
+Node (Leaf (),0,Node (Leaf (),0,Node (Leaf (),2,Leaf ()))) -> 3;
+Node (Leaf (),2,Leaf ()) -> 1;
+Node (Node (Leaf (),3,Leaf ()),0,Leaf ()) -> 2;
+Node (Leaf (),0,Node (Node (Leaf (),3,Leaf ()),1,Leaf ())) -> 3;
+Node (Leaf (),0,Leaf ()) -> 1;
+Node (Leaf (),0,Node (Node (Leaf (),2,Leaf ()),0,Leaf ())) -> 3;
+Node (Leaf (),0,Node (Leaf (),3,Leaf ())) -> 2;
+
+=================================
+None
+Node (Node (Node (Leaf (),1,Leaf ()),2,Leaf ()),3,Leaf ()) -> 3;
+Node (Leaf (),2,Leaf ()) -> 1;
+Node (Leaf (),1,Node (Leaf (),0,Leaf ())) -> 2;
+Leaf () -> 0;
+Node (Node (Node (Leaf (),0,Leaf ()),0,Leaf ()),3,Leaf ()) -> 3;
+Node (Node (Leaf (),0,Node (Leaf (),1,Leaf ())),2,Leaf ()) -> 3;
+Node (Leaf (),2,Node (Leaf (),3,Leaf ())) -> 2;
+Node (Node (Leaf (),2,Leaf ()),3,Node (Leaf (),3,Leaf ())) -> 3;
+Node (Leaf (),1,Node (Node (Leaf (),0,Leaf ()),0,Leaf ())) -> 3;
+Node (Node (Node (Leaf (),2,Leaf ()),3,Leaf ()),2,Leaf ()) -> 3;
+Node (Leaf (),3,Node (Node (Leaf (),1,Leaf ()),2,Leaf ())) -> 3;
+Node (Leaf (),1,Node (Node (Leaf (),1,Leaf ()),2,Leaf ())) -> 3;
+Node (Node (Node (Leaf (),1,Leaf ()),2,Leaf ()),2,Leaf ()) -> 3;
+Node (Node (Leaf (),2,Leaf ()),2,Leaf ()) -> 2;
+Node (Leaf (),0,Node (Leaf (),2,Node (Leaf (),3,Leaf ()))) -> 3;
+
+=================================
+None

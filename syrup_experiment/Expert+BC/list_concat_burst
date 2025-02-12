@@ -1,0 +1,380 @@
+[[]] -> [];
+[] -> [];
+=================================
+fix (f : llist -> list) = fun (x:llist) -> Nil
+
+0.0007 false
+
+[[0]] -> [0];
+[] -> [];
+=================================
+fix (f : llist -> list) =
+  fun (x:llist) -> match x with
+                     | LNil _ -> Nil
+                     | LCons _ -> Un_LCons x . 0
+
+0.0060 false
+
+[[0],[0]] -> [0,0];
+[] -> [];
+=================================
+fix (f : llist -> list) =
+  fun (x:llist) ->
+    match x with
+      | LNil _ -> Nil
+      | LCons _ -> append (Un_LCons x . 0) (Un_LCons x . 0)
+
+0.0322 false
+
+[[1]] -> [1];
+[] -> [];
+=================================
+fix (f : llist -> list) =
+  fun (x:llist) -> match x with
+                     | LNil _ -> Nil
+                     | LCons _ -> Un_LCons x . 0
+
+0.0071 false
+
+[[1],[1],[]] -> [1,1];
+[] -> [];
+=================================
+fix (f : llist -> list) =
+  fun (x:llist) ->
+    match x with
+      | LNil _ -> Nil
+      | LCons _ -> append (Un_LCons x . 0) (Un_LCons x . 0)
+
+0.2234 false
+
+[[]] -> [];
+[[0]] -> [0];
+[] -> [];
+=================================
+fix (f : llist -> list) =
+  fun (x:llist) -> match x with
+                     | LNil _ -> Nil
+                     | LCons _ -> Un_LCons x . 0
+
+0.0061 false
+
+[[]] -> [];
+[[0],[0]] -> [0,0];
+[] -> [];
+=================================
+fix (f : llist -> list) =
+  fun (x:llist) ->
+    match x with
+      | LNil _ -> Nil
+      | LCons _ -> append (Un_LCons x . 0) (Un_LCons x . 0)
+
+0.0318 false
+
+[[]] -> [];
+[[1]] -> [1];
+[] -> [];
+=================================
+fix (f : llist -> list) =
+  fun (x:llist) -> match x with
+                     | LNil _ -> Nil
+                     | LCons _ -> Un_LCons x . 0
+
+0.0070 false
+
+[[]] -> [];
+[[1],[1],[]] -> [1,1];
+[] -> [];
+=================================
+fix (f : llist -> list) =
+  fun (x:llist) ->
+    match x with
+      | LNil _ -> Nil
+      | LCons _ -> append (Un_LCons x . 0) (Un_LCons x . 0)
+
+0.1844 false
+
+[[0]] -> [0];
+[[0],[0]] -> [0,0];
+[] -> [];
+=================================
+fix (f : llist -> list) =
+  fun (x:llist) ->
+    match x with
+      | LNil _ -> Nil
+      | LCons _ -> append (f (Un_LCons x . 1)) (Un_LCons x . 0)
+
+0.0455 false
+
+[[0]] -> [0];
+[[1]] -> [1];
+[] -> [];
+=================================
+fix (f : llist -> list) =
+  fun (x:llist) -> match x with
+                     | LNil _ -> Nil
+                     | LCons _ -> Un_LCons x . 0
+
+0.0061 false
+
+[[0]] -> [0];
+[[1],[1],[]] -> [1,1];
+[] -> [];
+=================================
+fix (f : llist -> list) =
+  fun (x:llist) ->
+    match x with
+      | LNil _ -> Nil
+      | LCons _ -> append (f (Un_LCons x . 1)) (Un_LCons x . 0)
+
+1.2798 false
+
+[[0],[0]] -> [0,0];
+[[1]] -> [1];
+[] -> [];
+=================================
+fix (f : llist -> list) =
+  fun (x:llist) ->
+    match x with
+      | LNil _ -> Nil
+      | LCons _ -> append (Un_LCons x . 0) (f (Un_LCons x . 1))
+
+0.1018 true
+
+[[0],[0]] -> [0,0];
+[[1],[1],[]] -> [1,1];
+[] -> [];
+=================================
+fix (f : llist -> list) =
+  fun (x:llist) ->
+    match x with
+      | LNil _ -> Nil
+      | LCons _ -> append (Un_LCons x . 0) (Un_LCons x . 0)
+
+0.0332 false
+
+[[1]] -> [1];
+[[1],[1],[]] -> [1,1];
+[] -> [];
+=================================
+fix (f : llist -> list) =
+  fun (x:llist) ->
+    match x with
+      | LNil _ -> Nil
+      | LCons _ -> append (Un_LCons x . 0) (f (Un_LCons x . 1))
+
+1.1308 true
+
+[[]] -> [];
+[[0]] -> [0];
+[[0],[0]] -> [0,0];
+[] -> [];
+=================================
+fix (f : llist -> list) =
+  fun (x:llist) ->
+    match x with
+      | LNil _ -> Nil
+      | LCons _ -> append (f (Un_LCons x . 1)) (Un_LCons x . 0)
+
+0.0496 false
+
+[[]] -> [];
+[[0]] -> [0];
+[[1]] -> [1];
+[] -> [];
+=================================
+fix (f : llist -> list) =
+  fun (x:llist) -> match x with
+                     | LNil _ -> Nil
+                     | LCons _ -> Un_LCons x . 0
+
+0.0061 false
+
+[[]] -> [];
+[[0]] -> [0];
+[[1],[1],[]] -> [1,1];
+[] -> [];
+=================================
+fix (f : llist -> list) =
+  fun (x:llist) ->
+    match x with
+      | LNil _ -> Nil
+      | LCons _ -> append (Un_LCons x . 0) (f (Un_LCons x . 1))
+
+0.8576 true
+
+[[]] -> [];
+[[0],[0]] -> [0,0];
+[[1]] -> [1];
+[] -> [];
+=================================
+fix (f : llist -> list) =
+  fun (x:llist) ->
+    match x with
+      | LNil _ -> Nil
+      | LCons _ -> append (f (Un_LCons x . 1)) (Un_LCons x . 0)
+
+0.1007 false
+
+[[]] -> [];
+[[0],[0]] -> [0,0];
+[[1],[1],[]] -> [1,1];
+[] -> [];
+=================================
+fix (f : llist -> list) =
+  fun (x:llist) ->
+    match x with
+      | LNil _ -> Nil
+      | LCons _ -> append (Un_LCons x . 0) (Un_LCons x . 0)
+
+0.0317 false
+
+[[]] -> [];
+[[1]] -> [1];
+[[1],[1],[]] -> [1,1];
+[] -> [];
+=================================
+fix (f : llist -> list) =
+  fun (x:llist) ->
+    match x with
+      | LNil _ -> Nil
+      | LCons _ -> append (Un_LCons x . 0) (f (Un_LCons x . 1))
+
+0.7215 true
+
+[[0]] -> [0];
+[[0],[0]] -> [0,0];
+[[1]] -> [1];
+[] -> [];
+=================================
+fix (f : llist -> list) =
+  fun (x:llist) ->
+    match x with
+      | LNil _ -> Nil
+      | LCons _ -> append (f (Un_LCons x . 1)) (Un_LCons x . 0)
+
+0.0459 false
+
+[[0]] -> [0];
+[[0],[0]] -> [0,0];
+[[1],[1],[]] -> [1,1];
+[] -> [];
+=================================
+fix (f : llist -> list) =
+  fun (x:llist) ->
+    match x with
+      | LNil _ -> Nil
+      | LCons _ -> append (f (Un_LCons x . 1)) (Un_LCons x . 0)
+
+0.0475 false
+
+[[0]] -> [0];
+[[1]] -> [1];
+[[1],[1],[]] -> [1,1];
+[] -> [];
+=================================
+fix (f : llist -> list) =
+  fun (x:llist) ->
+    match x with
+      | LNil _ -> Nil
+      | LCons _ -> append (f (Un_LCons x . 1)) (Un_LCons x . 0)
+
+1.4380 false
+
+[[0],[0]] -> [0,0];
+[[1]] -> [1];
+[[1],[1],[]] -> [1,1];
+[] -> [];
+=================================
+fix (f : llist -> list) =
+  fun (x:llist) ->
+    match x with
+      | LNil _ -> Nil
+      | LCons _ -> append (Un_LCons x . 0) (f (Un_LCons x . 1))
+
+0.0964 true
+
+[[]] -> [];
+[[0]] -> [0];
+[[0],[0]] -> [0,0];
+[[1]] -> [1];
+[] -> [];
+=================================
+fix (f : llist -> list) =
+  fun (x:llist) ->
+    match x with
+      | LNil _ -> Nil
+      | LCons _ -> append (Un_LCons x . 0) (f (Un_LCons x . 1))
+
+0.0473 true
+
+[[]] -> [];
+[[0]] -> [0];
+[[0],[0]] -> [0,0];
+[[1],[1],[]] -> [1,1];
+[] -> [];
+=================================
+fix (f : llist -> list) =
+  fun (x:llist) ->
+    match x with
+      | LNil _ -> Nil
+      | LCons _ -> append (f (Un_LCons x . 1)) (Un_LCons x . 0)
+
+0.0476 false
+
+[[]] -> [];
+[[0]] -> [0];
+[[1]] -> [1];
+[[1],[1],[]] -> [1,1];
+[] -> [];
+=================================
+fix (f : llist -> list) =
+  fun (x:llist) ->
+    match x with
+      | LNil _ -> Nil
+      | LCons _ -> append (Un_LCons x . 0) (f (Un_LCons x . 1))
+
+0.8158 true
+
+[[]] -> [];
+[[0],[0]] -> [0,0];
+[[1]] -> [1];
+[[1],[1],[]] -> [1,1];
+[] -> [];
+=================================
+fix (f : llist -> list) =
+  fun (x:llist) ->
+    match x with
+      | LNil _ -> Nil
+      | LCons _ -> append (Un_LCons x . 0) (f (Un_LCons x . 1))
+
+0.1035 true
+
+[[0]] -> [0];
+[[0],[0]] -> [0,0];
+[[1]] -> [1];
+[[1],[1],[]] -> [1,1];
+[] -> [];
+=================================
+fix (f : llist -> list) =
+  fun (x:llist) ->
+    match x with
+      | LNil _ -> Nil
+      | LCons _ -> append (f (Un_LCons x . 1)) (Un_LCons x . 0)
+
+0.0471 false
+
+[[]] -> [];
+[[0]] -> [0];
+[[0],[0]] -> [0,0];
+[[1]] -> [1];
+[[1],[1],[]] -> [1,1];
+[] -> [];
+=================================
+fix (f : llist -> list) =
+  fun (x:llist) ->
+    match x with
+      | LNil _ -> Nil
+      | LCons _ -> append (f (Un_LCons x . 1)) (Un_LCons x . 0)
+
+0.0462 false
+

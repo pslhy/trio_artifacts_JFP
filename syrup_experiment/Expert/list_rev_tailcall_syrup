@@ -1,0 +1,1110 @@
+([], []) -> [];
+=================================
+fix f0.fun (x0, x1). x0
+0.0003 false
+
+([], [0]) -> [0];
+=================================
+fix f0.fun (x0, x1). x1
+0.0017 false
+
+([], [1]) -> [1];
+=================================
+fix f0.fun (x0, x1). x1
+0.0016 false
+
+([], [1, 0]) -> [1, 0];
+=================================
+fix f0.fun (x0, x1). x1
+0.0028 false
+
+([0], []) -> [0];
+=================================
+fix f0.fun (x0, x1). x0
+0.0016 false
+
+([1], []) -> [1];
+=================================
+fix f0.fun (x0, x1). x0
+0.0016 false
+
+([1], [0]) -> [1, 0];
+=================================
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] -> x1
+  | hd1::tl1 ->
+    ( Cons hd1
+      (f0 ( tl1, x1 )) )
+  
+0.0036 false
+
+([0, 1], []) -> [1, 0];
+=================================
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] -> ( Nil )
+  | hd1::tl1 ->
+    ( Cons ( Succ hd1 )
+      ( Cons hd1 x1 ) )
+  
+0.0031 false
+
+([], [1, 0]) -> [1, 0];
+([1], [0]) -> [1, 0];
+=================================
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] -> x1
+  | hd1::tl1 ->
+    ( Cons hd1
+      (f0 ( tl1, x1 )) )
+  
+0.0050 false
+
+([], [1]) -> [1];
+([0, 1], []) -> [1, 0];
+=================================
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] -> x1
+  | hd1::tl1 ->
+    ( Cons ( Succ hd1 )
+      ( Cons hd1 x1 ) )
+  
+0.0037 false
+
+([], [1]) -> [1];
+([], [1, 0]) -> [1, 0];
+=================================
+fix f0.fun (x0, x1). x1
+0.0041 false
+
+([], []) -> [];
+([0], []) -> [0];
+=================================
+fix f0.fun (x0, x1). x0
+0.0008 false
+
+([], [1, 0]) -> [1, 0];
+([0, 1], []) -> [1, 0];
+=================================
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] -> x1
+  | hd1::tl1 ->
+    ( Cons ( Succ hd1 )
+      ( Cons hd1 x1 ) )
+  
+0.0044 false
+
+([], [1]) -> [1];
+([1], []) -> [1];
+=================================
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] -> x1
+  | hd1::tl1 ->
+    ( Cons hd1
+      (f0 ( tl1, x1 )) )
+  
+0.0030 false
+
+([], [1]) -> [1];
+([0], []) -> [0];
+=================================
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] -> x1
+  | hd1::tl1 ->
+    ( Cons hd1
+      (f0 ( tl1, x1 )) )
+  
+0.0027 false
+
+([], [0]) -> [0];
+([], [1]) -> [1];
+=================================
+fix f0.fun (x0, x1). x1
+0.0027 false
+
+([0], []) -> [0];
+([1], [0]) -> [1, 0];
+=================================
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] -> x1
+  | hd1::tl1 ->
+    ( Cons hd1
+      (f0 ( tl1, x1 )) )
+  
+0.0041 false
+
+([], [1]) -> [1];
+([1], [0]) -> [1, 0];
+=================================
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] -> x1
+  | hd1::tl1 ->
+    ( Cons hd1
+      (f0 ( tl1, x1 )) )
+  
+0.0058 false
+
+([], [1]) -> [1];
+([1], []) -> [1];
+([1], [0]) -> [1, 0];
+=================================
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] -> x1
+  | hd1::tl1 ->
+    ( Cons hd1
+      (f0 ( tl1, x1 )) )
+  
+0.0044 false
+
+([], [0]) -> [0];
+([1], []) -> [1];
+([0, 1], []) -> [1, 0];
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] -> x1
+  | hd2::tl2 ->
+    match (tl2) with
+    | [] -> x0
+    | hd1::tl1 ->
+      ( Cons hd1
+        ( Cons hd2 tl1 )
+        )
+    
+  
+0.0425 false
+
+([], []) -> [];
+([], [1]) -> [1];
+([0, 1], []) -> [1, 0];
+=================================
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] -> x1
+  | hd1::tl1 ->
+    ( Cons ( Succ hd1 )
+      ( Cons hd1 x1 ) )
+  
+0.0027 false
+
+([], []) -> [];
+([1], []) -> [1];
+([0, 1], []) -> [1, 0];
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] -> x0
+  | hd2::tl2 ->
+    match (tl2) with
+    | [] -> x0
+    | hd1::tl1 ->
+      ( Cons hd1
+        ( Cons hd2 tl1 )
+        )
+    
+  
+0.0104 false
+
+([], []) -> [];
+([1], []) -> [1];
+([1], [0]) -> [1, 0];
+=================================
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] -> x1
+  | hd1::tl1 ->
+    ( Cons hd1
+      (f0 ( tl1, x1 )) )
+  
+0.0031 false
+
+([0], []) -> [0];
+([1], []) -> [1];
+([1], [0]) -> [1, 0];
+=================================
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] -> x1
+  | hd1::tl1 ->
+    ( Cons hd1
+      (f0 ( tl1, x1 )) )
+  
+0.0046 false
+
+([], [0]) -> [0];
+([], [1]) -> [1];
+([0], []) -> [0];
+=================================
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] -> x1
+  | hd1::tl1 ->
+    ( Cons hd1
+      (f0 ( tl1, x1 )) )
+  
+0.0033 false
+
+([], [1, 0]) -> [1, 0];
+([0], []) -> [0];
+([1], [0]) -> [1, 0];
+=================================
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] -> x1
+  | hd1::tl1 ->
+    ( Cons hd1
+      (f0 ( tl1, x1 )) )
+  
+0.0055 false
+
+([], []) -> [];
+([], [1]) -> [1];
+([1], []) -> [1];
+=================================
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] -> x1
+  | hd1::tl1 -> x0
+  
+0.0018 false
+
+([], [1]) -> [1];
+([], [1, 0]) -> [1, 0];
+([1], []) -> [1];
+=================================
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] -> x1
+  | hd1::tl1 ->
+    ( Cons hd1
+      (f0 ( tl1, x1 )) )
+  
+0.0039 false
+
+([], [0]) -> [0];
+([], [1]) -> [1];
+([1], []) -> [1];
+([1], [0]) -> [1, 0];
+=================================
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] -> x1
+  | hd1::tl1 ->
+    ( Cons hd1
+      (f0 ( tl1, x1 )) )
+  
+0.0039 false
+
+([], [1]) -> [1];
+([], [1, 0]) -> [1, 0];
+([1], []) -> [1];
+([0, 1], []) -> [1, 0];
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] -> x1
+  | hd2::tl2 ->
+    match (tl2) with
+    | [] -> x0
+    | hd1::tl1 ->
+      ( Cons hd1
+        ( Cons hd2 tl1 )
+        )
+    
+  
+0.1018 false
+
+([], []) -> [];
+([], [0]) -> [0];
+([1], []) -> [1];
+([1], [0]) -> [1, 0];
+=================================
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] -> x1
+  | hd1::tl1 ->
+    ( Cons hd1 x1 )
+  
+0.0028 false
+
+([], [1, 0]) -> [1, 0];
+([0], []) -> [0];
+([1], []) -> [1];
+([1], [0]) -> [1, 0];
+=================================
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] -> x1
+  | hd1::tl1 ->
+    ( Cons hd1
+      (f0 ( tl1, x1 )) )
+  
+0.0058 false
+
+([], [1]) -> [1];
+([], [1, 0]) -> [1, 0];
+([0], []) -> [0];
+([1], []) -> [1];
+=================================
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] -> x1
+  | hd1::tl1 ->
+    ( Cons hd1
+      (f0 ( tl1, x1 )) )
+  
+0.0068 false
+
+([], []) -> [];
+([], [0]) -> [0];
+([], [1, 0]) -> [1, 0];
+([0], []) -> [0];
+=================================
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] -> x1
+  | hd1::tl1 -> x0
+  
+0.0022 false
+
+([], [1]) -> [1];
+([], [1, 0]) -> [1, 0];
+([1], [0]) -> [1, 0];
+([0, 1], []) -> [1, 0];
+=================================
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] -> x1
+  | hd1::tl1 ->
+    ( Cons
+      ( Succ ( Zero ) )
+      ( Cons ( Zero )
+        ( Nil ) ) )
+  
+0.0082 false
+
+([], []) -> [];
+([], [1]) -> [1];
+([], [1, 0]) -> [1, 0];
+([0, 1], []) -> [1, 0];
+=================================
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] -> x1
+  | hd1::tl1 ->
+    ( Cons ( Succ hd1 )
+      ( Cons hd1 x1 ) )
+  
+0.0034 false
+
+([], [0]) -> [0];
+([], [1, 0]) -> [1, 0];
+([0], []) -> [0];
+([0, 1], []) -> [1, 0];
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] -> x1
+  | hd2::tl2 ->
+    ( Cons
+      match (tl2) with
+      | [] -> ( Zero )
+      | hd1::tl1 -> hd1
+      (f0 ( tl2, x1 )) )
+  
+0.0946 false
+
+([], [0]) -> [0];
+([], [1, 0]) -> [1, 0];
+([1], [0]) -> [1, 0];
+([0, 1], []) -> [1, 0];
+=================================
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] -> x1
+  | hd1::tl1 ->
+    ( Cons
+      ( Succ ( Zero ) )
+      ( Cons ( Zero )
+        ( Nil ) ) )
+  
+0.0049 false
+
+([], []) -> [];
+([], [1]) -> [1];
+([0], []) -> [0];
+([1], []) -> [1];
+([1], [0]) -> [1, 0];
+=================================
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] -> x1
+  | hd1::tl1 ->
+    ( Cons hd1
+      (f0 ( tl1, x1 )) )
+  
+0.0034 false
+
+([], []) -> [];
+([], [1]) -> [1];
+([], [1, 0]) -> [1, 0];
+([0], []) -> [0];
+([0, 1], []) -> [1, 0];
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] -> x1
+  | hd2::tl2 ->
+    ( Cons
+      match (tl2) with
+      | [] -> ( Zero )
+      | hd1::tl1 -> hd1
+      (f0 ( tl2, x1 )) )
+  
+0.0693 false
+
+([], []) -> [];
+([], [0]) -> [0];
+([], [1, 0]) -> [1, 0];
+([0], []) -> [0];
+([1], [0]) -> [1, 0];
+=================================
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] -> x1
+  | hd1::tl1 ->
+    ( Cons hd1 x1 )
+  
+0.0034 false
+
+([], []) -> [];
+([], [0]) -> [0];
+([1], []) -> [1];
+([1], [0]) -> [1, 0];
+([0, 1], []) -> [1, 0];
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] -> x1
+  | hd2::tl2 ->
+    match (tl2) with
+    | [] ->
+      ( Cons hd2 x1 )
+    | hd1::tl1 ->
+      ( Cons hd1
+        ( Cons hd2 tl1 )
+        )
+    
+  
+0.0240 false
+
+([], []) -> [];
+([], [1, 0]) -> [1, 0];
+([0], []) -> [0];
+([1], []) -> [1];
+([1], [0]) -> [1, 0];
+=================================
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] -> x1
+  | hd1::tl1 ->
+    ( Cons hd1
+      (f0 ( tl1, x1 )) )
+  
+0.0043 false
+
+([], [1, 0]) -> [1, 0];
+([0], []) -> [0];
+([1], []) -> [1];
+([1], [0]) -> [1, 0];
+([0, 1], []) -> [1, 0];
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] -> x1
+  | hd2::tl2 ->
+    match (tl2) with
+    | [] ->
+      ( Cons hd2 x1 )
+    | hd1::tl1 ->
+      ( Cons hd1
+        ( Cons hd2 tl1 )
+        )
+    
+  
+0.1805 false
+
+([], []) -> [];
+([], [0]) -> [0];
+([], [1, 0]) -> [1, 0];
+([1], [0]) -> [1, 0];
+([0, 1], []) -> [1, 0];
+=================================
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] -> x1
+  | hd1::tl1 ->
+    ( Cons
+      ( Succ ( Zero ) )
+      ( Cons ( Zero )
+        ( Nil ) ) )
+  
+0.0040 false
+
+([], [0]) -> [0];
+([], [1, 0]) -> [1, 0];
+([1], []) -> [1];
+([1], [0]) -> [1, 0];
+([0, 1], []) -> [1, 0];
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] -> x1
+  | hd2::tl2 ->
+    match (tl2) with
+    | [] ->
+      ( Cons hd2 x1 )
+    | hd1::tl1 ->
+      ( Cons hd1
+        ( Cons hd2 tl1 )
+        )
+    
+  
+0.0700 false
+
+([], []) -> [];
+([], [1]) -> [1];
+([0], []) -> [0];
+([1], [0]) -> [1, 0];
+([0, 1], []) -> [1, 0];
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] -> x1
+  | hd2::tl2 ->
+    match (tl2) with
+    | [] ->
+      ( Cons hd2 x1 )
+    | hd1::tl1 ->
+      ( Cons hd1
+        ( Cons hd2 tl1 )
+        )
+    
+  
+0.1049 false
+
+([], []) -> [];
+([], [0]) -> [0];
+([], [1, 0]) -> [1, 0];
+([1], []) -> [1];
+([0, 1], []) -> [1, 0];
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] -> x1
+  | hd2::tl2 ->
+    match (tl2) with
+    | [] -> x0
+    | hd1::tl1 ->
+      ( Cons hd1
+        ( Cons hd2 tl1 )
+        )
+    
+  
+0.0163 false
+
+([], []) -> [];
+([], [0]) -> [0];
+([], [1]) -> [1];
+([], [1, 0]) -> [1, 0];
+([0], []) -> [0];
+([1], []) -> [1];
+=================================
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] -> x1
+  | hd1::tl1 -> x0
+  
+0.0031 false
+
+([], [0]) -> [0];
+([], [1]) -> [1];
+([], [1, 0]) -> [1, 0];
+([0], []) -> [0];
+([1], []) -> [1];
+([1], [0]) -> [1, 0];
+=================================
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] -> x1
+  | hd1::tl1 ->
+    ( Cons hd1 x1 )
+  
+0.0050 false
+
+([], []) -> [];
+([], [1, 0]) -> [1, 0];
+([0], []) -> [0];
+([1], []) -> [1];
+([1], [0]) -> [1, 0];
+([0, 1], []) -> [1, 0];
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] -> x1
+  | hd2::tl2 ->
+    match (tl2) with
+    | [] ->
+      ( Cons hd2 x1 )
+    | hd1::tl1 ->
+      ( Cons hd1
+        ( Cons hd2 tl1 )
+        )
+    
+  
+0.0890 false
+
+([], [1]) -> [1];
+([], [1, 0]) -> [1, 0];
+([0], []) -> [0];
+([1], []) -> [1];
+([1], [0]) -> [1, 0];
+([0, 1], []) -> [1, 0];
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] -> x1
+  | hd2::tl2 ->
+    match (tl2) with
+    | [] ->
+      ( Cons hd2 x1 )
+    | hd1::tl1 ->
+      ( Cons hd1
+        ( Cons hd2 tl1 )
+        )
+    
+  
+0.2237 false
+
+([], []) -> [];
+([], [1]) -> [1];
+([0], []) -> [0];
+([1], []) -> [1];
+([1], [0]) -> [1, 0];
+([0, 1], []) -> [1, 0];
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] -> x1
+  | hd2::tl2 ->
+    match (tl2) with
+    | [] ->
+      ( Cons hd2 x1 )
+    | hd1::tl1 ->
+      ( Cons hd1
+        ( Cons hd2 tl1 )
+        )
+    
+  
+0.0656 false
+
+([], []) -> [];
+([], [0]) -> [0];
+([], [1, 0]) -> [1, 0];
+([0], []) -> [0];
+([1], []) -> [1];
+([1], [0]) -> [1, 0];
+=================================
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] -> x1
+  | hd1::tl1 ->
+    ( Cons hd1 x1 )
+  
+0.0032 false
+
+([], []) -> [];
+([], [0]) -> [0];
+([], [1]) -> [1];
+([0], []) -> [0];
+([1], []) -> [1];
+([1], [0]) -> [1, 0];
+=================================
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] -> x1
+  | hd1::tl1 ->
+    ( Cons hd1 x1 )
+  
+0.0034 false
+
+([], []) -> [];
+([], [0]) -> [0];
+([], [1]) -> [1];
+([0], []) -> [0];
+([1], []) -> [1];
+([0, 1], []) -> [1, 0];
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] -> x1
+  | hd2::tl2 ->
+    match (tl2) with
+    | [] -> x0
+    | hd1::tl1 ->
+      ( Cons hd1
+        ( Cons hd2 tl1 )
+        )
+    
+  
+0.0200 false
+
+([], []) -> [];
+([], [0]) -> [0];
+([], [1]) -> [1];
+([0], []) -> [0];
+([1], [0]) -> [1, 0];
+([0, 1], []) -> [1, 0];
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] -> x1
+  | hd2::tl2 ->
+    match (tl2) with
+    | [] ->
+      ( Cons hd2 x1 )
+    | hd1::tl1 ->
+      ( Cons hd1
+        ( Cons hd2 tl1 )
+        )
+    
+  
+0.0825 false
+
+([], [0]) -> [0];
+([], [1]) -> [1];
+([], [1, 0]) -> [1, 0];
+([1], []) -> [1];
+([1], [0]) -> [1, 0];
+([0, 1], []) -> [1, 0];
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] -> x1
+  | hd2::tl2 ->
+    match (tl2) with
+    | [] ->
+      ( Cons hd2 x1 )
+    | hd1::tl1 ->
+      ( Cons hd1
+        ( Cons hd2 tl1 )
+        )
+    
+  
+0.0973 false
+
+([], []) -> [];
+([], [0]) -> [0];
+([], [1]) -> [1];
+([], [1, 0]) -> [1, 0];
+([0], []) -> [0];
+([1], []) -> [1];
+([1], [0]) -> [1, 0];
+=================================
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] -> x1
+  | hd1::tl1 ->
+    ( Cons hd1 x1 )
+  
+0.0053 false
+
+([], []) -> [];
+([], [0]) -> [0];
+([], [1]) -> [1];
+([], [1, 0]) -> [1, 0];
+([0], []) -> [0];
+([1], []) -> [1];
+([0, 1], []) -> [1, 0];
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] -> x1
+  | hd2::tl2 ->
+    match (tl2) with
+    | [] -> x0
+    | hd1::tl1 ->
+      ( Cons hd1
+        ( Cons hd2 tl1 )
+        )
+    
+  
+0.0414 false
+
+([], []) -> [];
+([], [0]) -> [0];
+([], [1]) -> [1];
+([], [1, 0]) -> [1, 0];
+([0], []) -> [0];
+([1], [0]) -> [1, 0];
+([0, 1], []) -> [1, 0];
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] -> x1
+  | hd2::tl2 ->
+    match (tl2) with
+    | [] ->
+      ( Cons hd2 x1 )
+    | hd1::tl1 ->
+      ( Cons hd1
+        ( Cons hd2 tl1 )
+        )
+    
+  
+0.1104 false
+
+([], []) -> [];
+([], [0]) -> [0];
+([], [1]) -> [1];
+([], [1, 0]) -> [1, 0];
+([1], []) -> [1];
+([1], [0]) -> [1, 0];
+([0, 1], []) -> [1, 0];
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] -> x1
+  | hd2::tl2 ->
+    match (tl2) with
+    | [] ->
+      ( Cons hd2 x1 )
+    | hd1::tl1 ->
+      ( Cons hd1
+        ( Cons hd2 tl1 )
+        )
+    
+  
+0.0361 false
+
+([], []) -> [];
+([], [0]) -> [0];
+([], [1]) -> [1];
+([0], []) -> [0];
+([1], []) -> [1];
+([1], [0]) -> [1, 0];
+([0, 1], []) -> [1, 0];
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] -> x1
+  | hd2::tl2 ->
+    match (tl2) with
+    | [] ->
+      ( Cons hd2 x1 )
+    | hd1::tl1 ->
+      ( Cons hd1
+        ( Cons hd2 tl1 )
+        )
+    
+  
+0.0325 false
+
+([], []) -> [];
+([], [0]) -> [0];
+([], [1, 0]) -> [1, 0];
+([0], []) -> [0];
+([1], []) -> [1];
+([1], [0]) -> [1, 0];
+([0, 1], []) -> [1, 0];
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] -> x1
+  | hd2::tl2 ->
+    match (tl2) with
+    | [] ->
+      ( Cons hd2 x1 )
+    | hd1::tl1 ->
+      ( Cons hd1
+        ( Cons hd2 tl1 )
+        )
+    
+  
+0.0350 false
+
+([], []) -> [];
+([], [1]) -> [1];
+([], [1, 0]) -> [1, 0];
+([0], []) -> [0];
+([1], []) -> [1];
+([1], [0]) -> [1, 0];
+([0, 1], []) -> [1, 0];
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] -> x1
+  | hd2::tl2 ->
+    match (tl2) with
+    | [] ->
+      ( Cons hd2 x1 )
+    | hd1::tl1 ->
+      ( Cons hd1
+        ( Cons hd2 tl1 )
+        )
+    
+  
+0.1016 false
+
+([], [0]) -> [0];
+([], [1]) -> [1];
+([], [1, 0]) -> [1, 0];
+([0], []) -> [0];
+([1], []) -> [1];
+([1], [0]) -> [1, 0];
+([0, 1], []) -> [1, 0];
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] -> x1
+  | hd2::tl2 ->
+    match (tl2) with
+    | [] ->
+      ( Cons hd2 x1 )
+    | hd1::tl1 ->
+      ( Cons hd1
+        ( Cons hd2 tl1 )
+        )
+    
+  
+0.1398 false
+
+([], []) -> [];
+([], [0]) -> [0];
+([], [1]) -> [1];
+([], [1, 0]) -> [1, 0];
+([0], []) -> [0];
+([1], []) -> [1];
+([1], [0]) -> [1, 0];
+([0, 1], []) -> [1, 0];
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] -> x1
+  | hd2::tl2 ->
+    match (tl2) with
+    | [] ->
+      ( Cons hd2 x1 )
+    | hd1::tl1 ->
+      ( Cons hd1
+        ( Cons hd2 tl1 )
+        )
+    
+  
+0.0468 false
+

@@ -1,0 +1,176 @@
+0 -> T ();
+=================================
+fix f0.fun x0. ( True )
+0.0002 false
+
+1 -> F ();
+=================================
+fix f0.fun x0. ( False )
+0.0003 false
+
+2 -> T ();
+=================================
+fix f0.fun x0. ( True )
+0.0005 false
+
+3 -> F ();
+=================================
+fix f0.fun x0. ( False )
+0.0005 false
+
+0 -> T ();
+1 -> F ();
+=================================
+fix f0.fun x0.
+  match (x0) with
+  | Z -> ( True )
+  | Sn1 -> ( False )
+  
+0.0002 false
+
+0 -> T ();
+2 -> T ();
+=================================
+fix f0.fun x0. ( True )
+0.0004 false
+
+0 -> T ();
+3 -> F ();
+=================================
+fix f0.fun x0.
+  match (x0) with
+  | Z -> ( True )
+  | Sn1 -> ( False )
+  
+0.0006 false
+
+1 -> F ();
+2 -> T ();
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun x0.
+  match (x0) with
+  | Z -> ( True )
+  | Sn2 ->
+    match (n2) with
+    | Z -> ( False )
+    | Sn1 -> (f0 n1)
+    
+  
+0.0018 true
+
+1 -> F ();
+3 -> F ();
+=================================
+fix f0.fun x0. ( False )
+0.0003 false
+
+2 -> T ();
+3 -> F ();
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun x0.
+  match (x0) with
+  | Z -> ( True )
+  | Sn2 ->
+    match (n2) with
+    | Z -> ( False )
+    | Sn1 -> (f0 n1)
+    
+  
+0.0023 true
+
+0 -> T ();
+1 -> F ();
+2 -> T ();
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun x0.
+  match (x0) with
+  | Z -> ( True )
+  | Sn2 ->
+    match (n2) with
+    | Z -> ( False )
+    | Sn1 -> ( True )
+    
+  
+0.0031 false
+
+0 -> T ();
+1 -> F ();
+3 -> F ();
+=================================
+fix f0.fun x0.
+  match (x0) with
+  | Z -> ( True )
+  | Sn1 -> ( False )
+  
+0.0003 false
+
+0 -> T ();
+2 -> T ();
+3 -> F ();
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun x0.
+  match (x0) with
+  | Z -> ( True )
+  | Sn2 ->
+    match (n2) with
+    | Z -> ( False )
+    | Sn1 -> (f0 n1)
+    
+  
+0.0022 true
+
+1 -> F ();
+2 -> T ();
+3 -> F ();
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun x0.
+  match (x0) with
+  | Z -> ( True )
+  | Sn2 ->
+    match (n2) with
+    | Z -> ( False )
+    | Sn1 -> (f0 n1)
+    
+  
+0.0038 true
+
+0 -> T ();
+1 -> F ();
+2 -> T ();
+3 -> F ();
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun x0.
+  match (x0) with
+  | Z -> ( True )
+  | Sn2 ->
+    match (n2) with
+    | Z -> ( False )
+    | Sn1 -> (f0 n1)
+    
+  
+0.0036 true
+

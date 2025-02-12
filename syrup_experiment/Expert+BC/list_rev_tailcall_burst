@@ -1,0 +1,796 @@
+([], [0]) -> [0];
+([], []) -> [];
+=================================
+fix (f : list * list -> list) = fun (x:list * list) -> x . 1
+
+0.0031 false
+
+([], [1]) -> [1];
+([], []) -> [];
+=================================
+fix (f : list * list -> list) = fun (x:list * list) -> x . 1
+
+0.0033 false
+
+([], [1, 0]) -> [1, 0];
+([], []) -> [];
+=================================
+fix (f : list * list -> list) = fun (x:list * list) -> x . 1
+
+0.0054 false
+
+([0], []) -> [0];
+([], []) -> [];
+=================================
+fix (f : list * list -> list) = fun (x:list * list) -> x . 0
+
+0.0031 false
+
+([1], []) -> [1];
+([], []) -> [];
+=================================
+fix (f : list * list -> list) = fun (x:list * list) -> x . 0
+
+0.0033 false
+
+([1], [0]) -> [1, 0];
+([], []) -> [];
+=================================
+fix (f : list * list -> list) =
+  fun (x:list * list) ->
+    match x . 0 with
+      | Nil _ -> x . 0
+      | Cons _ -> Cons (Un_Cons (x . 0) . 0, x . 1)
+
+0.0158 false
+
+([0, 1], []) -> [1, 0];
+([], []) -> [];
+=================================
+fix (f : list * list -> list) =
+  fun (x:list * list) ->
+    match x . 0 with
+      | Nil _ -> x . 0
+      | Cons _ -> Cons (1, Cons (0, x . 1))
+
+0.0911 false
+
+([], [1]) -> [1];
+([0, 1], []) -> [1, 0];
+([], []) -> [];
+=================================
+fix (f : list * list -> list) =
+  fun (x:list * list) ->
+    match x . 0 with
+      | Nil _ -> x . 1
+      | Cons _ -> Cons (1, Cons (0, x . 1))
+
+0.0562 false
+
+([1], [0]) -> [1, 0];
+([0, 1], []) -> [1, 0];
+([], []) -> [];
+=================================
+fix (f : list * list -> list) =
+  fun (x:list * list) ->
+    match x . 0 with
+      | Nil _ -> x . 0
+      | Cons _ -> Cons (1, Cons (0, Nil))
+
+6.6584 false
+
+([], [0]) -> [0];
+([0], []) -> [0];
+([], []) -> [];
+=================================
+fix (f : list * list -> list) =
+  fun (x:list * list) -> match x . 0 with
+                           | Nil _ -> x . 1
+                           | Cons _ -> x . 0
+
+0.0100 false
+
+([], [0]) -> [0];
+([1], []) -> [1];
+([], []) -> [];
+=================================
+fix (f : list * list -> list) =
+  fun (x:list * list) -> match x . 0 with
+                           | Nil _ -> x . 1
+                           | Cons _ -> x . 0
+
+0.0052 false
+
+([], [0]) -> [0];
+([1], [0]) -> [1, 0];
+([], []) -> [];
+=================================
+fix (f : list * list -> list) =
+  fun (x:list * list) ->
+    match x . 0 with
+      | Nil _ -> x . 1
+      | Cons _ -> Cons (Un_Cons (x . 0) . 0, x . 1)
+
+0.0095 false
+
+([], [0]) -> [0];
+([0, 1], []) -> [1, 0];
+([], []) -> [];
+=================================
+fix (f : list * list -> list) =
+  fun (x:list * list) ->
+    match x . 0 with
+      | Nil _ -> x . 1
+      | Cons _ -> Cons (1, Cons (0, x . 1))
+
+0.0565 false
+
+([], [1, 0]) -> [1, 0];
+([1], [0]) -> [1, 0];
+([], []) -> [];
+=================================
+fix (f : list * list -> list) =
+  fun (x:list * list) ->
+    match x . 0 with
+      | Nil _ -> x . 1
+      | Cons _ -> Cons (Un_Cons (x . 0) . 0, x . 1)
+
+0.0695 false
+
+([], [1, 0]) -> [1, 0];
+([0, 1], []) -> [1, 0];
+([], []) -> [];
+=================================
+fix (f : list * list -> list) =
+  fun (x:list * list) ->
+    match x . 0 with
+      | Nil _ -> x . 1
+      | Cons _ -> Cons (1, Cons (0, x . 1))
+
+0.1046 false
+
+([1], []) -> [1];
+([0, 1], []) -> [1, 0];
+([], []) -> [];
+=================================
+fix (f : list * list -> list) =
+  fun (x:list * list) ->
+    match x . 0 with
+      | Nil _ -> x . 1
+      | Cons _ -> (match Un_Cons (x . 0) . 1 with
+                     | Nil _ -> x . 0
+                     | Cons _ -> Cons (Un_Cons (Un_Cons (x . 0) . 1) . 0,
+                                        Cons (Un_Cons (x . 0) . 0, x . 1)))
+
+0.0264 false
+
+([], [1]) -> [1];
+([1], [0]) -> [1, 0];
+([], []) -> [];
+=================================
+fix (f : list * list -> list) =
+  fun (x:list * list) ->
+    match x . 0 with
+      | Nil _ -> x . 1
+      | Cons _ -> Cons (Un_Cons (x . 0) . 0, x . 1)
+
+0.0354 false
+
+([], [0]) -> [0];
+([], [1]) -> [1];
+([], [1, 0]) -> [1, 0];
+([], []) -> [];
+=================================
+fix (f : list * list -> list) = fun (x:list * list) -> x . 1
+
+0.0032 false
+
+([0], []) -> [0];
+([1], []) -> [1];
+([0, 1], []) -> [1, 0];
+([], []) -> [];
+=================================
+fix (f : list * list -> list) =
+  fun (x:list * list) ->
+    match x . 0 with
+      | Nil _ -> x . 0
+      | Cons _ -> (match Un_Cons (x . 0) . 1 with
+                     | Nil _ -> x . 0
+                     | Cons _ -> Cons (Un_Cons (Un_Cons (x . 0) . 1) . 0,
+                                        Cons (Un_Cons (x . 0) . 0, x . 1)))
+
+0.0330 false
+
+([], [1, 0]) -> [1, 0];
+([0], []) -> [0];
+([0, 1], []) -> [1, 0];
+([], []) -> [];
+=================================
+fix (f : list * list -> list) =
+  fun (x:list * list) ->
+    match x . 0 with
+      | Nil _ -> x . 1
+      | Cons _ -> (match Un_Cons (x . 0) . 1 with
+                     | Nil _ -> x . 0
+                     | Cons _ -> Cons (Un_Cons (Un_Cons (x . 0) . 1) . 0,
+                                        Cons (Un_Cons (x . 0) . 0, x . 1)))
+
+0.1611 false
+
+([1], []) -> [1];
+([1], [0]) -> [1, 0];
+([0, 1], []) -> [1, 0];
+([], []) -> [];
+=================================
+fix (f : list * list -> list) =
+  fun (x:list * list) ->
+    match x . 0 with
+      | Nil _ -> x . 1
+      | Cons _ -> (match Un_Cons (x . 0) . 0 with
+                     | O _ -> Cons (Un_Cons (Un_Cons (x . 0) . 1) . 0,
+                                     Cons (Un_Cons (x . 0) . 0, x . 1))
+                     | S _ -> Cons (Un_Cons (x . 0) . 0, x . 1))
+
+0.0647 false
+
+([], [1]) -> [1];
+([0], []) -> [0];
+([1], [0]) -> [1, 0];
+([], []) -> [];
+=================================
+fix (f : list * list -> list) =
+  fun (x:list * list) ->
+    match x . 0 with
+      | Nil _ -> x . 1
+      | Cons _ -> Cons (Un_Cons (x . 0) . 0, x . 1)
+
+0.0167 false
+
+([], [0]) -> [0];
+([], [1, 0]) -> [1, 0];
+([0], []) -> [0];
+([], []) -> [];
+=================================
+fix (f : list * list -> list) =
+  fun (x:list * list) -> match x . 1 with
+                           | Nil _ -> x . 0
+                           | Cons _ -> x . 1
+
+0.0106 false
+
+([0], []) -> [0];
+([1], []) -> [1];
+([1], [0]) -> [1, 0];
+([], []) -> [];
+=================================
+fix (f : list * list -> list) =
+  fun (x:list * list) ->
+    match x . 1 with
+      | Nil _ -> x . 0
+      | Cons _ -> Cons (Un_Cons (x . 0) . 0, x . 1)
+
+0.0172 false
+
+([], [1]) -> [1];
+([], [1, 0]) -> [1, 0];
+([0, 1], []) -> [1, 0];
+([], []) -> [];
+=================================
+fix (f : list * list -> list) =
+  fun (x:list * list) ->
+    match x . 0 with
+      | Nil _ -> x . 1
+      | Cons _ -> Cons (1, Cons (0, x . 1))
+
+0.0551 false
+
+([], [0]) -> [0];
+([], [1, 0]) -> [1, 0];
+([0, 1], []) -> [1, 0];
+([], []) -> [];
+=================================
+fix (f : list * list -> list) =
+  fun (x:list * list) ->
+    match x . 0 with
+      | Nil _ -> x . 1
+      | Cons _ -> Cons (1, Cons (0, x . 1))
+
+0.0506 false
+
+([0], []) -> [0];
+([1], [0]) -> [1, 0];
+([0, 1], []) -> [1, 0];
+([], []) -> [];
+=================================
+fix (f : list * list -> list) =
+  fun (x:list * list) ->
+    match x . 0 with
+      | Nil _ -> x . 0
+      | Cons _ -> (match Un_Cons (x . 0) . 1 with
+                     | Nil _ -> Cons (Un_Cons (x . 0) . 0, x . 1)
+                     | Cons _ -> Cons (Un_Cons (Un_Cons (x . 0) . 1) . 0,
+                                        Cons (Un_Cons (x . 0) . 0, x . 1)))
+
+0.9839 false
+
+([], [1]) -> [1];
+([0], []) -> [0];
+([1], [0]) -> [1, 0];
+([0, 1], []) -> [1, 0];
+([], []) -> [];
+=================================
+fix (f : list * list -> list) =
+  fun (x:list * list) ->
+    match x . 0 with
+      | Nil _ -> x . 1
+      | Cons _ -> (match Un_Cons (x . 0) . 1 with
+                     | Nil _ -> Cons (Un_Cons (x . 0) . 0, x . 1)
+                     | Cons _ -> Cons (Un_Cons (Un_Cons (x . 0) . 1) . 0,
+                                        Cons (Un_Cons (x . 0) . 0, x . 1)))
+
+1.3302 false
+
+([0], []) -> [0];
+([1], []) -> [1];
+([1], [0]) -> [1, 0];
+([0, 1], []) -> [1, 0];
+([], []) -> [];
+=================================
+fix (f : list * list -> list) =
+  fun (x:list * list) ->
+    match x . 0 with
+      | Nil _ -> x . 1
+      | Cons _ -> (match Un_Cons (x . 0) . 1 with
+                     | Nil _ -> Cons (Un_Cons (x . 0) . 0, x . 1)
+                     | Cons _ -> Cons (Un_Cons (Un_Cons (x . 0) . 1) . 0,
+                                        Cons (Un_Cons (x . 0) . 0, x . 1)))
+
+0.0721 false
+
+([], [1]) -> [1];
+([0], []) -> [0];
+([1], []) -> [1];
+([0, 1], []) -> [1, 0];
+([], []) -> [];
+=================================
+fix (f : list * list -> list) =
+  fun (x:list * list) ->
+    match x . 0 with
+      | Nil _ -> x . 1
+      | Cons _ -> (match Un_Cons (x . 0) . 1 with
+                     | Nil _ -> x . 0
+                     | Cons _ -> Cons (Un_Cons (Un_Cons (x . 0) . 1) . 0,
+                                        Cons (Un_Cons (x . 0) . 0, x . 1)))
+
+0.0269 false
+
+([], [0]) -> [0];
+([], [1, 0]) -> [1, 0];
+([0], []) -> [0];
+([1], []) -> [1];
+([], []) -> [];
+=================================
+fix (f : list * list -> list) =
+  fun (x:list * list) -> match x . 1 with
+                           | Nil _ -> x . 0
+                           | Cons _ -> x . 1
+
+0.0112 false
+
+([], [1]) -> [1];
+([], [1, 0]) -> [1, 0];
+([0], []) -> [0];
+([0, 1], []) -> [1, 0];
+([], []) -> [];
+=================================
+fix (f : list * list -> list) =
+  fun (x:list * list) ->
+    match x . 0 with
+      | Nil _ -> x . 1
+      | Cons _ -> (match Un_Cons (x . 0) . 1 with
+                     | Nil _ -> x . 0
+                     | Cons _ -> Cons (Un_Cons (Un_Cons (x . 0) . 1) . 0,
+                                        Cons (Un_Cons (x . 0) . 0, x . 1)))
+
+0.1397 false
+
+([], [0]) -> [0];
+([1], []) -> [1];
+([1], [0]) -> [1, 0];
+([0, 1], []) -> [1, 0];
+([], []) -> [];
+=================================
+fix (f : list * list -> list) =
+  fun (x:list * list) ->
+    match x . 0 with
+      | Nil _ -> x . 1
+      | Cons _ -> (match Un_Cons (x . 0) . 1 with
+                     | Nil _ -> Cons (Un_Cons (x . 0) . 0, x . 1)
+                     | Cons _ -> Cons (Un_Cons (Un_Cons (x . 0) . 1) . 0,
+                                        Cons (Un_Cons (x . 0) . 0, x . 1)))
+
+0.0436 false
+
+([], [0]) -> [0];
+([0], []) -> [0];
+([1], []) -> [1];
+([1], [0]) -> [1, 0];
+([], []) -> [];
+=================================
+fix (f : list * list -> list) =
+  fun (x:list * list) ->
+    match x . 0 with
+      | Nil _ -> x . 1
+      | Cons _ -> Cons (Un_Cons (x . 0) . 0, x . 1)
+
+0.0186 false
+
+([], [0]) -> [0];
+([], [1]) -> [1];
+([1], []) -> [1];
+([1], [0]) -> [1, 0];
+([], []) -> [];
+=================================
+fix (f : list * list -> list) =
+  fun (x:list * list) ->
+    match x . 0 with
+      | Nil _ -> x . 1
+      | Cons _ -> Cons (Un_Cons (x . 0) . 0, x . 1)
+
+0.0114 false
+
+([], [1]) -> [1];
+([], [1, 0]) -> [1, 0];
+([1], []) -> [1];
+([0, 1], []) -> [1, 0];
+([], []) -> [];
+=================================
+fix (f : list * list -> list) =
+  fun (x:list * list) ->
+    match x . 0 with
+      | Nil _ -> x . 1
+      | Cons _ -> (match Un_Cons (x . 0) . 0 with
+                     | O _ -> Cons (Un_Cons (Un_Cons (x . 0) . 1) . 0,
+                                     Cons (Un_Cons (x . 0) . 0, x . 1))
+                     | S _ -> x . 0)
+
+0.0220 false
+
+([], [0]) -> [0];
+([0], []) -> [0];
+([1], []) -> [1];
+([0, 1], []) -> [1, 0];
+([], []) -> [];
+=================================
+fix (f : list * list -> list) =
+  fun (x:list * list) ->
+    match x . 0 with
+      | Nil _ -> x . 1
+      | Cons _ -> (match Un_Cons (x . 0) . 1 with
+                     | Nil _ -> x . 0
+                     | Cons _ -> Cons (Un_Cons (Un_Cons (x . 0) . 1) . 0,
+                                        Cons (Un_Cons (x . 0) . 0, x . 1)))
+
+0.0303 false
+
+([], [1]) -> [1];
+([], [1, 0]) -> [1, 0];
+([1], []) -> [1];
+([1], [0]) -> [1, 0];
+([0, 1], []) -> [1, 0];
+([], []) -> [];
+=================================
+fix (f : list * list -> list) =
+  fun (x:list * list) ->
+    match x . 0 with
+      | Nil _ -> x . 1
+      | Cons _ -> (match Un_Cons (x . 0) . 0 with
+                     | O _ -> Cons (Un_Cons (Un_Cons (x . 0) . 1) . 0,
+                                     Cons (Un_Cons (x . 0) . 0, x . 1))
+                     | S _ -> Cons (Un_Cons (x . 0) . 0, x . 1))
+
+0.0488 false
+
+([], [0]) -> [0];
+([], [1, 0]) -> [1, 0];
+([0], []) -> [0];
+([1], [0]) -> [1, 0];
+([0, 1], []) -> [1, 0];
+([], []) -> [];
+=================================
+fix (f : list * list -> list) =
+  fun (x:list * list) ->
+    match x . 0 with
+      | Nil _ -> x . 1
+      | Cons _ -> (match Un_Cons (x . 0) . 1 with
+                     | Nil _ -> Cons (Un_Cons (x . 0) . 0, x . 1)
+                     | Cons _ -> Cons (Un_Cons (Un_Cons (x . 0) . 1) . 0,
+                                        Cons (Un_Cons (x . 0) . 0, x . 1)))
+
+0.3548 false
+
+([], [0]) -> [0];
+([0], []) -> [0];
+([1], []) -> [1];
+([1], [0]) -> [1, 0];
+([0, 1], []) -> [1, 0];
+([], []) -> [];
+=================================
+fix (f : list * list -> list) =
+  fun (x:list * list) ->
+    match x . 0 with
+      | Nil _ -> x . 1
+      | Cons _ -> (match Un_Cons (x . 0) . 1 with
+                     | Nil _ -> Cons (Un_Cons (x . 0) . 0, x . 1)
+                     | Cons _ -> Cons (Un_Cons (Un_Cons (x . 0) . 1) . 0,
+                                        Cons (Un_Cons (x . 0) . 0, x . 1)))
+
+0.0514 false
+
+([], [0]) -> [0];
+([], [1]) -> [1];
+([], [1, 0]) -> [1, 0];
+([1], []) -> [1];
+([1], [0]) -> [1, 0];
+([], []) -> [];
+=================================
+fix (f : list * list -> list) =
+  fun (x:list * list) ->
+    match x . 0 with
+      | Nil _ -> x . 1
+      | Cons _ -> Cons (Un_Cons (x . 0) . 0, x . 1)
+
+0.0128 false
+
+([], [0]) -> [0];
+([], [1]) -> [1];
+([], [1, 0]) -> [1, 0];
+([1], []) -> [1];
+([0, 1], []) -> [1, 0];
+([], []) -> [];
+=================================
+fix (f : list * list -> list) =
+  fun (x:list * list) ->
+    match x . 0 with
+      | Nil _ -> x . 1
+      | Cons _ -> (match Un_Cons (x . 0) . 0 with
+                     | O _ -> Cons (Un_Cons (Un_Cons (x . 0) . 1) . 0,
+                                     Cons (Un_Cons (x . 0) . 0, x . 1))
+                     | S _ -> x . 0)
+
+0.0340 false
+
+([], [0]) -> [0];
+([], [1]) -> [1];
+([], [1, 0]) -> [1, 0];
+([1], [0]) -> [1, 0];
+([0, 1], []) -> [1, 0];
+([], []) -> [];
+=================================
+fix (f : list * list -> list) =
+  fun (x:list * list) ->
+    match x . 0 with
+      | Nil _ -> x . 1
+      | Cons _ -> Cons (1, Cons (0, Nil))
+
+0.1405 false
+
+([], [0]) -> [0];
+([], [1, 0]) -> [1, 0];
+([0], []) -> [0];
+([1], []) -> [1];
+([1], [0]) -> [1, 0];
+([], []) -> [];
+=================================
+fix (f : list * list -> list) =
+  fun (x:list * list) ->
+    match x . 0 with
+      | Nil _ -> x . 1
+      | Cons _ -> Cons (Un_Cons (x . 0) . 0, x . 1)
+
+0.0214 false
+
+([], [0]) -> [0];
+([], [1]) -> [1];
+([0], []) -> [0];
+([1], []) -> [1];
+([0, 1], []) -> [1, 0];
+([], []) -> [];
+=================================
+fix (f : list * list -> list) =
+  fun (x:list * list) ->
+    match x . 0 with
+      | Nil _ -> x . 1
+      | Cons _ -> (match Un_Cons (x . 0) . 1 with
+                     | Nil _ -> x . 0
+                     | Cons _ -> Cons (Un_Cons (Un_Cons (x . 0) . 1) . 0,
+                                        Cons (Un_Cons (x . 0) . 0, x . 1)))
+
+0.0470 false
+
+([], [1]) -> [1];
+([0], []) -> [0];
+([1], []) -> [1];
+([1], [0]) -> [1, 0];
+([0, 1], []) -> [1, 0];
+([], []) -> [];
+=================================
+fix (f : list * list -> list) =
+  fun (x:list * list) ->
+    match x . 0 with
+      | Nil _ -> x . 1
+      | Cons _ -> (match Un_Cons (x . 0) . 1 with
+                     | Nil _ -> Cons (Un_Cons (x . 0) . 0, x . 1)
+                     | Cons _ -> Cons (Un_Cons (Un_Cons (x . 0) . 1) . 0,
+                                        Cons (Un_Cons (x . 0) . 0, x . 1)))
+
+0.0468 false
+
+([], [0]) -> [0];
+([], [1, 0]) -> [1, 0];
+([0], []) -> [0];
+([1], []) -> [1];
+([0, 1], []) -> [1, 0];
+([], []) -> [];
+=================================
+fix (f : list * list -> list) =
+  fun (x:list * list) ->
+    match x . 0 with
+      | Nil _ -> x . 1
+      | Cons _ -> (match Un_Cons (x . 0) . 1 with
+                     | Nil _ -> x . 0
+                     | Cons _ -> Cons (Un_Cons (Un_Cons (x . 0) . 1) . 0,
+                                        Cons (Un_Cons (x . 0) . 0, x . 1)))
+
+0.0352 false
+
+([], [0]) -> [0];
+([], [1]) -> [1];
+([], [1, 0]) -> [1, 0];
+([0], []) -> [0];
+([1], []) -> [1];
+([1], [0]) -> [1, 0];
+([], []) -> [];
+=================================
+fix (f : list * list -> list) =
+  fun (x:list * list) ->
+    match x . 0 with
+      | Nil _ -> x . 1
+      | Cons _ -> Cons (Un_Cons (x . 0) . 0, x . 1)
+
+0.0179 false
+
+([], [0]) -> [0];
+([], [1]) -> [1];
+([], [1, 0]) -> [1, 0];
+([0], []) -> [0];
+([1], []) -> [1];
+([0, 1], []) -> [1, 0];
+([], []) -> [];
+=================================
+fix (f : list * list -> list) =
+  fun (x:list * list) ->
+    match x . 0 with
+      | Nil _ -> x . 1
+      | Cons _ -> (match Un_Cons (x . 0) . 1 with
+                     | Nil _ -> x . 0
+                     | Cons _ -> Cons (Un_Cons (Un_Cons (x . 0) . 1) . 0,
+                                        Cons (Un_Cons (x . 0) . 0, x . 1)))
+
+0.0319 false
+
+([], [0]) -> [0];
+([], [1]) -> [1];
+([], [1, 0]) -> [1, 0];
+([0], []) -> [0];
+([1], [0]) -> [1, 0];
+([0, 1], []) -> [1, 0];
+([], []) -> [];
+=================================
+fix (f : list * list -> list) =
+  fun (x:list * list) ->
+    match x . 0 with
+      | Nil _ -> x . 1
+      | Cons _ -> (match Un_Cons (x . 0) . 1 with
+                     | Nil _ -> Cons (Un_Cons (x . 0) . 0, x . 1)
+                     | Cons _ -> Cons (Un_Cons (Un_Cons (x . 0) . 1) . 0,
+                                        Cons (Un_Cons (x . 0) . 0, x . 1)))
+
+0.3212 false
+
+([], [0]) -> [0];
+([], [1]) -> [1];
+([], [1, 0]) -> [1, 0];
+([1], []) -> [1];
+([1], [0]) -> [1, 0];
+([0, 1], []) -> [1, 0];
+([], []) -> [];
+=================================
+fix (f : list * list -> list) =
+  fun (x:list * list) ->
+    match x . 0 with
+      | Nil _ -> x . 1
+      | Cons _ -> (match Un_Cons (x . 0) . 1 with
+                     | Nil _ -> Cons (Un_Cons (x . 0) . 0, x . 1)
+                     | Cons _ -> Cons (Un_Cons (Un_Cons (x . 0) . 1) . 0,
+                                        Cons (Un_Cons (x . 0) . 0, x . 1)))
+
+0.0394 false
+
+([], [0]) -> [0];
+([], [1]) -> [1];
+([0], []) -> [0];
+([1], []) -> [1];
+([1], [0]) -> [1, 0];
+([0, 1], []) -> [1, 0];
+([], []) -> [];
+=================================
+fix (f : list * list -> list) =
+  fun (x:list * list) ->
+    match x . 0 with
+      | Nil _ -> x . 1
+      | Cons _ -> (match Un_Cons (x . 0) . 1 with
+                     | Nil _ -> Cons (Un_Cons (x . 0) . 0, x . 1)
+                     | Cons _ -> Cons (Un_Cons (Un_Cons (x . 0) . 1) . 0,
+                                        Cons (Un_Cons (x . 0) . 0, x . 1)))
+
+0.0588 false
+
+([], [0]) -> [0];
+([], [1, 0]) -> [1, 0];
+([0], []) -> [0];
+([1], []) -> [1];
+([1], [0]) -> [1, 0];
+([0, 1], []) -> [1, 0];
+([], []) -> [];
+=================================
+fix (f : list * list -> list) =
+  fun (x:list * list) ->
+    match x . 0 with
+      | Nil _ -> x . 1
+      | Cons _ -> (match Un_Cons (x . 0) . 1 with
+                     | Nil _ -> Cons (Un_Cons (x . 0) . 0, x . 1)
+                     | Cons _ -> Cons (Un_Cons (Un_Cons (x . 0) . 1) . 0,
+                                        Cons (Un_Cons (x . 0) . 0, x . 1)))
+
+0.0664 false
+
+([], [1]) -> [1];
+([], [1, 0]) -> [1, 0];
+([0], []) -> [0];
+([1], []) -> [1];
+([1], [0]) -> [1, 0];
+([0, 1], []) -> [1, 0];
+([], []) -> [];
+=================================
+fix (f : list * list -> list) =
+  fun (x:list * list) ->
+    match x . 0 with
+      | Nil _ -> x . 1
+      | Cons _ -> (match Un_Cons (x . 0) . 1 with
+                     | Nil _ -> Cons (Un_Cons (x . 0) . 0, x . 1)
+                     | Cons _ -> Cons (Un_Cons (Un_Cons (x . 0) . 1) . 0,
+                                        Cons (Un_Cons (x . 0) . 0, x . 1)))
+
+0.0536 false
+
+([], [0]) -> [0];
+([], [1]) -> [1];
+([], [1, 0]) -> [1, 0];
+([0], []) -> [0];
+([1], []) -> [1];
+([1], [0]) -> [1, 0];
+([0, 1], []) -> [1, 0];
+([], []) -> [];
+=================================
+fix (f : list * list -> list) =
+  fun (x:list * list) ->
+    match x . 0 with
+      | Nil _ -> x . 1
+      | Cons _ -> (match Un_Cons (x . 0) . 1 with
+                     | Nil _ -> Cons (Un_Cons (x . 0) . 0, x . 1)
+                     | Cons _ -> Cons (Un_Cons (Un_Cons (x . 0) . 1) . 0,
+                                        Cons (Un_Cons (x . 0) . 0, x . 1)))
+
+0.0616 false
+

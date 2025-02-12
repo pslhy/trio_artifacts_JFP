@@ -1,0 +1,2922 @@
+[] -> [];
+=================================
+(\compare -> (\insert -> (\list_sort_sorted_insert -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ((let list_sort_sorted_insert = \xs -> [] in list_sort_sorted_insert) : NatList -> NatList))
+  ((let insert = \xs -> \n -> case xs of
+    Nil _ -> 
+      [n]
+
+    Cons p -> 
+      case compare n (#2.1 p) of
+        LT _ -> 
+          Cons (n, Cons (#2.1 p, #2.2 p))
+
+        EQ _ -> 
+          xs
+
+        GT _ -> 
+          Cons (#2.1 p, insert (#2.2 p) n) in insert) : NatList -> Nat -> NatList))
+  ((let compare = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      case n2 of
+        Z _ -> 
+          EQ
+
+        S _ -> 
+          LT
+
+    S m1 -> 
+      case n2 of
+        Z _ -> 
+          GT
+
+        S m2 -> 
+          compare m1 m2 in compare) : Nat -> Nat -> Cmp)
+0.00846299999989 false false
+
+[0] -> [0];
+=================================
+(\compare -> (\insert -> (\list_sort_sorted_insert -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ((let list_sort_sorted_insert = \xs -> xs in list_sort_sorted_insert) : NatList -> NatList))
+  ((let insert = \xs -> \n -> case xs of
+    Nil _ -> 
+      [n]
+
+    Cons p -> 
+      case compare n (#2.1 p) of
+        LT _ -> 
+          Cons (n, Cons (#2.1 p, #2.2 p))
+
+        EQ _ -> 
+          xs
+
+        GT _ -> 
+          Cons (#2.1 p, insert (#2.2 p) n) in insert) : NatList -> Nat -> NatList))
+  ((let compare = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      case n2 of
+        Z _ -> 
+          EQ
+
+        S _ -> 
+          LT
+
+    S m1 -> 
+      case n2 of
+        Z _ -> 
+          GT
+
+        S m2 -> 
+          compare m1 m2 in compare) : Nat -> Nat -> Cmp)
+0.00926600000003 false false
+
+[1] -> [1];
+=================================
+(\compare -> (\insert -> (\list_sort_sorted_insert -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ((let list_sort_sorted_insert = \xs -> xs in list_sort_sorted_insert) : NatList -> NatList))
+  ((let insert = \xs -> \n -> case xs of
+    Nil _ -> 
+      [n]
+
+    Cons p -> 
+      case compare n (#2.1 p) of
+        LT _ -> 
+          Cons (n, Cons (#2.1 p, #2.2 p))
+
+        EQ _ -> 
+          xs
+
+        GT _ -> 
+          Cons (#2.1 p, insert (#2.2 p) n) in insert) : NatList -> Nat -> NatList))
+  ((let compare = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      case n2 of
+        Z _ -> 
+          EQ
+
+        S _ -> 
+          LT
+
+    S m1 -> 
+      case n2 of
+        Z _ -> 
+          GT
+
+        S m2 -> 
+          compare m1 m2 in compare) : Nat -> Nat -> Cmp)
+0.0101890000001 false false
+
+[0, 0] -> [0];
+=================================
+(\compare -> (\insert -> (\list_sort_sorted_insert -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ((let list_sort_sorted_insert = \xs -> [0] in list_sort_sorted_insert) : NatList -> NatList))
+  ((let insert = \xs -> \n -> case xs of
+    Nil _ -> 
+      [n]
+
+    Cons p -> 
+      case compare n (#2.1 p) of
+        LT _ -> 
+          Cons (n, Cons (#2.1 p, #2.2 p))
+
+        EQ _ -> 
+          xs
+
+        GT _ -> 
+          Cons (#2.1 p, insert (#2.2 p) n) in insert) : NatList -> Nat -> NatList))
+  ((let compare = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      case n2 of
+        Z _ -> 
+          EQ
+
+        S _ -> 
+          LT
+
+    S m1 -> 
+      case n2 of
+        Z _ -> 
+          GT
+
+        S m2 -> 
+          compare m1 m2 in compare) : Nat -> Nat -> Cmp)
+0.00926499999991 false false
+
+[1, 0] -> [0, 1];
+=================================
+(\compare -> (\insert -> (\list_sort_sorted_insert -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ((let list_sort_sorted_insert = \xs -> [0, 1] in list_sort_sorted_insert) : NatList -> NatList))
+  ((let insert = \xs -> \n -> case xs of
+    Nil _ -> 
+      [n]
+
+    Cons p -> 
+      case compare n (#2.1 p) of
+        LT _ -> 
+          Cons (n, Cons (#2.1 p, #2.2 p))
+
+        EQ _ -> 
+          xs
+
+        GT _ -> 
+          Cons (#2.1 p, insert (#2.2 p) n) in insert) : NatList -> Nat -> NatList))
+  ((let compare = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      case n2 of
+        Z _ -> 
+          EQ
+
+        S _ -> 
+          LT
+
+    S m1 -> 
+      case n2 of
+        Z _ -> 
+          GT
+
+        S m2 -> 
+          compare m1 m2 in compare) : Nat -> Nat -> Cmp)
+0.00998200000004 false false
+
+[1, 1] -> [1];
+=================================
+(\compare -> (\insert -> (\list_sort_sorted_insert -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ((let list_sort_sorted_insert = \xs -> [1] in list_sort_sorted_insert) : NatList -> NatList))
+  ((let insert = \xs -> \n -> case xs of
+    Nil _ -> 
+      [n]
+
+    Cons p -> 
+      case compare n (#2.1 p) of
+        LT _ -> 
+          Cons (n, Cons (#2.1 p, #2.2 p))
+
+        EQ _ -> 
+          xs
+
+        GT _ -> 
+          Cons (#2.1 p, insert (#2.2 p) n) in insert) : NatList -> Nat -> NatList))
+  ((let compare = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      case n2 of
+        Z _ -> 
+          EQ
+
+        S _ -> 
+          LT
+
+    S m1 -> 
+      case n2 of
+        Z _ -> 
+          GT
+
+        S m2 -> 
+          compare m1 m2 in compare) : Nat -> Nat -> Cmp)
+0.009863 false false
+
+[0, 1, 1] -> [0, 1];
+=================================
+(\compare -> (\insert -> (\list_sort_sorted_insert -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ((let list_sort_sorted_insert = \xs -> [0, 1] in list_sort_sorted_insert) : NatList -> NatList))
+  ((let insert = \xs -> \n -> case xs of
+    Nil _ -> 
+      [n]
+
+    Cons p -> 
+      case compare n (#2.1 p) of
+        LT _ -> 
+          Cons (n, Cons (#2.1 p, #2.2 p))
+
+        EQ _ -> 
+          xs
+
+        GT _ -> 
+          Cons (#2.1 p, insert (#2.2 p) n) in insert) : NatList -> Nat -> NatList))
+  ((let compare = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      case n2 of
+        Z _ -> 
+          EQ
+
+        S _ -> 
+          LT
+
+    S m1 -> 
+      case n2 of
+        Z _ -> 
+          GT
+
+        S m2 -> 
+          compare m1 m2 in compare) : Nat -> Nat -> Cmp)
+0.010033 false false
+
+[0] -> [0];
+[0, 1, 1] -> [0, 1];
+=================================
+NOSOL
+
+[] -> [];
+[1] -> [1];
+=================================
+(\compare -> (\insert -> (\list_sort_sorted_insert -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ((let list_sort_sorted_insert = \xs -> xs in list_sort_sorted_insert) : NatList -> NatList))
+  ((let insert = \xs -> \n -> case xs of
+    Nil _ -> 
+      [n]
+
+    Cons p -> 
+      case compare n (#2.1 p) of
+        LT _ -> 
+          Cons (n, Cons (#2.1 p, #2.2 p))
+
+        EQ _ -> 
+          xs
+
+        GT _ -> 
+          Cons (#2.1 p, insert (#2.2 p) n) in insert) : NatList -> Nat -> NatList))
+  ((let compare = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      case n2 of
+        Z _ -> 
+          EQ
+
+        S _ -> 
+          LT
+
+    S m1 -> 
+      case n2 of
+        Z _ -> 
+          GT
+
+        S m2 -> 
+          compare m1 m2 in compare) : Nat -> Nat -> Cmp)
+0.00926400000003 false false
+
+[] -> [];
+[0, 0] -> [0];
+=================================
+(\compare -> (\insert -> (\list_sort_sorted_insert -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_sort_sorted_insert = \xs -> case xs of
+    Nil y1 -> 
+      []
+
+    Cons y1 -> 
+      #2.2 y1 in list_sort_sorted_insert) : NatList -> NatList))
+  ((let insert = \xs -> \n -> case xs of
+    Nil _ -> 
+      [n]
+
+    Cons p -> 
+      case compare n (#2.1 p) of
+        LT _ -> 
+          Cons (n, Cons (#2.1 p, #2.2 p))
+
+        EQ _ -> 
+          xs
+
+        GT _ -> 
+          Cons (#2.1 p, insert (#2.2 p) n) in insert) : NatList -> Nat -> NatList))
+  ((let compare = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      case n2 of
+        Z _ -> 
+          EQ
+
+        S _ -> 
+          LT
+
+    S m1 -> 
+      case n2 of
+        Z _ -> 
+          GT
+
+        S m2 -> 
+          compare m1 m2 in compare) : Nat -> Nat -> Cmp)
+(\compare -> (\insert -> (\list_sort_sorted_insert -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_sort_sorted_insert = \xs -> case xs of
+    Nil y1 -> 
+      xs
+
+    Cons y1 -> 
+      insert (list_sort_sorted_insert (#2.2 y1)) (#2.1 y1) in list_sort_sorted_insert) : NatList -> NatList))
+  ((let insert = \xs -> \n -> case xs of
+    Nil _ -> 
+      [n]
+
+    Cons p -> 
+      case compare n (#2.1 p) of
+        LT _ -> 
+          Cons (n, Cons (#2.1 p, #2.2 p))
+
+        EQ _ -> 
+          xs
+
+        GT _ -> 
+          Cons (#2.1 p, insert (#2.2 p) n) in insert) : NatList -> Nat -> NatList))
+  ((let compare = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      case n2 of
+        Z _ -> 
+          EQ
+
+        S _ -> 
+          LT
+
+    S m1 -> 
+      case n2 of
+        Z _ -> 
+          GT
+
+        S m2 -> 
+          compare m1 m2 in compare) : Nat -> Nat -> Cmp)
+0.013696 false true
+
+[] -> [];
+[1, 0] -> [0, 1];
+=================================
+(\compare -> (\insert -> (\list_sort_sorted_insert -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_sort_sorted_insert = \xs -> case xs of
+    Nil y1 -> 
+      []
+
+    Cons y1 -> 
+      insert (#2.2 y1) (#2.1 y1) in list_sort_sorted_insert) : NatList -> NatList))
+  ((let insert = \xs -> \n -> case xs of
+    Nil _ -> 
+      [n]
+
+    Cons p -> 
+      case compare n (#2.1 p) of
+        LT _ -> 
+          Cons (n, Cons (#2.1 p, #2.2 p))
+
+        EQ _ -> 
+          xs
+
+        GT _ -> 
+          Cons (#2.1 p, insert (#2.2 p) n) in insert) : NatList -> Nat -> NatList))
+  ((let compare = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      case n2 of
+        Z _ -> 
+          EQ
+
+        S _ -> 
+          LT
+
+    S m1 -> 
+      case n2 of
+        Z _ -> 
+          GT
+
+        S m2 -> 
+          compare m1 m2 in compare) : Nat -> Nat -> Cmp)
+(\compare -> (\insert -> (\list_sort_sorted_insert -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_sort_sorted_insert = \xs -> case xs of
+    Nil y1 -> 
+      xs
+
+    Cons y1 -> 
+      insert (list_sort_sorted_insert (#2.2 y1)) (#2.1 y1) in list_sort_sorted_insert) : NatList -> NatList))
+  ((let insert = \xs -> \n -> case xs of
+    Nil _ -> 
+      [n]
+
+    Cons p -> 
+      case compare n (#2.1 p) of
+        LT _ -> 
+          Cons (n, Cons (#2.1 p, #2.2 p))
+
+        EQ _ -> 
+          xs
+
+        GT _ -> 
+          Cons (#2.1 p, insert (#2.2 p) n) in insert) : NatList -> Nat -> NatList))
+  ((let compare = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      case n2 of
+        Z _ -> 
+          EQ
+
+        S _ -> 
+          LT
+
+    S m1 -> 
+      case n2 of
+        Z _ -> 
+          GT
+
+        S m2 -> 
+          compare m1 m2 in compare) : Nat -> Nat -> Cmp)
+0.0157400000001 false true
+
+[1] -> [1];
+[1, 1] -> [1];
+=================================
+(\compare -> (\insert -> (\list_sort_sorted_insert -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ((let list_sort_sorted_insert = \xs -> [1] in list_sort_sorted_insert) : NatList -> NatList))
+  ((let insert = \xs -> \n -> case xs of
+    Nil _ -> 
+      [n]
+
+    Cons p -> 
+      case compare n (#2.1 p) of
+        LT _ -> 
+          Cons (n, Cons (#2.1 p, #2.2 p))
+
+        EQ _ -> 
+          xs
+
+        GT _ -> 
+          Cons (#2.1 p, insert (#2.2 p) n) in insert) : NatList -> Nat -> NatList))
+  ((let compare = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      case n2 of
+        Z _ -> 
+          EQ
+
+        S _ -> 
+          LT
+
+    S m1 -> 
+      case n2 of
+        Z _ -> 
+          GT
+
+        S m2 -> 
+          compare m1 m2 in compare) : Nat -> Nat -> Cmp)
+0.0102609999999 false false
+
+[1] -> [1];
+[1, 0] -> [0, 1];
+=================================
+NOSOL
+
+[0] -> [0];
+[1] -> [1];
+=================================
+(\compare -> (\insert -> (\list_sort_sorted_insert -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ((let list_sort_sorted_insert = \xs -> xs in list_sort_sorted_insert) : NatList -> NatList))
+  ((let insert = \xs -> \n -> case xs of
+    Nil _ -> 
+      [n]
+
+    Cons p -> 
+      case compare n (#2.1 p) of
+        LT _ -> 
+          Cons (n, Cons (#2.1 p, #2.2 p))
+
+        EQ _ -> 
+          xs
+
+        GT _ -> 
+          Cons (#2.1 p, insert (#2.2 p) n) in insert) : NatList -> Nat -> NatList))
+  ((let compare = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      case n2 of
+        Z _ -> 
+          EQ
+
+        S _ -> 
+          LT
+
+    S m1 -> 
+      case n2 of
+        Z _ -> 
+          GT
+
+        S m2 -> 
+          compare m1 m2 in compare) : Nat -> Nat -> Cmp)
+0.0090110000001 false false
+
+[0] -> [0];
+[0, 0] -> [0];
+=================================
+(\compare -> (\insert -> (\list_sort_sorted_insert -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ((let list_sort_sorted_insert = \xs -> [0] in list_sort_sorted_insert) : NatList -> NatList))
+  ((let insert = \xs -> \n -> case xs of
+    Nil _ -> 
+      [n]
+
+    Cons p -> 
+      case compare n (#2.1 p) of
+        LT _ -> 
+          Cons (n, Cons (#2.1 p, #2.2 p))
+
+        EQ _ -> 
+          xs
+
+        GT _ -> 
+          Cons (#2.1 p, insert (#2.2 p) n) in insert) : NatList -> Nat -> NatList))
+  ((let compare = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      case n2 of
+        Z _ -> 
+          EQ
+
+        S _ -> 
+          LT
+
+    S m1 -> 
+      case n2 of
+        Z _ -> 
+          GT
+
+        S m2 -> 
+          compare m1 m2 in compare) : Nat -> Nat -> Cmp)
+0.010258 false false
+
+[1] -> [1];
+[0, 0] -> [0];
+=================================
+NOSOL
+
+[0, 0] -> [0];
+[1, 0] -> [0, 1];
+=================================
+NOSOL
+
+[0] -> [0];
+[1] -> [1];
+[0, 0] -> [0];
+=================================
+NOSOL
+
+[] -> [];
+[0] -> [0];
+[0, 0] -> [0];
+=================================
+(\compare -> (\insert -> (\list_sort_sorted_insert -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_sort_sorted_insert = \xs -> case xs of
+    Nil y1 -> 
+      []
+
+    Cons y1 -> 
+      [0] in list_sort_sorted_insert) : NatList -> NatList))
+  ((let insert = \xs -> \n -> case xs of
+    Nil _ -> 
+      [n]
+
+    Cons p -> 
+      case compare n (#2.1 p) of
+        LT _ -> 
+          Cons (n, Cons (#2.1 p, #2.2 p))
+
+        EQ _ -> 
+          xs
+
+        GT _ -> 
+          Cons (#2.1 p, insert (#2.2 p) n) in insert) : NatList -> Nat -> NatList))
+  ((let compare = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      case n2 of
+        Z _ -> 
+          EQ
+
+        S _ -> 
+          LT
+
+    S m1 -> 
+      case n2 of
+        Z _ -> 
+          GT
+
+        S m2 -> 
+          compare m1 m2 in compare) : Nat -> Nat -> Cmp)
+(\compare -> (\insert -> (\list_sort_sorted_insert -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_sort_sorted_insert = \xs -> case xs of
+    Nil y1 -> 
+      xs
+
+    Cons y1 -> 
+      insert (list_sort_sorted_insert (#2.2 y1)) (#2.1 y1) in list_sort_sorted_insert) : NatList -> NatList))
+  ((let insert = \xs -> \n -> case xs of
+    Nil _ -> 
+      [n]
+
+    Cons p -> 
+      case compare n (#2.1 p) of
+        LT _ -> 
+          Cons (n, Cons (#2.1 p, #2.2 p))
+
+        EQ _ -> 
+          xs
+
+        GT _ -> 
+          Cons (#2.1 p, insert (#2.2 p) n) in insert) : NatList -> Nat -> NatList))
+  ((let compare = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      case n2 of
+        Z _ -> 
+          EQ
+
+        S _ -> 
+          LT
+
+    S m1 -> 
+      case n2 of
+        Z _ -> 
+          GT
+
+        S m2 -> 
+          compare m1 m2 in compare) : Nat -> Nat -> Cmp)
+0.0146480000001 false true
+
+[] -> [];
+[0] -> [0];
+[1, 0] -> [0, 1];
+=================================
+(\compare -> (\insert -> (\list_sort_sorted_insert -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_sort_sorted_insert = \xs -> case xs of
+    Nil y1 -> 
+      []
+
+    Cons y1 -> 
+      insert (#2.2 y1) (#2.1 y1) in list_sort_sorted_insert) : NatList -> NatList))
+  ((let insert = \xs -> \n -> case xs of
+    Nil _ -> 
+      [n]
+
+    Cons p -> 
+      case compare n (#2.1 p) of
+        LT _ -> 
+          Cons (n, Cons (#2.1 p, #2.2 p))
+
+        EQ _ -> 
+          xs
+
+        GT _ -> 
+          Cons (#2.1 p, insert (#2.2 p) n) in insert) : NatList -> Nat -> NatList))
+  ((let compare = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      case n2 of
+        Z _ -> 
+          EQ
+
+        S _ -> 
+          LT
+
+    S m1 -> 
+      case n2 of
+        Z _ -> 
+          GT
+
+        S m2 -> 
+          compare m1 m2 in compare) : Nat -> Nat -> Cmp)
+(\compare -> (\insert -> (\list_sort_sorted_insert -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_sort_sorted_insert = \xs -> case xs of
+    Nil y1 -> 
+      xs
+
+    Cons y1 -> 
+      insert (list_sort_sorted_insert (#2.2 y1)) (#2.1 y1) in list_sort_sorted_insert) : NatList -> NatList))
+  ((let insert = \xs -> \n -> case xs of
+    Nil _ -> 
+      [n]
+
+    Cons p -> 
+      case compare n (#2.1 p) of
+        LT _ -> 
+          Cons (n, Cons (#2.1 p, #2.2 p))
+
+        EQ _ -> 
+          xs
+
+        GT _ -> 
+          Cons (#2.1 p, insert (#2.2 p) n) in insert) : NatList -> Nat -> NatList))
+  ((let compare = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      case n2 of
+        Z _ -> 
+          EQ
+
+        S _ -> 
+          LT
+
+    S m1 -> 
+      case n2 of
+        Z _ -> 
+          GT
+
+        S m2 -> 
+          compare m1 m2 in compare) : Nat -> Nat -> Cmp)
+0.0136419999999 false true
+
+[1] -> [1];
+[1, 0] -> [0, 1];
+[0, 1, 1] -> [0, 1];
+=================================
+NOSOL
+
+[0, 0] -> [0];
+[1, 0] -> [0, 1];
+[1, 1] -> [1];
+=================================
+NOSOL
+
+[] -> [];
+[1, 1] -> [1];
+[0, 1, 1] -> [0, 1];
+=================================
+(\compare -> (\insert -> (\list_sort_sorted_insert -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_sort_sorted_insert = \xs -> case xs of
+    Nil y1 -> 
+      xs
+
+    Cons y1 -> 
+      insert (list_sort_sorted_insert (#2.2 y1)) (#2.1 y1) in list_sort_sorted_insert) : NatList -> NatList))
+  ((let insert = \xs -> \n -> case xs of
+    Nil _ -> 
+      [n]
+
+    Cons p -> 
+      case compare n (#2.1 p) of
+        LT _ -> 
+          Cons (n, Cons (#2.1 p, #2.2 p))
+
+        EQ _ -> 
+          xs
+
+        GT _ -> 
+          Cons (#2.1 p, insert (#2.2 p) n) in insert) : NatList -> Nat -> NatList))
+  ((let compare = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      case n2 of
+        Z _ -> 
+          EQ
+
+        S _ -> 
+          LT
+
+    S m1 -> 
+      case n2 of
+        Z _ -> 
+          GT
+
+        S m2 -> 
+          compare m1 m2 in compare) : Nat -> Nat -> Cmp)
+(\compare -> (\insert -> (\list_sort_sorted_insert -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_sort_sorted_insert = \xs -> case xs of
+    Nil y1 -> 
+      xs
+
+    Cons y1 -> 
+      insert (list_sort_sorted_insert (#2.2 y1)) (#2.1 y1) in list_sort_sorted_insert) : NatList -> NatList))
+  ((let insert = \xs -> \n -> case xs of
+    Nil _ -> 
+      [n]
+
+    Cons p -> 
+      case compare n (#2.1 p) of
+        LT _ -> 
+          Cons (n, Cons (#2.1 p, #2.2 p))
+
+        EQ _ -> 
+          xs
+
+        GT _ -> 
+          Cons (#2.1 p, insert (#2.2 p) n) in insert) : NatList -> Nat -> NatList))
+  ((let compare = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      case n2 of
+        Z _ -> 
+          EQ
+
+        S _ -> 
+          LT
+
+    S m1 -> 
+      case n2 of
+        Z _ -> 
+          GT
+
+        S m2 -> 
+          compare m1 m2 in compare) : Nat -> Nat -> Cmp)
+0.0153110000001 true true
+
+[1] -> [1];
+[1, 1] -> [1];
+[0, 1, 1] -> [0, 1];
+=================================
+NOSOL
+
+[] -> [];
+[0, 0] -> [0];
+[0, 1, 1] -> [0, 1];
+=================================
+(\compare -> (\insert -> (\list_sort_sorted_insert -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_sort_sorted_insert = \xs -> case xs of
+    Nil y1 -> 
+      xs
+
+    Cons y1 -> 
+      insert (list_sort_sorted_insert (#2.2 y1)) (#2.1 y1) in list_sort_sorted_insert) : NatList -> NatList))
+  ((let insert = \xs -> \n -> case xs of
+    Nil _ -> 
+      [n]
+
+    Cons p -> 
+      case compare n (#2.1 p) of
+        LT _ -> 
+          Cons (n, Cons (#2.1 p, #2.2 p))
+
+        EQ _ -> 
+          xs
+
+        GT _ -> 
+          Cons (#2.1 p, insert (#2.2 p) n) in insert) : NatList -> Nat -> NatList))
+  ((let compare = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      case n2 of
+        Z _ -> 
+          EQ
+
+        S _ -> 
+          LT
+
+    S m1 -> 
+      case n2 of
+        Z _ -> 
+          GT
+
+        S m2 -> 
+          compare m1 m2 in compare) : Nat -> Nat -> Cmp)
+(\compare -> (\insert -> (\list_sort_sorted_insert -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_sort_sorted_insert = \xs -> case xs of
+    Nil y1 -> 
+      xs
+
+    Cons y1 -> 
+      insert (list_sort_sorted_insert (#2.2 y1)) (#2.1 y1) in list_sort_sorted_insert) : NatList -> NatList))
+  ((let insert = \xs -> \n -> case xs of
+    Nil _ -> 
+      [n]
+
+    Cons p -> 
+      case compare n (#2.1 p) of
+        LT _ -> 
+          Cons (n, Cons (#2.1 p, #2.2 p))
+
+        EQ _ -> 
+          xs
+
+        GT _ -> 
+          Cons (#2.1 p, insert (#2.2 p) n) in insert) : NatList -> Nat -> NatList))
+  ((let compare = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      case n2 of
+        Z _ -> 
+          EQ
+
+        S _ -> 
+          LT
+
+    S m1 -> 
+      case n2 of
+        Z _ -> 
+          GT
+
+        S m2 -> 
+          compare m1 m2 in compare) : Nat -> Nat -> Cmp)
+0.015922 true true
+
+[] -> [];
+[1] -> [1];
+[0, 1, 1] -> [0, 1];
+=================================
+(\compare -> (\insert -> (\list_sort_sorted_insert -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_sort_sorted_insert = \xs -> case xs of
+    Nil y1 -> 
+      xs
+
+    Cons y1 -> 
+      insert (list_sort_sorted_insert (#2.2 y1)) (#2.1 y1) in list_sort_sorted_insert) : NatList -> NatList))
+  ((let insert = \xs -> \n -> case xs of
+    Nil _ -> 
+      [n]
+
+    Cons p -> 
+      case compare n (#2.1 p) of
+        LT _ -> 
+          Cons (n, Cons (#2.1 p, #2.2 p))
+
+        EQ _ -> 
+          xs
+
+        GT _ -> 
+          Cons (#2.1 p, insert (#2.2 p) n) in insert) : NatList -> Nat -> NatList))
+  ((let compare = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      case n2 of
+        Z _ -> 
+          EQ
+
+        S _ -> 
+          LT
+
+    S m1 -> 
+      case n2 of
+        Z _ -> 
+          GT
+
+        S m2 -> 
+          compare m1 m2 in compare) : Nat -> Nat -> Cmp)
+(\compare -> (\insert -> (\list_sort_sorted_insert -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_sort_sorted_insert = \xs -> case xs of
+    Nil y1 -> 
+      xs
+
+    Cons y1 -> 
+      insert (list_sort_sorted_insert (#2.2 y1)) (#2.1 y1) in list_sort_sorted_insert) : NatList -> NatList))
+  ((let insert = \xs -> \n -> case xs of
+    Nil _ -> 
+      [n]
+
+    Cons p -> 
+      case compare n (#2.1 p) of
+        LT _ -> 
+          Cons (n, Cons (#2.1 p, #2.2 p))
+
+        EQ _ -> 
+          xs
+
+        GT _ -> 
+          Cons (#2.1 p, insert (#2.2 p) n) in insert) : NatList -> Nat -> NatList))
+  ((let compare = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      case n2 of
+        Z _ -> 
+          EQ
+
+        S _ -> 
+          LT
+
+    S m1 -> 
+      case n2 of
+        Z _ -> 
+          GT
+
+        S m2 -> 
+          compare m1 m2 in compare) : Nat -> Nat -> Cmp)
+0.0149039999999 true true
+
+[] -> [];
+[0, 0] -> [0];
+[1, 0] -> [0, 1];
+=================================
+(\compare -> (\insert -> (\list_sort_sorted_insert -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_sort_sorted_insert = \xs -> case xs of
+    Nil y1 -> 
+      []
+
+    Cons y1 -> 
+      insert (#2.2 y1) (#2.1 y1) in list_sort_sorted_insert) : NatList -> NatList))
+  ((let insert = \xs -> \n -> case xs of
+    Nil _ -> 
+      [n]
+
+    Cons p -> 
+      case compare n (#2.1 p) of
+        LT _ -> 
+          Cons (n, Cons (#2.1 p, #2.2 p))
+
+        EQ _ -> 
+          xs
+
+        GT _ -> 
+          Cons (#2.1 p, insert (#2.2 p) n) in insert) : NatList -> Nat -> NatList))
+  ((let compare = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      case n2 of
+        Z _ -> 
+          EQ
+
+        S _ -> 
+          LT
+
+    S m1 -> 
+      case n2 of
+        Z _ -> 
+          GT
+
+        S m2 -> 
+          compare m1 m2 in compare) : Nat -> Nat -> Cmp)
+(\compare -> (\insert -> (\list_sort_sorted_insert -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_sort_sorted_insert = \xs -> case xs of
+    Nil y1 -> 
+      xs
+
+    Cons y1 -> 
+      insert (list_sort_sorted_insert (#2.2 y1)) (#2.1 y1) in list_sort_sorted_insert) : NatList -> NatList))
+  ((let insert = \xs -> \n -> case xs of
+    Nil _ -> 
+      [n]
+
+    Cons p -> 
+      case compare n (#2.1 p) of
+        LT _ -> 
+          Cons (n, Cons (#2.1 p, #2.2 p))
+
+        EQ _ -> 
+          xs
+
+        GT _ -> 
+          Cons (#2.1 p, insert (#2.2 p) n) in insert) : NatList -> Nat -> NatList))
+  ((let compare = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      case n2 of
+        Z _ -> 
+          EQ
+
+        S _ -> 
+          LT
+
+    S m1 -> 
+      case n2 of
+        Z _ -> 
+          GT
+
+        S m2 -> 
+          compare m1 m2 in compare) : Nat -> Nat -> Cmp)
+0.0148489999999 false true
+
+[] -> [];
+[0] -> [0];
+[1] -> [1];
+[0, 0] -> [0];
+=================================
+(\compare -> (\insert -> (\list_sort_sorted_insert -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_sort_sorted_insert = \xs -> case xs of
+    Nil y1 -> 
+      []
+
+    Cons y1 -> 
+      [#2.1 y1] in list_sort_sorted_insert) : NatList -> NatList))
+  ((let insert = \xs -> \n -> case xs of
+    Nil _ -> 
+      [n]
+
+    Cons p -> 
+      case compare n (#2.1 p) of
+        LT _ -> 
+          Cons (n, Cons (#2.1 p, #2.2 p))
+
+        EQ _ -> 
+          xs
+
+        GT _ -> 
+          Cons (#2.1 p, insert (#2.2 p) n) in insert) : NatList -> Nat -> NatList))
+  ((let compare = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      case n2 of
+        Z _ -> 
+          EQ
+
+        S _ -> 
+          LT
+
+    S m1 -> 
+      case n2 of
+        Z _ -> 
+          GT
+
+        S m2 -> 
+          compare m1 m2 in compare) : Nat -> Nat -> Cmp)
+(\compare -> (\insert -> (\list_sort_sorted_insert -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_sort_sorted_insert = \xs -> case xs of
+    Nil y1 -> 
+      xs
+
+    Cons y1 -> 
+      insert (list_sort_sorted_insert (#2.2 y1)) (#2.1 y1) in list_sort_sorted_insert) : NatList -> NatList))
+  ((let insert = \xs -> \n -> case xs of
+    Nil _ -> 
+      [n]
+
+    Cons p -> 
+      case compare n (#2.1 p) of
+        LT _ -> 
+          Cons (n, Cons (#2.1 p, #2.2 p))
+
+        EQ _ -> 
+          xs
+
+        GT _ -> 
+          Cons (#2.1 p, insert (#2.2 p) n) in insert) : NatList -> Nat -> NatList))
+  ((let compare = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      case n2 of
+        Z _ -> 
+          EQ
+
+        S _ -> 
+          LT
+
+    S m1 -> 
+      case n2 of
+        Z _ -> 
+          GT
+
+        S m2 -> 
+          compare m1 m2 in compare) : Nat -> Nat -> Cmp)
+0.0140730000001 false true
+
+[] -> [];
+[0] -> [0];
+[1] -> [1];
+[1, 0] -> [0, 1];
+=================================
+(\compare -> (\insert -> (\list_sort_sorted_insert -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_sort_sorted_insert = \xs -> case xs of
+    Nil y1 -> 
+      []
+
+    Cons y1 -> 
+      insert (#2.2 y1) (#2.1 y1) in list_sort_sorted_insert) : NatList -> NatList))
+  ((let insert = \xs -> \n -> case xs of
+    Nil _ -> 
+      [n]
+
+    Cons p -> 
+      case compare n (#2.1 p) of
+        LT _ -> 
+          Cons (n, Cons (#2.1 p, #2.2 p))
+
+        EQ _ -> 
+          xs
+
+        GT _ -> 
+          Cons (#2.1 p, insert (#2.2 p) n) in insert) : NatList -> Nat -> NatList))
+  ((let compare = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      case n2 of
+        Z _ -> 
+          EQ
+
+        S _ -> 
+          LT
+
+    S m1 -> 
+      case n2 of
+        Z _ -> 
+          GT
+
+        S m2 -> 
+          compare m1 m2 in compare) : Nat -> Nat -> Cmp)
+(\compare -> (\insert -> (\list_sort_sorted_insert -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_sort_sorted_insert = \xs -> case xs of
+    Nil y1 -> 
+      xs
+
+    Cons y1 -> 
+      insert (list_sort_sorted_insert (#2.2 y1)) (#2.1 y1) in list_sort_sorted_insert) : NatList -> NatList))
+  ((let insert = \xs -> \n -> case xs of
+    Nil _ -> 
+      [n]
+
+    Cons p -> 
+      case compare n (#2.1 p) of
+        LT _ -> 
+          Cons (n, Cons (#2.1 p, #2.2 p))
+
+        EQ _ -> 
+          xs
+
+        GT _ -> 
+          Cons (#2.1 p, insert (#2.2 p) n) in insert) : NatList -> Nat -> NatList))
+  ((let compare = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      case n2 of
+        Z _ -> 
+          EQ
+
+        S _ -> 
+          LT
+
+    S m1 -> 
+      case n2 of
+        Z _ -> 
+          GT
+
+        S m2 -> 
+          compare m1 m2 in compare) : Nat -> Nat -> Cmp)
+0.013314 false true
+
+[] -> [];
+[0] -> [0];
+[1] -> [1];
+[1, 1] -> [1];
+=================================
+(\compare -> (\insert -> (\list_sort_sorted_insert -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_sort_sorted_insert = \xs -> case xs of
+    Nil y1 -> 
+      []
+
+    Cons y1 -> 
+      [#2.1 y1] in list_sort_sorted_insert) : NatList -> NatList))
+  ((let insert = \xs -> \n -> case xs of
+    Nil _ -> 
+      [n]
+
+    Cons p -> 
+      case compare n (#2.1 p) of
+        LT _ -> 
+          Cons (n, Cons (#2.1 p, #2.2 p))
+
+        EQ _ -> 
+          xs
+
+        GT _ -> 
+          Cons (#2.1 p, insert (#2.2 p) n) in insert) : NatList -> Nat -> NatList))
+  ((let compare = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      case n2 of
+        Z _ -> 
+          EQ
+
+        S _ -> 
+          LT
+
+    S m1 -> 
+      case n2 of
+        Z _ -> 
+          GT
+
+        S m2 -> 
+          compare m1 m2 in compare) : Nat -> Nat -> Cmp)
+(\compare -> (\insert -> (\list_sort_sorted_insert -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_sort_sorted_insert = \xs -> case xs of
+    Nil y1 -> 
+      xs
+
+    Cons y1 -> 
+      insert (list_sort_sorted_insert (#2.2 y1)) (#2.1 y1) in list_sort_sorted_insert) : NatList -> NatList))
+  ((let insert = \xs -> \n -> case xs of
+    Nil _ -> 
+      [n]
+
+    Cons p -> 
+      case compare n (#2.1 p) of
+        LT _ -> 
+          Cons (n, Cons (#2.1 p, #2.2 p))
+
+        EQ _ -> 
+          xs
+
+        GT _ -> 
+          Cons (#2.1 p, insert (#2.2 p) n) in insert) : NatList -> Nat -> NatList))
+  ((let compare = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      case n2 of
+        Z _ -> 
+          EQ
+
+        S _ -> 
+          LT
+
+    S m1 -> 
+      case n2 of
+        Z _ -> 
+          GT
+
+        S m2 -> 
+          compare m1 m2 in compare) : Nat -> Nat -> Cmp)
+0.0143370000001 false true
+
+[] -> [];
+[0, 0] -> [0];
+[1, 1] -> [1];
+[0, 1, 1] -> [0, 1];
+=================================
+(\compare -> (\insert -> (\list_sort_sorted_insert -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_sort_sorted_insert = \xs -> case xs of
+    Nil y1 -> 
+      xs
+
+    Cons y1 -> 
+      insert (list_sort_sorted_insert (#2.2 y1)) (#2.1 y1) in list_sort_sorted_insert) : NatList -> NatList))
+  ((let insert = \xs -> \n -> case xs of
+    Nil _ -> 
+      [n]
+
+    Cons p -> 
+      case compare n (#2.1 p) of
+        LT _ -> 
+          Cons (n, Cons (#2.1 p, #2.2 p))
+
+        EQ _ -> 
+          xs
+
+        GT _ -> 
+          Cons (#2.1 p, insert (#2.2 p) n) in insert) : NatList -> Nat -> NatList))
+  ((let compare = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      case n2 of
+        Z _ -> 
+          EQ
+
+        S _ -> 
+          LT
+
+    S m1 -> 
+      case n2 of
+        Z _ -> 
+          GT
+
+        S m2 -> 
+          compare m1 m2 in compare) : Nat -> Nat -> Cmp)
+(\compare -> (\insert -> (\list_sort_sorted_insert -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_sort_sorted_insert = \xs -> case xs of
+    Nil y1 -> 
+      xs
+
+    Cons y1 -> 
+      insert (list_sort_sorted_insert (#2.2 y1)) (#2.1 y1) in list_sort_sorted_insert) : NatList -> NatList))
+  ((let insert = \xs -> \n -> case xs of
+    Nil _ -> 
+      [n]
+
+    Cons p -> 
+      case compare n (#2.1 p) of
+        LT _ -> 
+          Cons (n, Cons (#2.1 p, #2.2 p))
+
+        EQ _ -> 
+          xs
+
+        GT _ -> 
+          Cons (#2.1 p, insert (#2.2 p) n) in insert) : NatList -> Nat -> NatList))
+  ((let compare = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      case n2 of
+        Z _ -> 
+          EQ
+
+        S _ -> 
+          LT
+
+    S m1 -> 
+      case n2 of
+        Z _ -> 
+          GT
+
+        S m2 -> 
+          compare m1 m2 in compare) : Nat -> Nat -> Cmp)
+0.0158180000001 true true
+
+[0] -> [0];
+[1] -> [1];
+[1, 0] -> [0, 1];
+[1, 1] -> [1];
+=================================
+NOSOL
+
+[] -> [];
+[1] -> [1];
+[0, 0] -> [0];
+[0, 1, 1] -> [0, 1];
+=================================
+(\compare -> (\insert -> (\list_sort_sorted_insert -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_sort_sorted_insert = \xs -> case xs of
+    Nil y1 -> 
+      xs
+
+    Cons y1 -> 
+      insert (list_sort_sorted_insert (#2.2 y1)) (#2.1 y1) in list_sort_sorted_insert) : NatList -> NatList))
+  ((let insert = \xs -> \n -> case xs of
+    Nil _ -> 
+      [n]
+
+    Cons p -> 
+      case compare n (#2.1 p) of
+        LT _ -> 
+          Cons (n, Cons (#2.1 p, #2.2 p))
+
+        EQ _ -> 
+          xs
+
+        GT _ -> 
+          Cons (#2.1 p, insert (#2.2 p) n) in insert) : NatList -> Nat -> NatList))
+  ((let compare = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      case n2 of
+        Z _ -> 
+          EQ
+
+        S _ -> 
+          LT
+
+    S m1 -> 
+      case n2 of
+        Z _ -> 
+          GT
+
+        S m2 -> 
+          compare m1 m2 in compare) : Nat -> Nat -> Cmp)
+(\compare -> (\insert -> (\list_sort_sorted_insert -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_sort_sorted_insert = \xs -> case xs of
+    Nil y1 -> 
+      xs
+
+    Cons y1 -> 
+      insert (list_sort_sorted_insert (#2.2 y1)) (#2.1 y1) in list_sort_sorted_insert) : NatList -> NatList))
+  ((let insert = \xs -> \n -> case xs of
+    Nil _ -> 
+      [n]
+
+    Cons p -> 
+      case compare n (#2.1 p) of
+        LT _ -> 
+          Cons (n, Cons (#2.1 p, #2.2 p))
+
+        EQ _ -> 
+          xs
+
+        GT _ -> 
+          Cons (#2.1 p, insert (#2.2 p) n) in insert) : NatList -> Nat -> NatList))
+  ((let compare = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      case n2 of
+        Z _ -> 
+          EQ
+
+        S _ -> 
+          LT
+
+    S m1 -> 
+      case n2 of
+        Z _ -> 
+          GT
+
+        S m2 -> 
+          compare m1 m2 in compare) : Nat -> Nat -> Cmp)
+0.0162049999999 true true
+
+[] -> [];
+[0] -> [0];
+[0, 0] -> [0];
+[0, 1, 1] -> [0, 1];
+=================================
+(\compare -> (\insert -> (\list_sort_sorted_insert -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_sort_sorted_insert = \xs -> case xs of
+    Nil y1 -> 
+      xs
+
+    Cons y1 -> 
+      insert (list_sort_sorted_insert (#2.2 y1)) (#2.1 y1) in list_sort_sorted_insert) : NatList -> NatList))
+  ((let insert = \xs -> \n -> case xs of
+    Nil _ -> 
+      [n]
+
+    Cons p -> 
+      case compare n (#2.1 p) of
+        LT _ -> 
+          Cons (n, Cons (#2.1 p, #2.2 p))
+
+        EQ _ -> 
+          xs
+
+        GT _ -> 
+          Cons (#2.1 p, insert (#2.2 p) n) in insert) : NatList -> Nat -> NatList))
+  ((let compare = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      case n2 of
+        Z _ -> 
+          EQ
+
+        S _ -> 
+          LT
+
+    S m1 -> 
+      case n2 of
+        Z _ -> 
+          GT
+
+        S m2 -> 
+          compare m1 m2 in compare) : Nat -> Nat -> Cmp)
+(\compare -> (\insert -> (\list_sort_sorted_insert -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_sort_sorted_insert = \xs -> case xs of
+    Nil y1 -> 
+      xs
+
+    Cons y1 -> 
+      insert (list_sort_sorted_insert (#2.2 y1)) (#2.1 y1) in list_sort_sorted_insert) : NatList -> NatList))
+  ((let insert = \xs -> \n -> case xs of
+    Nil _ -> 
+      [n]
+
+    Cons p -> 
+      case compare n (#2.1 p) of
+        LT _ -> 
+          Cons (n, Cons (#2.1 p, #2.2 p))
+
+        EQ _ -> 
+          xs
+
+        GT _ -> 
+          Cons (#2.1 p, insert (#2.2 p) n) in insert) : NatList -> Nat -> NatList))
+  ((let compare = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      case n2 of
+        Z _ -> 
+          EQ
+
+        S _ -> 
+          LT
+
+    S m1 -> 
+      case n2 of
+        Z _ -> 
+          GT
+
+        S m2 -> 
+          compare m1 m2 in compare) : Nat -> Nat -> Cmp)
+0.016791 true true
+
+[] -> [];
+[1] -> [1];
+[0, 0] -> [0];
+[1, 1] -> [1];
+=================================
+(\compare -> (\insert -> (\list_sort_sorted_insert -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_sort_sorted_insert = \xs -> case xs of
+    Nil y1 -> 
+      []
+
+    Cons y1 -> 
+      [#2.1 y1] in list_sort_sorted_insert) : NatList -> NatList))
+  ((let insert = \xs -> \n -> case xs of
+    Nil _ -> 
+      [n]
+
+    Cons p -> 
+      case compare n (#2.1 p) of
+        LT _ -> 
+          Cons (n, Cons (#2.1 p, #2.2 p))
+
+        EQ _ -> 
+          xs
+
+        GT _ -> 
+          Cons (#2.1 p, insert (#2.2 p) n) in insert) : NatList -> Nat -> NatList))
+  ((let compare = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      case n2 of
+        Z _ -> 
+          EQ
+
+        S _ -> 
+          LT
+
+    S m1 -> 
+      case n2 of
+        Z _ -> 
+          GT
+
+        S m2 -> 
+          compare m1 m2 in compare) : Nat -> Nat -> Cmp)
+(\compare -> (\insert -> (\list_sort_sorted_insert -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_sort_sorted_insert = \xs -> case xs of
+    Nil y1 -> 
+      xs
+
+    Cons y1 -> 
+      insert (list_sort_sorted_insert (#2.2 y1)) (#2.1 y1) in list_sort_sorted_insert) : NatList -> NatList))
+  ((let insert = \xs -> \n -> case xs of
+    Nil _ -> 
+      [n]
+
+    Cons p -> 
+      case compare n (#2.1 p) of
+        LT _ -> 
+          Cons (n, Cons (#2.1 p, #2.2 p))
+
+        EQ _ -> 
+          xs
+
+        GT _ -> 
+          Cons (#2.1 p, insert (#2.2 p) n) in insert) : NatList -> Nat -> NatList))
+  ((let compare = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      case n2 of
+        Z _ -> 
+          EQ
+
+        S _ -> 
+          LT
+
+    S m1 -> 
+      case n2 of
+        Z _ -> 
+          GT
+
+        S m2 -> 
+          compare m1 m2 in compare) : Nat -> Nat -> Cmp)
+0.0147489999999 false true
+
+[1] -> [1];
+[0, 0] -> [0];
+[1, 0] -> [0, 1];
+[0, 1, 1] -> [0, 1];
+=================================
+NOSOL
+
+[0] -> [0];
+[1] -> [1];
+[0, 0] -> [0];
+[1, 0] -> [0, 1];
+=================================
+NOSOL
+
+[0] -> [0];
+[0, 0] -> [0];
+[1, 0] -> [0, 1];
+[1, 1] -> [1];
+[0, 1, 1] -> [0, 1];
+=================================
+NOSOL
+
+[] -> [];
+[0, 0] -> [0];
+[1, 0] -> [0, 1];
+[1, 1] -> [1];
+[0, 1, 1] -> [0, 1];
+=================================
+(\compare -> (\insert -> (\list_sort_sorted_insert -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_sort_sorted_insert = \xs -> case xs of
+    Nil y1 -> 
+      xs
+
+    Cons y1 -> 
+      insert (list_sort_sorted_insert (#2.2 y1)) (#2.1 y1) in list_sort_sorted_insert) : NatList -> NatList))
+  ((let insert = \xs -> \n -> case xs of
+    Nil _ -> 
+      [n]
+
+    Cons p -> 
+      case compare n (#2.1 p) of
+        LT _ -> 
+          Cons (n, Cons (#2.1 p, #2.2 p))
+
+        EQ _ -> 
+          xs
+
+        GT _ -> 
+          Cons (#2.1 p, insert (#2.2 p) n) in insert) : NatList -> Nat -> NatList))
+  ((let compare = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      case n2 of
+        Z _ -> 
+          EQ
+
+        S _ -> 
+          LT
+
+    S m1 -> 
+      case n2 of
+        Z _ -> 
+          GT
+
+        S m2 -> 
+          compare m1 m2 in compare) : Nat -> Nat -> Cmp)
+(\compare -> (\insert -> (\list_sort_sorted_insert -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_sort_sorted_insert = \xs -> case xs of
+    Nil y1 -> 
+      xs
+
+    Cons y1 -> 
+      insert (list_sort_sorted_insert (#2.2 y1)) (#2.1 y1) in list_sort_sorted_insert) : NatList -> NatList))
+  ((let insert = \xs -> \n -> case xs of
+    Nil _ -> 
+      [n]
+
+    Cons p -> 
+      case compare n (#2.1 p) of
+        LT _ -> 
+          Cons (n, Cons (#2.1 p, #2.2 p))
+
+        EQ _ -> 
+          xs
+
+        GT _ -> 
+          Cons (#2.1 p, insert (#2.2 p) n) in insert) : NatList -> Nat -> NatList))
+  ((let compare = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      case n2 of
+        Z _ -> 
+          EQ
+
+        S _ -> 
+          LT
+
+    S m1 -> 
+      case n2 of
+        Z _ -> 
+          GT
+
+        S m2 -> 
+          compare m1 m2 in compare) : Nat -> Nat -> Cmp)
+0.014054 true true
+
+[] -> [];
+[0] -> [0];
+[1] -> [1];
+[0, 0] -> [0];
+[0, 1, 1] -> [0, 1];
+=================================
+(\compare -> (\insert -> (\list_sort_sorted_insert -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_sort_sorted_insert = \xs -> case xs of
+    Nil y1 -> 
+      xs
+
+    Cons y1 -> 
+      insert (list_sort_sorted_insert (#2.2 y1)) (#2.1 y1) in list_sort_sorted_insert) : NatList -> NatList))
+  ((let insert = \xs -> \n -> case xs of
+    Nil _ -> 
+      [n]
+
+    Cons p -> 
+      case compare n (#2.1 p) of
+        LT _ -> 
+          Cons (n, Cons (#2.1 p, #2.2 p))
+
+        EQ _ -> 
+          xs
+
+        GT _ -> 
+          Cons (#2.1 p, insert (#2.2 p) n) in insert) : NatList -> Nat -> NatList))
+  ((let compare = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      case n2 of
+        Z _ -> 
+          EQ
+
+        S _ -> 
+          LT
+
+    S m1 -> 
+      case n2 of
+        Z _ -> 
+          GT
+
+        S m2 -> 
+          compare m1 m2 in compare) : Nat -> Nat -> Cmp)
+(\compare -> (\insert -> (\list_sort_sorted_insert -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_sort_sorted_insert = \xs -> case xs of
+    Nil y1 -> 
+      xs
+
+    Cons y1 -> 
+      insert (list_sort_sorted_insert (#2.2 y1)) (#2.1 y1) in list_sort_sorted_insert) : NatList -> NatList))
+  ((let insert = \xs -> \n -> case xs of
+    Nil _ -> 
+      [n]
+
+    Cons p -> 
+      case compare n (#2.1 p) of
+        LT _ -> 
+          Cons (n, Cons (#2.1 p, #2.2 p))
+
+        EQ _ -> 
+          xs
+
+        GT _ -> 
+          Cons (#2.1 p, insert (#2.2 p) n) in insert) : NatList -> Nat -> NatList))
+  ((let compare = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      case n2 of
+        Z _ -> 
+          EQ
+
+        S _ -> 
+          LT
+
+    S m1 -> 
+      case n2 of
+        Z _ -> 
+          GT
+
+        S m2 -> 
+          compare m1 m2 in compare) : Nat -> Nat -> Cmp)
+0.01584 true true
+
+[] -> [];
+[0] -> [0];
+[1] -> [1];
+[1, 0] -> [0, 1];
+[1, 1] -> [1];
+=================================
+(\compare -> (\insert -> (\list_sort_sorted_insert -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_sort_sorted_insert = \xs -> case xs of
+    Nil y1 -> 
+      []
+
+    Cons y1 -> 
+      insert (#2.2 y1) (#2.1 y1) in list_sort_sorted_insert) : NatList -> NatList))
+  ((let insert = \xs -> \n -> case xs of
+    Nil _ -> 
+      [n]
+
+    Cons p -> 
+      case compare n (#2.1 p) of
+        LT _ -> 
+          Cons (n, Cons (#2.1 p, #2.2 p))
+
+        EQ _ -> 
+          xs
+
+        GT _ -> 
+          Cons (#2.1 p, insert (#2.2 p) n) in insert) : NatList -> Nat -> NatList))
+  ((let compare = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      case n2 of
+        Z _ -> 
+          EQ
+
+        S _ -> 
+          LT
+
+    S m1 -> 
+      case n2 of
+        Z _ -> 
+          GT
+
+        S m2 -> 
+          compare m1 m2 in compare) : Nat -> Nat -> Cmp)
+(\compare -> (\insert -> (\list_sort_sorted_insert -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_sort_sorted_insert = \xs -> case xs of
+    Nil y1 -> 
+      xs
+
+    Cons y1 -> 
+      insert (list_sort_sorted_insert (#2.2 y1)) (#2.1 y1) in list_sort_sorted_insert) : NatList -> NatList))
+  ((let insert = \xs -> \n -> case xs of
+    Nil _ -> 
+      [n]
+
+    Cons p -> 
+      case compare n (#2.1 p) of
+        LT _ -> 
+          Cons (n, Cons (#2.1 p, #2.2 p))
+
+        EQ _ -> 
+          xs
+
+        GT _ -> 
+          Cons (#2.1 p, insert (#2.2 p) n) in insert) : NatList -> Nat -> NatList))
+  ((let compare = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      case n2 of
+        Z _ -> 
+          EQ
+
+        S _ -> 
+          LT
+
+    S m1 -> 
+      case n2 of
+        Z _ -> 
+          GT
+
+        S m2 -> 
+          compare m1 m2 in compare) : Nat -> Nat -> Cmp)
+0.014786 false true
+
+[] -> [];
+[0] -> [0];
+[1] -> [1];
+[1, 0] -> [0, 1];
+[0, 1, 1] -> [0, 1];
+=================================
+(\compare -> (\insert -> (\list_sort_sorted_insert -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_sort_sorted_insert = \xs -> case xs of
+    Nil y1 -> 
+      xs
+
+    Cons y1 -> 
+      insert (list_sort_sorted_insert (#2.2 y1)) (#2.1 y1) in list_sort_sorted_insert) : NatList -> NatList))
+  ((let insert = \xs -> \n -> case xs of
+    Nil _ -> 
+      [n]
+
+    Cons p -> 
+      case compare n (#2.1 p) of
+        LT _ -> 
+          Cons (n, Cons (#2.1 p, #2.2 p))
+
+        EQ _ -> 
+          xs
+
+        GT _ -> 
+          Cons (#2.1 p, insert (#2.2 p) n) in insert) : NatList -> Nat -> NatList))
+  ((let compare = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      case n2 of
+        Z _ -> 
+          EQ
+
+        S _ -> 
+          LT
+
+    S m1 -> 
+      case n2 of
+        Z _ -> 
+          GT
+
+        S m2 -> 
+          compare m1 m2 in compare) : Nat -> Nat -> Cmp)
+(\compare -> (\insert -> (\list_sort_sorted_insert -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_sort_sorted_insert = \xs -> case xs of
+    Nil y1 -> 
+      xs
+
+    Cons y1 -> 
+      insert (list_sort_sorted_insert (#2.2 y1)) (#2.1 y1) in list_sort_sorted_insert) : NatList -> NatList))
+  ((let insert = \xs -> \n -> case xs of
+    Nil _ -> 
+      [n]
+
+    Cons p -> 
+      case compare n (#2.1 p) of
+        LT _ -> 
+          Cons (n, Cons (#2.1 p, #2.2 p))
+
+        EQ _ -> 
+          xs
+
+        GT _ -> 
+          Cons (#2.1 p, insert (#2.2 p) n) in insert) : NatList -> Nat -> NatList))
+  ((let compare = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      case n2 of
+        Z _ -> 
+          EQ
+
+        S _ -> 
+          LT
+
+    S m1 -> 
+      case n2 of
+        Z _ -> 
+          GT
+
+        S m2 -> 
+          compare m1 m2 in compare) : Nat -> Nat -> Cmp)
+0.015001 true true
+
+[] -> [];
+[0] -> [0];
+[1] -> [1];
+[1, 1] -> [1];
+[0, 1, 1] -> [0, 1];
+=================================
+(\compare -> (\insert -> (\list_sort_sorted_insert -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_sort_sorted_insert = \xs -> case xs of
+    Nil y1 -> 
+      xs
+
+    Cons y1 -> 
+      insert (list_sort_sorted_insert (#2.2 y1)) (#2.1 y1) in list_sort_sorted_insert) : NatList -> NatList))
+  ((let insert = \xs -> \n -> case xs of
+    Nil _ -> 
+      [n]
+
+    Cons p -> 
+      case compare n (#2.1 p) of
+        LT _ -> 
+          Cons (n, Cons (#2.1 p, #2.2 p))
+
+        EQ _ -> 
+          xs
+
+        GT _ -> 
+          Cons (#2.1 p, insert (#2.2 p) n) in insert) : NatList -> Nat -> NatList))
+  ((let compare = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      case n2 of
+        Z _ -> 
+          EQ
+
+        S _ -> 
+          LT
+
+    S m1 -> 
+      case n2 of
+        Z _ -> 
+          GT
+
+        S m2 -> 
+          compare m1 m2 in compare) : Nat -> Nat -> Cmp)
+(\compare -> (\insert -> (\list_sort_sorted_insert -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_sort_sorted_insert = \xs -> case xs of
+    Nil y1 -> 
+      xs
+
+    Cons y1 -> 
+      insert (list_sort_sorted_insert (#2.2 y1)) (#2.1 y1) in list_sort_sorted_insert) : NatList -> NatList))
+  ((let insert = \xs -> \n -> case xs of
+    Nil _ -> 
+      [n]
+
+    Cons p -> 
+      case compare n (#2.1 p) of
+        LT _ -> 
+          Cons (n, Cons (#2.1 p, #2.2 p))
+
+        EQ _ -> 
+          xs
+
+        GT _ -> 
+          Cons (#2.1 p, insert (#2.2 p) n) in insert) : NatList -> Nat -> NatList))
+  ((let compare = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      case n2 of
+        Z _ -> 
+          EQ
+
+        S _ -> 
+          LT
+
+    S m1 -> 
+      case n2 of
+        Z _ -> 
+          GT
+
+        S m2 -> 
+          compare m1 m2 in compare) : Nat -> Nat -> Cmp)
+0.025938 true true
+
+[] -> [];
+[1] -> [1];
+[0, 0] -> [0];
+[1, 0] -> [0, 1];
+[1, 1] -> [1];
+=================================
+(\compare -> (\insert -> (\list_sort_sorted_insert -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_sort_sorted_insert = \xs -> case xs of
+    Nil y1 -> 
+      []
+
+    Cons y1 -> 
+      insert (#2.2 y1) (#2.1 y1) in list_sort_sorted_insert) : NatList -> NatList))
+  ((let insert = \xs -> \n -> case xs of
+    Nil _ -> 
+      [n]
+
+    Cons p -> 
+      case compare n (#2.1 p) of
+        LT _ -> 
+          Cons (n, Cons (#2.1 p, #2.2 p))
+
+        EQ _ -> 
+          xs
+
+        GT _ -> 
+          Cons (#2.1 p, insert (#2.2 p) n) in insert) : NatList -> Nat -> NatList))
+  ((let compare = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      case n2 of
+        Z _ -> 
+          EQ
+
+        S _ -> 
+          LT
+
+    S m1 -> 
+      case n2 of
+        Z _ -> 
+          GT
+
+        S m2 -> 
+          compare m1 m2 in compare) : Nat -> Nat -> Cmp)
+(\compare -> (\insert -> (\list_sort_sorted_insert -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_sort_sorted_insert = \xs -> case xs of
+    Nil y1 -> 
+      xs
+
+    Cons y1 -> 
+      insert (list_sort_sorted_insert (#2.2 y1)) (#2.1 y1) in list_sort_sorted_insert) : NatList -> NatList))
+  ((let insert = \xs -> \n -> case xs of
+    Nil _ -> 
+      [n]
+
+    Cons p -> 
+      case compare n (#2.1 p) of
+        LT _ -> 
+          Cons (n, Cons (#2.1 p, #2.2 p))
+
+        EQ _ -> 
+          xs
+
+        GT _ -> 
+          Cons (#2.1 p, insert (#2.2 p) n) in insert) : NatList -> Nat -> NatList))
+  ((let compare = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      case n2 of
+        Z _ -> 
+          EQ
+
+        S _ -> 
+          LT
+
+    S m1 -> 
+      case n2 of
+        Z _ -> 
+          GT
+
+        S m2 -> 
+          compare m1 m2 in compare) : Nat -> Nat -> Cmp)
+0.013886 false true
+
+[] -> [];
+[0] -> [0];
+[0, 0] -> [0];
+[1, 0] -> [0, 1];
+[0, 1, 1] -> [0, 1];
+=================================
+(\compare -> (\insert -> (\list_sort_sorted_insert -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_sort_sorted_insert = \xs -> case xs of
+    Nil y1 -> 
+      xs
+
+    Cons y1 -> 
+      insert (list_sort_sorted_insert (#2.2 y1)) (#2.1 y1) in list_sort_sorted_insert) : NatList -> NatList))
+  ((let insert = \xs -> \n -> case xs of
+    Nil _ -> 
+      [n]
+
+    Cons p -> 
+      case compare n (#2.1 p) of
+        LT _ -> 
+          Cons (n, Cons (#2.1 p, #2.2 p))
+
+        EQ _ -> 
+          xs
+
+        GT _ -> 
+          Cons (#2.1 p, insert (#2.2 p) n) in insert) : NatList -> Nat -> NatList))
+  ((let compare = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      case n2 of
+        Z _ -> 
+          EQ
+
+        S _ -> 
+          LT
+
+    S m1 -> 
+      case n2 of
+        Z _ -> 
+          GT
+
+        S m2 -> 
+          compare m1 m2 in compare) : Nat -> Nat -> Cmp)
+(\compare -> (\insert -> (\list_sort_sorted_insert -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_sort_sorted_insert = \xs -> case xs of
+    Nil y1 -> 
+      xs
+
+    Cons y1 -> 
+      insert (list_sort_sorted_insert (#2.2 y1)) (#2.1 y1) in list_sort_sorted_insert) : NatList -> NatList))
+  ((let insert = \xs -> \n -> case xs of
+    Nil _ -> 
+      [n]
+
+    Cons p -> 
+      case compare n (#2.1 p) of
+        LT _ -> 
+          Cons (n, Cons (#2.1 p, #2.2 p))
+
+        EQ _ -> 
+          xs
+
+        GT _ -> 
+          Cons (#2.1 p, insert (#2.2 p) n) in insert) : NatList -> Nat -> NatList))
+  ((let compare = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      case n2 of
+        Z _ -> 
+          EQ
+
+        S _ -> 
+          LT
+
+    S m1 -> 
+      case n2 of
+        Z _ -> 
+          GT
+
+        S m2 -> 
+          compare m1 m2 in compare) : Nat -> Nat -> Cmp)
+0.0174609999999 true true
+
+[] -> [];
+[0] -> [0];
+[0, 0] -> [0];
+[1, 1] -> [1];
+[0, 1, 1] -> [0, 1];
+=================================
+(\compare -> (\insert -> (\list_sort_sorted_insert -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_sort_sorted_insert = \xs -> case xs of
+    Nil y1 -> 
+      xs
+
+    Cons y1 -> 
+      insert (list_sort_sorted_insert (#2.2 y1)) (#2.1 y1) in list_sort_sorted_insert) : NatList -> NatList))
+  ((let insert = \xs -> \n -> case xs of
+    Nil _ -> 
+      [n]
+
+    Cons p -> 
+      case compare n (#2.1 p) of
+        LT _ -> 
+          Cons (n, Cons (#2.1 p, #2.2 p))
+
+        EQ _ -> 
+          xs
+
+        GT _ -> 
+          Cons (#2.1 p, insert (#2.2 p) n) in insert) : NatList -> Nat -> NatList))
+  ((let compare = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      case n2 of
+        Z _ -> 
+          EQ
+
+        S _ -> 
+          LT
+
+    S m1 -> 
+      case n2 of
+        Z _ -> 
+          GT
+
+        S m2 -> 
+          compare m1 m2 in compare) : Nat -> Nat -> Cmp)
+(\compare -> (\insert -> (\list_sort_sorted_insert -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_sort_sorted_insert = \xs -> case xs of
+    Nil y1 -> 
+      xs
+
+    Cons y1 -> 
+      insert (list_sort_sorted_insert (#2.2 y1)) (#2.1 y1) in list_sort_sorted_insert) : NatList -> NatList))
+  ((let insert = \xs -> \n -> case xs of
+    Nil _ -> 
+      [n]
+
+    Cons p -> 
+      case compare n (#2.1 p) of
+        LT _ -> 
+          Cons (n, Cons (#2.1 p, #2.2 p))
+
+        EQ _ -> 
+          xs
+
+        GT _ -> 
+          Cons (#2.1 p, insert (#2.2 p) n) in insert) : NatList -> Nat -> NatList))
+  ((let compare = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      case n2 of
+        Z _ -> 
+          EQ
+
+        S _ -> 
+          LT
+
+    S m1 -> 
+      case n2 of
+        Z _ -> 
+          GT
+
+        S m2 -> 
+          compare m1 m2 in compare) : Nat -> Nat -> Cmp)
+0.0178189999999 true true
+
+[0] -> [0];
+[1] -> [1];
+[1, 0] -> [0, 1];
+[1, 1] -> [1];
+[0, 1, 1] -> [0, 1];
+=================================
+NOSOL
+
+[] -> [];
+[0] -> [0];
+[1] -> [1];
+[0, 0] -> [0];
+[1, 0] -> [0, 1];
+[1, 1] -> [1];
+=================================
+(\compare -> (\insert -> (\list_sort_sorted_insert -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_sort_sorted_insert = \xs -> case xs of
+    Nil y1 -> 
+      []
+
+    Cons y1 -> 
+      insert (#2.2 y1) (#2.1 y1) in list_sort_sorted_insert) : NatList -> NatList))
+  ((let insert = \xs -> \n -> case xs of
+    Nil _ -> 
+      [n]
+
+    Cons p -> 
+      case compare n (#2.1 p) of
+        LT _ -> 
+          Cons (n, Cons (#2.1 p, #2.2 p))
+
+        EQ _ -> 
+          xs
+
+        GT _ -> 
+          Cons (#2.1 p, insert (#2.2 p) n) in insert) : NatList -> Nat -> NatList))
+  ((let compare = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      case n2 of
+        Z _ -> 
+          EQ
+
+        S _ -> 
+          LT
+
+    S m1 -> 
+      case n2 of
+        Z _ -> 
+          GT
+
+        S m2 -> 
+          compare m1 m2 in compare) : Nat -> Nat -> Cmp)
+(\compare -> (\insert -> (\list_sort_sorted_insert -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_sort_sorted_insert = \xs -> case xs of
+    Nil y1 -> 
+      xs
+
+    Cons y1 -> 
+      insert (list_sort_sorted_insert (#2.2 y1)) (#2.1 y1) in list_sort_sorted_insert) : NatList -> NatList))
+  ((let insert = \xs -> \n -> case xs of
+    Nil _ -> 
+      [n]
+
+    Cons p -> 
+      case compare n (#2.1 p) of
+        LT _ -> 
+          Cons (n, Cons (#2.1 p, #2.2 p))
+
+        EQ _ -> 
+          xs
+
+        GT _ -> 
+          Cons (#2.1 p, insert (#2.2 p) n) in insert) : NatList -> Nat -> NatList))
+  ((let compare = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      case n2 of
+        Z _ -> 
+          EQ
+
+        S _ -> 
+          LT
+
+    S m1 -> 
+      case n2 of
+        Z _ -> 
+          GT
+
+        S m2 -> 
+          compare m1 m2 in compare) : Nat -> Nat -> Cmp)
+0.014954 false true
+
+[] -> [];
+[0] -> [0];
+[1] -> [1];
+[0, 0] -> [0];
+[1, 0] -> [0, 1];
+[0, 1, 1] -> [0, 1];
+=================================
+(\compare -> (\insert -> (\list_sort_sorted_insert -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_sort_sorted_insert = \xs -> case xs of
+    Nil y1 -> 
+      xs
+
+    Cons y1 -> 
+      insert (list_sort_sorted_insert (#2.2 y1)) (#2.1 y1) in list_sort_sorted_insert) : NatList -> NatList))
+  ((let insert = \xs -> \n -> case xs of
+    Nil _ -> 
+      [n]
+
+    Cons p -> 
+      case compare n (#2.1 p) of
+        LT _ -> 
+          Cons (n, Cons (#2.1 p, #2.2 p))
+
+        EQ _ -> 
+          xs
+
+        GT _ -> 
+          Cons (#2.1 p, insert (#2.2 p) n) in insert) : NatList -> Nat -> NatList))
+  ((let compare = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      case n2 of
+        Z _ -> 
+          EQ
+
+        S _ -> 
+          LT
+
+    S m1 -> 
+      case n2 of
+        Z _ -> 
+          GT
+
+        S m2 -> 
+          compare m1 m2 in compare) : Nat -> Nat -> Cmp)
+(\compare -> (\insert -> (\list_sort_sorted_insert -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_sort_sorted_insert = \xs -> case xs of
+    Nil y1 -> 
+      xs
+
+    Cons y1 -> 
+      insert (list_sort_sorted_insert (#2.2 y1)) (#2.1 y1) in list_sort_sorted_insert) : NatList -> NatList))
+  ((let insert = \xs -> \n -> case xs of
+    Nil _ -> 
+      [n]
+
+    Cons p -> 
+      case compare n (#2.1 p) of
+        LT _ -> 
+          Cons (n, Cons (#2.1 p, #2.2 p))
+
+        EQ _ -> 
+          xs
+
+        GT _ -> 
+          Cons (#2.1 p, insert (#2.2 p) n) in insert) : NatList -> Nat -> NatList))
+  ((let compare = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      case n2 of
+        Z _ -> 
+          EQ
+
+        S _ -> 
+          LT
+
+    S m1 -> 
+      case n2 of
+        Z _ -> 
+          GT
+
+        S m2 -> 
+          compare m1 m2 in compare) : Nat -> Nat -> Cmp)
+0.0147959999999 true true
+
+[] -> [];
+[0] -> [0];
+[1] -> [1];
+[0, 0] -> [0];
+[1, 1] -> [1];
+[0, 1, 1] -> [0, 1];
+=================================
+(\compare -> (\insert -> (\list_sort_sorted_insert -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_sort_sorted_insert = \xs -> case xs of
+    Nil y1 -> 
+      xs
+
+    Cons y1 -> 
+      insert (list_sort_sorted_insert (#2.2 y1)) (#2.1 y1) in list_sort_sorted_insert) : NatList -> NatList))
+  ((let insert = \xs -> \n -> case xs of
+    Nil _ -> 
+      [n]
+
+    Cons p -> 
+      case compare n (#2.1 p) of
+        LT _ -> 
+          Cons (n, Cons (#2.1 p, #2.2 p))
+
+        EQ _ -> 
+          xs
+
+        GT _ -> 
+          Cons (#2.1 p, insert (#2.2 p) n) in insert) : NatList -> Nat -> NatList))
+  ((let compare = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      case n2 of
+        Z _ -> 
+          EQ
+
+        S _ -> 
+          LT
+
+    S m1 -> 
+      case n2 of
+        Z _ -> 
+          GT
+
+        S m2 -> 
+          compare m1 m2 in compare) : Nat -> Nat -> Cmp)
+(\compare -> (\insert -> (\list_sort_sorted_insert -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_sort_sorted_insert = \xs -> case xs of
+    Nil y1 -> 
+      xs
+
+    Cons y1 -> 
+      insert (list_sort_sorted_insert (#2.2 y1)) (#2.1 y1) in list_sort_sorted_insert) : NatList -> NatList))
+  ((let insert = \xs -> \n -> case xs of
+    Nil _ -> 
+      [n]
+
+    Cons p -> 
+      case compare n (#2.1 p) of
+        LT _ -> 
+          Cons (n, Cons (#2.1 p, #2.2 p))
+
+        EQ _ -> 
+          xs
+
+        GT _ -> 
+          Cons (#2.1 p, insert (#2.2 p) n) in insert) : NatList -> Nat -> NatList))
+  ((let compare = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      case n2 of
+        Z _ -> 
+          EQ
+
+        S _ -> 
+          LT
+
+    S m1 -> 
+      case n2 of
+        Z _ -> 
+          GT
+
+        S m2 -> 
+          compare m1 m2 in compare) : Nat -> Nat -> Cmp)
+0.017163 true true
+
+[] -> [];
+[0] -> [0];
+[1] -> [1];
+[1, 0] -> [0, 1];
+[1, 1] -> [1];
+[0, 1, 1] -> [0, 1];
+=================================
+(\compare -> (\insert -> (\list_sort_sorted_insert -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_sort_sorted_insert = \xs -> case xs of
+    Nil y1 -> 
+      xs
+
+    Cons y1 -> 
+      insert (list_sort_sorted_insert (#2.2 y1)) (#2.1 y1) in list_sort_sorted_insert) : NatList -> NatList))
+  ((let insert = \xs -> \n -> case xs of
+    Nil _ -> 
+      [n]
+
+    Cons p -> 
+      case compare n (#2.1 p) of
+        LT _ -> 
+          Cons (n, Cons (#2.1 p, #2.2 p))
+
+        EQ _ -> 
+          xs
+
+        GT _ -> 
+          Cons (#2.1 p, insert (#2.2 p) n) in insert) : NatList -> Nat -> NatList))
+  ((let compare = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      case n2 of
+        Z _ -> 
+          EQ
+
+        S _ -> 
+          LT
+
+    S m1 -> 
+      case n2 of
+        Z _ -> 
+          GT
+
+        S m2 -> 
+          compare m1 m2 in compare) : Nat -> Nat -> Cmp)
+(\compare -> (\insert -> (\list_sort_sorted_insert -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_sort_sorted_insert = \xs -> case xs of
+    Nil y1 -> 
+      xs
+
+    Cons y1 -> 
+      insert (list_sort_sorted_insert (#2.2 y1)) (#2.1 y1) in list_sort_sorted_insert) : NatList -> NatList))
+  ((let insert = \xs -> \n -> case xs of
+    Nil _ -> 
+      [n]
+
+    Cons p -> 
+      case compare n (#2.1 p) of
+        LT _ -> 
+          Cons (n, Cons (#2.1 p, #2.2 p))
+
+        EQ _ -> 
+          xs
+
+        GT _ -> 
+          Cons (#2.1 p, insert (#2.2 p) n) in insert) : NatList -> Nat -> NatList))
+  ((let compare = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      case n2 of
+        Z _ -> 
+          EQ
+
+        S _ -> 
+          LT
+
+    S m1 -> 
+      case n2 of
+        Z _ -> 
+          GT
+
+        S m2 -> 
+          compare m1 m2 in compare) : Nat -> Nat -> Cmp)
+0.014586 true true
+
+[] -> [];
+[0] -> [0];
+[0, 0] -> [0];
+[1, 0] -> [0, 1];
+[1, 1] -> [1];
+[0, 1, 1] -> [0, 1];
+=================================
+(\compare -> (\insert -> (\list_sort_sorted_insert -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_sort_sorted_insert = \xs -> case xs of
+    Nil y1 -> 
+      xs
+
+    Cons y1 -> 
+      insert (list_sort_sorted_insert (#2.2 y1)) (#2.1 y1) in list_sort_sorted_insert) : NatList -> NatList))
+  ((let insert = \xs -> \n -> case xs of
+    Nil _ -> 
+      [n]
+
+    Cons p -> 
+      case compare n (#2.1 p) of
+        LT _ -> 
+          Cons (n, Cons (#2.1 p, #2.2 p))
+
+        EQ _ -> 
+          xs
+
+        GT _ -> 
+          Cons (#2.1 p, insert (#2.2 p) n) in insert) : NatList -> Nat -> NatList))
+  ((let compare = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      case n2 of
+        Z _ -> 
+          EQ
+
+        S _ -> 
+          LT
+
+    S m1 -> 
+      case n2 of
+        Z _ -> 
+          GT
+
+        S m2 -> 
+          compare m1 m2 in compare) : Nat -> Nat -> Cmp)
+(\compare -> (\insert -> (\list_sort_sorted_insert -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_sort_sorted_insert = \xs -> case xs of
+    Nil y1 -> 
+      xs
+
+    Cons y1 -> 
+      insert (list_sort_sorted_insert (#2.2 y1)) (#2.1 y1) in list_sort_sorted_insert) : NatList -> NatList))
+  ((let insert = \xs -> \n -> case xs of
+    Nil _ -> 
+      [n]
+
+    Cons p -> 
+      case compare n (#2.1 p) of
+        LT _ -> 
+          Cons (n, Cons (#2.1 p, #2.2 p))
+
+        EQ _ -> 
+          xs
+
+        GT _ -> 
+          Cons (#2.1 p, insert (#2.2 p) n) in insert) : NatList -> Nat -> NatList))
+  ((let compare = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      case n2 of
+        Z _ -> 
+          EQ
+
+        S _ -> 
+          LT
+
+    S m1 -> 
+      case n2 of
+        Z _ -> 
+          GT
+
+        S m2 -> 
+          compare m1 m2 in compare) : Nat -> Nat -> Cmp)
+0.0148879999999 true true
+
+[] -> [];
+[1] -> [1];
+[0, 0] -> [0];
+[1, 0] -> [0, 1];
+[1, 1] -> [1];
+[0, 1, 1] -> [0, 1];
+=================================
+(\compare -> (\insert -> (\list_sort_sorted_insert -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_sort_sorted_insert = \xs -> case xs of
+    Nil y1 -> 
+      xs
+
+    Cons y1 -> 
+      insert (list_sort_sorted_insert (#2.2 y1)) (#2.1 y1) in list_sort_sorted_insert) : NatList -> NatList))
+  ((let insert = \xs -> \n -> case xs of
+    Nil _ -> 
+      [n]
+
+    Cons p -> 
+      case compare n (#2.1 p) of
+        LT _ -> 
+          Cons (n, Cons (#2.1 p, #2.2 p))
+
+        EQ _ -> 
+          xs
+
+        GT _ -> 
+          Cons (#2.1 p, insert (#2.2 p) n) in insert) : NatList -> Nat -> NatList))
+  ((let compare = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      case n2 of
+        Z _ -> 
+          EQ
+
+        S _ -> 
+          LT
+
+    S m1 -> 
+      case n2 of
+        Z _ -> 
+          GT
+
+        S m2 -> 
+          compare m1 m2 in compare) : Nat -> Nat -> Cmp)
+(\compare -> (\insert -> (\list_sort_sorted_insert -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_sort_sorted_insert = \xs -> case xs of
+    Nil y1 -> 
+      xs
+
+    Cons y1 -> 
+      insert (list_sort_sorted_insert (#2.2 y1)) (#2.1 y1) in list_sort_sorted_insert) : NatList -> NatList))
+  ((let insert = \xs -> \n -> case xs of
+    Nil _ -> 
+      [n]
+
+    Cons p -> 
+      case compare n (#2.1 p) of
+        LT _ -> 
+          Cons (n, Cons (#2.1 p, #2.2 p))
+
+        EQ _ -> 
+          xs
+
+        GT _ -> 
+          Cons (#2.1 p, insert (#2.2 p) n) in insert) : NatList -> Nat -> NatList))
+  ((let compare = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      case n2 of
+        Z _ -> 
+          EQ
+
+        S _ -> 
+          LT
+
+    S m1 -> 
+      case n2 of
+        Z _ -> 
+          GT
+
+        S m2 -> 
+          compare m1 m2 in compare) : Nat -> Nat -> Cmp)
+0.016343 true true
+
+[0] -> [0];
+[1] -> [1];
+[0, 0] -> [0];
+[1, 0] -> [0, 1];
+[1, 1] -> [1];
+[0, 1, 1] -> [0, 1];
+=================================
+NOSOL
+
+[] -> [];
+[0] -> [0];
+[1] -> [1];
+[0, 0] -> [0];
+[1, 0] -> [0, 1];
+[1, 1] -> [1];
+[0, 1, 1] -> [0, 1];
+=================================
+(\compare -> (\insert -> (\list_sort_sorted_insert -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_sort_sorted_insert = \xs -> case xs of
+    Nil y1 -> 
+      xs
+
+    Cons y1 -> 
+      insert (list_sort_sorted_insert (#2.2 y1)) (#2.1 y1) in list_sort_sorted_insert) : NatList -> NatList))
+  ((let insert = \xs -> \n -> case xs of
+    Nil _ -> 
+      [n]
+
+    Cons p -> 
+      case compare n (#2.1 p) of
+        LT _ -> 
+          Cons (n, Cons (#2.1 p, #2.2 p))
+
+        EQ _ -> 
+          xs
+
+        GT _ -> 
+          Cons (#2.1 p, insert (#2.2 p) n) in insert) : NatList -> Nat -> NatList))
+  ((let compare = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      case n2 of
+        Z _ -> 
+          EQ
+
+        S _ -> 
+          LT
+
+    S m1 -> 
+      case n2 of
+        Z _ -> 
+          GT
+
+        S m2 -> 
+          compare m1 m2 in compare) : Nat -> Nat -> Cmp)
+(\compare -> (\insert -> (\list_sort_sorted_insert -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_sort_sorted_insert = \xs -> case xs of
+    Nil y1 -> 
+      xs
+
+    Cons y1 -> 
+      insert (list_sort_sorted_insert (#2.2 y1)) (#2.1 y1) in list_sort_sorted_insert) : NatList -> NatList))
+  ((let insert = \xs -> \n -> case xs of
+    Nil _ -> 
+      [n]
+
+    Cons p -> 
+      case compare n (#2.1 p) of
+        LT _ -> 
+          Cons (n, Cons (#2.1 p, #2.2 p))
+
+        EQ _ -> 
+          xs
+
+        GT _ -> 
+          Cons (#2.1 p, insert (#2.2 p) n) in insert) : NatList -> Nat -> NatList))
+  ((let compare = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      case n2 of
+        Z _ -> 
+          EQ
+
+        S _ -> 
+          LT
+
+    S m1 -> 
+      case n2 of
+        Z _ -> 
+          GT
+
+        S m2 -> 
+          compare m1 m2 in compare) : Nat -> Nat -> Cmp)
+0.0169490000001 true true
+

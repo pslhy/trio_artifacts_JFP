@@ -1,0 +1,176 @@
+0 -> T ();
+=================================
+(\nat_iseven -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ((let nat_iseven = \n -> T in nat_iseven) : Nat -> Boolean)
+0.00320899999997 false false
+
+1 -> F ();
+=================================
+(\nat_iseven -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ((let nat_iseven = \n -> F in nat_iseven) : Nat -> Boolean)
+0.0023020000001 false false
+
+2 -> T ();
+=================================
+(\nat_iseven -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ((let nat_iseven = \n -> T in nat_iseven) : Nat -> Boolean)
+0.00274100000001 false false
+
+3 -> F ();
+=================================
+(\nat_iseven -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ((let nat_iseven = \n -> F in nat_iseven) : Nat -> Boolean)
+0.00231899999994 false false
+
+0 -> T ();
+1 -> F ();
+=================================
+(\nat_iseven -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let nat_iseven = \n -> case n of
+    Z y1 -> 
+      T
+
+    S y1 -> 
+      F in nat_iseven) : Nat -> Boolean)
+0.00471999999991 false false
+
+0 -> T ();
+2 -> T ();
+=================================
+(\nat_iseven -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ((let nat_iseven = \n -> T in nat_iseven) : Nat -> Boolean)
+0.00233099999991 false false
+
+0 -> T ();
+3 -> F ();
+=================================
+(\nat_iseven -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let nat_iseven = \n -> case n of
+    Z y1 -> 
+      T
+
+    S y1 -> 
+      F in nat_iseven) : Nat -> Boolean)
+0.00473800000009 false false
+
+1 -> F ();
+2 -> T ();
+=================================
+NOSOL
+
+1 -> F ();
+3 -> F ();
+=================================
+(\nat_iseven -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ((let nat_iseven = \n -> F in nat_iseven) : Nat -> Boolean)
+0.00329600000009 false false
+
+2 -> T ();
+3 -> F ();
+=================================
+NOSOL
+
+0 -> T ();
+1 -> F ();
+2 -> T ();
+=================================
+(\nat_iseven -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let nat_iseven = \n -> case n of
+    Z y1 -> 
+      T
+
+    S y1 -> 
+      case y1 of
+        Z y2 -> 
+          F
+
+        S y2 -> 
+          T in nat_iseven) : Nat -> Boolean)
+(\nat_iseven -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let nat_iseven = \n -> case n of
+    Z y1 -> 
+      T
+
+    S y1 -> 
+      case y1 of
+        Z y2 -> 
+          F
+
+        S y2 -> 
+          nat_iseven y2 in nat_iseven) : Nat -> Boolean)
+0.00461399999995 false true
+
+0 -> T ();
+1 -> F ();
+3 -> F ();
+=================================
+(\nat_iseven -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let nat_iseven = \n -> case n of
+    Z y1 -> 
+      T
+
+    S y1 -> 
+      F in nat_iseven) : Nat -> Boolean)
+0.00305800000001 false false
+
+0 -> T ();
+2 -> T ();
+3 -> F ();
+=================================
+(\nat_iseven -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let nat_iseven = \n -> case n of
+    Z y1 -> 
+      T
+
+    S y1 -> 
+      case nat_iseven y1 of
+        T y2 -> 
+          F
+
+        F y2 -> 
+          T in nat_iseven) : Nat -> Boolean)
+(\nat_iseven -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let nat_iseven = \n -> case n of
+    Z y1 -> 
+      T
+
+    S y1 -> 
+      case nat_iseven y1 of
+        T y2 -> 
+          F
+
+        F y2 -> 
+          T in nat_iseven) : Nat -> Boolean)
+0.00743499999999 true true
+
+1 -> F ();
+2 -> T ();
+3 -> F ();
+=================================
+NOSOL
+
+0 -> T ();
+1 -> F ();
+2 -> T ();
+3 -> F ();
+=================================
+(\nat_iseven -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let nat_iseven = \n -> case n of
+    Z y1 -> 
+      T
+
+    S y1 -> 
+      case y1 of
+        Z y2 -> 
+          F
+
+        S y2 -> 
+          nat_iseven y2 in nat_iseven) : Nat -> Boolean)
+(\nat_iseven -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let nat_iseven = \n -> case n of
+    Z y1 -> 
+      T
+
+    S y1 -> 
+      case y1 of
+        Z y2 -> 
+          F
+
+        S y2 -> 
+          nat_iseven y2 in nat_iseven) : Nat -> Boolean)
+0.00723599999992 true true
+

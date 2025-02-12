@@ -1,0 +1,50 @@
+type token =
+    WITH
+  | WILDCARD
+  | VAL
+  | UNIT
+  | UID of string
+  | TYPE
+  | SYNTH
+  | STR of string
+  | STAR
+  | SIG
+  | SEMI
+  | SATISFYING
+  | RPAREN
+  | RBRACKET
+  | PIPE
+  | OF
+  | NEQ
+  | MU
+  | MATCH
+  | LPAREN
+  | LID of string
+  | LET
+  | LBRACKET
+  | INT of int
+  | INCLUDE
+  | FUN
+  | FORALL
+  | FIX
+  | FATEQ
+  | EQUIV
+  | EQ
+  | EOF
+  | END
+  | DOT
+  | COMMA
+  | COLON
+  | BINDING
+  | ARR
+val mk_ctor_by_name : string -> Lang.exp list -> Lang.exp
+val mk_type_by_name : string -> Lang.typ
+val mk_param_type_by_name : string -> Lang.typ -> Lang.typ
+val rev_exps_to_exp : ?acc:Lang.exp -> Lang.exp list -> Lang.exp
+val menhir_begin_marker : int
+val xv_nonempty_examples : (Lang.exp * Lang.exp) list
+val xv_exp_comma_list_one : Lang.exp list
+val xv_exp : Lang.exp
+val xv_examples : (Lang.exp * Lang.exp) list
+val xv_example : Lang.exp * Lang.exp
+val menhir_end_marker : int

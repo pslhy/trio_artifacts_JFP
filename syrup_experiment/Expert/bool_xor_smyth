@@ -1,0 +1,144 @@
+(T (), T ()) -> F ();
+=================================
+(\bool_xor -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ((let bool_xor = \p -> \q -> F in bool_xor) : Boolean -> Boolean -> Boolean)
+0.00701600000002 false false
+
+(T (), F ()) -> T ();
+=================================
+(\bool_xor -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ((let bool_xor = \p -> \q -> T in bool_xor) : Boolean -> Boolean -> Boolean)
+0.00681600000007 false false
+
+(F (), T ()) -> T ();
+=================================
+(\bool_xor -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ((let bool_xor = \p -> \q -> T in bool_xor) : Boolean -> Boolean -> Boolean)
+0.006889 false false
+
+(F (), F ()) -> F ();
+=================================
+(\bool_xor -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ((let bool_xor = \p -> \q -> F in bool_xor) : Boolean -> Boolean -> Boolean)
+0.00898200000006 false false
+
+(T (), T ()) -> F ();
+(T (), F ()) -> T ();
+=================================
+(\bool_xor -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let bool_xor = \p -> \q -> case q of
+    T y1 -> 
+      F
+
+    F y1 -> 
+      T in bool_xor) : Boolean -> Boolean -> Boolean)
+0.00742100000002 false false
+
+(T (), T ()) -> F ();
+(F (), T ()) -> T ();
+=================================
+(\bool_xor -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let bool_xor = \p -> \q -> case p of
+    T y1 -> 
+      F
+
+    F y1 -> 
+      T in bool_xor) : Boolean -> Boolean -> Boolean)
+0.00798499999996 false false
+
+(T (), T ()) -> F ();
+(F (), F ()) -> F ();
+=================================
+(\bool_xor -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ((let bool_xor = \p -> \q -> F in bool_xor) : Boolean -> Boolean -> Boolean)
+0.00703199999998 false false
+
+(T (), F ()) -> T ();
+(F (), T ()) -> T ();
+=================================
+(\bool_xor -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ((let bool_xor = \p -> \q -> T in bool_xor) : Boolean -> Boolean -> Boolean)
+0.00715700000001 false false
+
+(T (), F ()) -> T ();
+(F (), F ()) -> F ();
+=================================
+(\bool_xor -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ((let bool_xor = \p -> \q -> p in bool_xor) : Boolean -> Boolean -> Boolean)
+0.00893199999996 false false
+
+(F (), T ()) -> T ();
+(F (), F ()) -> F ();
+=================================
+(\bool_xor -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ((let bool_xor = \p -> \q -> q in bool_xor) : Boolean -> Boolean -> Boolean)
+0.00762099999997 false false
+
+(T (), T ()) -> F ();
+(T (), F ()) -> T ();
+(F (), T ()) -> T ();
+=================================
+(\bool_xor -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let bool_xor = \p -> \q -> case p of
+    T y1 -> 
+      case q of
+        T y2 -> 
+          F
+
+        F y2 -> 
+          T
+
+    F y1 -> 
+      T in bool_xor) : Boolean -> Boolean -> Boolean)
+0.029258 false false
+
+(T (), T ()) -> F ();
+(T (), F ()) -> T ();
+(F (), F ()) -> F ();
+=================================
+(\bool_xor -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let bool_xor = \p -> \q -> case q of
+    T y1 -> 
+      F
+
+    F y1 -> 
+      p in bool_xor) : Boolean -> Boolean -> Boolean)
+0.0167389999999 false false
+
+(T (), T ()) -> F ();
+(F (), T ()) -> T ();
+(F (), F ()) -> F ();
+=================================
+(\bool_xor -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let bool_xor = \p -> \q -> case p of
+    T y1 -> 
+      F
+
+    F y1 -> 
+      q in bool_xor) : Boolean -> Boolean -> Boolean)
+0.00917200000004 false false
+
+(T (), F ()) -> T ();
+(F (), T ()) -> T ();
+(F (), F ()) -> F ();
+=================================
+(\bool_xor -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let bool_xor = \p -> \q -> case p of
+    T y1 -> 
+      T
+
+    F y1 -> 
+      q in bool_xor) : Boolean -> Boolean -> Boolean)
+0.0411449999999 false false
+
+(T (), T ()) -> F ();
+(T (), F ()) -> T ();
+(F (), T ()) -> T ();
+(F (), F ()) -> F ();
+=================================
+(\bool_xor -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let bool_xor = \p -> \q -> case p of
+    T y1 -> 
+      case q of
+        T y2 -> 
+          F
+
+        F y2 -> 
+          T
+
+    F y1 -> 
+      q in bool_xor) : Boolean -> Boolean -> Boolean)
+0.065634 true false
+

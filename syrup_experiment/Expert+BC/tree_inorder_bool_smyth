@@ -1,0 +1,1118 @@
+Node (Leaf (), T (), Leaf ()) -> [T ()];
+Leaf () -> [];
+=================================
+(\append -> (\tree_inorder_bool -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_inorder_bool = \tree -> case tree of
+    Node y1 -> 
+      [T]
+
+    Leaf y1 -> 
+      [] in tree_inorder_bool) : BooleanTree -> BooleanList))
+  ((let append = \l1 -> \l2 -> case l1 of
+    Nil _ -> 
+      l2
+
+    Cons p -> 
+      Cons (#2.1 p, append (#2.2 p) l2) in append) : BooleanList -> BooleanList -> BooleanList)
+(\append -> (\tree_inorder_bool -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_inorder_bool = \tree -> case tree of
+    Node y1 -> 
+      Cons (T, tree_inorder_bool (#3.1 y1))
+
+    Leaf y1 -> 
+      [] in tree_inorder_bool) : BooleanTree -> BooleanList))
+  ((let append = \l1 -> \l2 -> case l1 of
+    Nil _ -> 
+      l2
+
+    Cons p -> 
+      Cons (#2.1 p, append (#2.2 p) l2) in append) : BooleanList -> BooleanList -> BooleanList)
+0.012978 false false
+
+Node (Leaf (), F (), Leaf ()) -> [F ()];
+Leaf () -> [];
+=================================
+(\append -> (\tree_inorder_bool -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_inorder_bool = \tree -> case tree of
+    Node y1 -> 
+      [F]
+
+    Leaf y1 -> 
+      [] in tree_inorder_bool) : BooleanTree -> BooleanList))
+  ((let append = \l1 -> \l2 -> case l1 of
+    Nil _ -> 
+      l2
+
+    Cons p -> 
+      Cons (#2.1 p, append (#2.2 p) l2) in append) : BooleanList -> BooleanList -> BooleanList)
+(\append -> (\tree_inorder_bool -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_inorder_bool = \tree -> case tree of
+    Node y1 -> 
+      Cons (F, tree_inorder_bool (#3.1 y1))
+
+    Leaf y1 -> 
+      [] in tree_inorder_bool) : BooleanTree -> BooleanList))
+  ((let append = \l1 -> \l2 -> case l1 of
+    Nil _ -> 
+      l2
+
+    Cons p -> 
+      Cons (#2.1 p, append (#2.2 p) l2) in append) : BooleanList -> BooleanList -> BooleanList)
+0.012819 false false
+
+Node (Node (Leaf (), T (), Leaf ()), F (), Leaf ()) -> [T (), F ()];
+Leaf () -> [];
+=================================
+(\append -> (\tree_inorder_bool -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_inorder_bool = \tree -> case tree of
+    Node y1 -> 
+      [T, F]
+
+    Leaf y1 -> 
+      [] in tree_inorder_bool) : BooleanTree -> BooleanList))
+  ((let append = \l1 -> \l2 -> case l1 of
+    Nil _ -> 
+      l2
+
+    Cons p -> 
+      Cons (#2.1 p, append (#2.2 p) l2) in append) : BooleanList -> BooleanList -> BooleanList)
+(\append -> (\tree_inorder_bool -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_inorder_bool = \tree -> case tree of
+    Node y1 -> 
+      Cons
+        ( T
+        , Cons (F, tree_inorder_bool (#3.3 y1))
+        )
+
+    Leaf y1 -> 
+      [] in tree_inorder_bool) : BooleanTree -> BooleanList))
+  ((let append = \l1 -> \l2 -> case l1 of
+    Nil _ -> 
+      l2
+
+    Cons p -> 
+      Cons (#2.1 p, append (#2.2 p) l2) in append) : BooleanList -> BooleanList -> BooleanList)
+0.0139220000001 false false
+
+Node (Node (Leaf (), F (), Leaf ()), T (), Leaf ()) -> [F (), T ()];
+Leaf () -> [];
+=================================
+(\append -> (\tree_inorder_bool -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_inorder_bool = \tree -> case tree of
+    Node y1 -> 
+      [F, T]
+
+    Leaf y1 -> 
+      [] in tree_inorder_bool) : BooleanTree -> BooleanList))
+  ((let append = \l1 -> \l2 -> case l1 of
+    Nil _ -> 
+      l2
+
+    Cons p -> 
+      Cons (#2.1 p, append (#2.2 p) l2) in append) : BooleanList -> BooleanList -> BooleanList)
+(\append -> (\tree_inorder_bool -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_inorder_bool = \tree -> case tree of
+    Node y1 -> 
+      Cons
+        ( F
+        , Cons (T, tree_inorder_bool (#3.3 y1))
+        )
+
+    Leaf y1 -> 
+      [] in tree_inorder_bool) : BooleanTree -> BooleanList))
+  ((let append = \l1 -> \l2 -> case l1 of
+    Nil _ -> 
+      l2
+
+    Cons p -> 
+      Cons (#2.1 p, append (#2.2 p) l2) in append) : BooleanList -> BooleanList -> BooleanList)
+0.0149449999999 false false
+
+Node (Leaf (), F (), Node (Leaf (), T (), Leaf ())) -> [F (), T ()];
+Leaf () -> [];
+=================================
+(\append -> (\tree_inorder_bool -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_inorder_bool = \tree -> case tree of
+    Node y1 -> 
+      Cons
+        ( #3.2 y1
+        , tree_inorder_bool (#3.3 y1)
+        )
+
+    Leaf y1 -> 
+      [] in tree_inorder_bool) : BooleanTree -> BooleanList))
+  ((let append = \l1 -> \l2 -> case l1 of
+    Nil _ -> 
+      l2
+
+    Cons p -> 
+      Cons (#2.1 p, append (#2.2 p) l2) in append) : BooleanList -> BooleanList -> BooleanList)
+(\append -> (\tree_inorder_bool -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_inorder_bool = \tree -> case tree of
+    Node y1 -> 
+      Cons
+        ( #3.2 y1
+        , tree_inorder_bool (#3.3 y1)
+        )
+
+    Leaf y1 -> 
+      [] in tree_inorder_bool) : BooleanTree -> BooleanList))
+  ((let append = \l1 -> \l2 -> case l1 of
+    Nil _ -> 
+      l2
+
+    Cons p -> 
+      Cons (#2.1 p, append (#2.2 p) l2) in append) : BooleanList -> BooleanList -> BooleanList)
+0.0139919999999 false false
+
+Node (Leaf (), T (), Leaf ()) -> [T ()];
+Node (Leaf (), F (), Leaf ()) -> [F ()];
+Leaf () -> [];
+=================================
+(\append -> (\tree_inorder_bool -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_inorder_bool = \tree -> case tree of
+    Node y1 -> 
+      [#3.2 y1]
+
+    Leaf y1 -> 
+      [] in tree_inorder_bool) : BooleanTree -> BooleanList))
+  ((let append = \l1 -> \l2 -> case l1 of
+    Nil _ -> 
+      l2
+
+    Cons p -> 
+      Cons (#2.1 p, append (#2.2 p) l2) in append) : BooleanList -> BooleanList -> BooleanList)
+(\append -> (\tree_inorder_bool -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_inorder_bool = \tree -> case tree of
+    Node y1 -> 
+      Cons
+        ( #3.2 y1
+        , tree_inorder_bool (#3.1 y1)
+        )
+
+    Leaf y1 -> 
+      [] in tree_inorder_bool) : BooleanTree -> BooleanList))
+  ((let append = \l1 -> \l2 -> case l1 of
+    Nil _ -> 
+      l2
+
+    Cons p -> 
+      Cons (#2.1 p, append (#2.2 p) l2) in append) : BooleanList -> BooleanList -> BooleanList)
+0.0130380000001 false false
+
+Node (Leaf (), T (), Leaf ()) -> [T ()];
+Node (Node (Leaf (), T (), Leaf ()), F (), Leaf ()) -> [T (), F ()];
+Leaf () -> [];
+=================================
+(\append -> (\tree_inorder_bool -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_inorder_bool = \tree -> case tree of
+    Node y1 -> 
+      append (tree_inorder_bool (#3.1 y1)) [#3.2 y1]
+
+    Leaf y1 -> 
+      [] in tree_inorder_bool) : BooleanTree -> BooleanList))
+  ((let append = \l1 -> \l2 -> case l1 of
+    Nil _ -> 
+      l2
+
+    Cons p -> 
+      Cons (#2.1 p, append (#2.2 p) l2) in append) : BooleanList -> BooleanList -> BooleanList)
+(\append -> (\tree_inorder_bool -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_inorder_bool = \tree -> case tree of
+    Node y1 -> 
+      append (tree_inorder_bool (#3.1 y1)) [#3.2 y1]
+
+    Leaf y1 -> 
+      [] in tree_inorder_bool) : BooleanTree -> BooleanList))
+  ((let append = \l1 -> \l2 -> case l1 of
+    Nil _ -> 
+      l2
+
+    Cons p -> 
+      Cons (#2.1 p, append (#2.2 p) l2) in append) : BooleanList -> BooleanList -> BooleanList)
+0.117836 false false
+
+Node (Leaf (), T (), Leaf ()) -> [T ()];
+Node (Node (Leaf (), F (), Leaf ()), T (), Leaf ()) -> [F (), T ()];
+Leaf () -> [];
+=================================
+(\append -> (\tree_inorder_bool -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_inorder_bool = \tree -> case tree of
+    Node y1 -> 
+      append (tree_inorder_bool (#3.1 y1)) [#3.2 y1]
+
+    Leaf y1 -> 
+      [] in tree_inorder_bool) : BooleanTree -> BooleanList))
+  ((let append = \l1 -> \l2 -> case l1 of
+    Nil _ -> 
+      l2
+
+    Cons p -> 
+      Cons (#2.1 p, append (#2.2 p) l2) in append) : BooleanList -> BooleanList -> BooleanList)
+(\append -> (\tree_inorder_bool -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_inorder_bool = \tree -> case tree of
+    Node y1 -> 
+      append (tree_inorder_bool (#3.1 y1)) [#3.2 y1]
+
+    Leaf y1 -> 
+      [] in tree_inorder_bool) : BooleanTree -> BooleanList))
+  ((let append = \l1 -> \l2 -> case l1 of
+    Nil _ -> 
+      l2
+
+    Cons p -> 
+      Cons (#2.1 p, append (#2.2 p) l2) in append) : BooleanList -> BooleanList -> BooleanList)
+0.126742 false false
+
+Node (Leaf (), T (), Leaf ()) -> [T ()];
+Node (Leaf (), F (), Node (Leaf (), T (), Leaf ())) -> [F (), T ()];
+Leaf () -> [];
+=================================
+(\append -> (\tree_inorder_bool -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_inorder_bool = \tree -> case tree of
+    Node y1 -> 
+      Cons
+        ( #3.2 y1
+        , tree_inorder_bool (#3.3 y1)
+        )
+
+    Leaf y1 -> 
+      [] in tree_inorder_bool) : BooleanTree -> BooleanList))
+  ((let append = \l1 -> \l2 -> case l1 of
+    Nil _ -> 
+      l2
+
+    Cons p -> 
+      Cons (#2.1 p, append (#2.2 p) l2) in append) : BooleanList -> BooleanList -> BooleanList)
+(\append -> (\tree_inorder_bool -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_inorder_bool = \tree -> case tree of
+    Node y1 -> 
+      Cons
+        ( #3.2 y1
+        , tree_inorder_bool (#3.3 y1)
+        )
+
+    Leaf y1 -> 
+      [] in tree_inorder_bool) : BooleanTree -> BooleanList))
+  ((let append = \l1 -> \l2 -> case l1 of
+    Nil _ -> 
+      l2
+
+    Cons p -> 
+      Cons (#2.1 p, append (#2.2 p) l2) in append) : BooleanList -> BooleanList -> BooleanList)
+0.0258409999999 false false
+
+Node (Leaf (), F (), Leaf ()) -> [F ()];
+Node (Node (Leaf (), T (), Leaf ()), F (), Leaf ()) -> [T (), F ()];
+Leaf () -> [];
+=================================
+(\append -> (\tree_inorder_bool -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_inorder_bool = \tree -> case tree of
+    Node y1 -> 
+      append (tree_inorder_bool (#3.1 y1)) [#3.2 y1]
+
+    Leaf y1 -> 
+      [] in tree_inorder_bool) : BooleanTree -> BooleanList))
+  ((let append = \l1 -> \l2 -> case l1 of
+    Nil _ -> 
+      l2
+
+    Cons p -> 
+      Cons (#2.1 p, append (#2.2 p) l2) in append) : BooleanList -> BooleanList -> BooleanList)
+(\append -> (\tree_inorder_bool -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_inorder_bool = \tree -> case tree of
+    Node y1 -> 
+      append (tree_inorder_bool (#3.1 y1)) [#3.2 y1]
+
+    Leaf y1 -> 
+      [] in tree_inorder_bool) : BooleanTree -> BooleanList))
+  ((let append = \l1 -> \l2 -> case l1 of
+    Nil _ -> 
+      l2
+
+    Cons p -> 
+      Cons (#2.1 p, append (#2.2 p) l2) in append) : BooleanList -> BooleanList -> BooleanList)
+0.144 false false
+
+Node (Leaf (), F (), Leaf ()) -> [F ()];
+Node (Node (Leaf (), F (), Leaf ()), T (), Leaf ()) -> [F (), T ()];
+Leaf () -> [];
+=================================
+(\append -> (\tree_inorder_bool -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_inorder_bool = \tree -> case tree of
+    Node y1 -> 
+      append (tree_inorder_bool (#3.1 y1)) [#3.2 y1]
+
+    Leaf y1 -> 
+      [] in tree_inorder_bool) : BooleanTree -> BooleanList))
+  ((let append = \l1 -> \l2 -> case l1 of
+    Nil _ -> 
+      l2
+
+    Cons p -> 
+      Cons (#2.1 p, append (#2.2 p) l2) in append) : BooleanList -> BooleanList -> BooleanList)
+(\append -> (\tree_inorder_bool -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_inorder_bool = \tree -> case tree of
+    Node y1 -> 
+      append (tree_inorder_bool (#3.1 y1)) [#3.2 y1]
+
+    Leaf y1 -> 
+      [] in tree_inorder_bool) : BooleanTree -> BooleanList))
+  ((let append = \l1 -> \l2 -> case l1 of
+    Nil _ -> 
+      l2
+
+    Cons p -> 
+      Cons (#2.1 p, append (#2.2 p) l2) in append) : BooleanList -> BooleanList -> BooleanList)
+0.225911 false false
+
+Node (Leaf (), F (), Leaf ()) -> [F ()];
+Node (Leaf (), F (), Node (Leaf (), T (), Leaf ())) -> [F (), T ()];
+Leaf () -> [];
+=================================
+(\append -> (\tree_inorder_bool -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_inorder_bool = \tree -> case tree of
+    Node y1 -> 
+      Cons
+        ( #3.2 y1
+        , tree_inorder_bool (#3.3 y1)
+        )
+
+    Leaf y1 -> 
+      [] in tree_inorder_bool) : BooleanTree -> BooleanList))
+  ((let append = \l1 -> \l2 -> case l1 of
+    Nil _ -> 
+      l2
+
+    Cons p -> 
+      Cons (#2.1 p, append (#2.2 p) l2) in append) : BooleanList -> BooleanList -> BooleanList)
+(\append -> (\tree_inorder_bool -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_inorder_bool = \tree -> case tree of
+    Node y1 -> 
+      Cons
+        ( #3.2 y1
+        , tree_inorder_bool (#3.3 y1)
+        )
+
+    Leaf y1 -> 
+      [] in tree_inorder_bool) : BooleanTree -> BooleanList))
+  ((let append = \l1 -> \l2 -> case l1 of
+    Nil _ -> 
+      l2
+
+    Cons p -> 
+      Cons (#2.1 p, append (#2.2 p) l2) in append) : BooleanList -> BooleanList -> BooleanList)
+0.0198459999999 false false
+
+Node (Node (Leaf (), T (), Leaf ()), F (), Leaf ()) -> [T (), F ()];
+Node (Node (Leaf (), F (), Leaf ()), T (), Leaf ()) -> [F (), T ()];
+Leaf () -> [];
+=================================
+(\append -> (\tree_inorder_bool -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_inorder_bool = \tree -> case tree of
+    Node y1 -> 
+      append (tree_inorder_bool (#3.1 y1)) [#3.2 y1]
+
+    Leaf y1 -> 
+      [] in tree_inorder_bool) : BooleanTree -> BooleanList))
+  ((let append = \l1 -> \l2 -> case l1 of
+    Nil _ -> 
+      l2
+
+    Cons p -> 
+      Cons (#2.1 p, append (#2.2 p) l2) in append) : BooleanList -> BooleanList -> BooleanList)
+(\append -> (\tree_inorder_bool -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_inorder_bool = \tree -> case tree of
+    Node y1 -> 
+      append (tree_inorder_bool (#3.1 y1)) [#3.2 y1]
+
+    Leaf y1 -> 
+      [] in tree_inorder_bool) : BooleanTree -> BooleanList))
+  ((let append = \l1 -> \l2 -> case l1 of
+    Nil _ -> 
+      l2
+
+    Cons p -> 
+      Cons (#2.1 p, append (#2.2 p) l2) in append) : BooleanList -> BooleanList -> BooleanList)
+0.134893 false false
+
+Node (Node (Leaf (), T (), Leaf ()), F (), Leaf ()) -> [T (), F ()];
+Node (Leaf (), F (), Node (Leaf (), T (), Leaf ())) -> [F (), T ()];
+Leaf () -> [];
+=================================
+(\append -> (\tree_inorder_bool -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_inorder_bool = \tree -> case tree of
+    Node y1 -> 
+      append (tree_inorder_bool (#3.1 y1))
+        (Cons
+          ( #3.2 y1
+          , tree_inorder_bool (#3.3 y1)
+          ))
+
+    Leaf y1 -> 
+      [] in tree_inorder_bool) : BooleanTree -> BooleanList))
+  ((let append = \l1 -> \l2 -> case l1 of
+    Nil _ -> 
+      l2
+
+    Cons p -> 
+      Cons (#2.1 p, append (#2.2 p) l2) in append) : BooleanList -> BooleanList -> BooleanList)
+(\append -> (\tree_inorder_bool -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_inorder_bool = \tree -> case tree of
+    Node y1 -> 
+      append (tree_inorder_bool (#3.1 y1))
+        (Cons
+          ( #3.2 y1
+          , tree_inorder_bool (#3.3 y1)
+          ))
+
+    Leaf y1 -> 
+      [] in tree_inorder_bool) : BooleanTree -> BooleanList))
+  ((let append = \l1 -> \l2 -> case l1 of
+    Nil _ -> 
+      l2
+
+    Cons p -> 
+      Cons (#2.1 p, append (#2.2 p) l2) in append) : BooleanList -> BooleanList -> BooleanList)
+0.0958880000001 true true
+
+Node (Node (Leaf (), F (), Leaf ()), T (), Leaf ()) -> [F (), T ()];
+Node (Leaf (), F (), Node (Leaf (), T (), Leaf ())) -> [F (), T ()];
+Leaf () -> [];
+=================================
+(\append -> (\tree_inorder_bool -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_inorder_bool = \tree -> case tree of
+    Node y1 -> 
+      [F, T]
+
+    Leaf y1 -> 
+      [] in tree_inorder_bool) : BooleanTree -> BooleanList))
+  ((let append = \l1 -> \l2 -> case l1 of
+    Nil _ -> 
+      l2
+
+    Cons p -> 
+      Cons (#2.1 p, append (#2.2 p) l2) in append) : BooleanList -> BooleanList -> BooleanList)
+0.0164749999999 false false
+
+Node (Leaf (), T (), Leaf ()) -> [T ()];
+Node (Leaf (), F (), Leaf ()) -> [F ()];
+Node (Node (Leaf (), T (), Leaf ()), F (), Leaf ()) -> [T (), F ()];
+Leaf () -> [];
+=================================
+(\append -> (\tree_inorder_bool -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_inorder_bool = \tree -> case tree of
+    Node y1 -> 
+      append (tree_inorder_bool (#3.1 y1)) [#3.2 y1]
+
+    Leaf y1 -> 
+      [] in tree_inorder_bool) : BooleanTree -> BooleanList))
+  ((let append = \l1 -> \l2 -> case l1 of
+    Nil _ -> 
+      l2
+
+    Cons p -> 
+      Cons (#2.1 p, append (#2.2 p) l2) in append) : BooleanList -> BooleanList -> BooleanList)
+(\append -> (\tree_inorder_bool -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_inorder_bool = \tree -> case tree of
+    Node y1 -> 
+      append (tree_inorder_bool (#3.1 y1)) [#3.2 y1]
+
+    Leaf y1 -> 
+      [] in tree_inorder_bool) : BooleanTree -> BooleanList))
+  ((let append = \l1 -> \l2 -> case l1 of
+    Nil _ -> 
+      l2
+
+    Cons p -> 
+      Cons (#2.1 p, append (#2.2 p) l2) in append) : BooleanList -> BooleanList -> BooleanList)
+0.0903760000001 false false
+
+Node (Leaf (), T (), Leaf ()) -> [T ()];
+Node (Leaf (), F (), Leaf ()) -> [F ()];
+Node (Node (Leaf (), F (), Leaf ()), T (), Leaf ()) -> [F (), T ()];
+Leaf () -> [];
+=================================
+(\append -> (\tree_inorder_bool -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_inorder_bool = \tree -> case tree of
+    Node y1 -> 
+      append (tree_inorder_bool (#3.1 y1)) [#3.2 y1]
+
+    Leaf y1 -> 
+      [] in tree_inorder_bool) : BooleanTree -> BooleanList))
+  ((let append = \l1 -> \l2 -> case l1 of
+    Nil _ -> 
+      l2
+
+    Cons p -> 
+      Cons (#2.1 p, append (#2.2 p) l2) in append) : BooleanList -> BooleanList -> BooleanList)
+(\append -> (\tree_inorder_bool -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_inorder_bool = \tree -> case tree of
+    Node y1 -> 
+      append (tree_inorder_bool (#3.1 y1)) [#3.2 y1]
+
+    Leaf y1 -> 
+      [] in tree_inorder_bool) : BooleanTree -> BooleanList))
+  ((let append = \l1 -> \l2 -> case l1 of
+    Nil _ -> 
+      l2
+
+    Cons p -> 
+      Cons (#2.1 p, append (#2.2 p) l2) in append) : BooleanList -> BooleanList -> BooleanList)
+0.0886230000001 false false
+
+Node (Leaf (), T (), Leaf ()) -> [T ()];
+Node (Leaf (), F (), Leaf ()) -> [F ()];
+Node (Leaf (), F (), Node (Leaf (), T (), Leaf ())) -> [F (), T ()];
+Leaf () -> [];
+=================================
+(\append -> (\tree_inorder_bool -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_inorder_bool = \tree -> case tree of
+    Node y1 -> 
+      Cons
+        ( #3.2 y1
+        , tree_inorder_bool (#3.3 y1)
+        )
+
+    Leaf y1 -> 
+      [] in tree_inorder_bool) : BooleanTree -> BooleanList))
+  ((let append = \l1 -> \l2 -> case l1 of
+    Nil _ -> 
+      l2
+
+    Cons p -> 
+      Cons (#2.1 p, append (#2.2 p) l2) in append) : BooleanList -> BooleanList -> BooleanList)
+(\append -> (\tree_inorder_bool -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_inorder_bool = \tree -> case tree of
+    Node y1 -> 
+      Cons
+        ( #3.2 y1
+        , tree_inorder_bool (#3.3 y1)
+        )
+
+    Leaf y1 -> 
+      [] in tree_inorder_bool) : BooleanTree -> BooleanList))
+  ((let append = \l1 -> \l2 -> case l1 of
+    Nil _ -> 
+      l2
+
+    Cons p -> 
+      Cons (#2.1 p, append (#2.2 p) l2) in append) : BooleanList -> BooleanList -> BooleanList)
+0.0136230000001 false false
+
+Node (Leaf (), T (), Leaf ()) -> [T ()];
+Node (Node (Leaf (), T (), Leaf ()), F (), Leaf ()) -> [T (), F ()];
+Node (Node (Leaf (), F (), Leaf ()), T (), Leaf ()) -> [F (), T ()];
+Leaf () -> [];
+=================================
+(\append -> (\tree_inorder_bool -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_inorder_bool = \tree -> case tree of
+    Node y1 -> 
+      append (tree_inorder_bool (#3.1 y1)) [#3.2 y1]
+
+    Leaf y1 -> 
+      [] in tree_inorder_bool) : BooleanTree -> BooleanList))
+  ((let append = \l1 -> \l2 -> case l1 of
+    Nil _ -> 
+      l2
+
+    Cons p -> 
+      Cons (#2.1 p, append (#2.2 p) l2) in append) : BooleanList -> BooleanList -> BooleanList)
+(\append -> (\tree_inorder_bool -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_inorder_bool = \tree -> case tree of
+    Node y1 -> 
+      append (tree_inorder_bool (#3.1 y1)) [#3.2 y1]
+
+    Leaf y1 -> 
+      [] in tree_inorder_bool) : BooleanTree -> BooleanList))
+  ((let append = \l1 -> \l2 -> case l1 of
+    Nil _ -> 
+      l2
+
+    Cons p -> 
+      Cons (#2.1 p, append (#2.2 p) l2) in append) : BooleanList -> BooleanList -> BooleanList)
+0.1427 false false
+
+Node (Leaf (), T (), Leaf ()) -> [T ()];
+Node (Node (Leaf (), T (), Leaf ()), F (), Leaf ()) -> [T (), F ()];
+Node (Leaf (), F (), Node (Leaf (), T (), Leaf ())) -> [F (), T ()];
+Leaf () -> [];
+=================================
+(\append -> (\tree_inorder_bool -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_inorder_bool = \tree -> case tree of
+    Node y1 -> 
+      append (tree_inorder_bool (#3.1 y1))
+        (Cons
+          ( #3.2 y1
+          , tree_inorder_bool (#3.3 y1)
+          ))
+
+    Leaf y1 -> 
+      [] in tree_inorder_bool) : BooleanTree -> BooleanList))
+  ((let append = \l1 -> \l2 -> case l1 of
+    Nil _ -> 
+      l2
+
+    Cons p -> 
+      Cons (#2.1 p, append (#2.2 p) l2) in append) : BooleanList -> BooleanList -> BooleanList)
+(\append -> (\tree_inorder_bool -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_inorder_bool = \tree -> case tree of
+    Node y1 -> 
+      append (tree_inorder_bool (#3.1 y1))
+        (Cons
+          ( #3.2 y1
+          , tree_inorder_bool (#3.3 y1)
+          ))
+
+    Leaf y1 -> 
+      [] in tree_inorder_bool) : BooleanTree -> BooleanList))
+  ((let append = \l1 -> \l2 -> case l1 of
+    Nil _ -> 
+      l2
+
+    Cons p -> 
+      Cons (#2.1 p, append (#2.2 p) l2) in append) : BooleanList -> BooleanList -> BooleanList)
+0.138647 true true
+
+Node (Leaf (), T (), Leaf ()) -> [T ()];
+Node (Node (Leaf (), F (), Leaf ()), T (), Leaf ()) -> [F (), T ()];
+Node (Leaf (), F (), Node (Leaf (), T (), Leaf ())) -> [F (), T ()];
+Leaf () -> [];
+=================================
+(\append -> (\tree_inorder_bool -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_inorder_bool = \tree -> case tree of
+    Node y1 -> 
+      append (tree_inorder_bool (#3.1 y1))
+        (Cons
+          ( #3.2 y1
+          , tree_inorder_bool (#3.3 y1)
+          ))
+
+    Leaf y1 -> 
+      [] in tree_inorder_bool) : BooleanTree -> BooleanList))
+  ((let append = \l1 -> \l2 -> case l1 of
+    Nil _ -> 
+      l2
+
+    Cons p -> 
+      Cons (#2.1 p, append (#2.2 p) l2) in append) : BooleanList -> BooleanList -> BooleanList)
+(\append -> (\tree_inorder_bool -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_inorder_bool = \tree -> case tree of
+    Node y1 -> 
+      append (tree_inorder_bool (#3.1 y1))
+        (Cons
+          ( #3.2 y1
+          , tree_inorder_bool (#3.3 y1)
+          ))
+
+    Leaf y1 -> 
+      [] in tree_inorder_bool) : BooleanTree -> BooleanList))
+  ((let append = \l1 -> \l2 -> case l1 of
+    Nil _ -> 
+      l2
+
+    Cons p -> 
+      Cons (#2.1 p, append (#2.2 p) l2) in append) : BooleanList -> BooleanList -> BooleanList)
+0.191357 true true
+
+Node (Leaf (), F (), Leaf ()) -> [F ()];
+Node (Node (Leaf (), T (), Leaf ()), F (), Leaf ()) -> [T (), F ()];
+Node (Node (Leaf (), F (), Leaf ()), T (), Leaf ()) -> [F (), T ()];
+Leaf () -> [];
+=================================
+(\append -> (\tree_inorder_bool -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_inorder_bool = \tree -> case tree of
+    Node y1 -> 
+      append (tree_inorder_bool (#3.1 y1)) [#3.2 y1]
+
+    Leaf y1 -> 
+      [] in tree_inorder_bool) : BooleanTree -> BooleanList))
+  ((let append = \l1 -> \l2 -> case l1 of
+    Nil _ -> 
+      l2
+
+    Cons p -> 
+      Cons (#2.1 p, append (#2.2 p) l2) in append) : BooleanList -> BooleanList -> BooleanList)
+(\append -> (\tree_inorder_bool -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_inorder_bool = \tree -> case tree of
+    Node y1 -> 
+      append (tree_inorder_bool (#3.1 y1)) [#3.2 y1]
+
+    Leaf y1 -> 
+      [] in tree_inorder_bool) : BooleanTree -> BooleanList))
+  ((let append = \l1 -> \l2 -> case l1 of
+    Nil _ -> 
+      l2
+
+    Cons p -> 
+      Cons (#2.1 p, append (#2.2 p) l2) in append) : BooleanList -> BooleanList -> BooleanList)
+0.14627 false false
+
+Node (Leaf (), F (), Leaf ()) -> [F ()];
+Node (Node (Leaf (), T (), Leaf ()), F (), Leaf ()) -> [T (), F ()];
+Node (Leaf (), F (), Node (Leaf (), T (), Leaf ())) -> [F (), T ()];
+Leaf () -> [];
+=================================
+(\append -> (\tree_inorder_bool -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_inorder_bool = \tree -> case tree of
+    Node y1 -> 
+      append (tree_inorder_bool (#3.1 y1))
+        (Cons
+          ( #3.2 y1
+          , tree_inorder_bool (#3.3 y1)
+          ))
+
+    Leaf y1 -> 
+      [] in tree_inorder_bool) : BooleanTree -> BooleanList))
+  ((let append = \l1 -> \l2 -> case l1 of
+    Nil _ -> 
+      l2
+
+    Cons p -> 
+      Cons (#2.1 p, append (#2.2 p) l2) in append) : BooleanList -> BooleanList -> BooleanList)
+(\append -> (\tree_inorder_bool -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_inorder_bool = \tree -> case tree of
+    Node y1 -> 
+      append (tree_inorder_bool (#3.1 y1))
+        (Cons
+          ( #3.2 y1
+          , tree_inorder_bool (#3.3 y1)
+          ))
+
+    Leaf y1 -> 
+      [] in tree_inorder_bool) : BooleanTree -> BooleanList))
+  ((let append = \l1 -> \l2 -> case l1 of
+    Nil _ -> 
+      l2
+
+    Cons p -> 
+      Cons (#2.1 p, append (#2.2 p) l2) in append) : BooleanList -> BooleanList -> BooleanList)
+0.102776 true true
+
+Node (Leaf (), F (), Leaf ()) -> [F ()];
+Node (Node (Leaf (), F (), Leaf ()), T (), Leaf ()) -> [F (), T ()];
+Node (Leaf (), F (), Node (Leaf (), T (), Leaf ())) -> [F (), T ()];
+Leaf () -> [];
+=================================
+(\append -> (\tree_inorder_bool -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_inorder_bool = \tree -> case tree of
+    Node y1 -> 
+      append (tree_inorder_bool (#3.1 y1))
+        (Cons
+          ( #3.2 y1
+          , tree_inorder_bool (#3.3 y1)
+          ))
+
+    Leaf y1 -> 
+      [] in tree_inorder_bool) : BooleanTree -> BooleanList))
+  ((let append = \l1 -> \l2 -> case l1 of
+    Nil _ -> 
+      l2
+
+    Cons p -> 
+      Cons (#2.1 p, append (#2.2 p) l2) in append) : BooleanList -> BooleanList -> BooleanList)
+(\append -> (\tree_inorder_bool -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_inorder_bool = \tree -> case tree of
+    Node y1 -> 
+      append (tree_inorder_bool (#3.1 y1))
+        (Cons
+          ( #3.2 y1
+          , tree_inorder_bool (#3.3 y1)
+          ))
+
+    Leaf y1 -> 
+      [] in tree_inorder_bool) : BooleanTree -> BooleanList))
+  ((let append = \l1 -> \l2 -> case l1 of
+    Nil _ -> 
+      l2
+
+    Cons p -> 
+      Cons (#2.1 p, append (#2.2 p) l2) in append) : BooleanList -> BooleanList -> BooleanList)
+0.201377 true true
+
+Node (Node (Leaf (), T (), Leaf ()), F (), Leaf ()) -> [T (), F ()];
+Node (Node (Leaf (), F (), Leaf ()), T (), Leaf ()) -> [F (), T ()];
+Node (Leaf (), F (), Node (Leaf (), T (), Leaf ())) -> [F (), T ()];
+Leaf () -> [];
+=================================
+(\append -> (\tree_inorder_bool -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_inorder_bool = \tree -> case tree of
+    Node y1 -> 
+      append (tree_inorder_bool (#3.1 y1))
+        (Cons
+          ( #3.2 y1
+          , tree_inorder_bool (#3.3 y1)
+          ))
+
+    Leaf y1 -> 
+      [] in tree_inorder_bool) : BooleanTree -> BooleanList))
+  ((let append = \l1 -> \l2 -> case l1 of
+    Nil _ -> 
+      l2
+
+    Cons p -> 
+      Cons (#2.1 p, append (#2.2 p) l2) in append) : BooleanList -> BooleanList -> BooleanList)
+(\append -> (\tree_inorder_bool -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_inorder_bool = \tree -> case tree of
+    Node y1 -> 
+      append (tree_inorder_bool (#3.1 y1))
+        (Cons
+          ( #3.2 y1
+          , tree_inorder_bool (#3.3 y1)
+          ))
+
+    Leaf y1 -> 
+      [] in tree_inorder_bool) : BooleanTree -> BooleanList))
+  ((let append = \l1 -> \l2 -> case l1 of
+    Nil _ -> 
+      l2
+
+    Cons p -> 
+      Cons (#2.1 p, append (#2.2 p) l2) in append) : BooleanList -> BooleanList -> BooleanList)
+0.15763 true true
+
+Node (Leaf (), T (), Leaf ()) -> [T ()];
+Node (Leaf (), F (), Leaf ()) -> [F ()];
+Node (Node (Leaf (), T (), Leaf ()), F (), Leaf ()) -> [T (), F ()];
+Node (Node (Leaf (), F (), Leaf ()), T (), Leaf ()) -> [F (), T ()];
+Leaf () -> [];
+=================================
+(\append -> (\tree_inorder_bool -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_inorder_bool = \tree -> case tree of
+    Node y1 -> 
+      append (tree_inorder_bool (#3.1 y1)) [#3.2 y1]
+
+    Leaf y1 -> 
+      [] in tree_inorder_bool) : BooleanTree -> BooleanList))
+  ((let append = \l1 -> \l2 -> case l1 of
+    Nil _ -> 
+      l2
+
+    Cons p -> 
+      Cons (#2.1 p, append (#2.2 p) l2) in append) : BooleanList -> BooleanList -> BooleanList)
+(\append -> (\tree_inorder_bool -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_inorder_bool = \tree -> case tree of
+    Node y1 -> 
+      append (tree_inorder_bool (#3.1 y1)) [#3.2 y1]
+
+    Leaf y1 -> 
+      [] in tree_inorder_bool) : BooleanTree -> BooleanList))
+  ((let append = \l1 -> \l2 -> case l1 of
+    Nil _ -> 
+      l2
+
+    Cons p -> 
+      Cons (#2.1 p, append (#2.2 p) l2) in append) : BooleanList -> BooleanList -> BooleanList)
+0.211245 false false
+
+Node (Leaf (), T (), Leaf ()) -> [T ()];
+Node (Leaf (), F (), Leaf ()) -> [F ()];
+Node (Node (Leaf (), T (), Leaf ()), F (), Leaf ()) -> [T (), F ()];
+Node (Leaf (), F (), Node (Leaf (), T (), Leaf ())) -> [F (), T ()];
+Leaf () -> [];
+=================================
+(\append -> (\tree_inorder_bool -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_inorder_bool = \tree -> case tree of
+    Node y1 -> 
+      append (tree_inorder_bool (#3.1 y1))
+        (Cons
+          ( #3.2 y1
+          , tree_inorder_bool (#3.3 y1)
+          ))
+
+    Leaf y1 -> 
+      [] in tree_inorder_bool) : BooleanTree -> BooleanList))
+  ((let append = \l1 -> \l2 -> case l1 of
+    Nil _ -> 
+      l2
+
+    Cons p -> 
+      Cons (#2.1 p, append (#2.2 p) l2) in append) : BooleanList -> BooleanList -> BooleanList)
+(\append -> (\tree_inorder_bool -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_inorder_bool = \tree -> case tree of
+    Node y1 -> 
+      append (tree_inorder_bool (#3.1 y1))
+        (Cons
+          ( #3.2 y1
+          , tree_inorder_bool (#3.3 y1)
+          ))
+
+    Leaf y1 -> 
+      [] in tree_inorder_bool) : BooleanTree -> BooleanList))
+  ((let append = \l1 -> \l2 -> case l1 of
+    Nil _ -> 
+      l2
+
+    Cons p -> 
+      Cons (#2.1 p, append (#2.2 p) l2) in append) : BooleanList -> BooleanList -> BooleanList)
+0.181945 true true
+
+Node (Leaf (), T (), Leaf ()) -> [T ()];
+Node (Leaf (), F (), Leaf ()) -> [F ()];
+Node (Node (Leaf (), F (), Leaf ()), T (), Leaf ()) -> [F (), T ()];
+Node (Leaf (), F (), Node (Leaf (), T (), Leaf ())) -> [F (), T ()];
+Leaf () -> [];
+=================================
+(\append -> (\tree_inorder_bool -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_inorder_bool = \tree -> case tree of
+    Node y1 -> 
+      append (tree_inorder_bool (#3.1 y1))
+        (Cons
+          ( #3.2 y1
+          , tree_inorder_bool (#3.3 y1)
+          ))
+
+    Leaf y1 -> 
+      [] in tree_inorder_bool) : BooleanTree -> BooleanList))
+  ((let append = \l1 -> \l2 -> case l1 of
+    Nil _ -> 
+      l2
+
+    Cons p -> 
+      Cons (#2.1 p, append (#2.2 p) l2) in append) : BooleanList -> BooleanList -> BooleanList)
+(\append -> (\tree_inorder_bool -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_inorder_bool = \tree -> case tree of
+    Node y1 -> 
+      append (tree_inorder_bool (#3.1 y1))
+        (Cons
+          ( #3.2 y1
+          , tree_inorder_bool (#3.3 y1)
+          ))
+
+    Leaf y1 -> 
+      [] in tree_inorder_bool) : BooleanTree -> BooleanList))
+  ((let append = \l1 -> \l2 -> case l1 of
+    Nil _ -> 
+      l2
+
+    Cons p -> 
+      Cons (#2.1 p, append (#2.2 p) l2) in append) : BooleanList -> BooleanList -> BooleanList)
+0.18207 true true
+
+Node (Leaf (), T (), Leaf ()) -> [T ()];
+Node (Node (Leaf (), T (), Leaf ()), F (), Leaf ()) -> [T (), F ()];
+Node (Node (Leaf (), F (), Leaf ()), T (), Leaf ()) -> [F (), T ()];
+Node (Leaf (), F (), Node (Leaf (), T (), Leaf ())) -> [F (), T ()];
+Leaf () -> [];
+=================================
+(\append -> (\tree_inorder_bool -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_inorder_bool = \tree -> case tree of
+    Node y1 -> 
+      append (tree_inorder_bool (#3.1 y1))
+        (Cons
+          ( #3.2 y1
+          , tree_inorder_bool (#3.3 y1)
+          ))
+
+    Leaf y1 -> 
+      [] in tree_inorder_bool) : BooleanTree -> BooleanList))
+  ((let append = \l1 -> \l2 -> case l1 of
+    Nil _ -> 
+      l2
+
+    Cons p -> 
+      Cons (#2.1 p, append (#2.2 p) l2) in append) : BooleanList -> BooleanList -> BooleanList)
+(\append -> (\tree_inorder_bool -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_inorder_bool = \tree -> case tree of
+    Node y1 -> 
+      append (tree_inorder_bool (#3.1 y1))
+        (Cons
+          ( #3.2 y1
+          , tree_inorder_bool (#3.3 y1)
+          ))
+
+    Leaf y1 -> 
+      [] in tree_inorder_bool) : BooleanTree -> BooleanList))
+  ((let append = \l1 -> \l2 -> case l1 of
+    Nil _ -> 
+      l2
+
+    Cons p -> 
+      Cons (#2.1 p, append (#2.2 p) l2) in append) : BooleanList -> BooleanList -> BooleanList)
+0.2807 true true
+
+Node (Leaf (), F (), Leaf ()) -> [F ()];
+Node (Node (Leaf (), T (), Leaf ()), F (), Leaf ()) -> [T (), F ()];
+Node (Node (Leaf (), F (), Leaf ()), T (), Leaf ()) -> [F (), T ()];
+Node (Leaf (), F (), Node (Leaf (), T (), Leaf ())) -> [F (), T ()];
+Leaf () -> [];
+=================================
+(\append -> (\tree_inorder_bool -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_inorder_bool = \tree -> case tree of
+    Node y1 -> 
+      append (tree_inorder_bool (#3.1 y1))
+        (Cons
+          ( #3.2 y1
+          , tree_inorder_bool (#3.3 y1)
+          ))
+
+    Leaf y1 -> 
+      [] in tree_inorder_bool) : BooleanTree -> BooleanList))
+  ((let append = \l1 -> \l2 -> case l1 of
+    Nil _ -> 
+      l2
+
+    Cons p -> 
+      Cons (#2.1 p, append (#2.2 p) l2) in append) : BooleanList -> BooleanList -> BooleanList)
+(\append -> (\tree_inorder_bool -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_inorder_bool = \tree -> case tree of
+    Node y1 -> 
+      append (tree_inorder_bool (#3.1 y1))
+        (Cons
+          ( #3.2 y1
+          , tree_inorder_bool (#3.3 y1)
+          ))
+
+    Leaf y1 -> 
+      [] in tree_inorder_bool) : BooleanTree -> BooleanList))
+  ((let append = \l1 -> \l2 -> case l1 of
+    Nil _ -> 
+      l2
+
+    Cons p -> 
+      Cons (#2.1 p, append (#2.2 p) l2) in append) : BooleanList -> BooleanList -> BooleanList)
+0.140438 true true
+
+Node (Leaf (), T (), Leaf ()) -> [T ()];
+Node (Leaf (), F (), Leaf ()) -> [F ()];
+Node (Node (Leaf (), T (), Leaf ()), F (), Leaf ()) -> [T (), F ()];
+Node (Node (Leaf (), F (), Leaf ()), T (), Leaf ()) -> [F (), T ()];
+Node (Leaf (), F (), Node (Leaf (), T (), Leaf ())) -> [F (), T ()];
+Leaf () -> [];
+=================================
+(\append -> (\tree_inorder_bool -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_inorder_bool = \tree -> case tree of
+    Node y1 -> 
+      append (tree_inorder_bool (#3.1 y1))
+        (Cons
+          ( #3.2 y1
+          , tree_inorder_bool (#3.3 y1)
+          ))
+
+    Leaf y1 -> 
+      [] in tree_inorder_bool) : BooleanTree -> BooleanList))
+  ((let append = \l1 -> \l2 -> case l1 of
+    Nil _ -> 
+      l2
+
+    Cons p -> 
+      Cons (#2.1 p, append (#2.2 p) l2) in append) : BooleanList -> BooleanList -> BooleanList)
+(\append -> (\tree_inorder_bool -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_inorder_bool = \tree -> case tree of
+    Node y1 -> 
+      append (tree_inorder_bool (#3.1 y1))
+        (Cons
+          ( #3.2 y1
+          , tree_inorder_bool (#3.3 y1)
+          ))
+
+    Leaf y1 -> 
+      [] in tree_inorder_bool) : BooleanTree -> BooleanList))
+  ((let append = \l1 -> \l2 -> case l1 of
+    Nil _ -> 
+      l2
+
+    Cons p -> 
+      Cons (#2.1 p, append (#2.2 p) l2) in append) : BooleanList -> BooleanList -> BooleanList)
+0.158866 true true
+

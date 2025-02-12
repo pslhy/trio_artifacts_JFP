@@ -1,0 +1,104 @@
+(T (), T ()) -> T ();
+=================================
+(\bool_bor -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ((let bool_bor = \p -> \q -> T in bool_bor) : Boolean -> Boolean -> Boolean)
+0.011778 false false
+
+(T (), F ()) -> T ();
+=================================
+(\bool_bor -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ((let bool_bor = \p -> \q -> T in bool_bor) : Boolean -> Boolean -> Boolean)
+0.00727699999993 false false
+
+(F (), T ()) -> T ();
+=================================
+(\bool_bor -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ((let bool_bor = \p -> \q -> T in bool_bor) : Boolean -> Boolean -> Boolean)
+0.00440499999991 false false
+
+(F (), F ()) -> F ();
+=================================
+(\bool_bor -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ((let bool_bor = \p -> \q -> F in bool_bor) : Boolean -> Boolean -> Boolean)
+0.00467400000002 false false
+
+(T (), T ()) -> T ();
+(T (), F ()) -> T ();
+=================================
+(\bool_bor -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ((let bool_bor = \p -> \q -> T in bool_bor) : Boolean -> Boolean -> Boolean)
+0.00833899999998 false false
+
+(T (), T ()) -> T ();
+(F (), T ()) -> T ();
+=================================
+(\bool_bor -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ((let bool_bor = \p -> \q -> T in bool_bor) : Boolean -> Boolean -> Boolean)
+0.0079189999999 false false
+
+(T (), T ()) -> T ();
+(F (), F ()) -> F ();
+=================================
+(\bool_bor -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ((let bool_bor = \p -> \q -> p in bool_bor) : Boolean -> Boolean -> Boolean)
+0.0109440000001 false false
+
+(T (), F ()) -> T ();
+(F (), T ()) -> T ();
+=================================
+(\bool_bor -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ((let bool_bor = \p -> \q -> T in bool_bor) : Boolean -> Boolean -> Boolean)
+0.00708400000008 false false
+
+(T (), F ()) -> T ();
+(F (), F ()) -> F ();
+=================================
+(\bool_bor -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ((let bool_bor = \p -> \q -> p in bool_bor) : Boolean -> Boolean -> Boolean)
+0.006754 false false
+
+(F (), T ()) -> T ();
+(F (), F ()) -> F ();
+=================================
+(\bool_bor -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ((let bool_bor = \p -> \q -> q in bool_bor) : Boolean -> Boolean -> Boolean)
+0.00718299999994 false false
+
+(T (), T ()) -> T ();
+(T (), F ()) -> T ();
+(F (), T ()) -> T ();
+=================================
+(\bool_bor -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ((let bool_bor = \p -> \q -> T in bool_bor) : Boolean -> Boolean -> Boolean)
+0.00681299999997 false false
+
+(T (), T ()) -> T ();
+(T (), F ()) -> T ();
+(F (), F ()) -> F ();
+=================================
+(\bool_bor -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ((let bool_bor = \p -> \q -> p in bool_bor) : Boolean -> Boolean -> Boolean)
+0.00695700000006 false false
+
+(T (), T ()) -> T ();
+(F (), T ()) -> T ();
+(F (), F ()) -> F ();
+=================================
+(\bool_bor -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ((let bool_bor = \p -> \q -> q in bool_bor) : Boolean -> Boolean -> Boolean)
+0.00566099999992 false false
+
+(T (), F ()) -> T ();
+(F (), T ()) -> T ();
+(F (), F ()) -> F ();
+=================================
+(\bool_bor -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let bool_bor = \p -> \q -> case p of
+    T y1 -> 
+      T
+
+    F y1 -> 
+      q in bool_bor) : Boolean -> Boolean -> Boolean)
+0.00804500000004 true false
+
+(T (), T ()) -> T ();
+(T (), F ()) -> T ();
+(F (), T ()) -> T ();
+(F (), F ()) -> F ();
+=================================
+(\bool_bor -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let bool_bor = \p -> \q -> case p of
+    T y1 -> 
+      T
+
+    F y1 -> 
+      q in bool_bor) : Boolean -> Boolean -> Boolean)
+0.0088189999999 true false
+

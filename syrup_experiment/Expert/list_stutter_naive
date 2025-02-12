@@ -1,0 +1,89 @@
+[] -> [];
+=================================
+fix f0.fun x0.
+  match (x0) with
+  | [] -> x0
+  | hd1::tl1 -> ( Nil )
+  
+0.0003 false
+
+[0] -> [0, 0];
+=================================
+fix f0.fun x0.
+  match (x0) with
+  | [] -> ( Nil )
+  | hd1::tl1 ->
+    ( Cons hd1 x0 )
+  
+0.0007 false
+
+[1, 0] -> [1, 1, 0, 0];
+=================================
+fail to find a solution
+fix f0.fun x0.
+  match (x0) with
+  | [] ->
+    ( Cons ( Zero )
+      ( Cons ( Zero ) x0
+        ) )
+  | hd1::tl1 ->
+    ( Cons
+      ( Succ ( Zero ) )
+      (f0 tl1) )
+  
+0.0290 false
+
+[] -> [];
+[0] -> [0, 0];
+=================================
+fix f0.fun x0.
+  match (x0) with
+  | [] -> x0
+  | hd1::tl1 ->
+    ( Cons hd1 x0 )
+  
+0.0006 false
+
+[] -> [];
+[1, 0] -> [1, 1, 0, 0];
+=================================
+fail to find a solution
+fix f0.fun x0.
+  match (x0) with
+  | [] -> x0
+  | hd1::tl1 ->
+    ( Cons hd1
+      ( Cons hd1 (f0 tl1)
+        ) )
+  
+0.0252 true
+
+[0] -> [0, 0];
+[1, 0] -> [1, 1, 0, 0];
+=================================
+fail to find a solution
+fix f0.fun x0.
+  match (x0) with
+  | [] -> x0
+  | hd1::tl1 ->
+    ( Cons hd1
+      ( Cons hd1 (f0 tl1)
+        ) )
+  
+0.0142 true
+
+[] -> [];
+[0] -> [0, 0];
+[1, 0] -> [1, 1, 0, 0];
+=================================
+fail to find a solution
+fix f0.fun x0.
+  match (x0) with
+  | [] -> x0
+  | hd1::tl1 ->
+    ( Cons hd1
+      ( Cons hd1 (f0 tl1)
+        ) )
+  
+0.0045 true
+

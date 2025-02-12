@@ -1,0 +1,926 @@
+[] -> T;
+=================================
+fix f0.fun x0. ( True )
+0.0004 false
+
+[F] -> T;
+=================================
+fix f0.fun x0.
+  match (x0) with
+  | [] -> ( False )
+  | hd1::tl1 ->
+    (not (f0 tl1))
+  
+0.0209 false
+
+[T] -> F;
+=================================
+fix f0.fun x0. ( False )
+0.0135 false
+
+[F , F] -> T;
+=================================
+fix f0.fun x0. ( True )
+0.0166 false
+
+[F, T] -> F;
+=================================
+fix f0.fun x0.
+  match (x0) with
+  | [] -> ( False )
+  | hd1::tl1 -> (f0 tl1)
+  
+0.0165 false
+
+[T, F] -> F;
+=================================
+fix f0.fun x0.
+  match (x0) with
+  | [] -> ( False )
+  | hd1::tl1 ->
+    (not (f0 tl1))
+  
+0.0164 false
+
+[T, T] -> T;
+=================================
+fix f0.fun x0. ( True )
+0.0158 false
+
+[] -> T;
+[F] -> T;
+=================================
+fix f0.fun x0. ( True )
+0.0004 false
+
+[] -> T;
+[T] -> F;
+=================================
+fix f0.fun x0.
+  match (x0) with
+  | [] -> ( True )
+  | hd1::tl1 -> ( False )
+  
+0.0006 false
+
+[] -> T;
+[F , F] -> T;
+=================================
+fix f0.fun x0. ( True )
+0.0137 false
+
+[T] -> F;
+[F, T] -> F;
+=================================
+fix f0.fun x0.
+  match (x0) with
+  | [] -> ( False )
+  | hd1::tl1 -> (f0 tl1)
+  
+0.0136 false
+
+[] -> T;
+[T, F] -> F;
+=================================
+fix f0.fun x0.
+  match (x0) with
+  | [] -> ( True )
+  | hd1::tl1 -> ( False )
+  
+0.0137 false
+
+[] -> T;
+[T, T] -> T;
+=================================
+fix f0.fun x0.
+  match (x0) with
+  | [] -> ( True )
+  | hd1::tl1 ->
+    (not (f0 tl1))
+  
+0.0143 false
+
+[T, F] -> F;
+[T, T] -> T;
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun x0.
+  match (x0) with
+  | [] -> ( False )
+  | hd2::tl2 ->
+    match (tl2) with
+    | [] -> ( False )
+    | hd1::tl1 -> hd1
+    
+  
+0.0605 false
+
+[T] -> F;
+[T, T] -> T;
+=================================
+fix f0.fun x0.
+  match (x0) with
+  | [] -> ( True )
+  | hd1::tl1 ->
+    (not (f0 tl1))
+  
+0.0189 false
+
+[F , F] -> T;
+[T, T] -> T;
+=================================
+fix f0.fun x0.
+  match (x0) with
+  | [] -> ( True )
+  | hd1::tl1 ->
+    (not (f0 tl1))
+  
+0.0166 false
+
+[F, T] -> F;
+[T, T] -> T;
+=================================
+fix f0.fun x0.
+  match (x0) with
+  | [] -> ( False )
+  | hd1::tl1 -> hd1
+  
+0.0182 false
+
+[T] -> F;
+[T, F] -> F;
+[T, T] -> T;
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun x0.
+  match (x0) with
+  | [] -> ( False )
+  | hd2::tl2 ->
+    match (tl2) with
+    | [] -> ( False )
+    | hd1::tl1 -> hd1
+    
+  
+0.0504 false
+
+[] -> T;
+[F] -> T;
+[F , F] -> T;
+=================================
+fix f0.fun x0.
+  (not ( False ))
+0.0007 false
+
+[F] -> T;
+[T, F] -> F;
+[T, T] -> T;
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun x0.
+  match (x0) with
+  | [] -> ( False )
+  | hd2::tl2 ->
+    match (tl2) with
+    | [] -> ( True )
+    | hd1::tl1 -> hd1
+    
+  
+0.0408 false
+
+[] -> T;
+[F , F] -> T;
+[T, T] -> T;
+=================================
+fix f0.fun x0. ( True )
+0.0149 false
+
+[T] -> F;
+[F , F] -> T;
+[T, F] -> F;
+=================================
+fix f0.fun x0.
+  match (x0) with
+  | [] -> ( False )
+  | hd1::tl1 -> (not hd1)
+  
+0.0207 false
+
+[] -> T;
+[T] -> F;
+[F , F] -> T;
+=================================
+fix f0.fun x0.
+  match (x0) with
+  | [] -> ( True )
+  | hd1::tl1 ->
+    (not (f0 tl1))
+  
+0.0156 false
+
+[] -> T;
+[F , F] -> T;
+[T, F] -> F;
+=================================
+fix f0.fun x0.
+  match (x0) with
+  | [] -> ( True )
+  | hd1::tl1 -> (not hd1)
+  
+0.0116 false
+
+[F, T] -> F;
+[T, F] -> F;
+[T, T] -> T;
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun x0.
+  match (x0) with
+  | [] -> ( True )
+  | hd1::tl1 ->
+    if hd1
+      then (not (f0 tl1))
+      else (f0 tl1)
+  
+0.5265 true
+
+[F , F] -> T;
+[F, T] -> F;
+[T, T] -> T;
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun x0.
+  if
+    match (x0) with
+    | [] -> ( True )
+    | hd'2::tl'2 -> hd'2
+  then ( True )
+    else
+      match (x0) with
+      | [] -> ( False )
+      | hd1::tl1 ->
+        (not (f0 tl1))
+  
+0.4321 false
+
+[T] -> F;
+[F , F] -> T;
+[F, T] -> F;
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun x0.
+  match (x0) with
+  | [] -> ( False )
+  | hd2::tl2 ->
+    match (tl2) with
+    | [] -> ( False )
+    | hd1::tl1 ->
+      (not hd1)
+    
+  
+0.0376 false
+
+[F] -> T;
+[T] -> F;
+[F , F] -> T;
+[T, F] -> F;
+=================================
+fix f0.fun x0.
+  match (x0) with
+  | [] -> ( False )
+  | hd1::tl1 -> (not hd1)
+  
+0.0146 false
+
+[] -> T;
+[T] -> F;
+[F , F] -> T;
+[F, T] -> F;
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun x0.
+  match (x0) with
+  | [] -> ( True )
+  | hd2::tl2 ->
+    match (tl2) with
+    | [] -> ( False )
+    | hd1::tl1 ->
+      (not hd1)
+    
+  
+0.0271 false
+
+[] -> T;
+[F] -> T;
+[T] -> F;
+[T, F] -> F;
+=================================
+fix f0.fun x0.
+  match (x0) with
+  | [] -> ( True )
+  | hd1::tl1 -> (not hd1)
+  
+0.0006 false
+
+[] -> T;
+[F , F] -> T;
+[F, T] -> F;
+[T, F] -> F;
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun x0.
+  match (x0) with
+  | [] -> ( True )
+  | hd1::tl1 ->
+    if hd1 then (f0 tl1)
+      else (not (f0 tl1))
+  
+0.1601 false
+
+[] -> T;
+[T] -> F;
+[F , F] -> T;
+[T, T] -> T;
+=================================
+fix f0.fun x0.
+  match (x0) with
+  | [] -> ( True )
+  | hd1::tl1 ->
+    (not (f0 tl1))
+  
+0.0154 false
+
+[] -> T;
+[F] -> T;
+[F , F] -> T;
+[T, F] -> F;
+=================================
+fix f0.fun x0.
+  match (x0) with
+  | [] -> ( True )
+  | hd1::tl1 -> (not hd1)
+  
+0.0013 false
+
+[] -> T;
+[F , F] -> T;
+[T, F] -> F;
+[T, T] -> T;
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun x0.
+  if
+    match (x0) with
+    | [] -> ( False )
+    | hd'2::tl'2 -> hd'2
+  then
+    match (x0) with
+    | [] -> ( False )
+    | hd1::tl1 ->
+      (not (f0 tl1))
+  else (not ( False ))
+0.1172 false
+
+[F] -> T;
+[T] -> F;
+[F, T] -> F;
+[T, F] -> F;
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun x0.
+  match (x0) with
+  | [] -> ( False )
+  | hd2::tl2 ->
+    match (tl2) with
+    | [] -> (not hd2)
+    | hd1::tl1 ->
+      (f0 tl1)
+    
+  
+0.0229 false
+
+[F] -> T;
+[T] -> F;
+[T, F] -> F;
+[T, T] -> T;
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun x0.
+  match (x0) with
+  | [] -> ( False )
+  | hd2::tl2 ->
+    match (tl2) with
+    | [] -> (not hd2)
+    | hd1::tl1 -> hd1
+    
+  
+0.0228 false
+
+[] -> T;
+[F, T] -> F;
+[T, F] -> F;
+[T, T] -> T;
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun x0.
+  match (x0) with
+  | [] -> ( True )
+  | hd1::tl1 ->
+    if hd1
+      then (not (f0 tl1))
+      else (f0 tl1)
+  
+0.1362 true
+
+[] -> T;
+[T] -> F;
+[F , F] -> T;
+[F, T] -> F;
+[T, F] -> F;
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun x0.
+  match (x0) with
+  | [] -> ( True )
+  | hd1::tl1 ->
+    if hd1 then ( False )
+      else (f0 tl1)
+  
+0.1551 false
+
+[] -> T;
+[F] -> T;
+[T] -> F;
+[F , F] -> T;
+[T, F] -> F;
+=================================
+fix f0.fun x0.
+  match (x0) with
+  | [] -> ( True )
+  | hd1::tl1 -> (not hd1)
+  
+0.0017 false
+
+[F] -> T;
+[T] -> F;
+[F, T] -> F;
+[T, F] -> F;
+[T, T] -> T;
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun x0.
+  match (x0) with
+  | [] -> ( True )
+  | hd1::tl1 ->
+    if hd1
+      then (not (f0 tl1))
+      else (f0 tl1)
+  
+0.0991 true
+
+[F] -> T;
+[T] -> F;
+[F , F] -> T;
+[T, F] -> F;
+[T, T] -> T;
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun x0.
+  if
+    match (x0) with
+    | [] -> ( True )
+    | hd'2::tl'2 -> hd'2
+  then
+    match (x0) with
+    | [] -> ( True )
+    | hd1::tl1 ->
+      (not (f0 tl1))
+  else ( True )
+0.1313 false
+
+[] -> T;
+[F] -> T;
+[T] -> F;
+[F, T] -> F;
+[T, T] -> T;
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun x0.
+  match (x0) with
+  | [] -> ( True )
+  | hd2::tl2 ->
+    match (tl2) with
+    | [] -> (not hd2)
+    | hd1::tl1 -> hd2
+    
+  
+0.0052 false
+
+[] -> T;
+[T] -> F;
+[F , F] -> T;
+[F, T] -> F;
+[T, T] -> T;
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun x0.
+  match (x0) with
+  | [] -> ( True )
+  | hd1::tl1 ->
+    if hd1
+      then (not (f0 tl1))
+      else (f0 tl1)
+  
+0.0511 true
+
+[T] -> F;
+[F , F] -> T;
+[F, T] -> F;
+[T, F] -> F;
+[T, T] -> T;
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun x0.
+  match (x0) with
+  | [] -> ( True )
+  | hd1::tl1 ->
+    if hd1
+      then (not (f0 tl1))
+      else (f0 tl1)
+  
+0.6849 true
+
+[] -> T;
+[F] -> T;
+[F , F] -> T;
+[F, T] -> F;
+[T, T] -> T;
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun x0.
+  match (x0) with
+  | [] -> ( True )
+  | hd1::tl1 ->
+    if hd1
+      then (not (f0 tl1))
+      else (f0 tl1)
+  
+0.1115 true
+
+[] -> T;
+[T] -> F;
+[F , F] -> T;
+[T, F] -> F;
+[T, T] -> T;
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun x0.
+  match (x0) with
+  | [] -> ( True )
+  | hd1::tl1 ->
+    if hd1
+      then (not (f0 tl1))
+      else (f0 tl1)
+  
+0.1147 true
+
+[F] -> T;
+[F , F] -> T;
+[F, T] -> F;
+[T, F] -> F;
+[T, T] -> T;
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun x0.
+  match (x0) with
+  | [] -> ( True )
+  | hd1::tl1 ->
+    if hd1
+      then (not (f0 tl1))
+      else (f0 tl1)
+  
+0.6770 true
+
+[] -> T;
+[F] -> T;
+[T] -> F;
+[F , F] -> T;
+[F, T] -> F;
+[T, F] -> F;
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun x0.
+  if
+    match (x0) with
+    | [] -> ( False )
+    | hd'2::tl'2 -> hd'2
+  then ( False )
+    else
+      match (x0) with
+      | [] -> ( True )
+      | hd1::tl1 ->
+        (f0 tl1)
+  
+0.0313 false
+
+[] -> T;
+[F] -> T;
+[T] -> F;
+[F , F] -> T;
+[F, T] -> F;
+[T, T] -> T;
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun x0.
+  match (x0) with
+  | [] -> ( True )
+  | hd1::tl1 ->
+    if hd1
+      then (not (f0 tl1))
+      else (f0 tl1)
+  
+0.0314 true
+
+[] -> T;
+[F] -> T;
+[T] -> F;
+[F , F] -> T;
+[T, F] -> F;
+[T, T] -> T;
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun x0.
+  if
+    match (x0) with
+    | [] -> ( True )
+    | hd'2::tl'2 -> hd'2
+  then
+    match (x0) with
+    | [] -> ( True )
+    | hd1::tl1 ->
+      (not (f0 tl1))
+  else
+    (not (not ( True )))
+0.0252 false
+
+[] -> T;
+[F] -> T;
+[T] -> F;
+[F, T] -> F;
+[T, F] -> F;
+[T, T] -> T;
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun x0.
+  match (x0) with
+  | [] -> ( True )
+  | hd1::tl1 ->
+    if hd1
+      then (not (f0 tl1))
+      else (f0 tl1)
+  
+0.0385 true
+
+[] -> T;
+[F] -> T;
+[F , F] -> T;
+[F, T] -> F;
+[T, F] -> F;
+[T, T] -> T;
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun x0.
+  match (x0) with
+  | [] -> ( True )
+  | hd1::tl1 ->
+    if hd1
+      then (not (f0 tl1))
+      else (f0 tl1)
+  
+0.2727 true
+
+[] -> T;
+[T] -> F;
+[F , F] -> T;
+[F, T] -> F;
+[T, F] -> F;
+[T, T] -> T;
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun x0.
+  match (x0) with
+  | [] -> ( True )
+  | hd1::tl1 ->
+    if hd1
+      then (not (f0 tl1))
+      else (f0 tl1)
+  
+0.1206 true
+
+[F] -> T;
+[T] -> F;
+[F , F] -> T;
+[F, T] -> F;
+[T, F] -> F;
+[T, T] -> T;
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun x0.
+  match (x0) with
+  | [] -> ( True )
+  | hd1::tl1 ->
+    if hd1
+      then (not (f0 tl1))
+      else (f0 tl1)
+  
+0.1812 true
+
+[] -> T;
+[F] -> T;
+[T] -> F;
+[F , F] -> T;
+[F, T] -> F;
+[T, F] -> F;
+[T, T] -> T;
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun x0.
+  match (x0) with
+  | [] -> ( True )
+  | hd1::tl1 ->
+    if hd1
+      then (not (f0 tl1))
+      else (f0 tl1)
+  
+0.0495 true
+

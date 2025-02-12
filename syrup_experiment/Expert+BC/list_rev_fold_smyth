@@ -1,0 +1,302 @@
+[0] -> [0];
+[] -> [];
+=================================
+(\fold -> (\snoc -> (\list_rev_fold -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ((let list_rev_fold = \xs -> xs in list_rev_fold) : NatList -> NatList))
+  ((let snoc = \xs -> \n -> case xs of
+    Nil _ -> 
+      [n]
+
+    Cons p -> 
+      Cons (#2.1 p, snoc (#2.2 p) n) in snoc) : NatList -> Nat -> NatList))
+  ((let fold = \f -> \acc -> (\fixFold -> fixFold)
+    ((let fixFold = \xs -> case xs of
+      Nil _ -> 
+        acc
+
+      Cons p -> 
+        f (fixFold (#2.2 p)) (#2.1 p) in fixFold) : NatList -> NatList) in fold) : (NatList -> Nat -> NatList) -> NatList -> NatList -> NatList)
+0.029534 false false
+
+[1] -> [1];
+[] -> [];
+=================================
+(\fold -> (\snoc -> (\list_rev_fold -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ((let list_rev_fold = \xs -> xs in list_rev_fold) : NatList -> NatList))
+  ((let snoc = \xs -> \n -> case xs of
+    Nil _ -> 
+      [n]
+
+    Cons p -> 
+      Cons (#2.1 p, snoc (#2.2 p) n) in snoc) : NatList -> Nat -> NatList))
+  ((let fold = \f -> \acc -> (\fixFold -> fixFold)
+    ((let fixFold = \xs -> case xs of
+      Nil _ -> 
+        acc
+
+      Cons p -> 
+        f (fixFold (#2.2 p)) (#2.1 p) in fixFold) : NatList -> NatList) in fold) : (NatList -> Nat -> NatList) -> NatList -> NatList -> NatList)
+0.0293300000001 false false
+
+[0, 1] -> [1, 0];
+[] -> [];
+=================================
+(\fold -> (\snoc -> (\list_rev_fold -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ((let list_rev_fold = \xs -> fold snoc [] xs in list_rev_fold) : NatList -> NatList))
+  ((let snoc = \xs -> \n -> case xs of
+    Nil _ -> 
+      [n]
+
+    Cons p -> 
+      Cons (#2.1 p, snoc (#2.2 p) n) in snoc) : NatList -> Nat -> NatList))
+  ((let fold = \f -> \acc -> (\fixFold -> fixFold)
+    ((let fixFold = \xs -> case xs of
+      Nil _ -> 
+        acc
+
+      Cons p -> 
+        f (fixFold (#2.2 p)) (#2.1 p) in fixFold) : NatList -> NatList) in fold) : (NatList -> Nat -> NatList) -> NatList -> NatList -> NatList)
+0.0294160000001 true false
+
+[0, 0, 1] -> [1, 0, 0];
+[] -> [];
+=================================
+(\fold -> (\snoc -> (\list_rev_fold -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ((let list_rev_fold = \xs -> fold snoc [] xs in list_rev_fold) : NatList -> NatList))
+  ((let snoc = \xs -> \n -> case xs of
+    Nil _ -> 
+      [n]
+
+    Cons p -> 
+      Cons (#2.1 p, snoc (#2.2 p) n) in snoc) : NatList -> Nat -> NatList))
+  ((let fold = \f -> \acc -> (\fixFold -> fixFold)
+    ((let fixFold = \xs -> case xs of
+      Nil _ -> 
+        acc
+
+      Cons p -> 
+        f (fixFold (#2.2 p)) (#2.1 p) in fixFold) : NatList -> NatList) in fold) : (NatList -> Nat -> NatList) -> NatList -> NatList -> NatList)
+0.0319480000001 true false
+
+[0] -> [0];
+[1] -> [1];
+[] -> [];
+=================================
+(\fold -> (\snoc -> (\list_rev_fold -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ((let list_rev_fold = \xs -> xs in list_rev_fold) : NatList -> NatList))
+  ((let snoc = \xs -> \n -> case xs of
+    Nil _ -> 
+      [n]
+
+    Cons p -> 
+      Cons (#2.1 p, snoc (#2.2 p) n) in snoc) : NatList -> Nat -> NatList))
+  ((let fold = \f -> \acc -> (\fixFold -> fixFold)
+    ((let fixFold = \xs -> case xs of
+      Nil _ -> 
+        acc
+
+      Cons p -> 
+        f (fixFold (#2.2 p)) (#2.1 p) in fixFold) : NatList -> NatList) in fold) : (NatList -> Nat -> NatList) -> NatList -> NatList -> NatList)
+0.029984 false false
+
+[0] -> [0];
+[0, 1] -> [1, 0];
+[] -> [];
+=================================
+(\fold -> (\snoc -> (\list_rev_fold -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ((let list_rev_fold = \xs -> fold snoc [] xs in list_rev_fold) : NatList -> NatList))
+  ((let snoc = \xs -> \n -> case xs of
+    Nil _ -> 
+      [n]
+
+    Cons p -> 
+      Cons (#2.1 p, snoc (#2.2 p) n) in snoc) : NatList -> Nat -> NatList))
+  ((let fold = \f -> \acc -> (\fixFold -> fixFold)
+    ((let fixFold = \xs -> case xs of
+      Nil _ -> 
+        acc
+
+      Cons p -> 
+        f (fixFold (#2.2 p)) (#2.1 p) in fixFold) : NatList -> NatList) in fold) : (NatList -> Nat -> NatList) -> NatList -> NatList -> NatList)
+0.0301930000001 true false
+
+[0] -> [0];
+[0, 0, 1] -> [1, 0, 0];
+[] -> [];
+=================================
+(\fold -> (\snoc -> (\list_rev_fold -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ((let list_rev_fold = \xs -> fold snoc [] xs in list_rev_fold) : NatList -> NatList))
+  ((let snoc = \xs -> \n -> case xs of
+    Nil _ -> 
+      [n]
+
+    Cons p -> 
+      Cons (#2.1 p, snoc (#2.2 p) n) in snoc) : NatList -> Nat -> NatList))
+  ((let fold = \f -> \acc -> (\fixFold -> fixFold)
+    ((let fixFold = \xs -> case xs of
+      Nil _ -> 
+        acc
+
+      Cons p -> 
+        f (fixFold (#2.2 p)) (#2.1 p) in fixFold) : NatList -> NatList) in fold) : (NatList -> Nat -> NatList) -> NatList -> NatList -> NatList)
+0.030972 true false
+
+[1] -> [1];
+[0, 1] -> [1, 0];
+[] -> [];
+=================================
+(\fold -> (\snoc -> (\list_rev_fold -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ((let list_rev_fold = \xs -> fold snoc [] xs in list_rev_fold) : NatList -> NatList))
+  ((let snoc = \xs -> \n -> case xs of
+    Nil _ -> 
+      [n]
+
+    Cons p -> 
+      Cons (#2.1 p, snoc (#2.2 p) n) in snoc) : NatList -> Nat -> NatList))
+  ((let fold = \f -> \acc -> (\fixFold -> fixFold)
+    ((let fixFold = \xs -> case xs of
+      Nil _ -> 
+        acc
+
+      Cons p -> 
+        f (fixFold (#2.2 p)) (#2.1 p) in fixFold) : NatList -> NatList) in fold) : (NatList -> Nat -> NatList) -> NatList -> NatList -> NatList)
+0.0314499999999 true false
+
+[1] -> [1];
+[0, 0, 1] -> [1, 0, 0];
+[] -> [];
+=================================
+(\fold -> (\snoc -> (\list_rev_fold -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ((let list_rev_fold = \xs -> fold snoc [] xs in list_rev_fold) : NatList -> NatList))
+  ((let snoc = \xs -> \n -> case xs of
+    Nil _ -> 
+      [n]
+
+    Cons p -> 
+      Cons (#2.1 p, snoc (#2.2 p) n) in snoc) : NatList -> Nat -> NatList))
+  ((let fold = \f -> \acc -> (\fixFold -> fixFold)
+    ((let fixFold = \xs -> case xs of
+      Nil _ -> 
+        acc
+
+      Cons p -> 
+        f (fixFold (#2.2 p)) (#2.1 p) in fixFold) : NatList -> NatList) in fold) : (NatList -> Nat -> NatList) -> NatList -> NatList -> NatList)
+0.0311999999999 true false
+
+[0, 1] -> [1, 0];
+[0, 0, 1] -> [1, 0, 0];
+[] -> [];
+=================================
+(\fold -> (\snoc -> (\list_rev_fold -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ((let list_rev_fold = \xs -> fold snoc [] xs in list_rev_fold) : NatList -> NatList))
+  ((let snoc = \xs -> \n -> case xs of
+    Nil _ -> 
+      [n]
+
+    Cons p -> 
+      Cons (#2.1 p, snoc (#2.2 p) n) in snoc) : NatList -> Nat -> NatList))
+  ((let fold = \f -> \acc -> (\fixFold -> fixFold)
+    ((let fixFold = \xs -> case xs of
+      Nil _ -> 
+        acc
+
+      Cons p -> 
+        f (fixFold (#2.2 p)) (#2.1 p) in fixFold) : NatList -> NatList) in fold) : (NatList -> Nat -> NatList) -> NatList -> NatList -> NatList)
+0.0324969999999 true false
+
+[0] -> [0];
+[1] -> [1];
+[0, 1] -> [1, 0];
+[] -> [];
+=================================
+(\fold -> (\snoc -> (\list_rev_fold -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ((let list_rev_fold = \xs -> fold snoc [] xs in list_rev_fold) : NatList -> NatList))
+  ((let snoc = \xs -> \n -> case xs of
+    Nil _ -> 
+      [n]
+
+    Cons p -> 
+      Cons (#2.1 p, snoc (#2.2 p) n) in snoc) : NatList -> Nat -> NatList))
+  ((let fold = \f -> \acc -> (\fixFold -> fixFold)
+    ((let fixFold = \xs -> case xs of
+      Nil _ -> 
+        acc
+
+      Cons p -> 
+        f (fixFold (#2.2 p)) (#2.1 p) in fixFold) : NatList -> NatList) in fold) : (NatList -> Nat -> NatList) -> NatList -> NatList -> NatList)
+0.0310529999999 true false
+
+[0] -> [0];
+[1] -> [1];
+[0, 0, 1] -> [1, 0, 0];
+[] -> [];
+=================================
+(\fold -> (\snoc -> (\list_rev_fold -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ((let list_rev_fold = \xs -> fold snoc [] xs in list_rev_fold) : NatList -> NatList))
+  ((let snoc = \xs -> \n -> case xs of
+    Nil _ -> 
+      [n]
+
+    Cons p -> 
+      Cons (#2.1 p, snoc (#2.2 p) n) in snoc) : NatList -> Nat -> NatList))
+  ((let fold = \f -> \acc -> (\fixFold -> fixFold)
+    ((let fixFold = \xs -> case xs of
+      Nil _ -> 
+        acc
+
+      Cons p -> 
+        f (fixFold (#2.2 p)) (#2.1 p) in fixFold) : NatList -> NatList) in fold) : (NatList -> Nat -> NatList) -> NatList -> NatList -> NatList)
+0.0326990000001 true false
+
+[0] -> [0];
+[0, 1] -> [1, 0];
+[0, 0, 1] -> [1, 0, 0];
+[] -> [];
+=================================
+(\fold -> (\snoc -> (\list_rev_fold -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ((let list_rev_fold = \xs -> fold snoc [] xs in list_rev_fold) : NatList -> NatList))
+  ((let snoc = \xs -> \n -> case xs of
+    Nil _ -> 
+      [n]
+
+    Cons p -> 
+      Cons (#2.1 p, snoc (#2.2 p) n) in snoc) : NatList -> Nat -> NatList))
+  ((let fold = \f -> \acc -> (\fixFold -> fixFold)
+    ((let fixFold = \xs -> case xs of
+      Nil _ -> 
+        acc
+
+      Cons p -> 
+        f (fixFold (#2.2 p)) (#2.1 p) in fixFold) : NatList -> NatList) in fold) : (NatList -> Nat -> NatList) -> NatList -> NatList -> NatList)
+0.0327460000001 true false
+
+[1] -> [1];
+[0, 1] -> [1, 0];
+[0, 0, 1] -> [1, 0, 0];
+[] -> [];
+=================================
+(\fold -> (\snoc -> (\list_rev_fold -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ((let list_rev_fold = \xs -> fold snoc [] xs in list_rev_fold) : NatList -> NatList))
+  ((let snoc = \xs -> \n -> case xs of
+    Nil _ -> 
+      [n]
+
+    Cons p -> 
+      Cons (#2.1 p, snoc (#2.2 p) n) in snoc) : NatList -> Nat -> NatList))
+  ((let fold = \f -> \acc -> (\fixFold -> fixFold)
+    ((let fixFold = \xs -> case xs of
+      Nil _ -> 
+        acc
+
+      Cons p -> 
+        f (fixFold (#2.2 p)) (#2.1 p) in fixFold) : NatList -> NatList) in fold) : (NatList -> Nat -> NatList) -> NatList -> NatList -> NatList)
+0.0347650000001 true false
+
+[0] -> [0];
+[1] -> [1];
+[0, 1] -> [1, 0];
+[0, 0, 1] -> [1, 0, 0];
+[] -> [];
+=================================
+(\fold -> (\snoc -> (\list_rev_fold -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ((let list_rev_fold = \xs -> fold snoc [] xs in list_rev_fold) : NatList -> NatList))
+  ((let snoc = \xs -> \n -> case xs of
+    Nil _ -> 
+      [n]
+
+    Cons p -> 
+      Cons (#2.1 p, snoc (#2.2 p) n) in snoc) : NatList -> Nat -> NatList))
+  ((let fold = \f -> \acc -> (\fixFold -> fixFold)
+    ((let fixFold = \xs -> case xs of
+      Nil _ -> 
+        acc
+
+      Cons p -> 
+        f (fixFold (#2.2 p)) (#2.1 p) in fixFold) : NatList -> NatList) in fold) : (NatList -> Nat -> NatList) -> NatList -> NatList -> NatList)
+0.0358510000001 true false
+

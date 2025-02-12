@@ -1,0 +1,534 @@
+0 -> T ();
+0 -> T ();
+
+=================================
+fix (f : nat -> bool) = fun (x:nat) -> T
+
+0.0000 false
+
+3 -> F ();
+0 -> T ();
+
+=================================
+fix (f : nat -> bool) = fun (x:nat) -> match x with
+                                         | O _ -> T
+                                         | S _ -> F
+
+0.0175 false
+
+3 -> F ();
+0 -> T ();
+
+=================================
+fix (f : nat -> bool) = fun (x:nat) -> match x with
+                                         | O _ -> T
+                                         | S _ -> F
+
+0.0190 false
+
+1 -> F ();
+0 -> T ();
+
+=================================
+fix (f : nat -> bool) = fun (x:nat) -> match x with
+                                         | O _ -> T
+                                         | S _ -> F
+
+0.0030 false
+
+2 -> T ();
+0 -> T ();
+
+=================================
+fix (f : nat -> bool) = fun (x:nat) -> T
+
+0.0001 false
+
+3 -> F ();
+0 -> T ();
+
+=================================
+fix (f : nat -> bool) = fun (x:nat) -> match x with
+                                         | O _ -> T
+                                         | S _ -> F
+
+0.0280 false
+
+1 -> F ();
+0 -> T ();
+
+=================================
+fix (f : nat -> bool) = fun (x:nat) -> match x with
+                                         | O _ -> T
+                                         | S _ -> F
+
+0.0033 false
+
+1 -> F ();
+0 -> T ();
+
+=================================
+fix (f : nat -> bool) = fun (x:nat) -> match x with
+                                         | O _ -> T
+                                         | S _ -> F
+
+0.0034 false
+
+3 -> F ();
+0 -> T ();
+
+=================================
+fix (f : nat -> bool) = fun (x:nat) -> match x with
+                                         | O _ -> T
+                                         | S _ -> F
+
+0.0172 false
+
+1 -> F ();
+0 -> T ();
+
+=================================
+fix (f : nat -> bool) = fun (x:nat) -> match x with
+                                         | O _ -> T
+                                         | S _ -> F
+
+0.0028 false
+
+3 -> F ();
+1 -> F ();
+0 -> T ();
+
+=================================
+fix (f : nat -> bool) = fun (x:nat) -> match x with
+                                         | O _ -> T
+                                         | S _ -> F
+
+0.0152 false
+
+3 -> F ();
+0 -> T ();
+0 -> T ();
+
+=================================
+fix (f : nat -> bool) = fun (x:nat) -> match x with
+                                         | O _ -> T
+                                         | S _ -> F
+
+0.0279 false
+
+3 -> F ();
+0 -> T ();
+0 -> T ();
+
+=================================
+fix (f : nat -> bool) = fun (x:nat) -> match x with
+                                         | O _ -> T
+                                         | S _ -> F
+
+0.0191 false
+
+0 -> T ();
+3 -> F ();
+0 -> T ();
+
+=================================
+fix (f : nat -> bool) = fun (x:nat) -> match x with
+                                         | O _ -> T
+                                         | S _ -> F
+
+0.0194 false
+
+2 -> T ();
+3 -> F ();
+0 -> T ();
+
+=================================
+fix (f : nat -> bool) =
+  fun (x:nat) ->
+    match x with
+      | O _ -> T
+      | S _ -> (match Un_S (Un_S x) with
+                  | O _ -> T
+                  | S _ -> F)
+
+0.0549 false
+
+0 -> T ();
+1 -> F ();
+0 -> T ();
+
+=================================
+fix (f : nat -> bool) = fun (x:nat) -> match x with
+                                         | O _ -> T
+                                         | S _ -> F
+
+0.0035 false
+
+1 -> F ();
+2 -> T ();
+0 -> T ();
+
+=================================
+fix (f : nat -> bool) =
+  fun (x:nat) ->
+    match x with
+      | O _ -> T
+      | S _ -> (match Un_S x with
+                  | O _ -> F
+                  | S _ -> T)
+
+0.0050 false
+
+2 -> T ();
+0 -> T ();
+0 -> T ();
+
+=================================
+fix (f : nat -> bool) = fun (x:nat) -> T
+
+0.0000 false
+
+2 -> T ();
+1 -> F ();
+0 -> T ();
+
+=================================
+fix (f : nat -> bool) =
+  fun (x:nat) ->
+    match x with
+      | O _ -> T
+      | S _ -> (match Un_S x with
+                  | O _ -> F
+                  | S _ -> T)
+
+0.0049 false
+
+3 -> F ();
+1 -> F ();
+0 -> T ();
+
+=================================
+fix (f : nat -> bool) = fun (x:nat) -> match x with
+                                         | O _ -> T
+                                         | S _ -> F
+
+0.0156 false
+
+2 -> T ();
+3 -> F ();
+0 -> T ();
+0 -> T ();
+
+=================================
+fix (f : nat -> bool) =
+  fun (x:nat) ->
+    match x with
+      | O _ -> T
+      | S _ -> (match Un_S (Un_S x) with
+                  | O _ -> T
+                  | S _ -> F)
+
+0.0342 false
+
+3 -> F ();
+2 -> T ();
+0 -> T ();
+0 -> T ();
+
+=================================
+fix (f : nat -> bool) =
+  fun (x:nat) ->
+    match x with
+      | O _ -> T
+      | S _ -> (match Un_S (Un_S x) with
+                  | O _ -> T
+                  | S _ -> F)
+
+0.0355 false
+
+1 -> F ();
+0 -> T ();
+3 -> F ();
+0 -> T ();
+
+=================================
+fix (f : nat -> bool) = fun (x:nat) -> match x with
+                                         | O _ -> T
+                                         | S _ -> F
+
+0.0032 false
+
+0 -> T ();
+3 -> F ();
+2 -> T ();
+0 -> T ();
+
+=================================
+fix (f : nat -> bool) =
+  fun (x:nat) ->
+    match x with
+      | O _ -> T
+      | S _ -> (match Un_S (Un_S x) with
+                  | O _ -> T
+                  | S _ -> F)
+
+0.0168 false
+
+1 -> F ();
+3 -> F ();
+0 -> T ();
+0 -> T ();
+
+=================================
+fix (f : nat -> bool) = fun (x:nat) -> match x with
+                                         | O _ -> T
+                                         | S _ -> F
+
+0.0031 false
+
+0 -> T ();
+1 -> F ();
+2 -> T ();
+0 -> T ();
+
+=================================
+fix (f : nat -> bool) =
+  fun (x:nat) ->
+    match x with
+      | O _ -> T
+      | S _ -> (match Un_S x with
+                  | O _ -> F
+                  | S _ -> T)
+
+0.0043 false
+
+0 -> T ();
+1 -> F ();
+2 -> T ();
+0 -> T ();
+
+=================================
+fix (f : nat -> bool) =
+  fun (x:nat) ->
+    match x with
+      | O _ -> T
+      | S _ -> (match Un_S x with
+                  | O _ -> F
+                  | S _ -> T)
+
+0.0039 false
+
+0 -> T ();
+1 -> F ();
+3 -> F ();
+0 -> T ();
+
+=================================
+fix (f : nat -> bool) = fun (x:nat) -> match x with
+                                         | O _ -> T
+                                         | S _ -> F
+
+0.0031 false
+
+2 -> T ();
+3 -> F ();
+1 -> F ();
+0 -> T ();
+
+=================================
+fix (f : nat -> bool) =
+  fun (x:nat) ->
+    match x with
+      | O _ -> T
+      | S _ -> (match Un_S x with
+                  | O _ -> F
+                  | S _ -> f Un_S (Un_S x))
+
+0.0248 true
+
+1 -> F ();
+2 -> T ();
+0 -> T ();
+0 -> T ();
+
+=================================
+fix (f : nat -> bool) =
+  fun (x:nat) ->
+    match x with
+      | O _ -> T
+      | S _ -> (match Un_S x with
+                  | O _ -> F
+                  | S _ -> T)
+
+0.0047 false
+
+1 -> F ();
+3 -> F ();
+2 -> T ();
+0 -> T ();
+0 -> T ();
+
+=================================
+fix (f : nat -> bool) =
+  fun (x:nat) ->
+    match x with
+      | O _ -> T
+      | S _ -> (match Un_S x with
+                  | O _ -> F
+                  | S _ -> f Un_S (Un_S x))
+
+0.0188 true
+
+1 -> F ();
+2 -> T ();
+0 -> T ();
+3 -> F ();
+0 -> T ();
+
+=================================
+fix (f : nat -> bool) =
+  fun (x:nat) ->
+    match x with
+      | O _ -> T
+      | S _ -> (match Un_S x with
+                  | O _ -> F
+                  | S _ -> f Un_S (Un_S x))
+
+0.0073 true
+
+3 -> F ();
+0 -> T ();
+1 -> F ();
+2 -> T ();
+0 -> T ();
+
+=================================
+fix (f : nat -> bool) =
+  fun (x:nat) ->
+    match x with
+      | O _ -> T
+      | S _ -> (match Un_S x with
+                  | O _ -> F
+                  | S _ -> f Un_S (Un_S x))
+
+0.0220 true
+
+2 -> T ();
+3 -> F ();
+0 -> T ();
+1 -> F ();
+0 -> T ();
+
+=================================
+fix (f : nat -> bool) =
+  fun (x:nat) ->
+    match x with
+      | O _ -> T
+      | S _ -> (match Un_S x with
+                  | O _ -> F
+                  | S _ -> f Un_S (Un_S x))
+
+0.0258 true
+
+0 -> T ();
+2 -> T ();
+3 -> F ();
+1 -> F ();
+0 -> T ();
+
+=================================
+fix (f : nat -> bool) =
+  fun (x:nat) ->
+    match x with
+      | O _ -> T
+      | S _ -> (match Un_S x with
+                  | O _ -> F
+                  | S _ -> f Un_S (Un_S x))
+
+0.0205 true
+
+2 -> T ();
+0 -> T ();
+3 -> F ();
+1 -> F ();
+0 -> T ();
+
+=================================
+fix (f : nat -> bool) =
+  fun (x:nat) ->
+    match x with
+      | O _ -> T
+      | S _ -> (match Un_S x with
+                  | O _ -> F
+                  | S _ -> f Un_S (Un_S x))
+
+0.0236 true
+
+2 -> T ();
+1 -> F ();
+3 -> F ();
+0 -> T ();
+0 -> T ();
+
+=================================
+fix (f : nat -> bool) =
+  fun (x:nat) ->
+    match x with
+      | O _ -> T
+      | S _ -> (match Un_S x with
+                  | O _ -> F
+                  | S _ -> f Un_S (Un_S x))
+
+0.0184 true
+
+1 -> F ();
+2 -> T ();
+3 -> F ();
+0 -> T ();
+0 -> T ();
+
+=================================
+fix (f : nat -> bool) =
+  fun (x:nat) ->
+    match x with
+      | O _ -> T
+      | S _ -> (match Un_S x with
+                  | O _ -> F
+                  | S _ -> f Un_S (Un_S x))
+
+0.0184 true
+
+1 -> F ();
+0 -> T ();
+3 -> F ();
+2 -> T ();
+0 -> T ();
+
+=================================
+fix (f : nat -> bool) =
+  fun (x:nat) ->
+    match x with
+      | O _ -> T
+      | S _ -> (match Un_S x with
+                  | O _ -> F
+                  | S _ -> f Un_S (Un_S x))
+
+0.0060 true
+
+3 -> F ();
+0 -> T ();
+1 -> F ();
+2 -> T ();
+0 -> T ();
+
+=================================
+fix (f : nat -> bool) =
+  fun (x:nat) ->
+    match x with
+      | O _ -> T
+      | S _ -> (match Un_S x with
+                  | O _ -> F
+                  | S _ -> f Un_S (Un_S x))
+
+0.0206 true
+

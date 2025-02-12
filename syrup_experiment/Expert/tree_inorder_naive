@@ -1,0 +1,328 @@
+Leaf () -> [];
+=================================
+fix f0.fun x0.
+  (append
+    ( ( Nil ), ( Nil ) ))
+0.0003 false
+
+Node (Leaf (), 1, Leaf ()) -> [1];
+=================================
+fix f0.fun x0.
+  match (x0) with
+  | Leaf -> ( Nil )
+  | Node(v1,l1,r1) ->
+    ( Cons v1 (f0 l1) )
+  
+0.0014 false
+
+Node (Leaf (), 2, Leaf ()) -> [2];
+=================================
+fix f0.fun x0.
+  match (x0) with
+  | Leaf -> ( Nil )
+  | Node(v1,l1,r1) ->
+    ( Cons v1 (f0 l1) )
+  
+0.0016 false
+
+Node (Node (Leaf (), 1, Leaf ()), 2, Leaf ()) -> [1, 2];
+=================================
+fix f0.fun x0.
+  match (x0) with
+  | Leaf -> ( Nil )
+  | Node(v1,l1,r1) ->
+    ( Cons
+      ( Succ ( Zero ) )
+      ( Cons v1 ( Nil ) )
+      )
+  
+0.0026 false
+
+Node (Leaf (), 1, Node (Leaf (), 2, Leaf ())) -> [1, 2];
+=================================
+fix f0.fun x0.
+  match (x0) with
+  | Leaf -> ( Nil )
+  | Node(v1,l1,r1) ->
+    ( Cons v1 (f0 r1) )
+  
+0.0027 false
+
+Leaf () -> [];
+Node (Leaf (), 1, Leaf ()) -> [1];
+=================================
+fix f0.fun x0.
+  match (x0) with
+  | Leaf -> ( Nil )
+  | Node(v1,l1,r1) ->
+    ( Cons v1 ( Nil ) )
+  
+0.0005 false
+
+Leaf () -> [];
+Node (Leaf (), 2, Leaf ()) -> [2];
+=================================
+fix f0.fun x0.
+  match (x0) with
+  | Leaf -> ( Nil )
+  | Node(v1,l1,r1) ->
+    ( Cons v1 ( Nil ) )
+  
+0.0005 false
+
+Leaf () -> [];
+Node (Node (Leaf (), 1, Leaf ()), 2, Leaf ()) -> [1, 2];
+=================================
+fix f0.fun x0.
+  match (x0) with
+  | Leaf -> ( Nil )
+  | Node(v1,l1,r1) ->
+    ( Cons
+      ( Succ ( Zero ) )
+      ( Cons v1 ( Nil ) )
+      )
+  
+0.0021 false
+
+Leaf () -> [];
+Node (Leaf (), 1, Node (Leaf (), 2, Leaf ())) -> [1, 2];
+=================================
+fix f0.fun x0.
+  match (x0) with
+  | Leaf -> ( Nil )
+  | Node(v1,l1,r1) ->
+    ( Cons v1 (f0 r1) )
+  
+0.0022 false
+
+Node (Leaf (), 1, Leaf ()) -> [1];
+Node (Leaf (), 2, Leaf ()) -> [2];
+=================================
+fix f0.fun x0.
+  match (x0) with
+  | Leaf -> ( Nil )
+  | Node(v1,l1,r1) ->
+    ( Cons v1 ( Nil ) )
+  
+0.0027 false
+
+Node (Leaf (), 1, Leaf ()) -> [1];
+Node (Node (Leaf (), 1, Leaf ()), 2, Leaf ()) -> [1, 2];
+=================================
+None
+Node (Leaf (), 1, Leaf ()) -> [1];
+Node (Leaf (), 1, Node (Leaf (), 2, Leaf ())) -> [1, 2];
+=================================
+fix f0.fun x0.
+  match (x0) with
+  | Leaf -> ( Nil )
+  | Node(v1,l1,r1) ->
+    ( Cons v1 (f0 r1) )
+  
+0.0031 false
+
+Node (Leaf (), 2, Leaf ()) -> [2];
+Node (Node (Leaf (), 1, Leaf ()), 2, Leaf ()) -> [1, 2];
+=================================
+None
+Node (Leaf (), 2, Leaf ()) -> [2];
+Node (Leaf (), 1, Node (Leaf (), 2, Leaf ())) -> [1, 2];
+=================================
+fix f0.fun x0.
+  match (x0) with
+  | Leaf -> ( Nil )
+  | Node(v1,l1,r1) ->
+    ( Cons v1 (f0 r1) )
+  
+0.0025 false
+
+Node (Node (Leaf (), 1, Leaf ()), 2, Leaf ()) -> [1, 2];
+Node (Leaf (), 1, Node (Leaf (), 2, Leaf ())) -> [1, 2];
+=================================
+fail to find a solution
+fix f0.fun x0.
+  match (x0) with
+  | Leaf -> ( Nil )
+  | Node(v1,l1,r1) ->
+    ( Cons
+      ( Succ ( Zero ) )
+      ( Cons
+        ( Succ
+          ( Succ ( Zero )
+            ) ) ( Nil ) )
+      )
+  
+0.2368 false
+
+Leaf () -> [];
+Node (Leaf (), 1, Leaf ()) -> [1];
+Node (Leaf (), 2, Leaf ()) -> [2];
+=================================
+fix f0.fun x0.
+  match (x0) with
+  | Leaf -> ( Nil )
+  | Node(v1,l1,r1) ->
+    ( Cons v1 ( Nil ) )
+  
+0.0017 false
+
+Leaf () -> [];
+Node (Leaf (), 1, Leaf ()) -> [1];
+Node (Node (Leaf (), 1, Leaf ()), 2, Leaf ()) -> [1, 2];
+=================================
+fail to find a solution
+fail to find a solution
+fix f0.fun x0.
+  match (x0) with
+  | Leaf -> ( Nil )
+  | Node(v1,l1,r1) ->
+    (append
+      ( (f0 l1),
+        ( Cons v1 ( Nil )
+          ) ))
+  
+0.0086 false
+
+Leaf () -> [];
+Node (Leaf (), 1, Leaf ()) -> [1];
+Node (Leaf (), 1, Node (Leaf (), 2, Leaf ())) -> [1, 2];
+=================================
+fix f0.fun x0.
+  match (x0) with
+  | Leaf -> ( Nil )
+  | Node(v1,l1,r1) ->
+    ( Cons v1 (f0 r1) )
+  
+0.0028 false
+
+Leaf () -> [];
+Node (Leaf (), 2, Leaf ()) -> [2];
+Node (Node (Leaf (), 1, Leaf ()), 2, Leaf ()) -> [1, 2];
+=================================
+None
+Leaf () -> [];
+Node (Leaf (), 2, Leaf ()) -> [2];
+Node (Leaf (), 1, Node (Leaf (), 2, Leaf ())) -> [1, 2];
+=================================
+fix f0.fun x0.
+  match (x0) with
+  | Leaf -> ( Nil )
+  | Node(v1,l1,r1) ->
+    ( Cons v1 (f0 r1) )
+  
+0.0017 false
+
+Leaf () -> [];
+Node (Node (Leaf (), 1, Leaf ()), 2, Leaf ()) -> [1, 2];
+Node (Leaf (), 1, Node (Leaf (), 2, Leaf ())) -> [1, 2];
+=================================
+fail to find a solution
+fix f0.fun x0.
+  match (x0) with
+  | Leaf -> ( Nil )
+  | Node(v1,l1,r1) ->
+    ( Cons
+      ( Succ ( Zero ) )
+      ( Cons
+        ( Succ
+          ( Succ ( Zero )
+            ) ) ( Nil ) )
+      )
+  
+0.0920 false
+
+Node (Leaf (), 1, Leaf ()) -> [1];
+Node (Leaf (), 2, Leaf ()) -> [2];
+Node (Node (Leaf (), 1, Leaf ()), 2, Leaf ()) -> [1, 2];
+=================================
+None
+Node (Leaf (), 1, Leaf ()) -> [1];
+Node (Leaf (), 2, Leaf ()) -> [2];
+Node (Leaf (), 1, Node (Leaf (), 2, Leaf ())) -> [1, 2];
+=================================
+fix f0.fun x0.
+  match (x0) with
+  | Leaf -> ( Nil )
+  | Node(v1,l1,r1) ->
+    ( Cons v1 (f0 r1) )
+  
+0.0048 false
+
+Node (Leaf (), 1, Leaf ()) -> [1];
+Node (Node (Leaf (), 1, Leaf ()), 2, Leaf ()) -> [1, 2];
+Node (Leaf (), 1, Node (Leaf (), 2, Leaf ())) -> [1, 2];
+=================================
+None
+Node (Leaf (), 2, Leaf ()) -> [2];
+Node (Node (Leaf (), 1, Leaf ()), 2, Leaf ()) -> [1, 2];
+Node (Leaf (), 1, Node (Leaf (), 2, Leaf ())) -> [1, 2];
+=================================
+None
+Leaf () -> [];
+Node (Leaf (), 1, Leaf ()) -> [1];
+Node (Leaf (), 2, Leaf ()) -> [2];
+Node (Node (Leaf (), 1, Leaf ()), 2, Leaf ()) -> [1, 2];
+=================================
+fail to find a solution
+fail to find a solution
+fix f0.fun x0.
+  match (x0) with
+  | Leaf -> ( Nil )
+  | Node(v1,l1,r1) ->
+    (append
+      ( (f0 l1),
+        ( Cons v1 ( Nil )
+          ) ))
+  
+0.0149 false
+
+Leaf () -> [];
+Node (Leaf (), 1, Leaf ()) -> [1];
+Node (Leaf (), 2, Leaf ()) -> [2];
+Node (Leaf (), 1, Node (Leaf (), 2, Leaf ())) -> [1, 2];
+=================================
+fix f0.fun x0.
+  match (x0) with
+  | Leaf -> ( Nil )
+  | Node(v1,l1,r1) ->
+    ( Cons v1 (f0 r1) )
+  
+0.0032 false
+
+Leaf () -> [];
+Node (Leaf (), 1, Leaf ()) -> [1];
+Node (Node (Leaf (), 1, Leaf ()), 2, Leaf ()) -> [1, 2];
+Node (Leaf (), 1, Node (Leaf (), 2, Leaf ())) -> [1, 2];
+=================================
+None
+Leaf () -> [];
+Node (Leaf (), 2, Leaf ()) -> [2];
+Node (Node (Leaf (), 1, Leaf ()), 2, Leaf ()) -> [1, 2];
+Node (Leaf (), 1, Node (Leaf (), 2, Leaf ())) -> [1, 2];
+=================================
+None
+Node (Leaf (), 1, Leaf ()) -> [1];
+Node (Leaf (), 2, Leaf ()) -> [2];
+Node (Node (Leaf (), 1, Leaf ()), 2, Leaf ()) -> [1, 2];
+Node (Leaf (), 1, Node (Leaf (), 2, Leaf ())) -> [1, 2];
+=================================
+None
+Leaf () -> [];
+Node (Leaf (), 1, Leaf ()) -> [1];
+Node (Leaf (), 2, Leaf ()) -> [2];
+Node (Node (Leaf (), 1, Leaf ()), 2, Leaf ()) -> [1, 2];
+Node (Leaf (), 1, Node (Leaf (), 2, Leaf ())) -> [1, 2];
+=================================
+fail to find a solution
+fail to find a solution
+fix f0.fun x0.
+  match (x0) with
+  | Leaf -> ( Nil )
+  | Node(v1,l1,r1) ->
+    (append
+      ( (f0 l1),
+        ( Cons v1 (f0 r1)
+          ) ))
+  
+0.0175 true
+

@@ -1,0 +1,765 @@
+Leaf () -> [];
+=================================
+fix f0.fun x0.
+  (append
+    ( ( Nil ), ( Nil ) ))
+0.0004 false
+
+Node (Leaf (), 1, Leaf ()) -> [1];
+=================================
+fix f0.fun x0.
+  match (x0) with
+  | Leaf -> ( Nil )
+  | Node(v1,l1,r1) ->
+    ( Cons v1 ( Nil ) )
+  
+0.0024 false
+
+Node (Leaf (), 2, Leaf ()) -> [2];
+=================================
+fix f0.fun x0.
+  match (x0) with
+  | Leaf -> ( Nil )
+  | Node(v1,l1,r1) ->
+    ( Cons v1 (f0 l1) )
+  
+0.0015 false
+
+Node (Node (Leaf (), 1, Leaf ()), 2, Leaf ()) -> [1, 2];
+=================================
+fix f0.fun x0.
+  match (x0) with
+  | Leaf -> ( Nil )
+  | Node(v1,l1,r1) ->
+    ( Cons
+      ( Succ ( Zero ) )
+      ( Cons v1 ( Nil ) )
+      )
+  
+0.0028 false
+
+Node (Leaf (), 1, Node (Leaf (), 2, Leaf ())) -> [2, 1];
+=================================
+fix f0.fun x0.
+  match (x0) with
+  | Leaf -> ( Nil )
+  | Node(v1,l1,r1) ->
+    ( Cons ( Succ v1 )
+      ( Cons v1 ( Nil ) )
+      )
+  
+0.0028 false
+
+Node (Node (Leaf (), 1, Leaf ()), 0, Node (Leaf (), 2, Leaf ()) ) -> [1, 2, 0];
+=================================
+fix f0.fun x0.
+  match (x0) with
+  | Leaf ->
+    ( Cons ( Zero )
+      ( Nil ) )
+  | Node(v1,l1,r1) ->
+    ( Cons ( Succ v1 )
+      (f0 l1) )
+  
+0.0036 false
+
+Node (Node (Leaf (), 2, Leaf ()), 0, Node (Leaf (), 1, Leaf ()) ) -> [2, 1, 0];
+=================================
+None
+Node (Node (Node (Leaf (), 2, Leaf ()), 0, Node (Leaf (), 1, Leaf ()) ), 0, Leaf ()) -> [2, 1, 0, 0];
+=================================
+fail to find a solution
+fix f0.fun x0.
+  match (x0) with
+  | Leaf ->
+    ( Cons ( Zero )
+      ( Cons ( Zero )
+        ( Nil ) ) )
+  | Node(v1,l1,r1) ->
+    ( Cons
+      ( Succ ( Succ v1 )
+        )
+      ( Cons ( Succ v1 )
+        (f0 r1) ) )
+  
+1.3745 false
+
+Node (Leaf (), 2, Node (Node (Leaf (), 2, Leaf ()), 0, Node (Leaf (), 1, Leaf ()) )) -> [2, 1, 0, 2];
+=================================
+None
+Node (Leaf (), 2, Leaf ()) -> [2];
+Node (Node (Leaf (), 2, Leaf ()), 0, Node (Leaf (), 1, Leaf ()) ) -> [2, 1, 0];
+=================================
+None
+Node (Node (Leaf (), 1, Leaf ()), 2, Leaf ()) -> [1, 2];
+Node (Leaf (), 1, Node (Leaf (), 2, Leaf ())) -> [2, 1];
+=================================
+None
+Node (Node (Node (Leaf (), 2, Leaf ()), 0, Node (Leaf (), 1, Leaf ()) ), 0, Leaf ()) -> [2, 1, 0, 0];
+Node (Leaf (), 2, Node (Node (Leaf (), 2, Leaf ()), 0, Node (Leaf (), 1, Leaf ()) )) -> [2, 1, 0, 2];
+=================================
+None
+Leaf () -> [];
+Node (Leaf (), 1, Node (Leaf (), 2, Leaf ())) -> [2, 1];
+=================================
+fix f0.fun x0.
+  match (x0) with
+  | Leaf -> ( Nil )
+  | Node(v1,l1,r1) ->
+    ( Cons ( Succ v1 )
+      ( Cons v1 ( Nil ) )
+      )
+  
+0.0021 false
+
+Node (Leaf (), 1, Node (Leaf (), 2, Leaf ())) -> [2, 1];
+Node (Leaf (), 2, Node (Node (Leaf (), 2, Leaf ()), 0, Node (Leaf (), 1, Leaf ()) )) -> [2, 1, 0, 2];
+=================================
+None
+Node (Node (Leaf (), 2, Leaf ()), 0, Node (Leaf (), 1, Leaf ()) ) -> [2, 1, 0];
+Node (Leaf (), 2, Node (Node (Leaf (), 2, Leaf ()), 0, Node (Leaf (), 1, Leaf ()) )) -> [2, 1, 0, 2];
+=================================
+None
+Node (Leaf (), 1, Leaf ()) -> [1];
+Node (Leaf (), 1, Node (Leaf (), 2, Leaf ())) -> [2, 1];
+=================================
+None
+Node (Node (Leaf (), 1, Leaf ()), 0, Node (Leaf (), 2, Leaf ()) ) -> [1, 2, 0];
+Node (Leaf (), 2, Node (Node (Leaf (), 2, Leaf ()), 0, Node (Leaf (), 1, Leaf ()) )) -> [2, 1, 0, 2];
+=================================
+None
+Node (Leaf (), 1, Leaf ()) -> [1];
+Node (Node (Node (Leaf (), 2, Leaf ()), 0, Node (Leaf (), 1, Leaf ()) ), 0, Leaf ()) -> [2, 1, 0, 0];
+=================================
+None
+Node (Leaf (), 1, Leaf ()) -> [1];
+Node (Node (Leaf (), 2, Leaf ()), 0, Node (Leaf (), 1, Leaf ()) ) -> [2, 1, 0];
+=================================
+None
+Leaf () -> [];
+Node (Leaf (), 2, Leaf ()) -> [2];
+Node (Leaf (), 2, Node (Node (Leaf (), 2, Leaf ()), 0, Node (Leaf (), 1, Leaf ()) )) -> [2, 1, 0, 2];
+=================================
+None
+Node (Leaf (), 1, Leaf ()) -> [1];
+Node (Leaf (), 1, Node (Leaf (), 2, Leaf ())) -> [2, 1];
+Node (Leaf (), 2, Node (Node (Leaf (), 2, Leaf ()), 0, Node (Leaf (), 1, Leaf ()) )) -> [2, 1, 0, 2];
+=================================
+None
+Node (Leaf (), 2, Leaf ()) -> [2];
+Node (Node (Leaf (), 1, Leaf ()), 0, Node (Leaf (), 2, Leaf ()) ) -> [1, 2, 0];
+Node (Leaf (), 2, Node (Node (Leaf (), 2, Leaf ()), 0, Node (Leaf (), 1, Leaf ()) )) -> [2, 1, 0, 2];
+=================================
+None
+Node (Leaf (), 1, Node (Leaf (), 2, Leaf ())) -> [2, 1];
+Node (Node (Leaf (), 1, Leaf ()), 0, Node (Leaf (), 2, Leaf ()) ) -> [1, 2, 0];
+Node (Node (Node (Leaf (), 2, Leaf ()), 0, Node (Leaf (), 1, Leaf ()) ), 0, Leaf ()) -> [2, 1, 0, 0];
+=================================
+None
+Node (Leaf (), 1, Leaf ()) -> [1];
+Node (Leaf (), 2, Leaf ()) -> [2];
+Node (Node (Leaf (), 1, Leaf ()), 0, Node (Leaf (), 2, Leaf ()) ) -> [1, 2, 0];
+=================================
+None
+Node (Node (Leaf (), 1, Leaf ()), 2, Leaf ()) -> [1, 2];
+Node (Node (Leaf (), 1, Leaf ()), 0, Node (Leaf (), 2, Leaf ()) ) -> [1, 2, 0];
+Node (Node (Leaf (), 2, Leaf ()), 0, Node (Leaf (), 1, Leaf ()) ) -> [2, 1, 0];
+=================================
+None
+Node (Node (Leaf (), 1, Leaf ()), 2, Leaf ()) -> [1, 2];
+Node (Leaf (), 1, Node (Leaf (), 2, Leaf ())) -> [2, 1];
+Node (Node (Leaf (), 2, Leaf ()), 0, Node (Leaf (), 1, Leaf ()) ) -> [2, 1, 0];
+=================================
+None
+Leaf () -> [];
+Node (Leaf (), 1, Node (Leaf (), 2, Leaf ())) -> [2, 1];
+Node (Node (Node (Leaf (), 2, Leaf ()), 0, Node (Leaf (), 1, Leaf ()) ), 0, Leaf ()) -> [2, 1, 0, 0];
+=================================
+None
+Node (Leaf (), 1, Leaf ()) -> [1];
+Node (Node (Leaf (), 1, Leaf ()), 0, Node (Leaf (), 2, Leaf ()) ) -> [1, 2, 0];
+Node (Node (Node (Leaf (), 2, Leaf ()), 0, Node (Leaf (), 1, Leaf ()) ), 0, Leaf ()) -> [2, 1, 0, 0];
+=================================
+None
+Node (Leaf (), 1, Leaf ()) -> [1];
+Node (Leaf (), 2, Leaf ()) -> [2];
+Node (Leaf (), 1, Node (Leaf (), 2, Leaf ())) -> [2, 1];
+=================================
+None
+Node (Leaf (), 2, Leaf ()) -> [2];
+Node (Leaf (), 1, Node (Leaf (), 2, Leaf ())) -> [2, 1];
+Node (Node (Leaf (), 2, Leaf ()), 0, Node (Leaf (), 1, Leaf ()) ) -> [2, 1, 0];
+Node (Node (Node (Leaf (), 2, Leaf ()), 0, Node (Leaf (), 1, Leaf ()) ), 0, Leaf ()) -> [2, 1, 0, 0];
+=================================
+None
+Node (Node (Leaf (), 1, Leaf ()), 2, Leaf ()) -> [1, 2];
+Node (Node (Leaf (), 1, Leaf ()), 0, Node (Leaf (), 2, Leaf ()) ) -> [1, 2, 0];
+Node (Node (Node (Leaf (), 2, Leaf ()), 0, Node (Leaf (), 1, Leaf ()) ), 0, Leaf ()) -> [2, 1, 0, 0];
+Node (Leaf (), 2, Node (Node (Leaf (), 2, Leaf ()), 0, Node (Leaf (), 1, Leaf ()) )) -> [2, 1, 0, 2];
+=================================
+None
+Node (Leaf (), 2, Leaf ()) -> [2];
+Node (Node (Leaf (), 1, Leaf ()), 0, Node (Leaf (), 2, Leaf ()) ) -> [1, 2, 0];
+Node (Node (Leaf (), 2, Leaf ()), 0, Node (Leaf (), 1, Leaf ()) ) -> [2, 1, 0];
+Node (Node (Node (Leaf (), 2, Leaf ()), 0, Node (Leaf (), 1, Leaf ()) ), 0, Leaf ()) -> [2, 1, 0, 0];
+=================================
+None
+Leaf () -> [];
+Node (Node (Leaf (), 1, Leaf ()), 2, Leaf ()) -> [1, 2];
+Node (Node (Leaf (), 2, Leaf ()), 0, Node (Leaf (), 1, Leaf ()) ) -> [2, 1, 0];
+Node (Leaf (), 2, Node (Node (Leaf (), 2, Leaf ()), 0, Node (Leaf (), 1, Leaf ()) )) -> [2, 1, 0, 2];
+=================================
+None
+Leaf () -> [];
+Node (Node (Leaf (), 1, Leaf ()), 2, Leaf ()) -> [1, 2];
+Node (Node (Leaf (), 1, Leaf ()), 0, Node (Leaf (), 2, Leaf ()) ) -> [1, 2, 0];
+Node (Node (Leaf (), 2, Leaf ()), 0, Node (Leaf (), 1, Leaf ()) ) -> [2, 1, 0];
+=================================
+None
+Leaf () -> [];
+Node (Leaf (), 1, Leaf ()) -> [1];
+Node (Node (Node (Leaf (), 2, Leaf ()), 0, Node (Leaf (), 1, Leaf ()) ), 0, Leaf ()) -> [2, 1, 0, 0];
+Node (Leaf (), 2, Node (Node (Leaf (), 2, Leaf ()), 0, Node (Leaf (), 1, Leaf ()) )) -> [2, 1, 0, 2];
+=================================
+None
+Node (Leaf (), 1, Leaf ()) -> [1];
+Node (Leaf (), 1, Node (Leaf (), 2, Leaf ())) -> [2, 1];
+Node (Node (Leaf (), 1, Leaf ()), 0, Node (Leaf (), 2, Leaf ()) ) -> [1, 2, 0];
+Node (Node (Node (Leaf (), 2, Leaf ()), 0, Node (Leaf (), 1, Leaf ()) ), 0, Leaf ()) -> [2, 1, 0, 0];
+=================================
+None
+Node (Leaf (), 2, Leaf ()) -> [2];
+Node (Node (Leaf (), 1, Leaf ()), 2, Leaf ()) -> [1, 2];
+Node (Node (Node (Leaf (), 2, Leaf ()), 0, Node (Leaf (), 1, Leaf ()) ), 0, Leaf ()) -> [2, 1, 0, 0];
+Node (Leaf (), 2, Node (Node (Leaf (), 2, Leaf ()), 0, Node (Leaf (), 1, Leaf ()) )) -> [2, 1, 0, 2];
+=================================
+None
+Node (Leaf (), 1, Leaf ()) -> [1];
+Node (Node (Leaf (), 2, Leaf ()), 0, Node (Leaf (), 1, Leaf ()) ) -> [2, 1, 0];
+Node (Node (Node (Leaf (), 2, Leaf ()), 0, Node (Leaf (), 1, Leaf ()) ), 0, Leaf ()) -> [2, 1, 0, 0];
+Node (Leaf (), 2, Node (Node (Leaf (), 2, Leaf ()), 0, Node (Leaf (), 1, Leaf ()) )) -> [2, 1, 0, 2];
+=================================
+None
+Leaf () -> [];
+Node (Leaf (), 2, Leaf ()) -> [2];
+Node (Leaf (), 1, Node (Leaf (), 2, Leaf ())) -> [2, 1];
+Node (Node (Leaf (), 2, Leaf ()), 0, Node (Leaf (), 1, Leaf ()) ) -> [2, 1, 0];
+=================================
+None
+Node (Leaf (), 2, Leaf ()) -> [2];
+Node (Node (Leaf (), 1, Leaf ()), 2, Leaf ()) -> [1, 2];
+Node (Node (Leaf (), 1, Leaf ()), 0, Node (Leaf (), 2, Leaf ()) ) -> [1, 2, 0];
+Node (Node (Node (Leaf (), 2, Leaf ()), 0, Node (Leaf (), 1, Leaf ()) ), 0, Leaf ()) -> [2, 1, 0, 0];
+Node (Leaf (), 2, Node (Node (Leaf (), 2, Leaf ()), 0, Node (Leaf (), 1, Leaf ()) )) -> [2, 1, 0, 2];
+=================================
+None
+Node (Leaf (), 1, Leaf ()) -> [1];
+Node (Leaf (), 2, Leaf ()) -> [2];
+Node (Node (Leaf (), 1, Leaf ()), 0, Node (Leaf (), 2, Leaf ()) ) -> [1, 2, 0];
+Node (Node (Node (Leaf (), 2, Leaf ()), 0, Node (Leaf (), 1, Leaf ()) ), 0, Leaf ()) -> [2, 1, 0, 0];
+Node (Leaf (), 2, Node (Node (Leaf (), 2, Leaf ()), 0, Node (Leaf (), 1, Leaf ()) )) -> [2, 1, 0, 2];
+=================================
+None
+Leaf () -> [];
+Node (Leaf (), 1, Leaf ()) -> [1];
+Node (Leaf (), 2, Leaf ()) -> [2];
+Node (Node (Leaf (), 1, Leaf ()), 2, Leaf ()) -> [1, 2];
+Node (Node (Leaf (), 2, Leaf ()), 0, Node (Leaf (), 1, Leaf ()) ) -> [2, 1, 0];
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun x0.
+  match (x0) with
+  | Leaf -> ( Nil )
+  | Node(v1,l1,r1) ->
+    (append
+      (
+        (append
+          ( (f0 l1),
+            (f0 r1) )),
+        ( Cons v1 ( Nil )
+          ) ))
+  
+0.1125 true
+
+Leaf () -> [];
+Node (Leaf (), 1, Leaf ()) -> [1];
+Node (Node (Leaf (), 1, Leaf ()), 2, Leaf ()) -> [1, 2];
+Node (Node (Leaf (), 1, Leaf ()), 0, Node (Leaf (), 2, Leaf ()) ) -> [1, 2, 0];
+Node (Leaf (), 2, Node (Node (Leaf (), 2, Leaf ()), 0, Node (Leaf (), 1, Leaf ()) )) -> [2, 1, 0, 2];
+=================================
+None
+Leaf () -> [];
+Node (Node (Leaf (), 1, Leaf ()), 2, Leaf ()) -> [1, 2];
+Node (Leaf (), 1, Node (Leaf (), 2, Leaf ())) -> [2, 1];
+Node (Node (Leaf (), 2, Leaf ()), 0, Node (Leaf (), 1, Leaf ()) ) -> [2, 1, 0];
+Node (Leaf (), 2, Node (Node (Leaf (), 2, Leaf ()), 0, Node (Leaf (), 1, Leaf ()) )) -> [2, 1, 0, 2];
+=================================
+None
+Leaf () -> [];
+Node (Leaf (), 2, Leaf ()) -> [2];
+Node (Node (Leaf (), 1, Leaf ()), 0, Node (Leaf (), 2, Leaf ()) ) -> [1, 2, 0];
+Node (Node (Leaf (), 2, Leaf ()), 0, Node (Leaf (), 1, Leaf ()) ) -> [2, 1, 0];
+Node (Node (Node (Leaf (), 2, Leaf ()), 0, Node (Leaf (), 1, Leaf ()) ), 0, Leaf ()) -> [2, 1, 0, 0];
+=================================
+None
+Leaf () -> [];
+Node (Leaf (), 1, Leaf ()) -> [1];
+Node (Leaf (), 2, Leaf ()) -> [2];
+Node (Node (Leaf (), 1, Leaf ()), 0, Node (Leaf (), 2, Leaf ()) ) -> [1, 2, 0];
+Node (Leaf (), 2, Node (Node (Leaf (), 2, Leaf ()), 0, Node (Leaf (), 1, Leaf ()) )) -> [2, 1, 0, 2];
+=================================
+None
+Node (Leaf (), 2, Leaf ()) -> [2];
+Node (Leaf (), 1, Node (Leaf (), 2, Leaf ())) -> [2, 1];
+Node (Node (Leaf (), 1, Leaf ()), 0, Node (Leaf (), 2, Leaf ()) ) -> [1, 2, 0];
+Node (Node (Leaf (), 2, Leaf ()), 0, Node (Leaf (), 1, Leaf ()) ) -> [2, 1, 0];
+Node (Leaf (), 2, Node (Node (Leaf (), 2, Leaf ()), 0, Node (Leaf (), 1, Leaf ()) )) -> [2, 1, 0, 2];
+=================================
+None
+Node (Leaf (), 1, Leaf ()) -> [1];
+Node (Leaf (), 1, Node (Leaf (), 2, Leaf ())) -> [2, 1];
+Node (Node (Leaf (), 1, Leaf ()), 0, Node (Leaf (), 2, Leaf ()) ) -> [1, 2, 0];
+Node (Node (Leaf (), 2, Leaf ()), 0, Node (Leaf (), 1, Leaf ()) ) -> [2, 1, 0];
+Node (Leaf (), 2, Node (Node (Leaf (), 2, Leaf ()), 0, Node (Leaf (), 1, Leaf ()) )) -> [2, 1, 0, 2];
+=================================
+None
+Node (Leaf (), 1, Leaf ()) -> [1];
+Node (Node (Leaf (), 1, Leaf ()), 2, Leaf ()) -> [1, 2];
+Node (Leaf (), 1, Node (Leaf (), 2, Leaf ())) -> [2, 1];
+Node (Node (Node (Leaf (), 2, Leaf ()), 0, Node (Leaf (), 1, Leaf ()) ), 0, Leaf ()) -> [2, 1, 0, 0];
+Node (Leaf (), 2, Node (Node (Leaf (), 2, Leaf ()), 0, Node (Leaf (), 1, Leaf ()) )) -> [2, 1, 0, 2];
+=================================
+None
+Leaf () -> [];
+Node (Leaf (), 1, Leaf ()) -> [1];
+Node (Leaf (), 2, Leaf ()) -> [2];
+Node (Leaf (), 1, Node (Leaf (), 2, Leaf ())) -> [2, 1];
+Node (Node (Leaf (), 1, Leaf ()), 0, Node (Leaf (), 2, Leaf ()) ) -> [1, 2, 0];
+Node (Leaf (), 2, Node (Node (Leaf (), 2, Leaf ()), 0, Node (Leaf (), 1, Leaf ()) )) -> [2, 1, 0, 2];
+=================================
+None
+Leaf () -> [];
+Node (Leaf (), 2, Leaf ()) -> [2];
+Node (Leaf (), 1, Node (Leaf (), 2, Leaf ())) -> [2, 1];
+Node (Node (Leaf (), 2, Leaf ()), 0, Node (Leaf (), 1, Leaf ()) ) -> [2, 1, 0];
+Node (Node (Node (Leaf (), 2, Leaf ()), 0, Node (Leaf (), 1, Leaf ()) ), 0, Leaf ()) -> [2, 1, 0, 0];
+Node (Leaf (), 2, Node (Node (Leaf (), 2, Leaf ()), 0, Node (Leaf (), 1, Leaf ()) )) -> [2, 1, 0, 2];
+=================================
+None
+Node (Leaf (), 1, Leaf ()) -> [1];
+Node (Leaf (), 2, Leaf ()) -> [2];
+Node (Leaf (), 1, Node (Leaf (), 2, Leaf ())) -> [2, 1];
+Node (Node (Leaf (), 1, Leaf ()), 0, Node (Leaf (), 2, Leaf ()) ) -> [1, 2, 0];
+Node (Node (Node (Leaf (), 2, Leaf ()), 0, Node (Leaf (), 1, Leaf ()) ), 0, Leaf ()) -> [2, 1, 0, 0];
+Node (Leaf (), 2, Node (Node (Leaf (), 2, Leaf ()), 0, Node (Leaf (), 1, Leaf ()) )) -> [2, 1, 0, 2];
+=================================
+None
+Leaf () -> [];
+Node (Leaf (), 2, Leaf ()) -> [2];
+Node (Node (Leaf (), 1, Leaf ()), 2, Leaf ()) -> [1, 2];
+Node (Node (Leaf (), 1, Leaf ()), 0, Node (Leaf (), 2, Leaf ()) ) -> [1, 2, 0];
+Node (Node (Leaf (), 2, Leaf ()), 0, Node (Leaf (), 1, Leaf ()) ) -> [2, 1, 0];
+Node (Node (Node (Leaf (), 2, Leaf ()), 0, Node (Leaf (), 1, Leaf ()) ), 0, Leaf ()) -> [2, 1, 0, 0];
+=================================
+None
+Leaf () -> [];
+Node (Leaf (), 1, Node (Leaf (), 2, Leaf ())) -> [2, 1];
+Node (Node (Leaf (), 1, Leaf ()), 0, Node (Leaf (), 2, Leaf ()) ) -> [1, 2, 0];
+Node (Node (Leaf (), 2, Leaf ()), 0, Node (Leaf (), 1, Leaf ()) ) -> [2, 1, 0];
+Node (Node (Node (Leaf (), 2, Leaf ()), 0, Node (Leaf (), 1, Leaf ()) ), 0, Leaf ()) -> [2, 1, 0, 0];
+Node (Leaf (), 2, Node (Node (Leaf (), 2, Leaf ()), 0, Node (Leaf (), 1, Leaf ()) )) -> [2, 1, 0, 2];
+=================================
+None
+Leaf () -> [];
+Node (Leaf (), 1, Leaf ()) -> [1];
+Node (Leaf (), 2, Leaf ()) -> [2];
+Node (Node (Leaf (), 1, Leaf ()), 2, Leaf ()) -> [1, 2];
+Node (Node (Leaf (), 1, Leaf ()), 0, Node (Leaf (), 2, Leaf ()) ) -> [1, 2, 0];
+Node (Node (Node (Leaf (), 2, Leaf ()), 0, Node (Leaf (), 1, Leaf ()) ), 0, Leaf ()) -> [2, 1, 0, 0];
+=================================
+None
+Leaf () -> [];
+Node (Leaf (), 1, Leaf ()) -> [1];
+Node (Leaf (), 2, Leaf ()) -> [2];
+Node (Leaf (), 1, Node (Leaf (), 2, Leaf ())) -> [2, 1];
+Node (Node (Node (Leaf (), 2, Leaf ()), 0, Node (Leaf (), 1, Leaf ()) ), 0, Leaf ()) -> [2, 1, 0, 0];
+Node (Leaf (), 2, Node (Node (Leaf (), 2, Leaf ()), 0, Node (Leaf (), 1, Leaf ()) )) -> [2, 1, 0, 2];
+=================================
+None
+Node (Leaf (), 2, Leaf ()) -> [2];
+Node (Node (Leaf (), 1, Leaf ()), 2, Leaf ()) -> [1, 2];
+Node (Node (Leaf (), 1, Leaf ()), 0, Node (Leaf (), 2, Leaf ()) ) -> [1, 2, 0];
+Node (Node (Leaf (), 2, Leaf ()), 0, Node (Leaf (), 1, Leaf ()) ) -> [2, 1, 0];
+Node (Node (Node (Leaf (), 2, Leaf ()), 0, Node (Leaf (), 1, Leaf ()) ), 0, Leaf ()) -> [2, 1, 0, 0];
+Node (Leaf (), 2, Node (Node (Leaf (), 2, Leaf ()), 0, Node (Leaf (), 1, Leaf ()) )) -> [2, 1, 0, 2];
+=================================
+None
+Node (Leaf (), 2, Leaf ()) -> [2];
+Node (Node (Leaf (), 1, Leaf ()), 2, Leaf ()) -> [1, 2];
+Node (Leaf (), 1, Node (Leaf (), 2, Leaf ())) -> [2, 1];
+Node (Node (Leaf (), 1, Leaf ()), 0, Node (Leaf (), 2, Leaf ()) ) -> [1, 2, 0];
+Node (Node (Leaf (), 2, Leaf ()), 0, Node (Leaf (), 1, Leaf ()) ) -> [2, 1, 0];
+Node (Node (Node (Leaf (), 2, Leaf ()), 0, Node (Leaf (), 1, Leaf ()) ), 0, Leaf ()) -> [2, 1, 0, 0];
+=================================
+None
+Leaf () -> [];
+Node (Leaf (), 2, Leaf ()) -> [2];
+Node (Node (Leaf (), 1, Leaf ()), 2, Leaf ()) -> [1, 2];
+Node (Node (Leaf (), 1, Leaf ()), 0, Node (Leaf (), 2, Leaf ()) ) -> [1, 2, 0];
+Node (Node (Leaf (), 2, Leaf ()), 0, Node (Leaf (), 1, Leaf ()) ) -> [2, 1, 0];
+Node (Leaf (), 2, Node (Node (Leaf (), 2, Leaf ()), 0, Node (Leaf (), 1, Leaf ()) )) -> [2, 1, 0, 2];
+=================================
+None
+Node (Leaf (), 1, Leaf ()) -> [1];
+Node (Leaf (), 2, Leaf ()) -> [2];
+Node (Node (Leaf (), 1, Leaf ()), 2, Leaf ()) -> [1, 2];
+Node (Leaf (), 1, Node (Leaf (), 2, Leaf ())) -> [2, 1];
+Node (Node (Leaf (), 2, Leaf ()), 0, Node (Leaf (), 1, Leaf ()) ) -> [2, 1, 0];
+Node (Node (Node (Leaf (), 2, Leaf ()), 0, Node (Leaf (), 1, Leaf ()) ), 0, Leaf ()) -> [2, 1, 0, 0];
+Node (Leaf (), 2, Node (Node (Leaf (), 2, Leaf ()), 0, Node (Leaf (), 1, Leaf ()) )) -> [2, 1, 0, 2];
+=================================
+None
+Leaf () -> [];
+Node (Leaf (), 1, Leaf ()) -> [1];
+Node (Leaf (), 2, Leaf ()) -> [2];
+Node (Node (Leaf (), 1, Leaf ()), 0, Node (Leaf (), 2, Leaf ()) ) -> [1, 2, 0];
+Node (Node (Leaf (), 2, Leaf ()), 0, Node (Leaf (), 1, Leaf ()) ) -> [2, 1, 0];
+Node (Node (Node (Leaf (), 2, Leaf ()), 0, Node (Leaf (), 1, Leaf ()) ), 0, Leaf ()) -> [2, 1, 0, 0];
+Node (Leaf (), 2, Node (Node (Leaf (), 2, Leaf ()), 0, Node (Leaf (), 1, Leaf ()) )) -> [2, 1, 0, 2];
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun x0.
+  match (x0) with
+  | Leaf -> ( Nil )
+  | Node(v1,l1,r1) ->
+    (append
+      (
+        (append
+          ( (f0 l1),
+            (f0 r1) )),
+        ( Cons v1 ( Nil )
+          ) ))
+  
+0.1917 true
+
+Leaf () -> [];
+Node (Leaf (), 1, Leaf ()) -> [1];
+Node (Leaf (), 2, Leaf ()) -> [2];
+Node (Node (Leaf (), 1, Leaf ()), 2, Leaf ()) -> [1, 2];
+Node (Leaf (), 1, Node (Leaf (), 2, Leaf ())) -> [2, 1];
+Node (Node (Leaf (), 1, Leaf ()), 0, Node (Leaf (), 2, Leaf ()) ) -> [1, 2, 0];
+Node (Leaf (), 2, Node (Node (Leaf (), 2, Leaf ()), 0, Node (Leaf (), 1, Leaf ()) )) -> [2, 1, 0, 2];
+=================================
+None
+Leaf () -> [];
+Node (Leaf (), 1, Leaf ()) -> [1];
+Node (Node (Leaf (), 1, Leaf ()), 2, Leaf ()) -> [1, 2];
+Node (Node (Leaf (), 1, Leaf ()), 0, Node (Leaf (), 2, Leaf ()) ) -> [1, 2, 0];
+Node (Node (Leaf (), 2, Leaf ()), 0, Node (Leaf (), 1, Leaf ()) ) -> [2, 1, 0];
+Node (Node (Node (Leaf (), 2, Leaf ()), 0, Node (Leaf (), 1, Leaf ()) ), 0, Leaf ()) -> [2, 1, 0, 0];
+Node (Leaf (), 2, Node (Node (Leaf (), 2, Leaf ()), 0, Node (Leaf (), 1, Leaf ()) )) -> [2, 1, 0, 2];
+=================================
+None
+Leaf () -> [];
+Node (Leaf (), 1, Leaf ()) -> [1];
+Node (Leaf (), 2, Leaf ()) -> [2];
+Node (Leaf (), 1, Node (Leaf (), 2, Leaf ())) -> [2, 1];
+Node (Node (Leaf (), 1, Leaf ()), 0, Node (Leaf (), 2, Leaf ()) ) -> [1, 2, 0];
+Node (Node (Leaf (), 2, Leaf ()), 0, Node (Leaf (), 1, Leaf ()) ) -> [2, 1, 0];
+Node (Node (Node (Leaf (), 2, Leaf ()), 0, Node (Leaf (), 1, Leaf ()) ), 0, Leaf ()) -> [2, 1, 0, 0];
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun x0.
+  match (x0) with
+  | Leaf -> ( Nil )
+  | Node(v1,l1,r1) ->
+    (append
+      (
+        (append
+          ( (f0 l1),
+            (f0 r1) )),
+        ( Cons v1 ( Nil )
+          ) ))
+  
+0.2046 true
+
+Leaf () -> [];
+Node (Leaf (), 1, Leaf ()) -> [1];
+Node (Leaf (), 2, Leaf ()) -> [2];
+Node (Node (Leaf (), 1, Leaf ()), 2, Leaf ()) -> [1, 2];
+Node (Leaf (), 1, Node (Leaf (), 2, Leaf ())) -> [2, 1];
+Node (Node (Node (Leaf (), 2, Leaf ()), 0, Node (Leaf (), 1, Leaf ()) ), 0, Leaf ()) -> [2, 1, 0, 0];
+Node (Leaf (), 2, Node (Node (Leaf (), 2, Leaf ()), 0, Node (Leaf (), 1, Leaf ()) )) -> [2, 1, 0, 2];
+=================================
+None
+Leaf () -> [];
+Node (Leaf (), 2, Leaf ()) -> [2];
+Node (Leaf (), 1, Node (Leaf (), 2, Leaf ())) -> [2, 1];
+Node (Node (Leaf (), 1, Leaf ()), 0, Node (Leaf (), 2, Leaf ()) ) -> [1, 2, 0];
+Node (Node (Leaf (), 2, Leaf ()), 0, Node (Leaf (), 1, Leaf ()) ) -> [2, 1, 0];
+Node (Node (Node (Leaf (), 2, Leaf ()), 0, Node (Leaf (), 1, Leaf ()) ), 0, Leaf ()) -> [2, 1, 0, 0];
+Node (Leaf (), 2, Node (Node (Leaf (), 2, Leaf ()), 0, Node (Leaf (), 1, Leaf ()) )) -> [2, 1, 0, 2];
+=================================
+None
+Leaf () -> [];
+Node (Leaf (), 1, Leaf ()) -> [1];
+Node (Leaf (), 2, Leaf ()) -> [2];
+Node (Node (Leaf (), 1, Leaf ()), 2, Leaf ()) -> [1, 2];
+Node (Node (Leaf (), 1, Leaf ()), 0, Node (Leaf (), 2, Leaf ()) ) -> [1, 2, 0];
+Node (Node (Leaf (), 2, Leaf ()), 0, Node (Leaf (), 1, Leaf ()) ) -> [2, 1, 0];
+Node (Leaf (), 2, Node (Node (Leaf (), 2, Leaf ()), 0, Node (Leaf (), 1, Leaf ()) )) -> [2, 1, 0, 2];
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun x0.
+  match (x0) with
+  | Leaf -> ( Nil )
+  | Node(v1,l1,r1) ->
+    (append
+      (
+        (append
+          ( (f0 l1),
+            (f0 r1) )),
+        ( Cons v1 ( Nil )
+          ) ))
+  
+0.1810 true
+
+Node (Leaf (), 1, Leaf ()) -> [1];
+Node (Leaf (), 2, Leaf ()) -> [2];
+Node (Node (Leaf (), 1, Leaf ()), 2, Leaf ()) -> [1, 2];
+Node (Leaf (), 1, Node (Leaf (), 2, Leaf ())) -> [2, 1];
+Node (Node (Leaf (), 1, Leaf ()), 0, Node (Leaf (), 2, Leaf ()) ) -> [1, 2, 0];
+Node (Node (Node (Leaf (), 2, Leaf ()), 0, Node (Leaf (), 1, Leaf ()) ), 0, Leaf ()) -> [2, 1, 0, 0];
+Node (Leaf (), 2, Node (Node (Leaf (), 2, Leaf ()), 0, Node (Leaf (), 1, Leaf ()) )) -> [2, 1, 0, 2];
+=================================
+None
+Leaf () -> [];
+Node (Leaf (), 1, Leaf ()) -> [1];
+Node (Leaf (), 2, Leaf ()) -> [2];
+Node (Node (Leaf (), 1, Leaf ()), 2, Leaf ()) -> [1, 2];
+Node (Node (Leaf (), 2, Leaf ()), 0, Node (Leaf (), 1, Leaf ()) ) -> [2, 1, 0];
+Node (Node (Node (Leaf (), 2, Leaf ()), 0, Node (Leaf (), 1, Leaf ()) ), 0, Leaf ()) -> [2, 1, 0, 0];
+Node (Leaf (), 2, Node (Node (Leaf (), 2, Leaf ()), 0, Node (Leaf (), 1, Leaf ()) )) -> [2, 1, 0, 2];
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun x0.
+  match (x0) with
+  | Leaf -> ( Nil )
+  | Node(v1,l1,r1) ->
+    (append
+      (
+        (append
+          ( (f0 l1),
+            (f0 r1) )),
+        ( Cons v1 ( Nil )
+          ) ))
+  
+0.1999 true
+
+Leaf () -> [];
+Node (Leaf (), 1, Leaf ()) -> [1];
+Node (Leaf (), 2, Leaf ()) -> [2];
+Node (Node (Leaf (), 1, Leaf ()), 2, Leaf ()) -> [1, 2];
+Node (Leaf (), 1, Node (Leaf (), 2, Leaf ())) -> [2, 1];
+Node (Node (Leaf (), 1, Leaf ()), 0, Node (Leaf (), 2, Leaf ()) ) -> [1, 2, 0];
+Node (Node (Leaf (), 2, Leaf ()), 0, Node (Leaf (), 1, Leaf ()) ) -> [2, 1, 0];
+Node (Node (Node (Leaf (), 2, Leaf ()), 0, Node (Leaf (), 1, Leaf ()) ), 0, Leaf ()) -> [2, 1, 0, 0];
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun x0.
+  match (x0) with
+  | Leaf -> ( Nil )
+  | Node(v1,l1,r1) ->
+    (append
+      (
+        (append
+          ( (f0 l1),
+            (f0 r1) )),
+        ( Cons v1 ( Nil )
+          ) ))
+  
+0.2393 true
+
+Leaf () -> [];
+Node (Leaf (), 1, Leaf ()) -> [1];
+Node (Leaf (), 2, Leaf ()) -> [2];
+Node (Node (Leaf (), 1, Leaf ()), 2, Leaf ()) -> [1, 2];
+Node (Leaf (), 1, Node (Leaf (), 2, Leaf ())) -> [2, 1];
+Node (Node (Leaf (), 1, Leaf ()), 0, Node (Leaf (), 2, Leaf ()) ) -> [1, 2, 0];
+Node (Node (Leaf (), 2, Leaf ()), 0, Node (Leaf (), 1, Leaf ()) ) -> [2, 1, 0];
+Node (Leaf (), 2, Node (Node (Leaf (), 2, Leaf ()), 0, Node (Leaf (), 1, Leaf ()) )) -> [2, 1, 0, 2];
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun x0.
+  match (x0) with
+  | Leaf -> ( Nil )
+  | Node(v1,l1,r1) ->
+    (append
+      (
+        (append
+          ( (f0 l1),
+            (f0 r1) )),
+        ( Cons v1 ( Nil )
+          ) ))
+  
+0.2412 true
+
+Leaf () -> [];
+Node (Leaf (), 1, Leaf ()) -> [1];
+Node (Leaf (), 2, Leaf ()) -> [2];
+Node (Node (Leaf (), 1, Leaf ()), 2, Leaf ()) -> [1, 2];
+Node (Leaf (), 1, Node (Leaf (), 2, Leaf ())) -> [2, 1];
+Node (Node (Leaf (), 1, Leaf ()), 0, Node (Leaf (), 2, Leaf ()) ) -> [1, 2, 0];
+Node (Node (Node (Leaf (), 2, Leaf ()), 0, Node (Leaf (), 1, Leaf ()) ), 0, Leaf ()) -> [2, 1, 0, 0];
+Node (Leaf (), 2, Node (Node (Leaf (), 2, Leaf ()), 0, Node (Leaf (), 1, Leaf ()) )) -> [2, 1, 0, 2];
+=================================
+None
+Leaf () -> [];
+Node (Leaf (), 1, Leaf ()) -> [1];
+Node (Leaf (), 2, Leaf ()) -> [2];
+Node (Node (Leaf (), 1, Leaf ()), 2, Leaf ()) -> [1, 2];
+Node (Leaf (), 1, Node (Leaf (), 2, Leaf ())) -> [2, 1];
+Node (Node (Leaf (), 2, Leaf ()), 0, Node (Leaf (), 1, Leaf ()) ) -> [2, 1, 0];
+Node (Node (Node (Leaf (), 2, Leaf ()), 0, Node (Leaf (), 1, Leaf ()) ), 0, Leaf ()) -> [2, 1, 0, 0];
+Node (Leaf (), 2, Node (Node (Leaf (), 2, Leaf ()), 0, Node (Leaf (), 1, Leaf ()) )) -> [2, 1, 0, 2];
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun x0.
+  match (x0) with
+  | Leaf -> ( Nil )
+  | Node(v1,l1,r1) ->
+    (append
+      (
+        (append
+          ( (f0 l1),
+            (f0 r1) )),
+        ( Cons v1 ( Nil )
+          ) ))
+  
+0.2443 true
+
+Leaf () -> [];
+Node (Leaf (), 1, Leaf ()) -> [1];
+Node (Leaf (), 2, Leaf ()) -> [2];
+Node (Node (Leaf (), 1, Leaf ()), 2, Leaf ()) -> [1, 2];
+Node (Node (Leaf (), 1, Leaf ()), 0, Node (Leaf (), 2, Leaf ()) ) -> [1, 2, 0];
+Node (Node (Leaf (), 2, Leaf ()), 0, Node (Leaf (), 1, Leaf ()) ) -> [2, 1, 0];
+Node (Node (Node (Leaf (), 2, Leaf ()), 0, Node (Leaf (), 1, Leaf ()) ), 0, Leaf ()) -> [2, 1, 0, 0];
+Node (Leaf (), 2, Node (Node (Leaf (), 2, Leaf ()), 0, Node (Leaf (), 1, Leaf ()) )) -> [2, 1, 0, 2];
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun x0.
+  match (x0) with
+  | Leaf -> ( Nil )
+  | Node(v1,l1,r1) ->
+    (append
+      (
+        (append
+          ( (f0 l1),
+            (f0 r1) )),
+        ( Cons v1 ( Nil )
+          ) ))
+  
+0.2216 true
+
+Leaf () -> [];
+Node (Leaf (), 1, Leaf ()) -> [1];
+Node (Leaf (), 2, Leaf ()) -> [2];
+Node (Leaf (), 1, Node (Leaf (), 2, Leaf ())) -> [2, 1];
+Node (Node (Leaf (), 1, Leaf ()), 0, Node (Leaf (), 2, Leaf ()) ) -> [1, 2, 0];
+Node (Node (Leaf (), 2, Leaf ()), 0, Node (Leaf (), 1, Leaf ()) ) -> [2, 1, 0];
+Node (Node (Node (Leaf (), 2, Leaf ()), 0, Node (Leaf (), 1, Leaf ()) ), 0, Leaf ()) -> [2, 1, 0, 0];
+Node (Leaf (), 2, Node (Node (Leaf (), 2, Leaf ()), 0, Node (Leaf (), 1, Leaf ()) )) -> [2, 1, 0, 2];
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun x0.
+  match (x0) with
+  | Leaf -> ( Nil )
+  | Node(v1,l1,r1) ->
+    (append
+      (
+        (append
+          ( (f0 l1),
+            (f0 r1) )),
+        ( Cons v1 ( Nil )
+          ) ))
+  
+0.2250 true
+
+Leaf () -> [];
+Node (Leaf (), 1, Leaf ()) -> [1];
+Node (Node (Leaf (), 1, Leaf ()), 2, Leaf ()) -> [1, 2];
+Node (Leaf (), 1, Node (Leaf (), 2, Leaf ())) -> [2, 1];
+Node (Node (Leaf (), 1, Leaf ()), 0, Node (Leaf (), 2, Leaf ()) ) -> [1, 2, 0];
+Node (Node (Leaf (), 2, Leaf ()), 0, Node (Leaf (), 1, Leaf ()) ) -> [2, 1, 0];
+Node (Node (Node (Leaf (), 2, Leaf ()), 0, Node (Leaf (), 1, Leaf ()) ), 0, Leaf ()) -> [2, 1, 0, 0];
+Node (Leaf (), 2, Node (Node (Leaf (), 2, Leaf ()), 0, Node (Leaf (), 1, Leaf ()) )) -> [2, 1, 0, 2];
+=================================
+None
+Leaf () -> [];
+Node (Leaf (), 2, Leaf ()) -> [2];
+Node (Node (Leaf (), 1, Leaf ()), 2, Leaf ()) -> [1, 2];
+Node (Leaf (), 1, Node (Leaf (), 2, Leaf ())) -> [2, 1];
+Node (Node (Leaf (), 1, Leaf ()), 0, Node (Leaf (), 2, Leaf ()) ) -> [1, 2, 0];
+Node (Node (Leaf (), 2, Leaf ()), 0, Node (Leaf (), 1, Leaf ()) ) -> [2, 1, 0];
+Node (Node (Node (Leaf (), 2, Leaf ()), 0, Node (Leaf (), 1, Leaf ()) ), 0, Leaf ()) -> [2, 1, 0, 0];
+Node (Leaf (), 2, Node (Node (Leaf (), 2, Leaf ()), 0, Node (Leaf (), 1, Leaf ()) )) -> [2, 1, 0, 2];
+=================================
+None
+Node (Leaf (), 1, Leaf ()) -> [1];
+Node (Leaf (), 2, Leaf ()) -> [2];
+Node (Node (Leaf (), 1, Leaf ()), 2, Leaf ()) -> [1, 2];
+Node (Leaf (), 1, Node (Leaf (), 2, Leaf ())) -> [2, 1];
+Node (Node (Leaf (), 1, Leaf ()), 0, Node (Leaf (), 2, Leaf ()) ) -> [1, 2, 0];
+Node (Node (Leaf (), 2, Leaf ()), 0, Node (Leaf (), 1, Leaf ()) ) -> [2, 1, 0];
+Node (Node (Node (Leaf (), 2, Leaf ()), 0, Node (Leaf (), 1, Leaf ()) ), 0, Leaf ()) -> [2, 1, 0, 0];
+Node (Leaf (), 2, Node (Node (Leaf (), 2, Leaf ()), 0, Node (Leaf (), 1, Leaf ()) )) -> [2, 1, 0, 2];
+=================================
+None
+Leaf () -> [];
+Node (Leaf (), 1, Leaf ()) -> [1];
+Node (Leaf (), 2, Leaf ()) -> [2];
+Node (Node (Leaf (), 1, Leaf ()), 2, Leaf ()) -> [1, 2];
+Node (Leaf (), 1, Node (Leaf (), 2, Leaf ())) -> [2, 1];
+Node (Node (Leaf (), 1, Leaf ()), 0, Node (Leaf (), 2, Leaf ()) ) -> [1, 2, 0];
+Node (Node (Leaf (), 2, Leaf ()), 0, Node (Leaf (), 1, Leaf ()) ) -> [2, 1, 0];
+Node (Node (Node (Leaf (), 2, Leaf ()), 0, Node (Leaf (), 1, Leaf ()) ), 0, Leaf ()) -> [2, 1, 0, 0];
+Node (Leaf (), 2, Node (Node (Leaf (), 2, Leaf ()), 0, Node (Leaf (), 1, Leaf ()) )) -> [2, 1, 0, 2];
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun x0.
+  match (x0) with
+  | Leaf -> ( Nil )
+  | Node(v1,l1,r1) ->
+    (append
+      (
+        (append
+          ( (f0 l1),
+            (f0 r1) )),
+        ( Cons v1 ( Nil )
+          ) ))
+  
+0.2879 true
+

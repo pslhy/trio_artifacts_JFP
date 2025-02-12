@@ -1,0 +1,113 @@
+(T (), T ()) -> T ();
+=================================
+fix (f : bool * bool -> bool) = fun (x:bool * bool) -> x . 0
+
+0.0030 false
+
+(T (), F ()) -> F ();
+=================================
+fix (f : bool * bool -> bool) = fun (x:bool * bool) -> F
+
+0.0001 false
+
+(F (), T ()) -> F ();
+=================================
+fix (f : bool * bool -> bool) = fun (x:bool * bool) -> F
+
+0.0001 false
+
+(F (), F ()) -> F ();
+=================================
+fix (f : bool * bool -> bool) = fun (x:bool * bool) -> F
+
+0.0002 false
+
+(T (), T ()) -> T ();
+(T (), F ()) -> F ();
+=================================
+fix (f : bool * bool -> bool) = fun (x:bool * bool) -> x . 1
+
+0.0075 false
+
+(T (), T ()) -> T ();
+(F (), T ()) -> F ();
+=================================
+fix (f : bool * bool -> bool) = fun (x:bool * bool) -> x . 0
+
+0.0018 false
+
+(T (), T ()) -> T ();
+(F (), F ()) -> F ();
+=================================
+fix (f : bool * bool -> bool) = fun (x:bool * bool) -> x . 0
+
+0.0016 false
+
+(T (), F ()) -> F ();
+(F (), T ()) -> F ();
+=================================
+fix (f : bool * bool -> bool) = fun (x:bool * bool) -> F
+
+0.0001 false
+
+(T (), F ()) -> F ();
+(F (), F ()) -> F ();
+=================================
+fix (f : bool * bool -> bool) = fun (x:bool * bool) -> F
+
+0.0001 false
+
+(F (), T ()) -> F ();
+(F (), F ()) -> F ();
+=================================
+fix (f : bool * bool -> bool) = fun (x:bool * bool) -> F
+
+0.0001 false
+
+(T (), T ()) -> T ();
+(T (), F ()) -> F ();
+(F (), T ()) -> F ();
+=================================
+fix (f : bool * bool -> bool) =
+  fun (x:bool * bool) -> match x . 0 with
+                           | F _ -> x . 0
+                           | T _ -> x . 1
+
+0.0040 true
+
+(T (), T ()) -> T ();
+(T (), F ()) -> F ();
+(F (), F ()) -> F ();
+=================================
+fix (f : bool * bool -> bool) = fun (x:bool * bool) -> x . 1
+
+0.0046 false
+
+(T (), T ()) -> T ();
+(F (), T ()) -> F ();
+(F (), F ()) -> F ();
+=================================
+fix (f : bool * bool -> bool) = fun (x:bool * bool) -> x . 0
+
+0.0015 false
+
+(T (), F ()) -> F ();
+(F (), T ()) -> F ();
+(F (), F ()) -> F ();
+=================================
+fix (f : bool * bool -> bool) = fun (x:bool * bool) -> F
+
+0.0003 false
+
+(T (), T ()) -> T ();
+(T (), F ()) -> F ();
+(F (), T ()) -> F ();
+(F (), F ()) -> F ();
+=================================
+fix (f : bool * bool -> bool) =
+  fun (x:bool * bool) -> match x . 1 with
+                           | F _ -> x . 1
+                           | T _ -> x . 0
+
+0.0084 true
+

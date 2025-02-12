@@ -1,0 +1,1485 @@
+(0, 0) -> 0;
+=================================
+(\nat_add -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ((let nat_add = \m -> \n -> 0 in nat_add) : Nat -> Nat -> Nat)
+0.022058 false false
+
+(0, 1) -> 1;
+=================================
+(\nat_add -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ((let nat_add = \m -> \n -> n in nat_add) : Nat -> Nat -> Nat)
+0.0062539999999 false false
+
+(0, 2) -> 2;
+=================================
+(\nat_add -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ((let nat_add = \m -> \n -> n in nat_add) : Nat -> Nat -> Nat)
+0.00370599999997 false false
+
+(1, 0) -> 1;
+=================================
+(\nat_add -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ((let nat_add = \m -> \n -> m in nat_add) : Nat -> Nat -> Nat)
+0.00383000000011 false false
+
+(1, 1) -> 2;
+=================================
+(\nat_add -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ((let nat_add = \m -> \n -> S m in nat_add) : Nat -> Nat -> Nat)
+0.00332200000003 false false
+
+(1, 2) -> 3;
+=================================
+(\nat_add -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ((let nat_add = \m -> \n -> S n in nat_add) : Nat -> Nat -> Nat)
+0.0309119999999 false false
+
+(2, 0) -> 2;
+=================================
+(\nat_add -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ((let nat_add = \m -> \n -> m in nat_add) : Nat -> Nat -> Nat)
+0.003827 false false
+
+(2, 1) -> 3;
+=================================
+(\nat_add -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ((let nat_add = \m -> \n -> S m in nat_add) : Nat -> Nat -> Nat)
+0.00570900000002 false false
+
+(2, 2) -> 4;
+=================================
+(\nat_add -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ((let nat_add = \m -> \n -> S (S m) in nat_add) : Nat -> Nat -> Nat)
+0.00609400000008 false false
+
+(0, 2) -> 2;
+(2, 2) -> 4;
+=================================
+(\nat_add -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ((let nat_add = \m -> \n -> S (S m) in nat_add) : Nat -> Nat -> Nat)
+0.0102939999999 false false
+
+(2, 0) -> 2;
+(2, 2) -> 4;
+=================================
+(\nat_add -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ((let nat_add = \m -> \n -> S (S n) in nat_add) : Nat -> Nat -> Nat)
+0.0061189999999 false false
+
+(0, 1) -> 1;
+(1, 2) -> 3;
+=================================
+(\nat_add -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let nat_add = \m -> \n -> case m of
+    Z y1 -> 
+      1
+
+    S y1 -> 
+      S n in nat_add) : Nat -> Nat -> Nat)
+(\nat_add -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let nat_add = \m -> \n -> case m of
+    Z y1 -> 
+      1
+
+    S y1 -> 
+      S (S (nat_add y1 m)) in nat_add) : Nat -> Nat -> Nat)
+0.00949100000003 false false
+
+(0, 0) -> 0;
+(1, 1) -> 2;
+=================================
+(\nat_add -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let nat_add = \m -> \n -> case m of
+    Z y1 -> 
+      0
+
+    S y1 -> 
+      S m in nat_add) : Nat -> Nat -> Nat)
+(\nat_add -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let nat_add = \m -> \n -> case m of
+    Z y1 -> 
+      0
+
+    S y1 -> 
+      S (S (nat_add y1 m)) in nat_add) : Nat -> Nat -> Nat)
+0.00611499999991 false false
+
+(1, 1) -> 2;
+(1, 2) -> 3;
+=================================
+(\nat_add -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ((let nat_add = \m -> \n -> S n in nat_add) : Nat -> Nat -> Nat)
+0.021512 false false
+
+(1, 2) -> 3;
+(2, 0) -> 2;
+=================================
+(\nat_add -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let nat_add = \m -> \n -> case n of
+    Z y1 -> 
+      m
+
+    S y1 -> 
+      S n in nat_add) : Nat -> Nat -> Nat)
+0.00524500000006 false false
+
+(1, 2) -> 3;
+(2, 2) -> 4;
+=================================
+(\nat_add -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ((let nat_add = \m -> \n -> S (S m) in nat_add) : Nat -> Nat -> Nat)
+0.00365699999998 false false
+
+(0, 0) -> 0;
+(2, 2) -> 4;
+=================================
+(\nat_add -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let nat_add = \m -> \n -> case m of
+    Z y1 -> 
+      0
+
+    S y1 -> 
+      S (S m) in nat_add) : Nat -> Nat -> Nat)
+(\nat_add -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let nat_add = \m -> \n -> case m of
+    Z y1 -> 
+      0
+
+    S y1 -> 
+      S (S (nat_add y1 m)) in nat_add) : Nat -> Nat -> Nat)
+0.00656200000003 false false
+
+(1, 0) -> 1;
+(2, 2) -> 4;
+=================================
+(\nat_add -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let nat_add = \m -> \n -> case n of
+    Z y1 -> 
+      m
+
+    S y1 -> 
+      S (S m) in nat_add) : Nat -> Nat -> Nat)
+0.004952 false false
+
+(1, 1) -> 2;
+(2, 0) -> 2;
+=================================
+(\nat_add -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ((let nat_add = \m -> \n -> 2 in nat_add) : Nat -> Nat -> Nat)
+0.00330400000007 false false
+
+(0, 1) -> 1;
+(1, 1) -> 2;
+(2, 0) -> 2;
+=================================
+(\nat_add -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let nat_add = \m -> \n -> case n of
+    Z y1 -> 
+      m
+
+    S y1 -> 
+      S m in nat_add) : Nat -> Nat -> Nat)
+(\nat_add -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let nat_add = \m -> \n -> case m of
+    Z y1 -> 
+      n
+
+    S y1 -> 
+      S (nat_add y1 n) in nat_add) : Nat -> Nat -> Nat)
+0.00834600000007 false true
+
+(1, 0) -> 1;
+(1, 2) -> 3;
+(2, 1) -> 3;
+=================================
+(\nat_add -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let nat_add = \m -> \n -> case n of
+    Z y1 -> 
+      m
+
+    S y1 -> 
+      3 in nat_add) : Nat -> Nat -> Nat)
+0.00488900000005 false false
+
+(0, 1) -> 1;
+(1, 0) -> 1;
+(1, 2) -> 3;
+=================================
+(\nat_add -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let nat_add = \m -> \n -> case m of
+    Z y1 -> 
+      n
+
+    S y1 -> 
+      S n in nat_add) : Nat -> Nat -> Nat)
+(\nat_add -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let nat_add = \m -> \n -> case m of
+    Z y1 -> 
+      n
+
+    S y1 -> 
+      S (nat_add y1 n) in nat_add) : Nat -> Nat -> Nat)
+0.00653699999998 false true
+
+(0, 0) -> 0;
+(1, 2) -> 3;
+(2, 0) -> 2;
+=================================
+(\nat_add -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let nat_add = \m -> \n -> case n of
+    Z y1 -> 
+      m
+
+    S y1 -> 
+      S n in nat_add) : Nat -> Nat -> Nat)
+(\nat_add -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let nat_add = \m -> \n -> case m of
+    Z y1 -> 
+      n
+
+    S y1 -> 
+      S (nat_add y1 n) in nat_add) : Nat -> Nat -> Nat)
+0.00668300000007 false true
+
+(0, 2) -> 2;
+(2, 0) -> 2;
+(2, 2) -> 4;
+=================================
+(\nat_add -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let nat_add = \m -> \n -> case m of
+    Z y1 -> 
+      n
+
+    S y1 -> 
+      S (S n) in nat_add) : Nat -> Nat -> Nat)
+(\nat_add -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let nat_add = \m -> \n -> case m of
+    Z y1 -> 
+      n
+
+    S y1 -> 
+      S (nat_add y1 n) in nat_add) : Nat -> Nat -> Nat)
+0.00853400000005 false true
+
+(0, 2) -> 2;
+(1, 0) -> 1;
+(2, 2) -> 4;
+=================================
+(\nat_add -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let nat_add = \m -> \n -> case n of
+    Z y1 -> 
+      m
+
+    S y1 -> 
+      S (S m) in nat_add) : Nat -> Nat -> Nat)
+(\nat_add -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let nat_add = \m -> \n -> case m of
+    Z y1 -> 
+      n
+
+    S y1 -> 
+      S (nat_add y1 n) in nat_add) : Nat -> Nat -> Nat)
+0.00686100000007 false true
+
+(0, 0) -> 0;
+(1, 0) -> 1;
+(2, 1) -> 3;
+=================================
+(\nat_add -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let nat_add = \m -> \n -> case n of
+    Z y1 -> 
+      m
+
+    S y1 -> 
+      S m in nat_add) : Nat -> Nat -> Nat)
+(\nat_add -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let nat_add = \m -> \n -> case m of
+    Z y1 -> 
+      n
+
+    S y1 -> 
+      S (nat_add y1 n) in nat_add) : Nat -> Nat -> Nat)
+0.00584299999991 false true
+
+(0, 0) -> 0;
+(0, 2) -> 2;
+(2, 2) -> 4;
+=================================
+(\nat_add -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let nat_add = \m -> \n -> case m of
+    Z y1 -> 
+      n
+
+    S y1 -> 
+      S (S m) in nat_add) : Nat -> Nat -> Nat)
+(\nat_add -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let nat_add = \m -> \n -> case m of
+    Z y1 -> 
+      n
+
+    S y1 -> 
+      S (nat_add y1 n) in nat_add) : Nat -> Nat -> Nat)
+0.00631900000008 false true
+
+(0, 2) -> 2;
+(1, 2) -> 3;
+(2, 2) -> 4;
+=================================
+(\nat_add -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ((let nat_add = \m -> \n -> S (S m) in nat_add) : Nat -> Nat -> Nat)
+0.00357600000007 false false
+
+(1, 0) -> 1;
+(1, 1) -> 2;
+(2, 2) -> 4;
+=================================
+(\nat_add -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let nat_add = \m -> \n -> case n of
+    Z y1 -> 
+      1
+
+    S y1 -> 
+      case y1 of
+        Z y2 -> 
+          S m
+
+        S y2 -> 
+          S (S m) in nat_add) : Nat -> Nat -> Nat)
+0.015754 false false
+
+(0, 1) -> 1;
+(1, 0) -> 1;
+(1, 2) -> 3;
+(2, 1) -> 3;
+=================================
+(\nat_add -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let nat_add = \m -> \n -> case m of
+    Z y1 -> 
+      n
+
+    S y1 -> 
+      S (nat_add y1 n) in nat_add) : Nat -> Nat -> Nat)
+(\nat_add -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let nat_add = \m -> \n -> case m of
+    Z y1 -> 
+      n
+
+    S y1 -> 
+      S (nat_add y1 n) in nat_add) : Nat -> Nat -> Nat)
+0.0116169999999 true true
+
+(0, 0) -> 0;
+(1, 0) -> 1;
+(2, 0) -> 2;
+(2, 1) -> 3;
+=================================
+(\nat_add -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let nat_add = \m -> \n -> case n of
+    Z y1 -> 
+      m
+
+    S y1 -> 
+      S m in nat_add) : Nat -> Nat -> Nat)
+(\nat_add -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let nat_add = \m -> \n -> case m of
+    Z y1 -> 
+      n
+
+    S y1 -> 
+      S (nat_add y1 n) in nat_add) : Nat -> Nat -> Nat)
+0.010959 false true
+
+(0, 0) -> 0;
+(1, 0) -> 1;
+(1, 2) -> 3;
+(2, 1) -> 3;
+=================================
+(\nat_add -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let nat_add = \m -> \n -> case n of
+    Z y1 -> 
+      m
+
+    S y1 -> 
+      3 in nat_add) : Nat -> Nat -> Nat)
+(\nat_add -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let nat_add = \m -> \n -> case m of
+    Z y1 -> 
+      n
+
+    S y1 -> 
+      S (nat_add y1 n) in nat_add) : Nat -> Nat -> Nat)
+0.0154250000001 false true
+
+(0, 0) -> 0;
+(1, 1) -> 2;
+(2, 1) -> 3;
+(2, 2) -> 4;
+=================================
+(\nat_add -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let nat_add = \m -> \n -> case m of
+    Z y1 -> 
+      n
+
+    S y1 -> 
+      S (nat_add y1 n) in nat_add) : Nat -> Nat -> Nat)
+(\nat_add -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let nat_add = \m -> \n -> case m of
+    Z y1 -> 
+      n
+
+    S y1 -> 
+      S (nat_add y1 n) in nat_add) : Nat -> Nat -> Nat)
+0.015574 true true
+
+(0, 0) -> 0;
+(0, 1) -> 1;
+(1, 1) -> 2;
+(2, 1) -> 3;
+=================================
+(\nat_add -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let nat_add = \m -> \n -> case m of
+    Z y1 -> 
+      n
+
+    S y1 -> 
+      S m in nat_add) : Nat -> Nat -> Nat)
+(\nat_add -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let nat_add = \m -> \n -> case m of
+    Z y1 -> 
+      n
+
+    S y1 -> 
+      S (nat_add y1 m) in nat_add) : Nat -> Nat -> Nat)
+0.0107479999999 false false
+
+(0, 1) -> 1;
+(1, 2) -> 3;
+(2, 0) -> 2;
+(2, 2) -> 4;
+=================================
+(\nat_add -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let nat_add = \m -> \n -> case m of
+    Z y1 -> 
+      n
+
+    S y1 -> 
+      S (nat_add y1 n) in nat_add) : Nat -> Nat -> Nat)
+(\nat_add -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let nat_add = \m -> \n -> case m of
+    Z y1 -> 
+      n
+
+    S y1 -> 
+      S (nat_add y1 n) in nat_add) : Nat -> Nat -> Nat)
+0.0145709999999 true true
+
+(0, 0) -> 0;
+(0, 2) -> 2;
+(2, 0) -> 2;
+(2, 2) -> 4;
+=================================
+(\nat_add -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let nat_add = \m -> \n -> case m of
+    Z y1 -> 
+      n
+
+    S y1 -> 
+      S (S n) in nat_add) : Nat -> Nat -> Nat)
+(\nat_add -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let nat_add = \m -> \n -> case m of
+    Z y1 -> 
+      n
+
+    S y1 -> 
+      S (nat_add y1 n) in nat_add) : Nat -> Nat -> Nat)
+0.00718099999995 false true
+
+(0, 0) -> 0;
+(0, 2) -> 2;
+(1, 1) -> 2;
+(1, 2) -> 3;
+=================================
+(\nat_add -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let nat_add = \m -> \n -> case m of
+    Z y1 -> 
+      n
+
+    S y1 -> 
+      S n in nat_add) : Nat -> Nat -> Nat)
+(\nat_add -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let nat_add = \m -> \n -> case m of
+    Z y1 -> 
+      n
+
+    S y1 -> 
+      S (nat_add y1 n) in nat_add) : Nat -> Nat -> Nat)
+0.00935099999992 false true
+
+(0, 0) -> 0;
+(1, 2) -> 3;
+(2, 1) -> 3;
+(2, 2) -> 4;
+=================================
+(\nat_add -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let nat_add = \m -> \n -> case m of
+    Z y1 -> 
+      n
+
+    S y1 -> 
+      S (nat_add y1 n) in nat_add) : Nat -> Nat -> Nat)
+(\nat_add -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let nat_add = \m -> \n -> case m of
+    Z y1 -> 
+      n
+
+    S y1 -> 
+      S (nat_add y1 n) in nat_add) : Nat -> Nat -> Nat)
+0.013447 true true
+
+(0, 0) -> 0;
+(0, 2) -> 2;
+(1, 1) -> 2;
+(2, 1) -> 3;
+=================================
+(\nat_add -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let nat_add = \m -> \n -> case m of
+    Z y1 -> 
+      n
+
+    S y1 -> 
+      S m in nat_add) : Nat -> Nat -> Nat)
+(\nat_add -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let nat_add = \m -> \n -> case m of
+    Z y1 -> 
+      n
+
+    S y1 -> 
+      S (nat_add y1 m) in nat_add) : Nat -> Nat -> Nat)
+0.0106370000001 false false
+
+(0, 1) -> 1;
+(0, 2) -> 2;
+(1, 0) -> 1;
+(1, 1) -> 2;
+(2, 2) -> 4;
+=================================
+(\nat_add -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let nat_add = \m -> \n -> case m of
+    Z y1 -> 
+      n
+
+    S y1 -> 
+      S (nat_add y1 n) in nat_add) : Nat -> Nat -> Nat)
+(\nat_add -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let nat_add = \m -> \n -> case m of
+    Z y1 -> 
+      n
+
+    S y1 -> 
+      S (nat_add y1 n) in nat_add) : Nat -> Nat -> Nat)
+0.00836000000004 true true
+
+(0, 1) -> 1;
+(0, 2) -> 2;
+(1, 1) -> 2;
+(1, 2) -> 3;
+(2, 2) -> 4;
+=================================
+(\nat_add -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let nat_add = \m -> \n -> case m of
+    Z y1 -> 
+      n
+
+    S y1 -> 
+      S (nat_add y1 n) in nat_add) : Nat -> Nat -> Nat)
+(\nat_add -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let nat_add = \m -> \n -> case m of
+    Z y1 -> 
+      n
+
+    S y1 -> 
+      S (nat_add y1 n) in nat_add) : Nat -> Nat -> Nat)
+0.0129300000001 true true
+
+(0, 0) -> 0;
+(1, 1) -> 2;
+(1, 2) -> 3;
+(2, 0) -> 2;
+(2, 2) -> 4;
+=================================
+(\nat_add -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let nat_add = \m -> \n -> case m of
+    Z y1 -> 
+      n
+
+    S y1 -> 
+      S (nat_add y1 n) in nat_add) : Nat -> Nat -> Nat)
+(\nat_add -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let nat_add = \m -> \n -> case m of
+    Z y1 -> 
+      n
+
+    S y1 -> 
+      S (nat_add y1 n) in nat_add) : Nat -> Nat -> Nat)
+0.012236 true true
+
+(0, 0) -> 0;
+(0, 1) -> 1;
+(0, 2) -> 2;
+(1, 0) -> 1;
+(2, 1) -> 3;
+=================================
+(\nat_add -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let nat_add = \m -> \n -> case m of
+    Z y1 -> 
+      n
+
+    S y1 -> 
+      S (nat_add y1 n) in nat_add) : Nat -> Nat -> Nat)
+(\nat_add -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let nat_add = \m -> \n -> case m of
+    Z y1 -> 
+      n
+
+    S y1 -> 
+      S (nat_add y1 n) in nat_add) : Nat -> Nat -> Nat)
+0.010599 true true
+
+(0, 0) -> 0;
+(0, 1) -> 1;
+(1, 0) -> 1;
+(1, 1) -> 2;
+(2, 2) -> 4;
+=================================
+(\nat_add -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let nat_add = \m -> \n -> case m of
+    Z y1 -> 
+      n
+
+    S y1 -> 
+      S (nat_add y1 n) in nat_add) : Nat -> Nat -> Nat)
+(\nat_add -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let nat_add = \m -> \n -> case m of
+    Z y1 -> 
+      n
+
+    S y1 -> 
+      S (nat_add y1 n) in nat_add) : Nat -> Nat -> Nat)
+0.014543 true true
+
+(0, 2) -> 2;
+(1, 1) -> 2;
+(2, 0) -> 2;
+(2, 1) -> 3;
+(2, 2) -> 4;
+=================================
+(\nat_add -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let nat_add = \m -> \n -> case m of
+    Z y1 -> 
+      n
+
+    S y1 -> 
+      S (nat_add y1 n) in nat_add) : Nat -> Nat -> Nat)
+(\nat_add -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let nat_add = \m -> \n -> case m of
+    Z y1 -> 
+      n
+
+    S y1 -> 
+      S (nat_add y1 n) in nat_add) : Nat -> Nat -> Nat)
+0.0150610000001 true true
+
+(0, 0) -> 0;
+(0, 1) -> 1;
+(1, 0) -> 1;
+(1, 1) -> 2;
+(2, 0) -> 2;
+=================================
+(\nat_add -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let nat_add = \m -> \n -> case n of
+    Z y1 -> 
+      m
+
+    S y1 -> 
+      S m in nat_add) : Nat -> Nat -> Nat)
+(\nat_add -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let nat_add = \m -> \n -> case m of
+    Z y1 -> 
+      n
+
+    S y1 -> 
+      S (nat_add y1 n) in nat_add) : Nat -> Nat -> Nat)
+0.00664000000006 false true
+
+(0, 1) -> 1;
+(1, 1) -> 2;
+(1, 2) -> 3;
+(2, 0) -> 2;
+(2, 1) -> 3;
+=================================
+(\nat_add -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let nat_add = \m -> \n -> case m of
+    Z y1 -> 
+      n
+
+    S y1 -> 
+      S (nat_add y1 n) in nat_add) : Nat -> Nat -> Nat)
+(\nat_add -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let nat_add = \m -> \n -> case m of
+    Z y1 -> 
+      n
+
+    S y1 -> 
+      S (nat_add y1 n) in nat_add) : Nat -> Nat -> Nat)
+0.0205599999999 true true
+
+(0, 1) -> 1;
+(0, 2) -> 2;
+(1, 0) -> 1;
+(1, 1) -> 2;
+(1, 2) -> 3;
+=================================
+(\nat_add -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let nat_add = \m -> \n -> case m of
+    Z y1 -> 
+      n
+
+    S y1 -> 
+      S n in nat_add) : Nat -> Nat -> Nat)
+(\nat_add -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let nat_add = \m -> \n -> case m of
+    Z y1 -> 
+      n
+
+    S y1 -> 
+      S (nat_add y1 n) in nat_add) : Nat -> Nat -> Nat)
+0.039653 false true
+
+(0, 1) -> 1;
+(1, 0) -> 1;
+(1, 1) -> 2;
+(2, 0) -> 2;
+(2, 2) -> 4;
+=================================
+(\nat_add -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let nat_add = \m -> \n -> case m of
+    Z y1 -> 
+      n
+
+    S y1 -> 
+      S (nat_add y1 n) in nat_add) : Nat -> Nat -> Nat)
+(\nat_add -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let nat_add = \m -> \n -> case m of
+    Z y1 -> 
+      n
+
+    S y1 -> 
+      S (nat_add y1 n) in nat_add) : Nat -> Nat -> Nat)
+0.00979099999995 true true
+
+(0, 0) -> 0;
+(0, 1) -> 1;
+(1, 1) -> 2;
+(1, 2) -> 3;
+(2, 0) -> 2;
+(2, 1) -> 3;
+=================================
+(\nat_add -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let nat_add = \m -> \n -> case m of
+    Z y1 -> 
+      n
+
+    S y1 -> 
+      S (nat_add y1 n) in nat_add) : Nat -> Nat -> Nat)
+(\nat_add -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let nat_add = \m -> \n -> case m of
+    Z y1 -> 
+      n
+
+    S y1 -> 
+      S (nat_add y1 n) in nat_add) : Nat -> Nat -> Nat)
+0.00991999999997 true true
+
+(0, 1) -> 1;
+(0, 2) -> 2;
+(1, 0) -> 1;
+(1, 1) -> 2;
+(2, 1) -> 3;
+(2, 2) -> 4;
+=================================
+(\nat_add -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let nat_add = \m -> \n -> case m of
+    Z y1 -> 
+      n
+
+    S y1 -> 
+      S (nat_add y1 n) in nat_add) : Nat -> Nat -> Nat)
+(\nat_add -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let nat_add = \m -> \n -> case m of
+    Z y1 -> 
+      n
+
+    S y1 -> 
+      S (nat_add y1 n) in nat_add) : Nat -> Nat -> Nat)
+0.0168140000001 true true
+
+(0, 0) -> 0;
+(0, 1) -> 1;
+(0, 2) -> 2;
+(1, 2) -> 3;
+(2, 1) -> 3;
+(2, 2) -> 4;
+=================================
+(\nat_add -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let nat_add = \m -> \n -> case m of
+    Z y1 -> 
+      n
+
+    S y1 -> 
+      S (nat_add y1 n) in nat_add) : Nat -> Nat -> Nat)
+(\nat_add -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let nat_add = \m -> \n -> case m of
+    Z y1 -> 
+      n
+
+    S y1 -> 
+      S (nat_add y1 n) in nat_add) : Nat -> Nat -> Nat)
+0.0113229999999 true true
+
+(0, 1) -> 1;
+(0, 2) -> 2;
+(1, 0) -> 1;
+(1, 1) -> 2;
+(1, 2) -> 3;
+(2, 0) -> 2;
+=================================
+(\nat_add -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let nat_add = \m -> \n -> case m of
+    Z y1 -> 
+      n
+
+    S y1 -> 
+      S (nat_add y1 n) in nat_add) : Nat -> Nat -> Nat)
+(\nat_add -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let nat_add = \m -> \n -> case m of
+    Z y1 -> 
+      n
+
+    S y1 -> 
+      S (nat_add y1 n) in nat_add) : Nat -> Nat -> Nat)
+0.0131819999999 true true
+
+(0, 2) -> 2;
+(1, 0) -> 1;
+(1, 1) -> 2;
+(1, 2) -> 3;
+(2, 0) -> 2;
+(2, 2) -> 4;
+=================================
+(\nat_add -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let nat_add = \m -> \n -> case m of
+    Z y1 -> 
+      n
+
+    S y1 -> 
+      S (nat_add y1 n) in nat_add) : Nat -> Nat -> Nat)
+(\nat_add -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let nat_add = \m -> \n -> case m of
+    Z y1 -> 
+      n
+
+    S y1 -> 
+      S (nat_add y1 n) in nat_add) : Nat -> Nat -> Nat)
+0.014277 true true
+
+(0, 0) -> 0;
+(0, 1) -> 1;
+(0, 2) -> 2;
+(1, 0) -> 1;
+(1, 2) -> 3;
+(2, 1) -> 3;
+=================================
+(\nat_add -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let nat_add = \m -> \n -> case m of
+    Z y1 -> 
+      n
+
+    S y1 -> 
+      S (nat_add y1 n) in nat_add) : Nat -> Nat -> Nat)
+(\nat_add -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let nat_add = \m -> \n -> case m of
+    Z y1 -> 
+      n
+
+    S y1 -> 
+      S (nat_add y1 n) in nat_add) : Nat -> Nat -> Nat)
+0.0086510000001 true true
+
+(0, 0) -> 0;
+(0, 1) -> 1;
+(0, 2) -> 2;
+(2, 0) -> 2;
+(2, 1) -> 3;
+(2, 2) -> 4;
+=================================
+(\nat_add -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let nat_add = \m -> \n -> case m of
+    Z y1 -> 
+      n
+
+    S y1 -> 
+      S (S n) in nat_add) : Nat -> Nat -> Nat)
+(\nat_add -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let nat_add = \m -> \n -> case m of
+    Z y1 -> 
+      n
+
+    S y1 -> 
+      S (nat_add y1 n) in nat_add) : Nat -> Nat -> Nat)
+0.00745600000005 false true
+
+(0, 0) -> 0;
+(0, 2) -> 2;
+(1, 0) -> 1;
+(1, 1) -> 2;
+(2, 0) -> 2;
+(2, 1) -> 3;
+=================================
+(\nat_add -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let nat_add = \m -> \n -> case m of
+    Z y1 -> 
+      n
+
+    S y1 -> 
+      S (nat_add y1 n) in nat_add) : Nat -> Nat -> Nat)
+(\nat_add -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let nat_add = \m -> \n -> case m of
+    Z y1 -> 
+      n
+
+    S y1 -> 
+      S (nat_add y1 n) in nat_add) : Nat -> Nat -> Nat)
+0.00978499999997 true true
+
+(0, 0) -> 0;
+(0, 1) -> 1;
+(0, 2) -> 2;
+(1, 0) -> 1;
+(2, 0) -> 2;
+(2, 2) -> 4;
+=================================
+(\nat_add -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let nat_add = \m -> \n -> case m of
+    Z y1 -> 
+      n
+
+    S y1 -> 
+      S (nat_add y1 n) in nat_add) : Nat -> Nat -> Nat)
+(\nat_add -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let nat_add = \m -> \n -> case m of
+    Z y1 -> 
+      n
+
+    S y1 -> 
+      S (nat_add y1 n) in nat_add) : Nat -> Nat -> Nat)
+0.0112799999999 true true
+
+(0, 0) -> 0;
+(0, 1) -> 1;
+(0, 2) -> 2;
+(1, 1) -> 2;
+(2, 0) -> 2;
+(2, 2) -> 4;
+=================================
+(\nat_add -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let nat_add = \m -> \n -> case m of
+    Z y1 -> 
+      n
+
+    S y1 -> 
+      S (nat_add y1 n) in nat_add) : Nat -> Nat -> Nat)
+(\nat_add -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let nat_add = \m -> \n -> case m of
+    Z y1 -> 
+      n
+
+    S y1 -> 
+      S (nat_add y1 n) in nat_add) : Nat -> Nat -> Nat)
+0.00916899999993 true true
+
+(0, 0) -> 0;
+(0, 1) -> 1;
+(1, 0) -> 1;
+(1, 1) -> 2;
+(1, 2) -> 3;
+(2, 0) -> 2;
+(2, 2) -> 4;
+=================================
+(\nat_add -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let nat_add = \m -> \n -> case m of
+    Z y1 -> 
+      n
+
+    S y1 -> 
+      S (nat_add y1 n) in nat_add) : Nat -> Nat -> Nat)
+(\nat_add -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let nat_add = \m -> \n -> case m of
+    Z y1 -> 
+      n
+
+    S y1 -> 
+      S (nat_add y1 n) in nat_add) : Nat -> Nat -> Nat)
+0.0119629999999 true true
+
+(0, 0) -> 0;
+(0, 1) -> 1;
+(1, 0) -> 1;
+(1, 1) -> 2;
+(1, 2) -> 3;
+(2, 1) -> 3;
+(2, 2) -> 4;
+=================================
+(\nat_add -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let nat_add = \m -> \n -> case m of
+    Z y1 -> 
+      n
+
+    S y1 -> 
+      S (nat_add y1 n) in nat_add) : Nat -> Nat -> Nat)
+(\nat_add -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let nat_add = \m -> \n -> case m of
+    Z y1 -> 
+      n
+
+    S y1 -> 
+      S (nat_add y1 n) in nat_add) : Nat -> Nat -> Nat)
+0.010401 true true
+
+(0, 1) -> 1;
+(0, 2) -> 2;
+(1, 0) -> 1;
+(1, 1) -> 2;
+(1, 2) -> 3;
+(2, 1) -> 3;
+(2, 2) -> 4;
+=================================
+(\nat_add -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let nat_add = \m -> \n -> case m of
+    Z y1 -> 
+      n
+
+    S y1 -> 
+      S (nat_add y1 n) in nat_add) : Nat -> Nat -> Nat)
+(\nat_add -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let nat_add = \m -> \n -> case m of
+    Z y1 -> 
+      n
+
+    S y1 -> 
+      S (nat_add y1 n) in nat_add) : Nat -> Nat -> Nat)
+0.0108909999999 true true
+
+(0, 0) -> 0;
+(0, 2) -> 2;
+(1, 0) -> 1;
+(1, 1) -> 2;
+(1, 2) -> 3;
+(2, 0) -> 2;
+(2, 2) -> 4;
+=================================
+(\nat_add -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let nat_add = \m -> \n -> case m of
+    Z y1 -> 
+      n
+
+    S y1 -> 
+      S (nat_add y1 n) in nat_add) : Nat -> Nat -> Nat)
+(\nat_add -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let nat_add = \m -> \n -> case m of
+    Z y1 -> 
+      n
+
+    S y1 -> 
+      S (nat_add y1 n) in nat_add) : Nat -> Nat -> Nat)
+0.00995899999998 true true
+
+(0, 0) -> 0;
+(0, 1) -> 1;
+(1, 0) -> 1;
+(1, 1) -> 2;
+(2, 0) -> 2;
+(2, 1) -> 3;
+(2, 2) -> 4;
+=================================
+(\nat_add -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let nat_add = \m -> \n -> case m of
+    Z y1 -> 
+      n
+
+    S y1 -> 
+      S (nat_add y1 n) in nat_add) : Nat -> Nat -> Nat)
+(\nat_add -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let nat_add = \m -> \n -> case m of
+    Z y1 -> 
+      n
+
+    S y1 -> 
+      S (nat_add y1 n) in nat_add) : Nat -> Nat -> Nat)
+0.0081909999999 true true
+
+(0, 0) -> 0;
+(0, 1) -> 1;
+(0, 2) -> 2;
+(1, 0) -> 1;
+(1, 1) -> 2;
+(2, 1) -> 3;
+(2, 2) -> 4;
+=================================
+(\nat_add -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let nat_add = \m -> \n -> case m of
+    Z y1 -> 
+      n
+
+    S y1 -> 
+      S (nat_add y1 n) in nat_add) : Nat -> Nat -> Nat)
+(\nat_add -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let nat_add = \m -> \n -> case m of
+    Z y1 -> 
+      n
+
+    S y1 -> 
+      S (nat_add y1 n) in nat_add) : Nat -> Nat -> Nat)
+0.010849 true true
+
+(0, 1) -> 1;
+(0, 2) -> 2;
+(1, 0) -> 1;
+(1, 1) -> 2;
+(2, 0) -> 2;
+(2, 1) -> 3;
+(2, 2) -> 4;
+=================================
+(\nat_add -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let nat_add = \m -> \n -> case m of
+    Z y1 -> 
+      n
+
+    S y1 -> 
+      S (nat_add y1 n) in nat_add) : Nat -> Nat -> Nat)
+(\nat_add -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let nat_add = \m -> \n -> case m of
+    Z y1 -> 
+      n
+
+    S y1 -> 
+      S (nat_add y1 n) in nat_add) : Nat -> Nat -> Nat)
+0.0135230000001 true true
+
+(0, 1) -> 1;
+(0, 2) -> 2;
+(1, 0) -> 1;
+(1, 2) -> 3;
+(2, 0) -> 2;
+(2, 1) -> 3;
+(2, 2) -> 4;
+=================================
+(\nat_add -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let nat_add = \m -> \n -> case m of
+    Z y1 -> 
+      n
+
+    S y1 -> 
+      S (nat_add y1 n) in nat_add) : Nat -> Nat -> Nat)
+(\nat_add -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let nat_add = \m -> \n -> case m of
+    Z y1 -> 
+      n
+
+    S y1 -> 
+      S (nat_add y1 n) in nat_add) : Nat -> Nat -> Nat)
+0.0146460000001 true true
+
+(0, 0) -> 0;
+(0, 1) -> 1;
+(1, 0) -> 1;
+(1, 2) -> 3;
+(2, 0) -> 2;
+(2, 1) -> 3;
+(2, 2) -> 4;
+=================================
+(\nat_add -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let nat_add = \m -> \n -> case m of
+    Z y1 -> 
+      n
+
+    S y1 -> 
+      S (nat_add y1 n) in nat_add) : Nat -> Nat -> Nat)
+(\nat_add -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let nat_add = \m -> \n -> case m of
+    Z y1 -> 
+      n
+
+    S y1 -> 
+      S (nat_add y1 n) in nat_add) : Nat -> Nat -> Nat)
+0.0104240000001 true true
+
+(0, 0) -> 0;
+(0, 1) -> 1;
+(0, 2) -> 2;
+(1, 0) -> 1;
+(2, 0) -> 2;
+(2, 1) -> 3;
+(2, 2) -> 4;
+=================================
+(\nat_add -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let nat_add = \m -> \n -> case m of
+    Z y1 -> 
+      n
+
+    S y1 -> 
+      S (nat_add y1 n) in nat_add) : Nat -> Nat -> Nat)
+(\nat_add -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let nat_add = \m -> \n -> case m of
+    Z y1 -> 
+      n
+
+    S y1 -> 
+      S (nat_add y1 n) in nat_add) : Nat -> Nat -> Nat)
+0.011835 true true
+
+(0, 0) -> 0;
+(0, 1) -> 1;
+(0, 2) -> 2;
+(1, 0) -> 1;
+(1, 1) -> 2;
+(1, 2) -> 3;
+(2, 0) -> 2;
+(2, 1) -> 3;
+=================================
+(\nat_add -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let nat_add = \m -> \n -> case m of
+    Z y1 -> 
+      n
+
+    S y1 -> 
+      S (nat_add y1 n) in nat_add) : Nat -> Nat -> Nat)
+(\nat_add -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let nat_add = \m -> \n -> case m of
+    Z y1 -> 
+      n
+
+    S y1 -> 
+      S (nat_add y1 n) in nat_add) : Nat -> Nat -> Nat)
+0.00860499999999 true true
+
+(0, 0) -> 0;
+(0, 1) -> 1;
+(0, 2) -> 2;
+(1, 0) -> 1;
+(1, 1) -> 2;
+(1, 2) -> 3;
+(2, 0) -> 2;
+(2, 2) -> 4;
+=================================
+(\nat_add -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let nat_add = \m -> \n -> case m of
+    Z y1 -> 
+      n
+
+    S y1 -> 
+      S (nat_add y1 n) in nat_add) : Nat -> Nat -> Nat)
+(\nat_add -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let nat_add = \m -> \n -> case m of
+    Z y1 -> 
+      n
+
+    S y1 -> 
+      S (nat_add y1 n) in nat_add) : Nat -> Nat -> Nat)
+0.0103059999999 true true
+
+(0, 0) -> 0;
+(0, 1) -> 1;
+(0, 2) -> 2;
+(1, 0) -> 1;
+(1, 1) -> 2;
+(1, 2) -> 3;
+(2, 1) -> 3;
+(2, 2) -> 4;
+=================================
+(\nat_add -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let nat_add = \m -> \n -> case m of
+    Z y1 -> 
+      n
+
+    S y1 -> 
+      S (nat_add y1 n) in nat_add) : Nat -> Nat -> Nat)
+(\nat_add -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let nat_add = \m -> \n -> case m of
+    Z y1 -> 
+      n
+
+    S y1 -> 
+      S (nat_add y1 n) in nat_add) : Nat -> Nat -> Nat)
+0.00755499999991 true true
+
+(0, 0) -> 0;
+(0, 1) -> 1;
+(0, 2) -> 2;
+(1, 0) -> 1;
+(1, 1) -> 2;
+(2, 0) -> 2;
+(2, 1) -> 3;
+(2, 2) -> 4;
+=================================
+(\nat_add -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let nat_add = \m -> \n -> case m of
+    Z y1 -> 
+      n
+
+    S y1 -> 
+      S (nat_add y1 n) in nat_add) : Nat -> Nat -> Nat)
+(\nat_add -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let nat_add = \m -> \n -> case m of
+    Z y1 -> 
+      n
+
+    S y1 -> 
+      S (nat_add y1 n) in nat_add) : Nat -> Nat -> Nat)
+0.0096860000001 true true
+
+(0, 0) -> 0;
+(0, 1) -> 1;
+(0, 2) -> 2;
+(1, 0) -> 1;
+(1, 2) -> 3;
+(2, 0) -> 2;
+(2, 1) -> 3;
+(2, 2) -> 4;
+=================================
+(\nat_add -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let nat_add = \m -> \n -> case m of
+    Z y1 -> 
+      n
+
+    S y1 -> 
+      S (nat_add y1 n) in nat_add) : Nat -> Nat -> Nat)
+(\nat_add -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let nat_add = \m -> \n -> case m of
+    Z y1 -> 
+      n
+
+    S y1 -> 
+      S (nat_add y1 n) in nat_add) : Nat -> Nat -> Nat)
+0.00593000000003 true true
+
+(0, 0) -> 0;
+(0, 1) -> 1;
+(0, 2) -> 2;
+(1, 1) -> 2;
+(1, 2) -> 3;
+(2, 0) -> 2;
+(2, 1) -> 3;
+(2, 2) -> 4;
+=================================
+(\nat_add -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let nat_add = \m -> \n -> case m of
+    Z y1 -> 
+      n
+
+    S y1 -> 
+      S (nat_add y1 n) in nat_add) : Nat -> Nat -> Nat)
+(\nat_add -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let nat_add = \m -> \n -> case m of
+    Z y1 -> 
+      n
+
+    S y1 -> 
+      S (nat_add y1 n) in nat_add) : Nat -> Nat -> Nat)
+0.00964700000009 true true
+
+(0, 0) -> 0;
+(0, 1) -> 1;
+(1, 0) -> 1;
+(1, 1) -> 2;
+(1, 2) -> 3;
+(2, 0) -> 2;
+(2, 1) -> 3;
+(2, 2) -> 4;
+=================================
+(\nat_add -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let nat_add = \m -> \n -> case m of
+    Z y1 -> 
+      n
+
+    S y1 -> 
+      S (nat_add y1 n) in nat_add) : Nat -> Nat -> Nat)
+(\nat_add -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let nat_add = \m -> \n -> case m of
+    Z y1 -> 
+      n
+
+    S y1 -> 
+      S (nat_add y1 n) in nat_add) : Nat -> Nat -> Nat)
+0.010362 true true
+
+(0, 0) -> 0;
+(0, 2) -> 2;
+(1, 0) -> 1;
+(1, 1) -> 2;
+(1, 2) -> 3;
+(2, 0) -> 2;
+(2, 1) -> 3;
+(2, 2) -> 4;
+=================================
+(\nat_add -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let nat_add = \m -> \n -> case m of
+    Z y1 -> 
+      n
+
+    S y1 -> 
+      S (nat_add y1 n) in nat_add) : Nat -> Nat -> Nat)
+(\nat_add -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let nat_add = \m -> \n -> case m of
+    Z y1 -> 
+      n
+
+    S y1 -> 
+      S (nat_add y1 n) in nat_add) : Nat -> Nat -> Nat)
+0.0061740000001 true true
+
+(0, 1) -> 1;
+(0, 2) -> 2;
+(1, 0) -> 1;
+(1, 1) -> 2;
+(1, 2) -> 3;
+(2, 0) -> 2;
+(2, 1) -> 3;
+(2, 2) -> 4;
+=================================
+(\nat_add -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let nat_add = \m -> \n -> case m of
+    Z y1 -> 
+      n
+
+    S y1 -> 
+      S (nat_add y1 n) in nat_add) : Nat -> Nat -> Nat)
+(\nat_add -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let nat_add = \m -> \n -> case m of
+    Z y1 -> 
+      n
+
+    S y1 -> 
+      S (nat_add y1 n) in nat_add) : Nat -> Nat -> Nat)
+0.00882200000001 true true
+
+(0, 0) -> 0;
+(0, 1) -> 1;
+(0, 2) -> 2;
+(1, 0) -> 1;
+(1, 1) -> 2;
+(1, 2) -> 3;
+(2, 0) -> 2;
+(2, 1) -> 3;
+(2, 2) -> 4;
+=================================
+(\nat_add -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let nat_add = \m -> \n -> case m of
+    Z y1 -> 
+      n
+
+    S y1 -> 
+      S (nat_add y1 n) in nat_add) : Nat -> Nat -> Nat)
+(\nat_add -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let nat_add = \m -> \n -> case m of
+    Z y1 -> 
+      n
+
+    S y1 -> 
+      S (nat_add y1 n) in nat_add) : Nat -> Nat -> Nat)
+0.00614500000006 true true
+

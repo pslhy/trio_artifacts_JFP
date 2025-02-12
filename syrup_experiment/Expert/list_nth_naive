@@ -1,0 +1,2805 @@
+([], 0) -> 0;
+=================================
+fix f0.fun (x0, x1).
+  ( Zero )
+0.0003 false
+
+([], 1) -> 0;
+=================================
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] -> ( Zero )
+  | hd1::tl1 -> ( Zero )
+  
+0.0004 false
+
+([2], 0) -> 2;
+=================================
+fix f0.fun (x0, x1).
+  ( Succ ( Succ x1 ) )
+0.0006 false
+
+([3, 2, 1], 2) -> 1;
+=================================
+fix f0.fun (x0, x1).
+  ( Succ ( Zero ) )
+0.0054 false
+
+([1, 2], 0) -> 1;
+=================================
+fix f0.fun (x0, x1).
+  ( Succ x1 )
+0.0017 false
+
+([1, 2], 1) -> 2;
+=================================
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] -> ( Succ x1 )
+  | hd1::tl1 ->
+    (f0 ( tl1, x1 ))
+  
+0.0037 false
+
+([3, 2, 1], 1) -> 2;
+=================================
+fix f0.fun (x0, x1).
+  match (x1) with
+  | Z -> ( Succ x1 )
+  | Sn1 ->
+    ( Succ
+      (f0 ( x0, n1 )) )
+  
+0.0048 false
+
+([1], 1) -> 0;
+=================================
+fix f0.fun (x0, x1).
+  match (x1) with
+  | Z -> x1
+  | Sn1 ->
+    (f0 ( x0, n1 ))
+  
+0.0007 false
+
+([2, 1], 0) -> 2;
+=================================
+fix f0.fun (x0, x1).
+  ( Succ ( Succ x1 ) )
+0.0029 false
+
+([3, 2, 1], 0) -> 3;
+=================================
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] -> x1
+  | hd1::tl1 ->
+    ( Succ
+      (f0 ( tl1, x1 )) )
+  
+0.0031 false
+
+([2, 1], 0) -> 2;
+([3, 2, 1], 0) -> 3;
+=================================
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] -> x1
+  | hd1::tl1 ->
+    ( Succ
+      (f0 ( tl1, x1 )) )
+  
+0.0025 false
+
+([2], 1) -> 0;
+([2, 1], 0) -> 2;
+=================================
+fix f0.fun (x0, x1).
+  match (x1) with
+  | Z ->
+    ( Succ ( Succ x1 ) )
+  | Sn1 -> n1
+  
+0.0030 false
+
+([1], 0) -> 1;
+([3, 2, 1], 0) -> 3;
+=================================
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] -> ( Zero )
+  | hd1::tl1 -> hd1
+  
+0.0022 false
+
+([], 1) -> 0;
+([3, 2, 1], 1) -> 2;
+=================================
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] -> ( Zero )
+  | hd1::tl1 ->
+    ( Succ x1 )
+  
+0.0045 false
+
+([], 1) -> 0;
+([3, 2, 1], 2) -> 1;
+=================================
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] -> ( Zero )
+  | hd1::tl1 ->
+    ( Succ ( Zero ) )
+  
+0.0049 false
+
+([2], 1) -> 0;
+([3, 2, 1], 2) -> 1;
+=================================
+fix f0.fun (x0, x1).
+  match (x1) with
+  | Z -> ( Zero )
+  | Sn1 -> n1
+  
+0.0061 false
+
+([2], 0) -> 2;
+([3, 2, 1], 1) -> 2;
+=================================
+fix f0.fun (x0, x1).
+  ( Succ
+    ( Succ ( Zero ) ) )
+0.0053 false
+
+([1, 2], 1) -> 2;
+([3, 2, 1], 2) -> 1;
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x1) with
+  | Z ->
+    match (x0) with
+    | [] -> ( Zero )
+    | hd1::tl1 -> hd1
+    
+  | Sn2 ->
+    match (x0) with
+    | [] -> ( Zero )
+    | hd1::tl1 ->
+      (f0 ( tl1, n2 ))
+    
+  
+0.1710 true
+
+([3, 2, 1], 0) -> 3;
+([3, 2, 1], 1) -> 2;
+=================================
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x1) with
+  | Z ->
+    ( Succ
+      ( Succ ( Succ x1 )
+        ) )
+  | Sn1 -> ( Succ x1 )
+  
+0.0594 false
+
+([1, 2], 1) -> 2;
+([3, 2, 1], 1) -> 2;
+=================================
+fix f0.fun (x0, x1).
+  match (x1) with
+  | Z -> ( Zero )
+  | Sn1 -> ( Succ x1 )
+  
+0.0150 false
+
+([2], 1) -> 0;
+([1, 2], 0) -> 1;
+([2, 1], 0) -> 2;
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x1) with
+  | Z ->
+    match (x0) with
+    | [] -> ( Zero )
+    | hd1::tl1 -> hd1
+    
+  | Sn2 -> n2
+  
+0.0940 false
+
+([1, 2], 1) -> 2;
+([1], 0) -> 1;
+([2, 1], 1) -> 1;
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] -> ( Zero )
+  | hd2::tl2 ->
+    match (tl2) with
+    | [] -> hd2
+    | hd1::tl1 -> hd1
+    
+  
+0.1441 false
+
+([2], 0) -> 2;
+([1], 0) -> 1;
+([2, 1], 0) -> 2;
+=================================
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] -> ( Zero )
+  | hd1::tl1 -> hd1
+  
+0.0047 false
+
+([], 0) -> 0;
+([1, 2], 1) -> 2;
+([3, 2, 1], 0) -> 3;
+=================================
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] -> ( Zero )
+  | hd1::tl1 ->
+    ( Succ
+      (f0 ( tl1, x1 )) )
+  
+0.0076 false
+
+([1, 2], 1) -> 2;
+([1], 0) -> 1;
+([3, 2, 1], 2) -> 1;
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x1) with
+  | Z ->
+    match (x0) with
+    | [] -> ( Zero )
+    | hd1::tl1 -> hd1
+    
+  | Sn2 ->
+    match (x0) with
+    | [] -> ( Zero )
+    | hd1::tl1 ->
+      (f0 ( tl1, n2 ))
+    
+  
+0.3526 true
+
+([1, 2], 1) -> 2;
+([3, 2, 1], 0) -> 3;
+([3, 2, 1], 1) -> 2;
+=================================
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x1) with
+  | Z ->
+    ( Succ
+      ( Succ ( Succ x1 )
+        ) )
+  | Sn1 -> ( Succ x1 )
+  
+0.1719 false
+
+([2], 1) -> 0;
+([2, 1], 0) -> 2;
+([3, 2, 1], 1) -> 2;
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] -> x1
+  | hd2::tl2 ->
+    match (x1) with
+    | Z -> hd2
+    | Sn1 ->
+      (f0 ( tl2, n1 ))
+    
+  
+0.1596 false
+
+([2], 1) -> 0;
+([1, 2], 0) -> 1;
+([2, 1], 1) -> 1;
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] -> x1
+  | hd2::tl2 ->
+    match (x1) with
+    | Z -> hd2
+    | Sn1 ->
+      (f0 ( tl2, n1 ))
+    
+  
+0.1624 false
+
+([], 0) -> 0;
+([1, 2], 0) -> 1;
+([2, 1], 1) -> 1;
+=================================
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] -> x1
+  | hd1::tl1 ->
+    ( Succ ( Zero ) )
+  
+0.0062 false
+
+([], 0) -> 0;
+([1], 1) -> 0;
+([3, 2, 1], 0) -> 3;
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] -> x1
+  | hd2::tl2 ->
+    match (tl2) with
+    | [] -> ( Zero )
+    | hd1::tl1 -> hd2
+    
+  
+0.0681 false
+
+([2], 0) -> 2;
+([2], 1) -> 0;
+([1, 2], 1) -> 2;
+([3, 2, 1], 1) -> 2;
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x1) with
+  | Z ->
+    match (x0) with
+    | [] -> x1
+    | hd1::tl1 -> hd1
+    
+  | Sn2 ->
+    match (x0) with
+    | [] -> ( Zero )
+    | hd1::tl1 ->
+      (f0 ( tl1, n2 ))
+    
+  
+0.2964 true
+
+([], 1) -> 0;
+([1], 1) -> 0;
+([3, 2, 1], 0) -> 3;
+([3, 2, 1], 2) -> 1;
+=================================
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x1) with
+  | Z ->
+    ( Succ
+      ( Succ ( Succ x1 )
+        ) )
+  | Sn1 -> n1
+  
+0.0857 false
+
+([], 0) -> 0;
+([1, 2], 0) -> 1;
+([1], 0) -> 1;
+([3, 2, 1], 2) -> 1;
+=================================
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] -> x1
+  | hd1::tl1 ->
+    ( Succ ( Zero ) )
+  
+0.0110 false
+
+([], 1) -> 0;
+([2], 0) -> 2;
+([2], 1) -> 0;
+([3, 2, 1], 1) -> 2;
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x1) with
+  | Z ->
+    match (x0) with
+    | [] -> x1
+    | hd1::tl1 -> hd1
+    
+  | Sn2 ->
+    match (x0) with
+    | [] -> n2
+    | hd1::tl1 ->
+      (f0 ( tl1, n2 ))
+    
+  
+0.1630 false
+
+([2], 0) -> 2;
+([2], 1) -> 0;
+([1], 1) -> 0;
+([2, 1], 0) -> 2;
+=================================
+fix f0.fun (x0, x1).
+  match (x1) with
+  | Z ->
+    ( Succ ( Succ x1 ) )
+  | Sn1 -> n1
+  
+0.0079 false
+
+([], 0) -> 0;
+([1], 0) -> 1;
+([1], 1) -> 0;
+([3, 2, 1], 1) -> 2;
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] -> x1
+  | hd2::tl2 ->
+    match (x1) with
+    | Z -> hd2
+    | Sn1 ->
+      (f0 ( tl2, n1 ))
+    
+  
+0.0809 false
+
+([1, 2], 1) -> 2;
+([1], 0) -> 1;
+([3, 2, 1], 0) -> 3;
+([3, 2, 1], 2) -> 1;
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] -> ( Zero )
+  | hd2::tl2 ->
+    match (x1) with
+    | Z -> hd2
+    | Sn1 ->
+      (f0 ( tl2, n1 ))
+    
+  
+1.0627 true
+
+([1, 2], 0) -> 1;
+([1], 1) -> 0;
+([2, 1], 0) -> 2;
+([3, 2, 1], 1) -> 2;
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] -> x1
+  | hd2::tl2 ->
+    match (x1) with
+    | Z -> hd2
+    | Sn1 ->
+      (f0 ( tl2, n1 ))
+    
+  
+0.2418 false
+
+([], 0) -> 0;
+([], 1) -> 0;
+([2, 1], 0) -> 2;
+([2, 1], 1) -> 1;
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x1) with
+  | Z ->
+    match (x0) with
+    | [] -> x1
+    | hd1::tl1 -> hd1
+    
+  | Sn2 ->
+    match (x0) with
+    | [] -> n2
+    | hd1::tl1 ->
+      (f0 ( tl1, n2 ))
+    
+  
+0.0555 false
+
+([], 1) -> 0;
+([1, 2], 1) -> 2;
+([1], 0) -> 1;
+([1], 1) -> 0;
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x1) with
+  | Z ->
+    match (x0) with
+    | [] -> x1
+    | hd1::tl1 -> hd1
+    
+  | Sn2 ->
+    match (x0) with
+    | [] -> n2
+    | hd1::tl1 ->
+      (f0 ( tl1, n2 ))
+    
+  
+0.0836 false
+
+([], 1) -> 0;
+([2], 0) -> 2;
+([1, 2], 0) -> 1;
+([1, 2], 1) -> 2;
+([3, 2, 1], 1) -> 2;
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] -> ( Zero )
+  | hd2::tl2 ->
+    match (x1) with
+    | Z -> hd2
+    | Sn1 ->
+      (f0 ( tl2, n1 ))
+    
+  
+0.4207 true
+
+([1, 2], 1) -> 2;
+([1], 0) -> 1;
+([1], 1) -> 0;
+([2, 1], 0) -> 2;
+([3, 2, 1], 0) -> 3;
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x1) with
+  | Z ->
+    match (x0) with
+    | [] -> x1
+    | hd1::tl1 -> hd1
+    
+  | Sn2 ->
+    match (x0) with
+    | [] -> ( Zero )
+    | hd1::tl1 ->
+      (f0 ( tl1, n2 ))
+    
+  
+0.1767 true
+
+([2], 1) -> 0;
+([1, 2], 0) -> 1;
+([1, 2], 1) -> 2;
+([2, 1], 0) -> 2;
+([3, 2, 1], 0) -> 3;
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] -> x1
+  | hd2::tl2 ->
+    match (x1) with
+    | Z -> hd2
+    | Sn1 ->
+      (f0 ( tl2, n1 ))
+    
+  
+0.2209 false
+
+([], 0) -> 0;
+([2], 1) -> 0;
+([2, 1], 0) -> 2;
+([2, 1], 1) -> 1;
+([3, 2, 1], 2) -> 1;
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] -> x1
+  | hd2::tl2 ->
+    match (x1) with
+    | Z -> hd2
+    | Sn1 ->
+      (f0 ( tl2, n1 ))
+    
+  
+0.2186 false
+
+([], 0) -> 0;
+([], 1) -> 0;
+([1], 0) -> 1;
+([3, 2, 1], 1) -> 2;
+([3, 2, 1], 2) -> 1;
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x1) with
+  | Z ->
+    match (x0) with
+    | [] -> x1
+    | hd1::tl1 -> hd1
+    
+  | Sn2 ->
+    match (x0) with
+    | [] -> n2
+    | hd1::tl1 ->
+      (f0 ( tl1, n2 ))
+    
+  
+0.1450 false
+
+([], 1) -> 0;
+([1, 2], 0) -> 1;
+([2, 1], 1) -> 1;
+([3, 2, 1], 0) -> 3;
+([3, 2, 1], 1) -> 2;
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x1) with
+  | Z ->
+    match (x0) with
+    | [] -> ( Zero )
+    | hd1::tl1 -> hd1
+    
+  | Sn2 ->
+    match (x0) with
+    | [] -> n2
+    | hd1::tl1 ->
+      (f0 ( tl1, n2 ))
+    
+  
+0.5597 false
+
+([], 0) -> 0;
+([], 1) -> 0;
+([2], 1) -> 0;
+([3, 2, 1], 0) -> 3;
+([3, 2, 1], 1) -> 2;
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x1) with
+  | Z ->
+    match (x0) with
+    | [] -> x1
+    | hd1::tl1 -> hd1
+    
+  | Sn2 ->
+    match (x0) with
+    | [] -> n2
+    | hd1::tl1 ->
+      (f0 ( tl1, n2 ))
+    
+  
+0.1200 false
+
+([2], 1) -> 0;
+([1, 2], 0) -> 1;
+([1, 2], 1) -> 2;
+([1], 0) -> 1;
+([3, 2, 1], 1) -> 2;
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x1) with
+  | Z ->
+    match (x0) with
+    | [] -> x1
+    | hd1::tl1 -> hd1
+    
+  | Sn2 ->
+    match (x0) with
+    | [] -> ( Zero )
+    | hd1::tl1 ->
+      (f0 ( tl1, n2 ))
+    
+  
+0.5708 true
+
+([2], 0) -> 2;
+([1], 0) -> 1;
+([1], 1) -> 0;
+([3, 2, 1], 0) -> 3;
+([3, 2, 1], 2) -> 1;
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x1) with
+  | Z ->
+    match (x0) with
+    | [] -> x1
+    | hd1::tl1 -> hd1
+    
+  | Sn2 ->
+    match (x0) with
+    | [] -> ( Zero )
+    | hd1::tl1 ->
+      (f0 ( tl1, n2 ))
+    
+  
+0.3385 true
+
+([], 0) -> 0;
+([1, 2], 0) -> 1;
+([1], 1) -> 0;
+([2, 1], 0) -> 2;
+([3, 2, 1], 2) -> 1;
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x1) with
+  | Z ->
+    match (x0) with
+    | [] -> x1
+    | hd1::tl1 -> hd1
+    
+  | Sn2 -> n2
+  
+0.1825 false
+
+([], 1) -> 0;
+([2], 0) -> 2;
+([2], 1) -> 0;
+([1, 2], 0) -> 1;
+([1, 2], 1) -> 2;
+([2, 1], 0) -> 2;
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x1) with
+  | Z ->
+    match (x0) with
+    | [] -> x1
+    | hd1::tl1 -> hd1
+    
+  | Sn2 ->
+    match (x0) with
+    | [] -> n2
+    | hd1::tl1 ->
+      (f0 ( tl1, n2 ))
+    
+  
+0.0697 false
+
+([], 0) -> 0;
+([2], 0) -> 2;
+([1, 2], 0) -> 1;
+([1], 0) -> 1;
+([2, 1], 1) -> 1;
+([3, 2, 1], 0) -> 3;
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] -> x1
+  | hd2::tl2 ->
+    match (x1) with
+    | Z -> hd2
+    | Sn1 -> x1
+    
+  
+0.1008 false
+
+([], 1) -> 0;
+([2], 0) -> 2;
+([1, 2], 1) -> 2;
+([1], 0) -> 1;
+([1], 1) -> 0;
+([2, 1], 0) -> 2;
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] -> ( Zero )
+  | hd2::tl2 ->
+    match (x1) with
+    | Z -> hd2
+    | Sn1 ->
+      (f0 ( tl2, n1 ))
+    
+  
+0.1201 true
+
+([2], 0) -> 2;
+([1, 2], 0) -> 1;
+([1, 2], 1) -> 2;
+([1], 1) -> 0;
+([2, 1], 0) -> 2;
+([3, 2, 1], 2) -> 1;
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] -> x1
+  | hd2::tl2 ->
+    match (x1) with
+    | Z -> hd2
+    | Sn1 ->
+      (f0 ( tl2, n1 ))
+    
+  
+3.4265 false
+
+([2], 1) -> 0;
+([1, 2], 0) -> 1;
+([1], 0) -> 1;
+([2, 1], 0) -> 2;
+([3, 2, 1], 0) -> 3;
+([3, 2, 1], 2) -> 1;
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x1) with
+  | Z ->
+    match (x0) with
+    | [] -> x1
+    | hd1::tl1 -> hd1
+    
+  | Sn2 ->
+    match (x0) with
+    | [] -> ( Zero )
+    | hd1::tl1 ->
+      (f0 ( tl1, n2 ))
+    
+  
+0.8284 true
+
+([2], 0) -> 2;
+([1], 1) -> 0;
+([2, 1], 0) -> 2;
+([2, 1], 1) -> 1;
+([3, 2, 1], 1) -> 2;
+([3, 2, 1], 2) -> 1;
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x1) with
+  | Z ->
+    match (x0) with
+    | [] -> x1
+    | hd1::tl1 -> hd1
+    
+  | Sn2 ->
+    match (x0) with
+    | [] -> ( Zero )
+    | hd1::tl1 ->
+      (f0 ( tl1, n2 ))
+    
+  
+0.6342 true
+
+([], 0) -> 0;
+([2], 0) -> 2;
+([2], 1) -> 0;
+([2, 1], 1) -> 1;
+([3, 2, 1], 1) -> 2;
+([3, 2, 1], 2) -> 1;
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] -> x1
+  | hd2::tl2 ->
+    match (x1) with
+    | Z -> hd2
+    | Sn1 ->
+      (f0 ( tl2, n1 ))
+    
+  
+1.0112 false
+
+([], 0) -> 0;
+([2], 0) -> 2;
+([2], 1) -> 0;
+([1, 2], 1) -> 2;
+([1], 1) -> 0;
+([3, 2, 1], 0) -> 3;
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] -> x1
+  | hd2::tl2 ->
+    match (x1) with
+    | Z -> hd2
+    | Sn1 ->
+      (f0 ( tl2, n1 ))
+    
+  
+0.1208 false
+
+([2], 1) -> 0;
+([1], 0) -> 1;
+([1], 1) -> 0;
+([2, 1], 0) -> 2;
+([3, 2, 1], 1) -> 2;
+([3, 2, 1], 2) -> 1;
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x1) with
+  | Z ->
+    match (x0) with
+    | [] -> x1
+    | hd1::tl1 -> hd1
+    
+  | Sn2 ->
+    match (x0) with
+    | [] -> ( Zero )
+    | hd1::tl1 ->
+      (f0 ( tl1, n2 ))
+    
+  
+0.7642 true
+
+([], 0) -> 0;
+([2], 0) -> 2;
+([2], 1) -> 0;
+([1, 2], 0) -> 1;
+([1], 1) -> 0;
+([3, 2, 1], 0) -> 3;
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x1) with
+  | Z ->
+    match (x0) with
+    | [] -> x1
+    | hd1::tl1 -> hd1
+    
+  | Sn2 -> n2
+  
+0.1039 false
+
+([2], 0) -> 2;
+([2], 1) -> 0;
+([1, 2], 1) -> 2;
+([2, 1], 0) -> 2;
+([3, 2, 1], 0) -> 3;
+([3, 2, 1], 1) -> 2;
+([3, 2, 1], 2) -> 1;
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] -> x1
+  | hd2::tl2 ->
+    match (x1) with
+    | Z -> hd2
+    | Sn1 ->
+      (f0 ( tl2, n1 ))
+    
+  
+43.1288 false
+
+([], 0) -> 0;
+([], 1) -> 0;
+([1, 2], 1) -> 2;
+([1], 1) -> 0;
+([2, 1], 0) -> 2;
+([2, 1], 1) -> 1;
+([3, 2, 1], 0) -> 3;
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x1) with
+  | Z ->
+    match (x0) with
+    | [] -> x1
+    | hd1::tl1 -> hd1
+    
+  | Sn2 ->
+    match (x0) with
+    | [] -> n2
+    | hd1::tl1 ->
+      (f0 ( tl1, n2 ))
+    
+  
+0.0936 false
+
+([], 1) -> 0;
+([2], 1) -> 0;
+([1, 2], 1) -> 2;
+([1], 0) -> 1;
+([1], 1) -> 0;
+([3, 2, 1], 0) -> 3;
+([3, 2, 1], 2) -> 1;
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] -> ( Zero )
+  | hd2::tl2 ->
+    match (x1) with
+    | Z -> hd2
+    | Sn1 ->
+      (f0 ( tl2, n1 ))
+    
+  
+0.7302 true
+
+([], 0) -> 0;
+([2], 1) -> 0;
+([1, 2], 0) -> 1;
+([1, 2], 1) -> 2;
+([1], 1) -> 0;
+([2, 1], 1) -> 1;
+([3, 2, 1], 0) -> 3;
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x1) with
+  | Z ->
+    match (x0) with
+    | [] -> x1
+    | hd1::tl1 -> hd1
+    
+  | Sn2 ->
+    match (x0) with
+    | [] -> ( Zero )
+    | hd1::tl1 ->
+      (f0 ( tl1, n2 ))
+    
+  
+0.3543 true
+
+([], 0) -> 0;
+([], 1) -> 0;
+([2], 0) -> 2;
+([2], 1) -> 0;
+([1, 2], 1) -> 2;
+([2, 1], 0) -> 2;
+([3, 2, 1], 0) -> 3;
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x1) with
+  | Z ->
+    match (x0) with
+    | [] -> x1
+    | hd1::tl1 -> hd1
+    
+  | Sn2 ->
+    match (x0) with
+    | [] -> n2
+    | hd1::tl1 ->
+      (f0 ( tl1, n2 ))
+    
+  
+0.0697 false
+
+([], 0) -> 0;
+([], 1) -> 0;
+([1, 2], 0) -> 1;
+([1, 2], 1) -> 2;
+([1], 0) -> 1;
+([1], 1) -> 0;
+([3, 2, 1], 2) -> 1;
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] -> ( Zero )
+  | hd2::tl2 ->
+    match (x1) with
+    | Z -> hd2
+    | Sn1 ->
+      (f0 ( tl2, n1 ))
+    
+  
+0.2558 true
+
+([], 0) -> 0;
+([], 1) -> 0;
+([2], 1) -> 0;
+([1, 2], 1) -> 2;
+([1], 0) -> 1;
+([1], 1) -> 0;
+([2, 1], 0) -> 2;
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x1) with
+  | Z ->
+    match (x0) with
+    | [] -> x1
+    | hd1::tl1 -> hd1
+    
+  | Sn2 ->
+    match (x0) with
+    | [] -> n2
+    | hd1::tl1 ->
+      (f0 ( tl1, n2 ))
+    
+  
+0.0690 false
+
+([2], 0) -> 2;
+([1, 2], 0) -> 1;
+([1], 0) -> 1;
+([1], 1) -> 0;
+([2, 1], 0) -> 2;
+([2, 1], 1) -> 1;
+([3, 2, 1], 2) -> 1;
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x1) with
+  | Z ->
+    match (x0) with
+    | [] -> x1
+    | hd1::tl1 -> hd1
+    
+  | Sn2 ->
+    match (x0) with
+    | [] -> ( Zero )
+    | hd1::tl1 ->
+      (f0 ( tl1, n2 ))
+    
+  
+0.7065 true
+
+([2], 0) -> 2;
+([1, 2], 0) -> 1;
+([1], 1) -> 0;
+([2, 1], 0) -> 2;
+([2, 1], 1) -> 1;
+([3, 2, 1], 0) -> 3;
+([3, 2, 1], 1) -> 2;
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] -> x1
+  | hd2::tl2 ->
+    match (x1) with
+    | Z -> hd2
+    | Sn1 ->
+      (f0 ( tl2, n1 ))
+    
+  
+0.3013 false
+
+([], 0) -> 0;
+([2], 0) -> 2;
+([1, 2], 0) -> 1;
+([2, 1], 0) -> 2;
+([3, 2, 1], 0) -> 3;
+([3, 2, 1], 1) -> 2;
+([3, 2, 1], 2) -> 1;
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x1) with
+  | Z ->
+    match (x0) with
+    | [] -> x1
+    | hd1::tl1 -> hd1
+    
+  | Sn2 ->
+    match (x0) with
+    | [] -> ( Zero )
+    | hd1::tl1 ->
+      (f0 ( tl1, n2 ))
+    
+  
+1.7238 true
+
+([], 0) -> 0;
+([2], 0) -> 2;
+([1, 2], 0) -> 1;
+([1, 2], 1) -> 2;
+([1], 0) -> 1;
+([2, 1], 0) -> 2;
+([3, 2, 1], 0) -> 3;
+([3, 2, 1], 1) -> 2;
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] -> x1
+  | hd2::tl2 ->
+    match (x1) with
+    | Z -> hd2
+    | Sn1 ->
+      (f0 ( tl2, n1 ))
+    
+  
+0.3957 false
+
+([], 0) -> 0;
+([1, 2], 0) -> 1;
+([1], 0) -> 1;
+([1], 1) -> 0;
+([2, 1], 0) -> 2;
+([2, 1], 1) -> 1;
+([3, 2, 1], 0) -> 3;
+([3, 2, 1], 1) -> 2;
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] -> x1
+  | hd2::tl2 ->
+    match (x1) with
+    | Z -> hd2
+    | Sn1 ->
+      (f0 ( tl2, n1 ))
+    
+  
+0.0668 false
+
+([], 0) -> 0;
+([], 1) -> 0;
+([1, 2], 0) -> 1;
+([1, 2], 1) -> 2;
+([1], 0) -> 1;
+([2, 1], 0) -> 2;
+([3, 2, 1], 1) -> 2;
+([3, 2, 1], 2) -> 1;
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] -> ( Zero )
+  | hd2::tl2 ->
+    match (x1) with
+    | Z -> hd2
+    | Sn1 ->
+      (f0 ( tl2, n1 ))
+    
+  
+1.3426 true
+
+([], 0) -> 0;
+([], 1) -> 0;
+([2], 0) -> 2;
+([1, 2], 0) -> 1;
+([1, 2], 1) -> 2;
+([2, 1], 0) -> 2;
+([2, 1], 1) -> 1;
+([3, 2, 1], 2) -> 1;
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x1) with
+  | Z ->
+    match (x0) with
+    | [] -> x1
+    | hd1::tl1 -> hd1
+    
+  | Sn2 ->
+    match (x0) with
+    | [] -> n2
+    | hd1::tl1 ->
+      (f0 ( tl1, n2 ))
+    
+  
+0.5918 false
+
+([], 0) -> 0;
+([], 1) -> 0;
+([2], 0) -> 2;
+([2], 1) -> 0;
+([1], 0) -> 1;
+([2, 1], 1) -> 1;
+([3, 2, 1], 0) -> 3;
+([3, 2, 1], 2) -> 1;
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x1) with
+  | Z ->
+    match (x0) with
+    | [] -> x1
+    | hd1::tl1 -> hd1
+    
+  | Sn2 ->
+    match (x0) with
+    | [] -> n2
+    | hd1::tl1 ->
+      (f0 ( tl1, n2 ))
+    
+  
+0.2033 false
+
+([], 0) -> 0;
+([], 1) -> 0;
+([2], 0) -> 2;
+([2], 1) -> 0;
+([1, 2], 1) -> 2;
+([1], 1) -> 0;
+([3, 2, 1], 0) -> 3;
+([3, 2, 1], 2) -> 1;
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x1) with
+  | Z ->
+    match (x0) with
+    | [] -> x1
+    | hd1::tl1 -> hd1
+    
+  | Sn2 ->
+    match (x0) with
+    | [] -> n2
+    | hd1::tl1 ->
+      (f0 ( tl1, n2 ))
+    
+  
+0.2720 false
+
+([], 0) -> 0;
+([], 1) -> 0;
+([1, 2], 1) -> 2;
+([2, 1], 0) -> 2;
+([2, 1], 1) -> 1;
+([3, 2, 1], 0) -> 3;
+([3, 2, 1], 1) -> 2;
+([3, 2, 1], 2) -> 1;
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] -> ( Zero )
+  | hd2::tl2 ->
+    match (x1) with
+    | Z -> hd2
+    | Sn1 ->
+      (f0 ( tl2, n1 ))
+    
+  
+0.8291 true
+
+([], 1) -> 0;
+([1, 2], 0) -> 1;
+([1, 2], 1) -> 2;
+([1], 0) -> 1;
+([1], 1) -> 0;
+([3, 2, 1], 0) -> 3;
+([3, 2, 1], 1) -> 2;
+([3, 2, 1], 2) -> 1;
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x1) with
+  | Z ->
+    match (x0) with
+    | [] -> x1
+    | hd1::tl1 -> hd1
+    
+  | Sn2 ->
+    match (x0) with
+    | [] -> n2
+    | hd1::tl1 ->
+      (f0 ( tl1, n2 ))
+    
+  
+44.0202 false
+
+([], 0) -> 0;
+([], 1) -> 0;
+([2], 0) -> 2;
+([1, 2], 0) -> 1;
+([1, 2], 1) -> 2;
+([2, 1], 0) -> 2;
+([2, 1], 1) -> 1;
+([3, 2, 1], 0) -> 3;
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x1) with
+  | Z ->
+    match (x0) with
+    | [] -> x1
+    | hd1::tl1 -> hd1
+    
+  | Sn2 ->
+    match (x0) with
+    | [] -> n2
+    | hd1::tl1 ->
+      (f0 ( tl1, n2 ))
+    
+  
+0.7939 false
+
+([], 1) -> 0;
+([2], 0) -> 2;
+([2], 1) -> 0;
+([1, 2], 1) -> 2;
+([1], 0) -> 1;
+([1], 1) -> 0;
+([2, 1], 0) -> 2;
+([3, 2, 1], 2) -> 1;
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x1) with
+  | Z ->
+    match (x0) with
+    | [] -> x1
+    | hd1::tl1 -> hd1
+    
+  | Sn2 ->
+    match (x0) with
+    | [] -> n2
+    | hd1::tl1 ->
+      (f0 ( tl1, n2 ))
+    
+  
+0.4851 false
+
+([], 0) -> 0;
+([], 1) -> 0;
+([2], 1) -> 0;
+([1, 2], 0) -> 1;
+([1], 0) -> 1;
+([2, 1], 0) -> 2;
+([2, 1], 1) -> 1;
+([3, 2, 1], 1) -> 2;
+([3, 2, 1], 2) -> 1;
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x1) with
+  | Z ->
+    match (x0) with
+    | [] -> x1
+    | hd1::tl1 -> hd1
+    
+  | Sn2 ->
+    match (x0) with
+    | [] -> n2
+    | hd1::tl1 ->
+      (f0 ( tl1, n2 ))
+    
+  
+0.2250 false
+
+([], 1) -> 0;
+([2], 1) -> 0;
+([1, 2], 0) -> 1;
+([1, 2], 1) -> 2;
+([1], 0) -> 1;
+([1], 1) -> 0;
+([2, 1], 0) -> 2;
+([2, 1], 1) -> 1;
+([3, 2, 1], 1) -> 2;
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x1) with
+  | Z ->
+    match (x0) with
+    | [] -> x1
+    | hd1::tl1 -> hd1
+    
+  | Sn2 ->
+    match (x0) with
+    | [] -> n2
+    | hd1::tl1 ->
+      (f0 ( tl1, n2 ))
+    
+  
+0.3462 false
+
+([], 0) -> 0;
+([], 1) -> 0;
+([2], 1) -> 0;
+([1, 2], 0) -> 1;
+([1, 2], 1) -> 2;
+([1], 1) -> 0;
+([2, 1], 1) -> 1;
+([3, 2, 1], 0) -> 3;
+([3, 2, 1], 1) -> 2;
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x1) with
+  | Z ->
+    match (x0) with
+    | [] -> x1
+    | hd1::tl1 -> hd1
+    
+  | Sn2 ->
+    match (x0) with
+    | [] -> n2
+    | hd1::tl1 ->
+      (f0 ( tl1, n2 ))
+    
+  
+0.2455 false
+
+([2], 0) -> 2;
+([1, 2], 0) -> 1;
+([1, 2], 1) -> 2;
+([1], 1) -> 0;
+([2, 1], 0) -> 2;
+([2, 1], 1) -> 1;
+([3, 2, 1], 0) -> 3;
+([3, 2, 1], 1) -> 2;
+([3, 2, 1], 2) -> 1;
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] -> x1
+  | hd2::tl2 ->
+    match (x1) with
+    | Z -> hd2
+    | Sn1 ->
+      (f0 ( tl2, n1 ))
+    
+  
+30.0212 false
+
+([], 0) -> 0;
+([], 1) -> 0;
+([2], 1) -> 0;
+([1, 2], 0) -> 1;
+([1, 2], 1) -> 2;
+([1], 0) -> 1;
+([2, 1], 0) -> 2;
+([2, 1], 1) -> 1;
+([3, 2, 1], 0) -> 3;
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] -> ( Zero )
+  | hd2::tl2 ->
+    match (x1) with
+    | Z -> hd2
+    | Sn1 ->
+      (f0 ( tl2, n1 ))
+    
+  
+0.0859 true
+
+([], 0) -> 0;
+([], 1) -> 0;
+([1, 2], 0) -> 1;
+([1, 2], 1) -> 2;
+([1], 0) -> 1;
+([1], 1) -> 0;
+([2, 1], 1) -> 1;
+([3, 2, 1], 0) -> 3;
+([3, 2, 1], 1) -> 2;
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] -> ( Zero )
+  | hd2::tl2 ->
+    match (x1) with
+    | Z -> hd2
+    | Sn1 ->
+      (f0 ( tl2, n1 ))
+    
+  
+0.2294 true
+
+([], 1) -> 0;
+([2], 0) -> 2;
+([2], 1) -> 0;
+([1, 2], 0) -> 1;
+([2, 1], 0) -> 2;
+([2, 1], 1) -> 1;
+([3, 2, 1], 0) -> 3;
+([3, 2, 1], 1) -> 2;
+([3, 2, 1], 2) -> 1;
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] -> ( Zero )
+  | hd2::tl2 ->
+    match (x1) with
+    | Z -> hd2
+    | Sn1 ->
+      (f0 ( tl2, n1 ))
+    
+  
+21.1722 true
+
+([], 0) -> 0;
+([], 1) -> 0;
+([2], 0) -> 2;
+([1, 2], 0) -> 1;
+([1, 2], 1) -> 2;
+([1], 0) -> 1;
+([1], 1) -> 0;
+([2, 1], 0) -> 2;
+([3, 2, 1], 2) -> 1;
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x1) with
+  | Z ->
+    match (x0) with
+    | [] -> x1
+    | hd1::tl1 -> hd1
+    
+  | Sn2 ->
+    match (x0) with
+    | [] -> n2
+    | hd1::tl1 ->
+      (f0 ( tl1, n2 ))
+    
+  
+0.2247 false
+
+([], 0) -> 0;
+([1, 2], 0) -> 1;
+([1, 2], 1) -> 2;
+([1], 0) -> 1;
+([1], 1) -> 0;
+([2, 1], 0) -> 2;
+([2, 1], 1) -> 1;
+([3, 2, 1], 0) -> 3;
+([3, 2, 1], 2) -> 1;
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x1) with
+  | Z ->
+    match (x0) with
+    | [] -> x1
+    | hd1::tl1 -> hd1
+    
+  | Sn2 ->
+    match (x0) with
+    | [] -> ( Zero )
+    | hd1::tl1 ->
+      (f0 ( tl1, n2 ))
+    
+  
+1.0248 true
+
+([], 0) -> 0;
+([], 1) -> 0;
+([2], 0) -> 2;
+([2], 1) -> 0;
+([1, 2], 0) -> 1;
+([1, 2], 1) -> 2;
+([2, 1], 0) -> 2;
+([2, 1], 1) -> 1;
+([3, 2, 1], 0) -> 3;
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x1) with
+  | Z ->
+    match (x0) with
+    | [] -> x1
+    | hd1::tl1 -> hd1
+    
+  | Sn2 ->
+    match (x0) with
+    | [] -> n2
+    | hd1::tl1 ->
+      (f0 ( tl1, n2 ))
+    
+  
+0.1706 false
+
+([], 0) -> 0;
+([], 1) -> 0;
+([2], 0) -> 2;
+([2], 1) -> 0;
+([1, 2], 0) -> 1;
+([1, 2], 1) -> 2;
+([1], 0) -> 1;
+([1], 1) -> 0;
+([2, 1], 0) -> 2;
+([2, 1], 1) -> 1;
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x1) with
+  | Z ->
+    match (x0) with
+    | [] -> x1
+    | hd1::tl1 -> hd1
+    
+  | Sn2 ->
+    match (x0) with
+    | [] -> n2
+    | hd1::tl1 ->
+      (f0 ( tl1, n2 ))
+    
+  
+0.0429 false
+
+([], 0) -> 0;
+([2], 0) -> 2;
+([2], 1) -> 0;
+([1, 2], 0) -> 1;
+([1, 2], 1) -> 2;
+([1], 0) -> 1;
+([1], 1) -> 0;
+([2, 1], 0) -> 2;
+([3, 2, 1], 0) -> 3;
+([3, 2, 1], 1) -> 2;
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] -> x1
+  | hd2::tl2 ->
+    match (x1) with
+    | Z -> hd2
+    | Sn1 ->
+      (f0 ( tl2, n1 ))
+    
+  
+0.1001 false
+
+([], 0) -> 0;
+([], 1) -> 0;
+([2], 0) -> 2;
+([2], 1) -> 0;
+([1, 2], 1) -> 2;
+([1], 0) -> 1;
+([2, 1], 1) -> 1;
+([3, 2, 1], 0) -> 3;
+([3, 2, 1], 1) -> 2;
+([3, 2, 1], 2) -> 1;
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x1) with
+  | Z ->
+    match (x0) with
+    | [] -> x1
+    | hd1::tl1 -> hd1
+    
+  | Sn2 ->
+    match (x0) with
+    | [] -> n2
+    | hd1::tl1 ->
+      (f0 ( tl1, n2 ))
+    
+  
+0.5346 false
+
+([], 1) -> 0;
+([2], 0) -> 2;
+([2], 1) -> 0;
+([1, 2], 0) -> 1;
+([1, 2], 1) -> 2;
+([1], 0) -> 1;
+([1], 1) -> 0;
+([3, 2, 1], 0) -> 3;
+([3, 2, 1], 1) -> 2;
+([3, 2, 1], 2) -> 1;
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] -> ( Zero )
+  | hd2::tl2 ->
+    match (x1) with
+    | Z -> hd2
+    | Sn1 ->
+      (f0 ( tl2, n1 ))
+    
+  
+4.4911 true
+
+([], 1) -> 0;
+([2], 0) -> 2;
+([2], 1) -> 0;
+([1, 2], 0) -> 1;
+([1, 2], 1) -> 2;
+([1], 1) -> 0;
+([2, 1], 0) -> 2;
+([2, 1], 1) -> 1;
+([3, 2, 1], 0) -> 3;
+([3, 2, 1], 1) -> 2;
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x1) with
+  | Z ->
+    match (x0) with
+    | [] -> x1
+    | hd1::tl1 -> hd1
+    
+  | Sn2 ->
+    match (x0) with
+    | [] -> n2
+    | hd1::tl1 ->
+      (f0 ( tl1, n2 ))
+    
+  
+0.3859 false
+
+([], 0) -> 0;
+([], 1) -> 0;
+([2], 0) -> 2;
+([2], 1) -> 0;
+([1, 2], 0) -> 1;
+([1], 0) -> 1;
+([1], 1) -> 0;
+([3, 2, 1], 0) -> 3;
+([3, 2, 1], 1) -> 2;
+([3, 2, 1], 2) -> 1;
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] -> ( Zero )
+  | hd2::tl2 ->
+    match (x1) with
+    | Z -> hd2
+    | Sn1 ->
+      (f0 ( tl2, n1 ))
+    
+  
+0.4618 true
+
+([], 0) -> 0;
+([], 1) -> 0;
+([2], 0) -> 2;
+([2], 1) -> 0;
+([1, 2], 0) -> 1;
+([1, 2], 1) -> 2;
+([1], 1) -> 0;
+([2, 1], 0) -> 2;
+([2, 1], 1) -> 1;
+([3, 2, 1], 2) -> 1;
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] -> ( Zero )
+  | hd2::tl2 ->
+    match (x1) with
+    | Z -> hd2
+    | Sn1 ->
+      (f0 ( tl2, n1 ))
+    
+  
+0.2647 true
+
+([], 0) -> 0;
+([2], 0) -> 2;
+([1, 2], 0) -> 1;
+([1, 2], 1) -> 2;
+([1], 0) -> 1;
+([1], 1) -> 0;
+([2, 1], 1) -> 1;
+([3, 2, 1], 0) -> 3;
+([3, 2, 1], 1) -> 2;
+([3, 2, 1], 2) -> 1;
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] -> x1
+  | hd2::tl2 ->
+    match (x1) with
+    | Z -> hd2
+    | Sn1 ->
+      (f0 ( tl2, n1 ))
+    
+  
+2.4570 false
+
+([], 1) -> 0;
+([2], 0) -> 2;
+([2], 1) -> 0;
+([1, 2], 0) -> 1;
+([1, 2], 1) -> 2;
+([1], 0) -> 1;
+([1], 1) -> 0;
+([2, 1], 1) -> 1;
+([3, 2, 1], 0) -> 3;
+([3, 2, 1], 2) -> 1;
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] -> ( Zero )
+  | hd2::tl2 ->
+    match (x1) with
+    | Z -> hd2
+    | Sn1 ->
+      (f0 ( tl2, n1 ))
+    
+  
+0.9791 true
+
+([], 0) -> 0;
+([], 1) -> 0;
+([2], 1) -> 0;
+([1, 2], 1) -> 2;
+([1], 0) -> 1;
+([2, 1], 0) -> 2;
+([2, 1], 1) -> 1;
+([3, 2, 1], 0) -> 3;
+([3, 2, 1], 1) -> 2;
+([3, 2, 1], 2) -> 1;
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x1) with
+  | Z ->
+    match (x0) with
+    | [] -> x1
+    | hd1::tl1 -> hd1
+    
+  | Sn2 ->
+    match (x0) with
+    | [] -> n2
+    | hd1::tl1 ->
+      (f0 ( tl1, n2 ))
+    
+  
+0.3959 false
+
+([], 0) -> 0;
+([], 1) -> 0;
+([2], 0) -> 2;
+([2], 1) -> 0;
+([1, 2], 0) -> 1;
+([1, 2], 1) -> 2;
+([1], 0) -> 1;
+([2, 1], 0) -> 2;
+([2, 1], 1) -> 1;
+([3, 2, 1], 0) -> 3;
+([3, 2, 1], 2) -> 1;
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x1) with
+  | Z ->
+    match (x0) with
+    | [] -> x1
+    | hd1::tl1 -> hd1
+    
+  | Sn2 ->
+    match (x0) with
+    | [] -> n2
+    | hd1::tl1 ->
+      (f0 ( tl1, n2 ))
+    
+  
+0.2226 false
+
+([], 0) -> 0;
+([], 1) -> 0;
+([2], 0) -> 2;
+([2], 1) -> 0;
+([1, 2], 1) -> 2;
+([1], 0) -> 1;
+([1], 1) -> 0;
+([2, 1], 0) -> 2;
+([2, 1], 1) -> 1;
+([3, 2, 1], 0) -> 3;
+([3, 2, 1], 2) -> 1;
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] -> ( Zero )
+  | hd2::tl2 ->
+    match (x1) with
+    | Z -> hd2
+    | Sn1 ->
+      (f0 ( tl2, n1 ))
+    
+  
+0.2699 true
+
+([], 0) -> 0;
+([2], 0) -> 2;
+([2], 1) -> 0;
+([1, 2], 0) -> 1;
+([1, 2], 1) -> 2;
+([1], 0) -> 1;
+([1], 1) -> 0;
+([2, 1], 0) -> 2;
+([3, 2, 1], 0) -> 3;
+([3, 2, 1], 1) -> 2;
+([3, 2, 1], 2) -> 1;
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] -> x1
+  | hd2::tl2 ->
+    match (x1) with
+    | Z -> hd2
+    | Sn1 ->
+      (f0 ( tl2, n1 ))
+    
+  
+0.7456 false
+
+([], 0) -> 0;
+([2], 0) -> 2;
+([2], 1) -> 0;
+([1, 2], 0) -> 1;
+([1, 2], 1) -> 2;
+([1], 0) -> 1;
+([1], 1) -> 0;
+([2, 1], 0) -> 2;
+([2, 1], 1) -> 1;
+([3, 2, 1], 0) -> 3;
+([3, 2, 1], 1) -> 2;
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] -> x1
+  | hd2::tl2 ->
+    match (x1) with
+    | Z -> hd2
+    | Sn1 ->
+      (f0 ( tl2, n1 ))
+    
+  
+0.1085 false
+
+([], 0) -> 0;
+([], 1) -> 0;
+([2], 0) -> 2;
+([2], 1) -> 0;
+([1, 2], 0) -> 1;
+([1, 2], 1) -> 2;
+([1], 0) -> 1;
+([1], 1) -> 0;
+([2, 1], 0) -> 2;
+([3, 2, 1], 0) -> 3;
+([3, 2, 1], 2) -> 1;
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] -> ( Zero )
+  | hd2::tl2 ->
+    match (x1) with
+    | Z -> hd2
+    | Sn1 ->
+      (f0 ( tl2, n1 ))
+    
+  
+0.1728 true
+
+([], 0) -> 0;
+([], 1) -> 0;
+([2], 1) -> 0;
+([1, 2], 0) -> 1;
+([1, 2], 1) -> 2;
+([1], 0) -> 1;
+([1], 1) -> 0;
+([2, 1], 0) -> 2;
+([3, 2, 1], 0) -> 3;
+([3, 2, 1], 1) -> 2;
+([3, 2, 1], 2) -> 1;
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x1) with
+  | Z ->
+    match (x0) with
+    | [] -> x1
+    | hd1::tl1 -> hd1
+    
+  | Sn2 ->
+    match (x0) with
+    | [] -> n2
+    | hd1::tl1 ->
+      (f0 ( tl1, n2 ))
+    
+  
+0.5295 false
+
+([], 0) -> 0;
+([], 1) -> 0;
+([2], 0) -> 2;
+([2], 1) -> 0;
+([1, 2], 0) -> 1;
+([1, 2], 1) -> 2;
+([1], 0) -> 1;
+([1], 1) -> 0;
+([2, 1], 1) -> 1;
+([3, 2, 1], 0) -> 3;
+([3, 2, 1], 1) -> 2;
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] -> ( Zero )
+  | hd2::tl2 ->
+    match (x1) with
+    | Z -> hd2
+    | Sn1 ->
+      (f0 ( tl2, n1 ))
+    
+  
+0.1134 true
+
+([], 0) -> 0;
+([], 1) -> 0;
+([2], 1) -> 0;
+([1, 2], 0) -> 1;
+([1, 2], 1) -> 2;
+([1], 0) -> 1;
+([1], 1) -> 0;
+([2, 1], 0) -> 2;
+([2, 1], 1) -> 1;
+([3, 2, 1], 1) -> 2;
+([3, 2, 1], 2) -> 1;
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] -> ( Zero )
+  | hd2::tl2 ->
+    match (x1) with
+    | Z -> hd2
+    | Sn1 ->
+      (f0 ( tl2, n1 ))
+    
+  
+0.2851 true
+
+([], 0) -> 0;
+([2], 0) -> 2;
+([1, 2], 0) -> 1;
+([1, 2], 1) -> 2;
+([1], 0) -> 1;
+([1], 1) -> 0;
+([2, 1], 0) -> 2;
+([2, 1], 1) -> 1;
+([3, 2, 1], 0) -> 3;
+([3, 2, 1], 1) -> 2;
+([3, 2, 1], 2) -> 1;
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] -> x1
+  | hd2::tl2 ->
+    match (x1) with
+    | Z -> hd2
+    | Sn1 ->
+      (f0 ( tl2, n1 ))
+    
+  
+0.7487 false
+
+([], 0) -> 0;
+([], 1) -> 0;
+([2], 0) -> 2;
+([2], 1) -> 0;
+([1, 2], 0) -> 1;
+([1], 0) -> 1;
+([1], 1) -> 0;
+([2, 1], 1) -> 1;
+([3, 2, 1], 0) -> 3;
+([3, 2, 1], 1) -> 2;
+([3, 2, 1], 2) -> 1;
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] -> ( Zero )
+  | hd2::tl2 ->
+    match (x1) with
+    | Z -> hd2
+    | Sn1 ->
+      (f0 ( tl2, n1 ))
+    
+  
+0.2823 true
+
+([], 0) -> 0;
+([], 1) -> 0;
+([2], 1) -> 0;
+([1, 2], 0) -> 1;
+([1, 2], 1) -> 2;
+([1], 0) -> 1;
+([1], 1) -> 0;
+([2, 1], 0) -> 2;
+([2, 1], 1) -> 1;
+([3, 2, 1], 0) -> 3;
+([3, 2, 1], 1) -> 2;
+([3, 2, 1], 2) -> 1;
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x1) with
+  | Z ->
+    match (x0) with
+    | [] -> x1
+    | hd1::tl1 -> hd1
+    
+  | Sn2 ->
+    match (x0) with
+    | [] -> n2
+    | hd1::tl1 ->
+      (f0 ( tl1, n2 ))
+    
+  
+0.2794 false
+
+([], 0) -> 0;
+([], 1) -> 0;
+([2], 0) -> 2;
+([2], 1) -> 0;
+([1, 2], 0) -> 1;
+([1, 2], 1) -> 2;
+([1], 0) -> 1;
+([1], 1) -> 0;
+([2, 1], 0) -> 2;
+([2, 1], 1) -> 1;
+([3, 2, 1], 0) -> 3;
+([3, 2, 1], 2) -> 1;
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x1) with
+  | Z ->
+    match (x0) with
+    | [] -> x1
+    | hd1::tl1 -> hd1
+    
+  | Sn2 ->
+    match (x0) with
+    | [] -> n2
+    | hd1::tl1 ->
+      (f0 ( tl1, n2 ))
+    
+  
+0.1509 false
+
+([], 0) -> 0;
+([], 1) -> 0;
+([2], 0) -> 2;
+([2], 1) -> 0;
+([1, 2], 0) -> 1;
+([1, 2], 1) -> 2;
+([1], 0) -> 1;
+([1], 1) -> 0;
+([2, 1], 0) -> 2;
+([2, 1], 1) -> 1;
+([3, 2, 1], 1) -> 2;
+([3, 2, 1], 2) -> 1;
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x1) with
+  | Z ->
+    match (x0) with
+    | [] -> x1
+    | hd1::tl1 -> hd1
+    
+  | Sn2 ->
+    match (x0) with
+    | [] -> n2
+    | hd1::tl1 ->
+      (f0 ( tl1, n2 ))
+    
+  
+0.1902 false
+
+([], 0) -> 0;
+([], 1) -> 0;
+([2], 0) -> 2;
+([2], 1) -> 0;
+([1, 2], 0) -> 1;
+([1, 2], 1) -> 2;
+([1], 0) -> 1;
+([1], 1) -> 0;
+([2, 1], 0) -> 2;
+([3, 2, 1], 0) -> 3;
+([3, 2, 1], 1) -> 2;
+([3, 2, 1], 2) -> 1;
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] -> ( Zero )
+  | hd2::tl2 ->
+    match (x1) with
+    | Z -> hd2
+    | Sn1 ->
+      (f0 ( tl2, n1 ))
+    
+  
+0.2846 true
+
+([], 0) -> 0;
+([], 1) -> 0;
+([2], 0) -> 2;
+([2], 1) -> 0;
+([1, 2], 0) -> 1;
+([1, 2], 1) -> 2;
+([1], 0) -> 1;
+([1], 1) -> 0;
+([2, 1], 1) -> 1;
+([3, 2, 1], 0) -> 3;
+([3, 2, 1], 1) -> 2;
+([3, 2, 1], 2) -> 1;
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x1) with
+  | Z ->
+    match (x0) with
+    | [] -> x1
+    | hd1::tl1 -> hd1
+    
+  | Sn2 ->
+    match (x0) with
+    | [] -> n2
+    | hd1::tl1 ->
+      (f0 ( tl1, n2 ))
+    
+  
+0.3740 false
+
+([], 0) -> 0;
+([], 1) -> 0;
+([2], 0) -> 2;
+([2], 1) -> 0;
+([1, 2], 0) -> 1;
+([1, 2], 1) -> 2;
+([1], 0) -> 1;
+([2, 1], 0) -> 2;
+([2, 1], 1) -> 1;
+([3, 2, 1], 0) -> 3;
+([3, 2, 1], 1) -> 2;
+([3, 2, 1], 2) -> 1;
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] -> ( Zero )
+  | hd2::tl2 ->
+    match (x1) with
+    | Z -> hd2
+    | Sn1 ->
+      (f0 ( tl2, n1 ))
+    
+  
+0.2946 true
+
+([], 0) -> 0;
+([2], 0) -> 2;
+([2], 1) -> 0;
+([1, 2], 0) -> 1;
+([1, 2], 1) -> 2;
+([1], 0) -> 1;
+([1], 1) -> 0;
+([2, 1], 0) -> 2;
+([2, 1], 1) -> 1;
+([3, 2, 1], 0) -> 3;
+([3, 2, 1], 1) -> 2;
+([3, 2, 1], 2) -> 1;
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x1) with
+  | Z ->
+    match (x0) with
+    | [] -> x1
+    | hd1::tl1 -> hd1
+    
+  | Sn2 ->
+    match (x0) with
+    | [] -> ( Zero )
+    | hd1::tl1 ->
+      (f0 ( tl1, n2 ))
+    
+  
+0.4857 true
+
+([], 0) -> 0;
+([], 1) -> 0;
+([2], 0) -> 2;
+([2], 1) -> 0;
+([1, 2], 0) -> 1;
+([1], 0) -> 1;
+([1], 1) -> 0;
+([2, 1], 0) -> 2;
+([2, 1], 1) -> 1;
+([3, 2, 1], 0) -> 3;
+([3, 2, 1], 1) -> 2;
+([3, 2, 1], 2) -> 1;
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] -> ( Zero )
+  | hd2::tl2 ->
+    match (x1) with
+    | Z -> hd2
+    | Sn1 ->
+      (f0 ( tl2, n1 ))
+    
+  
+0.1093 true
+
+([], 0) -> 0;
+([], 1) -> 0;
+([2], 0) -> 2;
+([2], 1) -> 0;
+([1, 2], 1) -> 2;
+([1], 0) -> 1;
+([1], 1) -> 0;
+([2, 1], 0) -> 2;
+([2, 1], 1) -> 1;
+([3, 2, 1], 0) -> 3;
+([3, 2, 1], 1) -> 2;
+([3, 2, 1], 2) -> 1;
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] -> ( Zero )
+  | hd2::tl2 ->
+    match (x1) with
+    | Z -> hd2
+    | Sn1 ->
+      (f0 ( tl2, n1 ))
+    
+  
+0.1628 true
+
+([], 1) -> 0;
+([2], 0) -> 2;
+([2], 1) -> 0;
+([1, 2], 0) -> 1;
+([1, 2], 1) -> 2;
+([1], 0) -> 1;
+([1], 1) -> 0;
+([2, 1], 0) -> 2;
+([2, 1], 1) -> 1;
+([3, 2, 1], 0) -> 3;
+([3, 2, 1], 1) -> 2;
+([3, 2, 1], 2) -> 1;
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x1) with
+  | Z ->
+    match (x0) with
+    | [] -> x1
+    | hd1::tl1 -> hd1
+    
+  | Sn2 ->
+    match (x0) with
+    | [] -> n2
+    | hd1::tl1 ->
+      (f0 ( tl1, n2 ))
+    
+  
+0.6759 false
+
+([], 0) -> 0;
+([], 1) -> 0;
+([2], 0) -> 2;
+([2], 1) -> 0;
+([1, 2], 0) -> 1;
+([1, 2], 1) -> 2;
+([1], 0) -> 1;
+([1], 1) -> 0;
+([2, 1], 0) -> 2;
+([2, 1], 1) -> 1;
+([3, 2, 1], 0) -> 3;
+([3, 2, 1], 1) -> 2;
+([3, 2, 1], 2) -> 1;
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] -> ( Zero )
+  | hd2::tl2 ->
+    match (x1) with
+    | Z -> hd2
+    | Sn1 ->
+      (f0 ( tl2, n1 ))
+    
+  
+0.1513 true
+

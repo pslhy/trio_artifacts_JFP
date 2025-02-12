@@ -1,0 +1,418 @@
+Leaf () -> [];
+=================================
+fix f0.fun x0.
+  (append_bool
+    ( ( Nil ), ( Nil ) ))
+0.0004 false
+
+Node (Leaf (), T (), Leaf ()) -> [T ()];
+=================================
+fix f0.fun x0.
+  match (x0) with
+  | Leaf -> ( Nil )
+  | Node(v1,l1,r1) ->
+    ( Cons v1 ( Nil ) )
+  
+0.0020 false
+
+Node (Leaf (), F (), Leaf ()) -> [F ()];
+=================================
+fix f0.fun x0.
+  match (x0) with
+  | Leaf -> ( Nil )
+  | Node(v1,l1,r1) ->
+    ( Cons v1 ( Nil ) )
+  
+0.0021 false
+
+Node (Node (Leaf (), T (), Leaf ()), F (), Leaf ()) -> [T (), F ()];
+=================================
+fix f0.fun x0.
+  match (x0) with
+  | Leaf ->
+    ( Cons ( False )
+      ( Nil ) )
+  | Node(v1,l1,r1) ->
+    ( Cons ( True )
+      (f0 r1) )
+  
+0.0035 false
+
+Node (Node (Leaf (), F (), Leaf ()), T (), Leaf ()) -> [F (), T ()];
+=================================
+fix f0.fun x0.
+  match (x0) with
+  | Leaf ->
+    ( Cons ( True )
+      ( Nil ) )
+  | Node(v1,l1,r1) ->
+    ( Cons ( False )
+      (f0 r1) )
+  
+0.0027 false
+
+Node (Leaf (), F (), Node (Leaf (), T (), Leaf ())) -> [F (), T ()];
+=================================
+fix f0.fun x0.
+  match (x0) with
+  | Leaf ->
+    ( Cons ( True )
+      ( Nil ) )
+  | Node(v1,l1,r1) ->
+    ( Cons v1 (f0 l1) )
+  
+0.0028 false
+
+Leaf () -> [];
+Node (Leaf (), T (), Leaf ()) -> [T ()];
+=================================
+fix f0.fun x0.
+  match (x0) with
+  | Leaf -> ( Nil )
+  | Node(v1,l1,r1) ->
+    ( Cons v1 ( Nil ) )
+  
+0.0006 false
+
+Leaf () -> [];
+Node (Leaf (), F (), Leaf ()) -> [F ()];
+=================================
+fix f0.fun x0.
+  match (x0) with
+  | Leaf -> ( Nil )
+  | Node(v1,l1,r1) ->
+    ( Cons v1 ( Nil ) )
+  
+0.0005 false
+
+Leaf () -> [];
+Node (Node (Leaf (), T (), Leaf ()), F (), Leaf ()) -> [T (), F ()];
+=================================
+fix f0.fun x0.
+  match (x0) with
+  | Leaf -> ( Nil )
+  | Node(v1,l1,r1) ->
+    ( Cons ( True )
+      ( Cons v1 ( Nil ) )
+      )
+  
+0.0033 false
+
+Leaf () -> [];
+Node (Node (Leaf (), F (), Leaf ()), T (), Leaf ()) -> [F (), T ()];
+=================================
+fix f0.fun x0.
+  match (x0) with
+  | Leaf -> ( Nil )
+  | Node(v1,l1,r1) ->
+    ( Cons ( False )
+      ( Cons v1 ( Nil ) )
+      )
+  
+0.0022 false
+
+Node (Node (Leaf (), T (), Leaf ()), F (), Leaf ()) -> [T (), F ()];
+Node (Node (Leaf (), F (), Leaf ()), T (), Leaf ()) -> [F (), T ()];
+=================================
+None
+Node (Leaf (), T (), Leaf ()) -> [T ()];
+Node (Leaf (), F (), Leaf ()) -> [F ()];
+=================================
+fix f0.fun x0.
+  match (x0) with
+  | Leaf -> ( Nil )
+  | Node(v1,l1,r1) ->
+    ( Cons v1 (f0 l1) )
+  
+0.0031 false
+
+Node (Leaf (), F (), Leaf ()) -> [F ()];
+Node (Leaf (), F (), Node (Leaf (), T (), Leaf ())) -> [F (), T ()];
+=================================
+fix f0.fun x0.
+  match (x0) with
+  | Leaf -> ( Nil )
+  | Node(v1,l1,r1) ->
+    ( Cons v1 (f0 r1) )
+  
+0.0038 false
+
+Node (Leaf (), T (), Leaf ()) -> [T ()];
+Node (Node (Leaf (), F (), Leaf ()), T (), Leaf ()) -> [F (), T ()];
+=================================
+None
+Node (Leaf (), F (), Leaf ()) -> [F ()];
+Node (Node (Leaf (), F (), Leaf ()), T (), Leaf ()) -> [F (), T ()];
+=================================
+None
+Node (Leaf (), F (), Leaf ()) -> [F ()];
+Node (Node (Leaf (), T (), Leaf ()), F (), Leaf ()) -> [T (), F ()];
+=================================
+None
+Node (Leaf (), T (), Leaf ()) -> [T ()];
+Node (Leaf (), F (), Leaf ()) -> [F ()];
+Node (Leaf (), F (), Node (Leaf (), T (), Leaf ())) -> [F (), T ()];
+=================================
+fix f0.fun x0.
+  match (x0) with
+  | Leaf -> ( Nil )
+  | Node(v1,l1,r1) ->
+    ( Cons v1 (f0 r1) )
+  
+0.0032 false
+
+Node (Leaf (), F (), Leaf ()) -> [F ()];
+Node (Node (Leaf (), F (), Leaf ()), T (), Leaf ()) -> [F (), T ()];
+Node (Leaf (), F (), Node (Leaf (), T (), Leaf ())) -> [F (), T ()];
+=================================
+None
+Leaf () -> [];
+Node (Leaf (), T (), Leaf ()) -> [T ()];
+Node (Node (Leaf (), F (), Leaf ()), T (), Leaf ()) -> [F (), T ()];
+=================================
+None
+Leaf () -> [];
+Node (Leaf (), T (), Leaf ()) -> [T ()];
+Node (Leaf (), F (), Node (Leaf (), T (), Leaf ())) -> [F (), T ()];
+=================================
+fix f0.fun x0.
+  match (x0) with
+  | Leaf -> ( Nil )
+  | Node(v1,l1,r1) ->
+    ( Cons v1 (f0 r1) )
+  
+0.0020 false
+
+Node (Leaf (), F (), Leaf ()) -> [F ()];
+Node (Node (Leaf (), T (), Leaf ()), F (), Leaf ()) -> [T (), F ()];
+Node (Node (Leaf (), F (), Leaf ()), T (), Leaf ()) -> [F (), T ()];
+=================================
+None
+Leaf () -> [];
+Node (Leaf (), F (), Leaf ()) -> [F ()];
+Node (Node (Leaf (), F (), Leaf ()), T (), Leaf ()) -> [F (), T ()];
+=================================
+fail to find a solution
+fail to find a solution
+fix f0.fun x0.
+  match (x0) with
+  | Leaf -> ( Nil )
+  | Node(v1,l1,r1) ->
+    (append_bool
+      ( (f0 l1),
+        ( Cons v1 ( Nil )
+          ) ))
+  
+0.0104 false
+
+Node (Node (Leaf (), T (), Leaf ()), F (), Leaf ()) -> [T (), F ()];
+Node (Node (Leaf (), F (), Leaf ()), T (), Leaf ()) -> [F (), T ()];
+Node (Leaf (), F (), Node (Leaf (), T (), Leaf ())) -> [F (), T ()];
+=================================
+None
+Leaf () -> [];
+Node (Node (Leaf (), T (), Leaf ()), F (), Leaf ()) -> [T (), F ()];
+Node (Node (Leaf (), F (), Leaf ()), T (), Leaf ()) -> [F (), T ()];
+=================================
+None
+Node (Leaf (), T (), Leaf ()) -> [T ()];
+Node (Node (Leaf (), F (), Leaf ()), T (), Leaf ()) -> [F (), T ()];
+Node (Leaf (), F (), Node (Leaf (), T (), Leaf ())) -> [F (), T ()];
+=================================
+None
+Leaf () -> [];
+Node (Node (Leaf (), F (), Leaf ()), T (), Leaf ()) -> [F (), T ()];
+Node (Leaf (), F (), Node (Leaf (), T (), Leaf ())) -> [F (), T ()];
+=================================
+fix f0.fun x0.
+  match (x0) with
+  | Leaf -> ( Nil )
+  | Node(v1,l1,r1) ->
+    ( Cons ( False )
+      ( Cons ( True )
+        ( Nil ) ) )
+  
+0.0033 false
+
+Node (Leaf (), T (), Leaf ()) -> [T ()];
+Node (Leaf (), F (), Leaf ()) -> [F ()];
+Node (Node (Leaf (), T (), Leaf ()), F (), Leaf ()) -> [T (), F ()];
+Node (Leaf (), F (), Node (Leaf (), T (), Leaf ())) -> [F (), T ()];
+=================================
+None
+Leaf () -> [];
+Node (Leaf (), T (), Leaf ()) -> [T ()];
+Node (Leaf (), F (), Leaf ()) -> [F ()];
+Node (Node (Leaf (), F (), Leaf ()), T (), Leaf ()) -> [F (), T ()];
+=================================
+fail to find a solution
+fail to find a solution
+fix f0.fun x0.
+  match (x0) with
+  | Leaf -> ( Nil )
+  | Node(v1,l1,r1) ->
+    (append_bool
+      ( (f0 l1),
+        ( Cons v1 ( Nil )
+          ) ))
+  
+0.0138 false
+
+Node (Leaf (), T (), Leaf ()) -> [T ()];
+Node (Leaf (), F (), Leaf ()) -> [F ()];
+Node (Node (Leaf (), T (), Leaf ()), F (), Leaf ()) -> [T (), F ()];
+Node (Node (Leaf (), F (), Leaf ()), T (), Leaf ()) -> [F (), T ()];
+=================================
+None
+Leaf () -> [];
+Node (Leaf (), T (), Leaf ()) -> [T ()];
+Node (Node (Leaf (), T (), Leaf ()), F (), Leaf ()) -> [T (), F ()];
+Node (Node (Leaf (), F (), Leaf ()), T (), Leaf ()) -> [F (), T ()];
+=================================
+None
+Leaf () -> [];
+Node (Leaf (), T (), Leaf ()) -> [T ()];
+Node (Node (Leaf (), T (), Leaf ()), F (), Leaf ()) -> [T (), F ()];
+Node (Leaf (), F (), Node (Leaf (), T (), Leaf ())) -> [F (), T ()];
+=================================
+fail to find a solution
+fail to find a solution
+fix f0.fun x0.
+  match (x0) with
+  | Leaf -> ( Nil )
+  | Node(v1,l1,r1) ->
+    (append_bool
+      ( (f0 l1),
+        ( Cons v1 (f0 r1)
+          ) ))
+  
+0.0226 true
+
+Leaf () -> [];
+Node (Leaf (), T (), Leaf ()) -> [T ()];
+Node (Node (Leaf (), F (), Leaf ()), T (), Leaf ()) -> [F (), T ()];
+Node (Leaf (), F (), Node (Leaf (), T (), Leaf ())) -> [F (), T ()];
+=================================
+None
+Node (Leaf (), T (), Leaf ()) -> [T ()];
+Node (Node (Leaf (), T (), Leaf ()), F (), Leaf ()) -> [T (), F ()];
+Node (Node (Leaf (), F (), Leaf ()), T (), Leaf ()) -> [F (), T ()];
+Node (Leaf (), F (), Node (Leaf (), T (), Leaf ())) -> [F (), T ()];
+=================================
+None
+Leaf () -> [];
+Node (Leaf (), F (), Leaf ()) -> [F ()];
+Node (Node (Leaf (), T (), Leaf ()), F (), Leaf ()) -> [T (), F ()];
+Node (Leaf (), F (), Node (Leaf (), T (), Leaf ())) -> [F (), T ()];
+=================================
+None
+Leaf () -> [];
+Node (Leaf (), F (), Leaf ()) -> [F ()];
+Node (Node (Leaf (), F (), Leaf ()), T (), Leaf ()) -> [F (), T ()];
+Node (Leaf (), F (), Node (Leaf (), T (), Leaf ())) -> [F (), T ()];
+=================================
+None
+Leaf () -> [];
+Node (Node (Leaf (), T (), Leaf ()), F (), Leaf ()) -> [T (), F ()];
+Node (Node (Leaf (), F (), Leaf ()), T (), Leaf ()) -> [F (), T ()];
+Node (Leaf (), F (), Node (Leaf (), T (), Leaf ())) -> [F (), T ()];
+=================================
+None
+Leaf () -> [];
+Node (Leaf (), T (), Leaf ()) -> [T ()];
+Node (Leaf (), F (), Leaf ()) -> [F ()];
+Node (Node (Leaf (), T (), Leaf ()), F (), Leaf ()) -> [T (), F ()];
+Node (Node (Leaf (), F (), Leaf ()), T (), Leaf ()) -> [F (), T ()];
+=================================
+fail to find a solution
+fail to find a solution
+fix f0.fun x0.
+  match (x0) with
+  | Leaf -> ( Nil )
+  | Node(v1,l1,r1) ->
+    (append_bool
+      ( (f0 l1),
+        ( Cons v1 ( Nil )
+          ) ))
+  
+0.0219 false
+
+Leaf () -> [];
+Node (Leaf (), T (), Leaf ()) -> [T ()];
+Node (Leaf (), F (), Leaf ()) -> [F ()];
+Node (Node (Leaf (), T (), Leaf ()), F (), Leaf ()) -> [T (), F ()];
+Node (Leaf (), F (), Node (Leaf (), T (), Leaf ())) -> [F (), T ()];
+=================================
+fail to find a solution
+fail to find a solution
+fix f0.fun x0.
+  match (x0) with
+  | Leaf -> ( Nil )
+  | Node(v1,l1,r1) ->
+    (append_bool
+      ( (f0 l1),
+        ( Cons v1 (f0 r1)
+          ) ))
+  
+0.0194 true
+
+Leaf () -> [];
+Node (Leaf (), T (), Leaf ()) -> [T ()];
+Node (Leaf (), F (), Leaf ()) -> [F ()];
+Node (Node (Leaf (), F (), Leaf ()), T (), Leaf ()) -> [F (), T ()];
+Node (Leaf (), F (), Node (Leaf (), T (), Leaf ())) -> [F (), T ()];
+=================================
+fail to find a solution
+fail to find a solution
+fix f0.fun x0.
+  match (x0) with
+  | Leaf -> ( Nil )
+  | Node(v1,l1,r1) ->
+    (append_bool
+      ( (f0 l1),
+        ( Cons v1 (f0 r1)
+          ) ))
+  
+0.0229 true
+
+Leaf () -> [];
+Node (Leaf (), T (), Leaf ()) -> [T ()];
+Node (Node (Leaf (), T (), Leaf ()), F (), Leaf ()) -> [T (), F ()];
+Node (Node (Leaf (), F (), Leaf ()), T (), Leaf ()) -> [F (), T ()];
+Node (Leaf (), F (), Node (Leaf (), T (), Leaf ())) -> [F (), T ()];
+=================================
+None
+Leaf () -> [];
+Node (Leaf (), F (), Leaf ()) -> [F ()];
+Node (Node (Leaf (), T (), Leaf ()), F (), Leaf ()) -> [T (), F ()];
+Node (Node (Leaf (), F (), Leaf ()), T (), Leaf ()) -> [F (), T ()];
+Node (Leaf (), F (), Node (Leaf (), T (), Leaf ())) -> [F (), T ()];
+=================================
+None
+Node (Leaf (), T (), Leaf ()) -> [T ()];
+Node (Leaf (), F (), Leaf ()) -> [F ()];
+Node (Node (Leaf (), T (), Leaf ()), F (), Leaf ()) -> [T (), F ()];
+Node (Node (Leaf (), F (), Leaf ()), T (), Leaf ()) -> [F (), T ()];
+Node (Leaf (), F (), Node (Leaf (), T (), Leaf ())) -> [F (), T ()];
+=================================
+None
+Leaf () -> [];
+Node (Leaf (), T (), Leaf ()) -> [T ()];
+Node (Leaf (), F (), Leaf ()) -> [F ()];
+Node (Node (Leaf (), T (), Leaf ()), F (), Leaf ()) -> [T (), F ()];
+Node (Node (Leaf (), F (), Leaf ()), T (), Leaf ()) -> [F (), T ()];
+Node (Leaf (), F (), Node (Leaf (), T (), Leaf ())) -> [F (), T ()];
+=================================
+fail to find a solution
+fail to find a solution
+fix f0.fun x0.
+  match (x0) with
+  | Leaf -> ( Nil )
+  | Node(v1,l1,r1) ->
+    (append_bool
+      ( (f0 l1),
+        ( Cons v1 (f0 r1)
+          ) ))
+  
+0.0291 true
+

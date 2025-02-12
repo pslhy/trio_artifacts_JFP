@@ -1,0 +1,4264 @@
+(add, 0, []) -> 0;
+=================================
+(\add -> (\isOdd -> (\countOdd -> (\list_fold -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ((let list_fold = \f -> \acc -> (\fixListFold -> fixListFold) ((let fixListFold = \xs -> 0 in fixListFold) : NatList -> Nat) in list_fold) : (Nat -> Nat -> Nat) -> Nat -> NatList -> Nat))
+  ((let countOdd = \n1 -> \n2 -> case isOdd n2 of
+    T _ -> 
+      S n1
+
+    F _ -> 
+      n1 in countOdd) : Nat -> Nat -> Nat))
+  ((let isOdd = \n -> case n of
+    Z _ -> 
+      F
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          T
+
+        S m2 -> 
+          isOdd m2 in isOdd) : Nat -> Boolean))
+  ((let add = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (add m n2) in add) : Nat -> Nat -> Nat)
+0.137701 false false
+
+(add, 0, [1]) -> 1;
+=================================
+(\add -> (\isOdd -> (\countOdd -> (\list_fold -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ((let list_fold = \f -> \acc -> (\fixListFold -> fixListFold) ((let fixListFold = \xs -> 1 in fixListFold) : NatList -> Nat) in list_fold) : (Nat -> Nat -> Nat) -> Nat -> NatList -> Nat))
+  ((let countOdd = \n1 -> \n2 -> case isOdd n2 of
+    T _ -> 
+      S n1
+
+    F _ -> 
+      n1 in countOdd) : Nat -> Nat -> Nat))
+  ((let isOdd = \n -> case n of
+    Z _ -> 
+      F
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          T
+
+        S m2 -> 
+          isOdd m2 in isOdd) : Nat -> Boolean))
+  ((let add = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (add m n2) in add) : Nat -> Nat -> Nat)
+0.165289 false false
+
+(add, 0, [2, 1]) -> 3;
+=================================
+(\add -> (\isOdd -> (\countOdd -> (\list_fold -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ((let list_fold = \f -> \acc -> (\fixListFold -> fixListFold) ((let fixListFold = \xs -> 3 in fixListFold) : NatList -> Nat) in list_fold) : (Nat -> Nat -> Nat) -> Nat -> NatList -> Nat))
+  ((let countOdd = \n1 -> \n2 -> case isOdd n2 of
+    T _ -> 
+      S n1
+
+    F _ -> 
+      n1 in countOdd) : Nat -> Nat -> Nat))
+  ((let isOdd = \n -> case n of
+    Z _ -> 
+      F
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          T
+
+        S m2 -> 
+          isOdd m2 in isOdd) : Nat -> Boolean))
+  ((let add = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (add m n2) in add) : Nat -> Nat -> Nat)
+0.22304 false false
+
+(add, 0, [3, 2, 1]) -> 6;
+=================================
+(\add -> (\isOdd -> (\countOdd -> (\list_fold -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ((let list_fold = \f -> \acc -> (\fixListFold -> fixListFold) ((let fixListFold = \xs -> 6 in fixListFold) : NatList -> Nat) in list_fold) : (Nat -> Nat -> Nat) -> Nat -> NatList -> Nat))
+  ((let countOdd = \n1 -> \n2 -> case isOdd n2 of
+    T _ -> 
+      S n1
+
+    F _ -> 
+      n1 in countOdd) : Nat -> Nat -> Nat))
+  ((let isOdd = \n -> case n of
+    Z _ -> 
+      F
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          T
+
+        S m2 -> 
+          isOdd m2 in isOdd) : Nat -> Boolean))
+  ((let add = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (add m n2) in add) : Nat -> Nat -> Nat)
+0.309392 false false
+
+(add, 1, []) -> 1;
+=================================
+(\add -> (\isOdd -> (\countOdd -> (\list_fold -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ((let list_fold = \f -> \acc -> (\fixListFold -> fixListFold) ((let fixListFold = \xs -> 1 in fixListFold) : NatList -> Nat) in list_fold) : (Nat -> Nat -> Nat) -> Nat -> NatList -> Nat))
+  ((let countOdd = \n1 -> \n2 -> case isOdd n2 of
+    T _ -> 
+      S n1
+
+    F _ -> 
+      n1 in countOdd) : Nat -> Nat -> Nat))
+  ((let isOdd = \n -> case n of
+    Z _ -> 
+      F
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          T
+
+        S m2 -> 
+          isOdd m2 in isOdd) : Nat -> Boolean))
+  ((let add = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (add m n2) in add) : Nat -> Nat -> Nat)
+0.19359 false false
+
+(countOdd, 0, []) -> 0;
+=================================
+(\add -> (\isOdd -> (\countOdd -> (\list_fold -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ((let list_fold = \f -> \acc -> (\fixListFold -> fixListFold) ((let fixListFold = \xs -> 0 in fixListFold) : NatList -> Nat) in list_fold) : (Nat -> Nat -> Nat) -> Nat -> NatList -> Nat))
+  ((let countOdd = \n1 -> \n2 -> case isOdd n2 of
+    T _ -> 
+      S n1
+
+    F _ -> 
+      n1 in countOdd) : Nat -> Nat -> Nat))
+  ((let isOdd = \n -> case n of
+    Z _ -> 
+      F
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          T
+
+        S m2 -> 
+          isOdd m2 in isOdd) : Nat -> Boolean))
+  ((let add = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (add m n2) in add) : Nat -> Nat -> Nat)
+0.140193 false false
+
+(countOdd, 0, [1]) -> 1;
+=================================
+(\add -> (\isOdd -> (\countOdd -> (\list_fold -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ((let list_fold = \f -> \acc -> (\fixListFold -> fixListFold) ((let fixListFold = \xs -> 1 in fixListFold) : NatList -> Nat) in list_fold) : (Nat -> Nat -> Nat) -> Nat -> NatList -> Nat))
+  ((let countOdd = \n1 -> \n2 -> case isOdd n2 of
+    T _ -> 
+      S n1
+
+    F _ -> 
+      n1 in countOdd) : Nat -> Nat -> Nat))
+  ((let isOdd = \n -> case n of
+    Z _ -> 
+      F
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          T
+
+        S m2 -> 
+          isOdd m2 in isOdd) : Nat -> Boolean))
+  ((let add = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (add m n2) in add) : Nat -> Nat -> Nat)
+0.181106 false false
+
+(countOdd, 0, [2, 1]) -> 1;
+=================================
+(\add -> (\isOdd -> (\countOdd -> (\list_fold -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ((let list_fold = \f -> \acc -> (\fixListFold -> fixListFold) ((let fixListFold = \xs -> 1 in fixListFold) : NatList -> Nat) in list_fold) : (Nat -> Nat -> Nat) -> Nat -> NatList -> Nat))
+  ((let countOdd = \n1 -> \n2 -> case isOdd n2 of
+    T _ -> 
+      S n1
+
+    F _ -> 
+      n1 in countOdd) : Nat -> Nat -> Nat))
+  ((let isOdd = \n -> case n of
+    Z _ -> 
+      F
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          T
+
+        S m2 -> 
+          isOdd m2 in isOdd) : Nat -> Boolean))
+  ((let add = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (add m n2) in add) : Nat -> Nat -> Nat)
+0.168767 false false
+
+(countOdd, 0, [3, 2, 1]) -> 2;
+=================================
+(\add -> (\isOdd -> (\countOdd -> (\list_fold -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ((let list_fold = \f -> \acc -> (\fixListFold -> fixListFold) ((let fixListFold = \xs -> 2 in fixListFold) : NatList -> Nat) in list_fold) : (Nat -> Nat -> Nat) -> Nat -> NatList -> Nat))
+  ((let countOdd = \n1 -> \n2 -> case isOdd n2 of
+    T _ -> 
+      S n1
+
+    F _ -> 
+      n1 in countOdd) : Nat -> Nat -> Nat))
+  ((let isOdd = \n -> case n of
+    Z _ -> 
+      F
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          T
+
+        S m2 -> 
+          isOdd m2 in isOdd) : Nat -> Boolean))
+  ((let add = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (add m n2) in add) : Nat -> Nat -> Nat)
+0.198534 false false
+
+(add, 0, []) -> 0;
+(add, 0, [1]) -> 1;
+=================================
+(\add -> (\isOdd -> (\countOdd -> (\list_fold -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_fold = \f -> \acc -> (\fixListFold -> fixListFold)
+    ((let fixListFold = \xs -> case xs of
+      Nil y1 -> 
+        0
+
+      Cons y1 -> 
+        1 in fixListFold) : NatList -> Nat) in list_fold) : (Nat -> Nat -> Nat) -> Nat -> NatList -> Nat))
+  ((let countOdd = \n1 -> \n2 -> case isOdd n2 of
+    T _ -> 
+      S n1
+
+    F _ -> 
+      n1 in countOdd) : Nat -> Nat -> Nat))
+  ((let isOdd = \n -> case n of
+    Z _ -> 
+      F
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          T
+
+        S m2 -> 
+          isOdd m2 in isOdd) : Nat -> Boolean))
+  ((let add = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (add m n2) in add) : Nat -> Nat -> Nat)
+(\add -> (\isOdd -> (\countOdd -> (\list_fold -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_fold = \f -> \acc -> (\fixListFold -> fixListFold)
+    ((let fixListFold = \xs -> case xs of
+      Nil y1 -> 
+        0
+
+      Cons y1 -> 
+        S (fixListFold (#2.2 y1)) in fixListFold) : NatList -> Nat) in list_fold) : (Nat -> Nat -> Nat) -> Nat -> NatList -> Nat))
+  ((let countOdd = \n1 -> \n2 -> case isOdd n2 of
+    T _ -> 
+      S n1
+
+    F _ -> 
+      n1 in countOdd) : Nat -> Nat -> Nat))
+  ((let isOdd = \n -> case n of
+    Z _ -> 
+      F
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          T
+
+        S m2 -> 
+          isOdd m2 in isOdd) : Nat -> Boolean))
+  ((let add = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (add m n2) in add) : Nat -> Nat -> Nat)
+0.183589 false false
+
+(countOdd, 0, [1]) -> 1;
+(countOdd, 0, [3, 2, 1]) -> 2;
+=================================
+NOSOL
+
+(add, 0, [2, 1]) -> 3;
+(countOdd, 0, []) -> 0;
+=================================
+(\add -> (\isOdd -> (\countOdd -> (\list_fold -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_fold = \f -> \acc -> (\fixListFold -> fixListFold)
+    ((let fixListFold = \xs -> case xs of
+      Nil y1 -> 
+        0
+
+      Cons y1 -> 
+        3 in fixListFold) : NatList -> Nat) in list_fold) : (Nat -> Nat -> Nat) -> Nat -> NatList -> Nat))
+  ((let countOdd = \n1 -> \n2 -> case isOdd n2 of
+    T _ -> 
+      S n1
+
+    F _ -> 
+      n1 in countOdd) : Nat -> Nat -> Nat))
+  ((let isOdd = \n -> case n of
+    Z _ -> 
+      F
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          T
+
+        S m2 -> 
+          isOdd m2 in isOdd) : Nat -> Boolean))
+  ((let add = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (add m n2) in add) : Nat -> Nat -> Nat)
+0.213301 false false
+
+(add, 0, [2, 1]) -> 3;
+(countOdd, 0, [2, 1]) -> 1;
+=================================
+(\add -> (\isOdd -> (\countOdd -> (\list_fold -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ((let list_fold = \f -> \acc -> (\fixListFold -> fixListFold) ((let fixListFold = \xs -> S (f acc (S (S acc))) in fixListFold) : NatList -> Nat) in list_fold) : (Nat -> Nat -> Nat) -> Nat -> NatList -> Nat))
+  ((let countOdd = \n1 -> \n2 -> case isOdd n2 of
+    T _ -> 
+      S n1
+
+    F _ -> 
+      n1 in countOdd) : Nat -> Nat -> Nat))
+  ((let isOdd = \n -> case n of
+    Z _ -> 
+      F
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          T
+
+        S m2 -> 
+          isOdd m2 in isOdd) : Nat -> Boolean))
+  ((let add = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (add m n2) in add) : Nat -> Nat -> Nat)
+0.218242 false false
+
+(add, 0, []) -> 0;
+(countOdd, 0, []) -> 0;
+=================================
+(\add -> (\isOdd -> (\countOdd -> (\list_fold -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ((let list_fold = \f -> \acc -> (\fixListFold -> fixListFold) ((let fixListFold = \xs -> 0 in fixListFold) : NatList -> Nat) in list_fold) : (Nat -> Nat -> Nat) -> Nat -> NatList -> Nat))
+  ((let countOdd = \n1 -> \n2 -> case isOdd n2 of
+    T _ -> 
+      S n1
+
+    F _ -> 
+      n1 in countOdd) : Nat -> Nat -> Nat))
+  ((let isOdd = \n -> case n of
+    Z _ -> 
+      F
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          T
+
+        S m2 -> 
+          isOdd m2 in isOdd) : Nat -> Boolean))
+  ((let add = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (add m n2) in add) : Nat -> Nat -> Nat)
+0.169034 false false
+
+(add, 0, [1]) -> 1;
+(countOdd, 0, [3, 2, 1]) -> 2;
+=================================
+NOSOL
+
+(add, 0, []) -> 0;
+(countOdd, 0, [2, 1]) -> 1;
+=================================
+(\add -> (\isOdd -> (\countOdd -> (\list_fold -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_fold = \f -> \acc -> (\fixListFold -> fixListFold)
+    ((let fixListFold = \xs -> case xs of
+      Nil y1 -> 
+        0
+
+      Cons y1 -> 
+        1 in fixListFold) : NatList -> Nat) in list_fold) : (Nat -> Nat -> Nat) -> Nat -> NatList -> Nat))
+  ((let countOdd = \n1 -> \n2 -> case isOdd n2 of
+    T _ -> 
+      S n1
+
+    F _ -> 
+      n1 in countOdd) : Nat -> Nat -> Nat))
+  ((let isOdd = \n -> case n of
+    Z _ -> 
+      F
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          T
+
+        S m2 -> 
+          isOdd m2 in isOdd) : Nat -> Boolean))
+  ((let add = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (add m n2) in add) : Nat -> Nat -> Nat)
+0.182152 false false
+
+(add, 0, [2, 1]) -> 3;
+(countOdd, 0, [1]) -> 1;
+=================================
+(\add -> (\isOdd -> (\countOdd -> (\list_fold -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ((let list_fold = \f -> \acc -> (\fixListFold -> fixListFold) ((let fixListFold = \xs -> S (f acc (S (S acc))) in fixListFold) : NatList -> Nat) in list_fold) : (Nat -> Nat -> Nat) -> Nat -> NatList -> Nat))
+  ((let countOdd = \n1 -> \n2 -> case isOdd n2 of
+    T _ -> 
+      S n1
+
+    F _ -> 
+      n1 in countOdd) : Nat -> Nat -> Nat))
+  ((let isOdd = \n -> case n of
+    Z _ -> 
+      F
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          T
+
+        S m2 -> 
+          isOdd m2 in isOdd) : Nat -> Boolean))
+  ((let add = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (add m n2) in add) : Nat -> Nat -> Nat)
+0.214759 false false
+
+(add, 0, [1]) -> 1;
+(add, 0, [2, 1]) -> 3;
+=================================
+NOSOL
+
+(countOdd, 0, []) -> 0;
+(countOdd, 0, [1]) -> 1;
+=================================
+(\add -> (\isOdd -> (\countOdd -> (\list_fold -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_fold = \f -> \acc -> (\fixListFold -> fixListFold)
+    ((let fixListFold = \xs -> case xs of
+      Nil y1 -> 
+        0
+
+      Cons y1 -> 
+        1 in fixListFold) : NatList -> Nat) in list_fold) : (Nat -> Nat -> Nat) -> Nat -> NatList -> Nat))
+  ((let countOdd = \n1 -> \n2 -> case isOdd n2 of
+    T _ -> 
+      S n1
+
+    F _ -> 
+      n1 in countOdd) : Nat -> Nat -> Nat))
+  ((let isOdd = \n -> case n of
+    Z _ -> 
+      F
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          T
+
+        S m2 -> 
+          isOdd m2 in isOdd) : Nat -> Boolean))
+  ((let add = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (add m n2) in add) : Nat -> Nat -> Nat)
+(\add -> (\isOdd -> (\countOdd -> (\list_fold -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_fold = \f -> \acc -> (\fixListFold -> fixListFold)
+    ((let fixListFold = \xs -> case xs of
+      Nil y1 -> 
+        0
+
+      Cons y1 -> 
+        S (fixListFold (#2.2 y1)) in fixListFold) : NatList -> Nat) in list_fold) : (Nat -> Nat -> Nat) -> Nat -> NatList -> Nat))
+  ((let countOdd = \n1 -> \n2 -> case isOdd n2 of
+    T _ -> 
+      S n1
+
+    F _ -> 
+      n1 in countOdd) : Nat -> Nat -> Nat))
+  ((let isOdd = \n -> case n of
+    Z _ -> 
+      F
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          T
+
+        S m2 -> 
+          isOdd m2 in isOdd) : Nat -> Boolean))
+  ((let add = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (add m n2) in add) : Nat -> Nat -> Nat)
+0.198748 false false
+
+(countOdd, 0, []) -> 0;
+(countOdd, 0, [1]) -> 1;
+(countOdd, 0, [2, 1]) -> 1;
+=================================
+(\add -> (\isOdd -> (\countOdd -> (\list_fold -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_fold = \f -> \acc -> (\fixListFold -> fixListFold)
+    ((let fixListFold = \xs -> case xs of
+      Nil y1 -> 
+        0
+
+      Cons y1 -> 
+        1 in fixListFold) : NatList -> Nat) in list_fold) : (Nat -> Nat -> Nat) -> Nat -> NatList -> Nat))
+  ((let countOdd = \n1 -> \n2 -> case isOdd n2 of
+    T _ -> 
+      S n1
+
+    F _ -> 
+      n1 in countOdd) : Nat -> Nat -> Nat))
+  ((let isOdd = \n -> case n of
+    Z _ -> 
+      F
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          T
+
+        S m2 -> 
+          isOdd m2 in isOdd) : Nat -> Boolean))
+  ((let add = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (add m n2) in add) : Nat -> Nat -> Nat)
+0.212569 false false
+
+(add, 0, []) -> 0;
+(add, 0, [3, 2, 1]) -> 6;
+(countOdd, 0, [3, 2, 1]) -> 2;
+=================================
+(\add -> (\isOdd -> (\countOdd -> (\list_fold -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_fold = \f -> \acc -> (\fixListFold -> fixListFold)
+    ((let fixListFold = \xs -> case xs of
+      Nil y1 -> 
+        0
+
+      Cons y1 -> 
+        S (S (f acc (S (#2.1 y1)))) in fixListFold) : NatList -> Nat) in list_fold) : (Nat -> Nat -> Nat) -> Nat -> NatList -> Nat))
+  ((let countOdd = \n1 -> \n2 -> case isOdd n2 of
+    T _ -> 
+      S n1
+
+    F _ -> 
+      n1 in countOdd) : Nat -> Nat -> Nat))
+  ((let isOdd = \n -> case n of
+    Z _ -> 
+      F
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          T
+
+        S m2 -> 
+          isOdd m2 in isOdd) : Nat -> Boolean))
+  ((let add = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (add m n2) in add) : Nat -> Nat -> Nat)
+(\add -> (\isOdd -> (\countOdd -> (\list_fold -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_fold = \f -> \acc -> (\fixListFold -> fixListFold)
+    ((let fixListFold = \xs -> case xs of
+      Nil y1 -> 
+        0
+
+      Cons y1 -> 
+        S (S (f acc (fixListFold (#2.2 y1)))) in fixListFold) : NatList -> Nat) in list_fold) : (Nat -> Nat -> Nat) -> Nat -> NatList -> Nat))
+  ((let countOdd = \n1 -> \n2 -> case isOdd n2 of
+    T _ -> 
+      S n1
+
+    F _ -> 
+      n1 in countOdd) : Nat -> Nat -> Nat))
+  ((let isOdd = \n -> case n of
+    Z _ -> 
+      F
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          T
+
+        S m2 -> 
+          isOdd m2 in isOdd) : Nat -> Boolean))
+  ((let add = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (add m n2) in add) : Nat -> Nat -> Nat)
+0.2729 false false
+
+(add, 0, []) -> 0;
+(countOdd, 0, []) -> 0;
+(countOdd, 0, [2, 1]) -> 1;
+=================================
+(\add -> (\isOdd -> (\countOdd -> (\list_fold -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_fold = \f -> \acc -> (\fixListFold -> fixListFold)
+    ((let fixListFold = \xs -> case xs of
+      Nil y1 -> 
+        0
+
+      Cons y1 -> 
+        1 in fixListFold) : NatList -> Nat) in list_fold) : (Nat -> Nat -> Nat) -> Nat -> NatList -> Nat))
+  ((let countOdd = \n1 -> \n2 -> case isOdd n2 of
+    T _ -> 
+      S n1
+
+    F _ -> 
+      n1 in countOdd) : Nat -> Nat -> Nat))
+  ((let isOdd = \n -> case n of
+    Z _ -> 
+      F
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          T
+
+        S m2 -> 
+          isOdd m2 in isOdd) : Nat -> Boolean))
+  ((let add = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (add m n2) in add) : Nat -> Nat -> Nat)
+0.2221 false false
+
+(add, 0, []) -> 0;
+(add, 0, [3, 2, 1]) -> 6;
+(add, 1, []) -> 1;
+=================================
+(\add -> (\isOdd -> (\countOdd -> (\list_fold -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_fold = \f -> \acc -> (\fixListFold -> fixListFold)
+    ((let fixListFold = \xs -> case xs of
+      Nil y1 -> 
+        acc
+
+      Cons y1 -> 
+        6 in fixListFold) : NatList -> Nat) in list_fold) : (Nat -> Nat -> Nat) -> Nat -> NatList -> Nat))
+  ((let countOdd = \n1 -> \n2 -> case isOdd n2 of
+    T _ -> 
+      S n1
+
+    F _ -> 
+      n1 in countOdd) : Nat -> Nat -> Nat))
+  ((let isOdd = \n -> case n of
+    Z _ -> 
+      F
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          T
+
+        S m2 -> 
+          isOdd m2 in isOdd) : Nat -> Boolean))
+  ((let add = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (add m n2) in add) : Nat -> Nat -> Nat)
+(\add -> (\isOdd -> (\countOdd -> (\list_fold -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_fold = \f -> \acc -> (\fixListFold -> fixListFold)
+    ((let fixListFold = \xs -> case xs of
+      Nil y1 -> 
+        acc
+
+      Cons y1 -> 
+        S (S (S (S (S (S (countOdd acc (fixListFold (#2.2 y1)))))))) in fixListFold) : NatList -> Nat) in list_fold) : (Nat -> Nat -> Nat) -> Nat -> NatList -> Nat))
+  ((let countOdd = \n1 -> \n2 -> case isOdd n2 of
+    T _ -> 
+      S n1
+
+    F _ -> 
+      n1 in countOdd) : Nat -> Nat -> Nat))
+  ((let isOdd = \n -> case n of
+    Z _ -> 
+      F
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          T
+
+        S m2 -> 
+          isOdd m2 in isOdd) : Nat -> Boolean))
+  ((let add = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (add m n2) in add) : Nat -> Nat -> Nat)
+0.241939 false false
+
+(add, 0, []) -> 0;
+(add, 0, [2, 1]) -> 3;
+(countOdd, 0, [1]) -> 1;
+=================================
+(\add -> (\isOdd -> (\countOdd -> (\list_fold -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_fold = \f -> \acc -> (\fixListFold -> fixListFold)
+    ((let fixListFold = \xs -> case xs of
+      Nil y1 -> 
+        0
+
+      Cons y1 -> 
+        S (f acc (S (S acc))) in fixListFold) : NatList -> Nat) in list_fold) : (Nat -> Nat -> Nat) -> Nat -> NatList -> Nat))
+  ((let countOdd = \n1 -> \n2 -> case isOdd n2 of
+    T _ -> 
+      S n1
+
+    F _ -> 
+      n1 in countOdd) : Nat -> Nat -> Nat))
+  ((let isOdd = \n -> case n of
+    Z _ -> 
+      F
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          T
+
+        S m2 -> 
+          isOdd m2 in isOdd) : Nat -> Boolean))
+  ((let add = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (add m n2) in add) : Nat -> Nat -> Nat)
+(\add -> (\isOdd -> (\countOdd -> (\list_fold -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_fold = \f -> \acc -> (\fixListFold -> fixListFold)
+    ((let fixListFold = \xs -> case xs of
+      Nil y1 -> 
+        0
+
+      Cons y1 -> 
+        S (countOdd (fixListFold (#2.2 y1)) (S (#2.1 y1))) in fixListFold) : NatList -> Nat) in list_fold) : (Nat -> Nat -> Nat) -> Nat -> NatList -> Nat))
+  ((let countOdd = \n1 -> \n2 -> case isOdd n2 of
+    T _ -> 
+      S n1
+
+    F _ -> 
+      n1 in countOdd) : Nat -> Nat -> Nat))
+  ((let isOdd = \n -> case n of
+    Z _ -> 
+      F
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          T
+
+        S m2 -> 
+          isOdd m2 in isOdd) : Nat -> Boolean))
+  ((let add = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (add m n2) in add) : Nat -> Nat -> Nat)
+0.25221 false false
+
+(add, 0, []) -> 0;
+(add, 1, []) -> 1;
+(countOdd, 0, [1]) -> 1;
+=================================
+(\add -> (\isOdd -> (\countOdd -> (\list_fold -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_fold = \f -> \acc -> (\fixListFold -> fixListFold)
+    ((let fixListFold = \xs -> case xs of
+      Nil y1 -> 
+        acc
+
+      Cons y1 -> 
+        1 in fixListFold) : NatList -> Nat) in list_fold) : (Nat -> Nat -> Nat) -> Nat -> NatList -> Nat))
+  ((let countOdd = \n1 -> \n2 -> case isOdd n2 of
+    T _ -> 
+      S n1
+
+    F _ -> 
+      n1 in countOdd) : Nat -> Nat -> Nat))
+  ((let isOdd = \n -> case n of
+    Z _ -> 
+      F
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          T
+
+        S m2 -> 
+          isOdd m2 in isOdd) : Nat -> Boolean))
+  ((let add = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (add m n2) in add) : Nat -> Nat -> Nat)
+(\add -> (\isOdd -> (\countOdd -> (\list_fold -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_fold = \f -> \acc -> (\fixListFold -> fixListFold)
+    ((let fixListFold = \xs -> case xs of
+      Nil y1 -> 
+        acc
+
+      Cons y1 -> 
+        S (fixListFold (#2.2 y1)) in fixListFold) : NatList -> Nat) in list_fold) : (Nat -> Nat -> Nat) -> Nat -> NatList -> Nat))
+  ((let countOdd = \n1 -> \n2 -> case isOdd n2 of
+    T _ -> 
+      S n1
+
+    F _ -> 
+      n1 in countOdd) : Nat -> Nat -> Nat))
+  ((let isOdd = \n -> case n of
+    Z _ -> 
+      F
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          T
+
+        S m2 -> 
+          isOdd m2 in isOdd) : Nat -> Boolean))
+  ((let add = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (add m n2) in add) : Nat -> Nat -> Nat)
+0.243582 false false
+
+(add, 0, [3, 2, 1]) -> 6;
+(countOdd, 0, [1]) -> 1;
+(countOdd, 0, [2, 1]) -> 1;
+=================================
+NOSOL
+
+(add, 0, []) -> 0;
+(add, 0, [2, 1]) -> 3;
+(countOdd, 0, [3, 2, 1]) -> 2;
+=================================
+(\add -> (\isOdd -> (\countOdd -> (\list_fold -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_fold = \f -> \acc -> (\fixListFold -> fixListFold)
+    ((let fixListFold = \xs -> case xs of
+      Nil y1 -> 
+        0
+
+      Cons y1 -> 
+        S (f acc (#2.1 y1)) in fixListFold) : NatList -> Nat) in list_fold) : (Nat -> Nat -> Nat) -> Nat -> NatList -> Nat))
+  ((let countOdd = \n1 -> \n2 -> case isOdd n2 of
+    T _ -> 
+      S n1
+
+    F _ -> 
+      n1 in countOdd) : Nat -> Nat -> Nat))
+  ((let isOdd = \n -> case n of
+    Z _ -> 
+      F
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          T
+
+        S m2 -> 
+          isOdd m2 in isOdd) : Nat -> Boolean))
+  ((let add = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (add m n2) in add) : Nat -> Nat -> Nat)
+0.283945 false false
+
+(add, 0, [2, 1]) -> 3;
+(countOdd, 0, []) -> 0;
+(countOdd, 0, [1]) -> 1;
+=================================
+(\add -> (\isOdd -> (\countOdd -> (\list_fold -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_fold = \f -> \acc -> (\fixListFold -> fixListFold)
+    ((let fixListFold = \xs -> case xs of
+      Nil y1 -> 
+        0
+
+      Cons y1 -> 
+        S (f acc (S (S acc))) in fixListFold) : NatList -> Nat) in list_fold) : (Nat -> Nat -> Nat) -> Nat -> NatList -> Nat))
+  ((let countOdd = \n1 -> \n2 -> case isOdd n2 of
+    T _ -> 
+      S n1
+
+    F _ -> 
+      n1 in countOdd) : Nat -> Nat -> Nat))
+  ((let isOdd = \n -> case n of
+    Z _ -> 
+      F
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          T
+
+        S m2 -> 
+          isOdd m2 in isOdd) : Nat -> Boolean))
+  ((let add = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (add m n2) in add) : Nat -> Nat -> Nat)
+(\add -> (\isOdd -> (\countOdd -> (\list_fold -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_fold = \f -> \acc -> (\fixListFold -> fixListFold)
+    ((let fixListFold = \xs -> case xs of
+      Nil y1 -> 
+        0
+
+      Cons y1 -> 
+        S (countOdd (fixListFold (#2.2 y1)) (S (#2.1 y1))) in fixListFold) : NatList -> Nat) in list_fold) : (Nat -> Nat -> Nat) -> Nat -> NatList -> Nat))
+  ((let countOdd = \n1 -> \n2 -> case isOdd n2 of
+    T _ -> 
+      S n1
+
+    F _ -> 
+      n1 in countOdd) : Nat -> Nat -> Nat))
+  ((let isOdd = \n -> case n of
+    Z _ -> 
+      F
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          T
+
+        S m2 -> 
+          isOdd m2 in isOdd) : Nat -> Boolean))
+  ((let add = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (add m n2) in add) : Nat -> Nat -> Nat)
+0.233295 false false
+
+(add, 0, []) -> 0;
+(add, 1, []) -> 1;
+(countOdd, 0, [3, 2, 1]) -> 2;
+=================================
+(\add -> (\isOdd -> (\countOdd -> (\list_fold -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_fold = \f -> \acc -> (\fixListFold -> fixListFold)
+    ((let fixListFold = \xs -> case xs of
+      Nil y1 -> 
+        acc
+
+      Cons y1 -> 
+        2 in fixListFold) : NatList -> Nat) in list_fold) : (Nat -> Nat -> Nat) -> Nat -> NatList -> Nat))
+  ((let countOdd = \n1 -> \n2 -> case isOdd n2 of
+    T _ -> 
+      S n1
+
+    F _ -> 
+      n1 in countOdd) : Nat -> Nat -> Nat))
+  ((let isOdd = \n -> case n of
+    Z _ -> 
+      F
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          T
+
+        S m2 -> 
+          isOdd m2 in isOdd) : Nat -> Boolean))
+  ((let add = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (add m n2) in add) : Nat -> Nat -> Nat)
+(\add -> (\isOdd -> (\countOdd -> (\list_fold -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_fold = \f -> \acc -> (\fixListFold -> fixListFold)
+    ((let fixListFold = \xs -> case xs of
+      Nil y1 -> 
+        acc
+
+      Cons y1 -> 
+        S (S (countOdd acc (fixListFold (#2.2 y1)))) in fixListFold) : NatList -> Nat) in list_fold) : (Nat -> Nat -> Nat) -> Nat -> NatList -> Nat))
+  ((let countOdd = \n1 -> \n2 -> case isOdd n2 of
+    T _ -> 
+      S n1
+
+    F _ -> 
+      n1 in countOdd) : Nat -> Nat -> Nat))
+  ((let isOdd = \n -> case n of
+    Z _ -> 
+      F
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          T
+
+        S m2 -> 
+          isOdd m2 in isOdd) : Nat -> Boolean))
+  ((let add = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (add m n2) in add) : Nat -> Nat -> Nat)
+0.2442 false false
+
+(add, 0, []) -> 0;
+(add, 1, []) -> 1;
+(countOdd, 0, []) -> 0;
+(countOdd, 0, [3, 2, 1]) -> 2;
+=================================
+(\add -> (\isOdd -> (\countOdd -> (\list_fold -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_fold = \f -> \acc -> (\fixListFold -> fixListFold)
+    ((let fixListFold = \xs -> case xs of
+      Nil y1 -> 
+        acc
+
+      Cons y1 -> 
+        2 in fixListFold) : NatList -> Nat) in list_fold) : (Nat -> Nat -> Nat) -> Nat -> NatList -> Nat))
+  ((let countOdd = \n1 -> \n2 -> case isOdd n2 of
+    T _ -> 
+      S n1
+
+    F _ -> 
+      n1 in countOdd) : Nat -> Nat -> Nat))
+  ((let isOdd = \n -> case n of
+    Z _ -> 
+      F
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          T
+
+        S m2 -> 
+          isOdd m2 in isOdd) : Nat -> Boolean))
+  ((let add = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (add m n2) in add) : Nat -> Nat -> Nat)
+(\add -> (\isOdd -> (\countOdd -> (\list_fold -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_fold = \f -> \acc -> (\fixListFold -> fixListFold)
+    ((let fixListFold = \xs -> case xs of
+      Nil y1 -> 
+        acc
+
+      Cons y1 -> 
+        S (S (countOdd acc (fixListFold (#2.2 y1)))) in fixListFold) : NatList -> Nat) in list_fold) : (Nat -> Nat -> Nat) -> Nat -> NatList -> Nat))
+  ((let countOdd = \n1 -> \n2 -> case isOdd n2 of
+    T _ -> 
+      S n1
+
+    F _ -> 
+      n1 in countOdd) : Nat -> Nat -> Nat))
+  ((let isOdd = \n -> case n of
+    Z _ -> 
+      F
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          T
+
+        S m2 -> 
+          isOdd m2 in isOdd) : Nat -> Boolean))
+  ((let add = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (add m n2) in add) : Nat -> Nat -> Nat)
+0.257575 false false
+
+(add, 0, []) -> 0;
+(add, 0, [3, 2, 1]) -> 6;
+(countOdd, 0, [2, 1]) -> 1;
+(countOdd, 0, [3, 2, 1]) -> 2;
+=================================
+(\add -> (\isOdd -> (\countOdd -> (\list_fold -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_fold = \f -> \acc -> (\fixListFold -> fixListFold)
+    ((let fixListFold = \xs -> case xs of
+      Nil y1 -> 
+        0
+
+      Cons y1 -> 
+        S (f acc (S (S (#2.1 y1)))) in fixListFold) : NatList -> Nat) in list_fold) : (Nat -> Nat -> Nat) -> Nat -> NatList -> Nat))
+  ((let countOdd = \n1 -> \n2 -> case isOdd n2 of
+    T _ -> 
+      S n1
+
+    F _ -> 
+      n1 in countOdd) : Nat -> Nat -> Nat))
+  ((let isOdd = \n -> case n of
+    Z _ -> 
+      F
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          T
+
+        S m2 -> 
+          isOdd m2 in isOdd) : Nat -> Boolean))
+  ((let add = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (add m n2) in add) : Nat -> Nat -> Nat)
+0.436115 false false
+
+(add, 0, []) -> 0;
+(add, 0, [3, 2, 1]) -> 6;
+(countOdd, 0, []) -> 0;
+(countOdd, 0, [3, 2, 1]) -> 2;
+=================================
+(\add -> (\isOdd -> (\countOdd -> (\list_fold -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_fold = \f -> \acc -> (\fixListFold -> fixListFold)
+    ((let fixListFold = \xs -> case xs of
+      Nil y1 -> 
+        0
+
+      Cons y1 -> 
+        S (S (f acc (S (#2.1 y1)))) in fixListFold) : NatList -> Nat) in list_fold) : (Nat -> Nat -> Nat) -> Nat -> NatList -> Nat))
+  ((let countOdd = \n1 -> \n2 -> case isOdd n2 of
+    T _ -> 
+      S n1
+
+    F _ -> 
+      n1 in countOdd) : Nat -> Nat -> Nat))
+  ((let isOdd = \n -> case n of
+    Z _ -> 
+      F
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          T
+
+        S m2 -> 
+          isOdd m2 in isOdd) : Nat -> Boolean))
+  ((let add = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (add m n2) in add) : Nat -> Nat -> Nat)
+(\add -> (\isOdd -> (\countOdd -> (\list_fold -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_fold = \f -> \acc -> (\fixListFold -> fixListFold)
+    ((let fixListFold = \xs -> case xs of
+      Nil y1 -> 
+        0
+
+      Cons y1 -> 
+        S (S (f acc (fixListFold (#2.2 y1)))) in fixListFold) : NatList -> Nat) in list_fold) : (Nat -> Nat -> Nat) -> Nat -> NatList -> Nat))
+  ((let countOdd = \n1 -> \n2 -> case isOdd n2 of
+    T _ -> 
+      S n1
+
+    F _ -> 
+      n1 in countOdd) : Nat -> Nat -> Nat))
+  ((let isOdd = \n -> case n of
+    Z _ -> 
+      F
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          T
+
+        S m2 -> 
+          isOdd m2 in isOdd) : Nat -> Boolean))
+  ((let add = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (add m n2) in add) : Nat -> Nat -> Nat)
+0.303069 false false
+
+(add, 0, [2, 1]) -> 3;
+(add, 0, [3, 2, 1]) -> 6;
+(countOdd, 0, []) -> 0;
+(countOdd, 0, [1]) -> 1;
+=================================
+(\add -> (\isOdd -> (\countOdd -> (\list_fold -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_fold = \f -> \acc -> (\fixListFold -> fixListFold)
+    ((let fixListFold = \xs -> case xs of
+      Nil y1 -> 
+        acc
+
+      Cons y1 -> 
+        add (fixListFold (#2.2 y1)) (#2.1 y1) in fixListFold) : NatList -> Nat) in list_fold) : (Nat -> Nat -> Nat) -> Nat -> NatList -> Nat))
+  ((let countOdd = \n1 -> \n2 -> case isOdd n2 of
+    T _ -> 
+      S n1
+
+    F _ -> 
+      n1 in countOdd) : Nat -> Nat -> Nat))
+  ((let isOdd = \n -> case n of
+    Z _ -> 
+      F
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          T
+
+        S m2 -> 
+          isOdd m2 in isOdd) : Nat -> Boolean))
+  ((let add = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (add m n2) in add) : Nat -> Nat -> Nat)
+(\add -> (\isOdd -> (\countOdd -> (\list_fold -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_fold = \f -> \acc -> (\fixListFold -> fixListFold)
+    ((let fixListFold = \xs -> case xs of
+      Nil y1 -> 
+        acc
+
+      Cons y1 -> 
+        add (fixListFold (#2.2 y1)) (#2.1 y1) in fixListFold) : NatList -> Nat) in list_fold) : (Nat -> Nat -> Nat) -> Nat -> NatList -> Nat))
+  ((let countOdd = \n1 -> \n2 -> case isOdd n2 of
+    T _ -> 
+      S n1
+
+    F _ -> 
+      n1 in countOdd) : Nat -> Nat -> Nat))
+  ((let isOdd = \n -> case n of
+    Z _ -> 
+      F
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          T
+
+        S m2 -> 
+          isOdd m2 in isOdd) : Nat -> Boolean))
+  ((let add = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (add m n2) in add) : Nat -> Nat -> Nat)
+0.497032 false false
+
+(add, 0, []) -> 0;
+(add, 0, [1]) -> 1;
+(add, 0, [3, 2, 1]) -> 6;
+(countOdd, 0, [3, 2, 1]) -> 2;
+=================================
+(\add -> (\isOdd -> (\countOdd -> (\list_fold -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_fold = \f -> \acc -> (\fixListFold -> fixListFold)
+    ((let fixListFold = \xs -> case xs of
+      Nil y1 -> 
+        acc
+
+      Cons y1 -> 
+        f (fixListFold (#2.2 y1)) (#2.1 y1) in fixListFold) : NatList -> Nat) in list_fold) : (Nat -> Nat -> Nat) -> Nat -> NatList -> Nat))
+  ((let countOdd = \n1 -> \n2 -> case isOdd n2 of
+    T _ -> 
+      S n1
+
+    F _ -> 
+      n1 in countOdd) : Nat -> Nat -> Nat))
+  ((let isOdd = \n -> case n of
+    Z _ -> 
+      F
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          T
+
+        S m2 -> 
+          isOdd m2 in isOdd) : Nat -> Boolean))
+  ((let add = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (add m n2) in add) : Nat -> Nat -> Nat)
+(\add -> (\isOdd -> (\countOdd -> (\list_fold -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_fold = \f -> \acc -> (\fixListFold -> fixListFold)
+    ((let fixListFold = \xs -> case xs of
+      Nil y1 -> 
+        acc
+
+      Cons y1 -> 
+        f (fixListFold (#2.2 y1)) (#2.1 y1) in fixListFold) : NatList -> Nat) in list_fold) : (Nat -> Nat -> Nat) -> Nat -> NatList -> Nat))
+  ((let countOdd = \n1 -> \n2 -> case isOdd n2 of
+    T _ -> 
+      S n1
+
+    F _ -> 
+      n1 in countOdd) : Nat -> Nat -> Nat))
+  ((let isOdd = \n -> case n of
+    Z _ -> 
+      F
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          T
+
+        S m2 -> 
+          isOdd m2 in isOdd) : Nat -> Boolean))
+  ((let add = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (add m n2) in add) : Nat -> Nat -> Nat)
+0.550779 true true
+
+(add, 1, []) -> 1;
+(countOdd, 0, []) -> 0;
+(countOdd, 0, [1]) -> 1;
+(countOdd, 0, [2, 1]) -> 1;
+=================================
+(\add -> (\isOdd -> (\countOdd -> (\list_fold -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_fold = \f -> \acc -> (\fixListFold -> fixListFold)
+    ((let fixListFold = \xs -> case xs of
+      Nil y1 -> 
+        acc
+
+      Cons y1 -> 
+        1 in fixListFold) : NatList -> Nat) in list_fold) : (Nat -> Nat -> Nat) -> Nat -> NatList -> Nat))
+  ((let countOdd = \n1 -> \n2 -> case isOdd n2 of
+    T _ -> 
+      S n1
+
+    F _ -> 
+      n1 in countOdd) : Nat -> Nat -> Nat))
+  ((let isOdd = \n -> case n of
+    Z _ -> 
+      F
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          T
+
+        S m2 -> 
+          isOdd m2 in isOdd) : Nat -> Boolean))
+  ((let add = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (add m n2) in add) : Nat -> Nat -> Nat)
+0.243971 false false
+
+(add, 0, [2, 1]) -> 3;
+(countOdd, 0, []) -> 0;
+(countOdd, 0, [2, 1]) -> 1;
+(countOdd, 0, [3, 2, 1]) -> 2;
+=================================
+(\add -> (\isOdd -> (\countOdd -> (\list_fold -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_fold = \f -> \acc -> (\fixListFold -> fixListFold)
+    ((let fixListFold = \xs -> case xs of
+      Nil y1 -> 
+        0
+
+      Cons y1 -> 
+        S (f acc (#2.1 y1)) in fixListFold) : NatList -> Nat) in list_fold) : (Nat -> Nat -> Nat) -> Nat -> NatList -> Nat))
+  ((let countOdd = \n1 -> \n2 -> case isOdd n2 of
+    T _ -> 
+      S n1
+
+    F _ -> 
+      n1 in countOdd) : Nat -> Nat -> Nat))
+  ((let isOdd = \n -> case n of
+    Z _ -> 
+      F
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          T
+
+        S m2 -> 
+          isOdd m2 in isOdd) : Nat -> Boolean))
+  ((let add = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (add m n2) in add) : Nat -> Nat -> Nat)
+0.401608 false false
+
+(add, 0, []) -> 0;
+(add, 0, [3, 2, 1]) -> 6;
+(add, 1, []) -> 1;
+(countOdd, 0, [2, 1]) -> 1;
+=================================
+(\add -> (\isOdd -> (\countOdd -> (\list_fold -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_fold = \f -> \acc -> (\fixListFold -> fixListFold)
+    ((let fixListFold = \xs -> case xs of
+      Nil y1 -> 
+        acc
+
+      Cons y1 -> 
+        f (fixListFold (#2.2 y1)) (#2.1 y1) in fixListFold) : NatList -> Nat) in list_fold) : (Nat -> Nat -> Nat) -> Nat -> NatList -> Nat))
+  ((let countOdd = \n1 -> \n2 -> case isOdd n2 of
+    T _ -> 
+      S n1
+
+    F _ -> 
+      n1 in countOdd) : Nat -> Nat -> Nat))
+  ((let isOdd = \n -> case n of
+    Z _ -> 
+      F
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          T
+
+        S m2 -> 
+          isOdd m2 in isOdd) : Nat -> Boolean))
+  ((let add = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (add m n2) in add) : Nat -> Nat -> Nat)
+(\add -> (\isOdd -> (\countOdd -> (\list_fold -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_fold = \f -> \acc -> (\fixListFold -> fixListFold)
+    ((let fixListFold = \xs -> case xs of
+      Nil y1 -> 
+        acc
+
+      Cons y1 -> 
+        f (fixListFold (#2.2 y1)) (#2.1 y1) in fixListFold) : NatList -> Nat) in list_fold) : (Nat -> Nat -> Nat) -> Nat -> NatList -> Nat))
+  ((let countOdd = \n1 -> \n2 -> case isOdd n2 of
+    T _ -> 
+      S n1
+
+    F _ -> 
+      n1 in countOdd) : Nat -> Nat -> Nat))
+  ((let isOdd = \n -> case n of
+    Z _ -> 
+      F
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          T
+
+        S m2 -> 
+          isOdd m2 in isOdd) : Nat -> Boolean))
+  ((let add = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (add m n2) in add) : Nat -> Nat -> Nat)
+0.353249 true true
+
+(add, 0, [1]) -> 1;
+(add, 0, [2, 1]) -> 3;
+(countOdd, 0, [2, 1]) -> 1;
+(countOdd, 0, [3, 2, 1]) -> 2;
+=================================
+NOSOL
+
+(add, 0, []) -> 0;
+(add, 0, [1]) -> 1;
+(add, 0, [3, 2, 1]) -> 6;
+(countOdd, 0, [2, 1]) -> 1;
+=================================
+(\add -> (\isOdd -> (\countOdd -> (\list_fold -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_fold = \f -> \acc -> (\fixListFold -> fixListFold)
+    ((let fixListFold = \xs -> case xs of
+      Nil y1 -> 
+        acc
+
+      Cons y1 -> 
+        f (fixListFold (#2.2 y1)) (#2.1 y1) in fixListFold) : NatList -> Nat) in list_fold) : (Nat -> Nat -> Nat) -> Nat -> NatList -> Nat))
+  ((let countOdd = \n1 -> \n2 -> case isOdd n2 of
+    T _ -> 
+      S n1
+
+    F _ -> 
+      n1 in countOdd) : Nat -> Nat -> Nat))
+  ((let isOdd = \n -> case n of
+    Z _ -> 
+      F
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          T
+
+        S m2 -> 
+          isOdd m2 in isOdd) : Nat -> Boolean))
+  ((let add = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (add m n2) in add) : Nat -> Nat -> Nat)
+(\add -> (\isOdd -> (\countOdd -> (\list_fold -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_fold = \f -> \acc -> (\fixListFold -> fixListFold)
+    ((let fixListFold = \xs -> case xs of
+      Nil y1 -> 
+        acc
+
+      Cons y1 -> 
+        f (fixListFold (#2.2 y1)) (#2.1 y1) in fixListFold) : NatList -> Nat) in list_fold) : (Nat -> Nat -> Nat) -> Nat -> NatList -> Nat))
+  ((let countOdd = \n1 -> \n2 -> case isOdd n2 of
+    T _ -> 
+      S n1
+
+    F _ -> 
+      n1 in countOdd) : Nat -> Nat -> Nat))
+  ((let isOdd = \n -> case n of
+    Z _ -> 
+      F
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          T
+
+        S m2 -> 
+          isOdd m2 in isOdd) : Nat -> Boolean))
+  ((let add = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (add m n2) in add) : Nat -> Nat -> Nat)
+0.487501 true true
+
+(add, 0, [1]) -> 1;
+(add, 0, [3, 2, 1]) -> 6;
+(add, 1, []) -> 1;
+(countOdd, 0, []) -> 0;
+(countOdd, 0, [2, 1]) -> 1;
+=================================
+(\add -> (\isOdd -> (\countOdd -> (\list_fold -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_fold = \f -> \acc -> (\fixListFold -> fixListFold)
+    ((let fixListFold = \xs -> case xs of
+      Nil y1 -> 
+        acc
+
+      Cons y1 -> 
+        f (fixListFold (#2.2 y1)) (#2.1 y1) in fixListFold) : NatList -> Nat) in list_fold) : (Nat -> Nat -> Nat) -> Nat -> NatList -> Nat))
+  ((let countOdd = \n1 -> \n2 -> case isOdd n2 of
+    T _ -> 
+      S n1
+
+    F _ -> 
+      n1 in countOdd) : Nat -> Nat -> Nat))
+  ((let isOdd = \n -> case n of
+    Z _ -> 
+      F
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          T
+
+        S m2 -> 
+          isOdd m2 in isOdd) : Nat -> Boolean))
+  ((let add = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (add m n2) in add) : Nat -> Nat -> Nat)
+(\add -> (\isOdd -> (\countOdd -> (\list_fold -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_fold = \f -> \acc -> (\fixListFold -> fixListFold)
+    ((let fixListFold = \xs -> case xs of
+      Nil y1 -> 
+        acc
+
+      Cons y1 -> 
+        f (fixListFold (#2.2 y1)) (#2.1 y1) in fixListFold) : NatList -> Nat) in list_fold) : (Nat -> Nat -> Nat) -> Nat -> NatList -> Nat))
+  ((let countOdd = \n1 -> \n2 -> case isOdd n2 of
+    T _ -> 
+      S n1
+
+    F _ -> 
+      n1 in countOdd) : Nat -> Nat -> Nat))
+  ((let isOdd = \n -> case n of
+    Z _ -> 
+      F
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          T
+
+        S m2 -> 
+          isOdd m2 in isOdd) : Nat -> Boolean))
+  ((let add = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (add m n2) in add) : Nat -> Nat -> Nat)
+0.510175 true true
+
+(add, 0, []) -> 0;
+(add, 0, [1]) -> 1;
+(add, 1, []) -> 1;
+(countOdd, 0, [1]) -> 1;
+(countOdd, 0, [3, 2, 1]) -> 2;
+=================================
+(\add -> (\isOdd -> (\countOdd -> (\list_fold -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_fold = \f -> \acc -> (\fixListFold -> fixListFold)
+    ((let fixListFold = \xs -> case xs of
+      Nil y1 -> 
+        acc
+
+      Cons y1 -> 
+        countOdd (fixListFold (#2.2 y1)) (#2.1 y1) in fixListFold) : NatList -> Nat) in list_fold) : (Nat -> Nat -> Nat) -> Nat -> NatList -> Nat))
+  ((let countOdd = \n1 -> \n2 -> case isOdd n2 of
+    T _ -> 
+      S n1
+
+    F _ -> 
+      n1 in countOdd) : Nat -> Nat -> Nat))
+  ((let isOdd = \n -> case n of
+    Z _ -> 
+      F
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          T
+
+        S m2 -> 
+          isOdd m2 in isOdd) : Nat -> Boolean))
+  ((let add = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (add m n2) in add) : Nat -> Nat -> Nat)
+(\add -> (\isOdd -> (\countOdd -> (\list_fold -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_fold = \f -> \acc -> (\fixListFold -> fixListFold)
+    ((let fixListFold = \xs -> case xs of
+      Nil y1 -> 
+        acc
+
+      Cons y1 -> 
+        countOdd (fixListFold (#2.2 y1)) (#2.1 y1) in fixListFold) : NatList -> Nat) in list_fold) : (Nat -> Nat -> Nat) -> Nat -> NatList -> Nat))
+  ((let countOdd = \n1 -> \n2 -> case isOdd n2 of
+    T _ -> 
+      S n1
+
+    F _ -> 
+      n1 in countOdd) : Nat -> Nat -> Nat))
+  ((let isOdd = \n -> case n of
+    Z _ -> 
+      F
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          T
+
+        S m2 -> 
+          isOdd m2 in isOdd) : Nat -> Boolean))
+  ((let add = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (add m n2) in add) : Nat -> Nat -> Nat)
+0.510958 false false
+
+(add, 0, [1]) -> 1;
+(add, 0, [2, 1]) -> 3;
+(add, 0, [3, 2, 1]) -> 6;
+(countOdd, 0, [1]) -> 1;
+(countOdd, 0, [2, 1]) -> 1;
+=================================
+NOSOL
+
+(add, 0, []) -> 0;
+(add, 0, [1]) -> 1;
+(add, 0, [3, 2, 1]) -> 6;
+(countOdd, 0, []) -> 0;
+(countOdd, 0, [1]) -> 1;
+=================================
+(\add -> (\isOdd -> (\countOdd -> (\list_fold -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_fold = \f -> \acc -> (\fixListFold -> fixListFold)
+    ((let fixListFold = \xs -> case xs of
+      Nil y1 -> 
+        acc
+
+      Cons y1 -> 
+        add (fixListFold (#2.2 y1)) (#2.1 y1) in fixListFold) : NatList -> Nat) in list_fold) : (Nat -> Nat -> Nat) -> Nat -> NatList -> Nat))
+  ((let countOdd = \n1 -> \n2 -> case isOdd n2 of
+    T _ -> 
+      S n1
+
+    F _ -> 
+      n1 in countOdd) : Nat -> Nat -> Nat))
+  ((let isOdd = \n -> case n of
+    Z _ -> 
+      F
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          T
+
+        S m2 -> 
+          isOdd m2 in isOdd) : Nat -> Boolean))
+  ((let add = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (add m n2) in add) : Nat -> Nat -> Nat)
+(\add -> (\isOdd -> (\countOdd -> (\list_fold -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_fold = \f -> \acc -> (\fixListFold -> fixListFold)
+    ((let fixListFold = \xs -> case xs of
+      Nil y1 -> 
+        acc
+
+      Cons y1 -> 
+        add (fixListFold (#2.2 y1)) (#2.1 y1) in fixListFold) : NatList -> Nat) in list_fold) : (Nat -> Nat -> Nat) -> Nat -> NatList -> Nat))
+  ((let countOdd = \n1 -> \n2 -> case isOdd n2 of
+    T _ -> 
+      S n1
+
+    F _ -> 
+      n1 in countOdd) : Nat -> Nat -> Nat))
+  ((let isOdd = \n -> case n of
+    Z _ -> 
+      F
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          T
+
+        S m2 -> 
+          isOdd m2 in isOdd) : Nat -> Boolean))
+  ((let add = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (add m n2) in add) : Nat -> Nat -> Nat)
+0.470746 false false
+
+(add, 0, [1]) -> 1;
+(add, 0, [2, 1]) -> 3;
+(add, 0, [3, 2, 1]) -> 6;
+(countOdd, 0, []) -> 0;
+(countOdd, 0, [2, 1]) -> 1;
+=================================
+(\add -> (\isOdd -> (\countOdd -> (\list_fold -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_fold = \f -> \acc -> (\fixListFold -> fixListFold)
+    ((let fixListFold = \xs -> case xs of
+      Nil y1 -> 
+        acc
+
+      Cons y1 -> 
+        f (fixListFold (#2.2 y1)) (#2.1 y1) in fixListFold) : NatList -> Nat) in list_fold) : (Nat -> Nat -> Nat) -> Nat -> NatList -> Nat))
+  ((let countOdd = \n1 -> \n2 -> case isOdd n2 of
+    T _ -> 
+      S n1
+
+    F _ -> 
+      n1 in countOdd) : Nat -> Nat -> Nat))
+  ((let isOdd = \n -> case n of
+    Z _ -> 
+      F
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          T
+
+        S m2 -> 
+          isOdd m2 in isOdd) : Nat -> Boolean))
+  ((let add = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (add m n2) in add) : Nat -> Nat -> Nat)
+(\add -> (\isOdd -> (\countOdd -> (\list_fold -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_fold = \f -> \acc -> (\fixListFold -> fixListFold)
+    ((let fixListFold = \xs -> case xs of
+      Nil y1 -> 
+        acc
+
+      Cons y1 -> 
+        f (fixListFold (#2.2 y1)) (#2.1 y1) in fixListFold) : NatList -> Nat) in list_fold) : (Nat -> Nat -> Nat) -> Nat -> NatList -> Nat))
+  ((let countOdd = \n1 -> \n2 -> case isOdd n2 of
+    T _ -> 
+      S n1
+
+    F _ -> 
+      n1 in countOdd) : Nat -> Nat -> Nat))
+  ((let isOdd = \n -> case n of
+    Z _ -> 
+      F
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          T
+
+        S m2 -> 
+          isOdd m2 in isOdd) : Nat -> Boolean))
+  ((let add = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (add m n2) in add) : Nat -> Nat -> Nat)
+0.594681 true true
+
+(add, 0, [1]) -> 1;
+(add, 0, [3, 2, 1]) -> 6;
+(countOdd, 0, [1]) -> 1;
+(countOdd, 0, [2, 1]) -> 1;
+(countOdd, 0, [3, 2, 1]) -> 2;
+=================================
+NOSOL
+
+(add, 0, []) -> 0;
+(add, 0, [2, 1]) -> 3;
+(add, 0, [3, 2, 1]) -> 6;
+(add, 1, []) -> 1;
+(countOdd, 0, [3, 2, 1]) -> 2;
+=================================
+(\add -> (\isOdd -> (\countOdd -> (\list_fold -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_fold = \f -> \acc -> (\fixListFold -> fixListFold)
+    ((let fixListFold = \xs -> case xs of
+      Nil y1 -> 
+        acc
+
+      Cons y1 -> 
+        f (fixListFold (#2.2 y1)) (#2.1 y1) in fixListFold) : NatList -> Nat) in list_fold) : (Nat -> Nat -> Nat) -> Nat -> NatList -> Nat))
+  ((let countOdd = \n1 -> \n2 -> case isOdd n2 of
+    T _ -> 
+      S n1
+
+    F _ -> 
+      n1 in countOdd) : Nat -> Nat -> Nat))
+  ((let isOdd = \n -> case n of
+    Z _ -> 
+      F
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          T
+
+        S m2 -> 
+          isOdd m2 in isOdd) : Nat -> Boolean))
+  ((let add = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (add m n2) in add) : Nat -> Nat -> Nat)
+(\add -> (\isOdd -> (\countOdd -> (\list_fold -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_fold = \f -> \acc -> (\fixListFold -> fixListFold)
+    ((let fixListFold = \xs -> case xs of
+      Nil y1 -> 
+        acc
+
+      Cons y1 -> 
+        f (fixListFold (#2.2 y1)) (#2.1 y1) in fixListFold) : NatList -> Nat) in list_fold) : (Nat -> Nat -> Nat) -> Nat -> NatList -> Nat))
+  ((let countOdd = \n1 -> \n2 -> case isOdd n2 of
+    T _ -> 
+      S n1
+
+    F _ -> 
+      n1 in countOdd) : Nat -> Nat -> Nat))
+  ((let isOdd = \n -> case n of
+    Z _ -> 
+      F
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          T
+
+        S m2 -> 
+          isOdd m2 in isOdd) : Nat -> Boolean))
+  ((let add = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (add m n2) in add) : Nat -> Nat -> Nat)
+0.746679 true true
+
+(add, 0, []) -> 0;
+(add, 0, [1]) -> 1;
+(countOdd, 0, []) -> 0;
+(countOdd, 0, [1]) -> 1;
+(countOdd, 0, [2, 1]) -> 1;
+=================================
+(\add -> (\isOdd -> (\countOdd -> (\list_fold -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_fold = \f -> \acc -> (\fixListFold -> fixListFold)
+    ((let fixListFold = \xs -> case xs of
+      Nil y1 -> 
+        0
+
+      Cons y1 -> 
+        1 in fixListFold) : NatList -> Nat) in list_fold) : (Nat -> Nat -> Nat) -> Nat -> NatList -> Nat))
+  ((let countOdd = \n1 -> \n2 -> case isOdd n2 of
+    T _ -> 
+      S n1
+
+    F _ -> 
+      n1 in countOdd) : Nat -> Nat -> Nat))
+  ((let isOdd = \n -> case n of
+    Z _ -> 
+      F
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          T
+
+        S m2 -> 
+          isOdd m2 in isOdd) : Nat -> Boolean))
+  ((let add = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (add m n2) in add) : Nat -> Nat -> Nat)
+0.288822 false false
+
+(add, 0, []) -> 0;
+(add, 0, [1]) -> 1;
+(add, 0, [3, 2, 1]) -> 6;
+(add, 1, []) -> 1;
+(countOdd, 0, [1]) -> 1;
+=================================
+(\add -> (\isOdd -> (\countOdd -> (\list_fold -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_fold = \f -> \acc -> (\fixListFold -> fixListFold)
+    ((let fixListFold = \xs -> case xs of
+      Nil y1 -> 
+        acc
+
+      Cons y1 -> 
+        add (fixListFold (#2.2 y1)) (#2.1 y1) in fixListFold) : NatList -> Nat) in list_fold) : (Nat -> Nat -> Nat) -> Nat -> NatList -> Nat))
+  ((let countOdd = \n1 -> \n2 -> case isOdd n2 of
+    T _ -> 
+      S n1
+
+    F _ -> 
+      n1 in countOdd) : Nat -> Nat -> Nat))
+  ((let isOdd = \n -> case n of
+    Z _ -> 
+      F
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          T
+
+        S m2 -> 
+          isOdd m2 in isOdd) : Nat -> Boolean))
+  ((let add = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (add m n2) in add) : Nat -> Nat -> Nat)
+(\add -> (\isOdd -> (\countOdd -> (\list_fold -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_fold = \f -> \acc -> (\fixListFold -> fixListFold)
+    ((let fixListFold = \xs -> case xs of
+      Nil y1 -> 
+        acc
+
+      Cons y1 -> 
+        add (fixListFold (#2.2 y1)) (#2.1 y1) in fixListFold) : NatList -> Nat) in list_fold) : (Nat -> Nat -> Nat) -> Nat -> NatList -> Nat))
+  ((let countOdd = \n1 -> \n2 -> case isOdd n2 of
+    T _ -> 
+      S n1
+
+    F _ -> 
+      n1 in countOdd) : Nat -> Nat -> Nat))
+  ((let isOdd = \n -> case n of
+    Z _ -> 
+      F
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          T
+
+        S m2 -> 
+          isOdd m2 in isOdd) : Nat -> Boolean))
+  ((let add = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (add m n2) in add) : Nat -> Nat -> Nat)
+0.460939 false false
+
+(add, 0, []) -> 0;
+(add, 0, [2, 1]) -> 3;
+(add, 0, [3, 2, 1]) -> 6;
+(countOdd, 0, []) -> 0;
+(countOdd, 0, [1]) -> 1;
+=================================
+(\add -> (\isOdd -> (\countOdd -> (\list_fold -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_fold = \f -> \acc -> (\fixListFold -> fixListFold)
+    ((let fixListFold = \xs -> case xs of
+      Nil y1 -> 
+        acc
+
+      Cons y1 -> 
+        add (fixListFold (#2.2 y1)) (#2.1 y1) in fixListFold) : NatList -> Nat) in list_fold) : (Nat -> Nat -> Nat) -> Nat -> NatList -> Nat))
+  ((let countOdd = \n1 -> \n2 -> case isOdd n2 of
+    T _ -> 
+      S n1
+
+    F _ -> 
+      n1 in countOdd) : Nat -> Nat -> Nat))
+  ((let isOdd = \n -> case n of
+    Z _ -> 
+      F
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          T
+
+        S m2 -> 
+          isOdd m2 in isOdd) : Nat -> Boolean))
+  ((let add = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (add m n2) in add) : Nat -> Nat -> Nat)
+(\add -> (\isOdd -> (\countOdd -> (\list_fold -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_fold = \f -> \acc -> (\fixListFold -> fixListFold)
+    ((let fixListFold = \xs -> case xs of
+      Nil y1 -> 
+        acc
+
+      Cons y1 -> 
+        add (fixListFold (#2.2 y1)) (#2.1 y1) in fixListFold) : NatList -> Nat) in list_fold) : (Nat -> Nat -> Nat) -> Nat -> NatList -> Nat))
+  ((let countOdd = \n1 -> \n2 -> case isOdd n2 of
+    T _ -> 
+      S n1
+
+    F _ -> 
+      n1 in countOdd) : Nat -> Nat -> Nat))
+  ((let isOdd = \n -> case n of
+    Z _ -> 
+      F
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          T
+
+        S m2 -> 
+          isOdd m2 in isOdd) : Nat -> Boolean))
+  ((let add = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (add m n2) in add) : Nat -> Nat -> Nat)
+0.49913 false false
+
+(add, 0, []) -> 0;
+(add, 0, [1]) -> 1;
+(add, 0, [2, 1]) -> 3;
+(add, 1, []) -> 1;
+(countOdd, 0, []) -> 0;
+(countOdd, 0, [3, 2, 1]) -> 2;
+=================================
+(\add -> (\isOdd -> (\countOdd -> (\list_fold -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_fold = \f -> \acc -> (\fixListFold -> fixListFold)
+    ((let fixListFold = \xs -> case xs of
+      Nil y1 -> 
+        acc
+
+      Cons y1 -> 
+        f (fixListFold (#2.2 y1)) (#2.1 y1) in fixListFold) : NatList -> Nat) in list_fold) : (Nat -> Nat -> Nat) -> Nat -> NatList -> Nat))
+  ((let countOdd = \n1 -> \n2 -> case isOdd n2 of
+    T _ -> 
+      S n1
+
+    F _ -> 
+      n1 in countOdd) : Nat -> Nat -> Nat))
+  ((let isOdd = \n -> case n of
+    Z _ -> 
+      F
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          T
+
+        S m2 -> 
+          isOdd m2 in isOdd) : Nat -> Boolean))
+  ((let add = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (add m n2) in add) : Nat -> Nat -> Nat)
+(\add -> (\isOdd -> (\countOdd -> (\list_fold -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_fold = \f -> \acc -> (\fixListFold -> fixListFold)
+    ((let fixListFold = \xs -> case xs of
+      Nil y1 -> 
+        acc
+
+      Cons y1 -> 
+        f (fixListFold (#2.2 y1)) (#2.1 y1) in fixListFold) : NatList -> Nat) in list_fold) : (Nat -> Nat -> Nat) -> Nat -> NatList -> Nat))
+  ((let countOdd = \n1 -> \n2 -> case isOdd n2 of
+    T _ -> 
+      S n1
+
+    F _ -> 
+      n1 in countOdd) : Nat -> Nat -> Nat))
+  ((let isOdd = \n -> case n of
+    Z _ -> 
+      F
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          T
+
+        S m2 -> 
+          isOdd m2 in isOdd) : Nat -> Boolean))
+  ((let add = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (add m n2) in add) : Nat -> Nat -> Nat)
+0.555338 true true
+
+(add, 0, [1]) -> 1;
+(add, 0, [2, 1]) -> 3;
+(add, 0, [3, 2, 1]) -> 6;
+(countOdd, 0, []) -> 0;
+(countOdd, 0, [1]) -> 1;
+(countOdd, 0, [2, 1]) -> 1;
+=================================
+(\add -> (\isOdd -> (\countOdd -> (\list_fold -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_fold = \f -> \acc -> (\fixListFold -> fixListFold)
+    ((let fixListFold = \xs -> case xs of
+      Nil y1 -> 
+        acc
+
+      Cons y1 -> 
+        f (fixListFold (#2.2 y1)) (#2.1 y1) in fixListFold) : NatList -> Nat) in list_fold) : (Nat -> Nat -> Nat) -> Nat -> NatList -> Nat))
+  ((let countOdd = \n1 -> \n2 -> case isOdd n2 of
+    T _ -> 
+      S n1
+
+    F _ -> 
+      n1 in countOdd) : Nat -> Nat -> Nat))
+  ((let isOdd = \n -> case n of
+    Z _ -> 
+      F
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          T
+
+        S m2 -> 
+          isOdd m2 in isOdd) : Nat -> Boolean))
+  ((let add = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (add m n2) in add) : Nat -> Nat -> Nat)
+(\add -> (\isOdd -> (\countOdd -> (\list_fold -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_fold = \f -> \acc -> (\fixListFold -> fixListFold)
+    ((let fixListFold = \xs -> case xs of
+      Nil y1 -> 
+        acc
+
+      Cons y1 -> 
+        f (fixListFold (#2.2 y1)) (#2.1 y1) in fixListFold) : NatList -> Nat) in list_fold) : (Nat -> Nat -> Nat) -> Nat -> NatList -> Nat))
+  ((let countOdd = \n1 -> \n2 -> case isOdd n2 of
+    T _ -> 
+      S n1
+
+    F _ -> 
+      n1 in countOdd) : Nat -> Nat -> Nat))
+  ((let isOdd = \n -> case n of
+    Z _ -> 
+      F
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          T
+
+        S m2 -> 
+          isOdd m2 in isOdd) : Nat -> Boolean))
+  ((let add = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (add m n2) in add) : Nat -> Nat -> Nat)
+0.656774 true true
+
+(add, 0, []) -> 0;
+(add, 0, [1]) -> 1;
+(add, 0, [2, 1]) -> 3;
+(countOdd, 0, []) -> 0;
+(countOdd, 0, [1]) -> 1;
+(countOdd, 0, [3, 2, 1]) -> 2;
+=================================
+(\add -> (\isOdd -> (\countOdd -> (\list_fold -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_fold = \f -> \acc -> (\fixListFold -> fixListFold)
+    ((let fixListFold = \xs -> case xs of
+      Nil y1 -> 
+        acc
+
+      Cons y1 -> 
+        f (fixListFold (#2.2 y1)) (#2.1 y1) in fixListFold) : NatList -> Nat) in list_fold) : (Nat -> Nat -> Nat) -> Nat -> NatList -> Nat))
+  ((let countOdd = \n1 -> \n2 -> case isOdd n2 of
+    T _ -> 
+      S n1
+
+    F _ -> 
+      n1 in countOdd) : Nat -> Nat -> Nat))
+  ((let isOdd = \n -> case n of
+    Z _ -> 
+      F
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          T
+
+        S m2 -> 
+          isOdd m2 in isOdd) : Nat -> Boolean))
+  ((let add = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (add m n2) in add) : Nat -> Nat -> Nat)
+(\add -> (\isOdd -> (\countOdd -> (\list_fold -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_fold = \f -> \acc -> (\fixListFold -> fixListFold)
+    ((let fixListFold = \xs -> case xs of
+      Nil y1 -> 
+        acc
+
+      Cons y1 -> 
+        f (fixListFold (#2.2 y1)) (#2.1 y1) in fixListFold) : NatList -> Nat) in list_fold) : (Nat -> Nat -> Nat) -> Nat -> NatList -> Nat))
+  ((let countOdd = \n1 -> \n2 -> case isOdd n2 of
+    T _ -> 
+      S n1
+
+    F _ -> 
+      n1 in countOdd) : Nat -> Nat -> Nat))
+  ((let isOdd = \n -> case n of
+    Z _ -> 
+      F
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          T
+
+        S m2 -> 
+          isOdd m2 in isOdd) : Nat -> Boolean))
+  ((let add = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (add m n2) in add) : Nat -> Nat -> Nat)
+0.560113 true true
+
+(add, 0, [3, 2, 1]) -> 6;
+(add, 1, []) -> 1;
+(countOdd, 0, []) -> 0;
+(countOdd, 0, [1]) -> 1;
+(countOdd, 0, [2, 1]) -> 1;
+(countOdd, 0, [3, 2, 1]) -> 2;
+=================================
+(\add -> (\isOdd -> (\countOdd -> (\list_fold -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_fold = \f -> \acc -> (\fixListFold -> fixListFold)
+    ((let fixListFold = \xs -> case xs of
+      Nil y1 -> 
+        acc
+
+      Cons y1 -> 
+        f (fixListFold (#2.2 y1)) (#2.1 y1) in fixListFold) : NatList -> Nat) in list_fold) : (Nat -> Nat -> Nat) -> Nat -> NatList -> Nat))
+  ((let countOdd = \n1 -> \n2 -> case isOdd n2 of
+    T _ -> 
+      S n1
+
+    F _ -> 
+      n1 in countOdd) : Nat -> Nat -> Nat))
+  ((let isOdd = \n -> case n of
+    Z _ -> 
+      F
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          T
+
+        S m2 -> 
+          isOdd m2 in isOdd) : Nat -> Boolean))
+  ((let add = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (add m n2) in add) : Nat -> Nat -> Nat)
+(\add -> (\isOdd -> (\countOdd -> (\list_fold -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_fold = \f -> \acc -> (\fixListFold -> fixListFold)
+    ((let fixListFold = \xs -> case xs of
+      Nil y1 -> 
+        acc
+
+      Cons y1 -> 
+        f (fixListFold (#2.2 y1)) (#2.1 y1) in fixListFold) : NatList -> Nat) in list_fold) : (Nat -> Nat -> Nat) -> Nat -> NatList -> Nat))
+  ((let countOdd = \n1 -> \n2 -> case isOdd n2 of
+    T _ -> 
+      S n1
+
+    F _ -> 
+      n1 in countOdd) : Nat -> Nat -> Nat))
+  ((let isOdd = \n -> case n of
+    Z _ -> 
+      F
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          T
+
+        S m2 -> 
+          isOdd m2 in isOdd) : Nat -> Boolean))
+  ((let add = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (add m n2) in add) : Nat -> Nat -> Nat)
+0.607724 true true
+
+(add, 0, [1]) -> 1;
+(add, 0, [2, 1]) -> 3;
+(add, 0, [3, 2, 1]) -> 6;
+(countOdd, 0, [1]) -> 1;
+(countOdd, 0, [2, 1]) -> 1;
+(countOdd, 0, [3, 2, 1]) -> 2;
+=================================
+NOSOL
+
+(add, 0, [1]) -> 1;
+(add, 1, []) -> 1;
+(countOdd, 0, []) -> 0;
+(countOdd, 0, [1]) -> 1;
+(countOdd, 0, [2, 1]) -> 1;
+(countOdd, 0, [3, 2, 1]) -> 2;
+=================================
+(\add -> (\isOdd -> (\countOdd -> (\list_fold -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_fold = \f -> \acc -> (\fixListFold -> fixListFold)
+    ((let fixListFold = \xs -> case xs of
+      Nil y1 -> 
+        acc
+
+      Cons y1 -> 
+        countOdd (fixListFold (#2.2 y1)) (#2.1 y1) in fixListFold) : NatList -> Nat) in list_fold) : (Nat -> Nat -> Nat) -> Nat -> NatList -> Nat))
+  ((let countOdd = \n1 -> \n2 -> case isOdd n2 of
+    T _ -> 
+      S n1
+
+    F _ -> 
+      n1 in countOdd) : Nat -> Nat -> Nat))
+  ((let isOdd = \n -> case n of
+    Z _ -> 
+      F
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          T
+
+        S m2 -> 
+          isOdd m2 in isOdd) : Nat -> Boolean))
+  ((let add = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (add m n2) in add) : Nat -> Nat -> Nat)
+(\add -> (\isOdd -> (\countOdd -> (\list_fold -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_fold = \f -> \acc -> (\fixListFold -> fixListFold)
+    ((let fixListFold = \xs -> case xs of
+      Nil y1 -> 
+        acc
+
+      Cons y1 -> 
+        countOdd (fixListFold (#2.2 y1)) (#2.1 y1) in fixListFold) : NatList -> Nat) in list_fold) : (Nat -> Nat -> Nat) -> Nat -> NatList -> Nat))
+  ((let countOdd = \n1 -> \n2 -> case isOdd n2 of
+    T _ -> 
+      S n1
+
+    F _ -> 
+      n1 in countOdd) : Nat -> Nat -> Nat))
+  ((let isOdd = \n -> case n of
+    Z _ -> 
+      F
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          T
+
+        S m2 -> 
+          isOdd m2 in isOdd) : Nat -> Boolean))
+  ((let add = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (add m n2) in add) : Nat -> Nat -> Nat)
+0.574838 false false
+
+(add, 0, []) -> 0;
+(add, 0, [1]) -> 1;
+(add, 0, [2, 1]) -> 3;
+(countOdd, 0, []) -> 0;
+(countOdd, 0, [2, 1]) -> 1;
+(countOdd, 0, [3, 2, 1]) -> 2;
+=================================
+(\add -> (\isOdd -> (\countOdd -> (\list_fold -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_fold = \f -> \acc -> (\fixListFold -> fixListFold)
+    ((let fixListFold = \xs -> case xs of
+      Nil y1 -> 
+        acc
+
+      Cons y1 -> 
+        f (fixListFold (#2.2 y1)) (#2.1 y1) in fixListFold) : NatList -> Nat) in list_fold) : (Nat -> Nat -> Nat) -> Nat -> NatList -> Nat))
+  ((let countOdd = \n1 -> \n2 -> case isOdd n2 of
+    T _ -> 
+      S n1
+
+    F _ -> 
+      n1 in countOdd) : Nat -> Nat -> Nat))
+  ((let isOdd = \n -> case n of
+    Z _ -> 
+      F
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          T
+
+        S m2 -> 
+          isOdd m2 in isOdd) : Nat -> Boolean))
+  ((let add = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (add m n2) in add) : Nat -> Nat -> Nat)
+(\add -> (\isOdd -> (\countOdd -> (\list_fold -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_fold = \f -> \acc -> (\fixListFold -> fixListFold)
+    ((let fixListFold = \xs -> case xs of
+      Nil y1 -> 
+        acc
+
+      Cons y1 -> 
+        f (fixListFold (#2.2 y1)) (#2.1 y1) in fixListFold) : NatList -> Nat) in list_fold) : (Nat -> Nat -> Nat) -> Nat -> NatList -> Nat))
+  ((let countOdd = \n1 -> \n2 -> case isOdd n2 of
+    T _ -> 
+      S n1
+
+    F _ -> 
+      n1 in countOdd) : Nat -> Nat -> Nat))
+  ((let isOdd = \n -> case n of
+    Z _ -> 
+      F
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          T
+
+        S m2 -> 
+          isOdd m2 in isOdd) : Nat -> Boolean))
+  ((let add = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (add m n2) in add) : Nat -> Nat -> Nat)
+0.619561 true true
+
+(add, 0, []) -> 0;
+(add, 0, [3, 2, 1]) -> 6;
+(countOdd, 0, []) -> 0;
+(countOdd, 0, [1]) -> 1;
+(countOdd, 0, [2, 1]) -> 1;
+(countOdd, 0, [3, 2, 1]) -> 2;
+=================================
+(\add -> (\isOdd -> (\countOdd -> (\list_fold -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_fold = \f -> \acc -> (\fixListFold -> fixListFold)
+    ((let fixListFold = \xs -> case xs of
+      Nil y1 -> 
+        acc
+
+      Cons y1 -> 
+        f (fixListFold (#2.2 y1)) (#2.1 y1) in fixListFold) : NatList -> Nat) in list_fold) : (Nat -> Nat -> Nat) -> Nat -> NatList -> Nat))
+  ((let countOdd = \n1 -> \n2 -> case isOdd n2 of
+    T _ -> 
+      S n1
+
+    F _ -> 
+      n1 in countOdd) : Nat -> Nat -> Nat))
+  ((let isOdd = \n -> case n of
+    Z _ -> 
+      F
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          T
+
+        S m2 -> 
+          isOdd m2 in isOdd) : Nat -> Boolean))
+  ((let add = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (add m n2) in add) : Nat -> Nat -> Nat)
+(\add -> (\isOdd -> (\countOdd -> (\list_fold -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_fold = \f -> \acc -> (\fixListFold -> fixListFold)
+    ((let fixListFold = \xs -> case xs of
+      Nil y1 -> 
+        acc
+
+      Cons y1 -> 
+        f (fixListFold (#2.2 y1)) (#2.1 y1) in fixListFold) : NatList -> Nat) in list_fold) : (Nat -> Nat -> Nat) -> Nat -> NatList -> Nat))
+  ((let countOdd = \n1 -> \n2 -> case isOdd n2 of
+    T _ -> 
+      S n1
+
+    F _ -> 
+      n1 in countOdd) : Nat -> Nat -> Nat))
+  ((let isOdd = \n -> case n of
+    Z _ -> 
+      F
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          T
+
+        S m2 -> 
+          isOdd m2 in isOdd) : Nat -> Boolean))
+  ((let add = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (add m n2) in add) : Nat -> Nat -> Nat)
+0.696172 true true
+
+(add, 0, [1]) -> 1;
+(add, 0, [3, 2, 1]) -> 6;
+(add, 1, []) -> 1;
+(countOdd, 0, []) -> 0;
+(countOdd, 0, [2, 1]) -> 1;
+(countOdd, 0, [3, 2, 1]) -> 2;
+=================================
+(\add -> (\isOdd -> (\countOdd -> (\list_fold -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_fold = \f -> \acc -> (\fixListFold -> fixListFold)
+    ((let fixListFold = \xs -> case xs of
+      Nil y1 -> 
+        acc
+
+      Cons y1 -> 
+        f (fixListFold (#2.2 y1)) (#2.1 y1) in fixListFold) : NatList -> Nat) in list_fold) : (Nat -> Nat -> Nat) -> Nat -> NatList -> Nat))
+  ((let countOdd = \n1 -> \n2 -> case isOdd n2 of
+    T _ -> 
+      S n1
+
+    F _ -> 
+      n1 in countOdd) : Nat -> Nat -> Nat))
+  ((let isOdd = \n -> case n of
+    Z _ -> 
+      F
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          T
+
+        S m2 -> 
+          isOdd m2 in isOdd) : Nat -> Boolean))
+  ((let add = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (add m n2) in add) : Nat -> Nat -> Nat)
+(\add -> (\isOdd -> (\countOdd -> (\list_fold -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_fold = \f -> \acc -> (\fixListFold -> fixListFold)
+    ((let fixListFold = \xs -> case xs of
+      Nil y1 -> 
+        acc
+
+      Cons y1 -> 
+        f (fixListFold (#2.2 y1)) (#2.1 y1) in fixListFold) : NatList -> Nat) in list_fold) : (Nat -> Nat -> Nat) -> Nat -> NatList -> Nat))
+  ((let countOdd = \n1 -> \n2 -> case isOdd n2 of
+    T _ -> 
+      S n1
+
+    F _ -> 
+      n1 in countOdd) : Nat -> Nat -> Nat))
+  ((let isOdd = \n -> case n of
+    Z _ -> 
+      F
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          T
+
+        S m2 -> 
+          isOdd m2 in isOdd) : Nat -> Boolean))
+  ((let add = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (add m n2) in add) : Nat -> Nat -> Nat)
+0.656828 true true
+
+(add, 0, []) -> 0;
+(add, 0, [1]) -> 1;
+(add, 0, [2, 1]) -> 3;
+(add, 0, [3, 2, 1]) -> 6;
+(countOdd, 0, [2, 1]) -> 1;
+(countOdd, 0, [3, 2, 1]) -> 2;
+=================================
+(\add -> (\isOdd -> (\countOdd -> (\list_fold -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_fold = \f -> \acc -> (\fixListFold -> fixListFold)
+    ((let fixListFold = \xs -> case xs of
+      Nil y1 -> 
+        acc
+
+      Cons y1 -> 
+        f (fixListFold (#2.2 y1)) (#2.1 y1) in fixListFold) : NatList -> Nat) in list_fold) : (Nat -> Nat -> Nat) -> Nat -> NatList -> Nat))
+  ((let countOdd = \n1 -> \n2 -> case isOdd n2 of
+    T _ -> 
+      S n1
+
+    F _ -> 
+      n1 in countOdd) : Nat -> Nat -> Nat))
+  ((let isOdd = \n -> case n of
+    Z _ -> 
+      F
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          T
+
+        S m2 -> 
+          isOdd m2 in isOdd) : Nat -> Boolean))
+  ((let add = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (add m n2) in add) : Nat -> Nat -> Nat)
+(\add -> (\isOdd -> (\countOdd -> (\list_fold -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_fold = \f -> \acc -> (\fixListFold -> fixListFold)
+    ((let fixListFold = \xs -> case xs of
+      Nil y1 -> 
+        acc
+
+      Cons y1 -> 
+        f (fixListFold (#2.2 y1)) (#2.1 y1) in fixListFold) : NatList -> Nat) in list_fold) : (Nat -> Nat -> Nat) -> Nat -> NatList -> Nat))
+  ((let countOdd = \n1 -> \n2 -> case isOdd n2 of
+    T _ -> 
+      S n1
+
+    F _ -> 
+      n1 in countOdd) : Nat -> Nat -> Nat))
+  ((let isOdd = \n -> case n of
+    Z _ -> 
+      F
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          T
+
+        S m2 -> 
+          isOdd m2 in isOdd) : Nat -> Boolean))
+  ((let add = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (add m n2) in add) : Nat -> Nat -> Nat)
+0.781439 true true
+
+(add, 0, []) -> 0;
+(add, 0, [1]) -> 1;
+(add, 0, [3, 2, 1]) -> 6;
+(add, 1, []) -> 1;
+(countOdd, 0, []) -> 0;
+(countOdd, 0, [1]) -> 1;
+(countOdd, 0, [2, 1]) -> 1;
+=================================
+(\add -> (\isOdd -> (\countOdd -> (\list_fold -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_fold = \f -> \acc -> (\fixListFold -> fixListFold)
+    ((let fixListFold = \xs -> case xs of
+      Nil y1 -> 
+        acc
+
+      Cons y1 -> 
+        f (fixListFold (#2.2 y1)) (#2.1 y1) in fixListFold) : NatList -> Nat) in list_fold) : (Nat -> Nat -> Nat) -> Nat -> NatList -> Nat))
+  ((let countOdd = \n1 -> \n2 -> case isOdd n2 of
+    T _ -> 
+      S n1
+
+    F _ -> 
+      n1 in countOdd) : Nat -> Nat -> Nat))
+  ((let isOdd = \n -> case n of
+    Z _ -> 
+      F
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          T
+
+        S m2 -> 
+          isOdd m2 in isOdd) : Nat -> Boolean))
+  ((let add = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (add m n2) in add) : Nat -> Nat -> Nat)
+(\add -> (\isOdd -> (\countOdd -> (\list_fold -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_fold = \f -> \acc -> (\fixListFold -> fixListFold)
+    ((let fixListFold = \xs -> case xs of
+      Nil y1 -> 
+        acc
+
+      Cons y1 -> 
+        f (fixListFold (#2.2 y1)) (#2.1 y1) in fixListFold) : NatList -> Nat) in list_fold) : (Nat -> Nat -> Nat) -> Nat -> NatList -> Nat))
+  ((let countOdd = \n1 -> \n2 -> case isOdd n2 of
+    T _ -> 
+      S n1
+
+    F _ -> 
+      n1 in countOdd) : Nat -> Nat -> Nat))
+  ((let isOdd = \n -> case n of
+    Z _ -> 
+      F
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          T
+
+        S m2 -> 
+          isOdd m2 in isOdd) : Nat -> Boolean))
+  ((let add = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (add m n2) in add) : Nat -> Nat -> Nat)
+0.6135 true true
+
+(add, 0, []) -> 0;
+(add, 0, [1]) -> 1;
+(add, 0, [3, 2, 1]) -> 6;
+(countOdd, 0, []) -> 0;
+(countOdd, 0, [1]) -> 1;
+(countOdd, 0, [2, 1]) -> 1;
+(countOdd, 0, [3, 2, 1]) -> 2;
+=================================
+(\add -> (\isOdd -> (\countOdd -> (\list_fold -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_fold = \f -> \acc -> (\fixListFold -> fixListFold)
+    ((let fixListFold = \xs -> case xs of
+      Nil y1 -> 
+        acc
+
+      Cons y1 -> 
+        f (fixListFold (#2.2 y1)) (#2.1 y1) in fixListFold) : NatList -> Nat) in list_fold) : (Nat -> Nat -> Nat) -> Nat -> NatList -> Nat))
+  ((let countOdd = \n1 -> \n2 -> case isOdd n2 of
+    T _ -> 
+      S n1
+
+    F _ -> 
+      n1 in countOdd) : Nat -> Nat -> Nat))
+  ((let isOdd = \n -> case n of
+    Z _ -> 
+      F
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          T
+
+        S m2 -> 
+          isOdd m2 in isOdd) : Nat -> Boolean))
+  ((let add = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (add m n2) in add) : Nat -> Nat -> Nat)
+(\add -> (\isOdd -> (\countOdd -> (\list_fold -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_fold = \f -> \acc -> (\fixListFold -> fixListFold)
+    ((let fixListFold = \xs -> case xs of
+      Nil y1 -> 
+        acc
+
+      Cons y1 -> 
+        f (fixListFold (#2.2 y1)) (#2.1 y1) in fixListFold) : NatList -> Nat) in list_fold) : (Nat -> Nat -> Nat) -> Nat -> NatList -> Nat))
+  ((let countOdd = \n1 -> \n2 -> case isOdd n2 of
+    T _ -> 
+      S n1
+
+    F _ -> 
+      n1 in countOdd) : Nat -> Nat -> Nat))
+  ((let isOdd = \n -> case n of
+    Z _ -> 
+      F
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          T
+
+        S m2 -> 
+          isOdd m2 in isOdd) : Nat -> Boolean))
+  ((let add = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (add m n2) in add) : Nat -> Nat -> Nat)
+0.774308 true true
+
+(add, 0, []) -> 0;
+(add, 0, [3, 2, 1]) -> 6;
+(add, 1, []) -> 1;
+(countOdd, 0, []) -> 0;
+(countOdd, 0, [1]) -> 1;
+(countOdd, 0, [2, 1]) -> 1;
+(countOdd, 0, [3, 2, 1]) -> 2;
+=================================
+(\add -> (\isOdd -> (\countOdd -> (\list_fold -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_fold = \f -> \acc -> (\fixListFold -> fixListFold)
+    ((let fixListFold = \xs -> case xs of
+      Nil y1 -> 
+        acc
+
+      Cons y1 -> 
+        f (fixListFold (#2.2 y1)) (#2.1 y1) in fixListFold) : NatList -> Nat) in list_fold) : (Nat -> Nat -> Nat) -> Nat -> NatList -> Nat))
+  ((let countOdd = \n1 -> \n2 -> case isOdd n2 of
+    T _ -> 
+      S n1
+
+    F _ -> 
+      n1 in countOdd) : Nat -> Nat -> Nat))
+  ((let isOdd = \n -> case n of
+    Z _ -> 
+      F
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          T
+
+        S m2 -> 
+          isOdd m2 in isOdd) : Nat -> Boolean))
+  ((let add = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (add m n2) in add) : Nat -> Nat -> Nat)
+(\add -> (\isOdd -> (\countOdd -> (\list_fold -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_fold = \f -> \acc -> (\fixListFold -> fixListFold)
+    ((let fixListFold = \xs -> case xs of
+      Nil y1 -> 
+        acc
+
+      Cons y1 -> 
+        f (fixListFold (#2.2 y1)) (#2.1 y1) in fixListFold) : NatList -> Nat) in list_fold) : (Nat -> Nat -> Nat) -> Nat -> NatList -> Nat))
+  ((let countOdd = \n1 -> \n2 -> case isOdd n2 of
+    T _ -> 
+      S n1
+
+    F _ -> 
+      n1 in countOdd) : Nat -> Nat -> Nat))
+  ((let isOdd = \n -> case n of
+    Z _ -> 
+      F
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          T
+
+        S m2 -> 
+          isOdd m2 in isOdd) : Nat -> Boolean))
+  ((let add = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (add m n2) in add) : Nat -> Nat -> Nat)
+0.70035 true true
+
+(add, 0, []) -> 0;
+(add, 0, [1]) -> 1;
+(add, 0, [2, 1]) -> 3;
+(add, 0, [3, 2, 1]) -> 6;
+(add, 1, []) -> 1;
+(countOdd, 0, [1]) -> 1;
+(countOdd, 0, [2, 1]) -> 1;
+=================================
+(\add -> (\isOdd -> (\countOdd -> (\list_fold -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_fold = \f -> \acc -> (\fixListFold -> fixListFold)
+    ((let fixListFold = \xs -> case xs of
+      Nil y1 -> 
+        acc
+
+      Cons y1 -> 
+        f (fixListFold (#2.2 y1)) (#2.1 y1) in fixListFold) : NatList -> Nat) in list_fold) : (Nat -> Nat -> Nat) -> Nat -> NatList -> Nat))
+  ((let countOdd = \n1 -> \n2 -> case isOdd n2 of
+    T _ -> 
+      S n1
+
+    F _ -> 
+      n1 in countOdd) : Nat -> Nat -> Nat))
+  ((let isOdd = \n -> case n of
+    Z _ -> 
+      F
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          T
+
+        S m2 -> 
+          isOdd m2 in isOdd) : Nat -> Boolean))
+  ((let add = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (add m n2) in add) : Nat -> Nat -> Nat)
+(\add -> (\isOdd -> (\countOdd -> (\list_fold -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_fold = \f -> \acc -> (\fixListFold -> fixListFold)
+    ((let fixListFold = \xs -> case xs of
+      Nil y1 -> 
+        acc
+
+      Cons y1 -> 
+        f (fixListFold (#2.2 y1)) (#2.1 y1) in fixListFold) : NatList -> Nat) in list_fold) : (Nat -> Nat -> Nat) -> Nat -> NatList -> Nat))
+  ((let countOdd = \n1 -> \n2 -> case isOdd n2 of
+    T _ -> 
+      S n1
+
+    F _ -> 
+      n1 in countOdd) : Nat -> Nat -> Nat))
+  ((let isOdd = \n -> case n of
+    Z _ -> 
+      F
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          T
+
+        S m2 -> 
+          isOdd m2 in isOdd) : Nat -> Boolean))
+  ((let add = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (add m n2) in add) : Nat -> Nat -> Nat)
+0.623899 true true
+
+(add, 0, []) -> 0;
+(add, 0, [1]) -> 1;
+(add, 0, [2, 1]) -> 3;
+(add, 0, [3, 2, 1]) -> 6;
+(add, 1, []) -> 1;
+(countOdd, 0, [1]) -> 1;
+(countOdd, 0, [3, 2, 1]) -> 2;
+=================================
+(\add -> (\isOdd -> (\countOdd -> (\list_fold -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_fold = \f -> \acc -> (\fixListFold -> fixListFold)
+    ((let fixListFold = \xs -> case xs of
+      Nil y1 -> 
+        acc
+
+      Cons y1 -> 
+        f (fixListFold (#2.2 y1)) (#2.1 y1) in fixListFold) : NatList -> Nat) in list_fold) : (Nat -> Nat -> Nat) -> Nat -> NatList -> Nat))
+  ((let countOdd = \n1 -> \n2 -> case isOdd n2 of
+    T _ -> 
+      S n1
+
+    F _ -> 
+      n1 in countOdd) : Nat -> Nat -> Nat))
+  ((let isOdd = \n -> case n of
+    Z _ -> 
+      F
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          T
+
+        S m2 -> 
+          isOdd m2 in isOdd) : Nat -> Boolean))
+  ((let add = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (add m n2) in add) : Nat -> Nat -> Nat)
+(\add -> (\isOdd -> (\countOdd -> (\list_fold -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_fold = \f -> \acc -> (\fixListFold -> fixListFold)
+    ((let fixListFold = \xs -> case xs of
+      Nil y1 -> 
+        acc
+
+      Cons y1 -> 
+        f (fixListFold (#2.2 y1)) (#2.1 y1) in fixListFold) : NatList -> Nat) in list_fold) : (Nat -> Nat -> Nat) -> Nat -> NatList -> Nat))
+  ((let countOdd = \n1 -> \n2 -> case isOdd n2 of
+    T _ -> 
+      S n1
+
+    F _ -> 
+      n1 in countOdd) : Nat -> Nat -> Nat))
+  ((let isOdd = \n -> case n of
+    Z _ -> 
+      F
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          T
+
+        S m2 -> 
+          isOdd m2 in isOdd) : Nat -> Boolean))
+  ((let add = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (add m n2) in add) : Nat -> Nat -> Nat)
+0.667298 true true
+
+(add, 0, [2, 1]) -> 3;
+(add, 0, [3, 2, 1]) -> 6;
+(add, 1, []) -> 1;
+(countOdd, 0, []) -> 0;
+(countOdd, 0, [1]) -> 1;
+(countOdd, 0, [2, 1]) -> 1;
+(countOdd, 0, [3, 2, 1]) -> 2;
+=================================
+(\add -> (\isOdd -> (\countOdd -> (\list_fold -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_fold = \f -> \acc -> (\fixListFold -> fixListFold)
+    ((let fixListFold = \xs -> case xs of
+      Nil y1 -> 
+        acc
+
+      Cons y1 -> 
+        f (fixListFold (#2.2 y1)) (#2.1 y1) in fixListFold) : NatList -> Nat) in list_fold) : (Nat -> Nat -> Nat) -> Nat -> NatList -> Nat))
+  ((let countOdd = \n1 -> \n2 -> case isOdd n2 of
+    T _ -> 
+      S n1
+
+    F _ -> 
+      n1 in countOdd) : Nat -> Nat -> Nat))
+  ((let isOdd = \n -> case n of
+    Z _ -> 
+      F
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          T
+
+        S m2 -> 
+          isOdd m2 in isOdd) : Nat -> Boolean))
+  ((let add = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (add m n2) in add) : Nat -> Nat -> Nat)
+(\add -> (\isOdd -> (\countOdd -> (\list_fold -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_fold = \f -> \acc -> (\fixListFold -> fixListFold)
+    ((let fixListFold = \xs -> case xs of
+      Nil y1 -> 
+        acc
+
+      Cons y1 -> 
+        f (fixListFold (#2.2 y1)) (#2.1 y1) in fixListFold) : NatList -> Nat) in list_fold) : (Nat -> Nat -> Nat) -> Nat -> NatList -> Nat))
+  ((let countOdd = \n1 -> \n2 -> case isOdd n2 of
+    T _ -> 
+      S n1
+
+    F _ -> 
+      n1 in countOdd) : Nat -> Nat -> Nat))
+  ((let isOdd = \n -> case n of
+    Z _ -> 
+      F
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          T
+
+        S m2 -> 
+          isOdd m2 in isOdd) : Nat -> Boolean))
+  ((let add = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (add m n2) in add) : Nat -> Nat -> Nat)
+0.706755 true true
+
+(add, 0, []) -> 0;
+(add, 0, [1]) -> 1;
+(add, 0, [2, 1]) -> 3;
+(add, 1, []) -> 1;
+(countOdd, 0, [1]) -> 1;
+(countOdd, 0, [2, 1]) -> 1;
+(countOdd, 0, [3, 2, 1]) -> 2;
+=================================
+(\add -> (\isOdd -> (\countOdd -> (\list_fold -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_fold = \f -> \acc -> (\fixListFold -> fixListFold)
+    ((let fixListFold = \xs -> case xs of
+      Nil y1 -> 
+        acc
+
+      Cons y1 -> 
+        f (fixListFold (#2.2 y1)) (#2.1 y1) in fixListFold) : NatList -> Nat) in list_fold) : (Nat -> Nat -> Nat) -> Nat -> NatList -> Nat))
+  ((let countOdd = \n1 -> \n2 -> case isOdd n2 of
+    T _ -> 
+      S n1
+
+    F _ -> 
+      n1 in countOdd) : Nat -> Nat -> Nat))
+  ((let isOdd = \n -> case n of
+    Z _ -> 
+      F
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          T
+
+        S m2 -> 
+          isOdd m2 in isOdd) : Nat -> Boolean))
+  ((let add = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (add m n2) in add) : Nat -> Nat -> Nat)
+(\add -> (\isOdd -> (\countOdd -> (\list_fold -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_fold = \f -> \acc -> (\fixListFold -> fixListFold)
+    ((let fixListFold = \xs -> case xs of
+      Nil y1 -> 
+        acc
+
+      Cons y1 -> 
+        f (fixListFold (#2.2 y1)) (#2.1 y1) in fixListFold) : NatList -> Nat) in list_fold) : (Nat -> Nat -> Nat) -> Nat -> NatList -> Nat))
+  ((let countOdd = \n1 -> \n2 -> case isOdd n2 of
+    T _ -> 
+      S n1
+
+    F _ -> 
+      n1 in countOdd) : Nat -> Nat -> Nat))
+  ((let isOdd = \n -> case n of
+    Z _ -> 
+      F
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          T
+
+        S m2 -> 
+          isOdd m2 in isOdd) : Nat -> Boolean))
+  ((let add = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (add m n2) in add) : Nat -> Nat -> Nat)
+0.66282 true true
+
+(add, 0, [1]) -> 1;
+(add, 0, [2, 1]) -> 3;
+(add, 0, [3, 2, 1]) -> 6;
+(add, 1, []) -> 1;
+(countOdd, 0, []) -> 0;
+(countOdd, 0, [1]) -> 1;
+(countOdd, 0, [2, 1]) -> 1;
+=================================
+(\add -> (\isOdd -> (\countOdd -> (\list_fold -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_fold = \f -> \acc -> (\fixListFold -> fixListFold)
+    ((let fixListFold = \xs -> case xs of
+      Nil y1 -> 
+        acc
+
+      Cons y1 -> 
+        f (fixListFold (#2.2 y1)) (#2.1 y1) in fixListFold) : NatList -> Nat) in list_fold) : (Nat -> Nat -> Nat) -> Nat -> NatList -> Nat))
+  ((let countOdd = \n1 -> \n2 -> case isOdd n2 of
+    T _ -> 
+      S n1
+
+    F _ -> 
+      n1 in countOdd) : Nat -> Nat -> Nat))
+  ((let isOdd = \n -> case n of
+    Z _ -> 
+      F
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          T
+
+        S m2 -> 
+          isOdd m2 in isOdd) : Nat -> Boolean))
+  ((let add = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (add m n2) in add) : Nat -> Nat -> Nat)
+(\add -> (\isOdd -> (\countOdd -> (\list_fold -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_fold = \f -> \acc -> (\fixListFold -> fixListFold)
+    ((let fixListFold = \xs -> case xs of
+      Nil y1 -> 
+        acc
+
+      Cons y1 -> 
+        f (fixListFold (#2.2 y1)) (#2.1 y1) in fixListFold) : NatList -> Nat) in list_fold) : (Nat -> Nat -> Nat) -> Nat -> NatList -> Nat))
+  ((let countOdd = \n1 -> \n2 -> case isOdd n2 of
+    T _ -> 
+      S n1
+
+    F _ -> 
+      n1 in countOdd) : Nat -> Nat -> Nat))
+  ((let isOdd = \n -> case n of
+    Z _ -> 
+      F
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          T
+
+        S m2 -> 
+          isOdd m2 in isOdd) : Nat -> Boolean))
+  ((let add = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (add m n2) in add) : Nat -> Nat -> Nat)
+0.6334 true true
+
+(add, 0, [1]) -> 1;
+(add, 0, [2, 1]) -> 3;
+(add, 0, [3, 2, 1]) -> 6;
+(add, 1, []) -> 1;
+(countOdd, 0, []) -> 0;
+(countOdd, 0, [1]) -> 1;
+(countOdd, 0, [3, 2, 1]) -> 2;
+=================================
+(\add -> (\isOdd -> (\countOdd -> (\list_fold -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_fold = \f -> \acc -> (\fixListFold -> fixListFold)
+    ((let fixListFold = \xs -> case xs of
+      Nil y1 -> 
+        acc
+
+      Cons y1 -> 
+        f (fixListFold (#2.2 y1)) (#2.1 y1) in fixListFold) : NatList -> Nat) in list_fold) : (Nat -> Nat -> Nat) -> Nat -> NatList -> Nat))
+  ((let countOdd = \n1 -> \n2 -> case isOdd n2 of
+    T _ -> 
+      S n1
+
+    F _ -> 
+      n1 in countOdd) : Nat -> Nat -> Nat))
+  ((let isOdd = \n -> case n of
+    Z _ -> 
+      F
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          T
+
+        S m2 -> 
+          isOdd m2 in isOdd) : Nat -> Boolean))
+  ((let add = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (add m n2) in add) : Nat -> Nat -> Nat)
+(\add -> (\isOdd -> (\countOdd -> (\list_fold -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_fold = \f -> \acc -> (\fixListFold -> fixListFold)
+    ((let fixListFold = \xs -> case xs of
+      Nil y1 -> 
+        acc
+
+      Cons y1 -> 
+        f (fixListFold (#2.2 y1)) (#2.1 y1) in fixListFold) : NatList -> Nat) in list_fold) : (Nat -> Nat -> Nat) -> Nat -> NatList -> Nat))
+  ((let countOdd = \n1 -> \n2 -> case isOdd n2 of
+    T _ -> 
+      S n1
+
+    F _ -> 
+      n1 in countOdd) : Nat -> Nat -> Nat))
+  ((let isOdd = \n -> case n of
+    Z _ -> 
+      F
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          T
+
+        S m2 -> 
+          isOdd m2 in isOdd) : Nat -> Boolean))
+  ((let add = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (add m n2) in add) : Nat -> Nat -> Nat)
+0.706852 true true
+
+(add, 0, [1]) -> 1;
+(add, 0, [2, 1]) -> 3;
+(add, 0, [3, 2, 1]) -> 6;
+(add, 1, []) -> 1;
+(countOdd, 0, [1]) -> 1;
+(countOdd, 0, [2, 1]) -> 1;
+(countOdd, 0, [3, 2, 1]) -> 2;
+=================================
+(\add -> (\isOdd -> (\countOdd -> (\list_fold -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_fold = \f -> \acc -> (\fixListFold -> fixListFold)
+    ((let fixListFold = \xs -> case xs of
+      Nil y1 -> 
+        acc
+
+      Cons y1 -> 
+        f (fixListFold (#2.2 y1)) (#2.1 y1) in fixListFold) : NatList -> Nat) in list_fold) : (Nat -> Nat -> Nat) -> Nat -> NatList -> Nat))
+  ((let countOdd = \n1 -> \n2 -> case isOdd n2 of
+    T _ -> 
+      S n1
+
+    F _ -> 
+      n1 in countOdd) : Nat -> Nat -> Nat))
+  ((let isOdd = \n -> case n of
+    Z _ -> 
+      F
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          T
+
+        S m2 -> 
+          isOdd m2 in isOdd) : Nat -> Boolean))
+  ((let add = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (add m n2) in add) : Nat -> Nat -> Nat)
+(\add -> (\isOdd -> (\countOdd -> (\list_fold -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_fold = \f -> \acc -> (\fixListFold -> fixListFold)
+    ((let fixListFold = \xs -> case xs of
+      Nil y1 -> 
+        acc
+
+      Cons y1 -> 
+        f (fixListFold (#2.2 y1)) (#2.1 y1) in fixListFold) : NatList -> Nat) in list_fold) : (Nat -> Nat -> Nat) -> Nat -> NatList -> Nat))
+  ((let countOdd = \n1 -> \n2 -> case isOdd n2 of
+    T _ -> 
+      S n1
+
+    F _ -> 
+      n1 in countOdd) : Nat -> Nat -> Nat))
+  ((let isOdd = \n -> case n of
+    Z _ -> 
+      F
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          T
+
+        S m2 -> 
+          isOdd m2 in isOdd) : Nat -> Boolean))
+  ((let add = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (add m n2) in add) : Nat -> Nat -> Nat)
+1.724418 true true
+
+(add, 0, []) -> 0;
+(add, 0, [1]) -> 1;
+(add, 0, [2, 1]) -> 3;
+(add, 0, [3, 2, 1]) -> 6;
+(add, 1, []) -> 1;
+(countOdd, 0, []) -> 0;
+(countOdd, 0, [1]) -> 1;
+(countOdd, 0, [2, 1]) -> 1;
+=================================
+(\add -> (\isOdd -> (\countOdd -> (\list_fold -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_fold = \f -> \acc -> (\fixListFold -> fixListFold)
+    ((let fixListFold = \xs -> case xs of
+      Nil y1 -> 
+        acc
+
+      Cons y1 -> 
+        f (fixListFold (#2.2 y1)) (#2.1 y1) in fixListFold) : NatList -> Nat) in list_fold) : (Nat -> Nat -> Nat) -> Nat -> NatList -> Nat))
+  ((let countOdd = \n1 -> \n2 -> case isOdd n2 of
+    T _ -> 
+      S n1
+
+    F _ -> 
+      n1 in countOdd) : Nat -> Nat -> Nat))
+  ((let isOdd = \n -> case n of
+    Z _ -> 
+      F
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          T
+
+        S m2 -> 
+          isOdd m2 in isOdd) : Nat -> Boolean))
+  ((let add = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (add m n2) in add) : Nat -> Nat -> Nat)
+(\add -> (\isOdd -> (\countOdd -> (\list_fold -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_fold = \f -> \acc -> (\fixListFold -> fixListFold)
+    ((let fixListFold = \xs -> case xs of
+      Nil y1 -> 
+        acc
+
+      Cons y1 -> 
+        f (fixListFold (#2.2 y1)) (#2.1 y1) in fixListFold) : NatList -> Nat) in list_fold) : (Nat -> Nat -> Nat) -> Nat -> NatList -> Nat))
+  ((let countOdd = \n1 -> \n2 -> case isOdd n2 of
+    T _ -> 
+      S n1
+
+    F _ -> 
+      n1 in countOdd) : Nat -> Nat -> Nat))
+  ((let isOdd = \n -> case n of
+    Z _ -> 
+      F
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          T
+
+        S m2 -> 
+          isOdd m2 in isOdd) : Nat -> Boolean))
+  ((let add = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (add m n2) in add) : Nat -> Nat -> Nat)
+0.714689 true true
+
+(add, 0, []) -> 0;
+(add, 0, [1]) -> 1;
+(add, 0, [2, 1]) -> 3;
+(add, 0, [3, 2, 1]) -> 6;
+(add, 1, []) -> 1;
+(countOdd, 0, []) -> 0;
+(countOdd, 0, [1]) -> 1;
+(countOdd, 0, [3, 2, 1]) -> 2;
+=================================
+(\add -> (\isOdd -> (\countOdd -> (\list_fold -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_fold = \f -> \acc -> (\fixListFold -> fixListFold)
+    ((let fixListFold = \xs -> case xs of
+      Nil y1 -> 
+        acc
+
+      Cons y1 -> 
+        f (fixListFold (#2.2 y1)) (#2.1 y1) in fixListFold) : NatList -> Nat) in list_fold) : (Nat -> Nat -> Nat) -> Nat -> NatList -> Nat))
+  ((let countOdd = \n1 -> \n2 -> case isOdd n2 of
+    T _ -> 
+      S n1
+
+    F _ -> 
+      n1 in countOdd) : Nat -> Nat -> Nat))
+  ((let isOdd = \n -> case n of
+    Z _ -> 
+      F
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          T
+
+        S m2 -> 
+          isOdd m2 in isOdd) : Nat -> Boolean))
+  ((let add = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (add m n2) in add) : Nat -> Nat -> Nat)
+(\add -> (\isOdd -> (\countOdd -> (\list_fold -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_fold = \f -> \acc -> (\fixListFold -> fixListFold)
+    ((let fixListFold = \xs -> case xs of
+      Nil y1 -> 
+        acc
+
+      Cons y1 -> 
+        f (fixListFold (#2.2 y1)) (#2.1 y1) in fixListFold) : NatList -> Nat) in list_fold) : (Nat -> Nat -> Nat) -> Nat -> NatList -> Nat))
+  ((let countOdd = \n1 -> \n2 -> case isOdd n2 of
+    T _ -> 
+      S n1
+
+    F _ -> 
+      n1 in countOdd) : Nat -> Nat -> Nat))
+  ((let isOdd = \n -> case n of
+    Z _ -> 
+      F
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          T
+
+        S m2 -> 
+          isOdd m2 in isOdd) : Nat -> Boolean))
+  ((let add = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (add m n2) in add) : Nat -> Nat -> Nat)
+0.717992 true true
+
+(add, 0, []) -> 0;
+(add, 0, [1]) -> 1;
+(add, 0, [2, 1]) -> 3;
+(add, 0, [3, 2, 1]) -> 6;
+(add, 1, []) -> 1;
+(countOdd, 0, []) -> 0;
+(countOdd, 0, [2, 1]) -> 1;
+(countOdd, 0, [3, 2, 1]) -> 2;
+=================================
+(\add -> (\isOdd -> (\countOdd -> (\list_fold -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_fold = \f -> \acc -> (\fixListFold -> fixListFold)
+    ((let fixListFold = \xs -> case xs of
+      Nil y1 -> 
+        acc
+
+      Cons y1 -> 
+        f (fixListFold (#2.2 y1)) (#2.1 y1) in fixListFold) : NatList -> Nat) in list_fold) : (Nat -> Nat -> Nat) -> Nat -> NatList -> Nat))
+  ((let countOdd = \n1 -> \n2 -> case isOdd n2 of
+    T _ -> 
+      S n1
+
+    F _ -> 
+      n1 in countOdd) : Nat -> Nat -> Nat))
+  ((let isOdd = \n -> case n of
+    Z _ -> 
+      F
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          T
+
+        S m2 -> 
+          isOdd m2 in isOdd) : Nat -> Boolean))
+  ((let add = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (add m n2) in add) : Nat -> Nat -> Nat)
+(\add -> (\isOdd -> (\countOdd -> (\list_fold -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_fold = \f -> \acc -> (\fixListFold -> fixListFold)
+    ((let fixListFold = \xs -> case xs of
+      Nil y1 -> 
+        acc
+
+      Cons y1 -> 
+        f (fixListFold (#2.2 y1)) (#2.1 y1) in fixListFold) : NatList -> Nat) in list_fold) : (Nat -> Nat -> Nat) -> Nat -> NatList -> Nat))
+  ((let countOdd = \n1 -> \n2 -> case isOdd n2 of
+    T _ -> 
+      S n1
+
+    F _ -> 
+      n1 in countOdd) : Nat -> Nat -> Nat))
+  ((let isOdd = \n -> case n of
+    Z _ -> 
+      F
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          T
+
+        S m2 -> 
+          isOdd m2 in isOdd) : Nat -> Boolean))
+  ((let add = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (add m n2) in add) : Nat -> Nat -> Nat)
+0.734745 true true
+
+(add, 0, []) -> 0;
+(add, 0, [1]) -> 1;
+(add, 0, [2, 1]) -> 3;
+(add, 0, [3, 2, 1]) -> 6;
+(add, 1, []) -> 1;
+(countOdd, 0, [1]) -> 1;
+(countOdd, 0, [2, 1]) -> 1;
+(countOdd, 0, [3, 2, 1]) -> 2;
+=================================
+(\add -> (\isOdd -> (\countOdd -> (\list_fold -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_fold = \f -> \acc -> (\fixListFold -> fixListFold)
+    ((let fixListFold = \xs -> case xs of
+      Nil y1 -> 
+        acc
+
+      Cons y1 -> 
+        f (fixListFold (#2.2 y1)) (#2.1 y1) in fixListFold) : NatList -> Nat) in list_fold) : (Nat -> Nat -> Nat) -> Nat -> NatList -> Nat))
+  ((let countOdd = \n1 -> \n2 -> case isOdd n2 of
+    T _ -> 
+      S n1
+
+    F _ -> 
+      n1 in countOdd) : Nat -> Nat -> Nat))
+  ((let isOdd = \n -> case n of
+    Z _ -> 
+      F
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          T
+
+        S m2 -> 
+          isOdd m2 in isOdd) : Nat -> Boolean))
+  ((let add = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (add m n2) in add) : Nat -> Nat -> Nat)
+(\add -> (\isOdd -> (\countOdd -> (\list_fold -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_fold = \f -> \acc -> (\fixListFold -> fixListFold)
+    ((let fixListFold = \xs -> case xs of
+      Nil y1 -> 
+        acc
+
+      Cons y1 -> 
+        f (fixListFold (#2.2 y1)) (#2.1 y1) in fixListFold) : NatList -> Nat) in list_fold) : (Nat -> Nat -> Nat) -> Nat -> NatList -> Nat))
+  ((let countOdd = \n1 -> \n2 -> case isOdd n2 of
+    T _ -> 
+      S n1
+
+    F _ -> 
+      n1 in countOdd) : Nat -> Nat -> Nat))
+  ((let isOdd = \n -> case n of
+    Z _ -> 
+      F
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          T
+
+        S m2 -> 
+          isOdd m2 in isOdd) : Nat -> Boolean))
+  ((let add = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (add m n2) in add) : Nat -> Nat -> Nat)
+0.792996 true true
+
+(add, 0, []) -> 0;
+(add, 0, [1]) -> 1;
+(add, 0, [2, 1]) -> 3;
+(add, 0, [3, 2, 1]) -> 6;
+(countOdd, 0, []) -> 0;
+(countOdd, 0, [1]) -> 1;
+(countOdd, 0, [2, 1]) -> 1;
+(countOdd, 0, [3, 2, 1]) -> 2;
+=================================
+(\add -> (\isOdd -> (\countOdd -> (\list_fold -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_fold = \f -> \acc -> (\fixListFold -> fixListFold)
+    ((let fixListFold = \xs -> case xs of
+      Nil y1 -> 
+        acc
+
+      Cons y1 -> 
+        f (fixListFold (#2.2 y1)) (#2.1 y1) in fixListFold) : NatList -> Nat) in list_fold) : (Nat -> Nat -> Nat) -> Nat -> NatList -> Nat))
+  ((let countOdd = \n1 -> \n2 -> case isOdd n2 of
+    T _ -> 
+      S n1
+
+    F _ -> 
+      n1 in countOdd) : Nat -> Nat -> Nat))
+  ((let isOdd = \n -> case n of
+    Z _ -> 
+      F
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          T
+
+        S m2 -> 
+          isOdd m2 in isOdd) : Nat -> Boolean))
+  ((let add = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (add m n2) in add) : Nat -> Nat -> Nat)
+(\add -> (\isOdd -> (\countOdd -> (\list_fold -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_fold = \f -> \acc -> (\fixListFold -> fixListFold)
+    ((let fixListFold = \xs -> case xs of
+      Nil y1 -> 
+        acc
+
+      Cons y1 -> 
+        f (fixListFold (#2.2 y1)) (#2.1 y1) in fixListFold) : NatList -> Nat) in list_fold) : (Nat -> Nat -> Nat) -> Nat -> NatList -> Nat))
+  ((let countOdd = \n1 -> \n2 -> case isOdd n2 of
+    T _ -> 
+      S n1
+
+    F _ -> 
+      n1 in countOdd) : Nat -> Nat -> Nat))
+  ((let isOdd = \n -> case n of
+    Z _ -> 
+      F
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          T
+
+        S m2 -> 
+          isOdd m2 in isOdd) : Nat -> Boolean))
+  ((let add = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (add m n2) in add) : Nat -> Nat -> Nat)
+0.840533 true true
+
+(add, 0, []) -> 0;
+(add, 0, [1]) -> 1;
+(add, 0, [2, 1]) -> 3;
+(add, 1, []) -> 1;
+(countOdd, 0, []) -> 0;
+(countOdd, 0, [1]) -> 1;
+(countOdd, 0, [2, 1]) -> 1;
+(countOdd, 0, [3, 2, 1]) -> 2;
+=================================
+(\add -> (\isOdd -> (\countOdd -> (\list_fold -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_fold = \f -> \acc -> (\fixListFold -> fixListFold)
+    ((let fixListFold = \xs -> case xs of
+      Nil y1 -> 
+        acc
+
+      Cons y1 -> 
+        f (fixListFold (#2.2 y1)) (#2.1 y1) in fixListFold) : NatList -> Nat) in list_fold) : (Nat -> Nat -> Nat) -> Nat -> NatList -> Nat))
+  ((let countOdd = \n1 -> \n2 -> case isOdd n2 of
+    T _ -> 
+      S n1
+
+    F _ -> 
+      n1 in countOdd) : Nat -> Nat -> Nat))
+  ((let isOdd = \n -> case n of
+    Z _ -> 
+      F
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          T
+
+        S m2 -> 
+          isOdd m2 in isOdd) : Nat -> Boolean))
+  ((let add = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (add m n2) in add) : Nat -> Nat -> Nat)
+(\add -> (\isOdd -> (\countOdd -> (\list_fold -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_fold = \f -> \acc -> (\fixListFold -> fixListFold)
+    ((let fixListFold = \xs -> case xs of
+      Nil y1 -> 
+        acc
+
+      Cons y1 -> 
+        f (fixListFold (#2.2 y1)) (#2.1 y1) in fixListFold) : NatList -> Nat) in list_fold) : (Nat -> Nat -> Nat) -> Nat -> NatList -> Nat))
+  ((let countOdd = \n1 -> \n2 -> case isOdd n2 of
+    T _ -> 
+      S n1
+
+    F _ -> 
+      n1 in countOdd) : Nat -> Nat -> Nat))
+  ((let isOdd = \n -> case n of
+    Z _ -> 
+      F
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          T
+
+        S m2 -> 
+          isOdd m2 in isOdd) : Nat -> Boolean))
+  ((let add = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (add m n2) in add) : Nat -> Nat -> Nat)
+0.699411 true true
+
+(add, 0, []) -> 0;
+(add, 0, [1]) -> 1;
+(add, 0, [3, 2, 1]) -> 6;
+(add, 1, []) -> 1;
+(countOdd, 0, []) -> 0;
+(countOdd, 0, [1]) -> 1;
+(countOdd, 0, [2, 1]) -> 1;
+(countOdd, 0, [3, 2, 1]) -> 2;
+=================================
+(\add -> (\isOdd -> (\countOdd -> (\list_fold -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_fold = \f -> \acc -> (\fixListFold -> fixListFold)
+    ((let fixListFold = \xs -> case xs of
+      Nil y1 -> 
+        acc
+
+      Cons y1 -> 
+        f (fixListFold (#2.2 y1)) (#2.1 y1) in fixListFold) : NatList -> Nat) in list_fold) : (Nat -> Nat -> Nat) -> Nat -> NatList -> Nat))
+  ((let countOdd = \n1 -> \n2 -> case isOdd n2 of
+    T _ -> 
+      S n1
+
+    F _ -> 
+      n1 in countOdd) : Nat -> Nat -> Nat))
+  ((let isOdd = \n -> case n of
+    Z _ -> 
+      F
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          T
+
+        S m2 -> 
+          isOdd m2 in isOdd) : Nat -> Boolean))
+  ((let add = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (add m n2) in add) : Nat -> Nat -> Nat)
+(\add -> (\isOdd -> (\countOdd -> (\list_fold -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_fold = \f -> \acc -> (\fixListFold -> fixListFold)
+    ((let fixListFold = \xs -> case xs of
+      Nil y1 -> 
+        acc
+
+      Cons y1 -> 
+        f (fixListFold (#2.2 y1)) (#2.1 y1) in fixListFold) : NatList -> Nat) in list_fold) : (Nat -> Nat -> Nat) -> Nat -> NatList -> Nat))
+  ((let countOdd = \n1 -> \n2 -> case isOdd n2 of
+    T _ -> 
+      S n1
+
+    F _ -> 
+      n1 in countOdd) : Nat -> Nat -> Nat))
+  ((let isOdd = \n -> case n of
+    Z _ -> 
+      F
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          T
+
+        S m2 -> 
+          isOdd m2 in isOdd) : Nat -> Boolean))
+  ((let add = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (add m n2) in add) : Nat -> Nat -> Nat)
+0.733725 true true
+
+(add, 0, []) -> 0;
+(add, 0, [2, 1]) -> 3;
+(add, 0, [3, 2, 1]) -> 6;
+(add, 1, []) -> 1;
+(countOdd, 0, []) -> 0;
+(countOdd, 0, [1]) -> 1;
+(countOdd, 0, [2, 1]) -> 1;
+(countOdd, 0, [3, 2, 1]) -> 2;
+=================================
+(\add -> (\isOdd -> (\countOdd -> (\list_fold -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_fold = \f -> \acc -> (\fixListFold -> fixListFold)
+    ((let fixListFold = \xs -> case xs of
+      Nil y1 -> 
+        acc
+
+      Cons y1 -> 
+        f (fixListFold (#2.2 y1)) (#2.1 y1) in fixListFold) : NatList -> Nat) in list_fold) : (Nat -> Nat -> Nat) -> Nat -> NatList -> Nat))
+  ((let countOdd = \n1 -> \n2 -> case isOdd n2 of
+    T _ -> 
+      S n1
+
+    F _ -> 
+      n1 in countOdd) : Nat -> Nat -> Nat))
+  ((let isOdd = \n -> case n of
+    Z _ -> 
+      F
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          T
+
+        S m2 -> 
+          isOdd m2 in isOdd) : Nat -> Boolean))
+  ((let add = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (add m n2) in add) : Nat -> Nat -> Nat)
+(\add -> (\isOdd -> (\countOdd -> (\list_fold -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_fold = \f -> \acc -> (\fixListFold -> fixListFold)
+    ((let fixListFold = \xs -> case xs of
+      Nil y1 -> 
+        acc
+
+      Cons y1 -> 
+        f (fixListFold (#2.2 y1)) (#2.1 y1) in fixListFold) : NatList -> Nat) in list_fold) : (Nat -> Nat -> Nat) -> Nat -> NatList -> Nat))
+  ((let countOdd = \n1 -> \n2 -> case isOdd n2 of
+    T _ -> 
+      S n1
+
+    F _ -> 
+      n1 in countOdd) : Nat -> Nat -> Nat))
+  ((let isOdd = \n -> case n of
+    Z _ -> 
+      F
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          T
+
+        S m2 -> 
+          isOdd m2 in isOdd) : Nat -> Boolean))
+  ((let add = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (add m n2) in add) : Nat -> Nat -> Nat)
+0.725419 true true
+
+(add, 0, [1]) -> 1;
+(add, 0, [2, 1]) -> 3;
+(add, 0, [3, 2, 1]) -> 6;
+(add, 1, []) -> 1;
+(countOdd, 0, []) -> 0;
+(countOdd, 0, [1]) -> 1;
+(countOdd, 0, [2, 1]) -> 1;
+(countOdd, 0, [3, 2, 1]) -> 2;
+=================================
+(\add -> (\isOdd -> (\countOdd -> (\list_fold -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_fold = \f -> \acc -> (\fixListFold -> fixListFold)
+    ((let fixListFold = \xs -> case xs of
+      Nil y1 -> 
+        acc
+
+      Cons y1 -> 
+        f (fixListFold (#2.2 y1)) (#2.1 y1) in fixListFold) : NatList -> Nat) in list_fold) : (Nat -> Nat -> Nat) -> Nat -> NatList -> Nat))
+  ((let countOdd = \n1 -> \n2 -> case isOdd n2 of
+    T _ -> 
+      S n1
+
+    F _ -> 
+      n1 in countOdd) : Nat -> Nat -> Nat))
+  ((let isOdd = \n -> case n of
+    Z _ -> 
+      F
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          T
+
+        S m2 -> 
+          isOdd m2 in isOdd) : Nat -> Boolean))
+  ((let add = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (add m n2) in add) : Nat -> Nat -> Nat)
+(\add -> (\isOdd -> (\countOdd -> (\list_fold -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_fold = \f -> \acc -> (\fixListFold -> fixListFold)
+    ((let fixListFold = \xs -> case xs of
+      Nil y1 -> 
+        acc
+
+      Cons y1 -> 
+        f (fixListFold (#2.2 y1)) (#2.1 y1) in fixListFold) : NatList -> Nat) in list_fold) : (Nat -> Nat -> Nat) -> Nat -> NatList -> Nat))
+  ((let countOdd = \n1 -> \n2 -> case isOdd n2 of
+    T _ -> 
+      S n1
+
+    F _ -> 
+      n1 in countOdd) : Nat -> Nat -> Nat))
+  ((let isOdd = \n -> case n of
+    Z _ -> 
+      F
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          T
+
+        S m2 -> 
+          isOdd m2 in isOdd) : Nat -> Boolean))
+  ((let add = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (add m n2) in add) : Nat -> Nat -> Nat)
+0.732499 true true
+
+(add, 0, []) -> 0;
+(add, 0, [1]) -> 1;
+(add, 0, [2, 1]) -> 3;
+(add, 0, [3, 2, 1]) -> 6;
+(add, 1, []) -> 1;
+(countOdd, 0, []) -> 0;
+(countOdd, 0, [1]) -> 1;
+(countOdd, 0, [2, 1]) -> 1;
+(countOdd, 0, [3, 2, 1]) -> 2;
+=================================
+(\add -> (\isOdd -> (\countOdd -> (\list_fold -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_fold = \f -> \acc -> (\fixListFold -> fixListFold)
+    ((let fixListFold = \xs -> case xs of
+      Nil y1 -> 
+        acc
+
+      Cons y1 -> 
+        f (fixListFold (#2.2 y1)) (#2.1 y1) in fixListFold) : NatList -> Nat) in list_fold) : (Nat -> Nat -> Nat) -> Nat -> NatList -> Nat))
+  ((let countOdd = \n1 -> \n2 -> case isOdd n2 of
+    T _ -> 
+      S n1
+
+    F _ -> 
+      n1 in countOdd) : Nat -> Nat -> Nat))
+  ((let isOdd = \n -> case n of
+    Z _ -> 
+      F
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          T
+
+        S m2 -> 
+          isOdd m2 in isOdd) : Nat -> Boolean))
+  ((let add = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (add m n2) in add) : Nat -> Nat -> Nat)
+(\add -> (\isOdd -> (\countOdd -> (\list_fold -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_fold = \f -> \acc -> (\fixListFold -> fixListFold)
+    ((let fixListFold = \xs -> case xs of
+      Nil y1 -> 
+        acc
+
+      Cons y1 -> 
+        f (fixListFold (#2.2 y1)) (#2.1 y1) in fixListFold) : NatList -> Nat) in list_fold) : (Nat -> Nat -> Nat) -> Nat -> NatList -> Nat))
+  ((let countOdd = \n1 -> \n2 -> case isOdd n2 of
+    T _ -> 
+      S n1
+
+    F _ -> 
+      n1 in countOdd) : Nat -> Nat -> Nat))
+  ((let isOdd = \n -> case n of
+    Z _ -> 
+      F
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          T
+
+        S m2 -> 
+          isOdd m2 in isOdd) : Nat -> Boolean))
+  ((let add = \n1 -> \n2 -> case n1 of
+    Z _ -> 
+      n2
+
+    S m -> 
+      S (add m n2) in add) : Nat -> Nat -> Nat)
+0.780952 true true
+

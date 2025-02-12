@@ -70,5 +70,16 @@ Iter: 0
 ```
 At 1-5 lines show solution, and other lines shows solution size and num of iter times by -print-data option.
 
+## SyRup - Build and Run
+```
+$ opam install --yes dune qcheck z3 ppx_inline_test core core_unix iter bark menhir.20211128 ppx_deriving smart-print async_unix js_of_ocaml-ppx
+```
+```
+$ cd syrup
+$ dune build
+```
+$ syrup/syrup syrup bool_band "(T (), T ()) -> T (); (T (), F ()) -> F (); (F (), T ()) -> F ();"
+```
+
 ## Acknowledgement 
 This artifact is based on the artifact for [Burst](https://github.com/amiltner/BurstArtifactEvaluation)

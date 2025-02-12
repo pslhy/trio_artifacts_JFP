@@ -1,0 +1,59 @@
+(T (), F ()) -> F ();
+(T (), T ()) -> T ();
+=================================
+(\bool_impl -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ((let bool_impl = \p -> \q -> q in bool_impl) : Boolean -> Boolean -> Boolean)
+0.00422099999992 false false
+
+(F (), T ()) -> T ();
+(T (), T ()) -> T ();
+=================================
+(\bool_impl -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ((let bool_impl = \p -> \q -> T in bool_impl) : Boolean -> Boolean -> Boolean)
+0.00410499999998 false false
+
+(F (), F ()) -> T ();
+(T (), T ()) -> T ();
+=================================
+(\bool_impl -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ((let bool_impl = \p -> \q -> T in bool_impl) : Boolean -> Boolean -> Boolean)
+0.00686199999996 false false
+
+(T (), F ()) -> F ();
+(F (), T ()) -> T ();
+(T (), T ()) -> T ();
+=================================
+(\bool_impl -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ((let bool_impl = \p -> \q -> q in bool_impl) : Boolean -> Boolean -> Boolean)
+0.004774 false false
+
+(T (), F ()) -> F ();
+(F (), F ()) -> T ();
+(T (), T ()) -> T ();
+=================================
+(\bool_impl -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let bool_impl = \p -> \q -> case p of
+    T y1 -> 
+      q
+
+    F y1 -> 
+      T in bool_impl) : Boolean -> Boolean -> Boolean)
+0.00503299999991 true false
+
+(F (), T ()) -> T ();
+(F (), F ()) -> T ();
+(T (), T ()) -> T ();
+=================================
+(\bool_impl -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ((let bool_impl = \p -> \q -> T in bool_impl) : Boolean -> Boolean -> Boolean)
+0.00434799999994 false false
+
+(T (), F ()) -> F ();
+(F (), T ()) -> T ();
+(F (), F ()) -> T ();
+(T (), T ()) -> T ();
+=================================
+(\bool_impl -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let bool_impl = \p -> \q -> case p of
+    T y1 -> 
+      q
+
+    F y1 -> 
+      T in bool_impl) : Boolean -> Boolean -> Boolean)
+0.0058489999999 true false
+

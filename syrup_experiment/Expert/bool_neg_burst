@@ -1,0 +1,21 @@
+T () -> F ();
+=================================
+fix (f : bool -> bool) = fun (x:bool) -> F
+
+0.0001 false
+
+F () -> T ();
+=================================
+fix (f : bool -> bool) = fun (x:bool) -> T
+
+0.0003 false
+
+T () -> F ();
+F () -> T ();
+=================================
+fix (f : bool -> bool) = fun (x:bool) -> match x with
+                                           | F _ -> T
+                                           | T _ -> F
+
+0.0007 true
+

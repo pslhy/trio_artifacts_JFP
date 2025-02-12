@@ -1,0 +1,1878 @@
+(div2, Node (Leaf (), 0, Leaf ())) -> Node (Leaf (), 0, Leaf ());
+(div2, Leaf ()) -> Leaf ();
+=================================
+(\div2 -> (\inc -> (\tree_map -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ((let tree_map = \f -> (\fixTreeMap -> fixTreeMap) ((let fixTreeMap = \tree -> tree in fixTreeMap) : NatTree -> NatTree) in tree_map) : (Nat -> Nat) -> NatTree -> NatTree)) ((let inc = \n -> S n in inc) : Nat -> Nat))
+  ((let div2 = \n -> case n of
+    Z _ -> 
+      0
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          0
+
+        S m2 -> 
+          S (div2 m2) in div2) : Nat -> Nat)
+0.161854 false false
+
+(div2, Node (Leaf (), 2, Leaf ())) -> Node (Leaf (), 1, Leaf ());
+(div2, Leaf ()) -> Leaf ();
+=================================
+(\div2 -> (\inc -> (\tree_map -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_map = \f -> (\fixTreeMap -> fixTreeMap)
+    ((let fixTreeMap = \tree -> case tree of
+      Node y1 -> 
+        Node (Leaf, 1, Leaf)
+
+      Leaf y1 -> 
+        Leaf in fixTreeMap) : NatTree -> NatTree) in tree_map) : (Nat -> Nat) -> NatTree -> NatTree)) ((let inc = \n -> S n in inc) : Nat -> Nat))
+  ((let div2 = \n -> case n of
+    Z _ -> 
+      0
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          0
+
+        S m2 -> 
+          S (div2 m2) in div2) : Nat -> Nat)
+0.22795 false false
+
+(div2, Node (Node (Leaf (), 2, Leaf ()), 2, Leaf ())) -> Node (Node (Leaf (), 1, Leaf ()), 1, Leaf ());
+(div2, Leaf ()) -> Leaf ();
+=================================
+(\div2 -> (\inc -> (\tree_map -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_map = \f -> (\fixTreeMap -> fixTreeMap)
+    ((let fixTreeMap = \tree -> case tree of
+      Node y1 -> 
+        Node (Node (Leaf, 1, Leaf), 1, Leaf)
+
+      Leaf y1 -> 
+        Leaf in fixTreeMap) : NatTree -> NatTree) in tree_map) : (Nat -> Nat) -> NatTree -> NatTree)) ((let inc = \n -> S n in inc) : Nat -> Nat))
+  ((let div2 = \n -> case n of
+    Z _ -> 
+      0
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          0
+
+        S m2 -> 
+          S (div2 m2) in div2) : Nat -> Nat)
+0.200815 false false
+
+(div2, Node (Leaf (), 1, Node (Leaf (), 2, Leaf ()))) -> Node (Leaf (), 0, Node (Leaf (), 1, Leaf ()));
+(div2, Leaf ()) -> Leaf ();
+=================================
+(\div2 -> (\inc -> (\tree_map -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_map = \f -> (\fixTreeMap -> fixTreeMap)
+    ((let fixTreeMap = \tree -> case tree of
+      Node y1 -> 
+        Node (Leaf, 0, Node (Leaf, 1, Leaf))
+
+      Leaf y1 -> 
+        Leaf in fixTreeMap) : NatTree -> NatTree) in tree_map) : (Nat -> Nat) -> NatTree -> NatTree)) ((let inc = \n -> S n in inc) : Nat -> Nat))
+  ((let div2 = \n -> case n of
+    Z _ -> 
+      0
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          0
+
+        S m2 -> 
+          S (div2 m2) in div2) : Nat -> Nat)
+0.208651 false false
+
+(inc, Leaf ()) -> Leaf ();
+(div2, Leaf ()) -> Leaf ();
+=================================
+(\div2 -> (\inc -> (\tree_map -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ((let tree_map = \f -> (\fixTreeMap -> fixTreeMap) ((let fixTreeMap = \tree -> Leaf in fixTreeMap) : NatTree -> NatTree) in tree_map) : (Nat -> Nat) -> NatTree -> NatTree)) ((let inc = \n -> S n in inc) : Nat -> Nat))
+  ((let div2 = \n -> case n of
+    Z _ -> 
+      0
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          0
+
+        S m2 -> 
+          S (div2 m2) in div2) : Nat -> Nat)
+0.172886 false false
+
+(inc, Node (Leaf (), 0, Leaf ())) -> Node (Leaf (), 1, Leaf ());
+(div2, Leaf ()) -> Leaf ();
+=================================
+(\div2 -> (\inc -> (\tree_map -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_map = \f -> (\fixTreeMap -> fixTreeMap)
+    ((let fixTreeMap = \tree -> case tree of
+      Node y1 -> 
+        Node (Leaf, 1, Leaf)
+
+      Leaf y1 -> 
+        Leaf in fixTreeMap) : NatTree -> NatTree) in tree_map) : (Nat -> Nat) -> NatTree -> NatTree)) ((let inc = \n -> S n in inc) : Nat -> Nat))
+  ((let div2 = \n -> case n of
+    Z _ -> 
+      0
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          0
+
+        S m2 -> 
+          S (div2 m2) in div2) : Nat -> Nat)
+0.287814 false false
+
+(div2, Node (Node (Leaf (), 2, Leaf ()), 2, Leaf ())) -> Node (Node (Leaf (), 1, Leaf ()), 1, Leaf ());
+(inc, Leaf ()) -> Leaf ();
+(div2, Leaf ()) -> Leaf ();
+=================================
+(\div2 -> (\inc -> (\tree_map -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_map = \f -> (\fixTreeMap -> fixTreeMap)
+    ((let fixTreeMap = \tree -> case tree of
+      Node y1 -> 
+        Node (Node (Leaf, 1, Leaf), 1, Leaf)
+
+      Leaf y1 -> 
+        Leaf in fixTreeMap) : NatTree -> NatTree) in tree_map) : (Nat -> Nat) -> NatTree -> NatTree)) ((let inc = \n -> S n in inc) : Nat -> Nat))
+  ((let div2 = \n -> case n of
+    Z _ -> 
+      0
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          0
+
+        S m2 -> 
+          S (div2 m2) in div2) : Nat -> Nat)
+0.170068 false false
+
+(div2, Node (Leaf (), 0, Leaf ())) -> Node (Leaf (), 0, Leaf ());
+(div2, Node (Node (Leaf (), 2, Leaf ()), 2, Leaf ())) -> Node (Node (Leaf (), 1, Leaf ()), 1, Leaf ());
+(div2, Leaf ()) -> Leaf ();
+=================================
+(\div2 -> (\inc -> (\tree_map -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_map = \f -> (\fixTreeMap -> fixTreeMap)
+    ((let fixTreeMap = \tree -> case tree of
+      Node y1 -> 
+        Node
+          ( fixTreeMap (#3.1 y1)
+          , div2 (#3.2 y1)
+          , Leaf
+          )
+
+      Leaf y1 -> 
+        Leaf in fixTreeMap) : NatTree -> NatTree) in tree_map) : (Nat -> Nat) -> NatTree -> NatTree)) ((let inc = \n -> S n in inc) : Nat -> Nat))
+  ((let div2 = \n -> case n of
+    Z _ -> 
+      0
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          0
+
+        S m2 -> 
+          S (div2 m2) in div2) : Nat -> Nat)
+(\div2 -> (\inc -> (\tree_map -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_map = \f -> (\fixTreeMap -> fixTreeMap)
+    ((let fixTreeMap = \tree -> case tree of
+      Node y1 -> 
+        Node
+          ( fixTreeMap (#3.1 y1)
+          , div2 (#3.2 y1)
+          , Leaf
+          )
+
+      Leaf y1 -> 
+        Leaf in fixTreeMap) : NatTree -> NatTree) in tree_map) : (Nat -> Nat) -> NatTree -> NatTree)) ((let inc = \n -> S n in inc) : Nat -> Nat))
+  ((let div2 = \n -> case n of
+    Z _ -> 
+      0
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          0
+
+        S m2 -> 
+          S (div2 m2) in div2) : Nat -> Nat)
+0.107066 false false
+
+(div2, Node (Leaf (), 0, Leaf ())) -> Node (Leaf (), 0, Leaf ());
+(div2, Node (Leaf (), 1, Node (Leaf (), 2, Leaf ()))) -> Node (Leaf (), 0, Node (Leaf (), 1, Leaf ()));
+(div2, Leaf ()) -> Leaf ();
+=================================
+(\div2 -> (\inc -> (\tree_map -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_map = \f -> (\fixTreeMap -> fixTreeMap)
+    ((let fixTreeMap = \tree -> case tree of
+      Node y1 -> 
+        Node
+          ( Leaf
+          , div2 (#3.2 y1)
+          , fixTreeMap (#3.3 y1)
+          )
+
+      Leaf y1 -> 
+        Leaf in fixTreeMap) : NatTree -> NatTree) in tree_map) : (Nat -> Nat) -> NatTree -> NatTree)) ((let inc = \n -> S n in inc) : Nat -> Nat))
+  ((let div2 = \n -> case n of
+    Z _ -> 
+      0
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          0
+
+        S m2 -> 
+          S (div2 m2) in div2) : Nat -> Nat)
+(\div2 -> (\inc -> (\tree_map -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_map = \f -> (\fixTreeMap -> fixTreeMap)
+    ((let fixTreeMap = \tree -> case tree of
+      Node y1 -> 
+        Node
+          ( Leaf
+          , div2 (#3.2 y1)
+          , fixTreeMap (#3.3 y1)
+          )
+
+      Leaf y1 -> 
+        Leaf in fixTreeMap) : NatTree -> NatTree) in tree_map) : (Nat -> Nat) -> NatTree -> NatTree)) ((let inc = \n -> S n in inc) : Nat -> Nat))
+  ((let div2 = \n -> case n of
+    Z _ -> 
+      0
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          0
+
+        S m2 -> 
+          S (div2 m2) in div2) : Nat -> Nat)
+0.121822 false false
+
+(div2, Node (Leaf (), 0, Leaf ())) -> Node (Leaf (), 0, Leaf ());
+(inc, Leaf ()) -> Leaf ();
+(div2, Leaf ()) -> Leaf ();
+=================================
+(\div2 -> (\inc -> (\tree_map -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ((let tree_map = \f -> (\fixTreeMap -> fixTreeMap) ((let fixTreeMap = \tree -> tree in fixTreeMap) : NatTree -> NatTree) in tree_map) : (Nat -> Nat) -> NatTree -> NatTree)) ((let inc = \n -> S n in inc) : Nat -> Nat))
+  ((let div2 = \n -> case n of
+    Z _ -> 
+      0
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          0
+
+        S m2 -> 
+          S (div2 m2) in div2) : Nat -> Nat)
+0.0636280000001 false false
+
+(div2, Node (Node (Leaf (), 2, Leaf ()), 2, Leaf ())) -> Node (Node (Leaf (), 1, Leaf ()), 1, Leaf ());
+(inc, Node (Leaf (), 0, Leaf ())) -> Node (Leaf (), 1, Leaf ());
+(div2, Leaf ()) -> Leaf ();
+=================================
+(\div2 -> (\inc -> (\tree_map -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_map = \f -> (\fixTreeMap -> fixTreeMap)
+    ((let fixTreeMap = \tree -> case tree of
+      Node y1 -> 
+        Node (fixTreeMap (#3.1 y1), 1, Leaf)
+
+      Leaf y1 -> 
+        Leaf in fixTreeMap) : NatTree -> NatTree) in tree_map) : (Nat -> Nat) -> NatTree -> NatTree)) ((let inc = \n -> S n in inc) : Nat -> Nat))
+  ((let div2 = \n -> case n of
+    Z _ -> 
+      0
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          0
+
+        S m2 -> 
+          S (div2 m2) in div2) : Nat -> Nat)
+(\div2 -> (\inc -> (\tree_map -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_map = \f -> (\fixTreeMap -> fixTreeMap)
+    ((let fixTreeMap = \tree -> case tree of
+      Node y1 -> 
+        Node (fixTreeMap (#3.1 y1), 1, Leaf)
+
+      Leaf y1 -> 
+        Leaf in fixTreeMap) : NatTree -> NatTree) in tree_map) : (Nat -> Nat) -> NatTree -> NatTree)) ((let inc = \n -> S n in inc) : Nat -> Nat))
+  ((let div2 = \n -> case n of
+    Z _ -> 
+      0
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          0
+
+        S m2 -> 
+          S (div2 m2) in div2) : Nat -> Nat)
+0.096544 false false
+
+(div2, Node (Leaf (), 1, Node (Leaf (), 2, Leaf ()))) -> Node (Leaf (), 0, Node (Leaf (), 1, Leaf ()));
+(inc, Leaf ()) -> Leaf ();
+(div2, Leaf ()) -> Leaf ();
+=================================
+(\div2 -> (\inc -> (\tree_map -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_map = \f -> (\fixTreeMap -> fixTreeMap)
+    ((let fixTreeMap = \tree -> case tree of
+      Node y1 -> 
+        Node (Leaf, 0, Node (Leaf, 1, Leaf))
+
+      Leaf y1 -> 
+        Leaf in fixTreeMap) : NatTree -> NatTree) in tree_map) : (Nat -> Nat) -> NatTree -> NatTree)) ((let inc = \n -> S n in inc) : Nat -> Nat))
+  ((let div2 = \n -> case n of
+    Z _ -> 
+      0
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          0
+
+        S m2 -> 
+          S (div2 m2) in div2) : Nat -> Nat)
+0.0902960000001 false false
+
+(div2, Node (Leaf (), 1, Node (Leaf (), 2, Leaf ()))) -> Node (Leaf (), 0, Node (Leaf (), 1, Leaf ()));
+(inc, Node (Leaf (), 0, Leaf ())) -> Node (Leaf (), 1, Leaf ());
+(div2, Leaf ()) -> Leaf ();
+=================================
+(\div2 -> (\inc -> (\tree_map -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_map = \f -> (\fixTreeMap -> fixTreeMap)
+    ((let fixTreeMap = \tree -> case tree of
+      Node y1 -> 
+        Node
+          ( Leaf
+          , f (#3.2 y1)
+          , fixTreeMap (#3.3 y1)
+          )
+
+      Leaf y1 -> 
+        Leaf in fixTreeMap) : NatTree -> NatTree) in tree_map) : (Nat -> Nat) -> NatTree -> NatTree)) ((let inc = \n -> S n in inc) : Nat -> Nat))
+  ((let div2 = \n -> case n of
+    Z _ -> 
+      0
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          0
+
+        S m2 -> 
+          S (div2 m2) in div2) : Nat -> Nat)
+(\div2 -> (\inc -> (\tree_map -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_map = \f -> (\fixTreeMap -> fixTreeMap)
+    ((let fixTreeMap = \tree -> case tree of
+      Node y1 -> 
+        Node
+          ( Leaf
+          , f (#3.2 y1)
+          , fixTreeMap (#3.3 y1)
+          )
+
+      Leaf y1 -> 
+        Leaf in fixTreeMap) : NatTree -> NatTree) in tree_map) : (Nat -> Nat) -> NatTree -> NatTree)) ((let inc = \n -> S n in inc) : Nat -> Nat))
+  ((let div2 = \n -> case n of
+    Z _ -> 
+      0
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          0
+
+        S m2 -> 
+          S (div2 m2) in div2) : Nat -> Nat)
+0.136373 false false
+
+(div2, Node (Leaf (), 2, Leaf ())) -> Node (Leaf (), 1, Leaf ());
+(inc, Leaf ()) -> Leaf ();
+(div2, Leaf ()) -> Leaf ();
+=================================
+(\div2 -> (\inc -> (\tree_map -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_map = \f -> (\fixTreeMap -> fixTreeMap)
+    ((let fixTreeMap = \tree -> case tree of
+      Node y1 -> 
+        Node (Leaf, 1, Leaf)
+
+      Leaf y1 -> 
+        Leaf in fixTreeMap) : NatTree -> NatTree) in tree_map) : (Nat -> Nat) -> NatTree -> NatTree)) ((let inc = \n -> S n in inc) : Nat -> Nat))
+  ((let div2 = \n -> case n of
+    Z _ -> 
+      0
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          0
+
+        S m2 -> 
+          S (div2 m2) in div2) : Nat -> Nat)
+0.11362 false false
+
+(div2, Node (Leaf (), 2, Leaf ())) -> Node (Leaf (), 1, Leaf ());
+(inc, Node (Leaf (), 0, Leaf ())) -> Node (Leaf (), 1, Leaf ());
+(div2, Leaf ()) -> Leaf ();
+=================================
+(\div2 -> (\inc -> (\tree_map -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_map = \f -> (\fixTreeMap -> fixTreeMap)
+    ((let fixTreeMap = \tree -> case tree of
+      Node y1 -> 
+        Node (Leaf, 1, Leaf)
+
+      Leaf y1 -> 
+        Leaf in fixTreeMap) : NatTree -> NatTree) in tree_map) : (Nat -> Nat) -> NatTree -> NatTree)) ((let inc = \n -> S n in inc) : Nat -> Nat))
+  ((let div2 = \n -> case n of
+    Z _ -> 
+      0
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          0
+
+        S m2 -> 
+          S (div2 m2) in div2) : Nat -> Nat)
+0.0779749999999 false false
+
+(inc, Leaf ()) -> Leaf ();
+(inc, Node (Leaf (), 0, Leaf ())) -> Node (Leaf (), 1, Leaf ());
+(div2, Leaf ()) -> Leaf ();
+=================================
+(\div2 -> (\inc -> (\tree_map -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_map = \f -> (\fixTreeMap -> fixTreeMap)
+    ((let fixTreeMap = \tree -> case tree of
+      Node y1 -> 
+        Node (Leaf, 1, Leaf)
+
+      Leaf y1 -> 
+        Leaf in fixTreeMap) : NatTree -> NatTree) in tree_map) : (Nat -> Nat) -> NatTree -> NatTree)) ((let inc = \n -> S n in inc) : Nat -> Nat))
+  ((let div2 = \n -> case n of
+    Z _ -> 
+      0
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          0
+
+        S m2 -> 
+          S (div2 m2) in div2) : Nat -> Nat)
+0.101731 false false
+
+(div2, Node (Leaf (), 0, Leaf ())) -> Node (Leaf (), 0, Leaf ());
+(div2, Node (Leaf (), 2, Leaf ())) -> Node (Leaf (), 1, Leaf ());
+(div2, Node (Node (Leaf (), 2, Leaf ()), 2, Leaf ())) -> Node (Node (Leaf (), 1, Leaf ()), 1, Leaf ());
+(div2, Leaf ()) -> Leaf ();
+=================================
+(\div2 -> (\inc -> (\tree_map -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_map = \f -> (\fixTreeMap -> fixTreeMap)
+    ((let fixTreeMap = \tree -> case tree of
+      Node y1 -> 
+        Node
+          ( fixTreeMap (#3.1 y1)
+          , div2 (#3.2 y1)
+          , Leaf
+          )
+
+      Leaf y1 -> 
+        Leaf in fixTreeMap) : NatTree -> NatTree) in tree_map) : (Nat -> Nat) -> NatTree -> NatTree)) ((let inc = \n -> S n in inc) : Nat -> Nat))
+  ((let div2 = \n -> case n of
+    Z _ -> 
+      0
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          0
+
+        S m2 -> 
+          S (div2 m2) in div2) : Nat -> Nat)
+(\div2 -> (\inc -> (\tree_map -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_map = \f -> (\fixTreeMap -> fixTreeMap)
+    ((let fixTreeMap = \tree -> case tree of
+      Node y1 -> 
+        Node
+          ( fixTreeMap (#3.1 y1)
+          , div2 (#3.2 y1)
+          , Leaf
+          )
+
+      Leaf y1 -> 
+        Leaf in fixTreeMap) : NatTree -> NatTree) in tree_map) : (Nat -> Nat) -> NatTree -> NatTree)) ((let inc = \n -> S n in inc) : Nat -> Nat))
+  ((let div2 = \n -> case n of
+    Z _ -> 
+      0
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          0
+
+        S m2 -> 
+          S (div2 m2) in div2) : Nat -> Nat)
+0.109543 false false
+
+(div2, Node (Leaf (), 0, Leaf ())) -> Node (Leaf (), 0, Leaf ());
+(div2, Node (Leaf (), 2, Leaf ())) -> Node (Leaf (), 1, Leaf ());
+(div2, Node (Leaf (), 1, Node (Leaf (), 2, Leaf ()))) -> Node (Leaf (), 0, Node (Leaf (), 1, Leaf ()));
+(div2, Leaf ()) -> Leaf ();
+=================================
+(\div2 -> (\inc -> (\tree_map -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_map = \f -> (\fixTreeMap -> fixTreeMap)
+    ((let fixTreeMap = \tree -> case tree of
+      Node y1 -> 
+        Node
+          ( Leaf
+          , div2 (#3.2 y1)
+          , fixTreeMap (#3.3 y1)
+          )
+
+      Leaf y1 -> 
+        Leaf in fixTreeMap) : NatTree -> NatTree) in tree_map) : (Nat -> Nat) -> NatTree -> NatTree)) ((let inc = \n -> S n in inc) : Nat -> Nat))
+  ((let div2 = \n -> case n of
+    Z _ -> 
+      0
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          0
+
+        S m2 -> 
+          S (div2 m2) in div2) : Nat -> Nat)
+(\div2 -> (\inc -> (\tree_map -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_map = \f -> (\fixTreeMap -> fixTreeMap)
+    ((let fixTreeMap = \tree -> case tree of
+      Node y1 -> 
+        Node
+          ( Leaf
+          , div2 (#3.2 y1)
+          , fixTreeMap (#3.3 y1)
+          )
+
+      Leaf y1 -> 
+        Leaf in fixTreeMap) : NatTree -> NatTree) in tree_map) : (Nat -> Nat) -> NatTree -> NatTree)) ((let inc = \n -> S n in inc) : Nat -> Nat))
+  ((let div2 = \n -> case n of
+    Z _ -> 
+      0
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          0
+
+        S m2 -> 
+          S (div2 m2) in div2) : Nat -> Nat)
+0.141431 false false
+
+(div2, Node (Leaf (), 2, Leaf ())) -> Node (Leaf (), 1, Leaf ());
+(div2, Node (Node (Leaf (), 2, Leaf ()), 2, Leaf ())) -> Node (Node (Leaf (), 1, Leaf ()), 1, Leaf ());
+(div2, Node (Leaf (), 1, Node (Leaf (), 2, Leaf ()))) -> Node (Leaf (), 0, Node (Leaf (), 1, Leaf ()));
+(div2, Leaf ()) -> Leaf ();
+=================================
+(\div2 -> (\inc -> (\tree_map -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_map = \f -> (\fixTreeMap -> fixTreeMap)
+    ((let fixTreeMap = \tree -> case tree of
+      Node y1 -> 
+        Node
+          ( fixTreeMap (#3.1 y1)
+          , div2 (#3.2 y1)
+          , fixTreeMap (#3.3 y1)
+          )
+
+      Leaf y1 -> 
+        Leaf in fixTreeMap) : NatTree -> NatTree) in tree_map) : (Nat -> Nat) -> NatTree -> NatTree)) ((let inc = \n -> S n in inc) : Nat -> Nat))
+  ((let div2 = \n -> case n of
+    Z _ -> 
+      0
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          0
+
+        S m2 -> 
+          S (div2 m2) in div2) : Nat -> Nat)
+(\div2 -> (\inc -> (\tree_map -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_map = \f -> (\fixTreeMap -> fixTreeMap)
+    ((let fixTreeMap = \tree -> case tree of
+      Node y1 -> 
+        Node
+          ( fixTreeMap (#3.1 y1)
+          , div2 (#3.2 y1)
+          , fixTreeMap (#3.3 y1)
+          )
+
+      Leaf y1 -> 
+        Leaf in fixTreeMap) : NatTree -> NatTree) in tree_map) : (Nat -> Nat) -> NatTree -> NatTree)) ((let inc = \n -> S n in inc) : Nat -> Nat))
+  ((let div2 = \n -> case n of
+    Z _ -> 
+      0
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          0
+
+        S m2 -> 
+          S (div2 m2) in div2) : Nat -> Nat)
+0.106871 false false
+
+(div2, Node (Leaf (), 0, Leaf ())) -> Node (Leaf (), 0, Leaf ());
+(div2, Node (Leaf (), 2, Leaf ())) -> Node (Leaf (), 1, Leaf ());
+(inc, Node (Leaf (), 0, Leaf ())) -> Node (Leaf (), 1, Leaf ());
+(div2, Leaf ()) -> Leaf ();
+=================================
+(\div2 -> (\inc -> (\tree_map -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_map = \f -> (\fixTreeMap -> fixTreeMap)
+    ((let fixTreeMap = \tree -> case tree of
+      Node y1 -> 
+        Node (Leaf, f (#3.2 y1), Leaf)
+
+      Leaf y1 -> 
+        Leaf in fixTreeMap) : NatTree -> NatTree) in tree_map) : (Nat -> Nat) -> NatTree -> NatTree)) ((let inc = \n -> S n in inc) : Nat -> Nat))
+  ((let div2 = \n -> case n of
+    Z _ -> 
+      0
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          0
+
+        S m2 -> 
+          S (div2 m2) in div2) : Nat -> Nat)
+(\div2 -> (\inc -> (\tree_map -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_map = \f -> (\fixTreeMap -> fixTreeMap)
+    ((let fixTreeMap = \tree -> case tree of
+      Node y1 -> 
+        Node
+          ( Leaf
+          , f (#3.2 y1)
+          , fixTreeMap (#3.1 y1)
+          )
+
+      Leaf y1 -> 
+        Leaf in fixTreeMap) : NatTree -> NatTree) in tree_map) : (Nat -> Nat) -> NatTree -> NatTree)) ((let inc = \n -> S n in inc) : Nat -> Nat))
+  ((let div2 = \n -> case n of
+    Z _ -> 
+      0
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          0
+
+        S m2 -> 
+          S (div2 m2) in div2) : Nat -> Nat)
+0.0797580000001 false false
+
+(div2, Node (Node (Leaf (), 2, Leaf ()), 2, Leaf ())) -> Node (Node (Leaf (), 1, Leaf ()), 1, Leaf ());
+(div2, Node (Leaf (), 1, Node (Leaf (), 2, Leaf ()))) -> Node (Leaf (), 0, Node (Leaf (), 1, Leaf ()));
+(inc, Node (Leaf (), 0, Leaf ())) -> Node (Leaf (), 1, Leaf ());
+(div2, Leaf ()) -> Leaf ();
+=================================
+(\div2 -> (\inc -> (\tree_map -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_map = \f -> (\fixTreeMap -> fixTreeMap)
+    ((let fixTreeMap = \tree -> case tree of
+      Node y1 -> 
+        Node
+          ( fixTreeMap (#3.1 y1)
+          , f (#3.2 y1)
+          , fixTreeMap (#3.3 y1)
+          )
+
+      Leaf y1 -> 
+        Leaf in fixTreeMap) : NatTree -> NatTree) in tree_map) : (Nat -> Nat) -> NatTree -> NatTree)) ((let inc = \n -> S n in inc) : Nat -> Nat))
+  ((let div2 = \n -> case n of
+    Z _ -> 
+      0
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          0
+
+        S m2 -> 
+          S (div2 m2) in div2) : Nat -> Nat)
+(\div2 -> (\inc -> (\tree_map -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_map = \f -> (\fixTreeMap -> fixTreeMap)
+    ((let fixTreeMap = \tree -> case tree of
+      Node y1 -> 
+        Node
+          ( fixTreeMap (#3.1 y1)
+          , f (#3.2 y1)
+          , fixTreeMap (#3.3 y1)
+          )
+
+      Leaf y1 -> 
+        Leaf in fixTreeMap) : NatTree -> NatTree) in tree_map) : (Nat -> Nat) -> NatTree -> NatTree)) ((let inc = \n -> S n in inc) : Nat -> Nat))
+  ((let div2 = \n -> case n of
+    Z _ -> 
+      0
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          0
+
+        S m2 -> 
+          S (div2 m2) in div2) : Nat -> Nat)
+0.0891690000001 true true
+
+(div2, Node (Leaf (), 0, Leaf ())) -> Node (Leaf (), 0, Leaf ());
+(div2, Node (Node (Leaf (), 2, Leaf ()), 2, Leaf ())) -> Node (Node (Leaf (), 1, Leaf ()), 1, Leaf ());
+(inc, Leaf ()) -> Leaf ();
+(div2, Leaf ()) -> Leaf ();
+=================================
+(\div2 -> (\inc -> (\tree_map -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_map = \f -> (\fixTreeMap -> fixTreeMap)
+    ((let fixTreeMap = \tree -> case tree of
+      Node y1 -> 
+        Node
+          ( fixTreeMap (#3.1 y1)
+          , div2 (#3.2 y1)
+          , Leaf
+          )
+
+      Leaf y1 -> 
+        Leaf in fixTreeMap) : NatTree -> NatTree) in tree_map) : (Nat -> Nat) -> NatTree -> NatTree)) ((let inc = \n -> S n in inc) : Nat -> Nat))
+  ((let div2 = \n -> case n of
+    Z _ -> 
+      0
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          0
+
+        S m2 -> 
+          S (div2 m2) in div2) : Nat -> Nat)
+(\div2 -> (\inc -> (\tree_map -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_map = \f -> (\fixTreeMap -> fixTreeMap)
+    ((let fixTreeMap = \tree -> case tree of
+      Node y1 -> 
+        Node
+          ( fixTreeMap (#3.1 y1)
+          , div2 (#3.2 y1)
+          , Leaf
+          )
+
+      Leaf y1 -> 
+        Leaf in fixTreeMap) : NatTree -> NatTree) in tree_map) : (Nat -> Nat) -> NatTree -> NatTree)) ((let inc = \n -> S n in inc) : Nat -> Nat))
+  ((let div2 = \n -> case n of
+    Z _ -> 
+      0
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          0
+
+        S m2 -> 
+          S (div2 m2) in div2) : Nat -> Nat)
+0.0855140000001 false false
+
+(div2, Node (Leaf (), 0, Leaf ())) -> Node (Leaf (), 0, Leaf ());
+(div2, Node (Node (Leaf (), 2, Leaf ()), 2, Leaf ())) -> Node (Node (Leaf (), 1, Leaf ()), 1, Leaf ());
+(inc, Node (Leaf (), 0, Leaf ())) -> Node (Leaf (), 1, Leaf ());
+(div2, Leaf ()) -> Leaf ();
+=================================
+(\div2 -> (\inc -> (\tree_map -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_map = \f -> (\fixTreeMap -> fixTreeMap)
+    ((let fixTreeMap = \tree -> case tree of
+      Node y1 -> 
+        Node
+          ( fixTreeMap (#3.1 y1)
+          , f (#3.2 y1)
+          , Leaf
+          )
+
+      Leaf y1 -> 
+        Leaf in fixTreeMap) : NatTree -> NatTree) in tree_map) : (Nat -> Nat) -> NatTree -> NatTree)) ((let inc = \n -> S n in inc) : Nat -> Nat))
+  ((let div2 = \n -> case n of
+    Z _ -> 
+      0
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          0
+
+        S m2 -> 
+          S (div2 m2) in div2) : Nat -> Nat)
+(\div2 -> (\inc -> (\tree_map -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_map = \f -> (\fixTreeMap -> fixTreeMap)
+    ((let fixTreeMap = \tree -> case tree of
+      Node y1 -> 
+        Node
+          ( fixTreeMap (#3.1 y1)
+          , f (#3.2 y1)
+          , Leaf
+          )
+
+      Leaf y1 -> 
+        Leaf in fixTreeMap) : NatTree -> NatTree) in tree_map) : (Nat -> Nat) -> NatTree -> NatTree)) ((let inc = \n -> S n in inc) : Nat -> Nat))
+  ((let div2 = \n -> case n of
+    Z _ -> 
+      0
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          0
+
+        S m2 -> 
+          S (div2 m2) in div2) : Nat -> Nat)
+0.0981200000001 false false
+
+(div2, Node (Leaf (), 0, Leaf ())) -> Node (Leaf (), 0, Leaf ());
+(div2, Node (Leaf (), 1, Node (Leaf (), 2, Leaf ()))) -> Node (Leaf (), 0, Node (Leaf (), 1, Leaf ()));
+(inc, Leaf ()) -> Leaf ();
+(div2, Leaf ()) -> Leaf ();
+=================================
+(\div2 -> (\inc -> (\tree_map -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_map = \f -> (\fixTreeMap -> fixTreeMap)
+    ((let fixTreeMap = \tree -> case tree of
+      Node y1 -> 
+        Node
+          ( Leaf
+          , div2 (#3.2 y1)
+          , fixTreeMap (#3.3 y1)
+          )
+
+      Leaf y1 -> 
+        Leaf in fixTreeMap) : NatTree -> NatTree) in tree_map) : (Nat -> Nat) -> NatTree -> NatTree)) ((let inc = \n -> S n in inc) : Nat -> Nat))
+  ((let div2 = \n -> case n of
+    Z _ -> 
+      0
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          0
+
+        S m2 -> 
+          S (div2 m2) in div2) : Nat -> Nat)
+(\div2 -> (\inc -> (\tree_map -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_map = \f -> (\fixTreeMap -> fixTreeMap)
+    ((let fixTreeMap = \tree -> case tree of
+      Node y1 -> 
+        Node
+          ( Leaf
+          , div2 (#3.2 y1)
+          , fixTreeMap (#3.3 y1)
+          )
+
+      Leaf y1 -> 
+        Leaf in fixTreeMap) : NatTree -> NatTree) in tree_map) : (Nat -> Nat) -> NatTree -> NatTree)) ((let inc = \n -> S n in inc) : Nat -> Nat))
+  ((let div2 = \n -> case n of
+    Z _ -> 
+      0
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          0
+
+        S m2 -> 
+          S (div2 m2) in div2) : Nat -> Nat)
+0.13628 false false
+
+(div2, Node (Leaf (), 2, Leaf ())) -> Node (Leaf (), 1, Leaf ());
+(inc, Leaf ()) -> Leaf ();
+(inc, Node (Leaf (), 0, Leaf ())) -> Node (Leaf (), 1, Leaf ());
+(div2, Leaf ()) -> Leaf ();
+=================================
+(\div2 -> (\inc -> (\tree_map -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_map = \f -> (\fixTreeMap -> fixTreeMap)
+    ((let fixTreeMap = \tree -> case tree of
+      Node y1 -> 
+        Node (Leaf, 1, Leaf)
+
+      Leaf y1 -> 
+        Leaf in fixTreeMap) : NatTree -> NatTree) in tree_map) : (Nat -> Nat) -> NatTree -> NatTree)) ((let inc = \n -> S n in inc) : Nat -> Nat))
+  ((let div2 = \n -> case n of
+    Z _ -> 
+      0
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          0
+
+        S m2 -> 
+          S (div2 m2) in div2) : Nat -> Nat)
+0.0897600000001 false false
+
+(div2, Node (Node (Leaf (), 2, Leaf ()), 2, Leaf ())) -> Node (Node (Leaf (), 1, Leaf ()), 1, Leaf ());
+(inc, Leaf ()) -> Leaf ();
+(inc, Node (Leaf (), 0, Leaf ())) -> Node (Leaf (), 1, Leaf ());
+(div2, Leaf ()) -> Leaf ();
+=================================
+(\div2 -> (\inc -> (\tree_map -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_map = \f -> (\fixTreeMap -> fixTreeMap)
+    ((let fixTreeMap = \tree -> case tree of
+      Node y1 -> 
+        Node (fixTreeMap (#3.1 y1), 1, Leaf)
+
+      Leaf y1 -> 
+        Leaf in fixTreeMap) : NatTree -> NatTree) in tree_map) : (Nat -> Nat) -> NatTree -> NatTree)) ((let inc = \n -> S n in inc) : Nat -> Nat))
+  ((let div2 = \n -> case n of
+    Z _ -> 
+      0
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          0
+
+        S m2 -> 
+          S (div2 m2) in div2) : Nat -> Nat)
+(\div2 -> (\inc -> (\tree_map -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_map = \f -> (\fixTreeMap -> fixTreeMap)
+    ((let fixTreeMap = \tree -> case tree of
+      Node y1 -> 
+        Node (fixTreeMap (#3.1 y1), 1, Leaf)
+
+      Leaf y1 -> 
+        Leaf in fixTreeMap) : NatTree -> NatTree) in tree_map) : (Nat -> Nat) -> NatTree -> NatTree)) ((let inc = \n -> S n in inc) : Nat -> Nat))
+  ((let div2 = \n -> case n of
+    Z _ -> 
+      0
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          0
+
+        S m2 -> 
+          S (div2 m2) in div2) : Nat -> Nat)
+0.129037 false false
+
+(div2, Node (Leaf (), 0, Leaf ())) -> Node (Leaf (), 0, Leaf ());
+(div2, Node (Leaf (), 2, Leaf ())) -> Node (Leaf (), 1, Leaf ());
+(div2, Node (Node (Leaf (), 2, Leaf ()), 2, Leaf ())) -> Node (Node (Leaf (), 1, Leaf ()), 1, Leaf ());
+(div2, Node (Leaf (), 1, Node (Leaf (), 2, Leaf ()))) -> Node (Leaf (), 0, Node (Leaf (), 1, Leaf ()));
+(div2, Leaf ()) -> Leaf ();
+=================================
+(\div2 -> (\inc -> (\tree_map -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_map = \f -> (\fixTreeMap -> fixTreeMap)
+    ((let fixTreeMap = \tree -> case tree of
+      Node y1 -> 
+        Node
+          ( fixTreeMap (#3.1 y1)
+          , div2 (#3.2 y1)
+          , fixTreeMap (#3.3 y1)
+          )
+
+      Leaf y1 -> 
+        Leaf in fixTreeMap) : NatTree -> NatTree) in tree_map) : (Nat -> Nat) -> NatTree -> NatTree)) ((let inc = \n -> S n in inc) : Nat -> Nat))
+  ((let div2 = \n -> case n of
+    Z _ -> 
+      0
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          0
+
+        S m2 -> 
+          S (div2 m2) in div2) : Nat -> Nat)
+(\div2 -> (\inc -> (\tree_map -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_map = \f -> (\fixTreeMap -> fixTreeMap)
+    ((let fixTreeMap = \tree -> case tree of
+      Node y1 -> 
+        Node
+          ( fixTreeMap (#3.1 y1)
+          , div2 (#3.2 y1)
+          , fixTreeMap (#3.3 y1)
+          )
+
+      Leaf y1 -> 
+        Leaf in fixTreeMap) : NatTree -> NatTree) in tree_map) : (Nat -> Nat) -> NatTree -> NatTree)) ((let inc = \n -> S n in inc) : Nat -> Nat))
+  ((let div2 = \n -> case n of
+    Z _ -> 
+      0
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          0
+
+        S m2 -> 
+          S (div2 m2) in div2) : Nat -> Nat)
+0.108525 false false
+
+(div2, Node (Leaf (), 0, Leaf ())) -> Node (Leaf (), 0, Leaf ());
+(div2, Node (Leaf (), 2, Leaf ())) -> Node (Leaf (), 1, Leaf ());
+(div2, Node (Node (Leaf (), 2, Leaf ()), 2, Leaf ())) -> Node (Node (Leaf (), 1, Leaf ()), 1, Leaf ());
+(inc, Leaf ()) -> Leaf ();
+(div2, Leaf ()) -> Leaf ();
+=================================
+(\div2 -> (\inc -> (\tree_map -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_map = \f -> (\fixTreeMap -> fixTreeMap)
+    ((let fixTreeMap = \tree -> case tree of
+      Node y1 -> 
+        Node
+          ( fixTreeMap (#3.1 y1)
+          , div2 (#3.2 y1)
+          , Leaf
+          )
+
+      Leaf y1 -> 
+        Leaf in fixTreeMap) : NatTree -> NatTree) in tree_map) : (Nat -> Nat) -> NatTree -> NatTree)) ((let inc = \n -> S n in inc) : Nat -> Nat))
+  ((let div2 = \n -> case n of
+    Z _ -> 
+      0
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          0
+
+        S m2 -> 
+          S (div2 m2) in div2) : Nat -> Nat)
+(\div2 -> (\inc -> (\tree_map -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_map = \f -> (\fixTreeMap -> fixTreeMap)
+    ((let fixTreeMap = \tree -> case tree of
+      Node y1 -> 
+        Node
+          ( fixTreeMap (#3.1 y1)
+          , div2 (#3.2 y1)
+          , Leaf
+          )
+
+      Leaf y1 -> 
+        Leaf in fixTreeMap) : NatTree -> NatTree) in tree_map) : (Nat -> Nat) -> NatTree -> NatTree)) ((let inc = \n -> S n in inc) : Nat -> Nat))
+  ((let div2 = \n -> case n of
+    Z _ -> 
+      0
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          0
+
+        S m2 -> 
+          S (div2 m2) in div2) : Nat -> Nat)
+0.0896279999999 false false
+
+(div2, Node (Leaf (), 0, Leaf ())) -> Node (Leaf (), 0, Leaf ());
+(div2, Node (Leaf (), 2, Leaf ())) -> Node (Leaf (), 1, Leaf ());
+(div2, Node (Node (Leaf (), 2, Leaf ()), 2, Leaf ())) -> Node (Node (Leaf (), 1, Leaf ()), 1, Leaf ());
+(inc, Node (Leaf (), 0, Leaf ())) -> Node (Leaf (), 1, Leaf ());
+(div2, Leaf ()) -> Leaf ();
+=================================
+(\div2 -> (\inc -> (\tree_map -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_map = \f -> (\fixTreeMap -> fixTreeMap)
+    ((let fixTreeMap = \tree -> case tree of
+      Node y1 -> 
+        Node
+          ( fixTreeMap (#3.1 y1)
+          , f (#3.2 y1)
+          , Leaf
+          )
+
+      Leaf y1 -> 
+        Leaf in fixTreeMap) : NatTree -> NatTree) in tree_map) : (Nat -> Nat) -> NatTree -> NatTree)) ((let inc = \n -> S n in inc) : Nat -> Nat))
+  ((let div2 = \n -> case n of
+    Z _ -> 
+      0
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          0
+
+        S m2 -> 
+          S (div2 m2) in div2) : Nat -> Nat)
+(\div2 -> (\inc -> (\tree_map -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_map = \f -> (\fixTreeMap -> fixTreeMap)
+    ((let fixTreeMap = \tree -> case tree of
+      Node y1 -> 
+        Node
+          ( fixTreeMap (#3.1 y1)
+          , f (#3.2 y1)
+          , Leaf
+          )
+
+      Leaf y1 -> 
+        Leaf in fixTreeMap) : NatTree -> NatTree) in tree_map) : (Nat -> Nat) -> NatTree -> NatTree)) ((let inc = \n -> S n in inc) : Nat -> Nat))
+  ((let div2 = \n -> case n of
+    Z _ -> 
+      0
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          0
+
+        S m2 -> 
+          S (div2 m2) in div2) : Nat -> Nat)
+0.104903 false false
+
+(div2, Node (Leaf (), 2, Leaf ())) -> Node (Leaf (), 1, Leaf ());
+(div2, Node (Leaf (), 1, Node (Leaf (), 2, Leaf ()))) -> Node (Leaf (), 0, Node (Leaf (), 1, Leaf ()));
+(inc, Leaf ()) -> Leaf ();
+(inc, Node (Leaf (), 0, Leaf ())) -> Node (Leaf (), 1, Leaf ());
+(div2, Leaf ()) -> Leaf ();
+=================================
+(\div2 -> (\inc -> (\tree_map -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_map = \f -> (\fixTreeMap -> fixTreeMap)
+    ((let fixTreeMap = \tree -> case tree of
+      Node y1 -> 
+        Node
+          ( Leaf
+          , f (#3.2 y1)
+          , fixTreeMap (#3.3 y1)
+          )
+
+      Leaf y1 -> 
+        Leaf in fixTreeMap) : NatTree -> NatTree) in tree_map) : (Nat -> Nat) -> NatTree -> NatTree)) ((let inc = \n -> S n in inc) : Nat -> Nat))
+  ((let div2 = \n -> case n of
+    Z _ -> 
+      0
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          0
+
+        S m2 -> 
+          S (div2 m2) in div2) : Nat -> Nat)
+(\div2 -> (\inc -> (\tree_map -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_map = \f -> (\fixTreeMap -> fixTreeMap)
+    ((let fixTreeMap = \tree -> case tree of
+      Node y1 -> 
+        Node
+          ( Leaf
+          , f (#3.2 y1)
+          , fixTreeMap (#3.3 y1)
+          )
+
+      Leaf y1 -> 
+        Leaf in fixTreeMap) : NatTree -> NatTree) in tree_map) : (Nat -> Nat) -> NatTree -> NatTree)) ((let inc = \n -> S n in inc) : Nat -> Nat))
+  ((let div2 = \n -> case n of
+    Z _ -> 
+      0
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          0
+
+        S m2 -> 
+          S (div2 m2) in div2) : Nat -> Nat)
+0.152731 false false
+
+(div2, Node (Leaf (), 2, Leaf ())) -> Node (Leaf (), 1, Leaf ());
+(div2, Node (Node (Leaf (), 2, Leaf ()), 2, Leaf ())) -> Node (Node (Leaf (), 1, Leaf ()), 1, Leaf ());
+(inc, Leaf ()) -> Leaf ();
+(inc, Node (Leaf (), 0, Leaf ())) -> Node (Leaf (), 1, Leaf ());
+(div2, Leaf ()) -> Leaf ();
+=================================
+(\div2 -> (\inc -> (\tree_map -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_map = \f -> (\fixTreeMap -> fixTreeMap)
+    ((let fixTreeMap = \tree -> case tree of
+      Node y1 -> 
+        Node (fixTreeMap (#3.1 y1), 1, Leaf)
+
+      Leaf y1 -> 
+        Leaf in fixTreeMap) : NatTree -> NatTree) in tree_map) : (Nat -> Nat) -> NatTree -> NatTree)) ((let inc = \n -> S n in inc) : Nat -> Nat))
+  ((let div2 = \n -> case n of
+    Z _ -> 
+      0
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          0
+
+        S m2 -> 
+          S (div2 m2) in div2) : Nat -> Nat)
+(\div2 -> (\inc -> (\tree_map -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_map = \f -> (\fixTreeMap -> fixTreeMap)
+    ((let fixTreeMap = \tree -> case tree of
+      Node y1 -> 
+        Node (fixTreeMap (#3.1 y1), 1, Leaf)
+
+      Leaf y1 -> 
+        Leaf in fixTreeMap) : NatTree -> NatTree) in tree_map) : (Nat -> Nat) -> NatTree -> NatTree)) ((let inc = \n -> S n in inc) : Nat -> Nat))
+  ((let div2 = \n -> case n of
+    Z _ -> 
+      0
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          0
+
+        S m2 -> 
+          S (div2 m2) in div2) : Nat -> Nat)
+0.261887 false false
+
+(div2, Node (Leaf (), 0, Leaf ())) -> Node (Leaf (), 0, Leaf ());
+(div2, Node (Leaf (), 2, Leaf ())) -> Node (Leaf (), 1, Leaf ());
+(inc, Leaf ()) -> Leaf ();
+(inc, Node (Leaf (), 0, Leaf ())) -> Node (Leaf (), 1, Leaf ());
+(div2, Leaf ()) -> Leaf ();
+=================================
+(\div2 -> (\inc -> (\tree_map -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_map = \f -> (\fixTreeMap -> fixTreeMap)
+    ((let fixTreeMap = \tree -> case tree of
+      Node y1 -> 
+        Node (Leaf, f (#3.2 y1), Leaf)
+
+      Leaf y1 -> 
+        Leaf in fixTreeMap) : NatTree -> NatTree) in tree_map) : (Nat -> Nat) -> NatTree -> NatTree)) ((let inc = \n -> S n in inc) : Nat -> Nat))
+  ((let div2 = \n -> case n of
+    Z _ -> 
+      0
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          0
+
+        S m2 -> 
+          S (div2 m2) in div2) : Nat -> Nat)
+(\div2 -> (\inc -> (\tree_map -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_map = \f -> (\fixTreeMap -> fixTreeMap)
+    ((let fixTreeMap = \tree -> case tree of
+      Node y1 -> 
+        Node
+          ( Leaf
+          , f (#3.2 y1)
+          , fixTreeMap (#3.1 y1)
+          )
+
+      Leaf y1 -> 
+        Leaf in fixTreeMap) : NatTree -> NatTree) in tree_map) : (Nat -> Nat) -> NatTree -> NatTree)) ((let inc = \n -> S n in inc) : Nat -> Nat))
+  ((let div2 = \n -> case n of
+    Z _ -> 
+      0
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          0
+
+        S m2 -> 
+          S (div2 m2) in div2) : Nat -> Nat)
+0.125762 false false
+
+(div2, Node (Leaf (), 0, Leaf ())) -> Node (Leaf (), 0, Leaf ());
+(div2, Node (Node (Leaf (), 2, Leaf ()), 2, Leaf ())) -> Node (Node (Leaf (), 1, Leaf ()), 1, Leaf ());
+(div2, Node (Leaf (), 1, Node (Leaf (), 2, Leaf ()))) -> Node (Leaf (), 0, Node (Leaf (), 1, Leaf ()));
+(inc, Leaf ()) -> Leaf ();
+(div2, Leaf ()) -> Leaf ();
+=================================
+(\div2 -> (\inc -> (\tree_map -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_map = \f -> (\fixTreeMap -> fixTreeMap)
+    ((let fixTreeMap = \tree -> case tree of
+      Node y1 -> 
+        Node
+          ( fixTreeMap (#3.1 y1)
+          , div2 (#3.2 y1)
+          , fixTreeMap (#3.3 y1)
+          )
+
+      Leaf y1 -> 
+        Leaf in fixTreeMap) : NatTree -> NatTree) in tree_map) : (Nat -> Nat) -> NatTree -> NatTree)) ((let inc = \n -> S n in inc) : Nat -> Nat))
+  ((let div2 = \n -> case n of
+    Z _ -> 
+      0
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          0
+
+        S m2 -> 
+          S (div2 m2) in div2) : Nat -> Nat)
+(\div2 -> (\inc -> (\tree_map -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_map = \f -> (\fixTreeMap -> fixTreeMap)
+    ((let fixTreeMap = \tree -> case tree of
+      Node y1 -> 
+        Node
+          ( fixTreeMap (#3.1 y1)
+          , div2 (#3.2 y1)
+          , fixTreeMap (#3.3 y1)
+          )
+
+      Leaf y1 -> 
+        Leaf in fixTreeMap) : NatTree -> NatTree) in tree_map) : (Nat -> Nat) -> NatTree -> NatTree)) ((let inc = \n -> S n in inc) : Nat -> Nat))
+  ((let div2 = \n -> case n of
+    Z _ -> 
+      0
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          0
+
+        S m2 -> 
+          S (div2 m2) in div2) : Nat -> Nat)
+0.13524 false false
+
+(div2, Node (Leaf (), 0, Leaf ())) -> Node (Leaf (), 0, Leaf ());
+(div2, Node (Node (Leaf (), 2, Leaf ()), 2, Leaf ())) -> Node (Node (Leaf (), 1, Leaf ()), 1, Leaf ());
+(div2, Node (Leaf (), 1, Node (Leaf (), 2, Leaf ()))) -> Node (Leaf (), 0, Node (Leaf (), 1, Leaf ()));
+(inc, Node (Leaf (), 0, Leaf ())) -> Node (Leaf (), 1, Leaf ());
+(div2, Leaf ()) -> Leaf ();
+=================================
+(\div2 -> (\inc -> (\tree_map -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_map = \f -> (\fixTreeMap -> fixTreeMap)
+    ((let fixTreeMap = \tree -> case tree of
+      Node y1 -> 
+        Node
+          ( fixTreeMap (#3.1 y1)
+          , f (#3.2 y1)
+          , fixTreeMap (#3.3 y1)
+          )
+
+      Leaf y1 -> 
+        Leaf in fixTreeMap) : NatTree -> NatTree) in tree_map) : (Nat -> Nat) -> NatTree -> NatTree)) ((let inc = \n -> S n in inc) : Nat -> Nat))
+  ((let div2 = \n -> case n of
+    Z _ -> 
+      0
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          0
+
+        S m2 -> 
+          S (div2 m2) in div2) : Nat -> Nat)
+(\div2 -> (\inc -> (\tree_map -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_map = \f -> (\fixTreeMap -> fixTreeMap)
+    ((let fixTreeMap = \tree -> case tree of
+      Node y1 -> 
+        Node
+          ( fixTreeMap (#3.1 y1)
+          , f (#3.2 y1)
+          , fixTreeMap (#3.3 y1)
+          )
+
+      Leaf y1 -> 
+        Leaf in fixTreeMap) : NatTree -> NatTree) in tree_map) : (Nat -> Nat) -> NatTree -> NatTree)) ((let inc = \n -> S n in inc) : Nat -> Nat))
+  ((let div2 = \n -> case n of
+    Z _ -> 
+      0
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          0
+
+        S m2 -> 
+          S (div2 m2) in div2) : Nat -> Nat)
+0.164162 true true
+
+(div2, Node (Leaf (), 0, Leaf ())) -> Node (Leaf (), 0, Leaf ());
+(div2, Node (Node (Leaf (), 2, Leaf ()), 2, Leaf ())) -> Node (Node (Leaf (), 1, Leaf ()), 1, Leaf ());
+(inc, Leaf ()) -> Leaf ();
+(inc, Node (Leaf (), 0, Leaf ())) -> Node (Leaf (), 1, Leaf ());
+(div2, Leaf ()) -> Leaf ();
+=================================
+(\div2 -> (\inc -> (\tree_map -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_map = \f -> (\fixTreeMap -> fixTreeMap)
+    ((let fixTreeMap = \tree -> case tree of
+      Node y1 -> 
+        Node
+          ( fixTreeMap (#3.1 y1)
+          , f (#3.2 y1)
+          , Leaf
+          )
+
+      Leaf y1 -> 
+        Leaf in fixTreeMap) : NatTree -> NatTree) in tree_map) : (Nat -> Nat) -> NatTree -> NatTree)) ((let inc = \n -> S n in inc) : Nat -> Nat))
+  ((let div2 = \n -> case n of
+    Z _ -> 
+      0
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          0
+
+        S m2 -> 
+          S (div2 m2) in div2) : Nat -> Nat)
+(\div2 -> (\inc -> (\tree_map -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_map = \f -> (\fixTreeMap -> fixTreeMap)
+    ((let fixTreeMap = \tree -> case tree of
+      Node y1 -> 
+        Node
+          ( fixTreeMap (#3.1 y1)
+          , f (#3.2 y1)
+          , Leaf
+          )
+
+      Leaf y1 -> 
+        Leaf in fixTreeMap) : NatTree -> NatTree) in tree_map) : (Nat -> Nat) -> NatTree -> NatTree)) ((let inc = \n -> S n in inc) : Nat -> Nat))
+  ((let div2 = \n -> case n of
+    Z _ -> 
+      0
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          0
+
+        S m2 -> 
+          S (div2 m2) in div2) : Nat -> Nat)
+0.212429 false false
+
+(div2, Node (Node (Leaf (), 2, Leaf ()), 2, Leaf ())) -> Node (Node (Leaf (), 1, Leaf ()), 1, Leaf ());
+(div2, Node (Leaf (), 1, Node (Leaf (), 2, Leaf ()))) -> Node (Leaf (), 0, Node (Leaf (), 1, Leaf ()));
+(inc, Leaf ()) -> Leaf ();
+(inc, Node (Leaf (), 0, Leaf ())) -> Node (Leaf (), 1, Leaf ());
+(div2, Leaf ()) -> Leaf ();
+=================================
+(\div2 -> (\inc -> (\tree_map -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_map = \f -> (\fixTreeMap -> fixTreeMap)
+    ((let fixTreeMap = \tree -> case tree of
+      Node y1 -> 
+        Node
+          ( fixTreeMap (#3.1 y1)
+          , f (#3.2 y1)
+          , fixTreeMap (#3.3 y1)
+          )
+
+      Leaf y1 -> 
+        Leaf in fixTreeMap) : NatTree -> NatTree) in tree_map) : (Nat -> Nat) -> NatTree -> NatTree)) ((let inc = \n -> S n in inc) : Nat -> Nat))
+  ((let div2 = \n -> case n of
+    Z _ -> 
+      0
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          0
+
+        S m2 -> 
+          S (div2 m2) in div2) : Nat -> Nat)
+(\div2 -> (\inc -> (\tree_map -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_map = \f -> (\fixTreeMap -> fixTreeMap)
+    ((let fixTreeMap = \tree -> case tree of
+      Node y1 -> 
+        Node
+          ( fixTreeMap (#3.1 y1)
+          , f (#3.2 y1)
+          , fixTreeMap (#3.3 y1)
+          )
+
+      Leaf y1 -> 
+        Leaf in fixTreeMap) : NatTree -> NatTree) in tree_map) : (Nat -> Nat) -> NatTree -> NatTree)) ((let inc = \n -> S n in inc) : Nat -> Nat))
+  ((let div2 = \n -> case n of
+    Z _ -> 
+      0
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          0
+
+        S m2 -> 
+          S (div2 m2) in div2) : Nat -> Nat)
+0.322446 true true
+
+(div2, Node (Leaf (), 0, Leaf ())) -> Node (Leaf (), 0, Leaf ());
+(div2, Node (Leaf (), 2, Leaf ())) -> Node (Leaf (), 1, Leaf ());
+(div2, Node (Node (Leaf (), 2, Leaf ()), 2, Leaf ())) -> Node (Node (Leaf (), 1, Leaf ()), 1, Leaf ());
+(div2, Node (Leaf (), 1, Node (Leaf (), 2, Leaf ()))) -> Node (Leaf (), 0, Node (Leaf (), 1, Leaf ()));
+(inc, Leaf ()) -> Leaf ();
+(div2, Leaf ()) -> Leaf ();
+=================================
+(\div2 -> (\inc -> (\tree_map -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_map = \f -> (\fixTreeMap -> fixTreeMap)
+    ((let fixTreeMap = \tree -> case tree of
+      Node y1 -> 
+        Node
+          ( fixTreeMap (#3.1 y1)
+          , div2 (#3.2 y1)
+          , fixTreeMap (#3.3 y1)
+          )
+
+      Leaf y1 -> 
+        Leaf in fixTreeMap) : NatTree -> NatTree) in tree_map) : (Nat -> Nat) -> NatTree -> NatTree)) ((let inc = \n -> S n in inc) : Nat -> Nat))
+  ((let div2 = \n -> case n of
+    Z _ -> 
+      0
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          0
+
+        S m2 -> 
+          S (div2 m2) in div2) : Nat -> Nat)
+(\div2 -> (\inc -> (\tree_map -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_map = \f -> (\fixTreeMap -> fixTreeMap)
+    ((let fixTreeMap = \tree -> case tree of
+      Node y1 -> 
+        Node
+          ( fixTreeMap (#3.1 y1)
+          , div2 (#3.2 y1)
+          , fixTreeMap (#3.3 y1)
+          )
+
+      Leaf y1 -> 
+        Leaf in fixTreeMap) : NatTree -> NatTree) in tree_map) : (Nat -> Nat) -> NatTree -> NatTree)) ((let inc = \n -> S n in inc) : Nat -> Nat))
+  ((let div2 = \n -> case n of
+    Z _ -> 
+      0
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          0
+
+        S m2 -> 
+          S (div2 m2) in div2) : Nat -> Nat)
+0.233926 false false
+
+(div2, Node (Leaf (), 0, Leaf ())) -> Node (Leaf (), 0, Leaf ());
+(div2, Node (Leaf (), 2, Leaf ())) -> Node (Leaf (), 1, Leaf ());
+(div2, Node (Node (Leaf (), 2, Leaf ()), 2, Leaf ())) -> Node (Node (Leaf (), 1, Leaf ()), 1, Leaf ());
+(div2, Node (Leaf (), 1, Node (Leaf (), 2, Leaf ()))) -> Node (Leaf (), 0, Node (Leaf (), 1, Leaf ()));
+(inc, Node (Leaf (), 0, Leaf ())) -> Node (Leaf (), 1, Leaf ());
+(div2, Leaf ()) -> Leaf ();
+=================================
+(\div2 -> (\inc -> (\tree_map -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_map = \f -> (\fixTreeMap -> fixTreeMap)
+    ((let fixTreeMap = \tree -> case tree of
+      Node y1 -> 
+        Node
+          ( fixTreeMap (#3.1 y1)
+          , f (#3.2 y1)
+          , fixTreeMap (#3.3 y1)
+          )
+
+      Leaf y1 -> 
+        Leaf in fixTreeMap) : NatTree -> NatTree) in tree_map) : (Nat -> Nat) -> NatTree -> NatTree)) ((let inc = \n -> S n in inc) : Nat -> Nat))
+  ((let div2 = \n -> case n of
+    Z _ -> 
+      0
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          0
+
+        S m2 -> 
+          S (div2 m2) in div2) : Nat -> Nat)
+(\div2 -> (\inc -> (\tree_map -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_map = \f -> (\fixTreeMap -> fixTreeMap)
+    ((let fixTreeMap = \tree -> case tree of
+      Node y1 -> 
+        Node
+          ( fixTreeMap (#3.1 y1)
+          , f (#3.2 y1)
+          , fixTreeMap (#3.3 y1)
+          )
+
+      Leaf y1 -> 
+        Leaf in fixTreeMap) : NatTree -> NatTree) in tree_map) : (Nat -> Nat) -> NatTree -> NatTree)) ((let inc = \n -> S n in inc) : Nat -> Nat))
+  ((let div2 = \n -> case n of
+    Z _ -> 
+      0
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          0
+
+        S m2 -> 
+          S (div2 m2) in div2) : Nat -> Nat)
+0.256858 true true
+
+(div2, Node (Leaf (), 0, Leaf ())) -> Node (Leaf (), 0, Leaf ());
+(div2, Node (Leaf (), 2, Leaf ())) -> Node (Leaf (), 1, Leaf ());
+(div2, Node (Node (Leaf (), 2, Leaf ()), 2, Leaf ())) -> Node (Node (Leaf (), 1, Leaf ()), 1, Leaf ());
+(inc, Leaf ()) -> Leaf ();
+(inc, Node (Leaf (), 0, Leaf ())) -> Node (Leaf (), 1, Leaf ());
+(div2, Leaf ()) -> Leaf ();
+=================================
+(\div2 -> (\inc -> (\tree_map -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_map = \f -> (\fixTreeMap -> fixTreeMap)
+    ((let fixTreeMap = \tree -> case tree of
+      Node y1 -> 
+        Node
+          ( fixTreeMap (#3.1 y1)
+          , f (#3.2 y1)
+          , Leaf
+          )
+
+      Leaf y1 -> 
+        Leaf in fixTreeMap) : NatTree -> NatTree) in tree_map) : (Nat -> Nat) -> NatTree -> NatTree)) ((let inc = \n -> S n in inc) : Nat -> Nat))
+  ((let div2 = \n -> case n of
+    Z _ -> 
+      0
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          0
+
+        S m2 -> 
+          S (div2 m2) in div2) : Nat -> Nat)
+(\div2 -> (\inc -> (\tree_map -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_map = \f -> (\fixTreeMap -> fixTreeMap)
+    ((let fixTreeMap = \tree -> case tree of
+      Node y1 -> 
+        Node
+          ( fixTreeMap (#3.1 y1)
+          , f (#3.2 y1)
+          , Leaf
+          )
+
+      Leaf y1 -> 
+        Leaf in fixTreeMap) : NatTree -> NatTree) in tree_map) : (Nat -> Nat) -> NatTree -> NatTree)) ((let inc = \n -> S n in inc) : Nat -> Nat))
+  ((let div2 = \n -> case n of
+    Z _ -> 
+      0
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          0
+
+        S m2 -> 
+          S (div2 m2) in div2) : Nat -> Nat)
+0.244995 false false
+
+(div2, Node (Leaf (), 0, Leaf ())) -> Node (Leaf (), 0, Leaf ());
+(div2, Node (Leaf (), 2, Leaf ())) -> Node (Leaf (), 1, Leaf ());
+(div2, Node (Leaf (), 1, Node (Leaf (), 2, Leaf ()))) -> Node (Leaf (), 0, Node (Leaf (), 1, Leaf ()));
+(inc, Leaf ()) -> Leaf ();
+(inc, Node (Leaf (), 0, Leaf ())) -> Node (Leaf (), 1, Leaf ());
+(div2, Leaf ()) -> Leaf ();
+=================================
+(\div2 -> (\inc -> (\tree_map -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_map = \f -> (\fixTreeMap -> fixTreeMap)
+    ((let fixTreeMap = \tree -> case tree of
+      Node y1 -> 
+        Node
+          ( Leaf
+          , f (#3.2 y1)
+          , fixTreeMap (#3.3 y1)
+          )
+
+      Leaf y1 -> 
+        Leaf in fixTreeMap) : NatTree -> NatTree) in tree_map) : (Nat -> Nat) -> NatTree -> NatTree)) ((let inc = \n -> S n in inc) : Nat -> Nat))
+  ((let div2 = \n -> case n of
+    Z _ -> 
+      0
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          0
+
+        S m2 -> 
+          S (div2 m2) in div2) : Nat -> Nat)
+(\div2 -> (\inc -> (\tree_map -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_map = \f -> (\fixTreeMap -> fixTreeMap)
+    ((let fixTreeMap = \tree -> case tree of
+      Node y1 -> 
+        Node
+          ( Leaf
+          , f (#3.2 y1)
+          , fixTreeMap (#3.3 y1)
+          )
+
+      Leaf y1 -> 
+        Leaf in fixTreeMap) : NatTree -> NatTree) in tree_map) : (Nat -> Nat) -> NatTree -> NatTree)) ((let inc = \n -> S n in inc) : Nat -> Nat))
+  ((let div2 = \n -> case n of
+    Z _ -> 
+      0
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          0
+
+        S m2 -> 
+          S (div2 m2) in div2) : Nat -> Nat)
+0.237756 false false
+
+(div2, Node (Leaf (), 0, Leaf ())) -> Node (Leaf (), 0, Leaf ());
+(div2, Node (Node (Leaf (), 2, Leaf ()), 2, Leaf ())) -> Node (Node (Leaf (), 1, Leaf ()), 1, Leaf ());
+(div2, Node (Leaf (), 1, Node (Leaf (), 2, Leaf ()))) -> Node (Leaf (), 0, Node (Leaf (), 1, Leaf ()));
+(inc, Leaf ()) -> Leaf ();
+(inc, Node (Leaf (), 0, Leaf ())) -> Node (Leaf (), 1, Leaf ());
+(div2, Leaf ()) -> Leaf ();
+=================================
+(\div2 -> (\inc -> (\tree_map -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_map = \f -> (\fixTreeMap -> fixTreeMap)
+    ((let fixTreeMap = \tree -> case tree of
+      Node y1 -> 
+        Node
+          ( fixTreeMap (#3.1 y1)
+          , f (#3.2 y1)
+          , fixTreeMap (#3.3 y1)
+          )
+
+      Leaf y1 -> 
+        Leaf in fixTreeMap) : NatTree -> NatTree) in tree_map) : (Nat -> Nat) -> NatTree -> NatTree)) ((let inc = \n -> S n in inc) : Nat -> Nat))
+  ((let div2 = \n -> case n of
+    Z _ -> 
+      0
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          0
+
+        S m2 -> 
+          S (div2 m2) in div2) : Nat -> Nat)
+(\div2 -> (\inc -> (\tree_map -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_map = \f -> (\fixTreeMap -> fixTreeMap)
+    ((let fixTreeMap = \tree -> case tree of
+      Node y1 -> 
+        Node
+          ( fixTreeMap (#3.1 y1)
+          , f (#3.2 y1)
+          , fixTreeMap (#3.3 y1)
+          )
+
+      Leaf y1 -> 
+        Leaf in fixTreeMap) : NatTree -> NatTree) in tree_map) : (Nat -> Nat) -> NatTree -> NatTree)) ((let inc = \n -> S n in inc) : Nat -> Nat))
+  ((let div2 = \n -> case n of
+    Z _ -> 
+      0
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          0
+
+        S m2 -> 
+          S (div2 m2) in div2) : Nat -> Nat)
+0.113741 true true
+
+(div2, Node (Leaf (), 2, Leaf ())) -> Node (Leaf (), 1, Leaf ());
+(div2, Node (Node (Leaf (), 2, Leaf ()), 2, Leaf ())) -> Node (Node (Leaf (), 1, Leaf ()), 1, Leaf ());
+(div2, Node (Leaf (), 1, Node (Leaf (), 2, Leaf ()))) -> Node (Leaf (), 0, Node (Leaf (), 1, Leaf ()));
+(inc, Leaf ()) -> Leaf ();
+(inc, Node (Leaf (), 0, Leaf ())) -> Node (Leaf (), 1, Leaf ());
+(div2, Leaf ()) -> Leaf ();
+=================================
+(\div2 -> (\inc -> (\tree_map -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_map = \f -> (\fixTreeMap -> fixTreeMap)
+    ((let fixTreeMap = \tree -> case tree of
+      Node y1 -> 
+        Node
+          ( fixTreeMap (#3.1 y1)
+          , f (#3.2 y1)
+          , fixTreeMap (#3.3 y1)
+          )
+
+      Leaf y1 -> 
+        Leaf in fixTreeMap) : NatTree -> NatTree) in tree_map) : (Nat -> Nat) -> NatTree -> NatTree)) ((let inc = \n -> S n in inc) : Nat -> Nat))
+  ((let div2 = \n -> case n of
+    Z _ -> 
+      0
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          0
+
+        S m2 -> 
+          S (div2 m2) in div2) : Nat -> Nat)
+(\div2 -> (\inc -> (\tree_map -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_map = \f -> (\fixTreeMap -> fixTreeMap)
+    ((let fixTreeMap = \tree -> case tree of
+      Node y1 -> 
+        Node
+          ( fixTreeMap (#3.1 y1)
+          , f (#3.2 y1)
+          , fixTreeMap (#3.3 y1)
+          )
+
+      Leaf y1 -> 
+        Leaf in fixTreeMap) : NatTree -> NatTree) in tree_map) : (Nat -> Nat) -> NatTree -> NatTree)) ((let inc = \n -> S n in inc) : Nat -> Nat))
+  ((let div2 = \n -> case n of
+    Z _ -> 
+      0
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          0
+
+        S m2 -> 
+          S (div2 m2) in div2) : Nat -> Nat)
+0.161502 true true
+
+(div2, Node (Leaf (), 0, Leaf ())) -> Node (Leaf (), 0, Leaf ());
+(div2, Node (Leaf (), 2, Leaf ())) -> Node (Leaf (), 1, Leaf ());
+(div2, Node (Node (Leaf (), 2, Leaf ()), 2, Leaf ())) -> Node (Node (Leaf (), 1, Leaf ()), 1, Leaf ());
+(div2, Node (Leaf (), 1, Node (Leaf (), 2, Leaf ()))) -> Node (Leaf (), 0, Node (Leaf (), 1, Leaf ()));
+(inc, Leaf ()) -> Leaf ();
+(inc, Node (Leaf (), 0, Leaf ())) -> Node (Leaf (), 1, Leaf ());
+(div2, Leaf ()) -> Leaf ();
+=================================
+(\div2 -> (\inc -> (\tree_map -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_map = \f -> (\fixTreeMap -> fixTreeMap)
+    ((let fixTreeMap = \tree -> case tree of
+      Node y1 -> 
+        Node
+          ( fixTreeMap (#3.1 y1)
+          , f (#3.2 y1)
+          , fixTreeMap (#3.3 y1)
+          )
+
+      Leaf y1 -> 
+        Leaf in fixTreeMap) : NatTree -> NatTree) in tree_map) : (Nat -> Nat) -> NatTree -> NatTree)) ((let inc = \n -> S n in inc) : Nat -> Nat))
+  ((let div2 = \n -> case n of
+    Z _ -> 
+      0
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          0
+
+        S m2 -> 
+          S (div2 m2) in div2) : Nat -> Nat)
+(\div2 -> (\inc -> (\tree_map -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let tree_map = \f -> (\fixTreeMap -> fixTreeMap)
+    ((let fixTreeMap = \tree -> case tree of
+      Node y1 -> 
+        Node
+          ( fixTreeMap (#3.1 y1)
+          , f (#3.2 y1)
+          , fixTreeMap (#3.3 y1)
+          )
+
+      Leaf y1 -> 
+        Leaf in fixTreeMap) : NatTree -> NatTree) in tree_map) : (Nat -> Nat) -> NatTree -> NatTree)) ((let inc = \n -> S n in inc) : Nat -> Nat))
+  ((let div2 = \n -> case n of
+    Z _ -> 
+      0
+
+    S m1 -> 
+      case m1 of
+        Z _ -> 
+          0
+
+        S m2 -> 
+          S (div2 m2) in div2) : Nat -> Nat)
+0.162116 true true
+

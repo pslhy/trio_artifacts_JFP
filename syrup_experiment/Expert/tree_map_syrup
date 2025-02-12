@@ -1,0 +1,752 @@
+(div2, Leaf ()) -> Leaf ();
+=================================
+fix f0.fun (x0, x1). x1
+0.0002 false
+
+(div2, Node (Leaf (), 0, Leaf ())) -> Node (Leaf (), 0, Leaf ());
+=================================
+fix f0.fun (x0, x1). x1
+0.0007 false
+
+(div2, Node (Leaf (), 2, Leaf ())) -> Node (Leaf (), 1, Leaf ());
+=================================
+fix f0.fun (x0, x1).
+  match (x1) with
+  | Leaf -> x1
+  | Node(v1,l1,r1) ->
+    ( Node (div2 v1) l1
+      (f0 ( x0, l1 )) )
+  
+0.0016 false
+
+(div2, Node (Node (Leaf (), 2, Leaf ()), 2, Leaf ())) -> Node (Node (Leaf (), 1, Leaf ()), 1, Leaf ());
+=================================
+fix f0.fun (x0, x1).
+  match (x1) with
+  | Leaf -> x1
+  | Node(v1,l1,r1) ->
+    ( Node (div2 v1)
+      (f0 ( x0, l1 )) r1
+      )
+  
+0.0031 false
+
+(div2, Node (Leaf (), 1, Node (Leaf (), 2, Leaf ()))) -> Node (Leaf (), 0, Node (Leaf (), 1, Leaf ()));
+=================================
+fix f0.fun (x0, x1).
+  match (x1) with
+  | Leaf -> x1
+  | Node(v1,l1,r1) ->
+    ( Node (div2 v1) l1
+      (f0 ( x0, r1 )) )
+  
+0.0031 false
+
+(inc, Leaf ()) -> Leaf ();
+=================================
+fix f0.fun (x0, x1). x1
+0.0002 false
+
+(inc, Node (Leaf (), 0, Leaf ())) -> Node (Leaf (), 1, Leaf ());
+=================================
+fix f0.fun (x0, x1).
+  match (x1) with
+  | Leaf -> x1
+  | Node(v1,l1,r1) ->
+    ( Node (inc v1) l1
+      (f0 ( x0, l1 )) )
+  
+0.0006 false
+
+(div2, Leaf ()) -> Leaf ();
+(div2, Node (Leaf (), 0, Leaf ())) -> Node (Leaf (), 0, Leaf ());
+=================================
+fix f0.fun (x0, x1). x1
+0.0007 false
+
+(div2, Leaf ()) -> Leaf ();
+(div2, Node (Leaf (), 2, Leaf ())) -> Node (Leaf (), 1, Leaf ());
+=================================
+fix f0.fun (x0, x1).
+  match (x1) with
+  | Leaf -> x1
+  | Node(v1,l1,r1) ->
+    ( Node (div2 v1) l1
+      l1 )
+  
+0.0016 false
+
+(div2, Node (Leaf (), 2, Leaf ())) -> Node (Leaf (), 1, Leaf ());
+(div2, Node (Node (Leaf (), 2, Leaf ()), 2, Leaf ())) -> Node (Node (Leaf (), 1, Leaf ()), 1, Leaf ());
+=================================
+fix f0.fun (x0, x1).
+  match (x1) with
+  | Leaf -> x1
+  | Node(v1,l1,r1) ->
+    ( Node (div2 v1)
+      (f0 ( x0, l1 )) r1
+      )
+  
+0.0066 false
+
+(div2, Node (Leaf (), 1, Node (Leaf (), 2, Leaf ()))) -> Node (Leaf (), 0, Node (Leaf (), 1, Leaf ()));
+(inc, Leaf ()) -> Leaf ();
+=================================
+fix f0.fun (x0, x1).
+  match (x1) with
+  | Leaf -> x1
+  | Node(v1,l1,r1) ->
+    ( Node (div2 v1) l1
+      (f0 ( x0, r1 )) )
+  
+0.0032 false
+
+(div2, Node (Node (Leaf (), 2, Leaf ()), 2, Leaf ())) -> Node (Node (Leaf (), 1, Leaf ()), 1, Leaf ());
+(inc, Node (Leaf (), 0, Leaf ())) -> Node (Leaf (), 1, Leaf ());
+=================================
+fix f0.fun (x0, x1).
+  match (x1) with
+  | Leaf -> x1
+  | Node(v1,l1,r1) ->
+    ( Node (inc ( Zero ))
+      (f0 ( x0, l1 )) r1
+      )
+  
+0.0056 false
+
+(div2, Leaf ()) -> Leaf ();
+(inc, Node (Leaf (), 0, Leaf ())) -> Node (Leaf (), 1, Leaf ());
+=================================
+fix f0.fun (x0, x1).
+  match (x1) with
+  | Leaf -> x1
+  | Node(v1,l1,r1) ->
+    ( Node (inc v1) l1
+      (f0 ( x0, l1 )) )
+  
+0.0015 false
+
+(div2, Node (Leaf (), 0, Leaf ())) -> Node (Leaf (), 0, Leaf ());
+(inc, Node (Leaf (), 0, Leaf ())) -> Node (Leaf (), 1, Leaf ());
+=================================
+fix f0.fun (x0, x1).
+  match (x1) with
+  | Leaf -> x1
+  | Node(v1,l1,r1) ->
+    ( Node (x0 v1) l1
+      (f0 ( x0, l1 )) )
+  
+0.0024 false
+
+(div2, Node (Leaf (), 0, Leaf ())) -> Node (Leaf (), 0, Leaf ());
+(div2, Node (Node (Leaf (), 2, Leaf ()), 2, Leaf ())) -> Node (Node (Leaf (), 1, Leaf ()), 1, Leaf ());
+=================================
+fix f0.fun (x0, x1).
+  match (x1) with
+  | Leaf -> x1
+  | Node(v1,l1,r1) ->
+    ( Node (div2 v1)
+      (f0 ( x0, l1 )) r1
+      )
+  
+0.0050 false
+
+(div2, Node (Leaf (), 2, Leaf ())) -> Node (Leaf (), 1, Leaf ());
+(div2, Node (Leaf (), 1, Node (Leaf (), 2, Leaf ()))) -> Node (Leaf (), 0, Node (Leaf (), 1, Leaf ()));
+=================================
+fix f0.fun (x0, x1).
+  match (x1) with
+  | Leaf -> x1
+  | Node(v1,l1,r1) ->
+    ( Node (div2 v1) l1
+      (f0 ( x0, r1 )) )
+  
+0.0034 false
+
+(div2, Node (Node (Leaf (), 2, Leaf ()), 2, Leaf ())) -> Node (Node (Leaf (), 1, Leaf ()), 1, Leaf ());
+(div2, Node (Leaf (), 1, Node (Leaf (), 2, Leaf ()))) -> Node (Leaf (), 0, Node (Leaf (), 1, Leaf ()));
+=================================
+fix f0.fun (x0, x1).
+  match (x1) with
+  | Leaf -> x1
+  | Node(v1,l1,r1) ->
+    ( Node (div2 v1)
+      (f0 ( x0, l1 ))
+      (f0 ( x0, r1 )) )
+  
+0.0074 false
+
+(div2, Node (Leaf (), 0, Leaf ())) -> Node (Leaf (), 0, Leaf ());
+(inc, Leaf ()) -> Leaf ();
+(inc, Node (Leaf (), 0, Leaf ())) -> Node (Leaf (), 1, Leaf ());
+=================================
+fix f0.fun (x0, x1).
+  match (x1) with
+  | Leaf -> x1
+  | Node(v1,l1,r1) ->
+    ( Node (x0 v1) l1 l1
+      )
+  
+0.0029 false
+
+(div2, Node (Leaf (), 2, Leaf ())) -> Node (Leaf (), 1, Leaf ());
+(inc, Leaf ()) -> Leaf ();
+(inc, Node (Leaf (), 0, Leaf ())) -> Node (Leaf (), 1, Leaf ());
+=================================
+fix f0.fun (x0, x1).
+  match (x1) with
+  | Leaf -> x1
+  | Node(v1,l1,r1) ->
+    ( Node (inc ( Zero ))
+      l1 l1 )
+  
+0.0029 false
+
+(div2, Leaf ()) -> Leaf ();
+(div2, Node (Leaf (), 0, Leaf ())) -> Node (Leaf (), 0, Leaf ());
+(div2, Node (Leaf (), 1, Node (Leaf (), 2, Leaf ()))) -> Node (Leaf (), 0, Node (Leaf (), 1, Leaf ()));
+=================================
+fix f0.fun (x0, x1).
+  match (x1) with
+  | Leaf -> x1
+  | Node(v1,l1,r1) ->
+    ( Node (div2 v1) l1
+      (f0 ( x0, r1 )) )
+  
+0.0043 false
+
+(div2, Leaf ()) -> Leaf ();
+(div2, Node (Node (Leaf (), 2, Leaf ()), 2, Leaf ())) -> Node (Node (Leaf (), 1, Leaf ()), 1, Leaf ());
+(inc, Node (Leaf (), 0, Leaf ())) -> Node (Leaf (), 1, Leaf ());
+=================================
+fix f0.fun (x0, x1).
+  match (x1) with
+  | Leaf -> x1
+  | Node(v1,l1,r1) ->
+    ( Node (inc ( Zero ))
+      (f0 ( x0, l1 )) r1
+      )
+  
+0.0058 false
+
+(div2, Node (Leaf (), 0, Leaf ())) -> Node (Leaf (), 0, Leaf ());
+(div2, Node (Leaf (), 1, Node (Leaf (), 2, Leaf ()))) -> Node (Leaf (), 0, Node (Leaf (), 1, Leaf ()));
+(inc, Leaf ()) -> Leaf ();
+=================================
+fix f0.fun (x0, x1).
+  match (x1) with
+  | Leaf -> x1
+  | Node(v1,l1,r1) ->
+    ( Node (div2 v1) l1
+      (f0 ( x0, r1 )) )
+  
+0.0048 false
+
+(div2, Node (Leaf (), 2, Leaf ())) -> Node (Leaf (), 1, Leaf ());
+(div2, Node (Node (Leaf (), 2, Leaf ()), 2, Leaf ())) -> Node (Node (Leaf (), 1, Leaf ()), 1, Leaf ());
+(div2, Node (Leaf (), 1, Node (Leaf (), 2, Leaf ()))) -> Node (Leaf (), 0, Node (Leaf (), 1, Leaf ()));
+=================================
+fix f0.fun (x0, x1).
+  match (x1) with
+  | Leaf -> x1
+  | Node(v1,l1,r1) ->
+    ( Node (div2 v1)
+      (f0 ( x0, l1 ))
+      (f0 ( x0, r1 )) )
+  
+0.0136 false
+
+(div2, Leaf ()) -> Leaf ();
+(div2, Node (Leaf (), 2, Leaf ())) -> Node (Leaf (), 1, Leaf ());
+(div2, Node (Leaf (), 1, Node (Leaf (), 2, Leaf ()))) -> Node (Leaf (), 0, Node (Leaf (), 1, Leaf ()));
+=================================
+fix f0.fun (x0, x1).
+  match (x1) with
+  | Leaf -> x1
+  | Node(v1,l1,r1) ->
+    ( Node (div2 v1) l1
+      (f0 ( x0, r1 )) )
+  
+0.0036 false
+
+(div2, Leaf ()) -> Leaf ();
+(div2, Node (Leaf (), 2, Leaf ())) -> Node (Leaf (), 1, Leaf ());
+(inc, Leaf ()) -> Leaf ();
+=================================
+fix f0.fun (x0, x1).
+  match (x1) with
+  | Leaf -> x1
+  | Node(v1,l1,r1) ->
+    ( Node (div2 v1) l1
+      l1 )
+  
+0.0020 false
+
+(div2, Node (Leaf (), 2, Leaf ())) -> Node (Leaf (), 1, Leaf ());
+(div2, Node (Node (Leaf (), 2, Leaf ()), 2, Leaf ())) -> Node (Node (Leaf (), 1, Leaf ()), 1, Leaf ());
+(inc, Leaf ()) -> Leaf ();
+=================================
+fix f0.fun (x0, x1).
+  match (x1) with
+  | Leaf -> x1
+  | Node(v1,l1,r1) ->
+    ( Node (div2 v1)
+      (f0 ( x0, l1 )) r1
+      )
+  
+0.0070 false
+
+(div2, Node (Leaf (), 0, Leaf ())) -> Node (Leaf (), 0, Leaf ());
+(div2, Node (Leaf (), 2, Leaf ())) -> Node (Leaf (), 1, Leaf ());
+(div2, Node (Leaf (), 1, Node (Leaf (), 2, Leaf ()))) -> Node (Leaf (), 0, Node (Leaf (), 1, Leaf ()));
+=================================
+fix f0.fun (x0, x1).
+  match (x1) with
+  | Leaf -> x1
+  | Node(v1,l1,r1) ->
+    ( Node (div2 v1) l1
+      (f0 ( x0, r1 )) )
+  
+0.0063 false
+
+(div2, Node (Node (Leaf (), 2, Leaf ()), 2, Leaf ())) -> Node (Node (Leaf (), 1, Leaf ()), 1, Leaf ());
+(div2, Node (Leaf (), 1, Node (Leaf (), 2, Leaf ()))) -> Node (Leaf (), 0, Node (Leaf (), 1, Leaf ()));
+(inc, Leaf ()) -> Leaf ();
+(inc, Node (Leaf (), 0, Leaf ())) -> Node (Leaf (), 1, Leaf ());
+=================================
+fix f0.fun (x0, x1).
+  match (x1) with
+  | Leaf -> x1
+  | Node(v1,l1,r1) ->
+    ( Node (x0 v1)
+      (f0 ( x0, l1 ))
+      (f0 ( x0, r1 )) )
+  
+0.0183 true
+
+(div2, Node (Leaf (), 0, Leaf ())) -> Node (Leaf (), 0, Leaf ());
+(div2, Node (Node (Leaf (), 2, Leaf ()), 2, Leaf ())) -> Node (Node (Leaf (), 1, Leaf ()), 1, Leaf ());
+(div2, Node (Leaf (), 1, Node (Leaf (), 2, Leaf ()))) -> Node (Leaf (), 0, Node (Leaf (), 1, Leaf ()));
+(inc, Leaf ()) -> Leaf ();
+=================================
+fix f0.fun (x0, x1).
+  match (x1) with
+  | Leaf -> x1
+  | Node(v1,l1,r1) ->
+    ( Node (div2 v1)
+      (f0 ( x0, l1 ))
+      (f0 ( x0, r1 )) )
+  
+0.0169 false
+
+(div2, Node (Leaf (), 0, Leaf ())) -> Node (Leaf (), 0, Leaf ());
+(div2, Node (Leaf (), 2, Leaf ())) -> Node (Leaf (), 1, Leaf ());
+(div2, Node (Node (Leaf (), 2, Leaf ()), 2, Leaf ())) -> Node (Node (Leaf (), 1, Leaf ()), 1, Leaf ());
+(inc, Node (Leaf (), 0, Leaf ())) -> Node (Leaf (), 1, Leaf ());
+=================================
+fix f0.fun (x0, x1).
+  match (x1) with
+  | Leaf -> x1
+  | Node(v1,l1,r1) ->
+    ( Node (x0 v1)
+      (f0 ( x0, l1 )) r1
+      )
+  
+0.0339 false
+
+(div2, Node (Leaf (), 2, Leaf ())) -> Node (Leaf (), 1, Leaf ());
+(div2, Node (Node (Leaf (), 2, Leaf ()), 2, Leaf ())) -> Node (Node (Leaf (), 1, Leaf ()), 1, Leaf ());
+(div2, Node (Leaf (), 1, Node (Leaf (), 2, Leaf ()))) -> Node (Leaf (), 0, Node (Leaf (), 1, Leaf ()));
+(inc, Leaf ()) -> Leaf ();
+=================================
+fix f0.fun (x0, x1).
+  match (x1) with
+  | Leaf -> x1
+  | Node(v1,l1,r1) ->
+    ( Node (div2 v1)
+      (f0 ( x0, l1 ))
+      (f0 ( x0, r1 )) )
+  
+0.0131 false
+
+(div2, Node (Leaf (), 0, Leaf ())) -> Node (Leaf (), 0, Leaf ());
+(div2, Node (Leaf (), 2, Leaf ())) -> Node (Leaf (), 1, Leaf ());
+(div2, Node (Node (Leaf (), 2, Leaf ()), 2, Leaf ())) -> Node (Node (Leaf (), 1, Leaf ()), 1, Leaf ());
+(inc, Leaf ()) -> Leaf ();
+=================================
+fix f0.fun (x0, x1).
+  match (x1) with
+  | Leaf -> x1
+  | Node(v1,l1,r1) ->
+    ( Node (div2 v1)
+      (f0 ( x0, l1 )) r1
+      )
+  
+0.0174 false
+
+(div2, Node (Leaf (), 0, Leaf ())) -> Node (Leaf (), 0, Leaf ());
+(div2, Node (Node (Leaf (), 2, Leaf ()), 2, Leaf ())) -> Node (Node (Leaf (), 1, Leaf ()), 1, Leaf ());
+(inc, Leaf ()) -> Leaf ();
+(inc, Node (Leaf (), 0, Leaf ())) -> Node (Leaf (), 1, Leaf ());
+=================================
+fix f0.fun (x0, x1).
+  match (x1) with
+  | Leaf -> x1
+  | Node(v1,l1,r1) ->
+    ( Node (x0 v1)
+      (f0 ( x0, l1 )) r1
+      )
+  
+0.0162 false
+
+(div2, Node (Leaf (), 0, Leaf ())) -> Node (Leaf (), 0, Leaf ());
+(div2, Node (Node (Leaf (), 2, Leaf ()), 2, Leaf ())) -> Node (Node (Leaf (), 1, Leaf ()), 1, Leaf ());
+(div2, Node (Leaf (), 1, Node (Leaf (), 2, Leaf ()))) -> Node (Leaf (), 0, Node (Leaf (), 1, Leaf ()));
+(inc, Node (Leaf (), 0, Leaf ())) -> Node (Leaf (), 1, Leaf ());
+=================================
+fix f0.fun (x0, x1).
+  match (x1) with
+  | Leaf -> x1
+  | Node(v1,l1,r1) ->
+    ( Node (x0 v1)
+      (f0 ( x0, l1 ))
+      (f0 ( x0, r1 )) )
+  
+0.0353 true
+
+(div2, Leaf ()) -> Leaf ();
+(div2, Node (Leaf (), 1, Node (Leaf (), 2, Leaf ()))) -> Node (Leaf (), 0, Node (Leaf (), 1, Leaf ()));
+(inc, Leaf ()) -> Leaf ();
+(inc, Node (Leaf (), 0, Leaf ())) -> Node (Leaf (), 1, Leaf ());
+=================================
+fix f0.fun (x0, x1).
+  match (x1) with
+  | Leaf -> x1
+  | Node(v1,l1,r1) ->
+    ( Node (x0 v1) l1
+      (f0 ( x0, r1 )) )
+  
+0.0039 false
+
+(div2, Node (Leaf (), 2, Leaf ())) -> Node (Leaf (), 1, Leaf ());
+(div2, Node (Node (Leaf (), 2, Leaf ()), 2, Leaf ())) -> Node (Node (Leaf (), 1, Leaf ()), 1, Leaf ());
+(inc, Leaf ()) -> Leaf ();
+(inc, Node (Leaf (), 0, Leaf ())) -> Node (Leaf (), 1, Leaf ());
+=================================
+fix f0.fun (x0, x1).
+  match (x1) with
+  | Leaf -> x1
+  | Node(v1,l1,r1) ->
+    ( Node (inc ( Zero ))
+      (f0 ( x0, l1 )) r1
+      )
+  
+0.0150 false
+
+(div2, Leaf ()) -> Leaf ();
+(div2, Node (Leaf (), 0, Leaf ())) -> Node (Leaf (), 0, Leaf ());
+(inc, Leaf ()) -> Leaf ();
+(inc, Node (Leaf (), 0, Leaf ())) -> Node (Leaf (), 1, Leaf ());
+=================================
+fix f0.fun (x0, x1).
+  match (x1) with
+  | Leaf -> x1
+  | Node(v1,l1,r1) ->
+    ( Node (x0 v1) l1 l1
+      )
+  
+0.0024 false
+
+(div2, Leaf ()) -> Leaf ();
+(div2, Node (Leaf (), 0, Leaf ())) -> Node (Leaf (), 0, Leaf ());
+(div2, Node (Leaf (), 2, Leaf ())) -> Node (Leaf (), 1, Leaf ());
+(div2, Node (Node (Leaf (), 2, Leaf ()), 2, Leaf ())) -> Node (Node (Leaf (), 1, Leaf ()), 1, Leaf ());
+(div2, Node (Leaf (), 1, Node (Leaf (), 2, Leaf ()))) -> Node (Leaf (), 0, Node (Leaf (), 1, Leaf ()));
+=================================
+fix f0.fun (x0, x1).
+  match (x1) with
+  | Leaf -> x1
+  | Node(v1,l1,r1) ->
+    ( Node (div2 v1)
+      (f0 ( x0, l1 ))
+      (f0 ( x0, r1 )) )
+  
+0.0299 false
+
+(div2, Leaf ()) -> Leaf ();
+(div2, Node (Leaf (), 2, Leaf ())) -> Node (Leaf (), 1, Leaf ());
+(div2, Node (Leaf (), 1, Node (Leaf (), 2, Leaf ()))) -> Node (Leaf (), 0, Node (Leaf (), 1, Leaf ()));
+(inc, Leaf ()) -> Leaf ();
+(inc, Node (Leaf (), 0, Leaf ())) -> Node (Leaf (), 1, Leaf ());
+=================================
+fix f0.fun (x0, x1).
+  match (x1) with
+  | Leaf -> x1
+  | Node(v1,l1,r1) ->
+    ( Node (x0 v1) l1
+      (f0 ( x0, r1 )) )
+  
+0.0047 false
+
+(div2, Leaf ()) -> Leaf ();
+(div2, Node (Leaf (), 0, Leaf ())) -> Node (Leaf (), 0, Leaf ());
+(div2, Node (Leaf (), 2, Leaf ())) -> Node (Leaf (), 1, Leaf ());
+(div2, Node (Node (Leaf (), 2, Leaf ()), 2, Leaf ())) -> Node (Node (Leaf (), 1, Leaf ()), 1, Leaf ());
+(inc, Node (Leaf (), 0, Leaf ())) -> Node (Leaf (), 1, Leaf ());
+=================================
+fix f0.fun (x0, x1).
+  match (x1) with
+  | Leaf -> x1
+  | Node(v1,l1,r1) ->
+    ( Node (x0 v1)
+      (f0 ( x0, l1 )) r1
+      )
+  
+0.0335 false
+
+(div2, Leaf ()) -> Leaf ();
+(div2, Node (Leaf (), 0, Leaf ())) -> Node (Leaf (), 0, Leaf ());
+(div2, Node (Leaf (), 2, Leaf ())) -> Node (Leaf (), 1, Leaf ());
+(div2, Node (Leaf (), 1, Node (Leaf (), 2, Leaf ()))) -> Node (Leaf (), 0, Node (Leaf (), 1, Leaf ()));
+(inc, Leaf ()) -> Leaf ();
+=================================
+fix f0.fun (x0, x1).
+  match (x1) with
+  | Leaf -> x1
+  | Node(v1,l1,r1) ->
+    ( Node (div2 v1) l1
+      (f0 ( x0, r1 )) )
+  
+0.0058 false
+
+(div2, Leaf ()) -> Leaf ();
+(div2, Node (Leaf (), 0, Leaf ())) -> Node (Leaf (), 0, Leaf ());
+(div2, Node (Leaf (), 2, Leaf ())) -> Node (Leaf (), 1, Leaf ());
+(div2, Node (Leaf (), 1, Node (Leaf (), 2, Leaf ()))) -> Node (Leaf (), 0, Node (Leaf (), 1, Leaf ()));
+(inc, Node (Leaf (), 0, Leaf ())) -> Node (Leaf (), 1, Leaf ());
+=================================
+fix f0.fun (x0, x1).
+  match (x1) with
+  | Leaf -> x1
+  | Node(v1,l1,r1) ->
+    ( Node (x0 v1) l1
+      (f0 ( x0, r1 )) )
+  
+0.0126 false
+
+(div2, Node (Leaf (), 0, Leaf ())) -> Node (Leaf (), 0, Leaf ());
+(div2, Node (Leaf (), 2, Leaf ())) -> Node (Leaf (), 1, Leaf ());
+(div2, Node (Node (Leaf (), 2, Leaf ()), 2, Leaf ())) -> Node (Node (Leaf (), 1, Leaf ()), 1, Leaf ());
+(inc, Leaf ()) -> Leaf ();
+(inc, Node (Leaf (), 0, Leaf ())) -> Node (Leaf (), 1, Leaf ());
+=================================
+fix f0.fun (x0, x1).
+  match (x1) with
+  | Leaf -> x1
+  | Node(v1,l1,r1) ->
+    ( Node (x0 v1)
+      (f0 ( x0, l1 )) r1
+      )
+  
+0.0346 false
+
+(div2, Leaf ()) -> Leaf ();
+(div2, Node (Leaf (), 0, Leaf ())) -> Node (Leaf (), 0, Leaf ());
+(div2, Node (Node (Leaf (), 2, Leaf ()), 2, Leaf ())) -> Node (Node (Leaf (), 1, Leaf ()), 1, Leaf ());
+(div2, Node (Leaf (), 1, Node (Leaf (), 2, Leaf ()))) -> Node (Leaf (), 0, Node (Leaf (), 1, Leaf ()));
+(inc, Leaf ()) -> Leaf ();
+=================================
+fix f0.fun (x0, x1).
+  match (x1) with
+  | Leaf -> x1
+  | Node(v1,l1,r1) ->
+    ( Node (div2 v1)
+      (f0 ( x0, l1 ))
+      (f0 ( x0, r1 )) )
+  
+0.0156 false
+
+(div2, Leaf ()) -> Leaf ();
+(div2, Node (Node (Leaf (), 2, Leaf ()), 2, Leaf ())) -> Node (Node (Leaf (), 1, Leaf ()), 1, Leaf ());
+(div2, Node (Leaf (), 1, Node (Leaf (), 2, Leaf ()))) -> Node (Leaf (), 0, Node (Leaf (), 1, Leaf ()));
+(inc, Leaf ()) -> Leaf ();
+(inc, Node (Leaf (), 0, Leaf ())) -> Node (Leaf (), 1, Leaf ());
+=================================
+fix f0.fun (x0, x1).
+  match (x1) with
+  | Leaf -> x1
+  | Node(v1,l1,r1) ->
+    ( Node (x0 v1)
+      (f0 ( x0, l1 ))
+      (f0 ( x0, r1 )) )
+  
+0.0155 true
+
+(div2, Leaf ()) -> Leaf ();
+(div2, Node (Leaf (), 0, Leaf ())) -> Node (Leaf (), 0, Leaf ());
+(div2, Node (Node (Leaf (), 2, Leaf ()), 2, Leaf ())) -> Node (Node (Leaf (), 1, Leaf ()), 1, Leaf ());
+(inc, Leaf ()) -> Leaf ();
+(inc, Node (Leaf (), 0, Leaf ())) -> Node (Leaf (), 1, Leaf ());
+=================================
+fix f0.fun (x0, x1).
+  match (x1) with
+  | Leaf -> x1
+  | Node(v1,l1,r1) ->
+    ( Node (x0 v1)
+      (f0 ( x0, l1 )) r1
+      )
+  
+0.0122 false
+
+(div2, Node (Leaf (), 0, Leaf ())) -> Node (Leaf (), 0, Leaf ());
+(div2, Node (Leaf (), 2, Leaf ())) -> Node (Leaf (), 1, Leaf ());
+(div2, Node (Node (Leaf (), 2, Leaf ()), 2, Leaf ())) -> Node (Node (Leaf (), 1, Leaf ()), 1, Leaf ());
+(div2, Node (Leaf (), 1, Node (Leaf (), 2, Leaf ()))) -> Node (Leaf (), 0, Node (Leaf (), 1, Leaf ()));
+(inc, Leaf ()) -> Leaf ();
+=================================
+fix f0.fun (x0, x1).
+  match (x1) with
+  | Leaf -> x1
+  | Node(v1,l1,r1) ->
+    ( Node (div2 v1)
+      (f0 ( x0, l1 ))
+      (f0 ( x0, r1 )) )
+  
+0.0382 false
+
+(div2, Leaf ()) -> Leaf ();
+(div2, Node (Leaf (), 0, Leaf ())) -> Node (Leaf (), 0, Leaf ());
+(div2, Node (Leaf (), 2, Leaf ())) -> Node (Leaf (), 1, Leaf ());
+(div2, Node (Node (Leaf (), 2, Leaf ()), 2, Leaf ())) -> Node (Node (Leaf (), 1, Leaf ()), 1, Leaf ());
+(div2, Node (Leaf (), 1, Node (Leaf (), 2, Leaf ()))) -> Node (Leaf (), 0, Node (Leaf (), 1, Leaf ()));
+(inc, Leaf ()) -> Leaf ();
+=================================
+fix f0.fun (x0, x1).
+  match (x1) with
+  | Leaf -> x1
+  | Node(v1,l1,r1) ->
+    ( Node (div2 v1)
+      (f0 ( x0, l1 ))
+      (f0 ( x0, r1 )) )
+  
+0.0367 false
+
+(div2, Leaf ()) -> Leaf ();
+(div2, Node (Leaf (), 0, Leaf ())) -> Node (Leaf (), 0, Leaf ());
+(div2, Node (Leaf (), 2, Leaf ())) -> Node (Leaf (), 1, Leaf ());
+(div2, Node (Node (Leaf (), 2, Leaf ()), 2, Leaf ())) -> Node (Node (Leaf (), 1, Leaf ()), 1, Leaf ());
+(div2, Node (Leaf (), 1, Node (Leaf (), 2, Leaf ()))) -> Node (Leaf (), 0, Node (Leaf (), 1, Leaf ()));
+(inc, Node (Leaf (), 0, Leaf ())) -> Node (Leaf (), 1, Leaf ());
+=================================
+fix f0.fun (x0, x1).
+  match (x1) with
+  | Leaf -> x1
+  | Node(v1,l1,r1) ->
+    ( Node (x0 v1)
+      (f0 ( x0, l1 ))
+      (f0 ( x0, r1 )) )
+  
+0.0730 true
+
+(div2, Leaf ()) -> Leaf ();
+(div2, Node (Leaf (), 0, Leaf ())) -> Node (Leaf (), 0, Leaf ());
+(div2, Node (Leaf (), 2, Leaf ())) -> Node (Leaf (), 1, Leaf ());
+(div2, Node (Node (Leaf (), 2, Leaf ()), 2, Leaf ())) -> Node (Node (Leaf (), 1, Leaf ()), 1, Leaf ());
+(inc, Leaf ()) -> Leaf ();
+(inc, Node (Leaf (), 0, Leaf ())) -> Node (Leaf (), 1, Leaf ());
+=================================
+fix f0.fun (x0, x1).
+  match (x1) with
+  | Leaf -> x1
+  | Node(v1,l1,r1) ->
+    ( Node (x0 v1)
+      (f0 ( x0, l1 )) r1
+      )
+  
+0.0380 false
+
+(div2, Leaf ()) -> Leaf ();
+(div2, Node (Leaf (), 0, Leaf ())) -> Node (Leaf (), 0, Leaf ());
+(div2, Node (Leaf (), 2, Leaf ())) -> Node (Leaf (), 1, Leaf ());
+(div2, Node (Leaf (), 1, Node (Leaf (), 2, Leaf ()))) -> Node (Leaf (), 0, Node (Leaf (), 1, Leaf ()));
+(inc, Leaf ()) -> Leaf ();
+(inc, Node (Leaf (), 0, Leaf ())) -> Node (Leaf (), 1, Leaf ());
+=================================
+fix f0.fun (x0, x1).
+  match (x1) with
+  | Leaf -> x1
+  | Node(v1,l1,r1) ->
+    ( Node (x0 v1) l1
+      (f0 ( x0, r1 )) )
+  
+0.0123 false
+
+(div2, Leaf ()) -> Leaf ();
+(div2, Node (Leaf (), 0, Leaf ())) -> Node (Leaf (), 0, Leaf ());
+(div2, Node (Node (Leaf (), 2, Leaf ()), 2, Leaf ())) -> Node (Node (Leaf (), 1, Leaf ()), 1, Leaf ());
+(div2, Node (Leaf (), 1, Node (Leaf (), 2, Leaf ()))) -> Node (Leaf (), 0, Node (Leaf (), 1, Leaf ()));
+(inc, Leaf ()) -> Leaf ();
+(inc, Node (Leaf (), 0, Leaf ())) -> Node (Leaf (), 1, Leaf ());
+=================================
+fix f0.fun (x0, x1).
+  match (x1) with
+  | Leaf -> x1
+  | Node(v1,l1,r1) ->
+    ( Node (x0 v1)
+      (f0 ( x0, l1 ))
+      (f0 ( x0, r1 )) )
+  
+0.0337 true
+
+(div2, Leaf ()) -> Leaf ();
+(div2, Node (Leaf (), 2, Leaf ())) -> Node (Leaf (), 1, Leaf ());
+(div2, Node (Node (Leaf (), 2, Leaf ()), 2, Leaf ())) -> Node (Node (Leaf (), 1, Leaf ()), 1, Leaf ());
+(div2, Node (Leaf (), 1, Node (Leaf (), 2, Leaf ()))) -> Node (Leaf (), 0, Node (Leaf (), 1, Leaf ()));
+(inc, Leaf ()) -> Leaf ();
+(inc, Node (Leaf (), 0, Leaf ())) -> Node (Leaf (), 1, Leaf ());
+=================================
+fix f0.fun (x0, x1).
+  match (x1) with
+  | Leaf -> x1
+  | Node(v1,l1,r1) ->
+    ( Node (x0 v1)
+      (f0 ( x0, l1 ))
+      (f0 ( x0, r1 )) )
+  
+0.0269 true
+
+(div2, Node (Leaf (), 0, Leaf ())) -> Node (Leaf (), 0, Leaf ());
+(div2, Node (Leaf (), 2, Leaf ())) -> Node (Leaf (), 1, Leaf ());
+(div2, Node (Node (Leaf (), 2, Leaf ()), 2, Leaf ())) -> Node (Node (Leaf (), 1, Leaf ()), 1, Leaf ());
+(div2, Node (Leaf (), 1, Node (Leaf (), 2, Leaf ()))) -> Node (Leaf (), 0, Node (Leaf (), 1, Leaf ()));
+(inc, Leaf ()) -> Leaf ();
+(inc, Node (Leaf (), 0, Leaf ())) -> Node (Leaf (), 1, Leaf ());
+=================================
+fix f0.fun (x0, x1).
+  match (x1) with
+  | Leaf -> x1
+  | Node(v1,l1,r1) ->
+    ( Node (x0 v1)
+      (f0 ( x0, l1 ))
+      (f0 ( x0, r1 )) )
+  
+0.0724 true
+
+(div2, Leaf ()) -> Leaf ();
+(div2, Node (Leaf (), 0, Leaf ())) -> Node (Leaf (), 0, Leaf ());
+(div2, Node (Leaf (), 2, Leaf ())) -> Node (Leaf (), 1, Leaf ());
+(div2, Node (Node (Leaf (), 2, Leaf ()), 2, Leaf ())) -> Node (Node (Leaf (), 1, Leaf ()), 1, Leaf ());
+(div2, Node (Leaf (), 1, Node (Leaf (), 2, Leaf ()))) -> Node (Leaf (), 0, Node (Leaf (), 1, Leaf ()));
+(inc, Leaf ()) -> Leaf ();
+(inc, Node (Leaf (), 0, Leaf ())) -> Node (Leaf (), 1, Leaf ());
+=================================
+fix f0.fun (x0, x1).
+  match (x1) with
+  | Leaf -> x1
+  | Node(v1,l1,r1) ->
+    ( Node (x0 v1)
+      (f0 ( x0, l1 ))
+      (f0 ( x0, r1 )) )
+  
+0.0749 true
+

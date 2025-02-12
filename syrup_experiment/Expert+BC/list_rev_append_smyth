@@ -1,0 +1,360 @@
+[0] -> [0];
+[] -> [];
+=================================
+(\append -> (\list_rev_append -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ((let list_rev_append = \xs -> xs in list_rev_append) : NatList -> NatList))
+  ((let append = \l1 -> \l2 -> case l1 of
+    Nil _ -> 
+      l2
+
+    Cons p -> 
+      Cons (#2.1 p, append (#2.2 p) l2) in append) : NatList -> NatList -> NatList)
+0.00583899999992 false false
+
+[1] -> [1];
+[] -> [];
+=================================
+(\append -> (\list_rev_append -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ((let list_rev_append = \xs -> xs in list_rev_append) : NatList -> NatList))
+  ((let append = \l1 -> \l2 -> case l1 of
+    Nil _ -> 
+      l2
+
+    Cons p -> 
+      Cons (#2.1 p, append (#2.2 p) l2) in append) : NatList -> NatList -> NatList)
+0.0053989999999 false false
+
+[0, 1] -> [1, 0];
+[] -> [];
+=================================
+(\append -> (\list_rev_append -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_rev_append = \xs -> case xs of
+    Nil y1 -> 
+      []
+
+    Cons y1 -> 
+      [1, 0] in list_rev_append) : NatList -> NatList))
+  ((let append = \l1 -> \l2 -> case l1 of
+    Nil _ -> 
+      l2
+
+    Cons p -> 
+      Cons (#2.1 p, append (#2.2 p) l2) in append) : NatList -> NatList -> NatList)
+0.0170450000001 false false
+
+[0, 0, 1] -> [1, 0, 0];
+[] -> [];
+=================================
+(\append -> (\list_rev_append -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_rev_append = \xs -> case xs of
+    Nil y1 -> 
+      []
+
+    Cons y1 -> 
+      [1, 0, 0] in list_rev_append) : NatList -> NatList))
+  ((let append = \l1 -> \l2 -> case l1 of
+    Nil _ -> 
+      l2
+
+    Cons p -> 
+      Cons (#2.1 p, append (#2.2 p) l2) in append) : NatList -> NatList -> NatList)
+0.031702 false false
+
+[0] -> [0];
+[1] -> [1];
+[] -> [];
+=================================
+(\append -> (\list_rev_append -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ((let list_rev_append = \xs -> xs in list_rev_append) : NatList -> NatList))
+  ((let append = \l1 -> \l2 -> case l1 of
+    Nil _ -> 
+      l2
+
+    Cons p -> 
+      Cons (#2.1 p, append (#2.2 p) l2) in append) : NatList -> NatList -> NatList)
+0.00622199999998 false false
+
+[0] -> [0];
+[0, 1] -> [1, 0];
+[] -> [];
+=================================
+(\append -> (\list_rev_append -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_rev_append = \xs -> case xs of
+    Nil y1 -> 
+      []
+
+    Cons y1 -> 
+      append (#2.2 y1) [#2.1 y1] in list_rev_append) : NatList -> NatList))
+  ((let append = \l1 -> \l2 -> case l1 of
+    Nil _ -> 
+      l2
+
+    Cons p -> 
+      Cons (#2.1 p, append (#2.2 p) l2) in append) : NatList -> NatList -> NatList)
+0.0595699999999 false false
+
+[0] -> [0];
+[0, 0, 1] -> [1, 0, 0];
+[] -> [];
+=================================
+(\append -> (\list_rev_append -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_rev_append = \xs -> case xs of
+    Nil y1 -> 
+      xs
+
+    Cons y1 -> 
+      append (list_rev_append (#2.2 y1)) [#2.1 y1] in list_rev_append) : NatList -> NatList))
+  ((let append = \l1 -> \l2 -> case l1 of
+    Nil _ -> 
+      l2
+
+    Cons p -> 
+      Cons (#2.1 p, append (#2.2 p) l2) in append) : NatList -> NatList -> NatList)
+(\append -> (\list_rev_append -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_rev_append = \xs -> case xs of
+    Nil y1 -> 
+      xs
+
+    Cons y1 -> 
+      append (list_rev_append (#2.2 y1)) [#2.1 y1] in list_rev_append) : NatList -> NatList))
+  ((let append = \l1 -> \l2 -> case l1 of
+    Nil _ -> 
+      l2
+
+    Cons p -> 
+      Cons (#2.1 p, append (#2.2 p) l2) in append) : NatList -> NatList -> NatList)
+0.0831189999999 true true
+
+[1] -> [1];
+[0, 1] -> [1, 0];
+[] -> [];
+=================================
+(\append -> (\list_rev_append -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_rev_append = \xs -> case xs of
+    Nil y1 -> 
+      []
+
+    Cons y1 -> 
+      append (#2.2 y1) [#2.1 y1] in list_rev_append) : NatList -> NatList))
+  ((let append = \l1 -> \l2 -> case l1 of
+    Nil _ -> 
+      l2
+
+    Cons p -> 
+      Cons (#2.1 p, append (#2.2 p) l2) in append) : NatList -> NatList -> NatList)
+2.115165 false false
+
+[1] -> [1];
+[0, 0, 1] -> [1, 0, 0];
+[] -> [];
+=================================
+(\append -> (\list_rev_append -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_rev_append = \xs -> case xs of
+    Nil y1 -> 
+      xs
+
+    Cons y1 -> 
+      append (list_rev_append (#2.2 y1)) [#2.1 y1] in list_rev_append) : NatList -> NatList))
+  ((let append = \l1 -> \l2 -> case l1 of
+    Nil _ -> 
+      l2
+
+    Cons p -> 
+      Cons (#2.1 p, append (#2.2 p) l2) in append) : NatList -> NatList -> NatList)
+(\append -> (\list_rev_append -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_rev_append = \xs -> case xs of
+    Nil y1 -> 
+      xs
+
+    Cons y1 -> 
+      append (list_rev_append (#2.2 y1)) [#2.1 y1] in list_rev_append) : NatList -> NatList))
+  ((let append = \l1 -> \l2 -> case l1 of
+    Nil _ -> 
+      l2
+
+    Cons p -> 
+      Cons (#2.1 p, append (#2.2 p) l2) in append) : NatList -> NatList -> NatList)
+4.035876 true true
+
+[0, 1] -> [1, 0];
+[0, 0, 1] -> [1, 0, 0];
+[] -> [];
+=================================
+(\append -> (\list_rev_append -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_rev_append = \xs -> case xs of
+    Nil y1 -> 
+      xs
+
+    Cons y1 -> 
+      append (list_rev_append (#2.2 y1)) [#2.1 y1] in list_rev_append) : NatList -> NatList))
+  ((let append = \l1 -> \l2 -> case l1 of
+    Nil _ -> 
+      l2
+
+    Cons p -> 
+      Cons (#2.1 p, append (#2.2 p) l2) in append) : NatList -> NatList -> NatList)
+(\append -> (\list_rev_append -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_rev_append = \xs -> case xs of
+    Nil y1 -> 
+      xs
+
+    Cons y1 -> 
+      append (list_rev_append (#2.2 y1)) [#2.1 y1] in list_rev_append) : NatList -> NatList))
+  ((let append = \l1 -> \l2 -> case l1 of
+    Nil _ -> 
+      l2
+
+    Cons p -> 
+      Cons (#2.1 p, append (#2.2 p) l2) in append) : NatList -> NatList -> NatList)
+24.16167 true true
+
+[0] -> [0];
+[1] -> [1];
+[0, 1] -> [1, 0];
+[] -> [];
+=================================
+(\append -> (\list_rev_append -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_rev_append = \xs -> case xs of
+    Nil y1 -> 
+      []
+
+    Cons y1 -> 
+      append (#2.2 y1) [#2.1 y1] in list_rev_append) : NatList -> NatList))
+  ((let append = \l1 -> \l2 -> case l1 of
+    Nil _ -> 
+      l2
+
+    Cons p -> 
+      Cons (#2.1 p, append (#2.2 p) l2) in append) : NatList -> NatList -> NatList)
+0.0724760000001 false false
+
+[0] -> [0];
+[1] -> [1];
+[0, 0, 1] -> [1, 0, 0];
+[] -> [];
+=================================
+(\append -> (\list_rev_append -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_rev_append = \xs -> case xs of
+    Nil y1 -> 
+      xs
+
+    Cons y1 -> 
+      append (list_rev_append (#2.2 y1)) [#2.1 y1] in list_rev_append) : NatList -> NatList))
+  ((let append = \l1 -> \l2 -> case l1 of
+    Nil _ -> 
+      l2
+
+    Cons p -> 
+      Cons (#2.1 p, append (#2.2 p) l2) in append) : NatList -> NatList -> NatList)
+(\append -> (\list_rev_append -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_rev_append = \xs -> case xs of
+    Nil y1 -> 
+      xs
+
+    Cons y1 -> 
+      append (list_rev_append (#2.2 y1)) [#2.1 y1] in list_rev_append) : NatList -> NatList))
+  ((let append = \l1 -> \l2 -> case l1 of
+    Nil _ -> 
+      l2
+
+    Cons p -> 
+      Cons (#2.1 p, append (#2.2 p) l2) in append) : NatList -> NatList -> NatList)
+0.112046 true true
+
+[0] -> [0];
+[0, 1] -> [1, 0];
+[0, 0, 1] -> [1, 0, 0];
+[] -> [];
+=================================
+(\append -> (\list_rev_append -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_rev_append = \xs -> case xs of
+    Nil y1 -> 
+      xs
+
+    Cons y1 -> 
+      append (list_rev_append (#2.2 y1)) [#2.1 y1] in list_rev_append) : NatList -> NatList))
+  ((let append = \l1 -> \l2 -> case l1 of
+    Nil _ -> 
+      l2
+
+    Cons p -> 
+      Cons (#2.1 p, append (#2.2 p) l2) in append) : NatList -> NatList -> NatList)
+(\append -> (\list_rev_append -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_rev_append = \xs -> case xs of
+    Nil y1 -> 
+      xs
+
+    Cons y1 -> 
+      append (list_rev_append (#2.2 y1)) [#2.1 y1] in list_rev_append) : NatList -> NatList))
+  ((let append = \l1 -> \l2 -> case l1 of
+    Nil _ -> 
+      l2
+
+    Cons p -> 
+      Cons (#2.1 p, append (#2.2 p) l2) in append) : NatList -> NatList -> NatList)
+0.106124 true true
+
+[1] -> [1];
+[0, 1] -> [1, 0];
+[0, 0, 1] -> [1, 0, 0];
+[] -> [];
+=================================
+(\append -> (\list_rev_append -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_rev_append = \xs -> case xs of
+    Nil y1 -> 
+      xs
+
+    Cons y1 -> 
+      append (list_rev_append (#2.2 y1)) [#2.1 y1] in list_rev_append) : NatList -> NatList))
+  ((let append = \l1 -> \l2 -> case l1 of
+    Nil _ -> 
+      l2
+
+    Cons p -> 
+      Cons (#2.1 p, append (#2.2 p) l2) in append) : NatList -> NatList -> NatList)
+(\append -> (\list_rev_append -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_rev_append = \xs -> case xs of
+    Nil y1 -> 
+      xs
+
+    Cons y1 -> 
+      append (list_rev_append (#2.2 y1)) [#2.1 y1] in list_rev_append) : NatList -> NatList))
+  ((let append = \l1 -> \l2 -> case l1 of
+    Nil _ -> 
+      l2
+
+    Cons p -> 
+      Cons (#2.1 p, append (#2.2 p) l2) in append) : NatList -> NatList -> NatList)
+5.383226 true true
+
+[0] -> [0];
+[1] -> [1];
+[0, 1] -> [1, 0];
+[0, 0, 1] -> [1, 0, 0];
+[] -> [];
+=================================
+(\append -> (\list_rev_append -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_rev_append = \xs -> case xs of
+    Nil y1 -> 
+      xs
+
+    Cons y1 -> 
+      append (list_rev_append (#2.2 y1)) [#2.1 y1] in list_rev_append) : NatList -> NatList))
+  ((let append = \l1 -> \l2 -> case l1 of
+    Nil _ -> 
+      l2
+
+    Cons p -> 
+      Cons (#2.1 p, append (#2.2 p) l2) in append) : NatList -> NatList -> NatList)
+(\append -> (\list_rev_append -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> (\_ -> ()) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ())) ({ASSERTION} : ()))
+  ((let list_rev_append = \xs -> case xs of
+    Nil y1 -> 
+      xs
+
+    Cons y1 -> 
+      append (list_rev_append (#2.2 y1)) [#2.1 y1] in list_rev_append) : NatList -> NatList))
+  ((let append = \l1 -> \l2 -> case l1 of
+    Nil _ -> 
+      l2
+
+    Cons p -> 
+      Cons (#2.1 p, append (#2.2 p) l2) in append) : NatList -> NatList -> NatList)
+0.121366 true true
+

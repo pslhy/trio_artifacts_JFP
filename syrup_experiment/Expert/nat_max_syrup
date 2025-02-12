@@ -1,0 +1,1111 @@
+(0, 0) -> 0;
+=================================
+fix f0.fun (x0, x1). x0
+0.0002 false
+
+(0, 1) -> 1;
+=================================
+fix f0.fun (x0, x1). x1
+0.0006 false
+
+(0, 2) -> 2;
+=================================
+fix f0.fun (x0, x1). x1
+0.0021 false
+
+(1, 0) -> 1;
+=================================
+fix f0.fun (x0, x1). x0
+0.0009 false
+
+(1, 1) -> 1;
+=================================
+fix f0.fun (x0, x1). x0
+0.0039 false
+
+(1, 2) -> 2;
+=================================
+fix f0.fun (x0, x1). x1
+0.0037 false
+
+(2, 0) -> 2;
+=================================
+fix f0.fun (x0, x1). x0
+0.0023 false
+
+(2, 1) -> 2;
+=================================
+fix f0.fun (x0, x1). x0
+0.0063 false
+
+(2, 2) -> 2;
+=================================
+fix f0.fun (x0, x1). x0
+0.0089 false
+
+(1, 1) -> 1;
+(2, 0) -> 2;
+=================================
+fix f0.fun (x0, x1). x0
+0.0060 false
+
+(0, 0) -> 0;
+(0, 2) -> 2;
+=================================
+fix f0.fun (x0, x1). x1
+0.0030 false
+
+(0, 0) -> 0;
+(1, 0) -> 1;
+=================================
+fix f0.fun (x0, x1). x0
+0.0004 false
+
+(1, 0) -> 1;
+(2, 2) -> 2;
+=================================
+fix f0.fun (x0, x1). x0
+0.0052 false
+
+(0, 0) -> 0;
+(1, 2) -> 2;
+=================================
+fix f0.fun (x0, x1). x1
+0.0036 false
+
+(1, 2) -> 2;
+(2, 1) -> 2;
+=================================
+fix f0.fun (x0, x1).
+  match (x0) with
+  | Z ->
+    ( Succ ( Succ x0 ) )
+  | Sn1 ->
+    (f0 ( n1, x1 ))
+  
+0.0095 false
+
+(0, 0) -> 0;
+(2, 1) -> 2;
+=================================
+fix f0.fun (x0, x1). x0
+0.0046 false
+
+(0, 2) -> 2;
+(1, 0) -> 1;
+=================================
+fix f0.fun (x0, x1).
+  match (x0) with
+  | Z -> x1
+  | Sn1 ->
+    ( Succ
+      (f0 ( n1, x1 )) )
+  
+0.0028 false
+
+(0, 2) -> 2;
+(2, 2) -> 2;
+=================================
+fix f0.fun (x0, x1). x1
+0.0060 false
+
+(0, 1) -> 1;
+(1, 0) -> 1;
+=================================
+fix f0.fun (x0, x1).
+  match (x0) with
+  | Z -> x1
+  | Sn1 ->
+    ( Succ
+      (f0 ( n1, x1 )) )
+  
+0.0019 false
+
+(0, 0) -> 0;
+(0, 1) -> 1;
+(0, 2) -> 2;
+=================================
+fix f0.fun (x0, x1). x1
+0.0006 false
+
+(1, 0) -> 1;
+(1, 1) -> 1;
+(2, 1) -> 2;
+=================================
+fix f0.fun (x0, x1). x0
+0.0032 false
+
+(0, 0) -> 0;
+(1, 0) -> 1;
+(1, 2) -> 2;
+=================================
+fix f0.fun (x0, x1).
+  match (x1) with
+  | Z -> x0
+  | Sn1 -> x1
+  
+0.0031 false
+
+(0, 0) -> 0;
+(0, 2) -> 2;
+(2, 2) -> 2;
+=================================
+fix f0.fun (x0, x1). x1
+0.0050 false
+
+(0, 1) -> 1;
+(0, 2) -> 2;
+(1, 1) -> 1;
+=================================
+fix f0.fun (x0, x1). x1
+0.0029 false
+
+(0, 1) -> 1;
+(1, 1) -> 1;
+(2, 1) -> 2;
+=================================
+fix f0.fun (x0, x1).
+  match (x0) with
+  | Z -> x1
+  | Sn1 -> x0
+  
+0.0040 false
+
+(0, 0) -> 0;
+(1, 1) -> 1;
+(1, 2) -> 2;
+=================================
+fix f0.fun (x0, x1). x1
+0.0036 false
+
+(0, 1) -> 1;
+(0, 2) -> 2;
+(2, 2) -> 2;
+=================================
+fix f0.fun (x0, x1). x1
+0.0055 false
+
+(0, 1) -> 1;
+(1, 1) -> 1;
+(1, 2) -> 2;
+=================================
+fix f0.fun (x0, x1). x1
+0.0033 false
+
+(0, 0) -> 0;
+(0, 2) -> 2;
+(2, 1) -> 2;
+=================================
+fix f0.fun (x0, x1).
+  match (x0) with
+  | Z -> x1
+  | Sn1 -> x0
+  
+0.0044 false
+
+(1, 0) -> 1;
+(1, 1) -> 1;
+(1, 2) -> 2;
+(2, 2) -> 2;
+=================================
+fix f0.fun (x0, x1).
+  match (x1) with
+  | Z -> x0
+  | Sn1 -> x1
+  
+0.0092 false
+
+(0, 0) -> 0;
+(1, 0) -> 1;
+(1, 2) -> 2;
+(2, 2) -> 2;
+=================================
+fix f0.fun (x0, x1).
+  match (x1) with
+  | Z -> x0
+  | Sn1 -> x1
+  
+0.0061 false
+
+(1, 1) -> 1;
+(1, 2) -> 2;
+(2, 1) -> 2;
+(2, 2) -> 2;
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x0) with
+  | Z -> x0
+  | Sn2 ->
+    match (n2) with
+    | Z -> x1
+    | Sn1 ->
+      ( Succ
+        ( Succ
+          (f0 ( n1, x1 ))
+          ) )
+    
+  
+0.2094 false
+
+(0, 1) -> 1;
+(1, 0) -> 1;
+(1, 1) -> 1;
+(2, 2) -> 2;
+=================================
+fix f0.fun (x0, x1).
+  match (x0) with
+  | Z -> x1
+  | Sn1 -> x0
+  
+0.0055 false
+
+(0, 0) -> 0;
+(0, 1) -> 1;
+(0, 2) -> 2;
+(2, 1) -> 2;
+=================================
+fix f0.fun (x0, x1).
+  match (x0) with
+  | Z -> x1
+  | Sn1 -> x0
+  
+0.0035 false
+
+(0, 0) -> 0;
+(0, 2) -> 2;
+(1, 0) -> 1;
+(1, 1) -> 1;
+=================================
+fix f0.fun (x0, x1).
+  match (x0) with
+  | Z -> x1
+  | Sn1 -> x0
+  
+0.0030 false
+
+(0, 2) -> 2;
+(1, 0) -> 1;
+(1, 1) -> 1;
+(2, 2) -> 2;
+=================================
+fix f0.fun (x0, x1).
+  match (x0) with
+  | Z -> x1
+  | Sn1 -> x0
+  
+0.0076 false
+
+(0, 1) -> 1;
+(1, 1) -> 1;
+(2, 0) -> 2;
+(2, 1) -> 2;
+=================================
+fix f0.fun (x0, x1).
+  match (x0) with
+  | Z -> x1
+  | Sn1 -> x0
+  
+0.0041 false
+
+(0, 0) -> 0;
+(0, 2) -> 2;
+(1, 1) -> 1;
+(1, 2) -> 2;
+=================================
+fix f0.fun (x0, x1). x1
+0.0033 false
+
+(0, 2) -> 2;
+(1, 0) -> 1;
+(2, 0) -> 2;
+(2, 1) -> 2;
+=================================
+fix f0.fun (x0, x1).
+  match (x0) with
+  | Z -> x1
+  | Sn1 -> x0
+  
+0.0056 false
+
+(0, 1) -> 1;
+(0, 2) -> 2;
+(1, 1) -> 1;
+(2, 0) -> 2;
+(2, 2) -> 2;
+=================================
+fix f0.fun (x0, x1).
+  match (x0) with
+  | Z -> x1
+  | Sn1 -> x0
+  
+0.0122 false
+
+(0, 0) -> 0;
+(1, 1) -> 1;
+(1, 2) -> 2;
+(2, 0) -> 2;
+(2, 1) -> 2;
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x0) with
+  | Z ->
+    match (x1) with
+    | Z -> x0
+    | Sn1 -> n1
+    
+  | Sn2 ->
+    ( Succ
+      (f0 ( n2, x1 )) )
+  
+0.1574 false
+
+(0, 1) -> 1;
+(0, 2) -> 2;
+(1, 1) -> 1;
+(1, 2) -> 2;
+(2, 1) -> 2;
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x0) with
+  | Z -> x1
+  | Sn2 ->
+    match (n2) with
+    | Z -> x1
+    | Sn1 -> x0
+    
+  
+0.1936 false
+
+(1, 0) -> 1;
+(1, 1) -> 1;
+(2, 0) -> 2;
+(2, 1) -> 2;
+(2, 2) -> 2;
+=================================
+fix f0.fun (x0, x1). x0
+0.0160 false
+
+(0, 0) -> 0;
+(0, 1) -> 1;
+(0, 2) -> 2;
+(1, 2) -> 2;
+(2, 1) -> 2;
+=================================
+fix f0.fun (x0, x1).
+  match (x0) with
+  | Z -> x1
+  | Sn1 ->
+    ( Succ
+      ( Succ ( Zero ) ) )
+  
+0.0120 false
+
+(0, 0) -> 0;
+(0, 2) -> 2;
+(1, 1) -> 1;
+(2, 1) -> 2;
+(2, 2) -> 2;
+=================================
+fix f0.fun (x0, x1).
+  match (x0) with
+  | Z -> x1
+  | Sn1 -> x0
+  
+0.0155 false
+
+(0, 0) -> 0;
+(0, 2) -> 2;
+(2, 0) -> 2;
+(2, 1) -> 2;
+(2, 2) -> 2;
+=================================
+fix f0.fun (x0, x1).
+  match (x0) with
+  | Z -> x1
+  | Sn1 -> x0
+  
+0.0178 false
+
+(0, 1) -> 1;
+(1, 1) -> 1;
+(1, 2) -> 2;
+(2, 1) -> 2;
+(2, 2) -> 2;
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x0) with
+  | Z -> x1
+  | Sn2 ->
+    match (n2) with
+    | Z -> x1
+    | Sn1 -> x0
+    
+  
+0.4804 false
+
+(0, 0) -> 0;
+(0, 2) -> 2;
+(1, 1) -> 1;
+(1, 2) -> 2;
+(2, 2) -> 2;
+=================================
+fix f0.fun (x0, x1). x1
+0.0074 false
+
+(0, 2) -> 2;
+(1, 2) -> 2;
+(2, 0) -> 2;
+(2, 1) -> 2;
+(2, 2) -> 2;
+=================================
+fix f0.fun (x0, x1).
+  match (x0) with
+  | Z ->
+    ( Succ ( Succ x0 ) )
+  | Sn1 ->
+    (f0 ( n1, x1 ))
+  
+0.0203 false
+
+(0, 1) -> 1;
+(0, 2) -> 2;
+(1, 0) -> 1;
+(1, 2) -> 2;
+(2, 0) -> 2;
+(2, 1) -> 2;
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x0) with
+  | Z -> x1
+  | Sn2 ->
+    match (x1) with
+    | Z -> x0
+    | Sn1 ->
+      ( Succ
+        (f0 ( n2, n1 )) )
+    
+  
+0.0901 true
+
+(0, 0) -> 0;
+(0, 2) -> 2;
+(1, 1) -> 1;
+(1, 2) -> 2;
+(2, 0) -> 2;
+(2, 2) -> 2;
+=================================
+fix f0.fun (x0, x1).
+  match (x1) with
+  | Z -> x0
+  | Sn1 -> x1
+  
+0.0123 false
+
+(0, 1) -> 1;
+(1, 1) -> 1;
+(1, 2) -> 2;
+(2, 0) -> 2;
+(2, 1) -> 2;
+(2, 2) -> 2;
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x0) with
+  | Z -> x1
+  | Sn2 ->
+    match (n2) with
+    | Z -> x1
+    | Sn1 -> x0
+    
+  
+0.4075 false
+
+(0, 0) -> 0;
+(0, 1) -> 1;
+(0, 2) -> 2;
+(1, 0) -> 1;
+(1, 1) -> 1;
+(2, 2) -> 2;
+=================================
+fix f0.fun (x0, x1).
+  match (x0) with
+  | Z -> x1
+  | Sn1 -> x0
+  
+0.0135 false
+
+(0, 0) -> 0;
+(0, 1) -> 1;
+(0, 2) -> 2;
+(1, 1) -> 1;
+(1, 2) -> 2;
+(2, 0) -> 2;
+=================================
+fix f0.fun (x0, x1).
+  match (x1) with
+  | Z -> x0
+  | Sn1 -> x1
+  
+0.0049 false
+
+(0, 2) -> 2;
+(1, 0) -> 1;
+(1, 1) -> 1;
+(1, 2) -> 2;
+(2, 0) -> 2;
+(2, 2) -> 2;
+=================================
+fix f0.fun (x0, x1).
+  match (x1) with
+  | Z -> x0
+  | Sn1 -> x1
+  
+0.0239 false
+
+(0, 0) -> 0;
+(0, 1) -> 1;
+(1, 0) -> 1;
+(1, 1) -> 1;
+(2, 0) -> 2;
+(2, 2) -> 2;
+=================================
+fix f0.fun (x0, x1).
+  match (x0) with
+  | Z -> x1
+  | Sn1 -> x0
+  
+0.0087 false
+
+(0, 1) -> 1;
+(0, 2) -> 2;
+(1, 0) -> 1;
+(1, 1) -> 1;
+(1, 2) -> 2;
+(2, 0) -> 2;
+=================================
+fix f0.fun (x0, x1).
+  match (x1) with
+  | Z -> x0
+  | Sn1 -> x1
+  
+0.0069 false
+
+(0, 0) -> 0;
+(1, 0) -> 1;
+(1, 1) -> 1;
+(2, 0) -> 2;
+(2, 1) -> 2;
+(2, 2) -> 2;
+=================================
+fix f0.fun (x0, x1). x0
+0.0129 false
+
+(0, 1) -> 1;
+(0, 2) -> 2;
+(1, 0) -> 1;
+(1, 1) -> 1;
+(1, 2) -> 2;
+(2, 2) -> 2;
+=================================
+fix f0.fun (x0, x1).
+  match (x1) with
+  | Z -> x0
+  | Sn1 -> x1
+  
+0.0076 false
+
+(0, 2) -> 2;
+(1, 0) -> 1;
+(1, 1) -> 1;
+(1, 2) -> 2;
+(2, 0) -> 2;
+(2, 1) -> 2;
+(2, 2) -> 2;
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x0) with
+  | Z -> x1
+  | Sn2 ->
+    match (x1) with
+    | Z -> x0
+    | Sn1 ->
+      ( Succ
+        (f0 ( n2, n1 )) )
+    
+  
+0.2092 true
+
+(0, 0) -> 0;
+(0, 1) -> 1;
+(0, 2) -> 2;
+(1, 0) -> 1;
+(1, 1) -> 1;
+(1, 2) -> 2;
+(2, 1) -> 2;
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x0) with
+  | Z -> x1
+  | Sn2 ->
+    match (x1) with
+    | Z -> x0
+    | Sn1 ->
+      ( Succ
+        (f0 ( n2, n1 )) )
+    
+  
+0.0717 true
+
+(0, 0) -> 0;
+(0, 1) -> 1;
+(0, 2) -> 2;
+(1, 0) -> 1;
+(1, 1) -> 1;
+(1, 2) -> 2;
+(2, 2) -> 2;
+=================================
+fix f0.fun (x0, x1).
+  match (x1) with
+  | Z -> x0
+  | Sn1 -> x1
+  
+0.0073 false
+
+(0, 1) -> 1;
+(0, 2) -> 2;
+(1, 0) -> 1;
+(1, 1) -> 1;
+(1, 2) -> 2;
+(2, 0) -> 2;
+(2, 1) -> 2;
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x0) with
+  | Z -> x1
+  | Sn2 ->
+    match (x1) with
+    | Z -> x0
+    | Sn1 ->
+      ( Succ
+        (f0 ( n2, n1 )) )
+    
+  
+0.1375 true
+
+(0, 0) -> 0;
+(0, 1) -> 1;
+(1, 0) -> 1;
+(1, 1) -> 1;
+(1, 2) -> 2;
+(2, 0) -> 2;
+(2, 2) -> 2;
+=================================
+fix f0.fun (x0, x1).
+  match (x1) with
+  | Z -> x0
+  | Sn1 -> x1
+  
+0.0088 false
+
+(0, 0) -> 0;
+(0, 2) -> 2;
+(1, 0) -> 1;
+(1, 1) -> 1;
+(1, 2) -> 2;
+(2, 1) -> 2;
+(2, 2) -> 2;
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x0) with
+  | Z -> x1
+  | Sn2 ->
+    match (x1) with
+    | Z -> x0
+    | Sn1 ->
+      ( Succ
+        (f0 ( n2, n1 )) )
+    
+  
+0.0988 true
+
+(0, 0) -> 0;
+(0, 1) -> 1;
+(0, 2) -> 2;
+(1, 0) -> 1;
+(1, 2) -> 2;
+(2, 0) -> 2;
+(2, 1) -> 2;
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x0) with
+  | Z -> x1
+  | Sn2 ->
+    match (x1) with
+    | Z -> x0
+    | Sn1 ->
+      ( Succ
+        (f0 ( n2, n1 )) )
+    
+  
+0.0994 true
+
+(0, 0) -> 0;
+(0, 1) -> 1;
+(1, 0) -> 1;
+(1, 1) -> 1;
+(1, 2) -> 2;
+(2, 0) -> 2;
+(2, 1) -> 2;
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x0) with
+  | Z -> x1
+  | Sn2 ->
+    match (x1) with
+    | Z -> x0
+    | Sn1 ->
+      ( Succ
+        (f0 ( n2, n1 )) )
+    
+  
+0.0854 true
+
+(0, 0) -> 0;
+(0, 1) -> 1;
+(0, 2) -> 2;
+(1, 0) -> 1;
+(1, 2) -> 2;
+(2, 1) -> 2;
+(2, 2) -> 2;
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x0) with
+  | Z -> x1
+  | Sn2 ->
+    match (x1) with
+    | Z -> x0
+    | Sn1 ->
+      ( Succ
+        ( Succ ( Zero ) )
+        )
+    
+  
+0.1856 false
+
+(0, 0) -> 0;
+(0, 1) -> 1;
+(1, 0) -> 1;
+(1, 2) -> 2;
+(2, 0) -> 2;
+(2, 1) -> 2;
+(2, 2) -> 2;
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x0) with
+  | Z -> x1
+  | Sn2 ->
+    match (x1) with
+    | Z -> x0
+    | Sn1 ->
+      ( Succ
+        ( Succ ( Zero ) )
+        )
+    
+  
+0.5217 false
+
+(0, 0) -> 0;
+(0, 1) -> 1;
+(0, 2) -> 2;
+(1, 0) -> 1;
+(1, 1) -> 1;
+(1, 2) -> 2;
+(2, 0) -> 2;
+(2, 1) -> 2;
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x0) with
+  | Z -> x1
+  | Sn2 ->
+    match (x1) with
+    | Z -> x0
+    | Sn1 ->
+      ( Succ
+        (f0 ( n2, n1 )) )
+    
+  
+0.2185 true
+
+(0, 0) -> 0;
+(0, 1) -> 1;
+(0, 2) -> 2;
+(1, 0) -> 1;
+(1, 1) -> 1;
+(1, 2) -> 2;
+(2, 0) -> 2;
+(2, 2) -> 2;
+=================================
+fix f0.fun (x0, x1).
+  match (x1) with
+  | Z -> x0
+  | Sn1 -> x1
+  
+0.0144 false
+
+(0, 0) -> 0;
+(0, 1) -> 1;
+(0, 2) -> 2;
+(1, 0) -> 1;
+(1, 1) -> 1;
+(1, 2) -> 2;
+(2, 1) -> 2;
+(2, 2) -> 2;
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x0) with
+  | Z -> x1
+  | Sn2 ->
+    match (x1) with
+    | Z -> x0
+    | Sn1 ->
+      ( Succ
+        (f0 ( n2, n1 )) )
+    
+  
+0.1251 true
+
+(0, 0) -> 0;
+(0, 1) -> 1;
+(0, 2) -> 2;
+(1, 0) -> 1;
+(1, 1) -> 1;
+(2, 0) -> 2;
+(2, 1) -> 2;
+(2, 2) -> 2;
+=================================
+fix f0.fun (x0, x1).
+  match (x0) with
+  | Z -> x1
+  | Sn1 -> x0
+  
+0.0056 false
+
+(0, 0) -> 0;
+(0, 1) -> 1;
+(0, 2) -> 2;
+(1, 0) -> 1;
+(1, 2) -> 2;
+(2, 0) -> 2;
+(2, 1) -> 2;
+(2, 2) -> 2;
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x0) with
+  | Z -> x1
+  | Sn2 ->
+    match (x1) with
+    | Z -> x0
+    | Sn1 ->
+      ( Succ
+        ( Succ ( Zero ) )
+        )
+    
+  
+0.0945 false
+
+(0, 0) -> 0;
+(0, 1) -> 1;
+(0, 2) -> 2;
+(1, 1) -> 1;
+(1, 2) -> 2;
+(2, 0) -> 2;
+(2, 1) -> 2;
+(2, 2) -> 2;
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x0) with
+  | Z -> x1
+  | Sn2 ->
+    match (n2) with
+    | Z -> x1
+    | Sn1 -> x0
+    
+  
+0.3434 false
+
+(0, 0) -> 0;
+(0, 1) -> 1;
+(1, 0) -> 1;
+(1, 1) -> 1;
+(1, 2) -> 2;
+(2, 0) -> 2;
+(2, 1) -> 2;
+(2, 2) -> 2;
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x0) with
+  | Z -> x1
+  | Sn2 ->
+    match (x1) with
+    | Z -> x0
+    | Sn1 ->
+      ( Succ
+        (f0 ( n2, n1 )) )
+    
+  
+0.0779 true
+
+(0, 0) -> 0;
+(0, 2) -> 2;
+(1, 0) -> 1;
+(1, 1) -> 1;
+(1, 2) -> 2;
+(2, 0) -> 2;
+(2, 1) -> 2;
+(2, 2) -> 2;
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x0) with
+  | Z -> x1
+  | Sn2 ->
+    match (x1) with
+    | Z -> x0
+    | Sn1 ->
+      ( Succ
+        (f0 ( n2, n1 )) )
+    
+  
+0.1002 true
+
+(0, 1) -> 1;
+(0, 2) -> 2;
+(1, 0) -> 1;
+(1, 1) -> 1;
+(1, 2) -> 2;
+(2, 0) -> 2;
+(2, 1) -> 2;
+(2, 2) -> 2;
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x0) with
+  | Z -> x1
+  | Sn2 ->
+    match (x1) with
+    | Z -> x0
+    | Sn1 ->
+      ( Succ
+        (f0 ( n2, n1 )) )
+    
+  
+0.0999 true
+
+(0, 0) -> 0;
+(0, 1) -> 1;
+(0, 2) -> 2;
+(1, 0) -> 1;
+(1, 1) -> 1;
+(1, 2) -> 2;
+(2, 0) -> 2;
+(2, 1) -> 2;
+(2, 2) -> 2;
+=================================
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fail to find a solution
+fix f0.fun (x0, x1).
+  match (x0) with
+  | Z -> x1
+  | Sn2 ->
+    match (x1) with
+    | Z -> x0
+    | Sn1 ->
+      ( Succ
+        (f0 ( n2, n1 )) )
+    
+  
+0.1037 true
+

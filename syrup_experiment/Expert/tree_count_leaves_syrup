@@ -1,0 +1,999 @@
+Leaf () -> 1;
+=================================
+fix f0.fun x0.
+  match (x0) with
+  | Leaf ->
+    ( Succ ( Zero ) )
+  | Node(v1,l1,r1) ->
+    ( Zero )
+  
+0.0002 false
+
+Node (Leaf (), T (), Leaf ()) -> 2;
+=================================
+fix f0.fun x0.
+  match (x0) with
+  | Leaf -> ( Zero )
+  | Node(v1,l1,r1) ->
+    ( Succ
+      ( Succ (f0 l1) ) )
+  
+0.0100 false
+
+Node (Node (Leaf (), T (), Leaf ()), T (), Leaf ()) -> 3;
+=================================
+fix f0.fun x0.
+  match (x0) with
+  | Leaf ->
+    ( Succ ( Zero ) )
+  | Node(v1,l1,r1) ->
+    ( Succ (f0 l1) )
+  
+0.0128 false
+
+Node (Leaf (), T (), Node (Leaf (), T (), Leaf ())) -> 3;
+=================================
+fix f0.fun x0.
+  match (x0) with
+  | Leaf ->
+    ( Succ ( Zero ) )
+  | Node(v1,l1,r1) ->
+    ( Succ (f0 r1) )
+  
+0.0187 false
+
+Node (Node (Node (Leaf (), T (), Leaf ()), T (), Leaf ()), T (), Leaf ()) -> 4;
+=================================
+fix f0.fun x0.
+  match (x0) with
+  | Leaf ->
+    ( Succ ( Zero ) )
+  | Node(v1,l1,r1) ->
+    ( Succ (f0 l1) )
+  
+0.0186 false
+
+Node (Node (Leaf (), T (), Leaf ()), T (), Node (Leaf (), T (), Leaf ())) -> 4;
+=================================
+fix f0.fun x0.
+  match (x0) with
+  | Leaf -> ( Zero )
+  | Node(v1,l1,r1) ->
+    ( Succ
+      ( Succ (f0 l1) ) )
+  
+0.0134 false
+
+Node (Node (Leaf (), T (), Leaf ()), T (), Node (Node (Leaf (), T (), Leaf ()), T (), Node (Leaf (), T (), Leaf ()))) -> 6;
+=================================
+fix f0.fun x0.
+  match (x0) with
+  | Leaf -> ( Zero )
+  | Node(v1,l1,r1) ->
+    ( Succ
+      ( Succ (f0 r1) ) )
+  
+0.0205 false
+
+Node (Leaf (), T (), Node (Leaf (), T (), Leaf ())) -> 3;
+Node (Node (Leaf (), T (), Leaf ()), T (), Node (Node (Leaf (), T (), Leaf ()), T (), Node (Leaf (), T (), Leaf ()))) -> 6;
+=================================
+fail to find a solution
+fix f0.fun x0.
+  match (x0) with
+  | Leaf -> ( Zero )
+  | Node(v1,l1,r1) ->
+    ( Succ
+      ( Succ
+        ( Succ (f0 l1) )
+        ) )
+  
+0.3369 false
+
+Node (Node (Leaf (), T (), Leaf ()), T (), Leaf ()) -> 3;
+Node (Node (Leaf (), T (), Leaf ()), T (), Node (Node (Leaf (), T (), Leaf ()), T (), Node (Leaf (), T (), Leaf ()))) -> 6;
+=================================
+fail to find a solution
+fix f0.fun x0.
+  match (x0) with
+  | Leaf ->
+    (add
+      ( ( Zero ),
+        ( Succ ( Zero ) )
+        ))
+  | Node(v1,l1,r1) ->
+    (add
+      ( (f0 l1), (f0 r1)
+        ))
+  
+0.3216 true
+
+Node (Node (Leaf (), T (), Leaf ()), T (), Leaf ()) -> 3;
+Node (Node (Node (Leaf (), T (), Leaf ()), T (), Leaf ()), T (), Leaf ()) -> 4;
+=================================
+fix f0.fun x0.
+  match (x0) with
+  | Leaf ->
+    ( Succ ( Zero ) )
+  | Node(v1,l1,r1) ->
+    ( Succ (f0 l1) )
+  
+0.0146 false
+
+Node (Node (Node (Leaf (), T (), Leaf ()), T (), Leaf ()), T (), Leaf ()) -> 4;
+Node (Node (Leaf (), T (), Leaf ()), T (), Node (Node (Leaf (), T (), Leaf ()), T (), Node (Leaf (), T (), Leaf ()))) -> 6;
+=================================
+fail to find a solution
+fix f0.fun x0.
+  match (x0) with
+  | Leaf ->
+    ( Succ
+      ( Succ
+        ( Succ ( Zero ) )
+        ) )
+  | Node(v1,l1,r1) ->
+    (add
+      ( ( Zero ),
+        ( Succ (f0 r1) )
+        ))
+  
+1.1381 false
+
+Leaf () -> 1;
+Node (Node (Leaf (), T (), Leaf ()), T (), Node (Leaf (), T (), Leaf ())) -> 4;
+=================================
+fail to find a solution
+fix f0.fun x0.
+  match (x0) with
+  | Leaf ->
+    (add
+      ( ( Zero ),
+        ( Succ ( Zero ) )
+        ))
+  | Node(v1,l1,r1) ->
+    (add
+      ( (f0 l1), (f0 l1)
+        ))
+  
+0.0278 false
+
+Leaf () -> 1;
+Node (Node (Leaf (), T (), Leaf ()), T (), Node (Node (Leaf (), T (), Leaf ()), T (), Node (Leaf (), T (), Leaf ()))) -> 6;
+=================================
+fail to find a solution
+fix f0.fun x0.
+  match (x0) with
+  | Leaf ->
+    (add
+      ( ( Zero ),
+        ( Succ ( Zero ) )
+        ))
+  | Node(v1,l1,r1) ->
+    (add
+      ( (f0 l1), (f0 r1)
+        ))
+  
+0.1156 true
+
+Node (Node (Leaf (), T (), Leaf ()), T (), Node (Leaf (), T (), Leaf ())) -> 4;
+Node (Node (Leaf (), T (), Leaf ()), T (), Node (Node (Leaf (), T (), Leaf ()), T (), Node (Leaf (), T (), Leaf ()))) -> 6;
+=================================
+fix f0.fun x0.
+  match (x0) with
+  | Leaf -> ( Zero )
+  | Node(v1,l1,r1) ->
+    ( Succ
+      ( Succ (f0 r1) ) )
+  
+0.0203 false
+
+Node (Leaf (), T (), Leaf ()) -> 2;
+Node (Leaf (), T (), Node (Leaf (), T (), Leaf ())) -> 3;
+=================================
+fix f0.fun x0.
+  match (x0) with
+  | Leaf ->
+    ( Succ ( Zero ) )
+  | Node(v1,l1,r1) ->
+    ( Succ (f0 r1) )
+  
+0.0112 false
+
+Node (Leaf (), T (), Leaf ()) -> 2;
+Node (Node (Node (Leaf (), T (), Leaf ()), T (), Leaf ()), T (), Leaf ()) -> 4;
+=================================
+fix f0.fun x0.
+  match (x0) with
+  | Leaf ->
+    ( Succ ( Zero ) )
+  | Node(v1,l1,r1) ->
+    ( Succ (f0 l1) )
+  
+0.0137 false
+
+Node (Node (Leaf (), T (), Leaf ()), T (), Leaf ()) -> 3;
+Node (Node (Leaf (), T (), Leaf ()), T (), Node (Leaf (), T (), Leaf ())) -> 4;
+=================================
+fix f0.fun x0.
+  match (x0) with
+  | Leaf ->
+    ( Succ
+      ( Succ ( Zero ) ) )
+  | Node(v1,l1,r1) ->
+    ( Succ (f0 r1) )
+  
+0.0193 false
+
+Node (Leaf (), T (), Leaf ()) -> 2;
+Node (Node (Leaf (), T (), Leaf ()), T (), Leaf ()) -> 3;
+Node (Leaf (), T (), Node (Leaf (), T (), Leaf ())) -> 3;
+=================================
+fail to find a solution
+fix f0.fun x0.
+  match (x0) with
+  | Leaf ->
+    (add
+      ( ( Zero ),
+        ( Succ ( Zero ) )
+        ))
+  | Node(v1,l1,r1) ->
+    (add
+      ( (f0 l1), (f0 r1)
+        ))
+  
+0.0797 true
+
+Leaf () -> 1;
+Node (Leaf (), T (), Leaf ()) -> 2;
+Node (Leaf (), T (), Node (Leaf (), T (), Leaf ())) -> 3;
+=================================
+fix f0.fun x0.
+  match (x0) with
+  | Leaf ->
+    ( Succ ( Zero ) )
+  | Node(v1,l1,r1) ->
+    ( Succ (f0 r1) )
+  
+0.0006 false
+
+Node (Leaf (), T (), Leaf ()) -> 2;
+Node (Node (Node (Leaf (), T (), Leaf ()), T (), Leaf ()), T (), Leaf ()) -> 4;
+Node (Node (Leaf (), T (), Leaf ()), T (), Node (Leaf (), T (), Leaf ())) -> 4;
+=================================
+fail to find a solution
+fix f0.fun x0.
+  match (x0) with
+  | Leaf ->
+    (add
+      ( ( Zero ),
+        ( Succ ( Zero ) )
+        ))
+  | Node(v1,l1,r1) ->
+    (add
+      ( (f0 l1), (f0 r1)
+        ))
+  
+0.1145 true
+
+Node (Node (Leaf (), T (), Leaf ()), T (), Leaf ()) -> 3;
+Node (Leaf (), T (), Node (Leaf (), T (), Leaf ())) -> 3;
+Node (Node (Node (Leaf (), T (), Leaf ()), T (), Leaf ()), T (), Leaf ()) -> 4;
+=================================
+fail to find a solution
+fix f0.fun x0.
+  match (x0) with
+  | Leaf ->
+    (add
+      ( ( Zero ),
+        ( Succ ( Zero ) )
+        ))
+  | Node(v1,l1,r1) ->
+    (add
+      ( (f0 l1), (f0 r1)
+        ))
+  
+0.3038 true
+
+Leaf () -> 1;
+Node (Leaf (), T (), Leaf ()) -> 2;
+Node (Node (Leaf (), T (), Leaf ()), T (), Node (Node (Leaf (), T (), Leaf ()), T (), Node (Leaf (), T (), Leaf ()))) -> 6;
+=================================
+fail to find a solution
+fix f0.fun x0.
+  match (x0) with
+  | Leaf ->
+    (add
+      ( ( Zero ),
+        ( Succ ( Zero ) )
+        ))
+  | Node(v1,l1,r1) ->
+    (add
+      ( (f0 l1), (f0 r1)
+        ))
+  
+0.0314 true
+
+Leaf () -> 1;
+Node (Node (Node (Leaf (), T (), Leaf ()), T (), Leaf ()), T (), Leaf ()) -> 4;
+Node (Node (Leaf (), T (), Leaf ()), T (), Node (Leaf (), T (), Leaf ())) -> 4;
+=================================
+fail to find a solution
+fix f0.fun x0.
+  match (x0) with
+  | Leaf ->
+    (add
+      ( ( Zero ),
+        ( Succ ( Zero ) )
+        ))
+  | Node(v1,l1,r1) ->
+    ( Succ
+      ( Succ
+        ( Succ
+          ( Succ ( Zero )
+            ) ) ) )
+  
+0.1054 false
+
+Node (Leaf (), T (), Node (Leaf (), T (), Leaf ())) -> 3;
+Node (Node (Node (Leaf (), T (), Leaf ()), T (), Leaf ()), T (), Leaf ()) -> 4;
+Node (Node (Leaf (), T (), Leaf ()), T (), Node (Node (Leaf (), T (), Leaf ()), T (), Node (Leaf (), T (), Leaf ()))) -> 6;
+=================================
+fail to find a solution
+fix f0.fun x0.
+  match (x0) with
+  | Leaf ->
+    (add
+      ( ( Zero ),
+        ( Succ ( Zero ) )
+        ))
+  | Node(v1,l1,r1) ->
+    (add
+      ( (f0 l1), (f0 r1)
+        ))
+  
+3.4812 true
+
+Node (Leaf (), T (), Node (Leaf (), T (), Leaf ())) -> 3;
+Node (Node (Node (Leaf (), T (), Leaf ()), T (), Leaf ()), T (), Leaf ()) -> 4;
+Node (Node (Leaf (), T (), Leaf ()), T (), Node (Leaf (), T (), Leaf ())) -> 4;
+=================================
+fail to find a solution
+fix f0.fun x0.
+  match (x0) with
+  | Leaf ->
+    (add
+      ( ( Zero ),
+        ( Succ ( Zero ) )
+        ))
+  | Node(v1,l1,r1) ->
+    (add
+      ( (f0 l1), (f0 r1)
+        ))
+  
+0.9579 true
+
+Leaf () -> 1;
+Node (Node (Leaf (), T (), Leaf ()), T (), Leaf ()) -> 3;
+Node (Node (Leaf (), T (), Leaf ()), T (), Node (Node (Leaf (), T (), Leaf ()), T (), Node (Leaf (), T (), Leaf ()))) -> 6;
+=================================
+fail to find a solution
+fix f0.fun x0.
+  match (x0) with
+  | Leaf ->
+    (add
+      ( ( Zero ),
+        ( Succ ( Zero ) )
+        ))
+  | Node(v1,l1,r1) ->
+    (add
+      ( (f0 l1), (f0 r1)
+        ))
+  
+0.1404 true
+
+Leaf () -> 1;
+Node (Leaf (), T (), Node (Leaf (), T (), Leaf ())) -> 3;
+Node (Node (Node (Leaf (), T (), Leaf ()), T (), Leaf ()), T (), Leaf ()) -> 4;
+=================================
+fail to find a solution
+fix f0.fun x0.
+  match (x0) with
+  | Leaf ->
+    (add
+      ( ( Zero ),
+        ( Succ ( Zero ) )
+        ))
+  | Node(v1,l1,r1) ->
+    (add
+      ( (f0 l1), (f0 r1)
+        ))
+  
+0.0889 true
+
+Leaf () -> 1;
+Node (Node (Leaf (), T (), Leaf ()), T (), Leaf ()) -> 3;
+Node (Node (Leaf (), T (), Leaf ()), T (), Node (Leaf (), T (), Leaf ())) -> 4;
+Node (Node (Leaf (), T (), Leaf ()), T (), Node (Node (Leaf (), T (), Leaf ()), T (), Node (Leaf (), T (), Leaf ()))) -> 6;
+=================================
+fail to find a solution
+fix f0.fun x0.
+  match (x0) with
+  | Leaf ->
+    (add
+      ( ( Zero ),
+        ( Succ ( Zero ) )
+        ))
+  | Node(v1,l1,r1) ->
+    (add
+      ( (f0 l1), (f0 r1)
+        ))
+  
+0.0789 true
+
+Node (Leaf (), T (), Leaf ()) -> 2;
+Node (Node (Leaf (), T (), Leaf ()), T (), Leaf ()) -> 3;
+Node (Node (Node (Leaf (), T (), Leaf ()), T (), Leaf ()), T (), Leaf ()) -> 4;
+Node (Node (Leaf (), T (), Leaf ()), T (), Node (Node (Leaf (), T (), Leaf ()), T (), Node (Leaf (), T (), Leaf ()))) -> 6;
+=================================
+fail to find a solution
+fix f0.fun x0.
+  match (x0) with
+  | Leaf ->
+    (add
+      ( ( Zero ),
+        ( Succ ( Zero ) )
+        ))
+  | Node(v1,l1,r1) ->
+    (add
+      ( (f0 l1), (f0 r1)
+        ))
+  
+0.3607 true
+
+Node (Node (Leaf (), T (), Leaf ()), T (), Leaf ()) -> 3;
+Node (Node (Node (Leaf (), T (), Leaf ()), T (), Leaf ()), T (), Leaf ()) -> 4;
+Node (Node (Leaf (), T (), Leaf ()), T (), Node (Leaf (), T (), Leaf ())) -> 4;
+Node (Node (Leaf (), T (), Leaf ()), T (), Node (Node (Leaf (), T (), Leaf ()), T (), Node (Leaf (), T (), Leaf ()))) -> 6;
+=================================
+fail to find a solution
+fix f0.fun x0.
+  match (x0) with
+  | Leaf ->
+    (add
+      ( ( Zero ),
+        ( Succ ( Zero ) )
+        ))
+  | Node(v1,l1,r1) ->
+    (add
+      ( (f0 l1), (f0 r1)
+        ))
+  
+1.5656 true
+
+Leaf () -> 1;
+Node (Leaf (), T (), Leaf ()) -> 2;
+Node (Node (Leaf (), T (), Leaf ()), T (), Leaf ()) -> 3;
+Node (Node (Leaf (), T (), Leaf ()), T (), Node (Node (Leaf (), T (), Leaf ()), T (), Node (Leaf (), T (), Leaf ()))) -> 6;
+=================================
+fail to find a solution
+fix f0.fun x0.
+  match (x0) with
+  | Leaf ->
+    (add
+      ( ( Zero ),
+        ( Succ ( Zero ) )
+        ))
+  | Node(v1,l1,r1) ->
+    (add
+      ( (f0 l1), (f0 r1)
+        ))
+  
+0.0337 true
+
+Node (Leaf (), T (), Leaf ()) -> 2;
+Node (Node (Leaf (), T (), Leaf ()), T (), Leaf ()) -> 3;
+Node (Leaf (), T (), Node (Leaf (), T (), Leaf ())) -> 3;
+Node (Node (Leaf (), T (), Leaf ()), T (), Node (Node (Leaf (), T (), Leaf ()), T (), Node (Leaf (), T (), Leaf ()))) -> 6;
+=================================
+fail to find a solution
+fix f0.fun x0.
+  match (x0) with
+  | Leaf ->
+    (add
+      ( ( Zero ),
+        ( Succ ( Zero ) )
+        ))
+  | Node(v1,l1,r1) ->
+    (add
+      ( (f0 l1), (f0 r1)
+        ))
+  
+0.2664 true
+
+Node (Leaf (), T (), Leaf ()) -> 2;
+Node (Leaf (), T (), Node (Leaf (), T (), Leaf ())) -> 3;
+Node (Node (Leaf (), T (), Leaf ()), T (), Node (Leaf (), T (), Leaf ())) -> 4;
+Node (Node (Leaf (), T (), Leaf ()), T (), Node (Node (Leaf (), T (), Leaf ()), T (), Node (Leaf (), T (), Leaf ()))) -> 6;
+=================================
+fail to find a solution
+fix f0.fun x0.
+  match (x0) with
+  | Leaf ->
+    (add
+      ( ( Zero ),
+        ( Succ ( Zero ) )
+        ))
+  | Node(v1,l1,r1) ->
+    (add
+      ( (f0 l1), (f0 r1)
+        ))
+  
+0.0499 true
+
+Node (Node (Leaf (), T (), Leaf ()), T (), Leaf ()) -> 3;
+Node (Leaf (), T (), Node (Leaf (), T (), Leaf ())) -> 3;
+Node (Node (Node (Leaf (), T (), Leaf ()), T (), Leaf ()), T (), Leaf ()) -> 4;
+Node (Node (Leaf (), T (), Leaf ()), T (), Node (Node (Leaf (), T (), Leaf ()), T (), Node (Leaf (), T (), Leaf ()))) -> 6;
+=================================
+fail to find a solution
+fix f0.fun x0.
+  match (x0) with
+  | Leaf ->
+    (add
+      ( ( Zero ),
+        ( Succ ( Zero ) )
+        ))
+  | Node(v1,l1,r1) ->
+    (add
+      ( (f0 l1), (f0 r1)
+        ))
+  
+5.4915 true
+
+Leaf () -> 1;
+Node (Node (Node (Leaf (), T (), Leaf ()), T (), Leaf ()), T (), Leaf ()) -> 4;
+Node (Node (Leaf (), T (), Leaf ()), T (), Node (Leaf (), T (), Leaf ())) -> 4;
+Node (Node (Leaf (), T (), Leaf ()), T (), Node (Node (Leaf (), T (), Leaf ()), T (), Node (Leaf (), T (), Leaf ()))) -> 6;
+=================================
+fail to find a solution
+fix f0.fun x0.
+  match (x0) with
+  | Leaf ->
+    (add
+      ( ( Zero ),
+        ( Succ ( Zero ) )
+        ))
+  | Node(v1,l1,r1) ->
+    (add
+      ( (f0 l1), (f0 r1)
+        ))
+  
+0.1503 true
+
+Node (Node (Leaf (), T (), Leaf ()), T (), Leaf ()) -> 3;
+Node (Leaf (), T (), Node (Leaf (), T (), Leaf ())) -> 3;
+Node (Node (Leaf (), T (), Leaf ()), T (), Node (Leaf (), T (), Leaf ())) -> 4;
+Node (Node (Leaf (), T (), Leaf ()), T (), Node (Node (Leaf (), T (), Leaf ()), T (), Node (Leaf (), T (), Leaf ()))) -> 6;
+=================================
+fail to find a solution
+fix f0.fun x0.
+  match (x0) with
+  | Leaf ->
+    (add
+      ( ( Zero ),
+        ( Succ ( Zero ) )
+        ))
+  | Node(v1,l1,r1) ->
+    (add
+      ( (f0 l1), (f0 r1)
+        ))
+  
+1.7696 true
+
+Leaf () -> 1;
+Node (Leaf (), T (), Leaf ()) -> 2;
+Node (Node (Leaf (), T (), Leaf ()), T (), Node (Leaf (), T (), Leaf ())) -> 4;
+Node (Node (Leaf (), T (), Leaf ()), T (), Node (Node (Leaf (), T (), Leaf ()), T (), Node (Leaf (), T (), Leaf ()))) -> 6;
+=================================
+fail to find a solution
+fix f0.fun x0.
+  match (x0) with
+  | Leaf ->
+    (add
+      ( ( Zero ),
+        ( Succ ( Zero ) )
+        ))
+  | Node(v1,l1,r1) ->
+    (add
+      ( (f0 l1), (f0 r1)
+        ))
+  
+0.0041 true
+
+Leaf () -> 1;
+Node (Leaf (), T (), Leaf ()) -> 2;
+Node (Node (Leaf (), T (), Leaf ()), T (), Leaf ()) -> 3;
+Node (Leaf (), T (), Node (Leaf (), T (), Leaf ())) -> 3;
+Node (Node (Node (Leaf (), T (), Leaf ()), T (), Leaf ()), T (), Leaf ()) -> 4;
+=================================
+fail to find a solution
+fix f0.fun x0.
+  match (x0) with
+  | Leaf ->
+    (add
+      ( ( Zero ),
+        ( Succ ( Zero ) )
+        ))
+  | Node(v1,l1,r1) ->
+    (add
+      ( (f0 l1), (f0 r1)
+        ))
+  
+0.0057 true
+
+Node (Leaf (), T (), Leaf ()) -> 2;
+Node (Node (Leaf (), T (), Leaf ()), T (), Leaf ()) -> 3;
+Node (Leaf (), T (), Node (Leaf (), T (), Leaf ())) -> 3;
+Node (Node (Leaf (), T (), Leaf ()), T (), Node (Leaf (), T (), Leaf ())) -> 4;
+Node (Node (Leaf (), T (), Leaf ()), T (), Node (Node (Leaf (), T (), Leaf ()), T (), Node (Leaf (), T (), Leaf ()))) -> 6;
+=================================
+fail to find a solution
+fix f0.fun x0.
+  match (x0) with
+  | Leaf ->
+    (add
+      ( ( Zero ),
+        ( Succ ( Zero ) )
+        ))
+  | Node(v1,l1,r1) ->
+    (add
+      ( (f0 l1), (f0 r1)
+        ))
+  
+0.0903 true
+
+Leaf () -> 1;
+Node (Leaf (), T (), Leaf ()) -> 2;
+Node (Node (Leaf (), T (), Leaf ()), T (), Leaf ()) -> 3;
+Node (Leaf (), T (), Node (Leaf (), T (), Leaf ())) -> 3;
+Node (Node (Leaf (), T (), Leaf ()), T (), Node (Node (Leaf (), T (), Leaf ()), T (), Node (Leaf (), T (), Leaf ()))) -> 6;
+=================================
+fail to find a solution
+fix f0.fun x0.
+  match (x0) with
+  | Leaf ->
+    (add
+      ( ( Zero ),
+        ( Succ ( Zero ) )
+        ))
+  | Node(v1,l1,r1) ->
+    (add
+      ( (f0 l1), (f0 r1)
+        ))
+  
+0.0414 true
+
+Leaf () -> 1;
+Node (Leaf (), T (), Leaf ()) -> 2;
+Node (Node (Leaf (), T (), Leaf ()), T (), Leaf ()) -> 3;
+Node (Node (Node (Leaf (), T (), Leaf ()), T (), Leaf ()), T (), Leaf ()) -> 4;
+Node (Node (Leaf (), T (), Leaf ()), T (), Node (Leaf (), T (), Leaf ())) -> 4;
+=================================
+fail to find a solution
+fix f0.fun x0.
+  match (x0) with
+  | Leaf ->
+    (add
+      ( ( Zero ),
+        ( Succ ( Zero ) )
+        ))
+  | Node(v1,l1,r1) ->
+    (add
+      ( (f0 l1), (f0 r1)
+        ))
+  
+0.0055 true
+
+Node (Leaf (), T (), Leaf ()) -> 2;
+Node (Leaf (), T (), Node (Leaf (), T (), Leaf ())) -> 3;
+Node (Node (Node (Leaf (), T (), Leaf ()), T (), Leaf ()), T (), Leaf ()) -> 4;
+Node (Node (Leaf (), T (), Leaf ()), T (), Node (Leaf (), T (), Leaf ())) -> 4;
+Node (Node (Leaf (), T (), Leaf ()), T (), Node (Node (Leaf (), T (), Leaf ()), T (), Node (Leaf (), T (), Leaf ()))) -> 6;
+=================================
+fail to find a solution
+fix f0.fun x0.
+  match (x0) with
+  | Leaf ->
+    (add
+      ( ( Zero ),
+        ( Succ ( Zero ) )
+        ))
+  | Node(v1,l1,r1) ->
+    (add
+      ( (f0 l1), (f0 r1)
+        ))
+  
+0.2302 true
+
+Node (Leaf (), T (), Leaf ()) -> 2;
+Node (Node (Leaf (), T (), Leaf ()), T (), Leaf ()) -> 3;
+Node (Leaf (), T (), Node (Leaf (), T (), Leaf ())) -> 3;
+Node (Node (Node (Leaf (), T (), Leaf ()), T (), Leaf ()), T (), Leaf ()) -> 4;
+Node (Node (Leaf (), T (), Leaf ()), T (), Node (Leaf (), T (), Leaf ())) -> 4;
+=================================
+fail to find a solution
+fix f0.fun x0.
+  match (x0) with
+  | Leaf ->
+    (add
+      ( ( Zero ),
+        ( Succ ( Zero ) )
+        ))
+  | Node(v1,l1,r1) ->
+    (add
+      ( (f0 l1), (f0 r1)
+        ))
+  
+0.2235 true
+
+Leaf () -> 1;
+Node (Leaf (), T (), Leaf ()) -> 2;
+Node (Leaf (), T (), Node (Leaf (), T (), Leaf ())) -> 3;
+Node (Node (Node (Leaf (), T (), Leaf ()), T (), Leaf ()), T (), Leaf ()) -> 4;
+Node (Node (Leaf (), T (), Leaf ()), T (), Node (Leaf (), T (), Leaf ())) -> 4;
+=================================
+fail to find a solution
+fix f0.fun x0.
+  match (x0) with
+  | Leaf ->
+    (add
+      ( ( Zero ),
+        ( Succ ( Zero ) )
+        ))
+  | Node(v1,l1,r1) ->
+    (add
+      ( (f0 l1), (f0 r1)
+        ))
+  
+0.0350 true
+
+Node (Node (Leaf (), T (), Leaf ()), T (), Leaf ()) -> 3;
+Node (Leaf (), T (), Node (Leaf (), T (), Leaf ())) -> 3;
+Node (Node (Node (Leaf (), T (), Leaf ()), T (), Leaf ()), T (), Leaf ()) -> 4;
+Node (Node (Leaf (), T (), Leaf ()), T (), Node (Leaf (), T (), Leaf ())) -> 4;
+Node (Node (Leaf (), T (), Leaf ()), T (), Node (Node (Leaf (), T (), Leaf ()), T (), Node (Leaf (), T (), Leaf ()))) -> 6;
+=================================
+fail to find a solution
+fix f0.fun x0.
+  match (x0) with
+  | Leaf ->
+    (add
+      ( ( Zero ),
+        ( Succ ( Zero ) )
+        ))
+  | Node(v1,l1,r1) ->
+    (add
+      ( (f0 l1), (f0 r1)
+        ))
+  
+5.2416 true
+
+Leaf () -> 1;
+Node (Leaf (), T (), Leaf ()) -> 2;
+Node (Leaf (), T (), Node (Leaf (), T (), Leaf ())) -> 3;
+Node (Node (Leaf (), T (), Leaf ()), T (), Node (Leaf (), T (), Leaf ())) -> 4;
+Node (Node (Leaf (), T (), Leaf ()), T (), Node (Node (Leaf (), T (), Leaf ()), T (), Node (Leaf (), T (), Leaf ()))) -> 6;
+=================================
+fail to find a solution
+fix f0.fun x0.
+  match (x0) with
+  | Leaf ->
+    (add
+      ( ( Zero ),
+        ( Succ ( Zero ) )
+        ))
+  | Node(v1,l1,r1) ->
+    (add
+      ( (f0 l1), (f0 r1)
+        ))
+  
+0.0057 true
+
+Leaf () -> 1;
+Node (Node (Leaf (), T (), Leaf ()), T (), Leaf ()) -> 3;
+Node (Leaf (), T (), Node (Leaf (), T (), Leaf ())) -> 3;
+Node (Node (Leaf (), T (), Leaf ()), T (), Node (Leaf (), T (), Leaf ())) -> 4;
+Node (Node (Leaf (), T (), Leaf ()), T (), Node (Node (Leaf (), T (), Leaf ()), T (), Node (Leaf (), T (), Leaf ()))) -> 6;
+=================================
+fail to find a solution
+fix f0.fun x0.
+  match (x0) with
+  | Leaf ->
+    (add
+      ( ( Zero ),
+        ( Succ ( Zero ) )
+        ))
+  | Node(v1,l1,r1) ->
+    (add
+      ( (f0 l1), (f0 r1)
+        ))
+  
+0.1342 true
+
+Leaf () -> 1;
+Node (Leaf (), T (), Leaf ()) -> 2;
+Node (Node (Leaf (), T (), Leaf ()), T (), Leaf ()) -> 3;
+Node (Leaf (), T (), Node (Leaf (), T (), Leaf ())) -> 3;
+Node (Node (Node (Leaf (), T (), Leaf ()), T (), Leaf ()), T (), Leaf ()) -> 4;
+Node (Node (Leaf (), T (), Leaf ()), T (), Node (Leaf (), T (), Leaf ())) -> 4;
+=================================
+fail to find a solution
+fix f0.fun x0.
+  match (x0) with
+  | Leaf ->
+    (add
+      ( ( Zero ),
+        ( Succ ( Zero ) )
+        ))
+  | Node(v1,l1,r1) ->
+    (add
+      ( (f0 l1), (f0 r1)
+        ))
+  
+0.0109 true
+
+Leaf () -> 1;
+Node (Leaf (), T (), Leaf ()) -> 2;
+Node (Node (Leaf (), T (), Leaf ()), T (), Leaf ()) -> 3;
+Node (Leaf (), T (), Node (Leaf (), T (), Leaf ())) -> 3;
+Node (Node (Node (Leaf (), T (), Leaf ()), T (), Leaf ()), T (), Leaf ()) -> 4;
+Node (Node (Leaf (), T (), Leaf ()), T (), Node (Node (Leaf (), T (), Leaf ()), T (), Node (Leaf (), T (), Leaf ()))) -> 6;
+=================================
+fail to find a solution
+fix f0.fun x0.
+  match (x0) with
+  | Leaf ->
+    (add
+      ( ( Zero ),
+        ( Succ ( Zero ) )
+        ))
+  | Node(v1,l1,r1) ->
+    (add
+      ( (f0 l1), (f0 r1)
+        ))
+  
+0.0734 true
+
+Leaf () -> 1;
+Node (Leaf (), T (), Leaf ()) -> 2;
+Node (Node (Leaf (), T (), Leaf ()), T (), Leaf ()) -> 3;
+Node (Leaf (), T (), Node (Leaf (), T (), Leaf ())) -> 3;
+Node (Node (Leaf (), T (), Leaf ()), T (), Node (Leaf (), T (), Leaf ())) -> 4;
+Node (Node (Leaf (), T (), Leaf ()), T (), Node (Node (Leaf (), T (), Leaf ()), T (), Node (Leaf (), T (), Leaf ()))) -> 6;
+=================================
+fail to find a solution
+fix f0.fun x0.
+  match (x0) with
+  | Leaf ->
+    (add
+      ( ( Zero ),
+        ( Succ ( Zero ) )
+        ))
+  | Node(v1,l1,r1) ->
+    (add
+      ( (f0 l1), (f0 r1)
+        ))
+  
+0.0114 true
+
+Leaf () -> 1;
+Node (Leaf (), T (), Leaf ()) -> 2;
+Node (Node (Leaf (), T (), Leaf ()), T (), Leaf ()) -> 3;
+Node (Node (Node (Leaf (), T (), Leaf ()), T (), Leaf ()), T (), Leaf ()) -> 4;
+Node (Node (Leaf (), T (), Leaf ()), T (), Node (Leaf (), T (), Leaf ())) -> 4;
+Node (Node (Leaf (), T (), Leaf ()), T (), Node (Node (Leaf (), T (), Leaf ()), T (), Node (Leaf (), T (), Leaf ()))) -> 6;
+=================================
+fail to find a solution
+fix f0.fun x0.
+  match (x0) with
+  | Leaf ->
+    (add
+      ( ( Zero ),
+        ( Succ ( Zero ) )
+        ))
+  | Node(v1,l1,r1) ->
+    (add
+      ( (f0 l1), (f0 r1)
+        ))
+  
+0.0092 true
+
+Leaf () -> 1;
+Node (Leaf (), T (), Leaf ()) -> 2;
+Node (Leaf (), T (), Node (Leaf (), T (), Leaf ())) -> 3;
+Node (Node (Node (Leaf (), T (), Leaf ()), T (), Leaf ()), T (), Leaf ()) -> 4;
+Node (Node (Leaf (), T (), Leaf ()), T (), Node (Leaf (), T (), Leaf ())) -> 4;
+Node (Node (Leaf (), T (), Leaf ()), T (), Node (Node (Leaf (), T (), Leaf ()), T (), Node (Leaf (), T (), Leaf ()))) -> 6;
+=================================
+fail to find a solution
+fix f0.fun x0.
+  match (x0) with
+  | Leaf ->
+    (add
+      ( ( Zero ),
+        ( Succ ( Zero ) )
+        ))
+  | Node(v1,l1,r1) ->
+    (add
+      ( (f0 l1), (f0 r1)
+        ))
+  
+0.0434 true
+
+Leaf () -> 1;
+Node (Node (Leaf (), T (), Leaf ()), T (), Leaf ()) -> 3;
+Node (Leaf (), T (), Node (Leaf (), T (), Leaf ())) -> 3;
+Node (Node (Node (Leaf (), T (), Leaf ()), T (), Leaf ()), T (), Leaf ()) -> 4;
+Node (Node (Leaf (), T (), Leaf ()), T (), Node (Leaf (), T (), Leaf ())) -> 4;
+Node (Node (Leaf (), T (), Leaf ()), T (), Node (Node (Leaf (), T (), Leaf ()), T (), Node (Leaf (), T (), Leaf ()))) -> 6;
+=================================
+fail to find a solution
+fix f0.fun x0.
+  match (x0) with
+  | Leaf ->
+    (add
+      ( ( Zero ),
+        ( Succ ( Zero ) )
+        ))
+  | Node(v1,l1,r1) ->
+    (add
+      ( (f0 l1), (f0 r1)
+        ))
+  
+0.1978 true
+
+Node (Leaf (), T (), Leaf ()) -> 2;
+Node (Node (Leaf (), T (), Leaf ()), T (), Leaf ()) -> 3;
+Node (Leaf (), T (), Node (Leaf (), T (), Leaf ())) -> 3;
+Node (Node (Node (Leaf (), T (), Leaf ()), T (), Leaf ()), T (), Leaf ()) -> 4;
+Node (Node (Leaf (), T (), Leaf ()), T (), Node (Leaf (), T (), Leaf ())) -> 4;
+Node (Node (Leaf (), T (), Leaf ()), T (), Node (Node (Leaf (), T (), Leaf ()), T (), Node (Leaf (), T (), Leaf ()))) -> 6;
+=================================
+fail to find a solution
+fix f0.fun x0.
+  match (x0) with
+  | Leaf ->
+    (add
+      ( ( Zero ),
+        ( Succ ( Zero ) )
+        ))
+  | Node(v1,l1,r1) ->
+    (add
+      ( (f0 l1), (f0 r1)
+        ))
+  
+0.2396 true
+
+Leaf () -> 1;
+Node (Leaf (), T (), Leaf ()) -> 2;
+Node (Node (Leaf (), T (), Leaf ()), T (), Leaf ()) -> 3;
+Node (Leaf (), T (), Node (Leaf (), T (), Leaf ())) -> 3;
+Node (Node (Node (Leaf (), T (), Leaf ()), T (), Leaf ()), T (), Leaf ()) -> 4;
+Node (Node (Leaf (), T (), Leaf ()), T (), Node (Leaf (), T (), Leaf ())) -> 4;
+Node (Node (Leaf (), T (), Leaf ()), T (), Node (Node (Leaf (), T (), Leaf ()), T (), Node (Leaf (), T (), Leaf ()))) -> 6;
+=================================
+fail to find a solution
+fix f0.fun x0.
+  match (x0) with
+  | Leaf ->
+    (add
+      ( ( Zero ),
+        ( Succ ( Zero ) )
+        ))
+  | Node(v1,l1,r1) ->
+    (add
+      ( (f0 l1), (f0 r1)
+        ))
+  
+0.0193 true
+
