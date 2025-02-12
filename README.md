@@ -78,6 +78,7 @@ $ opam install --yes dune qcheck z3 ppx_inline_test core core_unix iter bark men
 $ cd syrup
 $ dune build
 ```
+```
 $ syrup/syrup syrup bool_band "(T (), T ()) -> T (); (T (), F ()) -> F (); (F (), T ()) -> F ();"
 ```
 
