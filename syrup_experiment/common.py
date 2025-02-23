@@ -8,6 +8,7 @@ import matplotlib.pyplot as plt
 import matplotlib.transforms as mtrans
 import numpy as np
 import pandas as pd
+import platform
 
 TIMEOUT = 120
 LOG_DIRS = ["Random", "Random+BC", "Expert", "Expert+BC"]
@@ -65,10 +66,16 @@ SYRUP_DIR = os.path.relpath("../syrup")
 SMYTH_DIR = os.path.relpath("../smyth")
 BURST_DIR = os.path.relpath("../burst")
 
+GNU_TIME = "gtime"
+if platform.system() == "Linux":
+    GNU_TIME = "/usr/bin/time"
 
 def run_syrup(mode, name, io_str):
+    # cmd = GNU_TIME + " -f 'Time(s): %e \nMem(Kb): %M' ../syrup/syrup " + mode + " " + name + " '" + io_str + "'"
+    # print(cmd)
     return run(
-        [os.path.join(SYRUP_DIR, "syrup"), mode, name, io_str],
+        [GNU_TIME, "-f", 'Time(s): %e \nMem(Kb): %M', os.path.join(SYRUP_DIR, "syrup"), mode, name, io_str],
+        # cmd,
         check=False,
         stdout=PIPE,
         stderr=STDOUT,
@@ -101,8 +108,10 @@ def run_burst(name, io_str):
     )
 
 def run_trio(name, io_str):
+    # cmd = GNU_TIME + " -f 'Time(s): %e \nMem(Kb): %M' ../burst/BurstCmdLine.exe -use-trio " + name + " -exs '" + io_str + "'"
     return run(
-        [os.path.join(BURST_DIR, "BurstCmdLine.exe"), "-use-trio", name, "-exs", io_str],
+        [GNU_TIME, "-f", 'Time(s): %e \nMem(Kb): %M', os.path.join(BURST_DIR, "BurstCmdLine.exe"), "-use-trio", name, "-exs", io_str],
+        # cmd,
         check=False,
         stdout=PIPE,
         stderr=STDOUT,

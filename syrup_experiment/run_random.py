@@ -74,6 +74,7 @@ with open(os.path.join(LOG_DIR, "result.csv"), "w", newline="") as f:
             res_nosol = [0] * (MAX_NUM_OF_EXS + 1)
             res_sof = [[0] * (MAX_NUM_OF_EXS + 1)
                        for _i in range(4)]
+            res_mem = [[0] * (MAX_NUM_OF_EXS + 1) for _i in range(4)]
 
             cards = []
             for filename in filenames:
@@ -113,7 +114,8 @@ with open(os.path.join(LOG_DIR, "result.csv"), "w", newline="") as f:
                         try:
                             p = run_syrup(syrup_mode, name, exs)
                             print(p.stdout, file=f_alt, flush=True)
-                            result = p.stdout.splitlines()[-1]
+                            # chage -1 to -3 to get mem data
+                            result = p.stdout.splitlines()[-3]
                             if "TIMEOUT" in result:
                                 res_timeout[i][count] += 1
                             else:
@@ -122,6 +124,10 @@ with open(os.path.join(LOG_DIR, "result.csv"), "w", newline="") as f:
                                 res_time[i][count] += float(time)
                                 res_correct[i][count] += int(
                                     is_correct == "true")
+                            # get mem data
+                            for_mem = p.stdout.splitlines()[-1]
+                            res_mem[i][count] += int(for_mem.split("Mem(Kb): ")[1])
+
                         except TimeoutExpired as e:
                             print(e.stdout, file=f_alt, flush=True)
                             res_timeout[i][count] += 1
@@ -131,8 +137,9 @@ with open(os.path.join(LOG_DIR, "result.csv"), "w", newline="") as f:
                         p = run_trio(name, exs)
                         print(p.stdout, file=f_trio, flush=True)
                         # had to do this to catch (Failure "bad typechecking")
+                        # chage -1 to -3 to get mem data
                         if "Failure" not in p.stdout:
-                            result = p.stdout.splitlines()[-1]
+                            result = p.stdout.splitlines()[-3]
                             if "TIMEOUT" in result:
                                 res_timeout[len(SYRUP_ALT_MODES)][count] += 1
                             elif "STACKOVERFLOW" in result:
@@ -143,6 +150,9 @@ with open(os.path.join(LOG_DIR, "result.csv"), "w", newline="") as f:
                                          ][count] += float(time)
                                 res_correct[len(SYRUP_ALT_MODES)][count] += int(
                                     is_correct == "true")
+                            # get mem data
+                            for_mem = p.stdout.splitlines()[-1]
+                            res_mem[len(SYRUP_ALT_MODES)][count] += int(for_mem.split("Mem(Kb): ")[1])
                     except TimeoutExpired as e:
                         print(e.stdout, file=f_trio, flush=True)
                         res_timeout[len(SYRUP_ALT_MODES)][count] += 1
@@ -224,6 +234,10 @@ with open(os.path.join(LOG_DIR, "result.csv"), "w", newline="") as f:
                 csv_writer.writerow([mode+"timeout"] + res_timeout[i])
             csv_writer.writerow(["trio-timeout"] +
                                 res_timeout[len(SYRUP_ALT_MODES)])
+            for i, mode in enumerate(SYRUP_ALT_MODES):
+                csv_writer.writerow([mode+"mem"] + res_mem[i])
+            csv_writer.writerow(["trio-mem"] +
+                                res_mem[len(SYRUP_ALT_MODES)])
             # csv_writer.writerow(["burst-timeout"] +
             #                     res_timeout[len(SYRUP_ALT_MODES)])
             # csv_writer.writerow(["smyth-timeout"] +
