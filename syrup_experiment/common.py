@@ -100,6 +100,17 @@ def run_burst(name, io_str):
         cwd=BURST_DIR,
     )
 
+def run_trio(name, io_str):
+    return run(
+        [os.path.join(BURST_DIR, "BurstCmdLine.exe"), "-use-trio", name, "-exs", io_str],
+        check=False,
+        stdout=PIPE,
+        stderr=STDOUT,
+        timeout=TIMEOUT,
+        universal_newlines=True,
+        cwd=BURST_DIR,
+    )
+
 
 def R(it, k):
     '''https://en.wikipedia.org/wiki/Reservoir_sampling#Algorithm_R'''

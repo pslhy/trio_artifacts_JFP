@@ -8,7 +8,7 @@ from contextlib import ExitStack
 from subprocess import TimeoutExpired
 import common
 from common import benchmarks, R, \
-    run_syrup, run_smyth, run_burst
+    run_syrup, run_smyth, run_burst, run_trio
 
 MAX_NUM_OF_EXS = 20
 
@@ -40,7 +40,7 @@ EXPERT_DIR = os.path.relpath('io-smyth')
 EXS_DIR = os.path.relpath(
     'io-random-nobase' if INCLUDE_BASE_CASE else 'io-random')
 filenames = next(os.walk(EXS_DIR))[2]
-LOG_DIR = os.path.relpath('Random' +
+LOG_DIR = os.path.relpath('T_Random' +
                           ('+BC' if INCLUDE_BASE_CASE else ''))
 
 
@@ -56,10 +56,12 @@ with open(os.path.join(LOG_DIR, "result.csv"), "w", newline="") as f:
                     open(os.path.join(LOG_DIR, name + "_" + mode), 'w')
                 ) for mode in SYRUP_ALT_MODES
             ]
-            f_smyth = stack.enter_context(
-                open(os.path.join(LOG_DIR, name + "_smyth"), 'w'))
-            f_burst = stack.enter_context(
-                open(os.path.join(LOG_DIR, name + "_burst"), 'w'))
+            # f_smyth = stack.enter_context(
+            #     open(os.path.join(LOG_DIR, name + "_smyth"), 'w'))
+            # f_burst = stack.enter_context(
+            #     open(os.path.join(LOG_DIR, name + "_burst"), 'w'))
+            f_trio = stack.enter_context(
+                open(os.path.join(LOG_DIR, name + "_trio"), 'w'))
 
             print(name, flush=True)
             res_timeout = [[0] * (MAX_NUM_OF_EXS + 1)
@@ -115,6 +117,7 @@ with open(os.path.join(LOG_DIR, "result.csv"), "w", newline="") as f:
                             if "TIMEOUT" in result:
                                 res_timeout[i][count] += 1
                             else:
+                                print(result)
                                 [time, is_correct] = result.split(' ')
                                 res_time[i][count] += float(time)
                                 res_correct[i][count] += int(
@@ -122,12 +125,11 @@ with open(os.path.join(LOG_DIR, "result.csv"), "w", newline="") as f:
                         except TimeoutExpired as e:
                             print(e.stdout, file=f_alt, flush=True)
                             res_timeout[i][count] += 1
-
-                    print(exs, file=f_burst)
-                    print('=================================', file=f_burst)
+                    print(exs, file=f_trio)
+                    print('=================================', file=f_trio)
                     try:
-                        p = run_burst(name, exs)
-                        print(p.stdout, file=f_burst, flush=True)
+                        p = run_trio(name, exs)
+                        print(p.stdout, file=f_trio, flush=True)
                         # had to do this to catch (Failure "bad typechecking")
                         if "Failure" not in p.stdout:
                             result = p.stdout.splitlines()[-1]
@@ -142,59 +144,88 @@ with open(os.path.join(LOG_DIR, "result.csv"), "w", newline="") as f:
                                 res_correct[len(SYRUP_ALT_MODES)][count] += int(
                                     is_correct == "true")
                     except TimeoutExpired as e:
-                        print(e.stdout, file=f_burst, flush=True)
+                        print(e.stdout, file=f_trio, flush=True)
                         res_timeout[len(SYRUP_ALT_MODES)][count] += 1
 
-                    print(exs, file=f_smyth)
-                    print('=================================', file=f_smyth)
-                    try:
-                        p = run_smyth(name, exs)
-                        print(p.stdout, file=f_smyth, flush=True)
-                        result = p.stdout.splitlines()[-1]
-                        if "TIMEOUT" in result:
-                            res_timeout[len(SYRUP_ALT_MODES)+1][count] += 1
-                        elif "STACKOVERFLOW" in result:
-                            res_sof[len(SYRUP_ALT_MODES)+1][count] += 1
-                        elif "NOSOL" in result:
-                            res_nosol[count] += 1
-                        else:
-                            [time, is_correct1,
-                                is_correct2] = result.split(' ')
-                            res_time[len(SYRUP_ALT_MODES) +
-                                     1][count] += float(time)
-                            res_correct[len(SYRUP_ALT_MODES)+1][count] += int(
-                                is_correct1 == "true")
-                            res_correct[len(SYRUP_ALT_MODES)+2][count] += int(
-                                is_correct2 == "true")
-                    except TimeoutExpired as e:
-                        print(e.stdout, file=f_smyth, flush=True)
-                        res_timeout[len(SYRUP_ALT_MODES)+1][count] += 1
+                    # print(exs, file=f_burst)
+                    # print('=================================', file=f_burst)
+                    # try:
+                    #     p = run_burst(name, exs)
+                    #     print(p.stdout, file=f_burst, flush=True)
+                    #     # had to do this to catch (Failure "bad typechecking")
+                    #     if "Failure" not in p.stdout:
+                    #         result = p.stdout.splitlines()[-1]
+                    #         if "TIMEOUT" in result:
+                    #             res_timeout[len(SYRUP_ALT_MODES)][count] += 1
+                    #         elif "STACKOVERFLOW" in result:
+                    #             res_sof[len(SYRUP_ALT_MODES)][count] += 1
+                    #         else:
+                    #             [time, is_correct] = result.split(' ')
+                    #             res_time[len(SYRUP_ALT_MODES)
+                    #                      ][count] += float(time)
+                    #             res_correct[len(SYRUP_ALT_MODES)][count] += int(
+                    #                 is_correct == "true")
+                    # except TimeoutExpired as e:
+                    #     print(e.stdout, file=f_burst, flush=True)
+                    #     res_timeout[len(SYRUP_ALT_MODES)][count] += 1
+
+                    # print(exs, file=f_smyth)
+                    # print('=================================', file=f_smyth)
+                    # try:
+                    #     p = run_smyth(name, exs)
+                    #     print(p.stdout, file=f_smyth, flush=True)
+                    #     result = p.stdout.splitlines()[-1]
+                    #     if "TIMEOUT" in result:
+                    #         res_timeout[len(SYRUP_ALT_MODES)+1][count] += 1
+                    #     elif "STACKOVERFLOW" in result:
+                    #         res_sof[len(SYRUP_ALT_MODES)+1][count] += 1
+                    #     elif "NOSOL" in result:
+                    #         res_nosol[count] += 1
+                    #     else:
+                    #         [time, is_correct1,
+                    #             is_correct2] = result.split(' ')
+                    #         res_time[len(SYRUP_ALT_MODES) +
+                    #                  1][count] += float(time)
+                    #         res_correct[len(SYRUP_ALT_MODES)+1][count] += int(
+                    #             is_correct1 == "true")
+                    #         res_correct[len(SYRUP_ALT_MODES)+2][count] += int(
+                    #             is_correct2 == "true")
+                    # except TimeoutExpired as e:
+                    #     print(e.stdout, file=f_smyth, flush=True)
+                    #     res_timeout[len(SYRUP_ALT_MODES)+1][count] += 1
 
             csv_writer.writerow(
                 [name] + [""] * (MAX_NUM_OF_EXS+1))
             csv_writer.writerow(["count"] + res_count)
             for i, mode in enumerate(SYRUP_ALT_MODES):
                 csv_writer.writerow([mode+"-correct"] + res_correct[i])
-            csv_writer.writerow(["burst-correct"] +
+            csv_writer.writerow(["trio-correct"] +
                                 res_correct[len(SYRUP_ALT_MODES)])
-            csv_writer.writerow(["smyth-correct"] +
-                                res_correct[len(SYRUP_ALT_MODES)+1])
-            csv_writer.writerow(["smyth-rec-correct"] +
-                                res_correct[len(SYRUP_ALT_MODES)+2])
-            csv_writer.writerow(["burst-sof"] + res_sof[len(SYRUP_ALT_MODES)])
-            csv_writer.writerow(
-                ["smyth-sof"] + res_sof[len(SYRUP_ALT_MODES)+1])
-            csv_writer.writerow(["smyth-nosol"] + res_nosol)
+            # csv_writer.writerow(["burst-correct"] +
+            #                     res_correct[len(SYRUP_ALT_MODES)])
+            # csv_writer.writerow(["smyth-correct"] +
+            #                     res_correct[len(SYRUP_ALT_MODES)+1])
+            # csv_writer.writerow(["smyth-rec-correct"] +
+            #                     res_correct[len(SYRUP_ALT_MODES)+2])
+            csv_writer.writerow(["trio-sof"] + res_sof[len(SYRUP_ALT_MODES)])
+            # csv_writer.writerow(["burst-sof"] + res_sof[len(SYRUP_ALT_MODES)])
+            # csv_writer.writerow(
+            #     ["smyth-sof"] + res_sof[len(SYRUP_ALT_MODES)+1])
+            # csv_writer.writerow(["smyth-nosol"] + res_nosol)
             for i, mode in enumerate(SYRUP_ALT_MODES):
                 csv_writer.writerow([mode+"time"] + res_time[i])
             csv_writer.writerow(
-                ["burst-time"] + res_time[len(SYRUP_ALT_MODES)])
-            csv_writer.writerow(
-                ["smyth-time"] + res_time[len(SYRUP_ALT_MODES)+1])
+                ["trio-time"] + res_time[len(SYRUP_ALT_MODES)])
+            # csv_writer.writerow(
+            #     ["burst-time"] + res_time[len(SYRUP_ALT_MODES)])
+            # csv_writer.writerow(
+            #     ["smyth-time"] + res_time[len(SYRUP_ALT_MODES)+1])
             for i, mode in enumerate(SYRUP_ALT_MODES):
                 csv_writer.writerow([mode+"timeout"] + res_timeout[i])
-            csv_writer.writerow(["burst-timeout"] +
+            csv_writer.writerow(["trio-timeout"] +
                                 res_timeout[len(SYRUP_ALT_MODES)])
-            csv_writer.writerow(["smyth-timeout"] +
-                                res_timeout[len(SYRUP_ALT_MODES)+1])
+            # csv_writer.writerow(["burst-timeout"] +
+            #                     res_timeout[len(SYRUP_ALT_MODES)])
+            # csv_writer.writerow(["smyth-timeout"] +
+            #                     res_timeout[len(SYRUP_ALT_MODES)+1])
             f.flush()

@@ -1,0 +1,503 @@
+Running bool_band
+fix f0.fun (x0, x1).
+  match (x0) with
+  | T -> x1
+  | F -> x0
+
+0.0045 true
+
+Time taken: 0.20455408096313477
+Running bool_bor
+fix f0.fun (x0, x1).
+  match (x0) with
+  | T -> x0
+  | F -> x1
+
+0.0002 true
+
+Time taken: 0.05082297325134277
+Running bool_impl
+fix f0.fun (x0, x1).
+  match (x0) with
+  | T -> x1
+  | F -> ( True )
+
+0.0004 true
+
+Time taken: 0.04116201400756836
+Running bool_neg
+fix f0.fun x0.
+  match (x0) with
+  | T -> ( False )
+  | F -> ( True )
+
+0.0003 true
+
+Time taken: 0.040517330169677734
+Running bool_xor
+fix f0.fun (x0, x1).
+  match (x0) with
+  | T ->
+    match (x1) with
+    | T -> ( False )
+    | F -> x0
+
+  | F -> x1
+
+0.0025 true
+
+Time taken: 0.04192209243774414
+Running nat_add
+fix f0.fun (x0, x1).
+  match (x0) with
+  | Z -> x1
+  | Sn1 ->
+    ( Succ
+      (f0 ( n1, x1 )) )
+
+0.0056 true
+
+Time taken: 0.04666399955749512
+Running nat_iseven
+fix f0.fun x0.
+  match (x0) with
+  | Z -> ( True )
+  | Sn1 ->
+    if (f0 n1)
+      then ( False )
+      else ( True )
+
+0.0022 true
+
+Time taken: 0.04274392127990723
+Running nat_max
+fix f0.fun (x0, x1).
+  match (x0) with
+  | Z -> x1
+  | Sn2 ->
+    match (x1) with
+    | Z -> x0
+    | Sn1 ->
+      ( Succ
+        (f0 ( n2, n1 )) )
+
+
+0.0555 true
+
+Time taken: 0.09532499313354492
+Running nat_pred
+fix f0.fun x0.
+  match (x0) with
+  | Z -> x0
+  | Sn1 -> n1
+
+0.0308 true
+
+Time taken: 0.07063126564025879
+Running list_hd
+fix f0.fun x0.
+  match (x0) with
+  | [] -> ( Zero )
+  | hd1::tl1 -> hd1
+
+0.0003 true
+
+Time taken: 0.04154205322265625
+Running list_tl
+fix f0.fun x0.
+  match (x0) with
+  | [] -> x0
+  | hd1::tl1 -> tl1
+
+0.0026 true
+
+Time taken: 0.04414224624633789
+Running list_last
+fix f0.fun x0.
+  match (x0) with
+  | [] -> ( None )
+  | hd1::tl1 ->
+    if
+      match (tl1) with
+      | [] -> ( True )
+      | hd'1::tl'1 ->
+        ( False )
+    then ( Some hd1 )
+      else (f0 tl1)
+
+0.0233 true
+
+Time taken: 0.06451582908630371
+Running list_take
+fix f0.fun (x0, x1).
+  match (x0) with
+  | Z -> ( Nil )
+  | Sn2 ->
+    ( Cons
+      match (x1) with
+      | [] -> ( Zero )
+      | hd1::tl1 -> hd1
+      match (n2) with
+      | Z -> ( Nil )
+      | Sn1 ->
+        ( Cons n1
+          (f0 ( n1, x1 ))
+          )
+      )
+
+0.1805 false
+
+Time taken: 0.22259902954101562
+Running list_drop
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] -> x0
+  | hd2::tl2 ->
+    match (x1) with
+    | Z -> x0
+    | Sn1 ->
+      (f0 ( tl2, n1 ))
+
+
+0.0696 true
+
+Time taken: 0.10990309715270996
+Running list_nth
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] -> ( Zero )
+  | hd2::tl2 ->
+    match (x1) with
+    | Z -> hd2
+    | Sn1 ->
+      (f0 ( tl2, n1 ))
+
+
+6.0982 true
+
+Time taken: 6.155827760696411
+Running list_sum
+fix f0.fun x0.
+  match (x0) with
+  | [] -> ( Zero )
+  | hd1::tl1 ->
+    ( Succ hd1 )
+
+0.0036 false
+
+Time taken: 0.04663586616516113
+Running list_length
+fix f0.fun x0.
+  match (x0) with
+  | [] -> ( Zero )
+  | hd1::tl1 ->
+    ( Succ (f0 tl1) )
+
+0.0004 true
+
+Time taken: 0.04011893272399902
+Running list_even_parity
+fix f0.fun x0.
+  match (x0) with
+  | [] -> ( True )
+  | hd1::tl1 ->
+    if (f0 tl1)
+      then (not hd1)
+      else hd1
+
+0.0206 true
+
+Time taken: 0.059272050857543945
+Running list_inc
+fix f0.fun x0.
+  (map ( inc, x0 ))
+0.0091 true
+
+Time taken: 0.0485379695892334
+Running list_stutter
+fix f0.fun x0.
+  match (x0) with
+  | [] -> x0
+  | hd1::tl1 ->
+    ( Cons hd1
+      ( Cons hd1 (f0 tl1)
+        ) )
+
+0.0066 true
+
+Time taken: 0.04745078086853027
+Running list_snoc
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] -> ( Cons x1 x0 )
+  | hd1::tl1 ->
+    ( Cons hd1
+      (f0 ( tl1, x1 )) )
+
+0.0045 true
+
+Time taken: 0.044001102447509766
+Running list_append
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] -> x1
+  | hd1::tl1 ->
+    ( Cons hd1
+      (f0 ( tl1, x1 )) )
+
+0.0033 true
+
+Time taken: 0.04212689399719238
+Running list_compress
+fix f0.fun x0.
+  match (x0) with
+  | [] -> x0
+  | hd1::tl1 ->
+    if
+      match (tl1) with
+      | [] -> ( False )
+      | hd'1::tl'1 ->
+        (equal_to
+          ( hd'1, hd1 ))
+    then (f0 tl1)
+      else
+        ( Cons hd1
+          (f0 tl1) )
+
+24.0628 true
+
+Time taken: 24.127966165542603
+Running list_concat
+fix f0.fun x0.
+  match (x0) with
+  | [] -> ( Nil )
+  | hd1::tl1 ->
+    (append
+      ( hd1, (f0 tl1) ))
+
+0.0488 true
+
+Time taken: 0.09079885482788086
+Running list_rev_append
+
+Time taken: 120.04505395889282
+Running list_rev_fold
+fix f0.fun x0.
+  (fold
+    ( snoc, ( Nil ), x0 ))
+0.0027 true
+
+Time taken: 0.042498111724853516
+Running list_rev_snoc
+fix f0.fun x0.
+  match (x0) with
+  | [] -> x0
+  | hd1::tl1 ->
+    (snoc
+      ( (f0 tl1), hd1 ))
+
+0.0034 true
+
+Time taken: 0.042981863021850586
+Running list_rev_tailcall
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] -> x0
+  | hd2::tl2 ->
+    ( Cons
+      match (tl2) with
+      | [] -> ( Zero )
+      | hd1::tl1 -> hd1
+      (f0 ( tl2, x1 )) )
+
+0.0211 false
+
+Time taken: 0.061330318450927734
+Running list_pairwise_swap
+0.9097 false
+
+Time taken: 0.9479868412017822
+Running list_sort_sorted_insert
+fix f0.fun x0.
+  match (x0) with
+  | [] -> x0
+  | hd1::tl1 ->
+    (insert
+      ( (f0 tl1), hd1 ))
+
+0.0165 true
+
+Time taken: 0.05516219139099121
+Running list_sorted_insert
+fix f0.fun (x0, x1).
+  match (x0) with
+  | [] -> ( Cons x1 x0 )
+  | hd1::tl1 ->
+    if
+      (equal_to
+        ( hd1, x1 ))
+      then
+        (f0 ( tl1, x1 ))
+      else
+        ( Cons
+          if
+            (less_than
+              ( hd1, x1 ))
+            then hd1
+            else x1
+          if
+            (less_than
+              ( hd1, x1 ))
+            then
+              (f0
+                ( tl1, x1
+                  ))
+            else x0 )
+
+31.6627 false
+
+Time taken: 31.777483701705933
+Running list_map
+fix f0.fun (x0, x1).
+  match (x1) with
+  | [] -> x1
+  | hd1::tl1 ->
+    ( Cons (x0 hd1)
+      (f0 ( x0, tl1 )) )
+
+0.0039 true
+
+Time taken: 0.0515439510345459
+Running list_filter
+fix f0.fun (x0, x1).
+  if (x0 ( Zero ))
+    then
+      match (x1) with
+      | [] -> x1
+      | hd1::tl1 ->
+        ( Cons
+          if (x0 hd1)
+            then hd1
+            else ( Zero )
+          if (x0 hd1)
+            then tl1
+            else ( Nil )
+          )
+    else ( Nil )
+0.5719 false
+
+Time taken: 0.61185622215271
+Running list_fold
+fix f0.fun (x0, x1, x2).
+  match (x2) with
+  | [] -> x1
+  | hd1::tl1 ->
+    (x0
+      ( hd1,
+        (f0
+          ( x0, x1, tl1 ))
+        ))
+
+0.0674 false
+
+Time taken: 0.10701799392700195
+Running tree_count_leaves
+fix f0.fun x0.
+  match (x0) with
+  | Leaf ->
+    (add
+      ( ( Zero ),
+        ( Succ ( Zero ) )
+        ))
+  | Node(v1,l1,r1) ->
+    (add
+      ( (f0 l1), (f0 r1)
+        ))
+
+0.0368 true
+
+Time taken: 0.07756900787353516
+Running tree_count_nodes
+fix f0.fun x0.
+  match (x0) with
+  | Leaf -> ( Zero )
+  | Node(v1,l1,r1) ->
+    ( Succ
+      (add
+        ( (f0 l1),
+          (f0 r1) )) )
+
+0.0105 true
+
+Time taken: 0.04909992218017578
+Running tree_inorder
+
+Time taken: 120.04627585411072
+Running tree_inorder_bool
+
+Time taken: 120.05149698257446
+Running tree_postorder
+fix f0.fun x0.
+  match (x0) with
+  | Leaf -> ( Nil )
+  | Node(v1,l1,r1) ->
+    (append
+      (
+        (append
+          ( (f0 l1),
+            (f0 r1) )),
+        ( Cons v1 ( Nil )
+          ) ))
+
+0.2408 true
+
+Time taken: 0.27910661697387695
+Running tree_preorder
+fix f0.fun x0.
+  match (x0) with
+  | Leaf -> ( Nil )
+  | Node(v1,l1,r1) ->
+    ( Cons v1
+      (append
+        ( (f0 l1),
+          (f0 r1) )) )
+
+0.0594 true
+
+Time taken: 0.09898495674133301
+Running tree_nodes_at_level
+fix f0.fun (x0, x1).
+  match (x0) with
+  | Leaf -> ( Zero )
+  | Node(v2,l2,r2) ->
+    match (x1) with
+    | Z ->
+      (add
+        ( x1, ( Succ x1 )
+          ))
+    | Sn1 ->
+      (add
+        (
+          (f0 ( l2, n1 )),
+          (f0 ( r2, n1 ))
+          ))
+
+
+17.6956 true
+
+Time taken: 17.740123987197876
+Running tree_map
+fix f0.fun (x0, x1).
+  match (x1) with
+  | Leaf -> x1
+  | Node(v1,l1,r1) ->
+    ( Node (x0 v1)
+      (f0 ( x0, l1 ))
+      (f0 ( x0, r1 )) )
+
+0.6236 true
+
+Time taken: 0.6638228893280029
+Running tree_binsert
+
+Time taken: 120.13103795051575

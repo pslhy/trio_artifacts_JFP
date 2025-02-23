@@ -1,0 +1,412 @@
+File "app/dune", line 1, characters 0-0:
+diff --git a/_build/default/app/dune b/_build/default/app/.formatted/dune
+index cd0f803..a06d3dc 100644
+--- a/_build/default/app/dune
++++ b/_build/default/app/.formatted/dune
+@@ -1,8 +1,20 @@
+ (env
+-    (debug (ocamlopt_flags (:standard -g -Oclassic)))
+-    (_ (ocamlopt_flags (:standard -O3 -rounds 6))))
++ (debug
++  (ocamlopt_flags
++   (:standard -g -Oclassic)))
++ (_
++  (ocamlopt_flags
++   (:standard -O3 -rounds 6))))
+ 
+ (executable
+-    (name BurstCmdLine)
+-  (preprocess (pps ppx_bin_prot ppx_hash ppx_deriving.std ppx_let ppx_optcomp ppx_compare ppx_sexp_conv))
+-    (libraries Burst core Myth smyth trio))
++ (name BurstCmdLine)
++ (preprocess
++  (pps
++   ppx_bin_prot
++   ppx_hash
++   ppx_deriving.std
++   ppx_let
++   ppx_optcomp
++   ppx_compare
++   ppx_sexp_conv))
++ (libraries Burst core Myth smyth trio))
+File "codemap/dune", line 1, characters 0-0:
+diff --git a/_build/default/codemap/dune b/_build/default/codemap/.formatted/dune
+index c4d883a..406685c 100644
+--- a/_build/default/codemap/dune
++++ b/_build/default/codemap/.formatted/dune
+@@ -1,8 +1,12 @@
+ (env
+-    (debug (ocamlopt_flags (:standard -g -Oclassic)))
+-    (_ (ocamlopt_flags (:standard -O3 -rounds 6))))
++ (debug
++  (ocamlopt_flags
++   (:standard -g -Oclassic)))
++ (_
++  (ocamlopt_flags
++   (:standard -O3 -rounds 6))))
+ 
+ (library
+-    (name codemap)
+-    (public_name codemap)
+-    (libraries unicode))
++ (name codemap)
++ (public_name codemap)
++ (libraries unicode))
+File "collections/dune", line 1, characters 0-0:
+diff --git a/_build/default/collections/dune b/_build/default/collections/.formatted/dune
+index 54bc16b..e09edeb 100644
+--- a/_build/default/collections/dune
++++ b/_build/default/collections/.formatted/dune
+@@ -1,13 +1,23 @@
+ (env
+-    (debug (ocamlopt_flags (:standard -g -Oclassic)))
+-    (_ (ocamlopt_flags (:standard -O3 -rounds 6))))
++ (debug
++  (ocamlopt_flags
++   (:standard -g -Oclassic)))
++ (_
++  (ocamlopt_flags
++   (:standard -O3 -rounds 6))))
+ 
+ (library
+-    (name collections)
+-    (libraries myStdLib)
+-
+-    (public_name collections)
+-(preprocess (pps ppx_bin_prot ppx_hash ppx_deriving.std ppx_let ppx_optcomp ppx_compare ppx_sexp_conv
+-    ))
+-    (flags (:standard -w -6-27-32-39))
+-)
++ (name collections)
++ (libraries myStdLib)
++ (public_name collections)
++ (preprocess
++  (pps
++   ppx_bin_prot
++   ppx_hash
++   ppx_deriving.std
++   ppx_let
++   ppx_optcomp
++   ppx_compare
++   ppx_sexp_conv))
++ (flags
++  (:standard -w -6-27-32-39)))
+File "smyth/dune", line 1, characters 0-0:
+diff --git a/_build/default/smyth/dune b/_build/default/smyth/.formatted/dune
+index bb3b28c..8708c29 100644
+--- a/_build/default/smyth/dune
++++ b/_build/default/smyth/.formatted/dune
+@@ -1,24 +1,23 @@
+-( library
+-  ( name
+-      smyth
+-  )
+-  ( public_name
+-      smyth
+-  )
+-  (preprocess (pps ppx_bin_prot ppx_hash ppx_deriving.std ppx_let ppx_optcomp ppx_compare ppx_sexp_conv))
+-  ( libraries
+-      ; user libraries
+-      stdlib2
+-
+-      ; opam libraries
+-      unix bark
+-      core
+-  )
+-  ( flags
+-      ; (-open Pervasives2)
+-      (-open Pervasives2 -w +a-4-9-42-48 -warn-error -a+1..66-3-33)
+-  )
+-  ( ocamlopt_flags
+-      (-O3)
+-  )
+-)
++(library
++ (name smyth)
++ (public_name smyth)
++ (preprocess
++  (pps
++   ppx_bin_prot
++   ppx_hash
++   ppx_deriving.std
++   ppx_let
++   ppx_optcomp
++   ppx_compare
++   ppx_sexp_conv))
++ (libraries
++  ; user libraries
++  stdlib2
++  ; opam libraries
++  unix
++  bark
++  core)
++ (flags
++  ; (-open Pervasives2)
++  (-open Pervasives2 -w +a-4-9-42-48 -warn-error -a+1..66-3-33))
++ (ocamlopt_flags (-O3)))
+File "myStdlib/dune", line 1, characters 0-0:
+diff --git a/_build/default/myStdlib/dune b/_build/default/myStdlib/.formatted/dune
+index 4b83cb9..70c381d 100644
+--- a/_build/default/myStdlib/dune
++++ b/_build/default/myStdlib/.formatted/dune
+@@ -1,6 +1,8 @@
+ (library
+-    (name myStdLib)
+-    (public_name myStdLib)
+-    (preprocess (pps ppx_hash ppx_sexp_conv ppx_bin_prot ppx_deriving.std))
+-    (flags (:standard -w -6-27-32-39))
+-    (libraries core str))
++ (name myStdLib)
++ (public_name myStdLib)
++ (preprocess
++  (pps ppx_hash ppx_sexp_conv ppx_bin_prot ppx_deriving.std))
++ (flags
++  (:standard -w -6-27-32-39))
++ (libraries core str))
+File "stdlib2/dune", line 1, characters 0-0:
+diff --git a/_build/default/stdlib2/dune b/_build/default/stdlib2/.formatted/dune
+index 5982fba..30e8350 100644
+--- a/_build/default/stdlib2/dune
++++ b/_build/default/stdlib2/.formatted/dune
+@@ -1,17 +1,7 @@
+-( library
+-  ( name
+-      stdlib2
+-  )
+-  ( public_name
+-      smyth-stdlib2
+-  )
+-  ( wrapped
+-      false
+-  )
+-  ( flags
+-      (-w +a-4-9-42-48 -warn-error -a+1..66-3-33)
+-  )
+-  ( ocamlopt_flags
+-      (-O3)
+-  )
+-)
++(library
++ (name stdlib2)
++ (public_name smyth-stdlib2)
++ (wrapped false)
++ (flags
++  (-w +a-4-9-42-48 -warn-error -a+1..66-3-33))
++ (ocamlopt_flags (-O3)))
+File "timbuk/dune", line 1, characters 0-0:
+diff --git a/_build/default/timbuk/dune b/_build/default/timbuk/.formatted/dune
+index f9506a4..ebf36c5 100644
+--- a/_build/default/timbuk/dune
++++ b/_build/default/timbuk/.formatted/dune
+@@ -1,12 +1,23 @@
+ (env
+-    (debug (ocamlopt_flags (:standard -g -Oclassic)))
+-    (_ (ocamlopt_flags (:standard -O3 -rounds 6))))
++ (debug
++  (ocamlopt_flags
++   (:standard -g -Oclassic)))
++ (_
++  (ocamlopt_flags
++   (:standard -O3 -rounds 6))))
+ 
+ (library
+-    (name timbuk)
+-    (public_name timbuk)
+-    (libraries collections myStdLib)
+-    (preprocess (pps ppx_bin_prot ppx_hash ppx_deriving.std ppx_let ppx_optcomp ppx_compare ppx_sexp_conv
+-    ))
+-    (flags (:standard -w -6-27-32-39))
+-    )
++ (name timbuk)
++ (public_name timbuk)
++ (libraries collections myStdLib)
++ (preprocess
++  (pps
++   ppx_bin_prot
++   ppx_hash
++   ppx_deriving.std
++   ppx_let
++   ppx_optcomp
++   ppx_compare
++   ppx_sexp_conv))
++ (flags
++  (:standard -w -6-27-32-39)))
+File "timbukSpec/dune", line 1, characters 0-0:
+diff --git a/_build/default/timbukSpec/dune b/_build/default/timbukSpec/.formatted/dune
+index e971985..79c0b03 100644
+--- a/_build/default/timbukSpec/dune
++++ b/_build/default/timbukSpec/.formatted/dune
+@@ -1,12 +1,20 @@
+ (env
+-    (debug (ocamlopt_flags (:standard -g -Oclassic)))
+-    (_ (ocamlopt_flags (:standard -O3 -rounds 6))))
++ (debug
++  (ocamlopt_flags
++   (:standard -g -Oclassic)))
++ (_
++  (ocamlopt_flags
++   (:standard -O3 -rounds 6))))
+ 
+ (library
+-    (name timbukSpec)
+-    (public_name timbukSpec)
+-    (libraries collections timbuk codemap unicode
+-    ;timbukTyping
+-    )
+-    (flags (:standard -w -6-27-32-33-39))
+-    )
++ (name timbukSpec)
++ (public_name timbukSpec)
++ (libraries
++  collections
++  timbuk
++  codemap
++  unicode
++  ;timbukTyping
++  )
++ (flags
++  (:standard -w -6-27-32-33-39)))
+File "unicode/dune", line 1, characters 0-0:
+diff --git a/_build/default/unicode/dune b/_build/default/unicode/.formatted/dune
+index 120e0c5..61ff60d 100644
+--- a/_build/default/unicode/dune
++++ b/_build/default/unicode/.formatted/dune
+@@ -1,7 +1,11 @@
+ (env
+-    (debug (ocamlopt_flags (:standard -g -Oclassic)))
+-    (_ (ocamlopt_flags (:standard -O3 -rounds 6))))
++ (debug
++  (ocamlopt_flags
++   (:standard -g -Oclassic)))
++ (_
++  (ocamlopt_flags
++   (:standard -O3 -rounds 6))))
+ 
+ (library
+-    (name unicode)
+-    (public_name unicode))
++ (name unicode)
++ (public_name unicode))
+File "myth/dune", line 1, characters 0-0:
+diff --git a/_build/default/myth/dune b/_build/default/myth/.formatted/dune
+index 4763ab8..1b8aa95 100644
+--- a/_build/default/myth/dune
++++ b/_build/default/myth/.formatted/dune
+@@ -1,9 +1,11 @@
+-(menhir (modules parser))
++(menhir
++ (modules parser))
+ 
+ (ocamllex lexer)
+ 
+ (library
+-    (name Myth)
+-    (public_name Myth)
+-    (libraries core str)
+-    (preprocess (pps ppx_hash ppx_deriving.std ppx_optcomp ppx_compare ppx_sexp_conv)))
++ (name Myth)
++ (public_name Myth)
++ (libraries core str)
++ (preprocess
++  (pps ppx_hash ppx_deriving.std ppx_optcomp ppx_compare ppx_sexp_conv)))
+File "trio/dune", line 1, characters 0-0:
+diff --git a/_build/default/trio/dune b/_build/default/trio/.formatted/dune
+index 854996b..92eee11 100644
+--- a/_build/default/trio/dune
++++ b/_build/default/trio/.formatted/dune
+@@ -1,10 +1,16 @@
+-(menhir (modules parser))
++(menhir
++ (modules parser))
++
+ (ocamllex lexer)
+- (library
+-  (name trio)
+-  (public_name trio)
+- (preprocess (pps ppx_hash ppx_deriving.std ppx_compare))
++
++(library
++ (name trio)
++ (public_name trio)
++ (preprocess
++  (pps ppx_hash ppx_deriving.std ppx_compare))
+  (libraries batteries))
++
+ (env
+  (dev
+-  (flags (:standard -warn-error -A))))
++  (flags
++   (:standard -warn-error -A))))
+File "src/dune", line 1, characters 0-0:
+diff --git a/_build/default/src/dune b/_build/default/src/.formatted/dune
+index 5c1e054..ac0378b 100644
+--- a/_build/default/src/dune
++++ b/_build/default/src/.formatted/dune
+@@ -1,16 +1,28 @@
+ (env
+-    (debug (ocamlopt_flags (:standard -g -Oclassic)))
+-    (_ (ocamlopt_flags (:standard -O3 -rounds 6))))
++ (debug
++  (ocamlopt_flags
++   (:standard -g -Oclassic)))
++ (_
++  (ocamlopt_flags
++   (:standard -O3 -rounds 6))))
+ 
+-(menhir (modules parser parser2))
++(menhir
++ (modules parser parser2))
+ 
+ (ocamllex lexer lexer2)
+ 
+ (library
+-    (name Burst)
+-    (public_name Burst)
+-    (libraries myStdLib timbuk timbukSpec)
+-    (preprocess (pps ppx_bin_prot ppx_hash ppx_deriving.std ppx_let ppx_optcomp ppx_compare ppx_sexp_conv
+-    ))
+-    (flags (:standard -w -6-27-30-32-33-39))
+-    )
++ (name Burst)
++ (public_name Burst)
++ (libraries myStdLib timbuk timbukSpec)
++ (preprocess
++  (pps
++   ppx_bin_prot
++   ppx_hash
++   ppx_deriving.std
++   ppx_let
++   ppx_optcomp
++   ppx_compare
++   ppx_sexp_conv))
++ (flags
++  (:standard -w -6-27-30-32-33-39)))
+File "timbukSolving/dune", line 1, characters 0-0:
+diff --git a/_build/default/timbukSolving/dune b/_build/default/timbukSolving/.formatted/dune
+index eeb5507..ffbdadf 100644
+--- a/_build/default/timbukSolving/dune
++++ b/_build/default/timbukSolving/.formatted/dune
+@@ -1,10 +1,14 @@
+ (env
+-    (debug (ocamlopt_flags (:standard -g -Oclassic)))
+-    (_ (ocamlopt_flags (:standard -O3 -rounds 6))))
++ (debug
++  (ocamlopt_flags
++   (:standard -g -Oclassic)))
++ (_
++  (ocamlopt_flags
++   (:standard -O3 -rounds 6))))
+ 
+ (library
+-    (name timbukSolving)
+-    (public_name timbukSolving)
+-    (libraries collections timbuk codemap unicode logs async_unix core)
+-    (flags (:standard -w -6-27-32-33-39))
+-    )
++ (name timbukSolving)
++ (public_name timbukSolving)
++ (libraries collections timbuk codemap unicode logs async_unix core)
++ (flags
++  (:standard -w -6-27-32-33-39)))
+make[1]: *** [build] Error 1
+make: *** [all] Error 2

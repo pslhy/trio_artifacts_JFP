@@ -44,3 +44,8 @@ let () =
            Examples.is_consistent exp
              (List.map assertion ~f:(fun (i, o) -> (sigma, Some i, o)))))
   with Time.Timeout -> Printf.printf "TIMEOUT\n"
+    (* prerr_endline (Printf.sprintf "%.4f %b\n" time_spent
+      (Option.value_map exp_opt ~default:false ~f:(fun exp ->
+           Examples.is_consistent exp
+             (List.map assertion ~f:(fun (i, o) -> (sigma, Some i, o))))))
+  with Time.Timeout -> prerr_endline (Printf.sprintf "TIMEOUT\n") *)

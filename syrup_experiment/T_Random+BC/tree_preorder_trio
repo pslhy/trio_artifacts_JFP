@@ -1,0 +1,1740 @@
+Node (Node (Node (Leaf (),3,Leaf ()),0,Leaf ()),0,Leaf ()) -> [0,0,3];
+Leaf () -> [];
+
+=================================
+fix (f : tree -> list) =
+  fun (x:tree) ->
+    match x with
+      | Leaf _ -> Nil
+      | Node _ -> Cons (Un_Node x . 1, f (Un_Node x . 0))
+
+0.0188 false
+
+Node (Leaf (),2,Node (Leaf (),2,Node (Leaf (),2,Leaf ()))) -> [2,2,2];
+Leaf () -> [];
+
+=================================
+fix (f : tree -> list) =
+  fun (x:tree) ->
+    match x with
+      | Leaf _ -> Nil
+      | Node _ -> Cons (Un_Node x . 1, f (Un_Node x . 2))
+
+0.0415 false
+
+Node (Node (Leaf (),0,Leaf ()),3,Leaf ()) -> [3,0];
+Leaf () -> [];
+
+=================================
+fix (f : tree -> list) =
+  fun (x:tree) ->
+    match x with
+      | Leaf _ -> Nil
+      | Node _ -> Cons (Un_Node x . 1, Cons (0, Nil))
+
+0.0201 false
+
+Node (Node (Leaf (),2,Leaf ()),3,Leaf ()) -> [3,2];
+Leaf () -> [];
+
+=================================
+fix (f : tree -> list) =
+  fun (x:tree) ->
+    match x with
+      | Leaf _ -> Nil
+      | Node _ -> Cons (Un_Node x . 1, f (Un_Node x . 0))
+
+0.0295 false
+
+Node (Leaf (),0,Node (Node (Leaf (),0,Leaf ()),1,Leaf ())) -> [0,1,0];
+Leaf () -> [];
+
+=================================
+fix (f : tree -> list) =
+  fun (x:tree) ->
+    match x with
+      | Leaf _ -> Nil
+      | Node _ -> append Cons (Un_Node x . 1, f (Un_Node x . 0))
+                    (f (Un_Node x . 2))
+
+0.0208 true
+
+Node (Node (Leaf (),0,Node (Leaf (),1,Leaf ())),0,Leaf ()) -> [0,0,1];
+Leaf () -> [];
+
+=================================
+fix (f : tree -> list) =
+  fun (x:tree) ->
+    match x with
+      | Leaf _ -> Nil
+      | Node _ -> append Cons (Un_Node x . 1, f (Un_Node x . 0))
+                    (f (Un_Node x . 2))
+
+0.0189 true
+
+Node (Leaf (),2,Leaf ()) -> [2];
+Leaf () -> [];
+
+=================================
+fix (f : tree -> list) =
+  fun (x:tree) ->
+    match x with
+      | Leaf _ -> Nil
+      | Node _ -> Cons (Un_Node x . 1, Nil)
+
+0.0097 false
+
+Node (Node (Leaf (),0,Node (Leaf (),2,Leaf ())),2,Leaf ()) -> [2,0,2];
+Leaf () -> [];
+
+=================================
+fix (f : tree -> list) =
+  fun (x:tree) ->
+    match x with
+      | Leaf _ -> Nil
+      | Node _ -> append Cons (Un_Node x . 1, f (Un_Node x . 0))
+                    (f (Un_Node x . 2))
+
+0.0362 true
+
+Node (Leaf (),2,Node (Leaf (),0,Node (Leaf (),2,Leaf ()))) -> [2,0,2];
+Leaf () -> [];
+
+=================================
+fix (f : tree -> list) =
+  fun (x:tree) ->
+    match x with
+      | Leaf _ -> Nil
+      | Node _ -> Cons (Un_Node x . 1, f (Un_Node x . 2))
+
+0.0360 false
+
+Node (Leaf (),0,Node (Leaf (),2,Node (Leaf (),3,Leaf ()))) -> [0,2,3];
+Leaf () -> [];
+
+=================================
+fix (f : tree -> list) =
+  fun (x:tree) ->
+    match x with
+      | Leaf _ -> Nil
+      | Node _ -> Cons (Un_Node x . 1, f (Un_Node x . 2))
+
+0.0174 false
+
+Node (Node (Leaf (),1,Leaf ()),1,Node (Leaf (),3,Leaf ())) -> [1,1,3];
+Node (Leaf (),2,Node (Leaf (),2,Node (Leaf (),0,Leaf ()))) -> [2,2,0];
+Leaf () -> [];
+
+=================================
+fix (f : tree -> list) =
+  fun (x:tree) ->
+    match x with
+      | Leaf _ -> Nil
+      | Node _ -> append (f (Un_Node x . 0))
+                    Cons (Un_Node x . 1, f (Un_Node x . 2))
+
+0.1010 false
+
+Node (Leaf (),3,Leaf ()) -> [3];
+Node (Leaf (),0,Node (Leaf (),1,Leaf ())) -> [0,1];
+Leaf () -> [];
+
+=================================
+fix (f : tree -> list) =
+  fun (x:tree) ->
+    match x with
+      | Leaf _ -> Nil
+      | Node _ -> Cons (Un_Node x . 1, f (Un_Node x . 2))
+
+0.0367 false
+
+Node (Node (Leaf (),3,Leaf ()),3,Leaf ()) -> [3,3];
+Node (Node (Leaf (),3,Leaf ()),0,Leaf ()) -> [0,3];
+Leaf () -> [];
+
+=================================
+fix (f : tree -> list) =
+  fun (x:tree) ->
+    match x with
+      | Leaf _ -> Nil
+      | Node _ -> Cons (Un_Node x . 1, f (Un_Node x . 0))
+
+0.0455 false
+
+Node (Leaf (),1,Node (Node (Leaf (),2,Leaf ()),0,Leaf ())) -> [1,0,2];
+Node (Leaf (),3,Leaf ()) -> [3];
+Leaf () -> [];
+
+=================================
+fix (f : tree -> list) =
+  fun (x:tree) ->
+    match x with
+      | Leaf _ -> Nil
+      | Node _ -> append Cons (Un_Node x . 1, f (Un_Node x . 0))
+                    (f (Un_Node x . 2))
+
+0.0468 true
+
+Node (Node (Leaf (),0,Node (Leaf (),0,Leaf ())),2,Leaf ()) -> [2,0,0];
+Node (Node (Leaf (),2,Leaf ()),3,Leaf ()) -> [3,2];
+Leaf () -> [];
+
+=================================
+fix (f : tree -> list) =
+  fun (x:tree) ->
+    match x with
+      | Leaf _ -> Nil
+      | Node _ -> append (f (Un_Node x . 2))
+                    Cons (Un_Node x . 1, f (Un_Node x . 0))
+
+0.0518 false
+
+Node (Leaf (),0,Node (Node (Leaf (),0,Leaf ()),0,Leaf ())) -> [0,0,0];
+Node (Leaf (),0,Leaf ()) -> [0];
+Leaf () -> [];
+
+=================================
+fix (f : tree -> list) =
+  fun (x:tree) ->
+    match x with
+      | Leaf _ -> Nil
+      | Node _ -> append (f (Un_Node x . 0))
+                    Cons (Un_Node x . 1, f (Un_Node x . 2))
+
+0.0339 false
+
+Node (Leaf (),1,Node (Leaf (),2,Node (Leaf (),3,Leaf ()))) -> [1,2,3];
+Node (Node (Leaf (),0,Leaf ()),1,Leaf ()) -> [1,0];
+Leaf () -> [];
+
+=================================
+fix (f : tree -> list) =
+  fun (x:tree) ->
+    match x with
+      | Leaf _ -> Nil
+      | Node _ -> append Cons (Un_Node x . 1, f (Un_Node x . 0))
+                    (f (Un_Node x . 2))
+
+0.0799 true
+
+Node (Node (Leaf (),2,Leaf ()),0,Node (Leaf (),2,Leaf ())) -> [0,2,2];
+Node (Node (Leaf (),2,Node (Leaf (),0,Leaf ())),2,Leaf ()) -> [2,2,0];
+Leaf () -> [];
+
+=================================
+fix (f : tree -> list) =
+  fun (x:tree) ->
+    match x with
+      | Leaf _ -> Nil
+      | Node _ -> append Cons (Un_Node x . 1, f (Un_Node x . 0))
+                    (f (Un_Node x . 2))
+
+0.1104 true
+
+Node (Node (Leaf (),0,Node (Leaf (),0,Leaf ())),1,Leaf ()) -> [1,0,0];
+Node (Leaf (),2,Node (Leaf (),1,Leaf ())) -> [2,1];
+Leaf () -> [];
+
+=================================
+fix (f : tree -> list) =
+  fun (x:tree) ->
+    match x with
+      | Leaf _ -> Nil
+      | Node _ -> append Cons (Un_Node x . 1, f (Un_Node x . 0))
+                    (f (Un_Node x . 2))
+
+0.0958 true
+
+Node (Leaf (),3,Node (Node (Leaf (),2,Leaf ()),1,Leaf ())) -> [3,1,2];
+Node (Node (Node (Leaf (),3,Leaf ()),0,Leaf ()),0,Leaf ()) -> [0,0,3];
+Leaf () -> [];
+
+=================================
+fix (f : tree -> list) =
+  fun (x:tree) ->
+    match x with
+      | Leaf _ -> Nil
+      | Node _ -> append Cons (Un_Node x . 1, f (Un_Node x . 0))
+                    (f (Un_Node x . 2))
+
+0.0983 true
+
+Node (Node (Leaf (),1,Leaf ()),3,Leaf ()) -> [3,1];
+Node (Leaf (),3,Node (Node (Leaf (),1,Leaf ()),1,Leaf ())) -> [3,1,1];
+Node (Leaf (),3,Node (Leaf (),3,Leaf ())) -> [3,3];
+Leaf () -> [];
+
+=================================
+fix (f : tree -> list) =
+  fun (x:tree) ->
+    match x with
+      | Leaf _ -> Nil
+      | Node _ -> append Cons (Un_Node x . 1, f (Un_Node x . 0))
+                    (f (Un_Node x . 2))
+
+0.1308 true
+
+Node (Node (Leaf (),0,Node (Leaf (),3,Leaf ())),2,Leaf ()) -> [2,0,3];
+Node (Leaf (),1,Leaf ()) -> [1];
+Node (Leaf (),3,Node (Leaf (),2,Leaf ())) -> [3,2];
+Leaf () -> [];
+
+=================================
+fix (f : tree -> list) =
+  fun (x:tree) ->
+    match x with
+      | Leaf _ -> Nil
+      | Node _ -> append Cons (Un_Node x . 1, f (Un_Node x . 0))
+                    (f (Un_Node x . 2))
+
+0.1139 true
+
+Node (Node (Node (Leaf (),3,Leaf ()),1,Leaf ()),2,Leaf ()) -> [2,1,3];
+Node (Leaf (),2,Leaf ()) -> [2];
+Node (Node (Leaf (),0,Leaf ()),2,Node (Leaf (),0,Leaf ())) -> [2,0,0];
+Leaf () -> [];
+
+=================================
+fix (f : tree -> list) =
+  fun (x:tree) ->
+    match x with
+      | Leaf _ -> Nil
+      | Node _ -> append Cons (Un_Node x . 1, f (Un_Node x . 0))
+                    (f (Un_Node x . 2))
+
+0.1326 true
+
+Node (Node (Leaf (),0,Leaf ()),3,Leaf ()) -> [3,0];
+Node (Leaf (),2,Node (Node (Leaf (),3,Leaf ()),3,Leaf ())) -> [2,3,3];
+Node (Leaf (),1,Leaf ()) -> [1];
+Leaf () -> [];
+
+=================================
+fix (f : tree -> list) =
+  fun (x:tree) ->
+    match x with
+      | Leaf _ -> Nil
+      | Node _ -> append Cons (Un_Node x . 1, f (Un_Node x . 0))
+                    (f (Un_Node x . 2))
+
+0.1139 true
+
+Node (Node (Node (Leaf (),2,Leaf ()),1,Leaf ()),0,Leaf ()) -> [0,1,2];
+Node (Leaf (),1,Node (Leaf (),1,Leaf ())) -> [1,1];
+Node (Leaf (),2,Node (Node (Leaf (),2,Leaf ()),3,Leaf ())) -> [2,3,2];
+Leaf () -> [];
+
+=================================
+fix (f : tree -> list) =
+  fun (x:tree) ->
+    match x with
+      | Leaf _ -> Nil
+      | Node _ -> append Cons (Un_Node x . 1, f (Un_Node x . 0))
+                    (f (Un_Node x . 2))
+
+0.1495 true
+
+Node (Leaf (),3,Node (Node (Leaf (),3,Leaf ()),0,Leaf ())) -> [3,0,3];
+Node (Node (Leaf (),3,Leaf ()),3,Node (Leaf (),1,Leaf ())) -> [3,3,1];
+Node (Leaf (),0,Node (Node (Leaf (),1,Leaf ()),2,Leaf ())) -> [0,2,1];
+Leaf () -> [];
+
+=================================
+fix (f : tree -> list) =
+  fun (x:tree) ->
+    match x with
+      | Leaf _ -> Nil
+      | Node _ -> append Cons (Un_Node x . 1, f (Un_Node x . 0))
+                    (f (Un_Node x . 2))
+
+0.1617 true
+
+Node (Node (Node (Leaf (),3,Leaf ()),1,Leaf ()),0,Leaf ()) -> [0,1,3];
+Node (Leaf (),1,Node (Node (Leaf (),2,Leaf ()),1,Leaf ())) -> [1,1,2];
+Node (Node (Leaf (),2,Node (Leaf (),1,Leaf ())),1,Leaf ()) -> [1,2,1];
+Leaf () -> [];
+
+=================================
+fix (f : tree -> list) =
+  fun (x:tree) ->
+    match x with
+      | Leaf _ -> Nil
+      | Node _ -> append Cons (Un_Node x . 1, f (Un_Node x . 0))
+                    (f (Un_Node x . 2))
+
+0.1744 true
+
+Node (Leaf (),0,Node (Leaf (),3,Leaf ())) -> [0,3];
+Node (Leaf (),3,Node (Leaf (),2,Node (Leaf (),0,Leaf ()))) -> [3,2,0];
+Node (Leaf (),0,Node (Leaf (),0,Node (Leaf (),1,Leaf ()))) -> [0,0,1];
+Leaf () -> [];
+
+=================================
+fix (f : tree -> list) =
+  fun (x:tree) ->
+    match x with
+      | Leaf _ -> Nil
+      | Node _ -> Cons (Un_Node x . 1, f (Un_Node x . 2))
+
+0.0856 false
+
+Node (Leaf (),1,Node (Leaf (),1,Leaf ())) -> [1,1];
+Node (Leaf (),0,Node (Leaf (),1,Node (Leaf (),2,Leaf ()))) -> [0,1,2];
+Node (Node (Leaf (),1,Leaf ()),2,Leaf ()) -> [2,1];
+Leaf () -> [];
+
+=================================
+fix (f : tree -> list) =
+  fun (x:tree) ->
+    match x with
+      | Leaf _ -> Nil
+      | Node _ -> append Cons (Un_Node x . 1, f (Un_Node x . 0))
+                    (f (Un_Node x . 2))
+
+0.2016 true
+
+Node (Node (Leaf (),0,Leaf ()),3,Leaf ()) -> [3,0];
+Node (Leaf (),3,Node (Leaf (),1,Node (Leaf (),3,Leaf ()))) -> [3,1,3];
+Node (Leaf (),3,Node (Leaf (),3,Leaf ())) -> [3,3];
+Leaf () -> [];
+
+=================================
+fix (f : tree -> list) =
+  fun (x:tree) ->
+    match x with
+      | Leaf _ -> Nil
+      | Node _ -> append (f (Un_Node x . 2))
+                    Cons (Un_Node x . 1, f (Un_Node x . 0))
+
+0.1302 false
+
+Node (Node (Leaf (),0,Leaf ()),0,Leaf ()) -> [0,0];
+Node (Leaf (),2,Node (Leaf (),3,Node (Leaf (),0,Leaf ()))) -> [2,3,0];
+Node (Node (Leaf (),3,Leaf ()),2,Leaf ()) -> [2,3];
+Node (Leaf (),2,Node (Leaf (),2,Node (Leaf (),1,Leaf ()))) -> [2,2,1];
+Leaf () -> [];
+
+=================================
+fix (f : tree -> list) =
+  fun (x:tree) ->
+    match x with
+      | Leaf _ -> Nil
+      | Node _ -> append Cons (Un_Node x . 1, f (Un_Node x . 0))
+                    (f (Un_Node x . 2))
+
+0.1613 true
+
+Node (Leaf (),0,Node (Leaf (),3,Leaf ())) -> [0,3];
+Node (Node (Leaf (),0,Leaf ()),3,Node (Leaf (),3,Leaf ())) -> [3,0,3];
+Node (Leaf (),2,Node (Node (Leaf (),2,Leaf ()),1,Leaf ())) -> [2,1,2];
+Node (Node (Leaf (),3,Leaf ()),0,Leaf ()) -> [0,3];
+Leaf () -> [];
+
+=================================
+fix (f : tree -> list) =
+  fun (x:tree) ->
+    match x with
+      | Leaf _ -> Nil
+      | Node _ -> append Cons (Un_Node x . 1, f (Un_Node x . 0))
+                    (f (Un_Node x . 2))
+
+0.1713 true
+
+Node (Node (Node (Leaf (),3,Leaf ()),0,Leaf ()),0,Leaf ()) -> [0,0,3];
+Node (Leaf (),1,Node (Node (Leaf (),1,Leaf ()),3,Leaf ())) -> [1,3,1];
+Node (Node (Leaf (),2,Node (Leaf (),2,Leaf ())),1,Leaf ()) -> [1,2,2];
+Node (Node (Leaf (),0,Node (Leaf (),0,Leaf ())),3,Leaf ()) -> [3,0,0];
+Leaf () -> [];
+
+=================================
+fix (f : tree -> list) =
+  fun (x:tree) ->
+    match x with
+      | Leaf _ -> Nil
+      | Node _ -> append Cons (Un_Node x . 1, f (Un_Node x . 0))
+                    (f (Un_Node x . 2))
+
+0.2351 true
+
+Node (Leaf (),3,Node (Leaf (),3,Leaf ())) -> [3,3];
+Node (Leaf (),1,Node (Node (Leaf (),3,Leaf ()),3,Leaf ())) -> [1,3,3];
+Node (Node (Leaf (),1,Leaf ()),1,Leaf ()) -> [1,1];
+Node (Node (Node (Leaf (),2,Leaf ()),1,Leaf ()),2,Leaf ()) -> [2,1,2];
+Leaf () -> [];
+
+=================================
+fix (f : tree -> list) =
+  fun (x:tree) ->
+    match x with
+      | Leaf _ -> Nil
+      | Node _ -> append (f (Un_Node x . 0))
+                    Cons (Un_Node x . 1, f (Un_Node x . 2))
+
+0.1935 false
+
+Node (Leaf (),1,Node (Leaf (),0,Node (Leaf (),1,Leaf ()))) -> [1,0,1];
+Node (Node (Node (Leaf (),1,Leaf ()),3,Leaf ()),2,Leaf ()) -> [2,3,1];
+Node (Node (Leaf (),3,Node (Leaf (),3,Leaf ())),0,Leaf ()) -> [0,3,3];
+Node (Leaf (),3,Node (Leaf (),1,Node (Leaf (),3,Leaf ()))) -> [3,1,3];
+Leaf () -> [];
+
+=================================
+fix (f : tree -> list) =
+  fun (x:tree) ->
+    match x with
+      | Leaf _ -> Nil
+      | Node _ -> append (f (Un_Node x . 2))
+                    Cons (Un_Node x . 1, f (Un_Node x . 0))
+
+0.2255 false
+
+Node (Leaf (),3,Node (Leaf (),3,Leaf ())) -> [3,3];
+Node (Leaf (),1,Node (Leaf (),3,Leaf ())) -> [1,3];
+Node (Node (Node (Leaf (),2,Leaf ()),2,Leaf ()),3,Leaf ()) -> [3,2,2];
+Node (Leaf (),1,Node (Leaf (),0,Leaf ())) -> [1,0];
+Leaf () -> [];
+
+=================================
+fix (f : tree -> list) =
+  fun (x:tree) ->
+    match x with
+      | Leaf _ -> Nil
+      | Node _ -> append Cons (Un_Node x . 1, f (Un_Node x . 0))
+                    (f (Un_Node x . 2))
+
+0.1762 true
+
+Node (Leaf (),3,Node (Leaf (),1,Leaf ())) -> [3,1];
+Node (Leaf (),3,Leaf ()) -> [3];
+Node (Leaf (),0,Node (Leaf (),0,Node (Leaf (),0,Leaf ()))) -> [0,0,0];
+Node (Node (Leaf (),1,Leaf ()),0,Node (Leaf (),1,Leaf ())) -> [0,1,1];
+Leaf () -> [];
+
+=================================
+fix (f : tree -> list) =
+  fun (x:tree) ->
+    match x with
+      | Leaf _ -> Nil
+      | Node _ -> append Cons (Un_Node x . 1, f (Un_Node x . 0))
+                    (f (Un_Node x . 2))
+
+0.1932 true
+
+Node (Leaf (),0,Node (Leaf (),1,Node (Leaf (),1,Leaf ()))) -> [0,1,1];
+Node (Leaf (),2,Node (Leaf (),2,Leaf ())) -> [2,2];
+Node (Node (Node (Leaf (),3,Leaf ()),0,Leaf ()),2,Leaf ()) -> [2,0,3];
+Node (Leaf (),0,Leaf ()) -> [0];
+Leaf () -> [];
+
+=================================
+fix (f : tree -> list) =
+  fun (x:tree) ->
+    match x with
+      | Leaf _ -> Nil
+      | Node _ -> append Cons (Un_Node x . 1, f (Un_Node x . 0))
+                    (f (Un_Node x . 2))
+
+0.1907 true
+
+Node (Leaf (),1,Leaf ()) -> [1];
+Node (Leaf (),1,Node (Leaf (),0,Node (Leaf (),1,Leaf ()))) -> [1,0,1];
+Node (Leaf (),3,Node (Node (Leaf (),3,Leaf ()),1,Leaf ())) -> [3,1,3];
+Node (Node (Leaf (),0,Leaf ()),0,Node (Leaf (),2,Leaf ())) -> [0,0,2];
+Leaf () -> [];
+
+=================================
+fix (f : tree -> list) =
+  fun (x:tree) ->
+    match x with
+      | Leaf _ -> Nil
+      | Node _ -> append Cons (Un_Node x . 1, f (Un_Node x . 0))
+                    (f (Un_Node x . 2))
+
+0.1852 true
+
+Node (Leaf (),1,Node (Leaf (),0,Node (Leaf (),2,Leaf ()))) -> [1,0,2];
+Node (Node (Leaf (),0,Leaf ()),1,Node (Leaf (),1,Leaf ())) -> [1,0,1];
+Node (Node (Leaf (),0,Node (Leaf (),0,Leaf ())),0,Leaf ()) -> [0,0,0];
+Node (Node (Node (Leaf (),3,Leaf ()),3,Leaf ()),2,Leaf ()) -> [2,3,3];
+Leaf () -> [];
+
+=================================
+fix (f : tree -> list) =
+  fun (x:tree) ->
+    match x with
+      | Leaf _ -> Nil
+      | Node _ -> append Cons (Un_Node x . 1, f (Un_Node x . 0))
+                    (f (Un_Node x . 2))
+
+0.2471 true
+
+Node (Leaf (),3,Node (Leaf (),2,Node (Leaf (),3,Leaf ()))) -> [3,2,3];
+Node (Leaf (),0,Node (Leaf (),0,Leaf ())) -> [0,0];
+Node (Leaf (),2,Leaf ()) -> [2];
+Node (Node (Leaf (),2,Leaf ()),2,Node (Leaf (),0,Leaf ())) -> [2,2,0];
+Node (Leaf (),2,Node (Leaf (),0,Leaf ())) -> [2,0];
+Leaf () -> [];
+
+=================================
+fix (f : tree -> list) =
+  fun (x:tree) ->
+    match x with
+      | Leaf _ -> Nil
+      | Node _ -> append (f (Un_Node x . 0))
+                    Cons (Un_Node x . 1, f (Un_Node x . 2))
+
+0.2230 false
+
+Node (Node (Leaf (),1,Leaf ()),3,Leaf ()) -> [3,1];
+Node (Leaf (),3,Node (Leaf (),3,Leaf ())) -> [3,3];
+Node (Node (Node (Leaf (),0,Leaf ()),1,Leaf ()),1,Leaf ()) -> [1,1,0];
+Node (Leaf (),0,Node (Leaf (),3,Leaf ())) -> [0,3];
+Node (Node (Leaf (),0,Node (Leaf (),0,Leaf ())),2,Leaf ()) -> [2,0,0];
+Leaf () -> [];
+
+=================================
+fix (f : tree -> list) =
+  fun (x:tree) ->
+    match x with
+      | Leaf _ -> Nil
+      | Node _ -> append Cons (Un_Node x . 1, f (Un_Node x . 0))
+                    (f (Un_Node x . 2))
+
+0.2283 true
+
+Node (Node (Leaf (),0,Leaf ()),1,Node (Leaf (),3,Leaf ())) -> [1,0,3];
+Node (Leaf (),2,Node (Leaf (),2,Node (Leaf (),3,Leaf ()))) -> [2,2,3];
+Node (Node (Leaf (),3,Leaf ()),3,Node (Leaf (),2,Leaf ())) -> [3,3,2];
+Node (Node (Leaf (),0,Leaf ()),3,Node (Leaf (),2,Leaf ())) -> [3,0,2];
+Node (Leaf (),1,Node (Leaf (),0,Node (Leaf (),3,Leaf ()))) -> [1,0,3];
+Leaf () -> [];
+
+=================================
+fix (f : tree -> list) =
+  fun (x:tree) ->
+    match x with
+      | Leaf _ -> Nil
+      | Node _ -> append Cons (Un_Node x . 1, f (Un_Node x . 0))
+                    (f (Un_Node x . 2))
+
+0.2554 true
+
+Node (Node (Node (Leaf (),3,Leaf ()),0,Leaf ()),0,Leaf ()) -> [0,0,3];
+Node (Leaf (),3,Node (Leaf (),3,Leaf ())) -> [3,3];
+Node (Leaf (),0,Node (Leaf (),0,Node (Leaf (),1,Leaf ()))) -> [0,0,1];
+Node (Node (Leaf (),3,Node (Leaf (),1,Leaf ())),0,Leaf ()) -> [0,3,1];
+Node (Node (Leaf (),3,Leaf ()),1,Leaf ()) -> [1,3];
+Leaf () -> [];
+
+=================================
+fix (f : tree -> list) =
+  fun (x:tree) ->
+    match x with
+      | Leaf _ -> Nil
+      | Node _ -> append Cons (Un_Node x . 1, f (Un_Node x . 0))
+                    (f (Un_Node x . 2))
+
+0.2288 true
+
+Node (Leaf (),2,Leaf ()) -> [2];
+Node (Leaf (),1,Node (Leaf (),3,Leaf ())) -> [1,3];
+Node (Node (Node (Leaf (),2,Leaf ()),0,Leaf ()),1,Leaf ()) -> [1,0,2];
+Node (Node (Leaf (),1,Leaf ()),1,Node (Leaf (),0,Leaf ())) -> [1,1,0];
+Node (Leaf (),3,Node (Leaf (),3,Node (Leaf (),3,Leaf ()))) -> [3,3,3];
+Leaf () -> [];
+
+=================================
+fix (f : tree -> list) =
+  fun (x:tree) ->
+    match x with
+      | Leaf _ -> Nil
+      | Node _ -> append Cons (Un_Node x . 1, f (Un_Node x . 0))
+                    (f (Un_Node x . 2))
+
+0.2489 true
+
+Node (Node (Leaf (),2,Node (Leaf (),0,Leaf ())),1,Leaf ()) -> [1,2,0];
+Node (Leaf (),2,Node (Leaf (),2,Leaf ())) -> [2,2];
+Node (Node (Leaf (),1,Leaf ()),0,Node (Leaf (),1,Leaf ())) -> [0,1,1];
+Node (Leaf (),0,Leaf ()) -> [0];
+Node (Node (Leaf (),1,Node (Leaf (),3,Leaf ())),3,Leaf ()) -> [3,1,3];
+Leaf () -> [];
+
+=================================
+fix (f : tree -> list) =
+  fun (x:tree) ->
+    match x with
+      | Leaf _ -> Nil
+      | Node _ -> append Cons (Un_Node x . 1, f (Un_Node x . 0))
+                    (f (Un_Node x . 2))
+
+0.2337 true
+
+Node (Leaf (),1,Node (Node (Leaf (),3,Leaf ()),3,Leaf ())) -> [1,3,3];
+Node (Leaf (),3,Leaf ()) -> [3];
+Node (Node (Leaf (),0,Leaf ()),2,Leaf ()) -> [2,0];
+Node (Node (Node (Leaf (),3,Leaf ()),2,Leaf ()),3,Leaf ()) -> [3,2,3];
+Node (Leaf (),0,Node (Leaf (),0,Node (Leaf (),3,Leaf ()))) -> [0,0,3];
+Leaf () -> [];
+
+=================================
+fix (f : tree -> list) =
+  fun (x:tree) ->
+    match x with
+      | Leaf _ -> Nil
+      | Node _ -> append Cons (Un_Node x . 1, f (Un_Node x . 0))
+                    (f (Un_Node x . 2))
+
+0.2315 true
+
+Node (Leaf (),2,Node (Leaf (),0,Leaf ())) -> [2,0];
+Node (Node (Leaf (),1,Leaf ()),0,Node (Leaf (),3,Leaf ())) -> [0,1,3];
+Node (Node (Leaf (),3,Node (Leaf (),3,Leaf ())),2,Leaf ()) -> [2,3,3];
+Node (Leaf (),3,Node (Leaf (),3,Leaf ())) -> [3,3];
+Node (Leaf (),0,Node (Node (Leaf (),2,Leaf ()),2,Leaf ())) -> [0,2,2];
+Leaf () -> [];
+
+=================================
+fix (f : tree -> list) =
+  fun (x:tree) ->
+    match x with
+      | Leaf _ -> Nil
+      | Node _ -> append Cons (Un_Node x . 1, f (Un_Node x . 0))
+                    (f (Un_Node x . 2))
+
+0.2446 true
+
+Node (Leaf (),3,Node (Leaf (),2,Leaf ())) -> [3,2];
+Node (Leaf (),2,Leaf ()) -> [2];
+Node (Leaf (),2,Node (Leaf (),3,Leaf ())) -> [2,3];
+Node (Leaf (),1,Node (Node (Leaf (),3,Leaf ()),3,Leaf ())) -> [1,3,3];
+Node (Leaf (),2,Node (Leaf (),2,Leaf ())) -> [2,2];
+Leaf () -> [];
+
+=================================
+fix (f : tree -> list) =
+  fun (x:tree) ->
+    match x with
+      | Leaf _ -> Nil
+      | Node _ -> append (f (Un_Node x . 0))
+                    Cons (Un_Node x . 1, f (Un_Node x . 2))
+
+0.1154 false
+
+Node (Node (Leaf (),1,Node (Leaf (),0,Leaf ())),2,Leaf ()) -> [2,1,0];
+Node (Node (Leaf (),0,Leaf ()),2,Leaf ()) -> [2,0];
+Node (Leaf (),0,Node (Leaf (),2,Node (Leaf (),3,Leaf ()))) -> [0,2,3];
+Node (Leaf (),2,Leaf ()) -> [2];
+Node (Node (Node (Leaf (),0,Leaf ()),0,Leaf ()),0,Leaf ()) -> [0,0,0];
+Leaf () -> [];
+
+=================================
+fix (f : tree -> list) =
+  fun (x:tree) ->
+    match x with
+      | Leaf _ -> Nil
+      | Node _ -> append Cons (Un_Node x . 1, f (Un_Node x . 0))
+                    (f (Un_Node x . 2))
+
+0.2513 true
+
+Node (Leaf (),1,Node (Node (Leaf (),1,Leaf ()),2,Leaf ())) -> [1,2,1];
+Node (Leaf (),3,Leaf ()) -> [3];
+Node (Leaf (),2,Node (Node (Leaf (),0,Leaf ()),1,Leaf ())) -> [2,1,0];
+Node (Leaf (),0,Node (Leaf (),3,Leaf ())) -> [0,3];
+Node (Node (Leaf (),0,Leaf ()),3,Node (Leaf (),3,Leaf ())) -> [3,0,3];
+Node (Leaf (),2,Node (Node (Leaf (),0,Leaf ()),2,Leaf ())) -> [2,2,0];
+Leaf () -> [];
+
+=================================
+fix (f : tree -> list) =
+  fun (x:tree) ->
+    match x with
+      | Leaf _ -> Nil
+      | Node _ -> append Cons (Un_Node x . 1, f (Un_Node x . 0))
+                    (f (Un_Node x . 2))
+
+0.2722 true
+
+Node (Leaf (),3,Leaf ()) -> [3];
+Node (Node (Leaf (),0,Leaf ()),3,Node (Leaf (),2,Leaf ())) -> [3,0,2];
+Node (Node (Leaf (),1,Node (Leaf (),3,Leaf ())),1,Leaf ()) -> [1,1,3];
+Node (Leaf (),2,Node (Node (Leaf (),0,Leaf ()),0,Leaf ())) -> [2,0,0];
+Node (Leaf (),3,Node (Leaf (),1,Node (Leaf (),3,Leaf ()))) -> [3,1,3];
+Node (Leaf (),3,Node (Node (Leaf (),3,Leaf ()),3,Leaf ())) -> [3,3,3];
+Leaf () -> [];
+
+=================================
+fix (f : tree -> list) =
+  fun (x:tree) ->
+    match x with
+      | Leaf _ -> Nil
+      | Node _ -> append Cons (Un_Node x . 1, f (Un_Node x . 0))
+                    (f (Un_Node x . 2))
+
+0.3210 true
+
+Node (Node (Leaf (),2,Node (Leaf (),0,Leaf ())),3,Leaf ()) -> [3,2,0];
+Node (Node (Leaf (),3,Leaf ()),0,Leaf ()) -> [0,3];
+Node (Node (Leaf (),0,Leaf ()),3,Node (Leaf (),3,Leaf ())) -> [3,0,3];
+Node (Node (Leaf (),2,Leaf ()),0,Node (Leaf (),1,Leaf ())) -> [0,2,1];
+Node (Leaf (),1,Node (Leaf (),3,Leaf ())) -> [1,3];
+Node (Leaf (),1,Node (Node (Leaf (),2,Leaf ()),0,Leaf ())) -> [1,0,2];
+Leaf () -> [];
+
+=================================
+fix (f : tree -> list) =
+  fun (x:tree) ->
+    match x with
+      | Leaf _ -> Nil
+      | Node _ -> append Cons (Un_Node x . 1, f (Un_Node x . 0))
+                    (f (Un_Node x . 2))
+
+0.3129 true
+
+Node (Leaf (),2,Node (Leaf (),2,Node (Leaf (),0,Leaf ()))) -> [2,2,0];
+Node (Node (Node (Leaf (),2,Leaf ()),1,Leaf ()),3,Leaf ()) -> [3,1,2];
+Node (Leaf (),2,Node (Leaf (),2,Node (Leaf (),2,Leaf ()))) -> [2,2,2];
+Node (Leaf (),2,Node (Leaf (),1,Node (Leaf (),2,Leaf ()))) -> [2,1,2];
+Node (Node (Leaf (),1,Leaf ()),2,Node (Leaf (),1,Leaf ())) -> [2,1,1];
+Node (Leaf (),1,Node (Node (Leaf (),3,Leaf ()),2,Leaf ())) -> [1,2,3];
+Leaf () -> [];
+
+=================================
+fix (f : tree -> list) =
+  fun (x:tree) ->
+    match x with
+      | Leaf _ -> Nil
+      | Node _ -> append Cons (Un_Node x . 1, f (Un_Node x . 0))
+                    (f (Un_Node x . 2))
+
+0.3737 true
+
+Node (Leaf (),1,Node (Leaf (),2,Leaf ())) -> [1,2];
+Node (Leaf (),2,Node (Leaf (),1,Node (Leaf (),1,Leaf ()))) -> [2,1,1];
+Node (Leaf (),2,Node (Node (Leaf (),1,Leaf ()),0,Leaf ())) -> [2,0,1];
+Node (Leaf (),0,Node (Leaf (),3,Leaf ())) -> [0,3];
+Node (Node (Leaf (),0,Node (Leaf (),3,Leaf ())),0,Leaf ()) -> [0,0,3];
+Node (Leaf (),0,Leaf ()) -> [0];
+Leaf () -> [];
+
+=================================
+fix (f : tree -> list) =
+  fun (x:tree) ->
+    match x with
+      | Leaf _ -> Nil
+      | Node _ -> append Cons (Un_Node x . 1, f (Un_Node x . 0))
+                    (f (Un_Node x . 2))
+
+0.2775 true
+
+Node (Node (Leaf (),2,Node (Leaf (),1,Leaf ())),2,Leaf ()) -> [2,2,1];
+Node (Leaf (),0,Leaf ()) -> [0];
+Node (Leaf (),2,Node (Leaf (),3,Node (Leaf (),0,Leaf ()))) -> [2,3,0];
+Node (Node (Leaf (),0,Leaf ()),3,Node (Leaf (),3,Leaf ())) -> [3,0,3];
+Node (Node (Leaf (),0,Node (Leaf (),3,Leaf ())),0,Leaf ()) -> [0,0,3];
+Node (Leaf (),0,Node (Leaf (),3,Leaf ())) -> [0,3];
+Leaf () -> [];
+
+=================================
+fix (f : tree -> list) =
+  fun (x:tree) ->
+    match x with
+      | Leaf _ -> Nil
+      | Node _ -> append Cons (Un_Node x . 1, f (Un_Node x . 0))
+                    (f (Un_Node x . 2))
+
+0.2879 true
+
+Node (Leaf (),3,Leaf ()) -> [3];
+Node (Node (Leaf (),2,Node (Leaf (),3,Leaf ())),3,Leaf ()) -> [3,2,3];
+Node (Node (Leaf (),3,Leaf ()),3,Leaf ()) -> [3,3];
+Node (Node (Leaf (),1,Node (Leaf (),1,Leaf ())),2,Leaf ()) -> [2,1,1];
+Node (Leaf (),1,Node (Leaf (),0,Node (Leaf (),0,Leaf ()))) -> [1,0,0];
+Node (Leaf (),2,Node (Leaf (),2,Node (Leaf (),3,Leaf ()))) -> [2,2,3];
+Leaf () -> [];
+
+=================================
+fix (f : tree -> list) =
+  fun (x:tree) ->
+    match x with
+      | Leaf _ -> Nil
+      | Node _ -> append Cons (Un_Node x . 1, f (Un_Node x . 0))
+                    (f (Un_Node x . 2))
+
+0.2905 true
+
+Node (Node (Node (Leaf (),1,Leaf ()),0,Leaf ()),0,Leaf ()) -> [0,0,1];
+Node (Node (Leaf (),2,Node (Leaf (),0,Leaf ())),3,Leaf ()) -> [3,2,0];
+Node (Leaf (),2,Node (Leaf (),1,Node (Leaf (),0,Leaf ()))) -> [2,1,0];
+Node (Node (Leaf (),0,Leaf ()),1,Leaf ()) -> [1,0];
+Node (Leaf (),3,Node (Leaf (),3,Node (Leaf (),0,Leaf ()))) -> [3,3,0];
+Node (Leaf (),0,Node (Leaf (),0,Node (Leaf (),0,Leaf ()))) -> [0,0,0];
+Leaf () -> [];
+
+=================================
+fix (f : tree -> list) =
+  fun (x:tree) ->
+    match x with
+      | Leaf _ -> Nil
+      | Node _ -> append Cons (Un_Node x . 1, f (Un_Node x . 0))
+                    (f (Un_Node x . 2))
+
+0.3155 true
+
+Node (Leaf (),0,Leaf ()) -> [0];
+Node (Node (Node (Leaf (),3,Leaf ()),0,Leaf ()),1,Leaf ()) -> [1,0,3];
+Node (Node (Leaf (),2,Leaf ()),2,Leaf ()) -> [2,2];
+Node (Node (Leaf (),3,Leaf ()),0,Leaf ()) -> [0,3];
+Node (Node (Leaf (),1,Leaf ()),1,Leaf ()) -> [1,1];
+Node (Leaf (),2,Node (Node (Leaf (),1,Leaf ()),2,Leaf ())) -> [2,2,1];
+Leaf () -> [];
+
+=================================
+fix (f : tree -> list) =
+  fun (x:tree) ->
+    match x with
+      | Leaf _ -> Nil
+      | Node _ -> append Cons (Un_Node x . 1, f (Un_Node x . 0))
+                    (f (Un_Node x . 2))
+
+0.2623 true
+
+Node (Leaf (),3,Leaf ()) -> [3];
+Node (Leaf (),1,Node (Leaf (),1,Node (Leaf (),0,Leaf ()))) -> [1,1,0];
+Node (Leaf (),2,Node (Leaf (),0,Node (Leaf (),2,Leaf ()))) -> [2,0,2];
+Node (Node (Leaf (),2,Leaf ()),2,Leaf ()) -> [2,2];
+Node (Node (Leaf (),1,Leaf ()),0,Node (Leaf (),3,Leaf ())) -> [0,1,3];
+Node (Leaf (),0,Leaf ()) -> [0];
+Leaf () -> [];
+
+=================================
+fix (f : tree -> list) =
+  fun (x:tree) ->
+    match x with
+      | Leaf _ -> Nil
+      | Node _ -> append Cons (Un_Node x . 1, f (Un_Node x . 0))
+                    (f (Un_Node x . 2))
+
+0.2430 true
+
+Node (Node (Node (Leaf (),3,Leaf ()),2,Leaf ()),3,Leaf ()) -> [3,2,3];
+Node (Node (Node (Leaf (),1,Leaf ()),3,Leaf ()),0,Leaf ()) -> [0,3,1];
+Node (Node (Leaf (),1,Leaf ()),2,Node (Leaf (),3,Leaf ())) -> [2,1,3];
+Node (Node (Node (Leaf (),3,Leaf ()),1,Leaf ()),2,Leaf ()) -> [2,1,3];
+Node (Leaf (),1,Node (Leaf (),1,Node (Leaf (),3,Leaf ()))) -> [1,1,3];
+Node (Leaf (),1,Leaf ()) -> [1];
+Node (Node (Node (Leaf (),2,Leaf ()),2,Leaf ()),2,Leaf ()) -> [2,2,2];
+Leaf () -> [];
+
+=================================
+fix (f : tree -> list) =
+  fun (x:tree) ->
+    match x with
+      | Leaf _ -> Nil
+      | Node _ -> append Cons (Un_Node x . 1, f (Un_Node x . 0))
+                    (f (Un_Node x . 2))
+
+0.3841 true
+
+Node (Leaf (),2,Node (Node (Leaf (),0,Leaf ()),1,Leaf ())) -> [2,1,0];
+Node (Node (Leaf (),1,Node (Leaf (),1,Leaf ())),2,Leaf ()) -> [2,1,1];
+Node (Leaf (),2,Node (Leaf (),3,Node (Leaf (),3,Leaf ()))) -> [2,3,3];
+Node (Leaf (),0,Node (Leaf (),0,Leaf ())) -> [0,0];
+Node (Leaf (),1,Leaf ()) -> [1];
+Node (Node (Node (Leaf (),0,Leaf ()),1,Leaf ()),1,Leaf ()) -> [1,1,0];
+Node (Node (Node (Leaf (),3,Leaf ()),0,Leaf ()),0,Leaf ()) -> [0,0,3];
+Leaf () -> [];
+
+=================================
+fix (f : tree -> list) =
+  fun (x:tree) ->
+    match x with
+      | Leaf _ -> Nil
+      | Node _ -> append Cons (Un_Node x . 1, f (Un_Node x . 0))
+                    (f (Un_Node x . 2))
+
+0.3388 true
+
+Node (Node (Leaf (),3,Leaf ()),3,Leaf ()) -> [3,3];
+Node (Node (Node (Leaf (),2,Leaf ()),1,Leaf ()),1,Leaf ()) -> [1,1,2];
+Node (Node (Leaf (),0,Leaf ()),3,Leaf ()) -> [3,0];
+Node (Node (Leaf (),1,Leaf ()),0,Leaf ()) -> [0,1];
+Node (Node (Leaf (),2,Node (Leaf (),1,Leaf ())),1,Leaf ()) -> [1,2,1];
+Node (Leaf (),2,Leaf ()) -> [2];
+Node (Leaf (),0,Node (Leaf (),3,Node (Leaf (),1,Leaf ()))) -> [0,3,1];
+Leaf () -> [];
+
+=================================
+fix (f : tree -> list) =
+  fun (x:tree) ->
+    match x with
+      | Leaf _ -> Nil
+      | Node _ -> append Cons (Un_Node x . 1, f (Un_Node x . 0))
+                    (f (Un_Node x . 2))
+
+0.3171 true
+
+Node (Leaf (),1,Node (Node (Leaf (),0,Leaf ()),3,Leaf ())) -> [1,3,0];
+Node (Node (Leaf (),2,Leaf ()),2,Node (Leaf (),1,Leaf ())) -> [2,2,1];
+Node (Node (Node (Leaf (),1,Leaf ()),3,Leaf ()),2,Leaf ()) -> [2,3,1];
+Node (Leaf (),0,Node (Leaf (),2,Node (Leaf (),0,Leaf ()))) -> [0,2,0];
+Node (Node (Leaf (),1,Leaf ()),2,Node (Leaf (),2,Leaf ())) -> [2,1,2];
+Node (Node (Leaf (),2,Leaf ()),2,Node (Leaf (),3,Leaf ())) -> [2,2,3];
+Node (Node (Node (Leaf (),2,Leaf ()),0,Leaf ()),3,Leaf ()) -> [3,0,2];
+Leaf () -> [];
+
+=================================
+fix (f : tree -> list) =
+  fun (x:tree) ->
+    match x with
+      | Leaf _ -> Nil
+      | Node _ -> append Cons (Un_Node x . 1, f (Un_Node x . 0))
+                    (f (Un_Node x . 2))
+
+0.4310 true
+
+Node (Leaf (),2,Node (Node (Leaf (),2,Leaf ()),3,Leaf ())) -> [2,3,2];
+Node (Node (Leaf (),2,Node (Leaf (),1,Leaf ())),2,Leaf ()) -> [2,2,1];
+Node (Leaf (),1,Node (Leaf (),1,Node (Leaf (),0,Leaf ()))) -> [1,1,0];
+Node (Leaf (),2,Node (Node (Leaf (),2,Leaf ()),0,Leaf ())) -> [2,0,2];
+Node (Leaf (),3,Node (Leaf (),2,Leaf ())) -> [3,2];
+Node (Node (Node (Leaf (),2,Leaf ()),2,Leaf ()),0,Leaf ()) -> [0,2,2];
+Node (Node (Node (Leaf (),2,Leaf ()),1,Leaf ()),1,Leaf ()) -> [1,1,2];
+Leaf () -> [];
+
+=================================
+fix (f : tree -> list) =
+  fun (x:tree) ->
+    match x with
+      | Leaf _ -> Nil
+      | Node _ -> append Cons (Un_Node x . 1, f (Un_Node x . 0))
+                    (f (Un_Node x . 2))
+
+0.3860 true
+
+Node (Leaf (),0,Leaf ()) -> [0];
+Node (Node (Node (Leaf (),0,Leaf ()),0,Leaf ()),3,Leaf ()) -> [3,0,0];
+Node (Node (Node (Leaf (),0,Leaf ()),1,Leaf ()),2,Leaf ()) -> [2,1,0];
+Node (Node (Leaf (),2,Leaf ()),3,Leaf ()) -> [3,2];
+Node (Leaf (),3,Node (Leaf (),1,Node (Leaf (),3,Leaf ()))) -> [3,1,3];
+Node (Node (Node (Leaf (),1,Leaf ()),1,Leaf ()),1,Leaf ()) -> [1,1,1];
+Node (Leaf (),1,Leaf ()) -> [1];
+Leaf () -> [];
+
+=================================
+fix (f : tree -> list) =
+  fun (x:tree) ->
+    match x with
+      | Leaf _ -> Nil
+      | Node _ -> append (f (Un_Node x . 2))
+                    Cons (Un_Node x . 1, f (Un_Node x . 0))
+
+0.3339 false
+
+Node (Leaf (),3,Node (Leaf (),3,Leaf ())) -> [3,3];
+Node (Node (Node (Leaf (),3,Leaf ()),3,Leaf ()),3,Leaf ()) -> [3,3,3];
+Node (Node (Node (Leaf (),2,Leaf ()),1,Leaf ()),0,Leaf ()) -> [0,1,2];
+Node (Leaf (),3,Leaf ()) -> [3];
+Node (Node (Leaf (),3,Leaf ()),1,Node (Leaf (),3,Leaf ())) -> [1,3,3];
+Node (Node (Node (Leaf (),0,Leaf ()),2,Leaf ()),1,Leaf ()) -> [1,2,0];
+Node (Node (Leaf (),0,Node (Leaf (),3,Leaf ())),3,Leaf ()) -> [3,0,3];
+Leaf () -> [];
+
+=================================
+fix (f : tree -> list) =
+  fun (x:tree) ->
+    match x with
+      | Leaf _ -> Nil
+      | Node _ -> append Cons (Un_Node x . 1, f (Un_Node x . 0))
+                    (f (Un_Node x . 2))
+
+0.3301 true
+
+Node (Leaf (),0,Node (Leaf (),1,Leaf ())) -> [0,1];
+Node (Node (Leaf (),1,Node (Leaf (),3,Leaf ())),2,Leaf ()) -> [2,1,3];
+Node (Node (Leaf (),2,Node (Leaf (),3,Leaf ())),1,Leaf ()) -> [1,2,3];
+Node (Node (Leaf (),0,Leaf ()),2,Node (Leaf (),1,Leaf ())) -> [2,0,1];
+Node (Node (Leaf (),3,Leaf ()),0,Node (Leaf (),2,Leaf ())) -> [0,3,2];
+Node (Leaf (),3,Node (Leaf (),3,Node (Leaf (),0,Leaf ()))) -> [3,3,0];
+Node (Node (Leaf (),2,Leaf ()),0,Leaf ()) -> [0,2];
+Leaf () -> [];
+
+=================================
+fix (f : tree -> list) =
+  fun (x:tree) ->
+    match x with
+      | Leaf _ -> Nil
+      | Node _ -> append Cons (Un_Node x . 1, f (Un_Node x . 0))
+                    (f (Un_Node x . 2))
+
+0.3579 true
+
+Node (Node (Node (Leaf (),1,Leaf ()),2,Leaf ()),0,Leaf ()) -> [0,2,1];
+Node (Node (Leaf (),0,Leaf ()),2,Leaf ()) -> [2,0];
+Node (Node (Leaf (),2,Node (Leaf (),1,Leaf ())),0,Leaf ()) -> [0,2,1];
+Node (Node (Leaf (),3,Leaf ()),1,Leaf ()) -> [1,3];
+Node (Node (Node (Leaf (),1,Leaf ()),2,Leaf ()),1,Leaf ()) -> [1,2,1];
+Node (Node (Node (Leaf (),2,Leaf ()),0,Leaf ()),1,Leaf ()) -> [1,0,2];
+Node (Leaf (),3,Node (Node (Leaf (),1,Leaf ()),2,Leaf ())) -> [3,2,1];
+Leaf () -> [];
+
+=================================
+fix (f : tree -> list) =
+  fun (x:tree) ->
+    match x with
+      | Leaf _ -> Nil
+      | Node _ -> append Cons (Un_Node x . 1, f (Un_Node x . 0))
+                    (f (Un_Node x . 2))
+
+0.3504 true
+
+Node (Leaf (),1,Node (Leaf (),1,Leaf ())) -> [1,1];
+Node (Node (Node (Leaf (),2,Leaf ()),1,Leaf ()),0,Leaf ()) -> [0,1,2];
+Node (Leaf (),3,Leaf ()) -> [3];
+Node (Node (Node (Leaf (),1,Leaf ()),2,Leaf ()),0,Leaf ()) -> [0,2,1];
+Node (Node (Node (Leaf (),1,Leaf ()),0,Leaf ()),0,Leaf ()) -> [0,0,1];
+Node (Leaf (),0,Node (Node (Leaf (),2,Leaf ()),2,Leaf ())) -> [0,2,2];
+Node (Leaf (),2,Node (Leaf (),1,Node (Leaf (),0,Leaf ()))) -> [2,1,0];
+Leaf () -> [];
+
+=================================
+fix (f : tree -> list) =
+  fun (x:tree) ->
+    match x with
+      | Leaf _ -> Nil
+      | Node _ -> append Cons (Un_Node x . 1, f (Un_Node x . 0))
+                    (f (Un_Node x . 2))
+
+0.3330 true
+
+Node (Node (Node (Leaf (),1,Leaf ()),3,Leaf ()),2,Leaf ()) -> [2,3,1];
+Node (Node (Leaf (),2,Node (Leaf (),1,Leaf ())),1,Leaf ()) -> [1,2,1];
+Node (Node (Leaf (),1,Leaf ()),0,Node (Leaf (),1,Leaf ())) -> [0,1,1];
+Node (Leaf (),2,Leaf ()) -> [2];
+Node (Node (Leaf (),0,Leaf ()),1,Leaf ()) -> [1,0];
+Node (Node (Node (Leaf (),3,Leaf ()),2,Leaf ()),0,Leaf ()) -> [0,2,3];
+Node (Leaf (),2,Node (Leaf (),3,Node (Leaf (),2,Leaf ()))) -> [2,3,2];
+Node (Node (Node (Leaf (),1,Leaf ()),2,Leaf ()),3,Leaf ()) -> [3,2,1];
+Leaf () -> [];
+
+=================================
+fix (f : tree -> list) =
+  fun (x:tree) ->
+    match x with
+      | Leaf _ -> Nil
+      | Node _ -> append Cons (Un_Node x . 1, f (Un_Node x . 0))
+                    (f (Un_Node x . 2))
+
+0.3652 true
+
+Node (Node (Leaf (),1,Leaf ()),0,Leaf ()) -> [0,1];
+Node (Leaf (),3,Node (Leaf (),3,Leaf ())) -> [3,3];
+Node (Leaf (),1,Node (Leaf (),2,Leaf ())) -> [1,2];
+Node (Leaf (),0,Leaf ()) -> [0];
+Node (Leaf (),2,Leaf ()) -> [2];
+Node (Node (Leaf (),2,Node (Leaf (),1,Leaf ())),3,Leaf ()) -> [3,2,1];
+Node (Node (Node (Leaf (),3,Leaf ()),1,Leaf ()),2,Leaf ()) -> [2,1,3];
+Node (Leaf (),3,Node (Leaf (),1,Leaf ())) -> [3,1];
+Leaf () -> [];
+
+=================================
+fix (f : tree -> list) =
+  fun (x:tree) ->
+    match x with
+      | Leaf _ -> Nil
+      | Node _ -> append Cons (Un_Node x . 1, f (Un_Node x . 0))
+                    (f (Un_Node x . 2))
+
+0.2996 true
+
+Node (Node (Node (Leaf (),0,Leaf ()),2,Leaf ()),0,Leaf ()) -> [0,2,0];
+Node (Leaf (),2,Leaf ()) -> [2];
+Node (Node (Node (Leaf (),2,Leaf ()),0,Leaf ()),2,Leaf ()) -> [2,0,2];
+Node (Leaf (),0,Leaf ()) -> [0];
+Node (Leaf (),0,Node (Node (Leaf (),0,Leaf ()),3,Leaf ())) -> [0,3,0];
+Node (Node (Node (Leaf (),1,Leaf ()),3,Leaf ()),1,Leaf ()) -> [1,3,1];
+Node (Node (Leaf (),1,Node (Leaf (),1,Leaf ())),2,Leaf ()) -> [2,1,1];
+Node (Node (Leaf (),2,Leaf ()),3,Leaf ()) -> [3,2];
+Leaf () -> [];
+
+=================================
+fix (f : tree -> list) =
+  fun (x:tree) ->
+    match x with
+      | Leaf _ -> Nil
+      | Node _ -> append Cons (Un_Node x . 1, f (Un_Node x . 0))
+                    (f (Un_Node x . 2))
+
+0.3266 true
+
+Node (Node (Leaf (),0,Node (Leaf (),1,Leaf ())),1,Leaf ()) -> [1,0,1];
+Node (Node (Node (Leaf (),3,Leaf ()),0,Leaf ()),1,Leaf ()) -> [1,0,3];
+Node (Leaf (),2,Leaf ()) -> [2];
+Node (Node (Leaf (),3,Leaf ()),3,Node (Leaf (),0,Leaf ())) -> [3,3,0];
+Node (Node (Leaf (),2,Leaf ()),3,Node (Leaf (),2,Leaf ())) -> [3,2,2];
+Node (Leaf (),2,Node (Leaf (),2,Leaf ())) -> [2,2];
+Node (Leaf (),1,Leaf ()) -> [1];
+Node (Node (Leaf (),2,Node (Leaf (),1,Leaf ())),3,Leaf ()) -> [3,2,1];
+Leaf () -> [];
+
+=================================
+fix (f : tree -> list) =
+  fun (x:tree) ->
+    match x with
+      | Leaf _ -> Nil
+      | Node _ -> append Cons (Un_Node x . 1, f (Un_Node x . 0))
+                    (f (Un_Node x . 2))
+
+0.3737 true
+
+Node (Leaf (),2,Node (Leaf (),3,Leaf ())) -> [2,3];
+Node (Leaf (),3,Node (Leaf (),2,Node (Leaf (),0,Leaf ()))) -> [3,2,0];
+Node (Leaf (),1,Node (Node (Leaf (),1,Leaf ()),3,Leaf ())) -> [1,3,1];
+Node (Leaf (),0,Node (Leaf (),3,Leaf ())) -> [0,3];
+Node (Node (Leaf (),3,Node (Leaf (),0,Leaf ())),1,Leaf ()) -> [1,3,0];
+Node (Node (Node (Leaf (),0,Leaf ()),0,Leaf ()),2,Leaf ()) -> [2,0,0];
+Node (Node (Leaf (),1,Leaf ()),1,Node (Leaf (),2,Leaf ())) -> [1,1,2];
+Node (Leaf (),3,Leaf ()) -> [3];
+Leaf () -> [];
+
+=================================
+fix (f : tree -> list) =
+  fun (x:tree) ->
+    match x with
+      | Leaf _ -> Nil
+      | Node _ -> append Cons (Un_Node x . 1, f (Un_Node x . 0))
+                    (f (Un_Node x . 2))
+
+0.3971 true
+
+Node (Leaf (),2,Node (Node (Leaf (),0,Leaf ()),2,Leaf ())) -> [2,2,0];
+Node (Node (Leaf (),1,Leaf ()),2,Node (Leaf (),2,Leaf ())) -> [2,1,2];
+Node (Node (Leaf (),2,Leaf ()),3,Leaf ()) -> [3,2];
+Node (Node (Leaf (),1,Leaf ()),3,Leaf ()) -> [3,1];
+Node (Node (Leaf (),0,Node (Leaf (),1,Leaf ())),0,Leaf ()) -> [0,0,1];
+Node (Node (Node (Leaf (),0,Leaf ()),3,Leaf ()),2,Leaf ()) -> [2,3,0];
+Node (Leaf (),1,Node (Leaf (),2,Leaf ())) -> [1,2];
+Node (Leaf (),1,Leaf ()) -> [1];
+Leaf () -> [];
+
+=================================
+fix (f : tree -> list) =
+  fun (x:tree) ->
+    match x with
+      | Leaf _ -> Nil
+      | Node _ -> append Cons (Un_Node x . 1, f (Un_Node x . 0))
+                    (f (Un_Node x . 2))
+
+0.3399 true
+
+Node (Node (Leaf (),3,Leaf ()),3,Node (Leaf (),3,Leaf ())) -> [3,3,3];
+Node (Leaf (),3,Node (Leaf (),1,Leaf ())) -> [3,1];
+Node (Node (Leaf (),2,Node (Leaf (),3,Leaf ())),0,Leaf ()) -> [0,2,3];
+Node (Node (Leaf (),0,Leaf ()),3,Leaf ()) -> [3,0];
+Node (Leaf (),2,Node (Leaf (),0,Node (Leaf (),3,Leaf ()))) -> [2,0,3];
+Node (Node (Node (Leaf (),2,Leaf ()),1,Leaf ()),0,Leaf ()) -> [0,1,2];
+Node (Leaf (),2,Leaf ()) -> [2];
+Node (Node (Leaf (),2,Leaf ()),0,Leaf ()) -> [0,2];
+Leaf () -> [];
+
+=================================
+fix (f : tree -> list) =
+  fun (x:tree) ->
+    match x with
+      | Leaf _ -> Nil
+      | Node _ -> append Cons (Un_Node x . 1, f (Un_Node x . 0))
+                    (f (Un_Node x . 2))
+
+0.3523 true
+
+Node (Node (Leaf (),0,Leaf ()),1,Node (Leaf (),0,Leaf ())) -> [1,0,0];
+Node (Leaf (),3,Leaf ()) -> [3];
+Node (Node (Leaf (),1,Leaf ()),1,Leaf ()) -> [1,1];
+Node (Node (Node (Leaf (),2,Leaf ()),2,Leaf ()),0,Leaf ()) -> [0,2,2];
+Node (Leaf (),2,Node (Node (Leaf (),1,Leaf ()),0,Leaf ())) -> [2,0,1];
+Node (Node (Leaf (),2,Node (Leaf (),0,Leaf ())),2,Leaf ()) -> [2,2,0];
+Node (Leaf (),1,Node (Node (Leaf (),3,Leaf ()),1,Leaf ())) -> [1,1,3];
+Node (Node (Leaf (),0,Leaf ()),0,Leaf ()) -> [0,0];
+Leaf () -> [];
+
+=================================
+fix (f : tree -> list) =
+  fun (x:tree) ->
+    match x with
+      | Leaf _ -> Nil
+      | Node _ -> append Cons (Un_Node x . 1, f (Un_Node x . 0))
+                    (f (Un_Node x . 2))
+
+0.3611 true
+
+Node (Node (Leaf (),0,Leaf ()),0,Node (Leaf (),1,Leaf ())) -> [0,0,1];
+Node (Leaf (),2,Node (Leaf (),1,Node (Leaf (),0,Leaf ()))) -> [2,1,0];
+Node (Node (Leaf (),0,Node (Leaf (),3,Leaf ())),1,Leaf ()) -> [1,0,3];
+Node (Leaf (),1,Node (Leaf (),0,Node (Leaf (),3,Leaf ()))) -> [1,0,3];
+Node (Leaf (),0,Leaf ()) -> [0];
+Node (Leaf (),2,Leaf ()) -> [2];
+Node (Node (Leaf (),2,Leaf ()),3,Node (Leaf (),0,Leaf ())) -> [3,2,0];
+Node (Node (Leaf (),0,Leaf ()),1,Node (Leaf (),0,Leaf ())) -> [1,0,0];
+Leaf () -> [];
+
+=================================
+fix (f : tree -> list) =
+  fun (x:tree) ->
+    match x with
+      | Leaf _ -> Nil
+      | Node _ -> append Cons (Un_Node x . 1, f (Un_Node x . 0))
+                    (f (Un_Node x . 2))
+
+0.3636 true
+
+Node (Node (Leaf (),2,Node (Leaf (),0,Leaf ())),1,Leaf ()) -> [1,2,0];
+Node (Leaf (),1,Node (Leaf (),3,Leaf ())) -> [1,3];
+Node (Leaf (),0,Node (Leaf (),3,Node (Leaf (),0,Leaf ()))) -> [0,3,0];
+Node (Leaf (),3,Node (Leaf (),0,Node (Leaf (),2,Leaf ()))) -> [3,0,2];
+Node (Leaf (),1,Leaf ()) -> [1];
+Node (Node (Node (Leaf (),1,Leaf ()),0,Leaf ()),1,Leaf ()) -> [1,0,1];
+Node (Node (Leaf (),1,Leaf ()),0,Node (Leaf (),1,Leaf ())) -> [0,1,1];
+Node (Node (Node (Leaf (),2,Leaf ()),1,Leaf ()),0,Leaf ()) -> [0,1,2];
+Leaf () -> [];
+
+=================================
+fix (f : tree -> list) =
+  fun (x:tree) ->
+    match x with
+      | Leaf _ -> Nil
+      | Node _ -> append Cons (Un_Node x . 1, f (Un_Node x . 0))
+                    (f (Un_Node x . 2))
+
+0.4034 true
+
+Node (Node (Node (Leaf (),3,Leaf ()),3,Leaf ()),2,Leaf ()) -> [2,3,3];
+Node (Node (Leaf (),3,Leaf ()),2,Node (Leaf (),2,Leaf ())) -> [2,3,2];
+Node (Leaf (),0,Node (Node (Leaf (),1,Leaf ()),3,Leaf ())) -> [0,3,1];
+Node (Leaf (),3,Node (Leaf (),1,Node (Leaf (),3,Leaf ()))) -> [3,1,3];
+Node (Node (Node (Leaf (),3,Leaf ()),3,Leaf ()),0,Leaf ()) -> [0,3,3];
+Node (Leaf (),2,Node (Leaf (),3,Leaf ())) -> [2,3];
+Node (Node (Node (Leaf (),1,Leaf ()),3,Leaf ()),1,Leaf ()) -> [1,3,1];
+Node (Node (Leaf (),3,Leaf ()),1,Node (Leaf (),3,Leaf ())) -> [1,3,3];
+Node (Node (Leaf (),3,Leaf ()),0,Leaf ()) -> [0,3];
+Leaf () -> [];
+
+=================================
+fix (f : tree -> list) =
+  fun (x:tree) ->
+    match x with
+      | Leaf _ -> Nil
+      | Node _ -> append Cons (Un_Node x . 1, f (Un_Node x . 0))
+                    (f (Un_Node x . 2))
+
+0.4723 true
+
+Node (Leaf (),1,Node (Leaf (),3,Leaf ())) -> [1,3];
+Node (Node (Node (Leaf (),3,Leaf ()),1,Leaf ()),2,Leaf ()) -> [2,1,3];
+Node (Node (Leaf (),1,Node (Leaf (),0,Leaf ())),1,Leaf ()) -> [1,1,0];
+Node (Leaf (),0,Node (Leaf (),3,Node (Leaf (),2,Leaf ()))) -> [0,3,2];
+Node (Node (Leaf (),0,Node (Leaf (),3,Leaf ())),2,Leaf ()) -> [2,0,3];
+Node (Node (Leaf (),0,Leaf ()),3,Leaf ()) -> [3,0];
+Node (Node (Node (Leaf (),1,Leaf ()),2,Leaf ()),3,Leaf ()) -> [3,2,1];
+Node (Leaf (),0,Node (Leaf (),1,Leaf ())) -> [0,1];
+Node (Node (Leaf (),3,Node (Leaf (),1,Leaf ())),2,Leaf ()) -> [2,3,1];
+Leaf () -> [];
+
+=================================
+fix (f : tree -> list) =
+  fun (x:tree) ->
+    match x with
+      | Leaf _ -> Nil
+      | Node _ -> append Cons (Un_Node x . 1, f (Un_Node x . 0))
+                    (f (Un_Node x . 2))
+
+0.4503 true
+
+Node (Node (Node (Leaf (),2,Leaf ()),3,Leaf ()),2,Leaf ()) -> [2,3,2];
+Node (Leaf (),3,Node (Leaf (),2,Leaf ())) -> [3,2];
+Node (Leaf (),3,Leaf ()) -> [3];
+Node (Node (Node (Leaf (),1,Leaf ()),0,Leaf ()),1,Leaf ()) -> [1,0,1];
+Node (Node (Node (Leaf (),3,Leaf ()),3,Leaf ()),2,Leaf ()) -> [2,3,3];
+Node (Leaf (),1,Node (Node (Leaf (),0,Leaf ()),2,Leaf ())) -> [1,2,0];
+Node (Node (Leaf (),0,Leaf ()),0,Leaf ()) -> [0,0];
+Node (Node (Leaf (),2,Leaf ()),3,Leaf ()) -> [3,2];
+Node (Leaf (),2,Node (Node (Leaf (),1,Leaf ()),1,Leaf ())) -> [2,1,1];
+Leaf () -> [];
+
+=================================
+fix (f : tree -> list) =
+  fun (x:tree) ->
+    match x with
+      | Leaf _ -> Nil
+      | Node _ -> append Cons (Un_Node x . 1, f (Un_Node x . 0))
+                    (f (Un_Node x . 2))
+
+0.4138 true
+
+Node (Node (Leaf (),1,Leaf ()),3,Leaf ()) -> [3,1];
+Node (Node (Leaf (),1,Leaf ()),0,Node (Leaf (),2,Leaf ())) -> [0,1,2];
+Node (Leaf (),3,Node (Leaf (),0,Node (Leaf (),1,Leaf ()))) -> [3,0,1];
+Node (Node (Leaf (),0,Leaf ()),0,Leaf ()) -> [0,0];
+Node (Leaf (),3,Node (Leaf (),1,Node (Leaf (),2,Leaf ()))) -> [3,1,2];
+Node (Leaf (),3,Leaf ()) -> [3];
+Node (Leaf (),1,Node (Leaf (),2,Leaf ())) -> [1,2];
+Node (Leaf (),0,Leaf ()) -> [0];
+Node (Leaf (),3,Node (Leaf (),1,Node (Leaf (),0,Leaf ()))) -> [3,1,0];
+Leaf () -> [];
+
+=================================
+fix (f : tree -> list) =
+  fun (x:tree) ->
+    match x with
+      | Leaf _ -> Nil
+      | Node _ -> append Cons (Un_Node x . 1, f (Un_Node x . 0))
+                    (f (Un_Node x . 2))
+
+0.3493 true
+
+Node (Node (Leaf (),0,Leaf ()),3,Node (Leaf (),2,Leaf ())) -> [3,0,2];
+Node (Node (Leaf (),2,Leaf ()),0,Node (Leaf (),1,Leaf ())) -> [0,2,1];
+Node (Leaf (),3,Leaf ()) -> [3];
+Node (Leaf (),1,Node (Node (Leaf (),2,Leaf ()),1,Leaf ())) -> [1,1,2];
+Node (Leaf (),2,Node (Node (Leaf (),3,Leaf ()),0,Leaf ())) -> [2,0,3];
+Node (Node (Leaf (),0,Leaf ()),0,Node (Leaf (),1,Leaf ())) -> [0,0,1];
+Node (Node (Leaf (),3,Leaf ()),1,Node (Leaf (),3,Leaf ())) -> [1,3,3];
+Node (Leaf (),0,Node (Node (Leaf (),0,Leaf ()),1,Leaf ())) -> [0,1,0];
+Node (Leaf (),3,Node (Leaf (),1,Leaf ())) -> [3,1];
+Leaf () -> [];
+
+=================================
+fix (f : tree -> list) =
+  fun (x:tree) ->
+    match x with
+      | Leaf _ -> Nil
+      | Node _ -> append Cons (Un_Node x . 1, f (Un_Node x . 0))
+                    (f (Un_Node x . 2))
+
+0.4095 true
+
+Node (Leaf (),3,Node (Leaf (),2,Leaf ())) -> [3,2];
+Node (Node (Node (Leaf (),0,Leaf ()),3,Leaf ()),1,Leaf ()) -> [1,3,0];
+Node (Leaf (),0,Node (Node (Leaf (),0,Leaf ()),1,Leaf ())) -> [0,1,0];
+Node (Leaf (),3,Node (Leaf (),0,Leaf ())) -> [3,0];
+Node (Leaf (),0,Node (Leaf (),0,Leaf ())) -> [0,0];
+Node (Leaf (),2,Node (Leaf (),1,Node (Leaf (),1,Leaf ()))) -> [2,1,1];
+Node (Leaf (),3,Node (Node (Leaf (),1,Leaf ()),1,Leaf ())) -> [3,1,1];
+Node (Leaf (),1,Node (Leaf (),1,Leaf ())) -> [1,1];
+Node (Node (Leaf (),2,Node (Leaf (),0,Leaf ())),3,Leaf ()) -> [3,2,0];
+Leaf () -> [];
+
+=================================
+fix (f : tree -> list) =
+  fun (x:tree) ->
+    match x with
+      | Leaf _ -> Nil
+      | Node _ -> append Cons (Un_Node x . 1, f (Un_Node x . 0))
+                    (f (Un_Node x . 2))
+
+0.4075 true
+
+Node (Leaf (),0,Node (Node (Leaf (),0,Leaf ()),3,Leaf ())) -> [0,3,0];
+Node (Node (Leaf (),2,Leaf ()),3,Node (Leaf (),2,Leaf ())) -> [3,2,2];
+Node (Leaf (),0,Node (Leaf (),2,Leaf ())) -> [0,2];
+Node (Node (Node (Leaf (),1,Leaf ()),2,Leaf ()),2,Leaf ()) -> [2,2,1];
+Node (Node (Node (Leaf (),2,Leaf ()),1,Leaf ()),0,Leaf ()) -> [0,1,2];
+Node (Leaf (),2,Node (Leaf (),0,Leaf ())) -> [2,0];
+Node (Node (Leaf (),0,Leaf ()),3,Leaf ()) -> [3,0];
+Node (Node (Leaf (),1,Leaf ()),1,Leaf ()) -> [1,1];
+Node (Node (Leaf (),0,Node (Leaf (),2,Leaf ())),3,Leaf ()) -> [3,0,2];
+Leaf () -> [];
+
+=================================
+fix (f : tree -> list) =
+  fun (x:tree) ->
+    match x with
+      | Leaf _ -> Nil
+      | Node _ -> append Cons (Un_Node x . 1, f (Un_Node x . 0))
+                    (f (Un_Node x . 2))
+
+0.4434 true
+
+Node (Node (Leaf (),2,Node (Leaf (),0,Leaf ())),1,Leaf ()) -> [1,2,0];
+Node (Leaf (),1,Leaf ()) -> [1];
+Node (Leaf (),2,Node (Node (Leaf (),0,Leaf ()),3,Leaf ())) -> [2,3,0];
+Node (Leaf (),0,Node (Leaf (),0,Node (Leaf (),2,Leaf ()))) -> [0,0,2];
+Node (Leaf (),3,Node (Leaf (),2,Node (Leaf (),1,Leaf ()))) -> [3,2,1];
+Node (Leaf (),3,Node (Leaf (),0,Leaf ())) -> [3,0];
+Node (Node (Leaf (),3,Node (Leaf (),2,Leaf ())),3,Leaf ()) -> [3,3,2];
+Node (Leaf (),1,Node (Node (Leaf (),2,Leaf ()),3,Leaf ())) -> [1,3,2];
+Node (Leaf (),3,Leaf ()) -> [3];
+Leaf () -> [];
+
+=================================
+fix (f : tree -> list) =
+  fun (x:tree) ->
+    match x with
+      | Leaf _ -> Nil
+      | Node _ -> append Cons (Un_Node x . 1, f (Un_Node x . 0))
+                    (f (Un_Node x . 2))
+
+0.4222 true
+
+Node (Leaf (),2,Node (Leaf (),0,Leaf ())) -> [2,0];
+Node (Node (Node (Leaf (),3,Leaf ()),0,Leaf ()),1,Leaf ()) -> [1,0,3];
+Node (Leaf (),1,Node (Node (Leaf (),3,Leaf ()),1,Leaf ())) -> [1,1,3];
+Node (Node (Leaf (),3,Leaf ()),3,Leaf ()) -> [3,3];
+Node (Node (Leaf (),2,Leaf ()),0,Node (Leaf (),0,Leaf ())) -> [0,2,0];
+Node (Leaf (),2,Node (Node (Leaf (),1,Leaf ()),1,Leaf ())) -> [2,1,1];
+Node (Leaf (),1,Node (Leaf (),1,Leaf ())) -> [1,1];
+Node (Leaf (),2,Node (Node (Leaf (),3,Leaf ()),3,Leaf ())) -> [2,3,3];
+Node (Node (Node (Leaf (),1,Leaf ()),3,Leaf ()),1,Leaf ()) -> [1,3,1];
+Leaf () -> [];
+
+=================================
+fix (f : tree -> list) =
+  fun (x:tree) ->
+    match x with
+      | Leaf _ -> Nil
+      | Node _ -> append Cons (Un_Node x . 1, f (Un_Node x . 0))
+                    (f (Un_Node x . 2))
+
+0.4287 true
+
+Node (Node (Leaf (),0,Node (Leaf (),0,Leaf ())),0,Leaf ()) -> [0,0,0];
+Node (Node (Node (Leaf (),0,Leaf ()),2,Leaf ()),0,Leaf ()) -> [0,2,0];
+Node (Leaf (),2,Node (Leaf (),0,Node (Leaf (),3,Leaf ()))) -> [2,0,3];
+Node (Leaf (),3,Node (Node (Leaf (),0,Leaf ()),1,Leaf ())) -> [3,1,0];
+Node (Node (Leaf (),3,Leaf ()),0,Node (Leaf (),1,Leaf ())) -> [0,3,1];
+Node (Node (Leaf (),3,Leaf ()),0,Leaf ()) -> [0,3];
+Node (Node (Leaf (),3,Node (Leaf (),3,Leaf ())),3,Leaf ()) -> [3,3,3];
+Node (Leaf (),1,Node (Leaf (),1,Leaf ())) -> [1,1];
+Node (Node (Leaf (),3,Node (Leaf (),1,Leaf ())),1,Leaf ()) -> [1,3,1];
+Leaf () -> [];
+
+=================================
+fix (f : tree -> list) =
+  fun (x:tree) ->
+    match x with
+      | Leaf _ -> Nil
+      | Node _ -> append Cons (Un_Node x . 1, f (Un_Node x . 0))
+                    (f (Un_Node x . 2))
+
+0.4871 true
+
+Node (Leaf (),2,Leaf ()) -> [2];
+Node (Node (Leaf (),3,Leaf ()),2,Leaf ()) -> [2,3];
+Node (Leaf (),1,Node (Leaf (),1,Leaf ())) -> [1,1];
+Node (Node (Leaf (),1,Node (Leaf (),1,Leaf ())),3,Leaf ()) -> [3,1,1];
+Node (Node (Leaf (),0,Leaf ()),0,Node (Leaf (),2,Leaf ())) -> [0,0,2];
+Node (Leaf (),1,Node (Node (Leaf (),3,Leaf ()),1,Leaf ())) -> [1,1,3];
+Node (Leaf (),3,Leaf ()) -> [3];
+Node (Node (Leaf (),1,Leaf ()),3,Node (Leaf (),3,Leaf ())) -> [3,1,3];
+Node (Node (Node (Leaf (),0,Leaf ()),1,Leaf ()),3,Leaf ()) -> [3,1,0];
+Node (Node (Leaf (),1,Node (Leaf (),2,Leaf ())),0,Leaf ()) -> [0,1,2];
+Leaf () -> [];
+
+=================================
+fix (f : tree -> list) =
+  fun (x:tree) ->
+    match x with
+      | Leaf _ -> Nil
+      | Node _ -> append Cons (Un_Node x . 1, f (Un_Node x . 0))
+                    (f (Un_Node x . 2))
+
+0.4323 true
+
+Node (Leaf (),3,Node (Node (Leaf (),1,Leaf ()),2,Leaf ())) -> [3,2,1];
+Node (Leaf (),1,Node (Leaf (),0,Node (Leaf (),2,Leaf ()))) -> [1,0,2];
+Node (Node (Leaf (),0,Leaf ()),0,Node (Leaf (),0,Leaf ())) -> [0,0,0];
+Node (Node (Node (Leaf (),1,Leaf ()),2,Leaf ()),3,Leaf ()) -> [3,2,1];
+Node (Leaf (),3,Leaf ()) -> [3];
+Node (Leaf (),3,Node (Leaf (),2,Leaf ())) -> [3,2];
+Node (Node (Node (Leaf (),2,Leaf ()),1,Leaf ()),2,Leaf ()) -> [2,1,2];
+Node (Node (Leaf (),0,Leaf ()),3,Node (Leaf (),1,Leaf ())) -> [3,0,1];
+Node (Leaf (),2,Node (Leaf (),3,Leaf ())) -> [2,3];
+Node (Node (Leaf (),1,Leaf ()),1,Node (Leaf (),0,Leaf ())) -> [1,1,0];
+Leaf () -> [];
+
+=================================
+fix (f : tree -> list) =
+  fun (x:tree) ->
+    match x with
+      | Leaf _ -> Nil
+      | Node _ -> append Cons (Un_Node x . 1, f (Un_Node x . 0))
+                    (f (Un_Node x . 2))
+
+0.4870 true
+
+Node (Leaf (),3,Node (Node (Leaf (),1,Leaf ()),3,Leaf ())) -> [3,3,1];
+Node (Node (Node (Leaf (),0,Leaf ()),0,Leaf ()),1,Leaf ()) -> [1,0,0];
+Node (Leaf (),3,Node (Node (Leaf (),1,Leaf ()),1,Leaf ())) -> [3,1,1];
+Node (Leaf (),3,Node (Node (Leaf (),2,Leaf ()),3,Leaf ())) -> [3,3,2];
+Node (Node (Node (Leaf (),3,Leaf ()),0,Leaf ()),1,Leaf ()) -> [1,0,3];
+Node (Leaf (),3,Node (Node (Leaf (),1,Leaf ()),2,Leaf ())) -> [3,2,1];
+Node (Node (Leaf (),0,Leaf ()),0,Leaf ()) -> [0,0];
+Node (Leaf (),0,Node (Leaf (),0,Leaf ())) -> [0,0];
+Node (Leaf (),0,Leaf ()) -> [0];
+Node (Node (Leaf (),2,Node (Leaf (),3,Leaf ())),2,Leaf ()) -> [2,2,3];
+Leaf () -> [];
+
+=================================
+fix (f : tree -> list) =
+  fun (x:tree) ->
+    match x with
+      | Leaf _ -> Nil
+      | Node _ -> append Cons (Un_Node x . 1, f (Un_Node x . 0))
+                    (f (Un_Node x . 2))
+
+0.4604 true
+
+Node (Leaf (),1,Node (Leaf (),2,Node (Leaf (),0,Leaf ()))) -> [1,2,0];
+Node (Node (Node (Leaf (),1,Leaf ()),3,Leaf ()),0,Leaf ()) -> [0,3,1];
+Node (Node (Leaf (),3,Leaf ()),2,Node (Leaf (),0,Leaf ())) -> [2,3,0];
+Node (Leaf (),0,Node (Leaf (),1,Leaf ())) -> [0,1];
+Node (Node (Leaf (),2,Leaf ()),2,Node (Leaf (),1,Leaf ())) -> [2,2,1];
+Node (Leaf (),0,Node (Leaf (),0,Node (Leaf (),3,Leaf ()))) -> [0,0,3];
+Node (Node (Leaf (),3,Leaf ()),0,Leaf ()) -> [0,3];
+Node (Leaf (),3,Node (Node (Leaf (),2,Leaf ()),0,Leaf ())) -> [3,0,2];
+Node (Node (Node (Leaf (),0,Leaf ()),1,Leaf ()),0,Leaf ()) -> [0,1,0];
+Node (Node (Node (Leaf (),1,Leaf ()),3,Leaf ()),1,Leaf ()) -> [1,3,1];
+Leaf () -> [];
+
+=================================
+fix (f : tree -> list) =
+  fun (x:tree) ->
+    match x with
+      | Leaf _ -> Nil
+      | Node _ -> append Cons (Un_Node x . 1, f (Un_Node x . 0))
+                    (f (Un_Node x . 2))
+
+0.4945 true
+
+Node (Node (Leaf (),0,Node (Leaf (),3,Leaf ())),2,Leaf ()) -> [2,0,3];
+Node (Leaf (),2,Leaf ()) -> [2];
+Node (Leaf (),0,Node (Leaf (),2,Leaf ())) -> [0,2];
+Node (Node (Leaf (),1,Leaf ()),1,Node (Leaf (),0,Leaf ())) -> [1,1,0];
+Node (Node (Node (Leaf (),3,Leaf ()),3,Leaf ()),1,Leaf ()) -> [1,3,3];
+Node (Leaf (),2,Node (Leaf (),1,Node (Leaf (),0,Leaf ()))) -> [2,1,0];
+Node (Leaf (),3,Leaf ()) -> [3];
+Node (Node (Node (Leaf (),3,Leaf ()),3,Leaf ()),3,Leaf ()) -> [3,3,3];
+Node (Leaf (),3,Node (Node (Leaf (),1,Leaf ()),1,Leaf ())) -> [3,1,1];
+Node (Node (Leaf (),0,Leaf ()),0,Node (Leaf (),3,Leaf ())) -> [0,0,3];
+Leaf () -> [];
+
+=================================
+fix (f : tree -> list) =
+  fun (x:tree) ->
+    match x with
+      | Leaf _ -> Nil
+      | Node _ -> append Cons (Un_Node x . 1, f (Un_Node x . 0))
+                    (f (Un_Node x . 2))
+
+0.5116 true
+
+Node (Node (Leaf (),3,Leaf ()),1,Node (Leaf (),0,Leaf ())) -> [1,3,0];
+Node (Leaf (),3,Node (Node (Leaf (),3,Leaf ()),0,Leaf ())) -> [3,0,3];
+Node (Node (Leaf (),3,Leaf ()),1,Leaf ()) -> [1,3];
+Node (Node (Leaf (),2,Leaf ()),3,Leaf ()) -> [3,2];
+Node (Node (Leaf (),2,Node (Leaf (),0,Leaf ())),0,Leaf ()) -> [0,2,0];
+Node (Node (Node (Leaf (),1,Leaf ()),3,Leaf ()),3,Leaf ()) -> [3,3,1];
+Node (Leaf (),1,Node (Node (Leaf (),1,Leaf ()),2,Leaf ())) -> [1,2,1];
+Node (Leaf (),1,Node (Leaf (),0,Node (Leaf (),2,Leaf ()))) -> [1,0,2];
+Node (Node (Leaf (),3,Leaf ()),0,Node (Leaf (),0,Leaf ())) -> [0,3,0];
+Node (Leaf (),1,Node (Leaf (),0,Leaf ())) -> [1,0];
+Leaf () -> [];
+
+=================================
+fix (f : tree -> list) =
+  fun (x:tree) ->
+    match x with
+      | Leaf _ -> Nil
+      | Node _ -> append Cons (Un_Node x . 1, f (Un_Node x . 0))
+                    (f (Un_Node x . 2))
+
+0.4920 true
+
+Node (Node (Leaf (),3,Leaf ()),3,Node (Leaf (),1,Leaf ())) -> [3,3,1];
+Node (Node (Leaf (),3,Node (Leaf (),3,Leaf ())),3,Leaf ()) -> [3,3,3];
+Node (Leaf (),2,Leaf ()) -> [2];
+Node (Node (Leaf (),0,Leaf ()),2,Leaf ()) -> [2,0];
+Node (Node (Leaf (),1,Leaf ()),1,Leaf ()) -> [1,1];
+Node (Leaf (),2,Node (Leaf (),0,Node (Leaf (),1,Leaf ()))) -> [2,0,1];
+Node (Leaf (),2,Node (Leaf (),1,Leaf ())) -> [2,1];
+Node (Leaf (),1,Node (Node (Leaf (),3,Leaf ()),3,Leaf ())) -> [1,3,3];
+Node (Leaf (),2,Node (Leaf (),3,Leaf ())) -> [2,3];
+Node (Node (Node (Leaf (),3,Leaf ()),1,Leaf ()),1,Leaf ()) -> [1,1,3];
+Leaf () -> [];
+
+=================================
+fix (f : tree -> list) =
+  fun (x:tree) ->
+    match x with
+      | Leaf _ -> Nil
+      | Node _ -> append Cons (Un_Node x . 1, f (Un_Node x . 0))
+                    (f (Un_Node x . 2))
+
+0.4677 true
+
+Node (Leaf (),3,Leaf ()) -> [3];
+Node (Leaf (),1,Node (Node (Leaf (),1,Leaf ()),2,Leaf ())) -> [1,2,1];
+Node (Leaf (),3,Node (Leaf (),0,Node (Leaf (),2,Leaf ()))) -> [3,0,2];
+Node (Leaf (),1,Node (Leaf (),2,Leaf ())) -> [1,2];
+Node (Node (Leaf (),2,Node (Leaf (),1,Leaf ())),3,Leaf ()) -> [3,2,1];
+Node (Node (Leaf (),1,Leaf ()),0,Node (Leaf (),2,Leaf ())) -> [0,1,2];
+Node (Node (Leaf (),3,Node (Leaf (),3,Leaf ())),1,Leaf ()) -> [1,3,3];
+Node (Node (Node (Leaf (),1,Leaf ()),3,Leaf ()),1,Leaf ()) -> [1,3,1];
+Node (Node (Leaf (),1,Leaf ()),1,Node (Leaf (),0,Leaf ())) -> [1,1,0];
+Node (Node (Leaf (),2,Leaf ()),2,Node (Leaf (),0,Leaf ())) -> [2,2,0];
+Leaf () -> [];
+
+=================================
+fix (f : tree -> list) =
+  fun (x:tree) ->
+    match x with
+      | Leaf _ -> Nil
+      | Node _ -> append Cons (Un_Node x . 1, f (Un_Node x . 0))
+                    (f (Un_Node x . 2))
+
+0.4840 true
+
+Node (Leaf (),3,Node (Leaf (),2,Leaf ())) -> [3,2];
+Node (Leaf (),3,Node (Node (Leaf (),1,Leaf ()),2,Leaf ())) -> [3,2,1];
+Node (Node (Leaf (),1,Node (Leaf (),1,Leaf ())),0,Leaf ()) -> [0,1,1];
+Node (Leaf (),3,Node (Leaf (),1,Node (Leaf (),0,Leaf ()))) -> [3,1,0];
+Node (Leaf (),0,Node (Leaf (),2,Node (Leaf (),1,Leaf ()))) -> [0,2,1];
+Node (Leaf (),2,Node (Leaf (),0,Leaf ())) -> [2,0];
+Node (Node (Leaf (),3,Leaf ()),3,Leaf ()) -> [3,3];
+Node (Leaf (),3,Node (Leaf (),3,Leaf ())) -> [3,3];
+Node (Leaf (),3,Node (Leaf (),0,Leaf ())) -> [3,0];
+Node (Leaf (),1,Node (Node (Leaf (),2,Leaf ()),2,Leaf ())) -> [1,2,2];
+Leaf () -> [];
+
+=================================
+fix (f : tree -> list) =
+  fun (x:tree) ->
+    match x with
+      | Leaf _ -> Nil
+      | Node _ -> append Cons (Un_Node x . 1, f (Un_Node x . 0))
+                    (f (Un_Node x . 2))
+
+0.4473 true
+
+Node (Leaf (),2,Leaf ()) -> [2];
+Node (Node (Leaf (),1,Leaf ()),3,Node (Leaf (),0,Leaf ())) -> [3,1,0];
+Node (Leaf (),0,Node (Leaf (),0,Node (Leaf (),3,Leaf ()))) -> [0,0,3];
+Node (Node (Leaf (),1,Leaf ()),3,Node (Leaf (),3,Leaf ())) -> [3,1,3];
+Node (Leaf (),2,Node (Leaf (),2,Node (Leaf (),0,Leaf ()))) -> [2,2,0];
+Node (Node (Node (Leaf (),3,Leaf ()),0,Leaf ()),2,Leaf ()) -> [2,0,3];
+Node (Leaf (),0,Node (Node (Leaf (),1,Leaf ()),1,Leaf ())) -> [0,1,1];
+Node (Node (Node (Leaf (),3,Leaf ()),2,Leaf ()),3,Leaf ()) -> [3,2,3];
+Node (Leaf (),2,Node (Leaf (),1,Leaf ())) -> [2,1];
+Node (Node (Leaf (),2,Node (Leaf (),3,Leaf ())),1,Leaf ()) -> [1,2,3];
+Leaf () -> [];
+
+=================================
+fix (f : tree -> list) =
+  fun (x:tree) ->
+    match x with
+      | Leaf _ -> Nil
+      | Node _ -> append Cons (Un_Node x . 1, f (Un_Node x . 0))
+                    (f (Un_Node x . 2))
+
+0.4824 true
+
