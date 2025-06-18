@@ -1,0 +1,630 @@
+1 -> F ();
+0 -> T ();
+
+=================================
+fix (f : nat -> bool) = fun (x:nat) -> match x with
+                                         | O _ -> T
+                                         | S _ -> F
+
+0.0012 false
+Time(s): 0.02 
+Mem(Kb): 14864
+
+3 -> F ();
+0 -> T ();
+
+=================================
+fix (f : nat -> bool) = fun (x:nat) -> match x with
+                                         | O _ -> T
+                                         | S _ -> F
+
+0.0013 false
+Time(s): 0.02 
+Mem(Kb): 14904
+
+0 -> T ();
+0 -> T ();
+
+=================================
+fix (f : nat -> bool) = fun (x:nat) -> T
+
+0.0001 false
+Time(s): 0.02 
+Mem(Kb): 14388
+
+0 -> T ();
+0 -> T ();
+
+=================================
+fix (f : nat -> bool) = fun (x:nat) -> T
+
+0.0001 false
+Time(s): 0.02 
+Mem(Kb): 14424
+
+1 -> F ();
+0 -> T ();
+
+=================================
+fix (f : nat -> bool) = fun (x:nat) -> match x with
+                                         | O _ -> T
+                                         | S _ -> F
+
+0.0011 false
+Time(s): 0.02 
+Mem(Kb): 14816
+
+2 -> T ();
+0 -> T ();
+
+=================================
+fix (f : nat -> bool) = fun (x:nat) -> T
+
+0.0001 false
+Time(s): 0.02 
+Mem(Kb): 14408
+
+1 -> F ();
+0 -> T ();
+
+=================================
+fix (f : nat -> bool) = fun (x:nat) -> match x with
+                                         | O _ -> T
+                                         | S _ -> F
+
+0.0012 false
+Time(s): 0.02 
+Mem(Kb): 14828
+
+1 -> F ();
+0 -> T ();
+
+=================================
+fix (f : nat -> bool) = fun (x:nat) -> match x with
+                                         | O _ -> T
+                                         | S _ -> F
+
+0.0011 false
+Time(s): 0.02 
+Mem(Kb): 14880
+
+3 -> F ();
+0 -> T ();
+
+=================================
+fix (f : nat -> bool) = fun (x:nat) -> match x with
+                                         | O _ -> T
+                                         | S _ -> F
+
+0.0017 false
+Time(s): 0.02 
+Mem(Kb): 14948
+
+2 -> T ();
+0 -> T ();
+
+=================================
+fix (f : nat -> bool) = fun (x:nat) -> T
+
+0.0001 false
+Time(s): 0.02 
+Mem(Kb): 14396
+
+2 -> T ();
+0 -> T ();
+0 -> T ();
+
+=================================
+fix (f : nat -> bool) = fun (x:nat) -> T
+
+0.0001 false
+Time(s): 0.02 
+Mem(Kb): 14388
+
+1 -> F ();
+3 -> F ();
+0 -> T ();
+
+=================================
+fix (f : nat -> bool) = fun (x:nat) -> match x with
+                                         | O _ -> T
+                                         | S _ -> F
+
+0.0014 false
+Time(s): 0.02 
+Mem(Kb): 15224
+
+2 -> T ();
+1 -> F ();
+0 -> T ();
+
+=================================
+fix (f : nat -> bool) =
+  fun (x:nat) ->
+    match x with
+      | O _ -> T
+      | S _ -> (match Un_S x with
+                  | O _ -> F
+                  | S _ -> T)
+
+0.0015 false
+Time(s): 0.02 
+Mem(Kb): 15360
+
+2 -> T ();
+0 -> T ();
+0 -> T ();
+
+=================================
+fix (f : nat -> bool) = fun (x:nat) -> T
+
+0.0001 false
+Time(s): 0.02 
+Mem(Kb): 14424
+
+1 -> F ();
+2 -> T ();
+0 -> T ();
+
+=================================
+fix (f : nat -> bool) =
+  fun (x:nat) ->
+    match x with
+      | O _ -> T
+      | S _ -> (match Un_S x with
+                  | O _ -> F
+                  | S _ -> T)
+
+0.0016 false
+Time(s): 0.02 
+Mem(Kb): 15332
+
+2 -> T ();
+3 -> F ();
+0 -> T ();
+
+=================================
+Uncaught exception:
+  
+  (Failure "No solution whose size is smaller than 128.")
+
+Raised at file "stdlib.ml" (inlined), line 29, characters 17-33
+Called from file "trio/bidirectional.ml", line 778, characters 4-92
+Called from file "trio/bidirectional.ml" (inlined), line 829, characters 2-47
+Called from file "app/TrioSynthesizer.ml", line 279, characters 8-41
+Re-raised at file "app/TrioSynthesizer.ml", line 279, characters 8-41
+Called from file "app/BurstCmdLine.ml" (inlined), line 533, characters 43-94
+Called from file "app/BurstCmdLine.ml" (inlined), line 30, characters 17-21
+Called from file "app/BurstCmdLine.ml", line 533, characters 18-95
+Called from file "src/command.ml" (inlined), line 1065, characters 6-21
+Called from file "src/command.ml" (inlined), line 2325, characters 6-149
+Called from file "src/command.ml" (inlined), line 2453, characters 8-238
+Called from file "src/exn.ml" (inlined), line 111, characters 6-10
+Called from file "src/exn.ml" (inlined), line 131, characters 33-77
+Called from file "src/command.ml" (inlined), line 34, characters 11-41
+Called from file "src/command.ml" (inlined), line 2447, characters 4-692
+Called from file "app/BurstCmdLine.ml", line 562, characters 2-28
+Re-raised at file "src/exn.ml" (inlined), line 111, characters 6-10
+Called from file "src/exn.ml" (inlined), line 131, characters 33-77
+Called from file "src/command.ml" (inlined), line 34, characters 11-41
+Called from file "src/command.ml" (inlined), line 2447, characters 4-692
+Called from file "app/BurstCmdLine.ml", line 562, characters 2-28
+Command exited with non-zero status 1
+Time(s): 1.08 
+Mem(Kb): 27224
+
+3 -> F ();
+0 -> T ();
+0 -> T ();
+
+=================================
+fix (f : nat -> bool) = fun (x:nat) -> match x with
+                                         | O _ -> T
+                                         | S _ -> F
+
+0.0014 false
+Time(s): 0.02 
+Mem(Kb): 15156
+
+1 -> F ();
+3 -> F ();
+0 -> T ();
+
+=================================
+fix (f : nat -> bool) = fun (x:nat) -> match x with
+                                         | O _ -> T
+                                         | S _ -> F
+
+0.0015 false
+Time(s): 0.02 
+Mem(Kb): 15168
+
+3 -> F ();
+1 -> F ();
+0 -> T ();
+
+=================================
+fix (f : nat -> bool) = fun (x:nat) -> match x with
+                                         | O _ -> T
+                                         | S _ -> F
+
+0.0015 false
+Time(s): 0.02 
+Mem(Kb): 15168
+
+2 -> T ();
+3 -> F ();
+0 -> T ();
+
+=================================
+Uncaught exception:
+  
+  (Failure "No solution whose size is smaller than 128.")
+
+Raised at file "stdlib.ml" (inlined), line 29, characters 17-33
+Called from file "trio/bidirectional.ml", line 778, characters 4-92
+Called from file "trio/bidirectional.ml" (inlined), line 829, characters 2-47
+Called from file "app/TrioSynthesizer.ml", line 279, characters 8-41
+Re-raised at file "app/TrioSynthesizer.ml", line 279, characters 8-41
+Called from file "app/BurstCmdLine.ml" (inlined), line 533, characters 43-94
+Called from file "app/BurstCmdLine.ml" (inlined), line 30, characters 17-21
+Called from file "app/BurstCmdLine.ml", line 533, characters 18-95
+Called from file "src/command.ml" (inlined), line 1065, characters 6-21
+Called from file "src/command.ml" (inlined), line 2325, characters 6-149
+Called from file "src/command.ml" (inlined), line 2453, characters 8-238
+Called from file "src/exn.ml" (inlined), line 111, characters 6-10
+Called from file "src/exn.ml" (inlined), line 131, characters 33-77
+Called from file "src/command.ml" (inlined), line 34, characters 11-41
+Called from file "src/command.ml" (inlined), line 2447, characters 4-692
+Called from file "app/BurstCmdLine.ml", line 562, characters 2-28
+Re-raised at file "src/exn.ml" (inlined), line 111, characters 6-10
+Called from file "src/exn.ml" (inlined), line 131, characters 33-77
+Called from file "src/command.ml" (inlined), line 34, characters 11-41
+Called from file "src/command.ml" (inlined), line 2447, characters 4-692
+Called from file "app/BurstCmdLine.ml", line 562, characters 2-28
+Command exited with non-zero status 1
+Time(s): 1.11 
+Mem(Kb): 27156
+
+3 -> F ();
+1 -> F ();
+0 -> T ();
+0 -> T ();
+
+=================================
+fix (f : nat -> bool) = fun (x:nat) -> match x with
+                                         | O _ -> T
+                                         | S _ -> F
+
+0.0017 false
+Time(s): 0.02 
+Mem(Kb): 15444
+
+1 -> F ();
+3 -> F ();
+0 -> T ();
+0 -> T ();
+
+=================================
+fix (f : nat -> bool) = fun (x:nat) -> match x with
+                                         | O _ -> T
+                                         | S _ -> F
+
+0.0017 false
+Time(s): 0.02 
+Mem(Kb): 15444
+
+1 -> F ();
+3 -> F ();
+0 -> T ();
+0 -> T ();
+
+=================================
+fix (f : nat -> bool) = fun (x:nat) -> match x with
+                                         | O _ -> T
+                                         | S _ -> F
+
+0.0017 false
+Time(s): 0.02 
+Mem(Kb): 15460
+
+0 -> T ();
+1 -> F ();
+3 -> F ();
+0 -> T ();
+
+=================================
+fix (f : nat -> bool) = fun (x:nat) -> match x with
+                                         | O _ -> T
+                                         | S _ -> F
+
+0.0019 false
+Time(s): 0.02 
+Mem(Kb): 15480
+
+3 -> F ();
+0 -> T ();
+1 -> F ();
+0 -> T ();
+
+=================================
+fix (f : nat -> bool) = fun (x:nat) -> match x with
+                                         | O _ -> T
+                                         | S _ -> F
+
+0.0017 false
+Time(s): 0.02 
+Mem(Kb): 15456
+
+1 -> F ();
+3 -> F ();
+2 -> T ();
+0 -> T ();
+
+=================================
+fix (f : nat -> bool) =
+  fun (x:nat) ->
+    match x with
+      | O _ -> T
+      | S _ -> (match Un_S x with
+                  | O _ -> F
+                  | S _ -> f Un_S (Un_S x))
+
+0.0023 true
+Time(s): 0.02 
+Mem(Kb): 16016
+
+1 -> F ();
+3 -> F ();
+0 -> T ();
+0 -> T ();
+
+=================================
+fix (f : nat -> bool) = fun (x:nat) -> match x with
+                                         | O _ -> T
+                                         | S _ -> F
+
+0.0019 false
+Time(s): 0.02 
+Mem(Kb): 15480
+
+1 -> F ();
+0 -> T ();
+3 -> F ();
+0 -> T ();
+
+=================================
+fix (f : nat -> bool) = fun (x:nat) -> match x with
+                                         | O _ -> T
+                                         | S _ -> F
+
+0.0026 false
+Time(s): 0.02 
+Mem(Kb): 15492
+
+1 -> F ();
+2 -> T ();
+0 -> T ();
+0 -> T ();
+
+=================================
+fix (f : nat -> bool) =
+  fun (x:nat) ->
+    match x with
+      | O _ -> T
+      | S _ -> (match Un_S x with
+                  | O _ -> F
+                  | S _ -> T)
+
+0.0018 false
+Time(s): 0.02 
+Mem(Kb): 15652
+
+2 -> T ();
+0 -> T ();
+1 -> F ();
+0 -> T ();
+
+=================================
+fix (f : nat -> bool) =
+  fun (x:nat) ->
+    match x with
+      | O _ -> T
+      | S _ -> (match Un_S x with
+                  | O _ -> F
+                  | S _ -> T)
+
+0.0018 false
+Time(s): 0.02 
+Mem(Kb): 15612
+
+1 -> F ();
+3 -> F ();
+2 -> T ();
+0 -> T ();
+0 -> T ();
+
+=================================
+fix (f : nat -> bool) =
+  fun (x:nat) ->
+    match x with
+      | O _ -> T
+      | S _ -> (match Un_S x with
+                  | O _ -> F
+                  | S _ -> f Un_S (Un_S x))
+
+0.0024 true
+Time(s): 0.02 
+Mem(Kb): 15960
+
+0 -> T ();
+3 -> F ();
+2 -> T ();
+1 -> F ();
+0 -> T ();
+
+=================================
+fix (f : nat -> bool) =
+  fun (x:nat) ->
+    match x with
+      | O _ -> T
+      | S _ -> (match Un_S x with
+                  | O _ -> F
+                  | S _ -> f Un_S (Un_S x))
+
+0.0025 true
+Time(s): 0.02 
+Mem(Kb): 15976
+
+0 -> T ();
+1 -> F ();
+2 -> T ();
+3 -> F ();
+0 -> T ();
+
+=================================
+fix (f : nat -> bool) =
+  fun (x:nat) ->
+    match x with
+      | O _ -> T
+      | S _ -> (match Un_S x with
+                  | O _ -> F
+                  | S _ -> f Un_S (Un_S x))
+
+0.0026 true
+Time(s): 0.02 
+Mem(Kb): 15976
+
+2 -> T ();
+0 -> T ();
+3 -> F ();
+1 -> F ();
+0 -> T ();
+
+=================================
+fix (f : nat -> bool) =
+  fun (x:nat) ->
+    match x with
+      | O _ -> T
+      | S _ -> (match Un_S x with
+                  | O _ -> F
+                  | S _ -> f Un_S (Un_S x))
+
+0.0024 true
+Time(s): 0.02 
+Mem(Kb): 15960
+
+0 -> T ();
+3 -> F ();
+1 -> F ();
+2 -> T ();
+0 -> T ();
+
+=================================
+fix (f : nat -> bool) =
+  fun (x:nat) ->
+    match x with
+      | O _ -> T
+      | S _ -> (match Un_S x with
+                  | O _ -> F
+                  | S _ -> f Un_S (Un_S x))
+
+0.0025 true
+Time(s): 0.02 
+Mem(Kb): 15964
+
+3 -> F ();
+1 -> F ();
+0 -> T ();
+2 -> T ();
+0 -> T ();
+
+=================================
+fix (f : nat -> bool) =
+  fun (x:nat) ->
+    match x with
+      | O _ -> T
+      | S _ -> (match Un_S x with
+                  | O _ -> F
+                  | S _ -> f Un_S (Un_S x))
+
+0.0025 true
+Time(s): 0.02 
+Mem(Kb): 15988
+
+3 -> F ();
+0 -> T ();
+2 -> T ();
+1 -> F ();
+0 -> T ();
+
+=================================
+fix (f : nat -> bool) =
+  fun (x:nat) ->
+    match x with
+      | O _ -> T
+      | S _ -> (match Un_S x with
+                  | O _ -> F
+                  | S _ -> f Un_S (Un_S x))
+
+0.0034 true
+Time(s): 0.02 
+Mem(Kb): 16004
+
+2 -> T ();
+0 -> T ();
+3 -> F ();
+1 -> F ();
+0 -> T ();
+
+=================================
+fix (f : nat -> bool) =
+  fun (x:nat) ->
+    match x with
+      | O _ -> T
+      | S _ -> (match Un_S x with
+                  | O _ -> F
+                  | S _ -> f Un_S (Un_S x))
+
+0.0024 true
+Time(s): 0.02 
+Mem(Kb): 15996
+
+0 -> T ();
+2 -> T ();
+3 -> F ();
+1 -> F ();
+0 -> T ();
+
+=================================
+fix (f : nat -> bool) =
+  fun (x:nat) ->
+    match x with
+      | O _ -> T
+      | S _ -> (match Un_S x with
+                  | O _ -> F
+                  | S _ -> f Un_S (Un_S x))
+
+0.0026 true
+Time(s): 0.02 
+Mem(Kb): 15976
+
+2 -> T ();
+3 -> F ();
+0 -> T ();
+1 -> F ();
+0 -> T ();
+
+=================================
+fix (f : nat -> bool) =
+  fun (x:nat) ->
+    match x with
+      | O _ -> T
+      | S _ -> (match Un_S x with
+                  | O _ -> F
+                  | S _ -> f Un_S (Un_S x))
+
+0.0024 true
+Time(s): 0.02 
+Mem(Kb): 15960
+

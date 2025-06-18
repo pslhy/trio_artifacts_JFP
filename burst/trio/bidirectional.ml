@@ -706,6 +706,7 @@ let main_loop spec (desired_sig, desired_type) (ty_to_exprs, ty_to_sigs, sig_to_
 				) 
 			in
 			(* termination checking *)
+			let check_start_time = Sys.time () in
 			let termination = 
 				let call_exprs = get_recursive_calls next_candidate in
 				let keyargs = get_keyargs next_candidate in 
@@ -720,14 +721,21 @@ let main_loop spec (desired_sig, desired_type) (ty_to_exprs, ty_to_sigs, sig_to_
 						let _ = my_prerr_endline (Printf.sprintf "decreasing? %s" (string_of_bool (is_decreasing_expr arg_exp))) in
 						is_decreasing_expr arg_exp 
 					else
-						BatSet.for_all (fun i -> 
+						(* BatSet.for_all (fun i -> 
 							let e = List.nth es i in 
 							let _ = my_prerr_endline (Printf.sprintf "decreasing? %d %s" i (string_of_bool (is_decreasing_expr ~idx:(Some i) e))) in
 							(is_decreasing_expr ~idx:(Some i) e) || (e = Proj(i, Var target_func_arg))
+						) keyargs *)
+						BatSet.exists (fun i -> 
+							let e = List.nth es i in 
+							let _ = my_prerr_endline (Printf.sprintf "decreasing? %d %s" i (string_of_bool (is_decreasing_expr ~idx:(Some i) e))) in
+							(is_decreasing_expr ~idx:(Some i) e)
 						) keyargs
 				| _ -> assert false
 				) call_exprs
 			in 
+			let check_end_time = Sys.time () in
+			let _ = Options.termination_time := !Options.termination_time +. (check_end_time -. check_start_time) in
 			if not termination then 
 				let _ = my_prerr_endline (Printf.sprintf "not terminating") in
 				let next_heap = CandidateHeap.del_min heap in 
@@ -747,7 +755,9 @@ let main_loop spec (desired_sig, desired_type) (ty_to_exprs, ty_to_sigs, sig_to_
 				else None
 			in
 			match solution_opt with 
-			| Some sol -> sol 
+			| Some sol -> 
+				let _ = if !Options.print_time then print_endline (Printf.sprintf "Termination_Check Time: %.5f\nSOL:" !Options.termination_time) in
+				sol 
 			| None -> 
 				let next_heap = 
 					update_heap !Options.max_height next_candidate_info (CandidateHeap.del_min heap) 
@@ -828,5 +838,6 @@ let synthesis spec =
 	try
 		iter 1 (ty_to_exprs, ty_to_sigs, sig_to_expr)
 	with Generator.SolutionFound sol ->
-	(* a solution is found while generating components *) 
+	(* a solution is found while generating components *)
+		(* let _ = if !Options.print_time then print_endline (Printf.sprintf "Termination_Check Time: %.3f" !Options.termination_time) in *)
 		wrap spec sol  

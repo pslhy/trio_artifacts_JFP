@@ -1,0 +1,1687 @@
+(Node (Node (Leaf (),3,Leaf ()),1,Node (Leaf (),3,Leaf ())),0) -> Node (Node (Node (Leaf (),0,Leaf ()),3,Leaf ()),1,Node (Leaf (),3,Leaf ()));
+(Leaf (), 0) -> Node (Leaf (), 0, Leaf ());
+
+=================================
+fix (f : tree * nat -> tree) =
+  fun (x:tree * nat) ->
+    match x . 0 with
+      | Leaf _ -> Node (x . 0, x . 1, x . 0)
+      | Node _ -> Node (f (Un_Node (x . 0) . 0, x . 1), Un_Node (x . 0) . 1,
+                         Un_Node (x . 0) . 0)
+
+0.0121 false
+Time(s): 0.04 
+Mem(Kb): 17456
+
+(Node (Node (Leaf (),2,Leaf ()),0,Node (Leaf (),3,Leaf ())),1) -> Node (Node (Leaf (),2,Leaf ()),0,Node (Node (Leaf (),1,Leaf ()),3,Leaf ()));
+(Leaf (), 0) -> Node (Leaf (), 0, Leaf ());
+
+=================================
+fix (f : tree * nat -> tree) =
+  fun (x:tree * nat) ->
+    match x . 0 with
+      | Leaf _ -> Node (x . 0, x . 1, x . 0)
+      | Node _ -> Node (Un_Node (x . 0) . 0, 0,
+                         Node (Node (Leaf, x . 1, Leaf), S (S (x . 1)), Leaf))
+
+0.0500 false
+Time(s): 0.07 
+Mem(Kb): 22048
+
+(Node (Node (Leaf (),0,Leaf ()),1,Leaf ()),1) -> Node (Node (Leaf (),0,Leaf ()),1,Leaf ());
+(Leaf (), 0) -> Node (Leaf (), 0, Leaf ());
+
+=================================
+fix (f : tree * nat -> tree) =
+  fun (x:tree * nat) ->
+    match x . 0 with
+      | Leaf _ -> Node (x . 0, x . 1, x . 0)
+      | Node _ -> x . 0
+
+0.0346 false
+Time(s): 0.06 
+Mem(Kb): 29304
+
+(Node (Leaf (),0,Node (Node (Leaf (),1,Leaf ()),3,Leaf ())),2) -> Node (Leaf (),0,Node (Node (Leaf (),1,Node (Leaf (),2,Leaf ())),3,Leaf ()));
+(Leaf (), 0) -> Node (Leaf (), 0, Leaf ());
+
+=================================
+fix (f : tree * nat -> tree) =
+  fun (x:tree * nat) ->
+    match x . 0 with
+      | Leaf _ -> Node (x . 0, x . 1, x . 0)
+      | Node _ -> Node (Un_Node (x . 0) . 0, Un_Node (x . 0) . 1,
+                         Node (Node (Un_Node (x . 0) . 0, 1,
+                                      f (Un_Node (x . 0) . 0, x . 1)),
+                                S (x . 1), Un_Node (x . 0) . 0))
+
+0.6125 false
+Time(s): 0.64 
+Mem(Kb): 39444
+
+(Node (Leaf (),3,Node (Leaf (),1,Node (Leaf (),1,Leaf ()))),0) -> Node (Node (Leaf (),0,Leaf ()),3,Node (Leaf (),1,Node (Leaf (),1,Leaf ())));
+(Leaf (), 0) -> Node (Leaf (), 0, Leaf ());
+
+=================================
+fix (f : tree * nat -> tree) =
+  fun (x:tree * nat) ->
+    match x . 0 with
+      | Leaf _ -> Node (x . 0, x . 1, x . 0)
+      | Node _ -> Node (f (Un_Node (x . 0) . 0, x . 1), Un_Node (x . 0) . 1,
+                         Un_Node (x . 0) . 2)
+
+0.0175 false
+Time(s): 0.04 
+Mem(Kb): 19692
+
+(Node (Leaf (),1,Node (Node (Leaf (),0,Leaf ()),3,Leaf ())),2) -> Node (Leaf (),1,Node (Node (Leaf (),0,Node (Leaf (),2,Leaf ())),3,Leaf ()));
+(Leaf (), 0) -> Node (Leaf (), 0, Leaf ());
+
+=================================
+fix (f : tree * nat -> tree) =
+  fun (x:tree * nat) ->
+    match x . 0 with
+      | Leaf _ -> Node (x . 0, x . 1, x . 0)
+      | Node _ -> Node (Un_Node (x . 0) . 0, 1,
+                         Node (Node (Un_Node (x . 0) . 0, 0,
+                                      f (Un_Node (x . 0) . 0, x . 1)),
+                                S (x . 1), Un_Node (x . 0) . 0))
+
+0.0680 false
+Time(s): 0.09 
+Mem(Kb): 29924
+
+(Node (Node (Leaf (),3,Node (Leaf (),1,Leaf ())),0,Leaf ()),0) -> Node (Node (Leaf (),3,Node (Leaf (),1,Leaf ())),0,Leaf ());
+(Leaf (), 0) -> Node (Leaf (), 0, Leaf ());
+
+=================================
+fix (f : tree * nat -> tree) =
+  fun (x:tree * nat) ->
+    match x . 0 with
+      | Leaf _ -> Node (x . 0, x . 1, x . 0)
+      | Node _ -> x . 0
+
+0.0109 false
+Time(s): 0.03 
+Mem(Kb): 17820
+
+(Node (Node (Leaf (),2,Node (Leaf (),2,Leaf ())),1,Leaf ()),3) -> Node (Node (Leaf (),2,Node (Leaf (),2,Leaf ())),1,Node (Leaf (),3,Leaf ()));
+(Leaf (), 0) -> Node (Leaf (), 0, Leaf ());
+
+=================================
+fix (f : tree * nat -> tree) =
+  fun (x:tree * nat) ->
+    match x . 0 with
+      | Leaf _ -> Node (x . 0, x . 1, x . 0)
+      | Node _ -> Node (Un_Node (x . 0) . 0, Un_Node (x . 0) . 1,
+                         f (Un_Node (x . 0) . 2, x . 1))
+
+0.0561 false
+Time(s): 0.08 
+Mem(Kb): 32384
+
+(Node (Node (Leaf (),0,Leaf ()),0,Node (Leaf (),1,Leaf ())),2) -> Node (Node (Leaf (),0,Leaf ()),0,Node (Leaf (),1,Node (Leaf (),2,Leaf ())));
+(Leaf (), 0) -> Node (Leaf (), 0, Leaf ());
+
+=================================
+fix (f : tree * nat -> tree) =
+  fun (x:tree * nat) ->
+    match x . 0 with
+      | Leaf _ -> Node (x . 0, x . 1, x . 0)
+      | Node _ -> Node (Un_Node (x . 0) . 0, Un_Node (x . 0) . 1,
+                         f (Un_Node (x . 0) . 2, x . 1))
+
+0.0489 false
+Time(s): 0.07 
+Mem(Kb): 31056
+
+(Node (Node (Leaf (),0,Leaf ()),0,Node (Leaf (),0,Leaf ())),2) -> Node (Node (Leaf (),0,Leaf ()),0,Node (Leaf (),0,Node (Leaf (),2,Leaf ())));
+(Leaf (), 0) -> Node (Leaf (), 0, Leaf ());
+
+=================================
+fix (f : tree * nat -> tree) =
+  fun (x:tree * nat) ->
+    match x . 0 with
+      | Leaf _ -> Node (x . 0, x . 1, x . 0)
+      | Node _ -> Node (Un_Node (x . 0) . 0, Un_Node (x . 0) . 1,
+                         f (Un_Node (x . 0) . 0, x . 1))
+
+0.0288 false
+Time(s): 0.05 
+Mem(Kb): 21640
+
+(Node (Leaf (),3,Leaf ()),0) -> Node (Node (Leaf (),0,Leaf ()),3,Leaf ());
+(Leaf (), 0) -> Node (Leaf (), 0, Leaf ());
+
+=================================
+fix (f : tree * nat -> tree) =
+  fun (x:tree * nat) ->
+    match x . 0 with
+      | Leaf _ -> Node (x . 0, x . 1, x . 0)
+      | Node _ -> Node (f (Un_Node (x . 0) . 0, x . 1), Un_Node (x . 0) . 1,
+                         Un_Node (x . 0) . 0)
+
+0.0100 false
+Time(s): 0.03 
+Mem(Kb): 17220
+
+(Node (Leaf (),3,Leaf ()),3) -> Node (Leaf (),3,Leaf ());
+(Leaf (), 0) -> Node (Leaf (), 0, Leaf ());
+
+=================================
+fix (f : tree * nat -> tree) = fun (x:tree * nat) -> Node (Leaf, x . 1, Leaf)
+
+0.0040 false
+Time(s): 0.03 
+Mem(Kb): 16084
+
+(Node (Leaf (),1,Node (Leaf (),2,Leaf ())),3) -> Node (Leaf (),1,Node (Leaf (),2,Node (Leaf (),3,Leaf ())));
+(Leaf (), 0) -> Node (Leaf (), 0, Leaf ());
+
+=================================
+fix (f : tree * nat -> tree) =
+  fun (x:tree * nat) ->
+    match x . 0 with
+      | Leaf _ -> Node (x . 0, x . 1, x . 0)
+      | Node _ -> Node (Un_Node (x . 0) . 0, Un_Node (x . 0) . 1,
+                         f (Un_Node (x . 0) . 2, x . 1))
+
+0.0554 false
+Time(s): 0.08 
+Mem(Kb): 31068
+
+(Node (Leaf (),2,Leaf ()),1) -> Node (Node (Leaf (),1,Leaf ()),2,Leaf ());
+(Leaf (), 0) -> Node (Leaf (), 0, Leaf ());
+
+=================================
+fix (f : tree * nat -> tree) =
+  fun (x:tree * nat) ->
+    match x . 0 with
+      | Leaf _ -> Node (x . 0, x . 1, x . 0)
+      | Node _ -> Node (f (Un_Node (x . 0) . 0, x . 1), Un_Node (x . 0) . 1,
+                         Un_Node (x . 0) . 0)
+
+0.0316 false
+Time(s): 0.06 
+Mem(Kb): 22684
+
+(Node (Leaf (),3,Node (Leaf (),3,Node (Leaf (),1,Leaf ()))),3) -> Node (Leaf (),3,Node (Leaf (),3,Node (Leaf (),1,Leaf ())));
+(Leaf (), 0) -> Node (Leaf (), 0, Leaf ());
+
+=================================
+fix (f : tree * nat -> tree) =
+  fun (x:tree * nat) ->
+    match x . 0 with
+      | Leaf _ -> Node (x . 0, x . 1, x . 0)
+      | Node _ -> x . 0
+
+0.0709 false
+Time(s): 0.10 
+Mem(Kb): 36216
+
+(Node (Node (Leaf (),2,Node (Leaf (),1,Leaf ())),3,Leaf ()),2) -> Node (Node (Leaf (),2,Node (Leaf (),1,Leaf ())),3,Leaf ());
+(Leaf (), 0) -> Node (Leaf (), 0, Leaf ());
+
+=================================
+fix (f : tree * nat -> tree) =
+  fun (x:tree * nat) ->
+    match x . 0 with
+      | Leaf _ -> Node (x . 0, x . 1, x . 0)
+      | Node _ -> x . 0
+
+0.0663 false
+Time(s): 0.09 
+Mem(Kb): 36028
+
+(Node (Node (Node (Leaf (),1,Leaf ()),0,Leaf ()),3,Leaf ()),3) -> Node (Node (Node (Leaf (),1,Leaf ()),0,Leaf ()),3,Leaf ());
+(Leaf (), 0) -> Node (Leaf (), 0, Leaf ());
+
+=================================
+fix (f : tree * nat -> tree) =
+  fun (x:tree * nat) ->
+    match x . 0 with
+      | Leaf _ -> Node (x . 0, x . 1, x . 0)
+      | Node _ -> x . 0
+
+0.0685 false
+Time(s): 0.09 
+Mem(Kb): 35984
+
+(Node (Leaf (),0,Leaf ()),3) -> Node (Leaf (),0,Node (Leaf (),3,Leaf ()));
+(Leaf (), 0) -> Node (Leaf (), 0, Leaf ());
+
+=================================
+fix (f : tree * nat -> tree) =
+  fun (x:tree * nat) ->
+    match x . 0 with
+      | Leaf _ -> Node (x . 0, x . 1, x . 0)
+      | Node _ -> Node (Un_Node (x . 0) . 0, Un_Node (x . 0) . 1,
+                         f (Un_Node (x . 0) . 0, x . 1))
+
+0.0337 false
+Time(s): 0.06 
+Mem(Kb): 26568
+
+(Node (Node (Leaf (),2,Leaf ()),3,Node (Leaf (),0,Leaf ())),2) -> Node (Node (Leaf (),2,Leaf ()),3,Node (Leaf (),0,Leaf ()));
+(Leaf (), 0) -> Node (Leaf (), 0, Leaf ());
+
+=================================
+fix (f : tree * nat -> tree) =
+  fun (x:tree * nat) ->
+    match x . 0 with
+      | Leaf _ -> Node (x . 0, x . 1, x . 0)
+      | Node _ -> x . 0
+
+0.0728 false
+Time(s): 0.10 
+Mem(Kb): 35808
+
+(Node (Node (Node (Leaf (),2,Leaf ()),1,Leaf ()),0,Leaf ()),2) -> Node (Node (Node (Leaf (),2,Leaf ()),1,Leaf ()),0,Node (Leaf (),2,Leaf ()));
+(Leaf (), 0) -> Node (Leaf (), 0, Leaf ());
+
+=================================
+fix (f : tree * nat -> tree) =
+  fun (x:tree * nat) ->
+    match x . 0 with
+      | Leaf _ -> Node (x . 0, x . 1, x . 0)
+      | Node _ -> Node (Un_Node (x . 0) . 0, Un_Node (x . 0) . 1,
+                         f (Un_Node (x . 0) . 2, x . 1))
+
+0.0516 false
+Time(s): 0.08 
+Mem(Kb): 29060
+
+(Node (Leaf (),2,Node (Node (Leaf (),0,Leaf ()),1,Leaf ())),3) -> Node (Leaf (),2,Node (Node (Leaf (),0,Leaf ()),1,Node (Leaf (),3,Leaf ())));
+(Node (Leaf (),3,Node (Node (Leaf (),3,Leaf ()),2,Leaf ())),2) -> Node (Node (Leaf (),2,Leaf ()),3,Node (Node (Leaf (),3,Leaf ()),2,Leaf ()));
+(Leaf (), 0) -> Node (Leaf (), 0, Leaf ());
+
+=================================
+fix (f : tree * nat -> tree) =
+  fun (x:tree * nat) ->
+    match comp_nat (x . 1) 2 with
+      | CEq _ -> Node (Node (Leaf, x . 1, Leaf), S (x . 1),
+                        Node (Node (Leaf, S (x . 1), Leaf), x . 1, Leaf))
+      | CGt _ -> Node (Leaf, 2,
+                        Node (Node (Leaf, 0, Leaf), 1,
+                               Node (Leaf, x . 1, Leaf)))
+      | CLt _ -> Node (x . 0, x . 1, x . 0)
+
+0.1364 false
+Time(s): 0.22 
+Mem(Kb): 38844
+
+(Node (Leaf (),3,Node (Leaf (),1,Node (Leaf (),1,Leaf ()))),0) -> Node (Node (Leaf (),0,Leaf ()),3,Node (Leaf (),1,Node (Leaf (),1,Leaf ())));
+(Node (Leaf (),0,Node (Node (Leaf (),2,Leaf ()),1,Leaf ())),1) -> Node (Leaf (),0,Node (Node (Leaf (),2,Leaf ()),1,Leaf ()));
+(Leaf (), 0) -> Node (Leaf (), 0, Leaf ());
+
+=================================
+fix (f : tree * nat -> tree) =
+  fun (x:tree * nat) ->
+    match x . 0 with
+      | Leaf _ -> Node (x . 0, x . 1, x . 0)
+      | Node _ -> (match Un_Node (x . 0) . 1 with
+                     | O _ -> x . 0
+                     | S _ -> Node (f (Un_Node (x . 0) . 0, x . 1),
+                                     Un_Node (x . 0) . 1,
+                                     Un_Node (x . 0) . 2))
+
+0.0986 false
+Time(s): 0.12 
+Mem(Kb): 35856
+
+(Node (Leaf (),2,Node (Leaf (),2,Node (Leaf (),0,Leaf ()))),3) -> Node (Leaf (),2,Node (Leaf (),2,Node (Leaf (),0,Node (Leaf (),3,Leaf ()))));
+(Node (Leaf (),3,Leaf ()),0) -> Node (Node (Leaf (),0,Leaf ()),3,Leaf ());
+(Leaf (), 0) -> Node (Leaf (), 0, Leaf ());
+
+=================================
+fix (f : tree * nat -> tree) =
+  fun (x:tree * nat) ->
+    match x . 0 with
+      | Leaf _ -> Node (x . 0, x . 1, x . 0)
+      | Node _ -> (match x . 1 with
+                     | O _ -> Node (f (Un_Node (x . 0) . 0, x . 1),
+                                     Un_Node (x . 0) . 1,
+                                     Un_Node (x . 0) . 0)
+                     | S _ -> Node (Un_Node (x . 0) . 0, Un_Node (x . 0) . 1,
+                                     f (Un_Node (x . 0) . 2, x . 1)))
+
+0.1705 false
+Time(s): 0.19 
+Mem(Kb): 36196
+
+(Node (Leaf (),3,Node (Leaf (),2,Leaf ())),2) -> Node (Node (Leaf (),2,Leaf ()),3,Node (Leaf (),2,Leaf ()));
+(Node (Node (Leaf (),2,Leaf ()),0,Node (Leaf (),2,Leaf ())),1) -> Node (Node (Leaf (),2,Leaf ()),0,Node (Node (Leaf (),1,Leaf ()),2,Leaf ()));
+(Leaf (), 0) -> Node (Leaf (), 0, Leaf ());
+
+=================================
+fix (f : tree * nat -> tree) =
+  fun (x:tree * nat) ->
+    match comp_nat 1 (x . 1) with
+      | CEq _ -> Node (Node (Leaf, S (x . 1), Leaf), 0,
+                        Node (Node (Leaf, x . 1, Leaf), S (x . 1), Leaf))
+      | CGt _ -> Node (x . 0, x . 1, x . 0)
+      | CLt _ -> Node (Node (Leaf, x . 1, Leaf), S (x . 1),
+                        Node (Leaf, x . 1, Leaf))
+
+0.1367 false
+Time(s): 0.16 
+Mem(Kb): 37168
+
+(Node (Leaf (),0,Node (Leaf (),3,Leaf ())),0) -> Node (Leaf (),0,Node (Leaf (),3,Leaf ()));
+(Node (Leaf (),3,Leaf ()),0) -> Node (Node (Leaf (),0,Leaf ()),3,Leaf ());
+(Leaf (), 0) -> Node (Leaf (), 0, Leaf ());
+
+=================================
+fix (f : tree * nat -> tree) =
+  fun (x:tree * nat) ->
+    match x . 0 with
+      | Leaf _ -> Node (x . 0, x . 1, x . 0)
+      | Node _ -> (match Un_Node (x . 0) . 1 with
+                     | O _ -> x . 0
+                     | S _ -> Node (f (Un_Node (x . 0) . 0, x . 1),
+                                     Un_Node (x . 0) . 1,
+                                     Un_Node (x . 0) . 0))
+
+0.0309 false
+Time(s): 0.05 
+Mem(Kb): 20328
+
+(Node (Node (Leaf (),3,Node (Leaf (),1,Leaf ())),1,Leaf ()),3) -> Node (Node (Leaf (),3,Node (Leaf (),1,Leaf ())),1,Node (Leaf (),3,Leaf ()));
+(Node (Node (Leaf (),1,Node (Leaf (),2,Leaf ())),1,Leaf ()),2) -> Node (Node (Leaf (),1,Node (Leaf (),2,Leaf ())),1,Node (Leaf (),2,Leaf ()));
+(Leaf (), 0) -> Node (Leaf (), 0, Leaf ());
+
+=================================
+fix (f : tree * nat -> tree) =
+  fun (x:tree * nat) ->
+    match x . 0 with
+      | Leaf _ -> Node (x . 0, x . 1, x . 0)
+      | Node _ -> Node (Un_Node (x . 0) . 0, Un_Node (x . 0) . 1,
+                         f (Un_Node (x . 0) . 2, x . 1))
+
+0.1139 false
+Time(s): 0.14 
+Mem(Kb): 38432
+
+(Node (Leaf (),1,Node (Leaf (),1,Node (Leaf (),3,Leaf ()))),3) -> Node (Leaf (),1,Node (Leaf (),1,Node (Leaf (),3,Leaf ())));
+(Node (Node (Leaf (),1,Node (Leaf (),3,Leaf ())),0,Leaf ()),1) -> Node (Node (Leaf (),1,Node (Leaf (),3,Leaf ())),0,Node (Leaf (),1,Leaf ()));
+(Leaf (), 0) -> Node (Leaf (), 0, Leaf ());
+
+=================================
+fix (f : tree * nat -> tree) =
+  fun (x:tree * nat) ->
+    match comp_nat (x . 1) 1 with
+      | CEq _ -> Node (Node (Leaf, x . 1, Node (Leaf, S (S (x . 1)), Leaf)),
+                        0, Node (Leaf, x . 1, Leaf))
+      | CGt _ -> x . 0
+      | CLt _ -> Node (x . 0, x . 1, x . 0)
+
+0.1615 false
+Time(s): 0.29 
+Mem(Kb): 38560
+
+(Node (Node (Leaf (),0,Node (Leaf (),3,Leaf ())),3,Leaf ()),1) -> Node (Node (Leaf (),0,Node (Node (Leaf (),1,Leaf ()),3,Leaf ())),3,Leaf ());
+(Node (Leaf (),2,Leaf ()),2) -> Node (Leaf (),2,Leaf ());
+(Leaf (), 0) -> Node (Leaf (), 0, Leaf ());
+
+=================================
+fix (f : tree * nat -> tree) =
+  fun (x:tree * nat) ->
+    match x . 0 with
+      | Leaf _ -> Node (x . 0, x . 1, x . 0)
+      | Node _ -> (match Un_Node (x . 0) . 0 with
+                     | Leaf _ -> x . 0
+                     | Node _ -> Node (Node (Un_Node (Un_Node (x . 0) . 0) .
+                                               0,
+                                              Un_Node (Un_Node (x . 0) . 0) .
+                                                1,
+                                              Node (f
+                                                      (Un_Node (x . 0) . 2,
+                                                        x . 1),
+                                                     Un_Node (x . 0) . 1,
+                                                     Un_Node (x . 0) . 2)),
+                                        Un_Node (x . 0) . 1,
+                                        Un_Node (Un_Node (x . 0) . 0) . 0))
+
+3.6923 false
+Time(s): 3.77 
+Mem(Kb): 52356
+
+(Node (Node (Node (Leaf (),1,Leaf ()),0,Leaf ()),2,Leaf ()),1) -> Node (Node (Node (Leaf (),1,Leaf ()),0,Node (Leaf (),1,Leaf ())),2,Leaf ());
+(Node (Leaf (),3,Node (Leaf (),2,Node (Leaf (),2,Leaf ()))),1) -> Node (Node (Leaf (),1,Leaf ()),3,Node (Leaf (),2,Node (Leaf (),2,Leaf ())));
+(Leaf (), 0) -> Node (Leaf (), 0, Leaf ());
+
+=================================
+fix (f : tree * nat -> tree) =
+  fun (x:tree * nat) ->
+    match x . 0 with
+      | Leaf _ -> Node (x . 0, x . 1, x . 0)
+      | Node _ -> (match Un_Node (x . 0) . 0 with
+                     | Leaf _ -> Node (f (Un_Node (x . 0) . 0, x . 1),
+                                        Un_Node (x . 0) . 1,
+                                        Un_Node (x . 0) . 2)
+                     | Node _ -> Node (Node (Un_Node (Un_Node (x . 0) . 0) .
+                                               0,
+                                              Un_Node (Un_Node (x . 0) . 0) .
+                                                1,
+                                              Un_Node (Un_Node (x . 0) . 0) .
+                                                0),
+                                        Un_Node (x . 0) . 1,
+                                        Un_Node (Un_Node (x . 0) . 0) . 2))
+
+0.2617 false
+Time(s): 0.29 
+Mem(Kb): 33476
+
+(Node (Leaf (),1,Leaf ()),0) -> Node (Node (Leaf (),0,Leaf ()),1,Leaf ());
+(Node (Node (Leaf (),1,Leaf ()),1,Node (Leaf (),0,Leaf ())),3) -> Node (Node (Leaf (),1,Leaf ()),1,Node (Leaf (),0,Node (Leaf (),3,Leaf ())));
+(Leaf (), 0) -> Node (Leaf (), 0, Leaf ());
+
+=================================
+fix (f : tree * nat -> tree) =
+  fun (x:tree * nat) ->
+    match x . 0 with
+      | Leaf _ -> Node (x . 0, x . 1, x . 0)
+      | Node _ -> (match x . 1 with
+                     | O _ -> Node (f (Un_Node (x . 0) . 0, x . 1),
+                                     Un_Node (x . 0) . 1,
+                                     Un_Node (x . 0) . 0)
+                     | S _ -> Node (Un_Node (x . 0) . 0, Un_Node (x . 0) . 1,
+                                     f (Un_Node (x . 0) . 2, x . 1)))
+
+0.1717 false
+Time(s): 0.20 
+Mem(Kb): 36176
+
+(Node (Leaf (),0,Node (Leaf (),2,Node (Leaf (),0,Leaf ()))),0) -> Node (Leaf (),0,Node (Leaf (),2,Node (Leaf (),0,Leaf ())));
+(Node (Leaf (),0,Node (Leaf (),1,Node (Leaf (),2,Leaf ()))),2) -> Node (Leaf (),0,Node (Leaf (),1,Node (Leaf (),2,Leaf ())));
+(Node (Leaf (),1,Node (Leaf (),3,Node (Leaf (),1,Leaf ()))),2) -> Node (Leaf (),1,Node (Node (Leaf (),2,Leaf ()),3,Node (Leaf (),1,Leaf ())));
+(Leaf (), 0) -> Node (Leaf (), 0, Leaf ());
+
+=================================
+fix (f : tree * nat -> tree) =
+  fun (x:tree * nat) ->
+    match x . 0 with
+      | Leaf _ -> Node (x . 0, x . 1, x . 0)
+      | Node _ -> (match Un_Node (x . 0) . 1 with
+                     | O _ -> x . 0
+                     | S _ -> Node (Un_Node (x . 0) . 0, Un_Node (x . 0) . 1,
+                                     Node (Node (Un_Node (x . 0) . 0, 
+                                                  x . 1, Leaf),
+                                            S (x . 1),
+                                            Node (Leaf, Un_Node (x . 0) . 1,
+                                                   Leaf))))
+
+0.2967 false
+Time(s): 0.45 
+Mem(Kb): 38692
+
+(Node (Leaf (),3,Node (Leaf (),3,Leaf ())),0) -> Node (Node (Leaf (),0,Leaf ()),3,Node (Leaf (),3,Leaf ()));
+(Node (Leaf (),1,Node (Leaf (),2,Leaf ())),3) -> Node (Leaf (),1,Node (Leaf (),2,Node (Leaf (),3,Leaf ())));
+(Node (Leaf (),0,Node (Leaf (),2,Leaf ())),1) -> Node (Leaf (),0,Node (Node (Leaf (),1,Leaf ()),2,Leaf ()));
+(Leaf (), 0) -> Node (Leaf (), 0, Leaf ());
+
+=================================
+fix (f : tree * nat -> tree) =
+  fun (x:tree * nat) ->
+    match comp_nat (x . 1) 1 with
+      | CEq _ -> Node (Leaf, 0,
+                        Node (Node (Leaf, x . 1, Leaf), S (x . 1), Leaf))
+      | CGt _ -> Node (Leaf, 1, Node (Leaf, 2, Node (Leaf, x . 1, Leaf)))
+      | CLt _ -> (match x . 0 with
+                    | Leaf _ -> Node (x . 0, x . 1, x . 0)
+                    | Node _ -> Node (f (Un_Node (x . 0) . 0, x . 1),
+                                       Un_Node (x . 0) . 1,
+                                       Un_Node (x . 0) . 2))
+
+0.7860 false
+Time(s): 0.81 
+Mem(Kb): 38888
+
+(Node (Leaf (),2,Node (Node (Leaf (),2,Leaf ()),0,Leaf ())),0) -> Node (Node (Leaf (),0,Leaf ()),2,Node (Node (Leaf (),2,Leaf ()),0,Leaf ()));
+(Node (Node (Leaf (),0,Leaf ()),0,Leaf ()),2) -> Node (Node (Leaf (),0,Leaf ()),0,Node (Leaf (),2,Leaf ()));
+(Node (Leaf (),3,Node (Leaf (),0,Node (Leaf (),1,Leaf ()))),3) -> Node (Leaf (),3,Node (Leaf (),0,Node (Leaf (),1,Leaf ())));
+(Leaf (), 0) -> Node (Leaf (), 0, Leaf ());
+
+=================================
+fix (f : tree * nat -> tree) =
+  fun (x:tree * nat) ->
+    match comp_nat (x . 1) 2 with
+      | CEq _ -> Node (Node (Leaf, 0, Leaf), 0, Node (Leaf, x . 1, Leaf))
+      | CGt _ -> x . 0
+      | CLt _ -> (match x . 0 with
+                    | Leaf _ -> Node (x . 0, x . 1, x . 0)
+                    | Node _ -> Node (f (Un_Node (x . 0) . 0, x . 1),
+                                       Un_Node (x . 0) . 1,
+                                       Un_Node (x . 0) . 2))
+
+0.4287 false
+Time(s): 0.54 
+Mem(Kb): 39080
+
+(Node (Leaf (),0,Node (Node (Leaf (),0,Leaf ()),0,Leaf ())),2) -> Node (Leaf (),0,Node (Node (Leaf (),0,Leaf ()),0,Node (Leaf (),2,Leaf ())));
+(Node (Leaf (),0,Node (Node (Leaf (),3,Leaf ()),0,Leaf ())),3) -> Node (Leaf (),0,Node (Node (Leaf (),3,Leaf ()),0,Node (Leaf (),3,Leaf ())));
+(Node (Node (Leaf (),1,Leaf ()),2,Node (Leaf (),1,Leaf ())),2) -> Node (Node (Leaf (),1,Leaf ()),2,Node (Leaf (),1,Leaf ()));
+(Leaf (), 0) -> Node (Leaf (), 0, Leaf ());
+
+=================================
+fix (f : tree * nat -> tree) =
+  fun (x:tree * nat) ->
+    match x . 0 with
+      | Leaf _ -> Node (x . 0, x . 1, x . 0)
+      | Node _ -> (match Un_Node (x . 0) . 1 with
+                     | O _ -> Node (Un_Node (x . 0) . 0, Un_Node (x . 0) . 1,
+                                     f (Un_Node (x . 0) . 2, x . 1))
+                     | S _ -> x . 0)
+
+0.2546 false
+Time(s): 0.34 
+Mem(Kb): 39124
+
+(Node (Node (Node (Leaf (),2,Leaf ()),3,Leaf ()),0,Leaf ()),0) -> Node (Node (Node (Leaf (),2,Leaf ()),3,Leaf ()),0,Leaf ());
+(Node (Node (Leaf (),3,Leaf ()),3,Leaf ()),1) -> Node (Node (Node (Leaf (),1,Leaf ()),3,Leaf ()),3,Leaf ());
+(Node (Leaf (),0,Leaf ()),2) -> Node (Leaf (),0,Node (Leaf (),2,Leaf ()));
+(Leaf (), 0) -> Node (Leaf (), 0, Leaf ());
+
+=================================
+fix (f : tree * nat -> tree) =
+  fun (x:tree * nat) ->
+    match comp_nat (x . 1) 1 with
+      | CEq _ -> Node (Node (Node (Leaf, x . 1, Leaf), S (S (x . 1)), Leaf),
+                        S (S (x . 1)), Leaf)
+      | CGt _ -> Node (Leaf, 0, Node (Leaf, x . 1, Leaf))
+      | CLt _ -> (match x . 0 with
+                    | Leaf _ -> Node (x . 0, x . 1, x . 0)
+                    | Node _ -> x . 0)
+
+0.5096 false
+Time(s): 0.54 
+Mem(Kb): 38488
+
+(Node (Leaf (),1,Node (Node (Leaf (),0,Leaf ()),2,Leaf ())),3) -> Node (Leaf (),1,Node (Node (Leaf (),0,Leaf ()),2,Node (Leaf (),3,Leaf ())));
+(Node (Node (Node (Leaf (),1,Leaf ()),0,Leaf ()),1,Leaf ()),0) -> Node (Node (Node (Leaf (),1,Leaf ()),0,Leaf ()),1,Leaf ());
+(Node (Node (Node (Leaf (),3,Leaf ()),0,Leaf ()),2,Leaf ()),2) -> Node (Node (Node (Leaf (),3,Leaf ()),0,Leaf ()),2,Leaf ());
+(Leaf (), 0) -> Node (Leaf (), 0, Leaf ());
+
+=================================
+fix (f : tree * nat -> tree) =
+  fun (x:tree * nat) ->
+    match comp_nat (x . 1) 2 with
+      | CEq _ -> x . 0
+      | CGt _ -> Node (Leaf, 1,
+                        Node (Node (Leaf, 0, Leaf), 2,
+                               Node (Leaf, x . 1, Leaf)))
+      | CLt _ -> (match x . 0 with
+                    | Leaf _ -> Node (x . 0, x . 1, x . 0)
+                    | Node _ -> x . 0)
+
+0.2463 false
+Time(s): 0.28 
+Mem(Kb): 38956
+
+(Node (Leaf (),0,Leaf ()),2) -> Node (Leaf (),0,Node (Leaf (),2,Leaf ()));
+(Node (Leaf (),2,Node (Leaf (),1,Leaf ())),2) -> Node (Leaf (),2,Node (Leaf (),1,Leaf ()));
+(Node (Leaf (),3,Node (Node (Leaf (),3,Leaf ()),0,Leaf ())),3) -> Node (Leaf (),3,Node (Node (Leaf (),3,Leaf ()),0,Leaf ()));
+(Leaf (), 0) -> Node (Leaf (), 0, Leaf ());
+
+=================================
+fix (f : tree * nat -> tree) =
+  fun (x:tree * nat) ->
+    match x . 0 with
+      | Leaf _ -> Node (x . 0, x . 1, x . 0)
+      | Node _ -> (match Un_Node (x . 0) . 1 with
+                     | O _ -> Node (Un_Node (x . 0) . 0, Un_Node (x . 0) . 1,
+                                     f (Un_Node (x . 0) . 0, x . 1))
+                     | S _ -> x . 0)
+
+0.1824 false
+Time(s): 0.21 
+Mem(Kb): 38952
+
+(Node (Leaf (),2,Node (Leaf (),3,Node (Leaf (),0,Leaf ()))),3) -> Node (Leaf (),2,Node (Leaf (),3,Node (Leaf (),0,Leaf ())));
+(Node (Leaf (),3,Node (Leaf (),1,Node (Leaf (),0,Leaf ()))),2) -> Node (Node (Leaf (),2,Leaf ()),3,Node (Leaf (),1,Node (Leaf (),0,Leaf ())));
+(Node (Leaf (),2,Node (Leaf (),3,Leaf ())),0) -> Node (Node (Leaf (),0,Leaf ()),2,Node (Leaf (),3,Leaf ()));
+(Leaf (), 0) -> Node (Leaf (), 0, Leaf ());
+
+=================================
+fix (f : tree * nat -> tree) =
+  fun (x:tree * nat) ->
+    match comp_nat (x . 1) 2 with
+      | CEq _ -> Node (Node (Leaf, x . 1, Leaf), S (x . 1),
+                        Node (Leaf, 1, Node (Leaf, 0, Leaf)))
+      | CGt _ -> x . 0
+      | CLt _ -> (match x . 0 with
+                    | Leaf _ -> Node (x . 0, x . 1, x . 0)
+                    | Node _ -> Node (f (Un_Node (x . 0) . 0, x . 1),
+                                       Un_Node (x . 0) . 1,
+                                       Un_Node (x . 0) . 2))
+
+0.2269 false
+Time(s): 0.26 
+Mem(Kb): 38936
+
+(Node (Leaf (),2,Node (Leaf (),1,Node (Leaf (),2,Leaf ()))),2) -> Node (Leaf (),2,Node (Leaf (),1,Node (Leaf (),2,Leaf ())));
+(Node (Node (Leaf (),3,Leaf ()),0,Leaf ()),3) -> Node (Node (Leaf (),3,Leaf ()),0,Node (Leaf (),3,Leaf ()));
+(Node (Node (Leaf (),3,Leaf ()),1,Node (Leaf (),3,Leaf ())),2) -> Node (Node (Leaf (),3,Leaf ()),1,Node (Node (Leaf (),2,Leaf ()),3,Leaf ()));
+(Leaf (), 0) -> Node (Leaf (), 0, Leaf ());
+
+=================================
+fix (f : tree * nat -> tree) =
+  fun (x:tree * nat) ->
+    match x . 0 with
+      | Leaf _ -> Node (x . 0, x . 1, x . 0)
+      | Node _ -> (match comp_nat 1 (Un_Node (x . 0) . 1) with
+                     | CEq _ -> Node (Un_Node (x . 0) . 0,
+                                       Un_Node (x . 0) . 1,
+                                       Node (Node (Leaf, x . 1, Leaf),
+                                              S (x . 1), Leaf))
+                     | CGt _ -> Node (Un_Node (x . 0) . 0,
+                                       Un_Node (x . 0) . 1,
+                                       Un_Node (x . 0) . 0)
+                     | CLt _ -> x . 0)
+
+0.5172 false
+Time(s): 0.55 
+Mem(Kb): 39292
+
+(Node (Leaf (),2,Node (Node (Leaf (),3,Leaf ()),1,Leaf ())),1) -> Node (Node (Leaf (),1,Leaf ()),2,Node (Node (Leaf (),3,Leaf ()),1,Leaf ()));
+(Node (Node (Node (Leaf (),1,Leaf ()),3,Leaf ()),2,Leaf ()),3) -> Node (Node (Node (Leaf (),1,Leaf ()),3,Leaf ()),2,Node (Leaf (),3,Leaf ()));
+(Node (Leaf (),2,Node (Leaf (),2,Node (Leaf (),1,Leaf ()))),3) -> Node (Leaf (),2,Node (Leaf (),2,Node (Leaf (),1,Node (Leaf (),3,Leaf ()))));
+(Leaf (), 0) -> Node (Leaf (), 0, Leaf ());
+
+=================================
+None
+(Node (Leaf (),2,Node (Leaf (),1,Leaf ())),0) -> Node (Node (Leaf (),0,Leaf ()),2,Node (Leaf (),1,Leaf ()));
+(Node (Leaf (),0,Leaf ()),2) -> Node (Leaf (),0,Node (Leaf (),2,Leaf ()));
+(Node (Leaf (),2,Node (Leaf (),1,Node (Leaf (),0,Leaf ()))),1) -> Node (Node (Leaf (),1,Leaf ()),2,Node (Leaf (),1,Node (Leaf (),0,Leaf ())));
+(Node (Node (Leaf (),0,Node (Leaf (),2,Leaf ())),2,Leaf ()),0) -> Node (Node (Leaf (),0,Node (Leaf (),2,Leaf ())),2,Leaf ());
+(Leaf (), 0) -> Node (Leaf (), 0, Leaf ());
+
+=================================
+fix (f : tree * nat -> tree) =
+  fun (x:tree * nat) ->
+    match x . 0 with
+      | Leaf _ -> Node (x . 0, x . 1, x . 0)
+      | Node _ -> (match Un_Node (x . 0) . 1 with
+                     | O _ -> Node (Un_Node (x . 0) . 0, Un_Node (x . 0) . 1,
+                                     f (Un_Node (x . 0) . 0, x . 1))
+                     | S _ -> (match Un_Node (x . 0) . 2 with
+                                 | Leaf _ -> x . 0
+                                 | Node _ -> Node (f
+                                                     (Un_Node (x . 0) . 0,
+                                                       x . 1),
+                                                    Un_Node (x . 0) . 1,
+                                                    Un_Node (x . 0) . 2)))
+
+6.8156 false
+Time(s): 6.84 
+Mem(Kb): 38720
+
+(Node (Node (Leaf (),1,Node (Leaf (),0,Leaf ())),3,Leaf ()),1) -> Node (Node (Leaf (),1,Node (Leaf (),0,Leaf ())),3,Leaf ());
+(Node (Leaf (),2,Node (Leaf (),1,Node (Leaf (),3,Leaf ()))),1) -> Node (Node (Leaf (),1,Leaf ()),2,Node (Leaf (),1,Node (Leaf (),3,Leaf ())));
+(Node (Node (Node (Leaf (),1,Leaf ()),3,Leaf ()),2,Leaf ()),3) -> Node (Node (Node (Leaf (),1,Leaf ()),3,Leaf ()),2,Node (Leaf (),3,Leaf ()));
+(Node (Node (Node (Leaf (),1,Leaf ()),1,Leaf ()),1,Leaf ()),3) -> Node (Node (Node (Leaf (),1,Leaf ()),1,Leaf ()),1,Node (Leaf (),3,Leaf ()));
+(Leaf (), 0) -> Node (Leaf (), 0, Leaf ());
+
+=================================
+fix (f : tree * nat -> tree) =
+  fun (x:tree * nat) ->
+    match x . 0 with
+      | Leaf _ -> Node (x . 0, x . 1, x . 0)
+      | Node _ -> (match comp_nat S (x . 1) (Un_Node (x . 0) . 1) with
+                     | CEq _ -> Node (f (Un_Node (x . 0) . 0, x . 1),
+                                       Un_Node (x . 0) . 1,
+                                       Un_Node (x . 0) . 2)
+                     | CGt _ -> Node (Un_Node (x . 0) . 0,
+                                       Un_Node (x . 0) . 1,
+                                       f (Un_Node (x . 0) . 2, x . 1))
+                     | CLt _ -> x . 0)
+
+0.4042 false
+Time(s): 0.43 
+Mem(Kb): 39320
+
+(Node (Node (Leaf (),2,Node (Leaf (),0,Leaf ())),0,Leaf ()),1) -> Node (Node (Leaf (),2,Node (Leaf (),0,Leaf ())),0,Node (Leaf (),1,Leaf ()));
+(Node (Node (Leaf (),3,Leaf ()),2,Leaf ()),1) -> Node (Node (Node (Leaf (),1,Leaf ()),3,Leaf ()),2,Leaf ());
+(Node (Node (Leaf (),2,Leaf ()),3,Leaf ()),3) -> Node (Node (Leaf (),2,Leaf ()),3,Leaf ());
+(Node (Leaf (),3,Leaf ()),3) -> Node (Leaf (),3,Leaf ());
+(Leaf (), 0) -> Node (Leaf (), 0, Leaf ());
+
+=================================
+fix (f : tree * nat -> tree) =
+  fun (x:tree * nat) ->
+    match x . 0 with
+      | Leaf _ -> Node (x . 0, x . 1, x . 0)
+      | Node _ -> (match comp_nat (x . 1) (Un_Node (x . 0) . 1) with
+                     | CEq _ -> x . 0
+                     | CGt _ -> Node (Un_Node (x . 0) . 0,
+                                       Un_Node (x . 0) . 1,
+                                       f (Un_Node (x . 0) . 2, x . 1))
+                     | CLt _ -> Node (f (Un_Node (x . 0) . 0, x . 1),
+                                       Un_Node (x . 0) . 1,
+                                       Un_Node (x . 0) . 2))
+
+0.7666 true
+Time(s): 0.79 
+Mem(Kb): 39044
+
+(Node (Leaf (),0,Node (Node (Leaf (),1,Leaf ()),3,Leaf ())),2) -> Node (Leaf (),0,Node (Node (Leaf (),1,Node (Leaf (),2,Leaf ())),3,Leaf ()));
+(Node (Leaf (),0,Node (Leaf (),2,Leaf ())),2) -> Node (Leaf (),0,Node (Leaf (),2,Leaf ()));
+(Node (Leaf (),2,Node (Leaf (),2,Leaf ())),0) -> Node (Node (Leaf (),0,Leaf ()),2,Node (Leaf (),2,Leaf ()));
+(Node (Node (Leaf (),2,Node (Leaf (),0,Leaf ())),1,Leaf ()),3) -> Node (Node (Leaf (),2,Node (Leaf (),0,Leaf ())),1,Node (Leaf (),3,Leaf ()));
+(Leaf (), 0) -> Node (Leaf (), 0, Leaf ());
+
+=================================
+None
+(Node (Node (Leaf (),3,Leaf ()),0,Leaf ()),3) -> Node (Node (Leaf (),3,Leaf ()),0,Node (Leaf (),3,Leaf ()));
+(Node (Leaf (),3,Node (Leaf (),2,Node (Leaf (),2,Leaf ()))),0) -> Node (Node (Leaf (),0,Leaf ()),3,Node (Leaf (),2,Node (Leaf (),2,Leaf ())));
+(Node (Node (Leaf (),1,Node (Leaf (),0,Leaf ())),3,Leaf ()),0) -> Node (Node (Node (Leaf (),0,Leaf ()),1,Node (Leaf (),0,Leaf ())),3,Leaf ());
+(Node (Node (Leaf (),1,Leaf ()),0,Node (Leaf (),1,Leaf ())),2) -> Node (Node (Leaf (),1,Leaf ()),0,Node (Leaf (),1,Node (Leaf (),2,Leaf ())));
+(Leaf (), 0) -> Node (Leaf (), 0, Leaf ());
+
+=================================
+fix (f : tree * nat -> tree) =
+  fun (x:tree * nat) ->
+    match x . 0 with
+      | Leaf _ -> Node (x . 0, x . 1, x . 0)
+      | Node _ -> (match x . 1 with
+                     | O _ -> Node (f (Un_Node (x . 0) . 0, x . 1),
+                                     Un_Node (x . 0) . 1,
+                                     Un_Node (x . 0) . 2)
+                     | S _ -> Node (Un_Node (x . 0) . 0, Un_Node (x . 0) . 1,
+                                     f (Un_Node (x . 0) . 2, x . 1)))
+
+0.5091 false
+Time(s): 0.53 
+Mem(Kb): 39240
+
+(Node (Node (Leaf (),0,Node (Leaf (),0,Leaf ())),2,Leaf ()),0) -> Node (Node (Leaf (),0,Node (Leaf (),0,Leaf ())),2,Leaf ());
+(Node (Node (Leaf (),3,Node (Leaf (),3,Leaf ())),1,Leaf ()),1) -> Node (Node (Leaf (),3,Node (Leaf (),3,Leaf ())),1,Leaf ());
+(Node (Node (Node (Leaf (),2,Leaf ()),1,Leaf ()),2,Leaf ()),3) -> Node (Node (Node (Leaf (),2,Leaf ()),1,Leaf ()),2,Node (Leaf (),3,Leaf ()));
+(Node (Node (Node (Leaf (),2,Leaf ()),1,Leaf ()),2,Leaf ()),0) -> Node (Node (Node (Node (Leaf (),0,Leaf ()),2,Leaf ()),1,Leaf ()),2,Leaf ());
+(Leaf (), 0) -> Node (Leaf (), 0, Leaf ());
+
+=================================
+fix (f : tree * nat -> tree) =
+  fun (x:tree * nat) ->
+    match x . 0 with
+      | Leaf _ -> Node (x . 0, x . 1, x . 0)
+      | Node _ -> (match comp_nat (x . 1) (Un_Node (x . 0) . 1) with
+                     | CEq _ -> x . 0
+                     | CGt _ -> Node (Un_Node (x . 0) . 0,
+                                       Un_Node (x . 0) . 1,
+                                       f (Un_Node (x . 0) . 2, x . 1))
+                     | CLt _ -> Node (f (Un_Node (x . 0) . 0, x . 1),
+                                       Un_Node (x . 0) . 1,
+                                       Un_Node (x . 0) . 2))
+
+0.2861 true
+Time(s): 0.31 
+Mem(Kb): 38996
+
+(Node (Leaf (),1,Leaf ()),2) -> Node (Leaf (),1,Node (Leaf (),2,Leaf ()));
+(Node (Node (Node (Leaf (),2,Leaf ()),3,Leaf ()),2,Leaf ()),3) -> Node (Node (Node (Leaf (),2,Leaf ()),3,Leaf ()),2,Node (Leaf (),3,Leaf ()));
+(Node (Node (Leaf (),1,Node (Leaf (),1,Leaf ())),3,Leaf ()),1) -> Node (Node (Leaf (),1,Node (Leaf (),1,Leaf ())),3,Leaf ());
+(Node (Leaf (),1,Node (Leaf (),0,Node (Leaf (),0,Leaf ()))),2) -> Node (Leaf (),1,Node (Leaf (),0,Node (Leaf (),0,Node (Leaf (),2,Leaf ()))));
+(Leaf (), 0) -> Node (Leaf (), 0, Leaf ());
+
+=================================
+fix (f : tree * nat -> tree) =
+  fun (x:tree * nat) ->
+    match x . 0 with
+      | Leaf _ -> Node (x . 0, x . 1, x . 0)
+      | Node _ -> (match Un_Node (x . 0) . 2 with
+                     | Leaf _ -> (match comp_nat (x . 1) 2 with
+                                    | CEq _ -> Node (Un_Node (x . 0) . 0,
+                                                      Un_Node (x . 0) . 1,
+                                                      f
+                                                        (Un_Node (x . 0) . 0,
+                                                          x . 1))
+                                    | CGt _ -> Node (Un_Node (x . 0) . 0,
+                                                      Un_Node (x . 0) . 1,
+                                                      f
+                                                        (Un_Node (x . 0) . 2,
+                                                          x . 1))
+                                    | CLt _ -> x . 0)
+                     | Node _ -> Node (Un_Node (x . 0) . 0,
+                                        Un_Node (x . 0) . 1,
+                                        f (Un_Node (x . 0) . 2, x . 1)))
+
+1.9660 false
+Time(s): 1.99 
+Mem(Kb): 39372
+
+(Node (Node (Leaf (),2,Node (Leaf (),0,Leaf ())),1,Leaf ()),3) -> Node (Node (Leaf (),2,Node (Leaf (),0,Leaf ())),1,Node (Leaf (),3,Leaf ()));
+(Node (Node (Leaf (),3,Leaf ()),1,Leaf ()),1) -> Node (Node (Leaf (),3,Leaf ()),1,Leaf ());
+(Node (Node (Leaf (),2,Leaf ()),3,Node (Leaf (),2,Leaf ())),0) -> Node (Node (Node (Leaf (),0,Leaf ()),2,Leaf ()),3,Node (Leaf (),2,Leaf ()));
+(Node (Node (Node (Leaf (),2,Leaf ()),0,Leaf ()),0,Leaf ()),0) -> Node (Node (Node (Leaf (),2,Leaf ()),0,Leaf ()),0,Leaf ());
+(Leaf (), 0) -> Node (Leaf (), 0, Leaf ());
+
+=================================
+fix (f : tree * nat -> tree) =
+  fun (x:tree * nat) ->
+    match x . 0 with
+      | Leaf _ -> Node (x . 0, x . 1, x . 0)
+      | Node _ -> (match comp_nat (x . 1) (Un_Node (x . 0) . 1) with
+                     | CEq _ -> x . 0
+                     | CGt _ -> Node (Un_Node (x . 0) . 0,
+                                       Un_Node (x . 0) . 1,
+                                       f (Un_Node (x . 0) . 2, x . 1))
+                     | CLt _ -> Node (f (Un_Node (x . 0) . 0, x . 1),
+                                       Un_Node (x . 0) . 1,
+                                       Un_Node (x . 0) . 0))
+
+0.4043 false
+Time(s): 0.43 
+Mem(Kb): 39200
+
+(Node (Node (Node (Leaf (),3,Leaf ()),2,Leaf ()),2,Leaf ()),1) -> Node (Node (Node (Node (Leaf (),1,Leaf ()),3,Leaf ()),2,Leaf ()),2,Leaf ());
+(Node (Leaf (),1,Leaf ()),3) -> Node (Leaf (),1,Node (Leaf (),3,Leaf ()));
+(Node (Node (Leaf (),3,Leaf ()),1,Leaf ()),1) -> Node (Node (Leaf (),3,Leaf ()),1,Leaf ());
+(Node (Node (Leaf (),1,Leaf ()),3,Leaf ()),3) -> Node (Node (Leaf (),1,Leaf ()),3,Leaf ());
+(Leaf (), 0) -> Node (Leaf (), 0, Leaf ());
+
+=================================
+fix (f : tree * nat -> tree) =
+  fun (x:tree * nat) ->
+    match x . 0 with
+      | Leaf _ -> Node (x . 0, x . 1, x . 0)
+      | Node _ -> (match comp_nat (x . 1) (Un_Node (x . 0) . 1) with
+                     | CEq _ -> x . 0
+                     | CGt _ -> Node (Un_Node (x . 0) . 0,
+                                       Un_Node (x . 0) . 1,
+                                       f (Un_Node (x . 0) . 0, x . 1))
+                     | CLt _ -> Node (f (Un_Node (x . 0) . 0, x . 1),
+                                       Un_Node (x . 0) . 1,
+                                       Un_Node (x . 0) . 2))
+
+0.3595 false
+Time(s): 0.38 
+Mem(Kb): 39036
+
+(Node (Node (Leaf (),0,Leaf ()),0,Leaf ()),2) -> Node (Node (Leaf (),0,Leaf ()),0,Node (Leaf (),2,Leaf ()));
+(Node (Leaf (),3,Node (Leaf (),0,Node (Leaf (),3,Leaf ()))),1) -> Node (Node (Leaf (),1,Leaf ()),3,Node (Leaf (),0,Node (Leaf (),3,Leaf ())));
+(Node (Node (Leaf (),1,Leaf ()),0,Leaf ()),1) -> Node (Node (Leaf (),1,Leaf ()),0,Node (Leaf (),1,Leaf ()));
+(Node (Node (Node (Leaf (),2,Leaf ()),3,Leaf ()),1,Leaf ()),1) -> Node (Node (Node (Leaf (),2,Leaf ()),3,Leaf ()),1,Leaf ());
+(Leaf (), 0) -> Node (Leaf (), 0, Leaf ());
+
+=================================
+fix (f : tree * nat -> tree) =
+  fun (x:tree * nat) ->
+    match x . 0 with
+      | Leaf _ -> Node (x . 0, x . 1, x . 0)
+      | Node _ -> (match comp_nat 1 (Un_Node (x . 0) . 1) with
+                     | CEq _ -> x . 0
+                     | CGt _ -> Node (Un_Node (x . 0) . 0,
+                                       Un_Node (x . 0) . 1,
+                                       f (Un_Node (x . 0) . 2, x . 1))
+                     | CLt _ -> Node (f (Un_Node (x . 0) . 0, x . 1),
+                                       Un_Node (x . 0) . 1,
+                                       Un_Node (x . 0) . 2))
+
+0.4225 false
+Time(s): 0.45 
+Mem(Kb): 38956
+
+(Node (Node (Leaf (),1,Leaf ()),1,Leaf ()),3) -> Node (Node (Leaf (),1,Leaf ()),1,Node (Leaf (),3,Leaf ()));
+(Node (Node (Leaf (),0,Node (Leaf (),1,Leaf ())),3,Leaf ()),2) -> Node (Node (Leaf (),0,Node (Leaf (),1,Node (Leaf (),2,Leaf ()))),3,Leaf ());
+(Node (Node (Leaf (),1,Node (Leaf (),2,Leaf ())),1,Leaf ()),2) -> Node (Node (Leaf (),1,Node (Leaf (),2,Leaf ())),1,Node (Leaf (),2,Leaf ()));
+(Node (Leaf (),3,Node (Node (Leaf (),3,Leaf ()),2,Leaf ())),3) -> Node (Leaf (),3,Node (Node (Leaf (),3,Leaf ()),2,Leaf ()));
+(Node (Leaf (),0,Node (Node (Leaf (),2,Leaf ()),0,Leaf ())),0) -> Node (Leaf (),0,Node (Node (Leaf (),2,Leaf ()),0,Leaf ()));
+(Leaf (), 0) -> Node (Leaf (), 0, Leaf ());
+
+=================================
+fix (f : tree * nat -> tree) =
+  fun (x:tree * nat) ->
+    match x . 0 with
+      | Leaf _ -> Node (x . 0, x . 1, x . 0)
+      | Node _ -> (match comp_nat (x . 1) (Un_Node (x . 0) . 1) with
+                     | CEq _ -> x . 0
+                     | CGt _ -> Node (Un_Node (x . 0) . 0,
+                                       Un_Node (x . 0) . 1,
+                                       f (Un_Node (x . 0) . 2, x . 1))
+                     | CLt _ -> Node (f (Un_Node (x . 0) . 0, x . 1),
+                                       Un_Node (x . 0) . 1,
+                                       Un_Node (x . 0) . 2))
+
+0.4077 true
+Time(s): 0.43 
+Mem(Kb): 39336
+
+(Node (Leaf (),0,Node (Leaf (),0,Leaf ())),0) -> Node (Leaf (),0,Node (Leaf (),0,Leaf ()));
+(Node (Node (Node (Leaf (),0,Leaf ()),2,Leaf ()),0,Leaf ()),0) -> Node (Node (Node (Leaf (),0,Leaf ()),2,Leaf ()),0,Leaf ());
+(Node (Node (Node (Leaf (),2,Leaf ()),0,Leaf ()),0,Leaf ()),3) -> Node (Node (Node (Leaf (),2,Leaf ()),0,Leaf ()),0,Node (Leaf (),3,Leaf ()));
+(Node (Node (Node (Leaf (),1,Leaf ()),2,Leaf ()),1,Leaf ()),0) -> Node (Node (Node (Node (Leaf (),0,Leaf ()),1,Leaf ()),2,Leaf ()),1,Leaf ());
+(Node (Leaf (),3,Node (Leaf (),3,Node (Leaf (),0,Leaf ()))),2) -> Node (Node (Leaf (),2,Leaf ()),3,Node (Leaf (),3,Node (Leaf (),0,Leaf ())));
+(Leaf (), 0) -> Node (Leaf (), 0, Leaf ());
+
+=================================
+fix (f : tree * nat -> tree) =
+  fun (x:tree * nat) ->
+    match x . 0 with
+      | Leaf _ -> Node (x . 0, x . 1, x . 0)
+      | Node _ -> (match comp_nat (x . 1) (Un_Node (x . 0) . 1) with
+                     | CEq _ -> x . 0
+                     | CGt _ -> Node (Un_Node (x . 0) . 0,
+                                       Un_Node (x . 0) . 1,
+                                       f (Un_Node (x . 0) . 2, x . 1))
+                     | CLt _ -> Node (f (Un_Node (x . 0) . 0, x . 1),
+                                       Un_Node (x . 0) . 1,
+                                       Un_Node (x . 0) . 2))
+
+0.3957 true
+Time(s): 0.42 
+Mem(Kb): 39356
+
+(Node (Node (Leaf (),2,Leaf ()),2,Node (Leaf (),2,Leaf ())),0) -> Node (Node (Node (Leaf (),0,Leaf ()),2,Leaf ()),2,Node (Leaf (),2,Leaf ()));
+(Node (Leaf (),3,Node (Leaf (),3,Node (Leaf (),2,Leaf ()))),1) -> Node (Node (Leaf (),1,Leaf ()),3,Node (Leaf (),3,Node (Leaf (),2,Leaf ())));
+(Node (Leaf (),0,Node (Leaf (),2,Leaf ())),1) -> Node (Leaf (),0,Node (Node (Leaf (),1,Leaf ()),2,Leaf ()));
+(Node (Leaf (),0,Node (Leaf (),0,Leaf ())),3) -> Node (Leaf (),0,Node (Leaf (),0,Node (Leaf (),3,Leaf ())));
+(Node (Leaf (),2,Node (Node (Leaf (),3,Leaf ()),2,Leaf ())),3) -> Node (Leaf (),2,Node (Node (Leaf (),3,Leaf ()),2,Node (Leaf (),3,Leaf ())));
+(Leaf (), 0) -> Node (Leaf (), 0, Leaf ());
+
+=================================
+fix (f : tree * nat -> tree) =
+  fun (x:tree * nat) ->
+    match x . 0 with
+      | Leaf _ -> Node (x . 0, x . 1, x . 0)
+      | Node _ -> (match comp_nat (x . 1) S (Un_Node (x . 0) . 1) with
+                     | CEq _ -> Node (Un_Node (x . 0) . 0,
+                                       Un_Node (x . 0) . 1,
+                                       f (Un_Node (x . 0) . 2, x . 1))
+                     | CGt _ -> Node (Un_Node (x . 0) . 0,
+                                       Un_Node (x . 0) . 1,
+                                       f (Un_Node (x . 0) . 2, x . 1))
+                     | CLt _ -> Node (f (Un_Node (x . 0) . 0, x . 1),
+                                       Un_Node (x . 0) . 1,
+                                       Un_Node (x . 0) . 2))
+
+0.8090 false
+Time(s): 0.83 
+Mem(Kb): 39360
+
+(Node (Leaf (),0,Leaf ()),0) -> Node (Leaf (),0,Leaf ());
+(Node (Node (Leaf (),0,Leaf ()),0,Node (Leaf (),1,Leaf ())),2) -> Node (Node (Leaf (),0,Leaf ()),0,Node (Leaf (),1,Node (Leaf (),2,Leaf ())));
+(Node (Node (Leaf (),1,Leaf ()),1,Leaf ()),2) -> Node (Node (Leaf (),1,Leaf ()),1,Node (Leaf (),2,Leaf ()));
+(Node (Node (Leaf (),1,Node (Leaf (),0,Leaf ())),1,Leaf ()),3) -> Node (Node (Leaf (),1,Node (Leaf (),0,Leaf ())),1,Node (Leaf (),3,Leaf ()));
+(Node (Leaf (),0,Node (Leaf (),3,Leaf ())),3) -> Node (Leaf (),0,Node (Leaf (),3,Leaf ()));
+(Leaf (), 0) -> Node (Leaf (), 0, Leaf ());
+
+=================================
+fix (f : tree * nat -> tree) =
+  fun (x:tree * nat) ->
+    match x . 0 with
+      | Leaf _ -> Node (x . 0, x . 1, x . 0)
+      | Node _ -> (match comp_nat (x . 1) S (Un_Node (x . 0) . 1) with
+                     | CEq _ -> Node (Un_Node (x . 0) . 0,
+                                       Un_Node (x . 0) . 1,
+                                       f (Un_Node (x . 0) . 2, x . 1))
+                     | CGt _ -> Node (Un_Node (x . 0) . 0,
+                                       Un_Node (x . 0) . 1,
+                                       f (Un_Node (x . 0) . 2, x . 1))
+                     | CLt _ -> x . 0)
+
+0.5007 false
+Time(s): 0.52 
+Mem(Kb): 39336
+
+(Node (Node (Leaf (),1,Node (Leaf (),3,Leaf ())),0,Leaf ()),1) -> Node (Node (Leaf (),1,Node (Leaf (),3,Leaf ())),0,Node (Leaf (),1,Leaf ()));
+(Node (Leaf (),0,Node (Node (Leaf (),2,Leaf ()),2,Leaf ())),0) -> Node (Leaf (),0,Node (Node (Leaf (),2,Leaf ()),2,Leaf ()));
+(Node (Leaf (),0,Node (Leaf (),1,Leaf ())),0) -> Node (Leaf (),0,Node (Leaf (),1,Leaf ()));
+(Node (Leaf (),3,Node (Leaf (),2,Leaf ())),3) -> Node (Leaf (),3,Node (Leaf (),2,Leaf ()));
+(Node (Node (Leaf (),3,Leaf ()),2,Node (Leaf (),0,Leaf ())),0) -> Node (Node (Node (Leaf (),0,Leaf ()),3,Leaf ()),2,Node (Leaf (),0,Leaf ()));
+(Leaf (), 0) -> Node (Leaf (), 0, Leaf ());
+
+=================================
+fix (f : tree * nat -> tree) =
+  fun (x:tree * nat) ->
+    match x . 0 with
+      | Leaf _ -> Node (x . 0, x . 1, x . 0)
+      | Node _ -> (match comp_nat (x . 1) (Un_Node (x . 0) . 1) with
+                     | CEq _ -> x . 0
+                     | CGt _ -> Node (Un_Node (x . 0) . 0,
+                                       Un_Node (x . 0) . 1,
+                                       f (Un_Node (x . 0) . 2, x . 1))
+                     | CLt _ -> Node (f (Un_Node (x . 0) . 0, x . 1),
+                                       Un_Node (x . 0) . 1,
+                                       Un_Node (x . 0) . 2))
+
+0.9636 true
+Time(s): 0.99 
+Mem(Kb): 39312
+
+(Node (Node (Leaf (),2,Leaf ()),2,Node (Leaf (),3,Leaf ())),0) -> Node (Node (Node (Leaf (),0,Leaf ()),2,Leaf ()),2,Node (Leaf (),3,Leaf ()));
+(Node (Node (Leaf (),2,Node (Leaf (),2,Leaf ())),0,Leaf ()),2) -> Node (Node (Leaf (),2,Node (Leaf (),2,Leaf ())),0,Node (Leaf (),2,Leaf ()));
+(Node (Leaf (),0,Node (Leaf (),2,Leaf ())),1) -> Node (Leaf (),0,Node (Node (Leaf (),1,Leaf ()),2,Leaf ()));
+(Node (Leaf (),2,Node (Leaf (),0,Leaf ())),2) -> Node (Leaf (),2,Node (Leaf (),0,Leaf ()));
+(Node (Node (Leaf (),1,Node (Leaf (),3,Leaf ())),2,Leaf ()),0) -> Node (Node (Node (Leaf (),0,Leaf ()),1,Node (Leaf (),3,Leaf ())),2,Leaf ());
+(Leaf (), 0) -> Node (Leaf (), 0, Leaf ());
+
+=================================
+fix (f : tree * nat -> tree) =
+  fun (x:tree * nat) ->
+    match x . 0 with
+      | Leaf _ -> Node (x . 0, x . 1, x . 0)
+      | Node _ -> (match comp_nat (x . 1) (Un_Node (x . 0) . 1) with
+                     | CEq _ -> x . 0
+                     | CGt _ -> Node (Un_Node (x . 0) . 0,
+                                       Un_Node (x . 0) . 1,
+                                       f (Un_Node (x . 0) . 2, x . 1))
+                     | CLt _ -> Node (f (Un_Node (x . 0) . 0, x . 1),
+                                       Un_Node (x . 0) . 1,
+                                       Un_Node (x . 0) . 2))
+
+0.7068 true
+Time(s): 0.73 
+Mem(Kb): 39244
+
+(Node (Node (Leaf (),0,Node (Leaf (),0,Leaf ())),1,Leaf ()),2) -> Node (Node (Leaf (),0,Node (Leaf (),0,Leaf ())),1,Node (Leaf (),2,Leaf ()));
+(Node (Leaf (),2,Node (Node (Leaf (),3,Leaf ()),1,Leaf ())),3) -> Node (Leaf (),2,Node (Node (Leaf (),3,Leaf ()),1,Node (Leaf (),3,Leaf ())));
+(Node (Leaf (),1,Leaf ()),0) -> Node (Node (Leaf (),0,Leaf ()),1,Leaf ());
+(Node (Node (Node (Leaf (),2,Leaf ()),0,Leaf ()),0,Leaf ()),0) -> Node (Node (Node (Leaf (),2,Leaf ()),0,Leaf ()),0,Leaf ());
+(Node (Node (Leaf (),0,Node (Leaf (),1,Leaf ())),3,Leaf ()),1) -> Node (Node (Leaf (),0,Node (Leaf (),1,Leaf ())),3,Leaf ());
+(Leaf (), 0) -> Node (Leaf (), 0, Leaf ());
+
+=================================
+fix (f : tree * nat -> tree) =
+  fun (x:tree * nat) ->
+    match x . 0 with
+      | Leaf _ -> Node (x . 0, x . 1, x . 0)
+      | Node _ -> (match comp_nat (x . 1) (Un_Node (x . 0) . 1) with
+                     | CEq _ -> x . 0
+                     | CGt _ -> Node (Un_Node (x . 0) . 0,
+                                       Un_Node (x . 0) . 1,
+                                       f (Un_Node (x . 0) . 2, x . 1))
+                     | CLt _ -> Node (f (Un_Node (x . 0) . 0, x . 1),
+                                       Un_Node (x . 0) . 1,
+                                       Un_Node (x . 0) . 2))
+
+0.4265 true
+Time(s): 0.45 
+Mem(Kb): 39428
+
+(Node (Node (Leaf (),0,Node (Leaf (),0,Leaf ())),2,Leaf ()),0) -> Node (Node (Leaf (),0,Node (Leaf (),0,Leaf ())),2,Leaf ());
+(Node (Node (Leaf (),3,Node (Leaf (),0,Leaf ())),2,Leaf ()),0) -> Node (Node (Node (Leaf (),0,Leaf ()),3,Node (Leaf (),0,Leaf ())),2,Leaf ());
+(Node (Leaf (),1,Node (Node (Leaf (),2,Leaf ()),0,Leaf ())),0) -> Node (Node (Leaf (),0,Leaf ()),1,Node (Node (Leaf (),2,Leaf ()),0,Leaf ()));
+(Node (Node (Leaf (),3,Leaf ()),1,Node (Leaf (),0,Leaf ())),3) -> Node (Node (Leaf (),3,Leaf ()),1,Node (Leaf (),0,Node (Leaf (),3,Leaf ())));
+(Node (Leaf (),3,Node (Leaf (),2,Leaf ())),0) -> Node (Node (Leaf (),0,Leaf ()),3,Node (Leaf (),2,Leaf ()));
+(Leaf (), 0) -> Node (Leaf (), 0, Leaf ());
+
+=================================
+fix (f : tree * nat -> tree) =
+  fun (x:tree * nat) ->
+    match x . 0 with
+      | Leaf _ -> Node (x . 0, x . 1, x . 0)
+      | Node _ -> (match comp_nat (Un_Node (x . 0) . 1) S (x . 1) with
+                     | CEq _ -> Node (f (Un_Node (x . 0) . 0, x . 1),
+                                       Un_Node (x . 0) . 1,
+                                       Un_Node (x . 0) . 2)
+                     | CGt _ -> Node (f (Un_Node (x . 0) . 0, x . 1),
+                                       Un_Node (x . 0) . 1,
+                                       Un_Node (x . 0) . 2)
+                     | CLt _ -> Node (Un_Node (x . 0) . 0,
+                                       Un_Node (x . 0) . 1,
+                                       Node (Leaf, 0, Un_Node (x . 0) . 0)))
+
+1.5143 false
+Time(s): 1.54 
+Mem(Kb): 39344
+
+(Node (Leaf (),1,Node (Node (Leaf (),3,Leaf ()),3,Leaf ())),2) -> Node (Leaf (),1,Node (Node (Node (Leaf (),2,Leaf ()),3,Leaf ()),3,Leaf ()));
+(Node (Node (Leaf (),1,Leaf ()),3,Leaf ()),2) -> Node (Node (Leaf (),1,Node (Leaf (),2,Leaf ())),3,Leaf ());
+(Node (Node (Leaf (),1,Leaf ()),1,Node (Leaf (),1,Leaf ())),1) -> Node (Node (Leaf (),1,Leaf ()),1,Node (Leaf (),1,Leaf ()));
+(Node (Node (Node (Leaf (),1,Leaf ()),0,Leaf ()),2,Leaf ()),2) -> Node (Node (Node (Leaf (),1,Leaf ()),0,Leaf ()),2,Leaf ());
+(Node (Node (Leaf (),0,Leaf ()),3,Leaf ()),2) -> Node (Node (Leaf (),0,Node (Leaf (),2,Leaf ())),3,Leaf ());
+(Leaf (), 0) -> Node (Leaf (), 0, Leaf ());
+
+=================================
+fix (f : tree * nat -> tree) =
+  fun (x:tree * nat) ->
+    match x . 0 with
+      | Leaf _ -> Node (x . 0, x . 1, x . 0)
+      | Node _ -> (match comp_nat (x . 1) (Un_Node (x . 0) . 1) with
+                     | CEq _ -> x . 0
+                     | CGt _ -> Node (Un_Node (x . 0) . 0,
+                                       Un_Node (x . 0) . 1,
+                                       f (Un_Node (x . 0) . 2, x . 1))
+                     | CLt _ -> Node (f (Un_Node (x . 0) . 0, x . 1),
+                                       Un_Node (x . 0) . 1,
+                                       Un_Node (x . 0) . 2))
+
+0.6857 true
+Time(s): 0.71 
+Mem(Kb): 39400
+
+(Node (Node (Leaf (),0,Leaf ()),3,Leaf ()),1) -> Node (Node (Leaf (),0,Node (Leaf (),1,Leaf ())),3,Leaf ());
+(Node (Leaf (),0,Node (Leaf (),3,Node (Leaf (),3,Leaf ()))),0) -> Node (Leaf (),0,Node (Leaf (),3,Node (Leaf (),3,Leaf ())));
+(Node (Leaf (),0,Node (Node (Leaf (),3,Leaf ()),2,Leaf ())),3) -> Node (Leaf (),0,Node (Node (Leaf (),3,Leaf ()),2,Node (Leaf (),3,Leaf ())));
+(Node (Leaf (),1,Node (Node (Leaf (),2,Leaf ()),3,Leaf ())),3) -> Node (Leaf (),1,Node (Node (Leaf (),2,Leaf ()),3,Leaf ()));
+(Node (Node (Leaf (),3,Node (Leaf (),2,Leaf ())),1,Leaf ()),1) -> Node (Node (Leaf (),3,Node (Leaf (),2,Leaf ())),1,Leaf ());
+(Leaf (), 0) -> Node (Leaf (), 0, Leaf ());
+
+=================================
+fix (f : tree * nat -> tree) =
+  fun (x:tree * nat) ->
+    match x . 0 with
+      | Leaf _ -> Node (x . 0, x . 1, x . 0)
+      | Node _ -> (match comp_nat (x . 1) (Un_Node (x . 0) . 1) with
+                     | CEq _ -> x . 0
+                     | CGt _ -> Node (Un_Node (x . 0) . 0,
+                                       Un_Node (x . 0) . 1,
+                                       f (Un_Node (x . 0) . 2, x . 1))
+                     | CLt _ -> Node (f (Un_Node (x . 0) . 0, x . 1),
+                                       Un_Node (x . 0) . 1,
+                                       Un_Node (x . 0) . 2))
+
+1.1122 true
+Time(s): 1.14 
+Mem(Kb): 39396
+
+(Node (Node (Node (Leaf (),0,Leaf ()),1,Leaf ()),0,Leaf ()),2) -> Node (Node (Node (Leaf (),0,Leaf ()),1,Leaf ()),0,Node (Leaf (),2,Leaf ()));
+(Node (Node (Leaf (),3,Node (Leaf (),1,Leaf ())),0,Leaf ()),2) -> Node (Node (Leaf (),3,Node (Leaf (),1,Leaf ())),0,Node (Leaf (),2,Leaf ()));
+(Node (Node (Node (Leaf (),3,Leaf ()),3,Leaf ()),3,Leaf ()),2) -> Node (Node (Node (Node (Leaf (),2,Leaf ()),3,Leaf ()),3,Leaf ()),3,Leaf ());
+(Node (Node (Leaf (),1,Leaf ()),0,Leaf ()),2) -> Node (Node (Leaf (),1,Leaf ()),0,Node (Leaf (),2,Leaf ()));
+(Node (Node (Leaf (),1,Leaf ()),3,Leaf ()),0) -> Node (Node (Node (Leaf (),0,Leaf ()),1,Leaf ()),3,Leaf ());
+(Node (Leaf (),0,Node (Leaf (),2,Leaf ())),2) -> Node (Leaf (),0,Node (Leaf (),2,Leaf ()));
+(Leaf (), 0) -> Node (Leaf (), 0, Leaf ());
+
+=================================
+fix (f : tree * nat -> tree) =
+  fun (x:tree * nat) ->
+    match x . 0 with
+      | Leaf _ -> Node (x . 0, x . 1, x . 0)
+      | Node _ -> (match Un_Node (x . 0) . 1 with
+                     | O _ -> Node (Un_Node (x . 0) . 0, Un_Node (x . 0) . 1,
+                                     Node (Leaf, x . 1, Leaf))
+                     | S _ -> Node (f (Un_Node (x . 0) . 0, x . 1),
+                                     Un_Node (x . 0) . 1,
+                                     Un_Node (x . 0) . 2))
+
+0.9389 false
+Time(s): 0.96 
+Mem(Kb): 39364
+
+(Node (Leaf (),2,Node (Leaf (),1,Node (Leaf (),1,Leaf ()))),3) -> Node (Leaf (),2,Node (Leaf (),1,Node (Leaf (),1,Node (Leaf (),3,Leaf ()))));
+(Node (Node (Leaf (),2,Leaf ()),3,Node (Leaf (),1,Leaf ())),2) -> Node (Node (Leaf (),2,Leaf ()),3,Node (Leaf (),1,Leaf ()));
+(Node (Leaf (),2,Leaf ()),3) -> Node (Leaf (),2,Node (Leaf (),3,Leaf ()));
+(Node (Node (Node (Leaf (),3,Leaf ()),2,Leaf ()),2,Leaf ()),0) -> Node (Node (Node (Node (Leaf (),0,Leaf ()),3,Leaf ()),2,Leaf ()),2,Leaf ());
+(Node (Leaf (),3,Node (Node (Leaf (),2,Leaf ()),2,Leaf ())),1) -> Node (Node (Leaf (),1,Leaf ()),3,Node (Node (Leaf (),2,Leaf ()),2,Leaf ()));
+(Node (Leaf (),1,Node (Node (Leaf (),3,Leaf ()),0,Leaf ())),3) -> Node (Leaf (),1,Node (Node (Leaf (),3,Leaf ()),0,Node (Leaf (),3,Leaf ())));
+(Leaf (), 0) -> Node (Leaf (), 0, Leaf ());
+
+=================================
+fix (f : tree * nat -> tree) =
+  fun (x:tree * nat) ->
+    match x . 0 with
+      | Leaf _ -> Node (x . 0, x . 1, x . 0)
+      | Node _ -> (match comp_nat (x . 1) S (Un_Node (x . 0) . 1) with
+                     | CEq _ -> Node (Un_Node (x . 0) . 0,
+                                       Un_Node (x . 0) . 1,
+                                       f (Un_Node (x . 0) . 2, x . 1))
+                     | CGt _ -> Node (Un_Node (x . 0) . 0,
+                                       Un_Node (x . 0) . 1,
+                                       f (Un_Node (x . 0) . 2, x . 1))
+                     | CLt _ -> (match comp_nat (x . 1) 1 with
+                                   | CEq _ -> Node (f
+                                                      (Un_Node (x . 0) . 0,
+                                                        x . 1),
+                                                     Un_Node (x . 0) . 1,
+                                                     Un_Node (x . 0) . 2)
+                                   | CGt _ -> x . 0
+                                   | CLt _ -> Node (f
+                                                      (Un_Node (x . 0) . 0,
+                                                        x . 1),
+                                                     Un_Node (x . 0) . 1,
+                                                     Un_Node (x . 0) . 2)))
+
+9.7319 false
+Time(s): 9.75 
+Mem(Kb): 39464
+
+(Node (Node (Leaf (),3,Node (Leaf (),1,Leaf ())),2,Leaf ()),3) -> Node (Node (Leaf (),3,Node (Leaf (),1,Leaf ())),2,Node (Leaf (),3,Leaf ()));
+(Node (Leaf (),2,Node (Leaf (),0,Leaf ())),2) -> Node (Leaf (),2,Node (Leaf (),0,Leaf ()));
+(Node (Leaf (),3,Node (Leaf (),1,Leaf ())),1) -> Node (Node (Leaf (),1,Leaf ()),3,Node (Leaf (),1,Leaf ()));
+(Node (Leaf (),2,Node (Node (Leaf (),2,Leaf ()),1,Leaf ())),2) -> Node (Leaf (),2,Node (Node (Leaf (),2,Leaf ()),1,Leaf ()));
+(Node (Node (Leaf (),3,Node (Leaf (),0,Leaf ())),0,Leaf ()),2) -> Node (Node (Leaf (),3,Node (Leaf (),0,Leaf ())),0,Node (Leaf (),2,Leaf ()));
+(Node (Leaf (),0,Node (Leaf (),3,Leaf ())),1) -> Node (Leaf (),0,Node (Node (Leaf (),1,Leaf ()),3,Leaf ()));
+(Leaf (), 0) -> Node (Leaf (), 0, Leaf ());
+
+=================================
+None
+(Node (Node (Leaf (),0,Leaf ()),3,Node (Leaf (),0,Leaf ())),0) -> Node (Node (Leaf (),0,Leaf ()),3,Node (Leaf (),0,Leaf ()));
+(Node (Node (Node (Leaf (),2,Leaf ()),2,Leaf ()),1,Leaf ()),3) -> Node (Node (Node (Leaf (),2,Leaf ()),2,Leaf ()),1,Node (Leaf (),3,Leaf ()));
+(Node (Node (Node (Leaf (),2,Leaf ()),1,Leaf ()),0,Leaf ()),2) -> Node (Node (Node (Leaf (),2,Leaf ()),1,Leaf ()),0,Node (Leaf (),2,Leaf ()));
+(Node (Node (Leaf (),1,Leaf ()),3,Node (Leaf (),0,Leaf ())),1) -> Node (Node (Leaf (),1,Leaf ()),3,Node (Leaf (),0,Leaf ()));
+(Node (Node (Leaf (),3,Leaf ()),3,Leaf ()),0) -> Node (Node (Node (Leaf (),0,Leaf ()),3,Leaf ()),3,Leaf ());
+(Node (Leaf (),0,Node (Leaf (),1,Leaf ())),1) -> Node (Leaf (),0,Node (Leaf (),1,Leaf ()));
+(Leaf (), 0) -> Node (Leaf (), 0, Leaf ());
+
+=================================
+fix (f : tree * nat -> tree) =
+  fun (x:tree * nat) ->
+    match x . 0 with
+      | Leaf _ -> Node (x . 0, x . 1, x . 0)
+      | Node _ -> (match comp_nat (x . 1) S (Un_Node (x . 0) . 1) with
+                     | CEq _ -> x . 0
+                     | CGt _ -> Node (Un_Node (x . 0) . 0,
+                                       Un_Node (x . 0) . 1,
+                                       f (Un_Node (x . 0) . 2, x . 1))
+                     | CLt _ -> (match Un_Node (x . 0) . 2 with
+                                   | Leaf _ -> Node (f
+                                                       (Un_Node (x . 0) . 0,
+                                                         x . 1),
+                                                      Un_Node (x . 0) . 1,
+                                                      Un_Node (x . 0) . 2)
+                                   | Node _ -> x . 0))
+
+8.5849 false
+Time(s): 8.62 
+Mem(Kb): 39332
+
+(Node (Node (Leaf (),3,Leaf ()),1,Leaf ()),2) -> Node (Node (Leaf (),3,Leaf ()),1,Node (Leaf (),2,Leaf ()));
+(Node (Node (Node (Leaf (),0,Leaf ()),3,Leaf ()),3,Leaf ()),0) -> Node (Node (Node (Leaf (),0,Leaf ()),3,Leaf ()),3,Leaf ());
+(Node (Node (Node (Leaf (),2,Leaf ()),1,Leaf ()),0,Leaf ()),3) -> Node (Node (Node (Leaf (),2,Leaf ()),1,Leaf ()),0,Node (Leaf (),3,Leaf ()));
+(Node (Leaf (),1,Leaf ()),0) -> Node (Node (Leaf (),0,Leaf ()),1,Leaf ());
+(Node (Leaf (),2,Node (Leaf (),0,Leaf ())),3) -> Node (Leaf (),2,Node (Leaf (),0,Node (Leaf (),3,Leaf ())));
+(Node (Leaf (),2,Node (Leaf (),2,Leaf ())),2) -> Node (Leaf (),2,Node (Leaf (),2,Leaf ()));
+(Leaf (), 0) -> Node (Leaf (), 0, Leaf ());
+
+=================================
+fix (f : tree * nat -> tree) =
+  fun (x:tree * nat) ->
+    match x . 0 with
+      | Leaf _ -> Node (x . 0, x . 1, x . 0)
+      | Node _ -> (match comp_nat (x . 1) (Un_Node (x . 0) . 1) with
+                     | CEq _ -> x . 0
+                     | CGt _ -> Node (Un_Node (x . 0) . 0,
+                                       Un_Node (x . 0) . 1,
+                                       f (Un_Node (x . 0) . 2, x . 1))
+                     | CLt _ -> Node (f (Un_Node (x . 0) . 0, x . 1),
+                                       Un_Node (x . 0) . 1,
+                                       Un_Node (x . 0) . 2))
+
+1.0845 true
+Time(s): 1.11 
+Mem(Kb): 39428
+
+(Node (Node (Leaf (),1,Leaf ()),3,Leaf ()),1) -> Node (Node (Leaf (),1,Leaf ()),3,Leaf ());
+(Node (Node (Leaf (),0,Leaf ()),0,Node (Leaf (),0,Leaf ())),3) -> Node (Node (Leaf (),0,Leaf ()),0,Node (Leaf (),0,Node (Leaf (),3,Leaf ())));
+(Node (Node (Leaf (),3,Leaf ()),2,Leaf ()),0) -> Node (Node (Node (Leaf (),0,Leaf ()),3,Leaf ()),2,Leaf ());
+(Node (Node (Node (Leaf (),0,Leaf ()),2,Leaf ()),1,Leaf ()),2) -> Node (Node (Node (Leaf (),0,Leaf ()),2,Leaf ()),1,Node (Leaf (),2,Leaf ()));
+(Node (Node (Leaf (),1,Node (Leaf (),1,Leaf ())),2,Leaf ()),3) -> Node (Node (Leaf (),1,Node (Leaf (),1,Leaf ())),2,Node (Leaf (),3,Leaf ()));
+(Node (Leaf (),1,Leaf ()),1) -> Node (Leaf (),1,Leaf ());
+(Leaf (), 0) -> Node (Leaf (), 0, Leaf ());
+
+=================================
+fix (f : tree * nat -> tree) =
+  fun (x:tree * nat) ->
+    match x . 0 with
+      | Leaf _ -> Node (x . 0, x . 1, x . 0)
+      | Node _ -> (match comp_nat (x . 1) (Un_Node (x . 0) . 1) with
+                     | CEq _ -> x . 0
+                     | CGt _ -> Node (Un_Node (x . 0) . 0,
+                                       Un_Node (x . 0) . 1,
+                                       f (Un_Node (x . 0) . 2, x . 1))
+                     | CLt _ -> Node (f (Un_Node (x . 0) . 0, x . 1),
+                                       Un_Node (x . 0) . 1,
+                                       Un_Node (x . 0) . 2))
+
+0.9151 true
+Time(s): 0.94 
+Mem(Kb): 39424
+
+(Node (Leaf (),2,Node (Leaf (),0,Leaf ())),0) -> Node (Node (Leaf (),0,Leaf ()),2,Node (Leaf (),0,Leaf ()));
+(Node (Leaf (),2,Node (Node (Leaf (),3,Leaf ()),3,Leaf ())),0) -> Node (Node (Leaf (),0,Leaf ()),2,Node (Node (Leaf (),3,Leaf ()),3,Leaf ()));
+(Node (Node (Leaf (),0,Leaf ()),0,Node (Leaf (),0,Leaf ())),2) -> Node (Node (Leaf (),0,Leaf ()),0,Node (Leaf (),0,Node (Leaf (),2,Leaf ())));
+(Node (Leaf (),2,Node (Node (Leaf (),2,Leaf ()),3,Leaf ())),0) -> Node (Node (Leaf (),0,Leaf ()),2,Node (Node (Leaf (),2,Leaf ()),3,Leaf ()));
+(Node (Leaf (),2,Node (Leaf (),0,Node (Leaf (),1,Leaf ()))),2) -> Node (Leaf (),2,Node (Leaf (),0,Node (Leaf (),1,Leaf ())));
+(Node (Leaf (),1,Node (Leaf (),2,Leaf ())),0) -> Node (Node (Leaf (),0,Leaf ()),1,Node (Leaf (),2,Leaf ()));
+(Leaf (), 0) -> Node (Leaf (), 0, Leaf ());
+
+=================================
+fix (f : tree * nat -> tree) =
+  fun (x:tree * nat) ->
+    match x . 0 with
+      | Leaf _ -> Node (x . 0, x . 1, x . 0)
+      | Node _ -> (match comp_nat (x . 1) (Un_Node (x . 0) . 1) with
+                     | CEq _ -> x . 0
+                     | CGt _ -> Node (Un_Node (x . 0) . 0,
+                                       Un_Node (x . 0) . 1,
+                                       f (Un_Node (x . 0) . 0, x . 1))
+                     | CLt _ -> Node (f (Un_Node (x . 0) . 0, x . 1),
+                                       Un_Node (x . 0) . 1,
+                                       Un_Node (x . 0) . 2))
+
+0.7245 false
+Time(s): 0.75 
+Mem(Kb): 39388
+
+(Node (Leaf (),2,Node (Node (Leaf (),1,Leaf ()),2,Leaf ())),2) -> Node (Leaf (),2,Node (Node (Leaf (),1,Leaf ()),2,Leaf ()));
+(Node (Leaf (),1,Node (Leaf (),2,Node (Leaf (),3,Leaf ()))),3) -> Node (Leaf (),1,Node (Leaf (),2,Node (Leaf (),3,Leaf ())));
+(Node (Leaf (),2,Node (Leaf (),0,Leaf ())),0) -> Node (Node (Leaf (),0,Leaf ()),2,Node (Leaf (),0,Leaf ()));
+(Node (Node (Leaf (),1,Leaf ()),2,Leaf ()),0) -> Node (Node (Node (Leaf (),0,Leaf ()),1,Leaf ()),2,Leaf ());
+(Node (Node (Node (Leaf (),1,Leaf ()),0,Leaf ()),1,Leaf ()),3) -> Node (Node (Node (Leaf (),1,Leaf ()),0,Leaf ()),1,Node (Leaf (),3,Leaf ()));
+(Node (Leaf (),2,Node (Leaf (),1,Leaf ())),1) -> Node (Node (Leaf (),1,Leaf ()),2,Node (Leaf (),1,Leaf ()));
+(Leaf (), 0) -> Node (Leaf (), 0, Leaf ());
+
+=================================
+fix (f : tree * nat -> tree) =
+  fun (x:tree * nat) ->
+    match x . 0 with
+      | Leaf _ -> Node (x . 0, x . 1, x . 0)
+      | Node _ -> (match comp_nat (x . 1) (Un_Node (x . 0) . 1) with
+                     | CEq _ -> x . 0
+                     | CGt _ -> Node (Un_Node (x . 0) . 0,
+                                       Un_Node (x . 0) . 1,
+                                       f (Un_Node (x . 0) . 2, x . 1))
+                     | CLt _ -> Node (f (Un_Node (x . 0) . 0, x . 1),
+                                       Un_Node (x . 0) . 1,
+                                       Un_Node (x . 0) . 2))
+
+0.4321 true
+Time(s): 0.45 
+Mem(Kb): 39396
+
+(Node (Node (Node (Leaf (),0,Leaf ()),1,Leaf ()),3,Leaf ()),0) -> Node (Node (Node (Leaf (),0,Leaf ()),1,Leaf ()),3,Leaf ());
+(Node (Leaf (),1,Leaf ()),0) -> Node (Node (Leaf (),0,Leaf ()),1,Leaf ());
+(Node (Leaf (),2,Leaf ()),2) -> Node (Leaf (),2,Leaf ());
+(Node (Leaf (),2,Node (Leaf (),0,Leaf ())),2) -> Node (Leaf (),2,Node (Leaf (),0,Leaf ()));
+(Node (Node (Leaf (),0,Node (Leaf (),1,Leaf ())),1,Leaf ()),3) -> Node (Node (Leaf (),0,Node (Leaf (),1,Leaf ())),1,Node (Leaf (),3,Leaf ()));
+(Node (Leaf (),3,Node (Leaf (),0,Node (Leaf (),2,Leaf ()))),0) -> Node (Node (Leaf (),0,Leaf ()),3,Node (Leaf (),0,Node (Leaf (),2,Leaf ())));
+(Leaf (), 0) -> Node (Leaf (), 0, Leaf ());
+
+=================================
+fix (f : tree * nat -> tree) =
+  fun (x:tree * nat) ->
+    match x . 0 with
+      | Leaf _ -> Node (x . 0, x . 1, x . 0)
+      | Node _ -> (match comp_nat (x . 1) (Un_Node (x . 0) . 1) with
+                     | CEq _ -> x . 0
+                     | CGt _ -> Node (Un_Node (x . 0) . 0,
+                                       Un_Node (x . 0) . 1,
+                                       f (Un_Node (x . 0) . 2, x . 1))
+                     | CLt _ -> Node (f (Un_Node (x . 0) . 0, x . 1),
+                                       Un_Node (x . 0) . 1,
+                                       Un_Node (x . 0) . 2))
+
+0.3677 true
+Time(s): 0.39 
+Mem(Kb): 39404
+
+(Node (Node (Leaf (),1,Leaf ()),0,Leaf ()),2) -> Node (Node (Leaf (),1,Leaf ()),0,Node (Leaf (),2,Leaf ()));
+(Node (Node (Leaf (),0,Leaf ()),0,Node (Leaf (),1,Leaf ())),2) -> Node (Node (Leaf (),0,Leaf ()),0,Node (Leaf (),1,Node (Leaf (),2,Leaf ())));
+(Node (Node (Leaf (),2,Leaf ()),2,Leaf ()),2) -> Node (Node (Leaf (),2,Leaf ()),2,Leaf ());
+(Node (Leaf (),0,Node (Leaf (),2,Leaf ())),1) -> Node (Leaf (),0,Node (Node (Leaf (),1,Leaf ()),2,Leaf ()));
+(Node (Node (Node (Leaf (),1,Leaf ()),0,Leaf ()),3,Leaf ()),2) -> Node (Node (Node (Leaf (),1,Leaf ()),0,Node (Leaf (),2,Leaf ())),3,Leaf ());
+(Node (Leaf (),0,Node (Leaf (),3,Node (Leaf (),0,Leaf ()))),3) -> Node (Leaf (),0,Node (Leaf (),3,Node (Leaf (),0,Leaf ())));
+(Leaf (), 0) -> Node (Leaf (), 0, Leaf ());
+
+=================================
+fix (f : tree * nat -> tree) =
+  fun (x:tree * nat) ->
+    match x . 0 with
+      | Leaf _ -> Node (x . 0, x . 1, x . 0)
+      | Node _ -> (match comp_nat (x . 1) (Un_Node (x . 0) . 1) with
+                     | CEq _ -> x . 0
+                     | CGt _ -> Node (Un_Node (x . 0) . 0,
+                                       Un_Node (x . 0) . 1,
+                                       f (Un_Node (x . 0) . 2, x . 1))
+                     | CLt _ -> Node (f (Un_Node (x . 0) . 0, x . 1),
+                                       Un_Node (x . 0) . 1,
+                                       Un_Node (x . 0) . 2))
+
+0.4308 true
+Time(s): 0.46 
+Mem(Kb): 39392
+
+(Node (Leaf (),3,Node (Leaf (),0,Leaf ())),1) -> Node (Node (Leaf (),1,Leaf ()),3,Node (Leaf (),0,Leaf ()));
+(Node (Node (Leaf (),2,Node (Leaf (),1,Leaf ())),1,Leaf ()),1) -> Node (Node (Leaf (),2,Node (Leaf (),1,Leaf ())),1,Leaf ());
+(Node (Node (Leaf (),1,Leaf ()),0,Leaf ()),2) -> Node (Node (Leaf (),1,Leaf ()),0,Node (Leaf (),2,Leaf ()));
+(Node (Leaf (),1,Node (Leaf (),1,Node (Leaf (),2,Leaf ()))),2) -> Node (Leaf (),1,Node (Leaf (),1,Node (Leaf (),2,Leaf ())));
+(Node (Node (Node (Leaf (),1,Leaf ()),0,Leaf ()),3,Leaf ()),0) -> Node (Node (Node (Leaf (),1,Leaf ()),0,Leaf ()),3,Leaf ());
+(Node (Node (Leaf (),0,Node (Leaf (),1,Leaf ())),0,Leaf ()),0) -> Node (Node (Leaf (),0,Node (Leaf (),1,Leaf ())),0,Leaf ());
+(Node (Node (Leaf (),3,Leaf ()),0,Leaf ()),0) -> Node (Node (Leaf (),3,Leaf ()),0,Leaf ());
+(Leaf (), 0) -> Node (Leaf (), 0, Leaf ());
+
+=================================
+fix (f : tree * nat -> tree) =
+  fun (x:tree * nat) ->
+    match x . 0 with
+      | Leaf _ -> Node (x . 0, x . 1, x . 0)
+      | Node _ -> (match comp_nat (x . 1) (Un_Node (x . 0) . 1) with
+                     | CEq _ -> x . 0
+                     | CGt _ -> Node (Un_Node (x . 0) . 0,
+                                       Un_Node (x . 0) . 1,
+                                       f (Un_Node (x . 0) . 2, x . 1))
+                     | CLt _ -> Node (f (Un_Node (x . 0) . 0, x . 1),
+                                       Un_Node (x . 0) . 1,
+                                       Un_Node (x . 0) . 2))
+
+0.3894 true
+Time(s): 0.41 
+Mem(Kb): 39328
+
+(Node (Leaf (),0,Node (Leaf (),3,Node (Leaf (),0,Leaf ()))),3) -> Node (Leaf (),0,Node (Leaf (),3,Node (Leaf (),0,Leaf ())));
+(Node (Leaf (),1,Node (Leaf (),1,Node (Leaf (),1,Leaf ()))),3) -> Node (Leaf (),1,Node (Leaf (),1,Node (Leaf (),1,Node (Leaf (),3,Leaf ()))));
+(Node (Leaf (),0,Node (Node (Leaf (),3,Leaf ()),2,Leaf ())),2) -> Node (Leaf (),0,Node (Node (Leaf (),3,Leaf ()),2,Leaf ()));
+(Node (Leaf (),0,Leaf ()),2) -> Node (Leaf (),0,Node (Leaf (),2,Leaf ()));
+(Node (Node (Leaf (),0,Leaf ()),2,Leaf ()),2) -> Node (Node (Leaf (),0,Leaf ()),2,Leaf ());
+(Node (Leaf (),0,Node (Leaf (),3,Leaf ())),2) -> Node (Leaf (),0,Node (Node (Leaf (),2,Leaf ()),3,Leaf ()));
+(Node (Node (Leaf (),0,Node (Leaf (),2,Leaf ())),1,Leaf ()),1) -> Node (Node (Leaf (),0,Node (Leaf (),2,Leaf ())),1,Leaf ());
+(Leaf (), 0) -> Node (Leaf (), 0, Leaf ());
+
+=================================
+None
+(Node (Node (Leaf (),2,Leaf ()),0,Leaf ()),3) -> Node (Node (Leaf (),2,Leaf ()),0,Node (Leaf (),3,Leaf ()));
+(Node (Node (Leaf (),2,Node (Leaf (),3,Leaf ())),0,Leaf ()),1) -> Node (Node (Leaf (),2,Node (Leaf (),3,Leaf ())),0,Node (Leaf (),1,Leaf ()));
+(Node (Leaf (),3,Leaf ()),2) -> Node (Node (Leaf (),2,Leaf ()),3,Leaf ());
+(Node (Node (Leaf (),1,Leaf ()),0,Leaf ()),3) -> Node (Node (Leaf (),1,Leaf ()),0,Node (Leaf (),3,Leaf ()));
+(Node (Node (Leaf (),2,Leaf ()),1,Node (Leaf (),0,Leaf ())),3) -> Node (Node (Leaf (),2,Leaf ()),1,Node (Leaf (),0,Node (Leaf (),3,Leaf ())));
+(Node (Leaf (),0,Leaf ()),0) -> Node (Leaf (),0,Leaf ());
+(Node (Leaf (),1,Node (Leaf (),1,Leaf ())),2) -> Node (Leaf (),1,Node (Leaf (),1,Node (Leaf (),2,Leaf ())));
+(Leaf (), 0) -> Node (Leaf (), 0, Leaf ());
+
+=================================
+fix (f : tree * nat -> tree) =
+  fun (x:tree * nat) ->
+    match x . 0 with
+      | Leaf _ -> Node (x . 0, x . 1, x . 0)
+      | Node _ -> (match comp_nat (x . 1) (Un_Node (x . 0) . 1) with
+                     | CEq _ -> x . 0
+                     | CGt _ -> Node (Un_Node (x . 0) . 0,
+                                       Un_Node (x . 0) . 1,
+                                       f (Un_Node (x . 0) . 2, x . 1))
+                     | CLt _ -> Node (f (Un_Node (x . 0) . 0, x . 1),
+                                       Un_Node (x . 0) . 1,
+                                       Un_Node (x . 0) . 0))
+
+0.5417 false
+Time(s): 0.57 
+Mem(Kb): 39372
+
+(Node (Leaf (),0,Node (Leaf (),3,Leaf ())),3) -> Node (Leaf (),0,Node (Leaf (),3,Leaf ()));
+(Node (Leaf (),3,Node (Node (Leaf (),0,Leaf ()),3,Leaf ())),0) -> Node (Node (Leaf (),0,Leaf ()),3,Node (Node (Leaf (),0,Leaf ()),3,Leaf ()));
+(Node (Node (Leaf (),3,Node (Leaf (),2,Leaf ())),3,Leaf ()),2) -> Node (Node (Node (Leaf (),2,Leaf ()),3,Node (Leaf (),2,Leaf ())),3,Leaf ());
+(Node (Leaf (),1,Leaf ()),1) -> Node (Leaf (),1,Leaf ());
+(Node (Leaf (),3,Node (Leaf (),3,Leaf ())),1) -> Node (Node (Leaf (),1,Leaf ()),3,Node (Leaf (),3,Leaf ()));
+(Node (Node (Leaf (),2,Node (Leaf (),1,Leaf ())),3,Leaf ()),1) -> Node (Node (Node (Leaf (),1,Leaf ()),2,Node (Leaf (),1,Leaf ())),3,Leaf ());
+(Node (Node (Node (Leaf (),2,Leaf ()),3,Leaf ()),2,Leaf ()),3) -> Node (Node (Node (Leaf (),2,Leaf ()),3,Leaf ()),2,Node (Leaf (),3,Leaf ()));
+(Leaf (), 0) -> Node (Leaf (), 0, Leaf ());
+
+=================================
+fix (f : tree * nat -> tree) =
+  fun (x:tree * nat) ->
+    match x . 0 with
+      | Leaf _ -> Node (x . 0, x . 1, x . 0)
+      | Node _ -> (match comp_nat (x . 1) (Un_Node (x . 0) . 1) with
+                     | CEq _ -> x . 0
+                     | CGt _ -> Node (Un_Node (x . 0) . 0,
+                                       Un_Node (x . 0) . 1,
+                                       f (Un_Node (x . 0) . 2, x . 1))
+                     | CLt _ -> Node (f (Un_Node (x . 0) . 0, x . 1),
+                                       Un_Node (x . 0) . 1,
+                                       Un_Node (x . 0) . 2))
+
+0.5401 true
+Time(s): 0.56 
+Mem(Kb): 39424
+
+(Node (Leaf (),1,Leaf ()),3) -> Node (Leaf (),1,Node (Leaf (),3,Leaf ()));
+(Node (Leaf (),0,Node (Leaf (),2,Node (Leaf (),2,Leaf ()))),0) -> Node (Leaf (),0,Node (Leaf (),2,Node (Leaf (),2,Leaf ())));
+(Node (Node (Leaf (),2,Leaf ()),1,Node (Leaf (),3,Leaf ())),3) -> Node (Node (Leaf (),2,Leaf ()),1,Node (Leaf (),3,Leaf ()));
+(Node (Node (Node (Leaf (),0,Leaf ()),1,Leaf ()),1,Leaf ()),0) -> Node (Node (Node (Leaf (),0,Leaf ()),1,Leaf ()),1,Leaf ());
+(Node (Leaf (),1,Node (Node (Leaf (),3,Leaf ()),1,Leaf ())),1) -> Node (Leaf (),1,Node (Node (Leaf (),3,Leaf ()),1,Leaf ()));
+(Node (Node (Node (Leaf (),3,Leaf ()),2,Leaf ()),3,Leaf ()),0) -> Node (Node (Node (Node (Leaf (),0,Leaf ()),3,Leaf ()),2,Leaf ()),3,Leaf ());
+(Node (Leaf (),2,Node (Leaf (),3,Leaf ())),1) -> Node (Node (Leaf (),1,Leaf ()),2,Node (Leaf (),3,Leaf ()));
+(Leaf (), 0) -> Node (Leaf (), 0, Leaf ());
+
+=================================
+fix (f : tree * nat -> tree) =
+  fun (x:tree * nat) ->
+    match x . 0 with
+      | Leaf _ -> Node (x . 0, x . 1, x . 0)
+      | Node _ -> (match comp_nat (x . 1) (Un_Node (x . 0) . 1) with
+                     | CEq _ -> x . 0
+                     | CGt _ -> Node (Un_Node (x . 0) . 0,
+                                       Un_Node (x . 0) . 1,
+                                       f (Un_Node (x . 0) . 2, x . 1))
+                     | CLt _ -> Node (f (Un_Node (x . 0) . 0, x . 1),
+                                       Un_Node (x . 0) . 1,
+                                       Un_Node (x . 0) . 2))
+
+0.4237 true
+Time(s): 0.45 
+Mem(Kb): 39416
+
+(Node (Node (Leaf (),2,Node (Leaf (),3,Leaf ())),2,Leaf ()),3) -> Node (Node (Leaf (),2,Node (Leaf (),3,Leaf ())),2,Node (Leaf (),3,Leaf ()));
+(Node (Leaf (),1,Node (Node (Leaf (),0,Leaf ()),1,Leaf ())),0) -> Node (Node (Leaf (),0,Leaf ()),1,Node (Node (Leaf (),0,Leaf ()),1,Leaf ()));
+(Node (Leaf (),1,Node (Leaf (),3,Leaf ())),3) -> Node (Leaf (),1,Node (Leaf (),3,Leaf ()));
+(Node (Leaf (),2,Node (Node (Leaf (),0,Leaf ()),1,Leaf ())),2) -> Node (Leaf (),2,Node (Node (Leaf (),0,Leaf ()),1,Leaf ()));
+(Node (Leaf (),2,Node (Leaf (),2,Leaf ())),2) -> Node (Leaf (),2,Node (Leaf (),2,Leaf ()));
+(Node (Node (Leaf (),2,Leaf ()),2,Node (Leaf (),2,Leaf ())),0) -> Node (Node (Node (Leaf (),0,Leaf ()),2,Leaf ()),2,Node (Leaf (),2,Leaf ()));
+(Node (Node (Node (Leaf (),0,Leaf ()),2,Leaf ()),0,Leaf ()),1) -> Node (Node (Node (Leaf (),0,Leaf ()),2,Leaf ()),0,Node (Leaf (),1,Leaf ()));
+(Leaf (), 0) -> Node (Leaf (), 0, Leaf ());
+
+=================================
+fix (f : tree * nat -> tree) =
+  fun (x:tree * nat) ->
+    match x . 0 with
+      | Leaf _ -> Node (x . 0, x . 1, x . 0)
+      | Node _ -> (match comp_nat (x . 1) (Un_Node (x . 0) . 1) with
+                     | CEq _ -> x . 0
+                     | CGt _ -> Node (Un_Node (x . 0) . 0,
+                                       Un_Node (x . 0) . 1,
+                                       f (Un_Node (x . 0) . 2, x . 1))
+                     | CLt _ -> Node (f (Un_Node (x . 0) . 0, x . 1),
+                                       Un_Node (x . 0) . 1,
+                                       Un_Node (x . 0) . 2))
+
+1.3591 true
+Time(s): 1.38 
+Mem(Kb): 39420
+
+(Node (Leaf (),3,Node (Leaf (),1,Node (Leaf (),0,Leaf ()))),3) -> Node (Leaf (),3,Node (Leaf (),1,Node (Leaf (),0,Leaf ())));
+(Node (Node (Leaf (),2,Node (Leaf (),0,Leaf ())),1,Leaf ()),2) -> Node (Node (Leaf (),2,Node (Leaf (),0,Leaf ())),1,Node (Leaf (),2,Leaf ()));
+(Node (Node (Leaf (),3,Node (Leaf (),0,Leaf ())),2,Leaf ()),0) -> Node (Node (Node (Leaf (),0,Leaf ()),3,Node (Leaf (),0,Leaf ())),2,Leaf ());
+(Node (Node (Leaf (),2,Leaf ()),2,Node (Leaf (),0,Leaf ())),0) -> Node (Node (Node (Leaf (),0,Leaf ()),2,Leaf ()),2,Node (Leaf (),0,Leaf ()));
+(Node (Node (Node (Leaf (),0,Leaf ()),3,Leaf ()),3,Leaf ()),2) -> Node (Node (Node (Leaf (),0,Node (Leaf (),2,Leaf ())),3,Leaf ()),3,Leaf ());
+(Node (Leaf (),3,Node (Leaf (),2,Node (Leaf (),3,Leaf ()))),0) -> Node (Node (Leaf (),0,Leaf ()),3,Node (Leaf (),2,Node (Leaf (),3,Leaf ())));
+(Node (Node (Leaf (),0,Node (Leaf (),1,Leaf ())),1,Leaf ()),3) -> Node (Node (Leaf (),0,Node (Leaf (),1,Leaf ())),1,Node (Leaf (),3,Leaf ()));
+(Leaf (), 0) -> Node (Leaf (), 0, Leaf ());
+
+=================================
+fix (f : tree * nat -> tree) =
+  fun (x:tree * nat) ->
+    match x . 0 with
+      | Leaf _ -> Node (x . 0, x . 1, x . 0)
+      | Node _ -> (match comp_nat (x . 1) (Un_Node (x . 0) . 1) with
+                     | CEq _ -> x . 0
+                     | CGt _ -> Node (Un_Node (x . 0) . 0,
+                                       Un_Node (x . 0) . 1,
+                                       f (Un_Node (x . 0) . 2, x . 1))
+                     | CLt _ -> Node (f (Un_Node (x . 0) . 0, x . 1),
+                                       Un_Node (x . 0) . 1,
+                                       Un_Node (x . 0) . 2))
+
+0.5082 true
+Time(s): 0.53 
+Mem(Kb): 39396
+
+(Node (Leaf (),3,Node (Leaf (),0,Node (Leaf (),1,Leaf ()))),2) -> Node (Node (Leaf (),2,Leaf ()),3,Node (Leaf (),0,Node (Leaf (),1,Leaf ())));
+(Node (Leaf (),3,Node (Node (Leaf (),3,Leaf ()),2,Leaf ())),1) -> Node (Node (Leaf (),1,Leaf ()),3,Node (Node (Leaf (),3,Leaf ()),2,Leaf ()));
+(Node (Node (Leaf (),3,Leaf ()),3,Node (Leaf (),3,Leaf ())),2) -> Node (Node (Node (Leaf (),2,Leaf ()),3,Leaf ()),3,Node (Leaf (),3,Leaf ()));
+(Node (Node (Node (Leaf (),3,Leaf ()),0,Leaf ()),2,Leaf ()),0) -> Node (Node (Node (Leaf (),3,Leaf ()),0,Leaf ()),2,Leaf ());
+(Node (Leaf (),1,Node (Leaf (),1,Node (Leaf (),3,Leaf ()))),2) -> Node (Leaf (),1,Node (Leaf (),1,Node (Node (Leaf (),2,Leaf ()),3,Leaf ())));
+(Node (Leaf (),0,Node (Node (Leaf (),1,Leaf ()),3,Leaf ())),1) -> Node (Leaf (),0,Node (Node (Leaf (),1,Leaf ()),3,Leaf ()));
+(Node (Node (Leaf (),0,Leaf ()),3,Leaf ()),3) -> Node (Node (Leaf (),0,Leaf ()),3,Leaf ());
+(Leaf (), 0) -> Node (Leaf (), 0, Leaf ());
+
+=================================
+fix (f : tree * nat -> tree) =
+  fun (x:tree * nat) ->
+    match x . 0 with
+      | Leaf _ -> Node (x . 0, x . 1, x . 0)
+      | Node _ -> (match comp_nat (x . 1) (Un_Node (x . 0) . 1) with
+                     | CEq _ -> x . 0
+                     | CGt _ -> Node (Un_Node (x . 0) . 0,
+                                       Un_Node (x . 0) . 1,
+                                       f (Un_Node (x . 0) . 2, x . 1))
+                     | CLt _ -> Node (f (Un_Node (x . 0) . 0, x . 1),
+                                       Un_Node (x . 0) . 1,
+                                       Un_Node (x . 0) . 2))
+
+0.5078 true
+Time(s): 0.53 
+Mem(Kb): 39472
+
+(Node (Leaf (),0,Node (Leaf (),0,Leaf ())),1) -> Node (Leaf (),0,Node (Leaf (),0,Node (Leaf (),1,Leaf ())));
+(Node (Node (Leaf (),2,Leaf ()),3,Leaf ()),2) -> Node (Node (Leaf (),2,Leaf ()),3,Leaf ());
+(Node (Node (Leaf (),2,Leaf ()),3,Node (Leaf (),0,Leaf ())),2) -> Node (Node (Leaf (),2,Leaf ()),3,Node (Leaf (),0,Leaf ()));
+(Node (Leaf (),3,Node (Node (Leaf (),2,Leaf ()),1,Leaf ())),0) -> Node (Node (Leaf (),0,Leaf ()),3,Node (Node (Leaf (),2,Leaf ()),1,Leaf ()));
+(Node (Leaf (),1,Node (Node (Leaf (),3,Leaf ()),2,Leaf ())),2) -> Node (Leaf (),1,Node (Node (Leaf (),3,Leaf ()),2,Leaf ()));
+(Node (Leaf (),2,Node (Leaf (),3,Leaf ())),0) -> Node (Node (Leaf (),0,Leaf ()),2,Node (Leaf (),3,Leaf ()));
+(Node (Leaf (),2,Node (Leaf (),3,Leaf ())),2) -> Node (Leaf (),2,Node (Leaf (),3,Leaf ()));
+(Leaf (), 0) -> Node (Leaf (), 0, Leaf ());
+
+=================================
+fix (f : tree * nat -> tree) =
+  fun (x:tree * nat) ->
+    match comp_nat (x . 1) 1 with
+      | CEq _ -> Node (Leaf, 0, Node (Leaf, 0, Node (Leaf, x . 1, Leaf)))
+      | CGt _ -> x . 0
+      | CLt _ -> (match x . 0 with
+                    | Leaf _ -> Node (x . 0, x . 1, x . 0)
+                    | Node _ -> Node (f (Un_Node (x . 0) . 0, x . 1),
+                                       Un_Node (x . 0) . 1,
+                                       Un_Node (x . 0) . 2))
+
+0.5935 false
+Time(s): 0.62 
+Mem(Kb): 39404
+
+(Node (Node (Leaf (),3,Leaf ()),0,Leaf ()),0) -> Node (Node (Leaf (),3,Leaf ()),0,Leaf ());
+(Node (Leaf (),3,Leaf ()),0) -> Node (Node (Leaf (),0,Leaf ()),3,Leaf ());
+(Node (Leaf (),0,Node (Leaf (),2,Node (Leaf (),3,Leaf ()))),0) -> Node (Leaf (),0,Node (Leaf (),2,Node (Leaf (),3,Leaf ())));
+(Node (Leaf (),1,Node (Node (Leaf (),0,Leaf ()),0,Leaf ())),3) -> Node (Leaf (),1,Node (Node (Leaf (),0,Leaf ()),0,Node (Leaf (),3,Leaf ())));
+(Node (Node (Leaf (),3,Leaf ()),2,Leaf ()),1) -> Node (Node (Node (Leaf (),1,Leaf ()),3,Leaf ()),2,Leaf ());
+(Node (Node (Leaf (),1,Leaf ()),2,Leaf ()),0) -> Node (Node (Node (Leaf (),0,Leaf ()),1,Leaf ()),2,Leaf ());
+(Node (Node (Leaf (),3,Leaf ()),0,Leaf ()),3) -> Node (Node (Leaf (),3,Leaf ()),0,Node (Leaf (),3,Leaf ()));
+(Leaf (), 0) -> Node (Leaf (), 0, Leaf ());
+
+=================================
+fix (f : tree * nat -> tree) =
+  fun (x:tree * nat) ->
+    match x . 0 with
+      | Leaf _ -> Node (x . 0, x . 1, x . 0)
+      | Node _ -> (match comp_nat (x . 1) (Un_Node (x . 0) . 1) with
+                     | CEq _ -> x . 0
+                     | CGt _ -> Node (Un_Node (x . 0) . 0,
+                                       Un_Node (x . 0) . 1,
+                                       f (Un_Node (x . 0) . 2, x . 1))
+                     | CLt _ -> Node (f (Un_Node (x . 0) . 0, x . 1),
+                                       Un_Node (x . 0) . 1,
+                                       Un_Node (x . 0) . 2))
+
+0.3887 true
+Time(s): 0.41 
+Mem(Kb): 39336
+

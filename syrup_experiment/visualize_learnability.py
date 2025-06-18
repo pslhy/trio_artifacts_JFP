@@ -18,7 +18,8 @@ plt.rcParams.update({
 })
 # plt.style.use('_mpl-gallery')
 
-LOG_DIR = "Expert"
+# img for random testing of trio and syrup
+LOG_DIR = "T_Random+BC"
 
 parser = argparse.ArgumentParser()
 parser.add_argument("--rec",
@@ -26,6 +27,9 @@ parser.add_argument("--rec",
                     action="store_true")
 parser.add_argument("--ablation",
                     help="include SyRup* for abalation study",
+                    action="store_true")
+parser.add_argument("--trio",
+                    help="use trio data",
                     action="store_true")
 args = parser.parse_args()
 
@@ -62,25 +66,37 @@ if args.ablation and linecount % 18 == 0:
     linestyles = ['-', '-', '--', '-.']
     tools = [r'$\textsc{SyRup}$', r'$\textsc{SyRup}^*$',
              r'$\textsc{Burst}$', r'$\textsc{SMyth}$']
+elif args.trio:
+    colors = ['tab:red', 'tab:blue']
+    linestyles = ['--', '-',]
+    tools = [r'$\textsc{SyRup}$',
+             r'$\textsc{Trio}$']
+    alphas = [1.0, 0.6]
 elif not args.ablation:
     colors = ['tab:blue', 'tab:orange', 'tab:green']
     linestyles = ['-', '--', '-.']
     tools = [r'$\textsc{SyRup}$',
              r'$\textsc{Burst}$', r'$\textsc{SMyth}$']
+
 else:
     raise ValueError('Wrong number of lines in result.csv')
-FIG_NAME = "learnability{}{}.pdf".format(
-    "-ablation" if args.ablation else "",
-    "-rec" if args.rec else "")
 
+FIG_NAME = "random-quility.pdf"
+# FIG_NAME = "learnability{}{}.pdf".format(
+#     "-ablation" if args.ablation else "",
+#     "-rec" if args.rec else "")
+
+# 총 횟수. 
 MAX_CARD = 20  # will be read from result.csv
 cards = range(0, MAX_CARD+1)
 
 cutoffs = [i / 10 for i in range(1, 11)]
+nexamples = range(1, 9)
 learnability = defaultdict(list)
 
 NUM_OF_COLS = 5
 NUM_OF_ROWS = -(-len(benchmarks) // NUM_OF_COLS)
+# NUM_OF_ROWS = 2
 fig, axs2d = plt.subplots(NUM_OF_ROWS, NUM_OF_COLS, figsize=(8.5, 9), sharex=True, sharey=True)
 axs = axs2d.flatten()
 # gs = fig.add_gridspec(len(benchmarks) + 1, hspace=0)
@@ -92,20 +108,25 @@ with open(os.path.join(LOG_DIR, 'result.csv'), 'r') as f:
     rows = csv.reader(f, delimiter=',')
     header = next(rows)
     MAX_CARD = int(header[-1])
+    # print(linecount)
 
     prefix_last = ""
     i = 0
     rows_to_be_separated = []
     for (name, count, *data) in grouper(
-            15 if linecount % 15 == 0 else 18, rows):
+            # 15 if linecount % 15 == 0 else 18, rows):
+            11, rows):
         if args.rec and name[0] in benchmarks_nonrec:
             continue
-        if linecount % 15 == 0:
-            corrects = data[:3]
-        else:
-            corrects = data[:4]
-            if not args.ablation:
-                del corrects[1]
+        # get correct counts
+        corrects = data[:2]
+        # print(len(corrects[0]))
+        # if linecount % 15 == 0:
+        #     corrects = data[:3]
+        # else:
+        #     corrects = data[:4]
+        #     if not args.ablation:
+        #         del corrects[1]
 
         # get prefix that ends with underscore in name
         prefix = name[0][:name[0].find('_')]
@@ -118,33 +139,49 @@ with open(os.path.join(LOG_DIR, 'result.csv'), 'r') as f:
                 rows_to_be_separated.append(i//5-1)
 
         # get number of trace-complete examples
-        n = next((i for i, v in enumerate(count[2:]) if int(v) == 0), MAX_CARD)
+        # start with 3
+        n = next((i for i, v in enumerate(count[3:]) if int(v) == 0), MAX_CARD)
+        # print(prefix)
+        # print(count[2:])
+        # n은 1, 2, 3, 4 ... # of examples
 
-        axs[i].xaxis.set_major_formatter(mtick.PercentFormatter(1.0))
+        # axs[i].xaxis.set_major_formatter(mtick.PercentFormatter(1.0))
+        plt.xticks(nexamples, nexamples)
         axs[i].yaxis.set_major_formatter(mtick.PercentFormatter(1.0))
         # axs[i].set_yticks([0, n])
-        axs[i].set_yticks([0, 1])
+        # axs[i].set_yticks([0, 1])
+        axs[0].set_yticks([0, 0.5, 1.0])
         axs[i].set_ylim([0, 1.1])
         axs[i].set_title(name[0])
-        axs[i].text(1.02, .05, f'100\% = {n} IOs',
-                    ha='right', va='bottom', fontsize=7,
-                    bbox={'facecolor': 'white', 'alpha': 0.2,
-                          'pad': 0.2, 'boxstyle': 'round'})
-        for c, ls, tool, correct in zip(colors, linestyles, tools, corrects):
+        # name은 벤치 이름
+        # axs[i].text(1.02, .05, f'100\% = {n} IOs',
+        #             ha='right', va='bottom', fontsize=7,
+        #             bbox={'facecolor': 'white', 'alpha': 0.2,
+        #                   'pad': 0.2, 'boxstyle': 'round'})
+        for c, ls, tool, correct, alpha in zip(colors, linestyles, tools, corrects, alphas):
             correct = list(map(
-                lambda x, y: int(x)/int(y) if int(y) != 0 else 0.0,
-                correct[1:], count[1:]))
-
+                lambda x, y: int(x)/int(y) if int(y) != 0 else 1,
+                correct[3:11], count[3:11]))
+            
+            # bench 마다 최대 예제수가 다름. 4~8임
+            # success rate 는 correct 에
+            # print(correct)
+            # print(len(correct))
+            # exit(0)
             # get percentage of trace-complete examples
-            line = []
-            for cutoff in cutoffs:
-                line.append(
-                    next((i/n for i, v in enumerate(correct) if v >= cutoff), 1))
-            learnability[tool].append(line)
-            axs[i].plot(cutoffs, line, label=tool, linestyle=ls, color=c)
+            # 말고 예제 1~8 까지
+            # line = []
+            # for cutoff in cutoffs:
+            # for cutoff in range(1, 9):
+            #     line.append(
+            #         next((i/n for i, v in enumerate(correct)), 1))
+            # learnability[tool].append(line)
+            # 이게 그리는거 먼저 syrup 그리겠지 plt.plot(x, syrup_succ, marker='o', label='syrup succ')
+            axs[i].plot(nexamples, correct, label=tool, linestyle=ls, color=c, alpha=alpha)
 
         i += 1
     rows_to_be_separated.append(i//5)
+    # exit(0)
 
 axs[i].legend(
     [mlines.Line2D([], [], color=c, linestyle=ls)
@@ -154,49 +191,55 @@ axs[i].legend(
 for j in range(i, len(axs)):
     axs[j].axis('off')
 
-fig.supxlabel('success rate')
-fig.supylabel('percentage of trace-complete examples')
+# print(len(axs))
+fig.supylabel('Success Rate')
+# fig.supylabel('percentage of trace-complete examples')
+fig.supxlabel('Num of Examples')
 fig.tight_layout()
+# print("what")
+# print(axs2d.shape)
+# print(len(axs2d.flat))
 draw_hlines(fig, axs2d, rows_to_be_separated)
-fig.savefig("learnability-individual{}{}.pdf".format(
-    "-ablation" if args.ablation else "",
-    "-rec" if args.rec else ""), bbox_inches='tight')
+# fig.savefig("learnability-individual{}{}.pdf".format(
+#     "-ablation" if args.ablation else "",
+#     "-rec" if args.rec else ""), bbox_inches='tight')
+fig.savefig(FIG_NAME, bbox_inches='tight')
 # print summary
 benchmark_names = [name for name in benchmarks
                    if not args.rec or name not in benchmarks_nonrec]
-if args.ablation:
-    summary_learnability(
-        benchmark_names,
-        'SyRup', 'SyRup*', learnability[tools[0]], learnability[tools[1]])
-else:
-    learnability_baseline = [
-        min(l1, l2) for l1, l2 in
-        zip(learnability[tools[1]], learnability[tools[2]])]
-    summary_learnability(
-        benchmark_names,
-        'SyRup', 'Best(Burst, SMyth)',
-        learnability[tools[0]], learnability_baseline)
-    learnability_baseline = [
-        max(l1, l2) for l1, l2 in
-        zip(learnability[tools[1]], learnability[tools[2]])]
-    summary_learnability(
-        benchmark_names,
-        'SyRup', 'Worst(Burst, SMyth)',
-        learnability[tools[0]], learnability_baseline)
+# if args.ablation:
+#     summary_learnability(
+#         benchmark_names,
+#         'SyRup', 'SyRup*', learnability[tools[0]], learnability[tools[1]])
+# else:
+#     learnability_baseline = [
+#         min(l1, l2) for l1, l2 in
+#         zip(learnability[tools[1]], learnability[tools[2]])]
+#     summary_learnability(
+#         benchmark_names,
+#         'SyRup', 'Best(Burst, SMyth)',
+#         learnability[tools[0]], learnability_baseline)
+#     learnability_baseline = [
+#         max(l1, l2) for l1, l2 in
+#         zip(learnability[tools[1]], learnability[tools[2]])]
+#     summary_learnability(
+#         benchmark_names,
+#         'SyRup', 'Worst(Burst, SMyth)',
+#         learnability[tools[0]], learnability_baseline)
 
 
 # visualize
-fig, ax = plt.subplots(figsize=(4, 3))
-for c, ls, tool in zip(colors, linestyles, tools):
-    ax.xaxis.set_major_formatter(mtick.PercentFormatter(1.0))
-    ax.set_ylim([0, 1])
-    ax.yaxis.set_major_formatter(mtick.PercentFormatter(1.0))
-    ax.set_ylabel('percentage of trace-complete examples')
-    ax.set_xlabel('success rate')
-    avg_learnability = mean_of_matrix(learnability[tool])
-    print(tool)
-    print(avg_learnability)
-    ax.plot(cutoffs, avg_learnability, label=tool, linestyle=ls, color=c)
-ax.legend(loc='lower right')
-fig.tight_layout()
-fig.savefig(FIG_NAME, bbox_inches='tight')
+# fig, ax = plt.subplots(figsize=(4, 3))
+# for c, ls, tool in zip(colors, linestyles, tools):
+#     ax.xaxis.set_major_formatter(mtick.PercentFormatter(1.0))
+#     ax.set_ylim([0, 1])
+#     ax.yaxis.set_major_formatter(mtick.PercentFormatter(1.0))
+#     ax.set_ylabel('Num of Examples')
+#     ax.set_xlabel('success rate')
+#     avg_learnability = mean_of_matrix(learnability[tool])
+#     print(tool)
+#     print(avg_learnability)
+#     ax.plot(cutoffs, avg_learnability, label=tool, linestyle=ls, color=c)
+# ax.legend(loc='lower right')
+# fig.tight_layout()
+# fig.savefig(FIG_NAME, bbox_inches='tight')

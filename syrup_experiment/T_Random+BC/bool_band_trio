@@ -1,0 +1,511 @@
+(T (),T ()) -> T ();
+(T (), T ()) -> T ();
+
+=================================
+fix (f : bool * bool -> bool) = fun (x:bool * bool) -> x . 0
+
+0.0005 false
+Time(s): 0.10 
+Mem(Kb): 14472
+
+(T (),F ()) -> F ();
+(T (), T ()) -> T ();
+
+=================================
+fix (f : bool * bool -> bool) = fun (x:bool * bool) -> x . 1
+
+0.0001 false
+Time(s): 0.02 
+Mem(Kb): 14392
+
+(T (),T ()) -> T ();
+(T (), T ()) -> T ();
+
+=================================
+fix (f : bool * bool -> bool) = fun (x:bool * bool) -> x . 0
+
+0.0001 false
+Time(s): 0.02 
+Mem(Kb): 14428
+
+(F (),T ()) -> F ();
+(T (), T ()) -> T ();
+
+=================================
+fix (f : bool * bool -> bool) = fun (x:bool * bool) -> x . 0
+
+0.0001 false
+Time(s): 0.02 
+Mem(Kb): 14388
+
+(F (),T ()) -> F ();
+(T (), T ()) -> T ();
+
+=================================
+fix (f : bool * bool -> bool) = fun (x:bool * bool) -> x . 0
+
+0.0001 false
+Time(s): 0.02 
+Mem(Kb): 14388
+
+(F (),T ()) -> F ();
+(T (), T ()) -> T ();
+
+=================================
+fix (f : bool * bool -> bool) = fun (x:bool * bool) -> x . 0
+
+0.0001 false
+Time(s): 0.02 
+Mem(Kb): 14388
+
+(T (),F ()) -> F ();
+(T (), T ()) -> T ();
+
+=================================
+fix (f : bool * bool -> bool) = fun (x:bool * bool) -> x . 1
+
+0.0001 false
+Time(s): 0.02 
+Mem(Kb): 14392
+
+(F (),F ()) -> F ();
+(T (), T ()) -> T ();
+
+=================================
+fix (f : bool * bool -> bool) = fun (x:bool * bool) -> x . 0
+
+0.0001 false
+Time(s): 0.02 
+Mem(Kb): 14432
+
+(T (),F ()) -> F ();
+(T (), T ()) -> T ();
+
+=================================
+fix (f : bool * bool -> bool) = fun (x:bool * bool) -> x . 1
+
+0.0001 false
+Time(s): 0.02 
+Mem(Kb): 14392
+
+(T (),T ()) -> T ();
+(T (), T ()) -> T ();
+
+=================================
+fix (f : bool * bool -> bool) = fun (x:bool * bool) -> x . 0
+
+0.0001 false
+Time(s): 0.02 
+Mem(Kb): 14428
+
+(T (),T ()) -> T ();
+(F (),T ()) -> F ();
+(T (), T ()) -> T ();
+
+=================================
+fix (f : bool * bool -> bool) = fun (x:bool * bool) -> x . 0
+
+0.0001 false
+Time(s): 0.02 
+Mem(Kb): 14388
+
+(F (),F ()) -> F ();
+(T (),T ()) -> T ();
+(T (), T ()) -> T ();
+
+=================================
+fix (f : bool * bool -> bool) = fun (x:bool * bool) -> x . 0
+
+0.0001 false
+Time(s): 0.02 
+Mem(Kb): 14408
+
+(F (),F ()) -> F ();
+(T (),F ()) -> F ();
+(T (), T ()) -> T ();
+
+=================================
+fix (f : bool * bool -> bool) = fun (x:bool * bool) -> x . 1
+
+0.0001 false
+Time(s): 0.02 
+Mem(Kb): 14452
+
+(T (),T ()) -> T ();
+(F (),F ()) -> F ();
+(T (), T ()) -> T ();
+
+=================================
+fix (f : bool * bool -> bool) = fun (x:bool * bool) -> x . 0
+
+0.0001 false
+Time(s): 0.02 
+Mem(Kb): 14408
+
+(F (),T ()) -> F ();
+(F (),F ()) -> F ();
+(T (), T ()) -> T ();
+
+=================================
+fix (f : bool * bool -> bool) = fun (x:bool * bool) -> x . 0
+
+0.0001 false
+Time(s): 0.02 
+Mem(Kb): 14528
+
+(F (),F ()) -> F ();
+(T (),F ()) -> F ();
+(T (), T ()) -> T ();
+
+=================================
+fix (f : bool * bool -> bool) = fun (x:bool * bool) -> x . 1
+
+0.0001 false
+Time(s): 0.02 
+Mem(Kb): 14436
+
+(F (),T ()) -> F ();
+(T (),T ()) -> T ();
+(T (), T ()) -> T ();
+
+=================================
+fix (f : bool * bool -> bool) = fun (x:bool * bool) -> x . 0
+
+0.0001 false
+Time(s): 0.02 
+Mem(Kb): 14460
+
+(F (),T ()) -> F ();
+(F (),F ()) -> F ();
+(T (), T ()) -> T ();
+
+=================================
+fix (f : bool * bool -> bool) = fun (x:bool * bool) -> x . 0
+
+0.0001 false
+Time(s): 0.02 
+Mem(Kb): 14384
+
+(F (),T ()) -> F ();
+(F (),F ()) -> F ();
+(T (), T ()) -> T ();
+
+=================================
+fix (f : bool * bool -> bool) = fun (x:bool * bool) -> x . 0
+
+0.0001 false
+Time(s): 0.02 
+Mem(Kb): 14432
+
+(F (),T ()) -> F ();
+(T (),T ()) -> T ();
+(T (), T ()) -> T ();
+
+=================================
+fix (f : bool * bool -> bool) = fun (x:bool * bool) -> x . 0
+
+0.0001 false
+Time(s): 0.02 
+Mem(Kb): 14448
+
+(T (),F ()) -> F ();
+(T (),T ()) -> T ();
+(F (),T ()) -> F ();
+(T (), T ()) -> T ();
+
+=================================
+fix (f : bool * bool -> bool) =
+  fun (x:bool * bool) -> match x . 0 with
+                           | F _ -> x . 0
+                           | T _ -> x . 1
+
+0.0030 true
+Time(s): 0.02 
+Mem(Kb): 15984
+
+(T (),F ()) -> F ();
+(F (),T ()) -> F ();
+(T (),T ()) -> T ();
+(T (), T ()) -> T ();
+
+=================================
+fix (f : bool * bool -> bool) =
+  fun (x:bool * bool) -> match x . 0 with
+                           | F _ -> x . 0
+                           | T _ -> x . 1
+
+0.0027 true
+Time(s): 0.02 
+Mem(Kb): 15964
+
+(F (),T ()) -> F ();
+(T (),F ()) -> F ();
+(F (),F ()) -> F ();
+(T (), T ()) -> T ();
+
+=================================
+fix (f : bool * bool -> bool) =
+  fun (x:bool * bool) -> match x . 0 with
+                           | F _ -> x . 0
+                           | T _ -> x . 1
+
+0.0026 true
+Time(s): 0.02 
+Mem(Kb): 15972
+
+(F (),F ()) -> F ();
+(F (),T ()) -> F ();
+(T (),F ()) -> F ();
+(T (), T ()) -> T ();
+
+=================================
+fix (f : bool * bool -> bool) =
+  fun (x:bool * bool) -> match x . 0 with
+                           | F _ -> x . 0
+                           | T _ -> x . 1
+
+0.0026 true
+Time(s): 0.02 
+Mem(Kb): 16016
+
+(F (),T ()) -> F ();
+(T (),F ()) -> F ();
+(F (),F ()) -> F ();
+(T (), T ()) -> T ();
+
+=================================
+fix (f : bool * bool -> bool) =
+  fun (x:bool * bool) -> match x . 0 with
+                           | F _ -> x . 0
+                           | T _ -> x . 1
+
+0.0027 true
+Time(s): 0.02 
+Mem(Kb): 16000
+
+(F (),F ()) -> F ();
+(T (),T ()) -> T ();
+(T (),F ()) -> F ();
+(T (), T ()) -> T ();
+
+=================================
+fix (f : bool * bool -> bool) = fun (x:bool * bool) -> x . 1
+
+0.0001 false
+Time(s): 0.02 
+Mem(Kb): 14436
+
+(T (),F ()) -> F ();
+(F (),F ()) -> F ();
+(T (),T ()) -> T ();
+(T (), T ()) -> T ();
+
+=================================
+fix (f : bool * bool -> bool) = fun (x:bool * bool) -> x . 1
+
+0.0001 false
+Time(s): 0.02 
+Mem(Kb): 14392
+
+(F (),F ()) -> F ();
+(T (),F ()) -> F ();
+(T (),T ()) -> T ();
+(T (), T ()) -> T ();
+
+=================================
+fix (f : bool * bool -> bool) = fun (x:bool * bool) -> x . 1
+
+0.0001 false
+Time(s): 0.02 
+Mem(Kb): 14392
+
+(T (),F ()) -> F ();
+(F (),T ()) -> F ();
+(F (),F ()) -> F ();
+(T (), T ()) -> T ();
+
+=================================
+fix (f : bool * bool -> bool) =
+  fun (x:bool * bool) -> match x . 0 with
+                           | F _ -> x . 0
+                           | T _ -> x . 1
+
+0.0027 true
+Time(s): 0.02 
+Mem(Kb): 16000
+
+(F (),T ()) -> F ();
+(T (),F ()) -> F ();
+(F (),F ()) -> F ();
+(T (), T ()) -> T ();
+
+=================================
+fix (f : bool * bool -> bool) =
+  fun (x:bool * bool) -> match x . 0 with
+                           | F _ -> x . 0
+                           | T _ -> x . 1
+
+0.0034 true
+Time(s): 0.02 
+Mem(Kb): 16000
+
+(F (),T ()) -> F ();
+(T (),F ()) -> F ();
+(T (),T ()) -> T ();
+(F (),F ()) -> F ();
+(T (), T ()) -> T ();
+
+=================================
+fix (f : bool * bool -> bool) =
+  fun (x:bool * bool) -> match x . 0 with
+                           | F _ -> x . 0
+                           | T _ -> x . 1
+
+0.0031 true
+Time(s): 0.02 
+Mem(Kb): 16032
+
+(T (),F ()) -> F ();
+(F (),F ()) -> F ();
+(F (),T ()) -> F ();
+(T (),T ()) -> T ();
+(T (), T ()) -> T ();
+
+=================================
+fix (f : bool * bool -> bool) =
+  fun (x:bool * bool) -> match x . 0 with
+                           | F _ -> x . 0
+                           | T _ -> x . 1
+
+0.0029 true
+Time(s): 0.02 
+Mem(Kb): 16040
+
+(F (),F ()) -> F ();
+(T (),T ()) -> T ();
+(F (),T ()) -> F ();
+(T (),F ()) -> F ();
+(T (), T ()) -> T ();
+
+=================================
+fix (f : bool * bool -> bool) =
+  fun (x:bool * bool) -> match x . 0 with
+                           | F _ -> x . 0
+                           | T _ -> x . 1
+
+0.0031 true
+Time(s): 0.02 
+Mem(Kb): 15996
+
+(F (),F ()) -> F ();
+(T (),T ()) -> T ();
+(F (),T ()) -> F ();
+(T (),F ()) -> F ();
+(T (), T ()) -> T ();
+
+=================================
+fix (f : bool * bool -> bool) =
+  fun (x:bool * bool) -> match x . 0 with
+                           | F _ -> x . 0
+                           | T _ -> x . 1
+
+0.0031 true
+Time(s): 0.02 
+Mem(Kb): 16004
+
+(F (),T ()) -> F ();
+(F (),F ()) -> F ();
+(T (),T ()) -> T ();
+(T (),F ()) -> F ();
+(T (), T ()) -> T ();
+
+=================================
+fix (f : bool * bool -> bool) =
+  fun (x:bool * bool) -> match x . 0 with
+                           | F _ -> x . 0
+                           | T _ -> x . 1
+
+0.0028 true
+Time(s): 0.02 
+Mem(Kb): 16004
+
+(T (),T ()) -> T ();
+(F (),F ()) -> F ();
+(F (),T ()) -> F ();
+(T (),F ()) -> F ();
+(T (), T ()) -> T ();
+
+=================================
+fix (f : bool * bool -> bool) =
+  fun (x:bool * bool) -> match x . 0 with
+                           | F _ -> x . 0
+                           | T _ -> x . 1
+
+0.0030 true
+Time(s): 0.02 
+Mem(Kb): 16028
+
+(T (),F ()) -> F ();
+(T (),T ()) -> T ();
+(F (),F ()) -> F ();
+(F (),T ()) -> F ();
+(T (), T ()) -> T ();
+
+=================================
+fix (f : bool * bool -> bool) =
+  fun (x:bool * bool) -> match x . 0 with
+                           | F _ -> x . 0
+                           | T _ -> x . 1
+
+0.0029 true
+Time(s): 0.02 
+Mem(Kb): 16016
+
+(T (),F ()) -> F ();
+(T (),T ()) -> T ();
+(F (),T ()) -> F ();
+(F (),F ()) -> F ();
+(T (), T ()) -> T ();
+
+=================================
+fix (f : bool * bool -> bool) =
+  fun (x:bool * bool) -> match x . 0 with
+                           | F _ -> x . 0
+                           | T _ -> x . 1
+
+0.0052 true
+Time(s): 0.03 
+Mem(Kb): 16096
+
+(F (),F ()) -> F ();
+(T (),T ()) -> T ();
+(F (),T ()) -> F ();
+(T (),F ()) -> F ();
+(T (), T ()) -> T ();
+
+=================================
+fix (f : bool * bool -> bool) =
+  fun (x:bool * bool) -> match x . 0 with
+                           | F _ -> x . 0
+                           | T _ -> x . 1
+
+0.0052 true
+Time(s): 0.03 
+Mem(Kb): 16012
+
+(T (),F ()) -> F ();
+(T (),T ()) -> T ();
+(F (),T ()) -> F ();
+(F (),F ()) -> F ();
+(T (), T ()) -> T ();
+
+=================================
+fix (f : bool * bool -> bool) =
+  fun (x:bool * bool) -> match x . 0 with
+                           | F _ -> x . 0
+                           | T _ -> x . 1
+
+0.0044 true
+Time(s): 0.03 
+Mem(Kb): 16024
+

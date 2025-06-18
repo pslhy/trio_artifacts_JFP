@@ -4,6 +4,7 @@ import argparse
 import csv
 import bisect
 import re
+import signal
 from contextlib import ExitStack
 from subprocess import TimeoutExpired
 import common
@@ -49,6 +50,7 @@ with open(os.path.join(LOG_DIR, "result.csv"), "w", newline="") as f:
     csv_writer = csv.writer(f)
     csv_writer.writerow(["cardinality of set"] +
                         list(range(MAX_NUM_OF_EXS + 1)))
+    num_of_proc = 0
     for name in benchmarks:
         with ExitStack() as stack:
             f_alts = [
@@ -77,10 +79,14 @@ with open(os.path.join(LOG_DIR, "result.csv"), "w", newline="") as f:
             res_mem = [[0] * (MAX_NUM_OF_EXS + 1) for _i in range(4)]
 
             cards = []
+            # for filename in filenames:
+            #     if re.search(name + '[0-9]+', filename):
+            #         bisect.insort(cards, int(
+            #             re.search('[0-9]+', filename).group()))
             for filename in filenames:
-                if re.search(name + '[0-9]+', filename):
+                if re.search(name + '[1-7]', filename):
                     bisect.insort(cards, int(
-                        re.search('[0-9]+', filename).group()))
+                        re.search('[1-7]', filename).group()))
 
             cards = cards[0:MAX_NUM_OF_EXS]
 
@@ -111,29 +117,36 @@ with open(os.path.join(LOG_DIR, "result.csv"), "w", newline="") as f:
                     for i, (f_alt, syrup_mode) in enumerate(zip(f_alts, SYRUP_ALT_MODES)):
                         print(exs, file=f_alt)
                         print('=================================', file=f_alt)
+                        # skip
                         try:
+                            print("syrup running exm: " + str(res_count[count]) + " count: " + str(count), flush=True)
                             p = run_syrup(syrup_mode, name, exs)
                             print(p.stdout, file=f_alt, flush=True)
                             # chage -1 to -3 to get mem data
                             result = p.stdout.splitlines()[-3]
                             if "TIMEOUT" in result:
                                 res_timeout[i][count] += 1
+                                # get mem data
+                                for_mem = p.stdout.splitlines()[-1]
+                                res_mem[len(SYRUP_ALT_MODES)][count] += int(for_mem.split("Mem(Kb): ")[1])
                             else:
-                                print(result)
+                                # print(result)
                                 [time, is_correct] = result.split(' ')
                                 res_time[i][count] += float(time)
                                 res_correct[i][count] += int(
                                     is_correct == "true")
-                            # get mem data
-                            for_mem = p.stdout.splitlines()[-1]
-                            res_mem[i][count] += int(for_mem.split("Mem(Kb): ")[1])
+                                # get mem data
+                                for_mem = p.stdout.splitlines()[-1]
+                                res_mem[i][count] += int(for_mem.split("Mem(Kb): ")[1])
 
                         except TimeoutExpired as e:
                             print(e.stdout, file=f_alt, flush=True)
                             res_timeout[i][count] += 1
+                                # os.killpg(os.getpgid(e.process.pid), signal.SIGKILL)
                     print(exs, file=f_trio)
                     print('=================================', file=f_trio)
-                    try:
+                    try:   
+                        print("trio running exm: " + str(res_count[count]) + " count: " + str(count), flush=True)
                         p = run_trio(name, exs)
                         print(p.stdout, file=f_trio, flush=True)
                         # had to do this to catch (Failure "bad typechecking")
@@ -142,6 +155,9 @@ with open(os.path.join(LOG_DIR, "result.csv"), "w", newline="") as f:
                             result = p.stdout.splitlines()[-3]
                             if "TIMEOUT" in result:
                                 res_timeout[len(SYRUP_ALT_MODES)][count] += 1
+                                # get mem data
+                                for_mem = p.stdout.splitlines()[-1]
+                                res_mem[len(SYRUP_ALT_MODES)][count] += int(for_mem.split("Mem(Kb): ")[1])
                             elif "STACKOVERFLOW" in result:
                                 res_sof[len(SYRUP_ALT_MODES)][count] += 1
                             else:
@@ -150,12 +166,14 @@ with open(os.path.join(LOG_DIR, "result.csv"), "w", newline="") as f:
                                          ][count] += float(time)
                                 res_correct[len(SYRUP_ALT_MODES)][count] += int(
                                     is_correct == "true")
-                            # get mem data
-                            for_mem = p.stdout.splitlines()[-1]
-                            res_mem[len(SYRUP_ALT_MODES)][count] += int(for_mem.split("Mem(Kb): ")[1])
+                                # get mem data
+                                for_mem = p.stdout.splitlines()[-1]
+                                res_mem[len(SYRUP_ALT_MODES)][count] += int(for_mem.split("Mem(Kb): ")[1])
+
                     except TimeoutExpired as e:
                         print(e.stdout, file=f_trio, flush=True)
                         res_timeout[len(SYRUP_ALT_MODES)][count] += 1
+                        # os.killpg(os.getpgid(e.process.pid), signal.SIGKILL)
 
                     # print(exs, file=f_burst)
                     # print('=================================', file=f_burst)

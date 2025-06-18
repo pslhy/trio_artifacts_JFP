@@ -12,6 +12,7 @@ let main () =
     in
 		if !src = "" then Arg.usage options usage
     else
+			(* let start_time = Sys.time () in *)
 			(* let start = Sys.time () in *)
 			let inc = open_in !src in
 			let unprocessed_spec =
@@ -37,6 +38,10 @@ let main () =
 				(* a solution is found while generating components *) 
 				Generator.wrap spec sol  
 			in 
+			(* let end_time = Sys.time ()  in
+			let elapsed = end_time -. start_time in *)
+			(* if !Options.print_time then print_endline (Printf.sprintf "Elapsed Time: %.3f\nTermination_Check Time: %.3f" elapsed !Options.termination_time); *)
+			(* print_endline (Printf.sprintf "Elapsed Time: %.3f\nTermination_Check Time: %.3f" elapsed !Options.termination_time); *)
 			prerr_endline (Expr.show e)
 		 
 let _ = main ()

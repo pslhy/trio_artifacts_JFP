@@ -1,0 +1,1519 @@
+[0,1] -> [1,0];
+[] -> [];
+
+=================================
+fix (f : list -> list) =
+  fun (x:list) ->
+    match x with
+      | Nil _ -> x
+      | Cons _ -> append (Un_Cons x . 1) Cons (0, Nil)
+
+0.2408 false
+Time(s): 0.33 
+Mem(Kb): 16724
+
+[1,1] -> [1,1];
+[] -> [];
+
+=================================
+fix (f : list -> list) = fun (x:list) -> x
+
+0.0100 false
+Time(s): 0.08 
+Mem(Kb): 15592
+
+[1,2,1] -> [1,2,1];
+[] -> [];
+
+=================================
+fix (f : list -> list) = fun (x:list) -> x
+
+0.0090 false
+Time(s): 0.08 
+Mem(Kb): 16128
+
+[3,3] -> [3,3];
+[] -> [];
+
+=================================
+fix (f : list -> list) = fun (x:list) -> x
+
+0.0068 false
+Time(s): 0.06 
+Mem(Kb): 16076
+
+[2,2] -> [2,2];
+[] -> [];
+
+=================================
+fix (f : list -> list) = fun (x:list) -> x
+
+0.0053 false
+Time(s): 0.07 
+Mem(Kb): 15772
+
+[3] -> [3];
+[] -> [];
+
+=================================
+fix (f : list -> list) = fun (x:list) -> x
+
+0.0096 false
+Time(s): 0.08 
+Mem(Kb): 15392
+
+[2] -> [2];
+[] -> [];
+
+=================================
+fix (f : list -> list) = fun (x:list) -> x
+
+0.0046 false
+Time(s): 0.26 
+Mem(Kb): 15228
+
+[1,3] -> [3,1];
+[] -> [];
+
+=================================
+fix (f : list -> list) =
+  fun (x:list) ->
+    match x with
+      | Nil _ -> x
+      | Cons _ -> append (Un_Cons x . 1) Cons (Un_Cons x . 0, Nil)
+
+0.2806 false
+Time(s): 0.35 
+Mem(Kb): 17276
+
+[0,3] -> [3,0];
+[] -> [];
+
+=================================
+fix (f : list -> list) =
+  fun (x:list) ->
+    match x with
+      | Nil _ -> x
+      | Cons _ -> append (Un_Cons x . 1) Cons (0, Nil)
+
+0.0994 false
+Time(s): 0.16 
+Mem(Kb): 16944
+
+[2,1,0] -> [0,1,2];
+[] -> [];
+
+=================================
+fix (f : list -> list) =
+  fun (x:list) ->
+    match x with
+      | Nil _ -> x
+      | Cons _ -> Cons (0, Cons (1, Cons (Un_Cons x . 0, Nil)))
+
+1.2339 false
+Time(s): 1.38 
+Mem(Kb): 18128
+
+[0] -> [0];
+[] -> [];
+
+=================================
+fix (f : list -> list) = fun (x:list) -> x
+
+0.0020 false
+Time(s): 0.05 
+Mem(Kb): 15044
+
+[2,2,1] -> [1,2,2];
+[] -> [];
+
+=================================
+fix (f : list -> list) =
+  fun (x:list) ->
+    match x with
+      | Nil _ -> x
+      | Cons _ -> Cons (1,
+                         append Cons (Un_Cons x . 0, Nil)
+                           Cons (Un_Cons x . 0, Nil))
+
+1.0239 false
+Time(s): 1.09 
+Mem(Kb): 19164
+
+[3,1,1] -> [1,1,3];
+[] -> [];
+
+=================================
+fix (f : list -> list) =
+  fun (x:list) ->
+    match x with
+      | Nil _ -> x
+      | Cons _ -> append (Un_Cons x . 1) Cons (Un_Cons x . 0, Nil)
+
+0.4315 false
+Time(s): 0.83 
+Mem(Kb): 18624
+
+[0,0,2] -> [2,0,0];
+[] -> [];
+
+=================================
+fix (f : list -> list) =
+  fun (x:list) ->
+    match x with
+      | Nil _ -> x
+      | Cons _ -> append Cons (2, Nil) Cons (Un_Cons x . 0, Cons (0, Nil))
+
+0.5003 false
+Time(s): 0.58 
+Mem(Kb): 18136
+
+[1,0,0] -> [0,0,1];
+[] -> [];
+
+=================================
+fix (f : list -> list) =
+  fun (x:list) ->
+    match x with
+      | Nil _ -> x
+      | Cons _ -> append (Un_Cons x . 1) Cons (Un_Cons x . 0, Nil)
+
+0.5035 false
+Time(s): 0.56 
+Mem(Kb): 18184
+
+[1,1] -> [1,1];
+[] -> [];
+
+=================================
+fix (f : list -> list) = fun (x:list) -> x
+
+0.0033 false
+Time(s): 0.04 
+Mem(Kb): 15520
+
+[3,0,2] -> [2,0,3];
+[] -> [];
+
+=================================
+fix (f : list -> list) =
+  fun (x:list) ->
+    match x with
+      | Nil _ -> x
+      | Cons _ -> Cons (2, Cons (0, Cons (Un_Cons x . 0, Nil)))
+
+1.0220 false
+Time(s): 1.09 
+Mem(Kb): 18560
+
+[1,1] -> [1,1];
+[] -> [];
+
+=================================
+fix (f : list -> list) = fun (x:list) -> x
+
+0.0042 false
+Time(s): 0.05 
+Mem(Kb): 15524
+
+[0,2,0] -> [0,2,0];
+[] -> [];
+
+=================================
+fix (f : list -> list) = fun (x:list) -> x
+
+0.0044 false
+Time(s): 0.06 
+Mem(Kb): 16056
+
+[0] -> [0];
+[] -> [];
+
+=================================
+fix (f : list -> list) = fun (x:list) -> x
+
+0.0019 false
+Time(s): 0.04 
+Mem(Kb): 15048
+
+[2] -> [2];
+[2,1,2] -> [2,1,2];
+[] -> [];
+
+=================================
+fix (f : list -> list) = fun (x:list) -> x
+
+0.0061 false
+Time(s): 0.05 
+Mem(Kb): 16044
+
+[1,3] -> [3,1];
+[1,0,0] -> [0,0,1];
+[] -> [];
+
+=================================
+fix (f : list -> list) =
+  fun (x:list) ->
+    match x with
+      | Nil _ -> x
+      | Cons _ -> append (Un_Cons x . 1) Cons (Un_Cons x . 0, Nil)
+
+0.0661 false
+Time(s): 0.70 
+Mem(Kb): 19240
+
+[1] -> [1];
+[0,3] -> [3,0];
+[] -> [];
+
+=================================
+fix (f : list -> list) =
+  fun (x:list) ->
+    match x with
+      | Nil _ -> x
+      | Cons _ -> append (Un_Cons x . 1) Cons (Un_Cons x . 0, Nil)
+
+0.3504 false
+Time(s): 0.39 
+Mem(Kb): 17908
+
+[1,1] -> [1,1];
+[3,0,1] -> [1,0,3];
+[] -> [];
+
+=================================
+fix (f : list -> list) =
+  fun (x:list) ->
+    match x with
+      | Nil _ -> x
+      | Cons _ -> append (f (Un_Cons x . 1)) Cons (Un_Cons x . 0, Nil)
+
+18.2126 true
+Time(s): 18.59 
+Mem(Kb): 35408
+
+[2] -> [2];
+[3,2,1] -> [1,2,3];
+[] -> [];
+
+=================================
+fix (f : list -> list) =
+  fun (x:list) ->
+    match x with
+      | Nil _ -> x
+      | Cons _ -> (match Un_Cons x . 1 with
+                     | Nil _ -> x
+                     | Cons _ -> Cons (1,
+                                        append Cons (2, Nil)
+                                          Cons (Un_Cons x . 0, Nil)))
+
+2.0430 false
+Time(s): 2.18 
+Mem(Kb): 19660
+
+[3,0] -> [0,3];
+[0,1] -> [1,0];
+[] -> [];
+
+=================================
+fix (f : list -> list) =
+  fun (x:list) ->
+    match x with
+      | Nil _ -> x
+      | Cons _ -> append (Un_Cons x . 1) Cons (Un_Cons x . 0, Nil)
+
+0.8178 false
+Time(s): 0.93 
+Mem(Kb): 18376
+
+[0,3,3] -> [3,3,0];
+[0] -> [0];
+[] -> [];
+
+=================================
+fix (f : list -> list) =
+  fun (x:list) ->
+    match x with
+      | Nil _ -> x
+      | Cons _ -> append (Un_Cons x . 1) Cons (0, Nil)
+
+0.4731 false
+Time(s): 0.53 
+Mem(Kb): 18216
+
+[2,2] -> [2,2];
+[1,0] -> [0,1];
+[] -> [];
+
+=================================
+fix (f : list -> list) =
+  fun (x:list) ->
+    match x with
+      | Nil _ -> x
+      | Cons _ -> append (Un_Cons x . 1) Cons (Un_Cons x . 0, Nil)
+
+0.3971 false
+Time(s): 0.44 
+Mem(Kb): 18272
+
+[1,0] -> [0,1];
+[0] -> [0];
+[] -> [];
+
+=================================
+fix (f : list -> list) =
+  fun (x:list) ->
+    match x with
+      | Nil _ -> x
+      | Cons _ -> append (Un_Cons x . 1) Cons (Un_Cons x . 0, Nil)
+
+0.2901 false
+Time(s): 0.40 
+Mem(Kb): 17664
+
+[3,0] -> [0,3];
+[0,0] -> [0,0];
+[] -> [];
+
+=================================
+fix (f : list -> list) =
+  fun (x:list) ->
+    match x with
+      | Nil _ -> x
+      | Cons _ -> append (Un_Cons x . 1) Cons (Un_Cons x . 0, Nil)
+
+0.4269 false
+Time(s): 0.50 
+Mem(Kb): 18016
+
+[2] -> [2];
+[3,1] -> [1,3];
+[2,0,3] -> [3,0,2];
+[] -> [];
+
+=================================
+fix (f : list -> list) =
+  fun (x:list) ->
+    match x with
+      | Nil _ -> x
+      | Cons _ -> (match Un_Cons x . 1 with
+                     | Nil _ -> x
+                     | Cons _ -> (match Un_Cons (Un_Cons x . 1) . 1 with
+                                    | Nil _ -> append (Un_Cons x . 1)
+                                                 Cons (Un_Cons x . 0, Nil)
+                                    | Cons _ -> Cons (S (Un_Cons x . 0),
+                                                       Cons (Un_Cons (
+                                                               Un_Cons x . 1)
+                                                               . 0,
+                                                              Cons (Un_Cons x
+                                                                    . 0, 
+                                                                    Nil)))))
+
+7.6207 false
+Time(s): 7.96 
+Mem(Kb): 17892
+
+[0,3,3] -> [3,3,0];
+[0,2] -> [2,0];
+[3] -> [3];
+[] -> [];
+
+=================================
+fix (f : list -> list) =
+  fun (x:list) ->
+    match x with
+      | Nil _ -> x
+      | Cons _ -> append (Un_Cons x . 1) Cons (Un_Cons x . 0, Nil)
+
+1.6209 false
+Time(s): 2.06 
+Mem(Kb): 16960
+
+[2,3,2] -> [2,3,2];
+[2,1,0] -> [0,1,2];
+[3] -> [3];
+[] -> [];
+
+=================================
+fix (f : list -> list) =
+  fun (x:list) ->
+    match x with
+      | Nil _ -> x
+      | Cons _ -> append (f (Un_Cons x . 1)) Cons (Un_Cons x . 0, Nil)
+
+38.2608 true
+Time(s): 38.60 
+Mem(Kb): 32816
+
+[3,3,1] -> [1,3,3];
+[2,1,3] -> [3,1,2];
+[2,1] -> [1,2];
+[] -> [];
+
+=================================
+fix (f : list -> list) =
+  fun (x:list) ->
+    match x with
+      | Nil _ -> x
+      | Cons _ -> append (f (Un_Cons x . 1)) Cons (Un_Cons x . 0, Nil)
+
+1.7530 true
+Time(s): 1.82 
+Mem(Kb): 17916
+
+[0,3,1] -> [1,3,0];
+[3,3] -> [3,3];
+[2] -> [2];
+[] -> [];
+
+=================================
+fix (f : list -> list) =
+  fun (x:list) ->
+    match x with
+      | Nil _ -> x
+      | Cons _ -> (match Un_Cons x . 0 with
+                     | O _ -> Cons (S (Un_Cons x . 0),
+                                     Cons (S (S (S (Un_Cons x . 0))),
+                                            Cons (Un_Cons x . 0, Nil)))
+                     | S _ -> x)
+
+4.0808 false
+Time(s): 4.16 
+Mem(Kb): 16984
+
+[2,3,2] -> [2,3,2];
+[3,3,1] -> [1,3,3];
+[3,2] -> [2,3];
+[] -> [];
+
+=================================
+fix (f : list -> list) =
+  fun (x:list) ->
+    match x with
+      | Nil _ -> x
+      | Cons _ -> append (f (Un_Cons x . 1)) Cons (Un_Cons x . 0, Nil)
+
+41.4216 true
+Time(s): 41.63 
+Mem(Kb): 31860
+
+[2,1] -> [1,2];
+[3,0,3] -> [3,0,3];
+[3] -> [3];
+[] -> [];
+
+=================================
+fix (f : list -> list) =
+  fun (x:list) ->
+    match x with
+      | Nil _ -> x
+      | Cons _ -> (match Un_Cons x . 1 with
+                     | Nil _ -> x
+                     | Cons _ -> (match Un_Cons (Un_Cons x . 1) . 0 with
+                                    | O _ -> x
+                                    | S _ -> append (Un_Cons x . 1)
+                                               Cons (Un_Cons x . 0, Nil)))
+
+4.1723 false
+Time(s): 4.23 
+Mem(Kb): 17372
+
+[2,1,3] -> [3,1,2];
+[2,1] -> [1,2];
+[3,0] -> [0,3];
+[] -> [];
+
+=================================
+fix (f : list -> list) =
+  fun (x:list) ->
+    match x with
+      | Nil _ -> x
+      | Cons _ -> append (f (Un_Cons x . 1)) Cons (Un_Cons x . 0, Nil)
+
+32.7305 true
+Time(s): 33.12 
+Mem(Kb): 32768
+
+[2,0,0] -> [0,0,2];
+[1,2] -> [2,1];
+[3] -> [3];
+[] -> [];
+
+=================================
+fix (f : list -> list) =
+  fun (x:list) ->
+    match x with
+      | Nil _ -> x
+      | Cons _ -> append (Un_Cons x . 1) Cons (Un_Cons x . 0, Nil)
+
+0.7572 false
+Time(s): 1.66 
+Mem(Kb): 19044
+
+[3,1,0] -> [0,1,3];
+[0,2] -> [2,0];
+[3] -> [3];
+[] -> [];
+
+=================================
+fix (f : list -> list) =
+  fun (x:list) ->
+    match x with
+      | Nil _ -> x
+      | Cons _ -> (match Un_Cons x . 0 with
+                     | O _ -> append (Un_Cons x . 1)
+                                Cons (Un_Cons x . 0, Nil)
+                     | S _ -> (match Un_Cons x . 1 with
+                                 | Nil _ -> x
+                                 | Cons _ -> Cons (0,
+                                                    Cons (Un_Cons (Un_Cons x
+                                                                    . 1)
+                                                            . 0,
+                                                           Cons (Un_Cons x .
+                                                                   0,
+                                                                  Nil)))))
+
+8.2812 false
+Time(s): 8.47 
+Mem(Kb): 18852
+
+[3,3] -> [3,3];
+[3] -> [3];
+[1,0,3] -> [3,0,1];
+[1,2,2] -> [2,2,1];
+[] -> [];
+
+=================================
+fix (f : list -> list) =
+  fun (x:list) ->
+    match x with
+      | Nil _ -> x
+      | Cons _ -> (match Un_Cons x . 1 with
+                     | Nil _ -> x
+                     | Cons _ -> (match Un_Cons (Un_Cons x . 1) . 1 with
+                                    | Nil _ -> x
+                                    | Cons _ -> Cons (Un_Cons (Un_Cons (
+                                                                 Un_Cons x .
+                                                                   1)
+                                                                 . 1)
+                                                        . 0,
+                                                       Cons (Un_Cons (
+                                                               Un_Cons x . 1)
+                                                               . 0,
+                                                              Cons (Un_Cons x
+                                                                    . 0, 
+                                                                    Nil)))))
+
+9.0751 false
+Time(s): 9.14 
+Mem(Kb): 19424
+
+[3] -> [3];
+[2,0] -> [0,2];
+[2,3,3] -> [3,3,2];
+[1,0] -> [0,1];
+[] -> [];
+
+=================================
+fix (f : list -> list) =
+  fun (x:list) ->
+    match x with
+      | Nil _ -> x
+      | Cons _ -> append (Un_Cons x . 1) Cons (Un_Cons x . 0, Nil)
+
+0.9227 false
+Time(s): 0.98 
+Mem(Kb): 20440
+
+[1,3,1] -> [1,3,1];
+[2,1] -> [1,2];
+[3] -> [3];
+[1,3,3] -> [3,3,1];
+[] -> [];
+
+=================================
+fix (f : list -> list) =
+  fun (x:list) ->
+    match x with
+      | Nil _ -> x
+      | Cons _ -> (match Un_Cons x . 1 with
+                     | Nil _ -> x
+                     | Cons _ -> (match Un_Cons (Un_Cons x . 1) . 1 with
+                                    | Nil _ -> append (Un_Cons x . 1)
+                                                 Cons (Un_Cons x . 0, Nil)
+                                    | Cons _ -> Cons (Un_Cons (Un_Cons (
+                                                                 Un_Cons x .
+                                                                   1)
+                                                                 . 1)
+                                                        . 0,
+                                                       Cons (Un_Cons (
+                                                               Un_Cons x . 1)
+                                                               . 0,
+                                                              Cons (Un_Cons x
+                                                                    . 0, 
+                                                                    Nil)))))
+
+7.9187 false
+Time(s): 8.13 
+Mem(Kb): 19108
+
+[2] -> [2];
+[3] -> [3];
+[3,2] -> [2,3];
+[0,1] -> [1,0];
+[] -> [];
+
+=================================
+fix (f : list -> list) =
+  fun (x:list) ->
+    match x with
+      | Nil _ -> x
+      | Cons _ -> append (Un_Cons x . 1) Cons (Un_Cons x . 0, Nil)
+
+0.8967 false
+Time(s): 0.94 
+Mem(Kb): 19148
+
+[2] -> [2];
+[2,1,0] -> [0,1,2];
+[0] -> [0];
+[1] -> [1];
+[] -> [];
+
+=================================
+fix (f : list -> list) =
+  fun (x:list) ->
+    match x with
+      | Nil _ -> x
+      | Cons _ -> (match Un_Cons x . 1 with
+                     | Nil _ -> x
+                     | Cons _ -> Cons (0,
+                                        append Cons (1, Nil)
+                                          Cons (Un_Cons x . 0, Nil)))
+
+2.7031 false
+Time(s): 3.05 
+Mem(Kb): 19060
+
+[3] -> [3];
+[2,3,3] -> [3,3,2];
+[0,3] -> [3,0];
+[1,3] -> [3,1];
+[] -> [];
+
+=================================
+fix (f : list -> list) =
+  fun (x:list) ->
+    match x with
+      | Nil _ -> x
+      | Cons _ -> append (Un_Cons x . 1) Cons (Un_Cons x . 0, Nil)
+
+1.0758 false
+Time(s): 1.25 
+Mem(Kb): 20292
+
+[2] -> [2];
+[3] -> [3];
+[1] -> [1];
+[2,1] -> [1,2];
+[] -> [];
+
+=================================
+fix (f : list -> list) =
+  fun (x:list) ->
+    match x with
+      | Nil _ -> x
+      | Cons _ -> append (Un_Cons x . 1) Cons (Un_Cons x . 0, Nil)
+
+0.4880 false
+Time(s): 0.68 
+Mem(Kb): 18936
+
+[3,3,3] -> [3,3,3];
+[1,1,0] -> [0,1,1];
+[1,1] -> [1,1];
+[1,2] -> [2,1];
+[] -> [];
+
+=================================
+fix (f : list -> list) =
+  fun (x:list) ->
+    match x with
+      | Nil _ -> x
+      | Cons _ -> append (f (Un_Cons x . 1)) Cons (Un_Cons x . 0, Nil)
+
+57.9312 true
+Time(s): 58.28 
+Mem(Kb): 32788
+
+[2,2] -> [2,2];
+[0,2,1] -> [1,2,0];
+[0,2] -> [2,0];
+[1,2] -> [2,1];
+[] -> [];
+
+=================================
+fix (f : list -> list) =
+  fun (x:list) ->
+    match x with
+      | Nil _ -> x
+      | Cons _ -> append (f (Un_Cons x . 1)) Cons (Un_Cons x . 0, Nil)
+
+1.8538 true
+Time(s): 2.64 
+Mem(Kb): 18560
+
+[0,0] -> [0,0];
+[0] -> [0];
+[2,1] -> [1,2];
+[0,1] -> [1,0];
+[] -> [];
+
+=================================
+fix (f : list -> list) =
+  fun (x:list) ->
+    match x with
+      | Nil _ -> x
+      | Cons _ -> append (Un_Cons x . 1) Cons (Un_Cons x . 0, Nil)
+
+1.4367 false
+Time(s): 1.89 
+Mem(Kb): 16656
+
+[0] -> [0];
+[3,3,0] -> [0,3,3];
+[0,3,3] -> [3,3,0];
+[1] -> [1];
+[0,2] -> [2,0];
+[] -> [];
+
+=================================
+fix (f : list -> list) =
+  fun (x:list) ->
+    match x with
+      | Nil _ -> x
+      | Cons _ -> (match Un_Cons x . 0 with
+                     | O _ -> append (Un_Cons x . 1)
+                                Cons (Un_Cons x . 0, Nil)
+                     | S _ -> (match Un_S (Un_Cons x . 0) with
+                                 | O _ -> x
+                                 | S _ -> Cons (0,
+                                                 append
+                                                   Cons (Un_Cons x . 0, Nil)
+                                                   Cons (Un_Cons x . 0, Nil))))
+
+18.9098 false
+Time(s): 18.99 
+Mem(Kb): 17192
+
+[0] -> [0];
+[0,3] -> [3,0];
+[2,3] -> [3,2];
+[1] -> [1];
+[2,0] -> [0,2];
+[] -> [];
+
+=================================
+fix (f : list -> list) =
+  fun (x:list) ->
+    match x with
+      | Nil _ -> x
+      | Cons _ -> append (Un_Cons x . 1) Cons (Un_Cons x . 0, Nil)
+
+1.8394 false
+Time(s): 2.29 
+Mem(Kb): 16636
+
+[0] -> [0];
+[1,1,2] -> [2,1,1];
+[3] -> [3];
+[0,3] -> [3,0];
+[3,2,3] -> [3,2,3];
+[] -> [];
+
+=================================
+fix (f : list -> list) =
+  fun (x:list) ->
+    match x with
+      | Nil _ -> x
+      | Cons _ -> (match Un_Cons x . 0 with
+                     | O _ -> append (Un_Cons x . 1)
+                                Cons (Un_Cons x . 0, Nil)
+                     | S _ -> (match Un_Cons x . 1 with
+                                 | Nil _ -> x
+                                 | Cons _ -> Cons (S (Un_Cons (Un_Cons x . 1)
+                                                        . 0),
+                                                    Cons (Un_Cons (Un_Cons x
+                                                                    . 1)
+                                                            . 0,
+                                                           Cons (Un_Cons x .
+                                                                   0,
+                                                                  Nil)))))
+
+21.3127 false
+Time(s): 21.66 
+Mem(Kb): 17520
+
+[0] -> [0];
+[2,2] -> [2,2];
+[3] -> [3];
+[3,3] -> [3,3];
+[2,1,1] -> [1,1,2];
+[] -> [];
+
+=================================
+fix (f : list -> list) =
+  fun (x:list) ->
+    match x with
+      | Nil _ -> x
+      | Cons _ -> append (Un_Cons x . 1) Cons (Un_Cons x . 0, Nil)
+
+1.4600 false
+Time(s): 1.63 
+Mem(Kb): 18732
+
+[1,0,2] -> [2,0,1];
+[0,2,2] -> [2,2,0];
+[1] -> [1];
+[3] -> [3];
+[1,0] -> [0,1];
+[] -> [];
+
+=================================
+fix (f : list -> list) =
+  fun (x:list) ->
+    match x with
+      | Nil _ -> x
+      | Cons _ -> append (f (Un_Cons x . 1)) Cons (Un_Cons x . 0, Nil)
+
+2.2689 true
+Time(s): 2.42 
+Mem(Kb): 18228
+
+[0,1] -> [1,0];
+[0,3,3] -> [3,3,0];
+[1,3] -> [3,1];
+[3,0] -> [0,3];
+[3,1,3] -> [3,1,3];
+[] -> [];
+
+=================================
+fix (f : list -> list) =
+  fun (x:list) ->
+    match x with
+      | Nil _ -> x
+      | Cons _ -> append (f (Un_Cons x . 1)) Cons (Un_Cons x . 0, Nil)
+
+3.0856 true
+Time(s): 3.31 
+Mem(Kb): 18128
+
+[3] -> [3];
+[0] -> [0];
+[3,3] -> [3,3];
+[1] -> [1];
+[2,1] -> [1,2];
+[] -> [];
+
+=================================
+fix (f : list -> list) =
+  fun (x:list) ->
+    match x with
+      | Nil _ -> x
+      | Cons _ -> append (Un_Cons x . 1) Cons (Un_Cons x . 0, Nil)
+
+1.5612 false
+Time(s): 1.61 
+Mem(Kb): 16976
+
+[3,3,2] -> [2,3,3];
+[3] -> [3];
+[0,2] -> [2,0];
+[2,2] -> [2,2];
+[1] -> [1];
+[] -> [];
+
+=================================
+fix (f : list -> list) =
+  fun (x:list) ->
+    match x with
+      | Nil _ -> x
+      | Cons _ -> (match Un_Cons x . 1 with
+                     | Nil _ -> x
+                     | Cons _ -> (match Un_Cons (Un_Cons x . 1) . 1 with
+                                    | Nil _ -> append (Un_Cons x . 1)
+                                                 Cons (Un_Cons x . 0, Nil)
+                                    | Cons _ -> Cons (2,
+                                                       append
+                                                         Cons (Un_Cons x . 0,
+                                                                Nil)
+                                                         Cons (Un_Cons x . 0,
+                                                                Nil))))
+
+27.5191 false
+Time(s): 27.60 
+Mem(Kb): 17088
+
+[2,0] -> [0,2];
+[1] -> [1];
+[2,3,1] -> [1,3,2];
+[2,2,0] -> [0,2,2];
+[3,1] -> [1,3];
+[] -> [];
+
+=================================
+fix (f : list -> list) =
+  fun (x:list) ->
+    match x with
+      | Nil _ -> x
+      | Cons _ -> append (f (Un_Cons x . 1)) Cons (Un_Cons x . 0, Nil)
+
+2.6528 true
+Time(s): 3.18 
+Mem(Kb): 19776
+
+[1,3] -> [3,1];
+[2,0] -> [0,2];
+[1] -> [1];
+[3,0,3] -> [3,0,3];
+[2] -> [2];
+[] -> [];
+
+=================================
+fix (f : list -> list) =
+  fun (x:list) ->
+    match x with
+      | Nil _ -> x
+      | Cons _ -> (match Un_Cons x . 1 with
+                     | Nil _ -> x
+                     | Cons _ -> (match Un_Cons (Un_Cons x . 1) . 1 with
+                                    | Nil _ -> append (Un_Cons x . 1)
+                                                 Cons (Un_Cons x . 0, Nil)
+                                    | Cons _ -> x))
+
+7.0151 false
+Time(s): 7.25 
+Mem(Kb): 16840
+
+[2] -> [2];
+[1,0,1] -> [1,0,1];
+[1,3,3] -> [3,3,1];
+[1,3] -> [3,1];
+[1] -> [1];
+[2,2,2] -> [2,2,2];
+[] -> [];
+
+=================================
+fix (f : list -> list) =
+  fun (x:list) ->
+    match x with
+      | Nil _ -> x
+      | Cons _ -> (match Un_Cons x . 1 with
+                     | Nil _ -> x
+                     | Cons _ -> (match Un_Cons (Un_Cons x . 1) . 0 with
+                                    | O _ -> x
+                                    | S _ -> append (Un_Cons x . 1)
+                                               Cons (Un_Cons x . 0, Nil)))
+
+9.6608 false
+Time(s): 10.05 
+Mem(Kb): 19288
+
+[0,2,0] -> [0,2,0];
+[2,1] -> [1,2];
+[1,3,3] -> [3,3,1];
+[2,0] -> [0,2];
+[2,2,0] -> [0,2,2];
+[1] -> [1];
+[] -> [];
+
+=================================
+fix (f : list -> list) =
+  fun (x:list) ->
+    match x with
+      | Nil _ -> x
+      | Cons _ -> append (f (Un_Cons x . 1)) Cons (Un_Cons x . 0, Nil)
+
+2.6251 true
+Time(s): 2.94 
+Mem(Kb): 18428
+
+[0,2,1] -> [1,2,0];
+[2] -> [2];
+[1] -> [1];
+[3] -> [3];
+[0,3] -> [3,0];
+[1,1] -> [1,1];
+[] -> [];
+
+=================================
+fix (f : list -> list) =
+  fun (x:list) ->
+    match x with
+      | Nil _ -> x
+      | Cons _ -> (match Un_Cons x . 1 with
+                     | Nil _ -> x
+                     | Cons _ -> (match Un_Cons (Un_Cons x . 1) . 1 with
+                                    | Nil _ -> append (Un_Cons x . 1)
+                                                 Cons (Un_Cons x . 0, Nil)
+                                    | Cons _ -> Cons (S (Un_Cons x . 0),
+                                                       append Cons (2, Nil)
+                                                         Cons (Un_Cons x . 0,
+                                                                Nil))))
+
+13.1626 false
+Time(s): 13.76 
+Mem(Kb): 16924
+
+[3,2,1] -> [1,2,3];
+[1,1] -> [1,1];
+[0,1] -> [1,0];
+[2,0,3] -> [3,0,2];
+[2,0] -> [0,2];
+[1,1,3] -> [3,1,1];
+[] -> [];
+
+=================================
+None
+[1] -> [1];
+[2,0,2] -> [2,0,2];
+[1,2] -> [2,1];
+[2] -> [2];
+[0] -> [0];
+[3,3,0] -> [0,3,3];
+[] -> [];
+
+=================================
+fix (f : list -> list) =
+  fun (x:list) ->
+    match x with
+      | Nil _ -> x
+      | Cons _ -> (match Un_Cons x . 1 with
+                     | Nil _ -> x
+                     | Cons _ -> (match Un_Cons (Un_Cons x . 1) . 1 with
+                                    | Nil _ -> append (Un_Cons x . 1)
+                                                 Cons (Un_Cons x . 0, Nil)
+                                    | Cons _ -> Cons (Un_Cons (Un_Cons (
+                                                                 Un_Cons x .
+                                                                   1)
+                                                                 . 1)
+                                                        . 0,
+                                                       Cons (Un_Cons (
+                                                               Un_Cons x . 1)
+                                                               . 0,
+                                                              Cons (Un_Cons x
+                                                                    . 0, 
+                                                                    Nil)))))
+
+25.3752 false
+Time(s): 25.43 
+Mem(Kb): 18388
+
+[2,1,3] -> [3,1,2];
+[1] -> [1];
+[2] -> [2];
+[3,3] -> [3,3];
+[0] -> [0];
+[1,1] -> [1,1];
+[] -> [];
+
+=================================
+fix (f : list -> list) =
+  fun (x:list) ->
+    match x with
+      | Nil _ -> x
+      | Cons _ -> (match Un_Cons x . 1 with
+                     | Nil _ -> x
+                     | Cons _ -> (match Un_Cons (Un_Cons x . 1) . 1 with
+                                    | Nil _ -> x
+                                    | Cons _ -> Cons (S (Un_Cons x . 0),
+                                                       append Cons (1, Nil)
+                                                         Cons (Un_Cons x . 0,
+                                                                Nil))))
+
+15.3954 false
+Time(s): 15.94 
+Mem(Kb): 18112
+
+[3,3,1] -> [1,3,3];
+[2,1] -> [1,2];
+[0,1] -> [1,0];
+[0] -> [0];
+[3,0,0] -> [0,0,3];
+[1] -> [1];
+[] -> [];
+
+=================================
+fix (f : list -> list) =
+  fun (x:list) ->
+    match x with
+      | Nil _ -> x
+      | Cons _ -> (match Un_Cons x . 1 with
+                     | Nil _ -> x
+                     | Cons _ -> (match Un_Cons (Un_Cons x . 1) . 1 with
+                                    | Nil _ -> append (Un_Cons x . 1)
+                                                 Cons (Un_Cons x . 0, Nil)
+                                    | Cons _ -> Cons (Un_Cons (Un_Cons (
+                                                                 Un_Cons x .
+                                                                   1)
+                                                                 . 1)
+                                                        . 0,
+                                                       Cons (Un_Cons (
+                                                               Un_Cons x . 1)
+                                                               . 0,
+                                                              Cons (Un_Cons x
+                                                                    . 0, 
+                                                                    Nil)))))
+
+33.8185 false
+Time(s): 34.24 
+Mem(Kb): 18680
+
+[3,2] -> [2,3];
+[3,0] -> [0,3];
+[3] -> [3];
+[1,3,1] -> [1,3,1];
+[0,1] -> [1,0];
+[1,3] -> [3,1];
+[] -> [];
+
+=================================
+fix (f : list -> list) =
+  fun (x:list) ->
+    match x with
+      | Nil _ -> x
+      | Cons _ -> append (f (Un_Cons x . 1)) Cons (Un_Cons x . 0, Nil)
+
+2.2278 true
+Time(s): 2.67 
+Mem(Kb): 17980
+
+[3,2,1] -> [1,2,3];
+[3,2] -> [2,3];
+[0] -> [0];
+[2] -> [2];
+[2,3] -> [3,2];
+[2,2] -> [2,2];
+[] -> [];
+
+=================================
+fix (f : list -> list) =
+  fun (x:list) ->
+    match x with
+      | Nil _ -> x
+      | Cons _ -> (match Un_Cons x . 1 with
+                     | Nil _ -> x
+                     | Cons _ -> (match Un_Cons (Un_Cons x . 1) . 1 with
+                                    | Nil _ -> append (Un_Cons x . 1)
+                                                 Cons (Un_Cons x . 0, Nil)
+                                    | Cons _ -> Cons (1,
+                                                       append Cons (2, Nil)
+                                                         Cons (Un_Cons x . 0,
+                                                                Nil))))
+
+17.2290 false
+Time(s): 17.97 
+Mem(Kb): 17012
+
+[3] -> [3];
+[0,3,1] -> [1,3,0];
+[3,3] -> [3,3];
+[3,0] -> [0,3];
+[2,0,0] -> [0,0,2];
+[2] -> [2];
+[] -> [];
+
+=================================
+fix (f : list -> list) =
+  fun (x:list) ->
+    match x with
+      | Nil _ -> x
+      | Cons _ -> (match Un_Cons x . 0 with
+                     | O _ -> Cons (S (Un_Cons x . 0),
+                                     Cons (S (S (S (Un_Cons x . 0))),
+                                            Cons (Un_Cons x . 0, Nil)))
+                     | S _ -> append (Un_Cons x . 1)
+                                Cons (Un_Cons x . 0, Nil))
+
+10.2022 false
+Time(s): 10.32 
+Mem(Kb): 17872
+
+[0] -> [0];
+[0,1] -> [1,0];
+[2,3] -> [3,2];
+[0,0] -> [0,0];
+[3] -> [3];
+[0,3,3] -> [3,3,0];
+[1,1,0] -> [0,1,1];
+[] -> [];
+
+=================================
+fix (f : list -> list) =
+  fun (x:list) ->
+    match x with
+      | Nil _ -> x
+      | Cons _ -> append (f (Un_Cons x . 1)) Cons (Un_Cons x . 0, Nil)
+
+4.0816 true
+Time(s): 4.88 
+Mem(Kb): 18504
+
+[2,2,2] -> [2,2,2];
+[3,1] -> [1,3];
+[2] -> [2];
+[1,1] -> [1,1];
+[0,0,2] -> [2,0,0];
+[1,3] -> [3,1];
+[1,0,1] -> [1,0,1];
+[] -> [];
+
+=================================
+fix (f : list -> list) =
+  fun (x:list) ->
+    match x with
+      | Nil _ -> x
+      | Cons _ -> (match Un_Cons x . 1 with
+                     | Nil _ -> x
+                     | Cons _ -> (match Un_Cons (Un_Cons x . 1) . 1 with
+                                    | Nil _ -> append (Un_Cons x . 1)
+                                                 Cons (Un_Cons x . 0, Nil)
+                                    | Cons _ -> Cons (Un_Cons (Un_Cons (
+                                                                 Un_Cons x .
+                                                                   1)
+                                                                 . 1)
+                                                        . 0,
+                                                       Cons (Un_Cons (
+                                                               Un_Cons x . 1)
+                                                               . 0,
+                                                              Cons (Un_Cons x
+                                                                    . 0, 
+                                                                    Nil)))))
+
+70.9047 false
+Time(s): 70.99 
+Mem(Kb): 18912
+
+[2] -> [2];
+[1] -> [1];
+[0,2] -> [2,0];
+[2,2,1] -> [1,2,2];
+[3] -> [3];
+[0] -> [0];
+[3,2] -> [2,3];
+[] -> [];
+
+=================================
+fix (f : list -> list) =
+  fun (x:list) ->
+    match x with
+      | Nil _ -> x
+      | Cons _ -> (match Un_Cons x . 1 with
+                     | Nil _ -> x
+                     | Cons _ -> (match Un_Cons (Un_Cons x . 1) . 1 with
+                                    | Nil _ -> append (Un_Cons x . 1)
+                                                 Cons (Un_Cons x . 0, Nil)
+                                    | Cons _ -> Cons (1,
+                                                       append
+                                                         Cons (Un_Cons x . 0,
+                                                                Nil)
+                                                         Cons (Un_Cons x . 0,
+                                                                Nil))))
+
+22.1072 false
+Time(s): 22.68 
+Mem(Kb): 17808
+
+[2,0] -> [0,2];
+[3,0,3] -> [3,0,3];
+[3,3] -> [3,3];
+[3,2,3] -> [3,2,3];
+[0,2] -> [2,0];
+[3,1,0] -> [0,1,3];
+[0,3,1] -> [1,3,0];
+[] -> [];
+
+=================================
+None
+[1,0,0] -> [0,0,1];
+[3,0,3] -> [3,0,3];
+[1,3,3] -> [3,3,1];
+[3,1] -> [1,3];
+[1] -> [1];
+[2] -> [2];
+[2,2] -> [2,2];
+[] -> [];
+
+=================================
+fix (f : list -> list) =
+  fun (x:list) ->
+    match x with
+      | Nil _ -> x
+      | Cons _ -> (match Un_Cons x . 1 with
+                     | Nil _ -> x
+                     | Cons _ -> (match Un_Cons (Un_Cons x . 1) . 1 with
+                                    | Nil _ -> append (Un_Cons x . 1)
+                                                 Cons (Un_Cons x . 0, Nil)
+                                    | Cons _ -> Cons (Un_Cons (Un_Cons (
+                                                                 Un_Cons x .
+                                                                   1)
+                                                                 . 1)
+                                                        . 0,
+                                                       Cons (Un_Cons (
+                                                               Un_Cons x . 1)
+                                                               . 0,
+                                                              Cons (Un_Cons x
+                                                                    . 0, 
+                                                                    Nil)))))
+
+21.1453 false
+Time(s): 21.42 
+Mem(Kb): 19452
+
+[1,3,2] -> [2,3,1];
+[2] -> [2];
+[3,1] -> [1,3];
+[0,0,2] -> [2,0,0];
+[3,0] -> [0,3];
+[0,0] -> [0,0];
+[3] -> [3];
+[] -> [];
+
+=================================
+fix (f : list -> list) =
+  fun (x:list) ->
+    match x with
+      | Nil _ -> x
+      | Cons _ -> (match Un_Cons x . 1 with
+                     | Nil _ -> x
+                     | Cons _ -> (match Un_Cons (Un_Cons x . 1) . 1 with
+                                    | Nil _ -> append (Un_Cons x . 1)
+                                                 Cons (Un_Cons x . 0, Nil)
+                                    | Cons _ -> Cons (2,
+                                                       Cons (Un_Cons (
+                                                               Un_Cons x . 1)
+                                                               . 0,
+                                                              Cons (Un_Cons x
+                                                                    . 0, 
+                                                                    Nil)))))
+
+29.7245 false
+Time(s): 30.21 
+Mem(Kb): 17748
+
+[0,0] -> [0,0];
+[1] -> [1];
+[2,0] -> [0,2];
+[0] -> [0];
+[3] -> [3];
+[3,3] -> [3,3];
+[2,3,1] -> [1,3,2];
+[] -> [];
+
+=================================
+fix (f : list -> list) =
+  fun (x:list) ->
+    match x with
+      | Nil _ -> x
+      | Cons _ -> (match Un_Cons x . 1 with
+                     | Nil _ -> x
+                     | Cons _ -> (match Un_Cons (Un_Cons x . 1) . 1 with
+                                    | Nil _ -> append (Un_Cons x . 1)
+                                                 Cons (Un_Cons x . 0, Nil)
+                                    | Cons _ -> Cons (1,
+                                                       append
+                                                         Cons (S (Un_Cons x .
+                                                                    0),
+                                                                Nil)
+                                                         Cons (Un_Cons x . 0,
+                                                                Nil))))
+
+39.1504 false
+Time(s): 40.68 
+Mem(Kb): 17136
+
+[3,1,0] -> [0,1,3];
+[2] -> [2];
+[1,0] -> [0,1];
+[2,2] -> [2,2];
+[3] -> [3];
+[3,0] -> [0,3];
+[2,3] -> [3,2];
+[] -> [];
+
+=================================
+fix (f : list -> list) =
+  fun (x:list) ->
+    match x with
+      | Nil _ -> x
+      | Cons _ -> append (f (Un_Cons x . 1)) Cons (Un_Cons x . 0, Nil)
+
+3.3175 true
+Time(s): 4.38 
+Mem(Kb): 16696
+
+[3,2,2] -> [2,2,3];
+[0,1,3] -> [3,1,0];
+[0] -> [0];
+[1] -> [1];
+[2] -> [2];
+[3] -> [3];
+[0,0] -> [0,0];
+[] -> [];
+
+=================================
+fix (f : list -> list) =
+  fun (x:list) ->
+    match x with
+      | Nil _ -> x
+      | Cons _ -> (match Un_Cons x . 1 with
+                     | Nil _ -> x
+                     | Cons _ -> (match Un_Cons (Un_Cons x . 1) . 1 with
+                                    | Nil _ -> x
+                                    | Cons _ -> Cons (Un_Cons (Un_Cons (
+                                                                 Un_Cons x .
+                                                                   1)
+                                                                 . 1)
+                                                        . 0,
+                                                       Cons (Un_Cons (
+                                                               Un_Cons x . 1)
+                                                               . 0,
+                                                              Cons (Un_Cons x
+                                                                    . 0, 
+                                                                    Nil)))))
+
+14.4799 false
+Time(s): 14.95 
+Mem(Kb): 18060
+
+[1] -> [1];
+[0,3] -> [3,0];
+[2] -> [2];
+[0,2] -> [2,0];
+[3,3,2] -> [2,3,3];
+[0,3,3] -> [3,3,0];
+[1,0,0] -> [0,0,1];
+[] -> [];
+
+=================================
+fix (f : list -> list) =
+  fun (x:list) ->
+    match x with
+      | Nil _ -> x
+      | Cons _ -> (match Un_Cons x . 0 with
+                     | O _ -> append (Un_Cons x . 1)
+                                Cons (Un_Cons x . 0, Nil)
+                     | S _ -> (match Un_Cons x . 1 with
+                                 | Nil _ -> x
+                                 | Cons _ -> Cons (Un_S (Un_Cons x . 0),
+                                                    Cons (Un_Cons (Un_Cons x
+                                                                    . 1)
+                                                            . 0,
+                                                           Cons (Un_Cons x .
+                                                                   0,
+                                                                  Nil)))))
+
+32.8132 false
+Time(s): 33.63 
+Mem(Kb): 18040
+

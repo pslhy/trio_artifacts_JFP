@@ -11,7 +11,8 @@ import pandas as pd
 import platform
 
 TIMEOUT = 120
-LOG_DIRS = ["Random", "Random+BC", "Expert", "Expert+BC"]
+# LOG_DIRS = ["Random", "Random+BC", "Expert", "Expert+BC"]
+LOG_DIRS = ["Random+BC"]
 
 benchmarks = [
     "bool_band",
@@ -51,13 +52,21 @@ benchmarks = [
     "tree_count_leaves",
     "tree_count_nodes",
     "tree_inorder",
-    "tree_inorder_bool",
+    "tree_collect_leaves",
+    # "tree_inorder_bool",
     "tree_postorder",
     "tree_preorder",
     "tree_nodes_at_level",
     "tree_map",
     "tree_binsert",
 ]
+# benchmarks = [
+#     "tree_preorder",
+#     "tree_nodes_at_level",
+#     "tree_map",
+#     "tree_binsert",
+# ]
+
 
 benchmarks_nonrec = ["bool_band", "bool_bor", "bool_impl", "bool_neg", "bool_xor",
                      "nat_pred", "list_hd", "list_inc", "list_rev_fold", "list_sum", "list_tl"]
@@ -74,13 +83,14 @@ def run_syrup(mode, name, io_str):
     # cmd = GNU_TIME + " -f 'Time(s): %e \nMem(Kb): %M' ../syrup/syrup " + mode + " " + name + " '" + io_str + "'"
     # print(cmd)
     return run(
-        [GNU_TIME, "-f", 'Time(s): %e \nMem(Kb): %M', os.path.join(SYRUP_DIR, "syrup"), mode, name, io_str],
+        [GNU_TIME, "-f", 'Time(s): %e \nMem(Kb): %M', 'timeout', '121', os.path.join(SYRUP_DIR, "syrup"), mode, name, io_str],
         # cmd,
         check=False,
         stdout=PIPE,
         stderr=STDOUT,
         timeout=TIMEOUT,
         universal_newlines=True,
+        # preexec_fn=os.setsid,
     )
 
 
@@ -110,7 +120,7 @@ def run_burst(name, io_str):
 def run_trio(name, io_str):
     # cmd = GNU_TIME + " -f 'Time(s): %e \nMem(Kb): %M' ../burst/BurstCmdLine.exe -use-trio " + name + " -exs '" + io_str + "'"
     return run(
-        [GNU_TIME, "-f", 'Time(s): %e \nMem(Kb): %M', os.path.join(BURST_DIR, "BurstCmdLine.exe"), "-use-trio", name, "-exs", io_str],
+        [GNU_TIME, "-f", 'Time(s): %e \nMem(Kb): %M', 'timeout', '121', os.path.join(BURST_DIR, "BurstCmdLine.exe"), "-use-trio", name, "-exs", io_str],
         # cmd,
         check=False,
         stdout=PIPE,
@@ -118,6 +128,7 @@ def run_trio(name, io_str):
         timeout=TIMEOUT,
         universal_newlines=True,
         cwd=BURST_DIR,
+        # preexec_fn=os.setsid,
     )
 
 
@@ -244,26 +255,46 @@ def parse_result_csv():
 # adapted from https://stackoverflow.com/a/55465138
 def draw_hlines(fig, axs2d, indices):
     r = fig.canvas.get_renderer()
-    bboxes = np.array(
-        list(map(lambda ax:
-                 ax.get_tightbbox(r).transformed(fig.transFigure.inverted()),
-                 axs2d.flat)),
-        dtype=mtrans.Bbox).reshape(axs2d.shape)
+    # print(r)
+    # print(axs2d.shape)
+    # # print(len(axs2d.flat))
+    ax_l = []
+    for ax in axs2d.flat: ax_l.append(ax.get_tightbbox(r).transformed(fig.transFigure.inverted()))
+    # print(len(ax_l))
+    # print(ax_l)
+    # arr = np.array(ax_l, dtype=mtrans.Bbox)
+    # print(len(np.array(ax_l)))
+    arr_obj = np.array(ax_l, dtype=mtrans.Bbox)
+    # print(arr_obj)
+    # bboxes = arr_obj.reshape(9, 5, 2 ,2)
+    bboxes = arr_obj.reshape(7, 2, 2 ,2)
+    # print(arr.shape)
+    # exit(0)
+    # bboxes = np.array(ax_l).reshape(axs2d.shape)
+    # bboxes = np.array(
+    #     list(map(lambda ax:
+    #              ax.get_tightbbox(r).transformed(fig.transFigure.inverted()),
+    #              axs2d.flat)),
+    #     mtrans.Bbox).reshape(axs2d.shape)
     # Get the minimum and maximum extent, get the coordinate half-way between those
-    ymax = np.array(list(map(lambda b: b.y1, bboxes.flat))) \
-             .reshape(axs2d.shape).max(axis=1)
-    ymin = np.array(list(map(lambda b: b.y0, bboxes.flat))) \
-             .reshape(axs2d.shape).min(axis=1)
+    y1_2d = bboxes[:, :, 1, 1]
+    y0_2d = bboxes[:, :, 0, 1]
+    ymax = y1_2d.max(axis=1)
+    ymin = y0_2d.min(axis=1)
+    # ymax = np.array(list(map(lambda b: b.y1, bboxes.flat))) \
+    #          .reshape(axs2d.shape).max(axis=1)
+    # ymin = np.array(list(map(lambda b: b.y0, bboxes.flat))) \
+    #          .reshape(axs2d.shape).min(axis=1)
     ys = np.c_[ymax[1:], ymin[:-1]].mean(axis=1)
     ys = np.append(ys, ymin[-1])
     # Draw a horizontal lines at those coordinates
     leftmost = 0.05
     downmost = 0.05
-    for i in indices:
-        line = plt.Line2D([leftmost, 1], [ys[i], ys[i]],
-                          transform=fig.transFigure, color="black")
-        fig.add_artist(line)
+    # for i in indices:
+    #     line = plt.Line2D([leftmost, 1], [ys[i], ys[i]],
+    #                       transform=fig.transFigure, color="black")
+    #     fig.add_artist(line)
 
-    vline = plt.Line2D([leftmost, leftmost], [downmost, 1],
-                       transform=fig.transFigure, color="black")
-    fig.add_artist(vline)
+    # vline = plt.Line2D([leftmost, leftmost], [downmost, 1],
+    #                    transform=fig.transFigure, color="black")
+    # fig.add_artist(vline)

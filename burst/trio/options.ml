@@ -10,6 +10,8 @@ let always_recursive = ref false
 let max_match_depth = ref 3 
 let no_filter = ref false
 let no_invmap = ref false
+let termination_time = ref 0.0
+let print_time = ref false
 let options = 
 	[
 	 ("-print_blocks", Arg.Set print_traces, "Print all block expressions");	
@@ -23,4 +25,5 @@ let options =
 	 ("-max_height", Arg.Int (fun x -> max_height := x), "set the maximum height of candidates");
 	 ("-max_height_vsa", Arg.Int (fun x -> max_height_vsa := x), "set the maximum height of VSAs");
 	 ("-init_comp_size", Arg.Int (fun x -> init_comp_size := x), "set the initial size of components");
+	 ("-print_time", Arg.Set print_time, "print time of termination");
   ]

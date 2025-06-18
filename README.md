@@ -43,6 +43,12 @@ To run following command, you can see the summary of ablation study:
 $ python3 artifact.py --print_result 3
 ```
 
+## Sensitivity to the Quntity and Quality of Examples
+To run following command, you can see the summary of sensitivity to the quantity and quality of examples:
+```
+$ python3 artifact.py --print_result 4
+```
+
 ## Running Trio for a single benchmark
 You can run Trio to solve single benchmark as follows:
 ```
@@ -70,6 +76,7 @@ Iter: 0
 ```
 At 1-5 lines show solution, and other lines shows solution size and num of iter times by -print-data option.
 
+<!-- Not complete to run -->
 ## SyRup - Build and Run
 ```
 $ opam install --yes dune qcheck z3 ppx_inline_test core core_unix iter bark menhir.20211128 ppx_deriving smart-print async_unix js_of_ocaml-ppx

@@ -49,18 +49,19 @@ plt.ylabel("Synthesis Time (s)")
 plt.xticks(range(20), range(1,21))
 # plt.yticks(range(0, 120, 10))
 
-# for i in range(datas):
-#     print(globals()['df_{}'.format(i+1)])
 # sort and cumulate
 for i in range(datas):
     globals()['df_{}'.format(i+1)] = globals()['df_{}'.format(i+1)][globals()['df_{}'.format(i+1)]['time'].dropna() < 119.0].sort_values(by='time')
 
 for i in range(datas):
-    globals()['time_{}'.format(i+1)] = globals()['df_{}'.format(i+1)]['time'].cumsum()
+    globals()['cum_time_{}'.format(i+1)] = globals()['df_{}'.format(i+1)]['time'].cumsum().reset_index(drop=True)
+
+for i in range(datas):
+    print(globals()['cum_time_{}'.format(i+1)]) 
 
 # set data
 for i in range(datas):
-    plt.plot(globals()['time_{}'.format(i+1)], label=data_name[0][i]+' (solved = '+str(globals()['time_{}'.format(i+1)].count())+')', color=data_name[2][i], marker=data_name[1][i], markersize=10, markevery=2, fillstyle=data_name[3][i])
+    plt.plot(globals()['cum_time_{}'.format(i+1)], label=data_name[0][i]+' (solved = '+str(globals()['cum_time_{}'.format(i+1)].count())+')', color=data_name[2][i], marker=data_name[1][i], markersize=10, markevery=3, fillstyle=data_name[3][i])
 
 # print(globals()['time_{}'.format(4)])
 

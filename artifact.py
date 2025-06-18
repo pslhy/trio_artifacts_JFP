@@ -7,6 +7,9 @@ import argparse
 from unicodedata import category
 import pretty_csv
 import statistics
+import pandas as pd
+from tabulate import tabulate
+from io import StringIO
 # from tqdm import tqdm
 
 # !pip3 install tqdm
@@ -127,6 +130,63 @@ def run_solver(timeout=120, benchmark="io", ablation=False):
                 sol_file.write(sol)
             with open(csvfilename, "w+") as csv_file:
                 csv_file.write(csv_data)
+
+def run_trio_only(timeout=120, benchmark="io"):
+    # solvers = ["trio"]
+    solver = "trio"
+    prefix = path + "result_check/"+benchmark+"_result"
+    with open(path + "bench_list", "r") as f: 
+        lists = f.readlines()
+    timeout = str(timeout)
+    os.makedirs(prefix, exist_ok=True)
+    for fname in lists:
+        print("Running " + fname)
+        file = fname.strip()
+        file_locate = path + "benchmarks/" + benchmark + "_old/" + file
+        solfilename = prefix + "/" + file + "." + solver + ".sol"
+        csvfilename = prefix + "/" + file + "." + solver + ".csv"
+        # if check_already_done(solfilename):
+        #     continue
+        cmd = gnu_time + " -f 'Time(s): %e \nMem(Kb): %M' timeout " + timeout +" burst/BurstCmdLine.exe -print-data -use-trio -trio-option '-print_time' " + file_locate
+        try:
+            proc = subprocess.run(cmd,capture_output=True, text=True, shell=True)
+        except:
+            proc = subprocess.run(cmd,stdout=subprocess.PIPE, stderr=subprocess.PIPE, shell=True)
+        sol = ""
+        # size, iter, time, mem
+        csv_data =""
+        if type(proc.stdout) == bytes:
+            out_std = proc.stdout.decode('utf-8')
+            out_err = proc.stderr.decode('utf-8')
+        else:
+            out_std = proc.stdout
+            out_err = proc.stderr
+        if (proc.returncode == 0):
+            # get termination time
+            print(out_std)
+            print(cmd)
+            # (_, temp1) = str(out_std).split("Termination_Check Time: ")
+            if "Termination_Check Time: " in out_std:
+                (_, temp1) = str(out_std).rsplit("Termination_Check Time: ", 1)
+                (t_time, temp2) = str(temp1).split("SOL:")
+            else: 
+                t_time = "0"
+                temp2 = str(out_std)
+            # (t_time, temp2) = str(temp1).split("SOL:")
+            (s, temp) = str(temp2).split("Size: ")
+            (size, iter) = temp.split("Iter: ")
+            (err, tm) = str(out_err).split("Time(s): ")
+            (time, mem) = tm.split("Mem(Kb): ")
+            sol = s.strip()
+            # print(size.strip(), iter.strip(), time.strip(), mem.strip(), t_time.strip())
+            csv_data += (size.strip() + "," + iter.strip() + "," + time.strip() + "," + mem.strip() + "," + t_time.strip())
+        else:
+            (err, mem) = str(out_err).split("Mem(Kb): ")
+            csv_data += ("N/A,N/A," + timeout +"," + mem.strip() + ",N/A")
+        with open(solfilename, "w+") as sol_file:
+            sol_file.write(sol)
+        with open(csvfilename, "w+") as csv_file:
+            csv_file.write(csv_data)
 
 def check_equal(correctSol, solverSol, IOFile):
     cmd = "burst/BurstCmdLine.exe -check-equiv1 " + correctSol + " -check-equiv2 " + solverSol + " " + IOFile
@@ -254,6 +314,33 @@ def make_csv(benchmark="io"):
     print("%12s %8s %8s %8s" % ("Avg_mem(Mb)", mem_mean_str(mem_map["trio"]), mem_mean_str(mem_map["burst"]), mem_mean_str(mem_map["smyth"])))
     print("%12s %8s %8s %8s" % ("peak_mem(Mb)", max_str(mem_map["trio"]), max_str(mem_map["burst"]), max_str(mem_map["smyth"])))
  
+def make_csv_term(benchmark="io"):
+    csv_string = "Test,Trio_Time,Trio_termination\n"
+    with open(path + "bench_list", "r") as f: lists = f.readlines()
+    prefix = path + "result_check/"+benchmark+"_result"
+    time_list = []
+    term_list = []
+    for filename in lists:
+        fname = filename.strip()
+        csv_string += fname[:-4] + ","
+        # solfilename = prefix + "/" + fname + ".trio.sol"
+        csvfilename = prefix + "/" + fname + ".trio.csv"
+        try:
+            with open(csvfilename, 'r') as csvfile:
+                size_data, iter_data, time_data, mem_data, term_data = csvfile.read().split(",")
+                time_list.append(float(time_data))
+                if term_data == "N/A":
+                    term_list.append(float(0))
+                else:
+                    term_list.append(float(term_data))
+                csv_string += (time_data + "," + term_data)
+        except FileNotFoundError:
+            time_list.append(float(120))
+            term_list.append(float(0))
+            csv_string += "N/A, N/A"
+        csv_string += "\n"
+    with open(path + "result_check/"+benchmark+"_result_term.csv", "w+") as csv_file: csv_file.write(csv_string)
+
 def make_ablation_data():
     with open(path + "ablation_list", "r") as f: lists = f.readlines()
     solvers = ["trio", "trio_T", "trio_L", "trio_--"]
@@ -312,6 +399,12 @@ def make_pretty_csv(file):
     pretty_csv.pretty_file(csv_file, new_filename=new_file)
     with open(new_file, "r") as f: print(f.read())
 
+def make_pretty_quality_csv(file):
+     csv_file = path + "result/"+file
+     df = pd.read_csv(csv_file)
+     df = df[['#Example+Basecase', 'Trio success(%)', 'Trio time(s)', 'Trio #T/O', 'SyRup success(%)', 'SyRup time(s)', 'SyRup #T/O']]
+     print(tabulate(df, headers='keys', tablefmt='grid', showindex=False))
+
 # def tester():
 #     cmd = "burst/BurstCmdLine.exe -print-data -use-trio -trio-options \"-nofilter\" " + "benchmarks/io/list_last2.mls"
 #     try:
@@ -335,6 +428,9 @@ def parse_args():
 
     subparser = subparsers.add_parser("ablation", help="Run Ablation Study")
     subparser.add_argument("--timeout", type=int, default=120)
+
+    # subparser = subparsers.add_parser("termination", help="Run with termination check time only trio")
+    # subparser.add_argument("--timeout", type=int, default=120)
     return parser.parse_args()
 
 
@@ -349,12 +445,17 @@ def main():
         make_pretty_csv("ref_result.csv")
     elif args.print_result == 3:
         make_ablation_data()
+    elif args.print_result == 4:
+        make_pretty_quality_csv("quality_result.csv")
     else:
         if args.cmd in ["io", "ref"]:
             run_solver(args.timeout, args.cmd, False)
         elif args.cmd == "ablation":
             run_solver(args.timeout, "io", ablation=True)
             run_solver(args.timeout, "ref", ablation=True)
+        # elif args.cmd == "termination":
+        #     run_trio_only(args.timeout ,"io")
+        #     run_trio_only(args.timeout ,"ref")
         else:
             print("invalid command")
 if __name__ == "__main__":
