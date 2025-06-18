@@ -2,8 +2,8 @@
 
 ## Build
 ```
-$ git clone https://github.com/pslhy/trio_artifacts.git
-$ cd trio_artifacts
+$ git clone https://github.com/pslhy/trio_artifacts_2024.git
+$ cd trio_artifacts_2024
 $ ./build
 $ . setenv # or ($ bash setenv)
 $ make
